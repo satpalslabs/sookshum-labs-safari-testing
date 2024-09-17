@@ -29,7 +29,7 @@ function MainContainer() {
         source={data.text_containers[selectedCardIndex].image_url}
         isInView={isInView}
       />
-      <div className="flex flex-col gap-5 md:gap-3 h-full col-span-4">
+      <div className="flex flex-col gap-5 md:gap-3 col-span-4">
         {data.text_containers.map((dataItem: dataItemType, index: number) => (
           <TextCard
             item={dataItem}
