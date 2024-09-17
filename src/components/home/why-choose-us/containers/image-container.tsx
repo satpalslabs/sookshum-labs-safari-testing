@@ -10,7 +10,7 @@ const ImageContainer = ({
   isInView: boolean;
 }) => (
   <div
-    className={`h-full min-h-full flex items-center col-span-6
+    className={`grow-0 flex items-center col-span-6
        shadow-buttonInset bg-innerContainer rounded-[32px] lg:rounded-[26px] sm:gap-3 xs:hidden grayscale transition-all ${
       isInView ? "grayscale-0" : "grayscale"
     } }`}
