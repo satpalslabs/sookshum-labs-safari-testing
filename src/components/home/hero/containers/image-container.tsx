@@ -17,7 +17,7 @@ const ImageContainer: React.FC = () => (
         // alt="background image"
       >
         <source src="/home/hero/bg-video.webm" type="video/webm" />
-        {/* <img src="/home/hero/fallback.png" title="Your browser does not support the <video> tag" /> */}
+        <img src="/home/hero/fallback.png" title="Your browser does not support the <video> tag" />
       </video>
       {/* <div
         className={`w-[110%] -left-[10%] right-0 h-[900px] lg:h-[668px] xs:w-[400px] xs:h-[400px] float-right xxl:-mt-[7.4%] -mt-[10%] lg:-mt-[18%] sm:-mt-[36%] lg:mr-0 mr-[2%] sm:-mr-[22%]  md:ml-[58px] lg:ml-[50px] xs:-mt-[44%] bg-gradient-to-l from-black via-gray to-black absolute`}
