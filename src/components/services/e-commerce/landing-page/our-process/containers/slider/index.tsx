@@ -32,7 +32,6 @@ export default function Slider() {
               onMouseUp={end}
               onTouchEnd={end}
             >
-          <div className="xxl:w-[82%] w-[80%] lg:w-[83%] h-[1px] bg-gradient-to-r -z-0 from-[#737373] top-[13.5px] to-[#d9d9d9] absolute"></div>
               {data["process-services"].map(
                 (industry: ProcessServiceType, index: number) => (
                   <ProcessServiceCard

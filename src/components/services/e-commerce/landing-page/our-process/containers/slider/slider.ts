@@ -7,7 +7,6 @@ let isDragging = false;
 
 // Function to run the slider to a specific slide
 export function runSlider(clickedDivIndex: number) {
-    clickedDivIndex = clickedDivIndex + 1;
     const $slider = $(".Slider");
     const $main = $(".Main");
     const $sliderElements = $slider.children();
@@ -20,7 +19,7 @@ export function runSlider(clickedDivIndex: number) {
     const rightFromCenter = sliderWidth - leftClickedDiv;
     let translateValue: number;
 
-    DisableArrow(clickedDivIndex - 1);
+    DisableArrow(clickedDivIndex);
 
     // Determine translate value based on the slide position
     if (rightFromCenter > centerSlider) {
@@ -40,7 +39,7 @@ export function runSlider(clickedDivIndex: number) {
         const $el = $(el);
         const $circleClickedDiv = $el.find(".circle");
         const $innerDiv = $circleClickedDiv.find(".rounded-full");
-        const $dot = $($(".sliderDots").children()[index - 1]);
+        const $dot = $($(".sliderDots").children()[index]);
 
         if (index === clickedDivIndex) {
             $el.addClass("active-slider-item");
@@ -79,7 +78,7 @@ export function nextCard() {
 
 // Function to move to the previous slide
 export function prevCard() {
-    const $activeContainer = $('.Slider .active-slider-item').index() - 1;
+    const $activeContainer = $('.Slider .active-slider-item').index();
     $(".slider-next-arrow").removeClass("text-[#777E90]").addClass("text-white");
     if ($activeContainer > 0) {
         runSlider($activeContainer - 1);
@@ -94,7 +93,7 @@ function DisableArrow(ind: number) {
     if (ind <= 0) {
         $(".slider-prev-arrow").removeClass("text-white").addClass("text-[#777E90]");
         $(".slider-next-arrow").removeClass("text-[#777E90]").addClass("text-white");
-    } else if (ind >= $sliderElements.length - 2) {
+    } else if (ind >= $sliderElements.length - 1) {
         $(".slider-next-arrow").removeClass("text-white").addClass("text-[#777E90]");
         $(".slider-prev-arrow").removeClass("text-[#777E90]").addClass("text-white");
     } else {
