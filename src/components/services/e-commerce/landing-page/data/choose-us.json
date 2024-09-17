@@ -1,0 +1,34 @@
+{
+    "services": [
+        {
+            "heading": "Certified eCommerce Experts",
+            "image_url": "/services/e-commerce-development/default-page/why-us/earn-ewards.png",
+            "description": "We’re certified experts with all major eCommerce platforms. We provide superior eCommerce development to help your company prosper."
+        },
+        {
+            "heading": "Experienced Team",
+            "image_url": "/services/e-commerce-development/default-page/why-us/license-hub.png",
+            "description": "As a seasoned group of eCommerce developers, we understand what it takes to build a profitable online business. As a result your company can concentrate on what it does best: selling products."
+        },
+        {
+            "heading": "Reliable Ongoing Support",
+            "image_url": "/services/e-commerce-development/default-page/why-us/message.png",
+            "description": "Our ongoing support ensures a seamless transition. Whether you need assistance with minor changes or troubleshooting after launch, our team is here to help."
+        },
+        {
+            "heading": "Proven Method",
+            "image_url": "/services/e-commerce-development/default-page/why-us/proven-method.png",
+            "description": "We ensure that your eCommerce websites are user friendly and intuitive by adhering to the agile approach throughout the development process. This results in 100% customer satisfaction."
+        },
+        {
+            "heading": "Client Satisfaction",
+            "image_url": "/services/e-commerce-development/default-page/why-us/thumbs-up.png",
+            "description": "We take pride in providing total client satisfaction. From our experienced staff to our cutting-edge technology, we make sure that every interaction you have with us is positive and helpful. "
+        },
+        {
+            "heading": "Excellent Quality",
+            "image_url": "/services/e-commerce-development/default-page/why-us/star-rating.png",
+            "description": "Your happiness is guaranteed with our eCommerce development services. With us, you receive more than exceptional eCommerce development services; you get the services that make your company distinct."
+        }
+    ]
+}

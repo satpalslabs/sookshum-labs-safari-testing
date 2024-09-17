@@ -1,0 +1,44 @@
+{
+    "our-values": [
+        {
+            "icon": "/about-us/our-values/integrity.png",
+            "title": "Integrity",
+            "about": "Integrity-the ability to fulfill commitments and obligations-is at the core of who we are and what we do. It is the standard by which we strive to operate and all that we do. It is why clients and stakeholders can trust us and business with us."
+        },
+        {
+            "icon": "/about-us/our-values/honesty.png",
+            "title": "Honesty",
+            "about": "The best way to earn people’s trust is being transparent and truthful. We believe honesty is an integral part of our working relationship."
+        },
+        {
+            "icon": "/about-us/our-values/accountability.png",
+            "title": "Accountability",
+            "about": "We hold ourselves accountable in all our business dealings. We take the initiative to own our responsibilities and to exceed expectations."
+        },
+        {
+            "icon": "/about-us/our-values/ownership.png",
+            "title": "Ownership",
+            "about": "We act like owners, treating your business as our own and acting, making decisions and proposing solutions keeping long term interests of your business in mind."
+        },
+        {
+            "icon": "/about-us/our-values/respect.png",
+            "title": "Respect",
+            "about": "We encourage a culture of mutual respect and concern where each one is valued. We value the expertise of our employees, the unique needs of our customers, the relationships we have with our partners and the diversity and passion that character our success."
+        },
+        {
+            "icon": "/about-us/our-values/commitment.png",
+            "title": "Commitment To Customers",
+            "about": "Our business is built on relationships. We’ve built our success on the strength of our relationships with customers just like you. We’re committed to building long-term relationships with our customers"
+        },
+        {
+            "icon": "/about-us/our-values/graph.png",
+            "title": "Constant Improvement",
+            "about": "Our focus is on constant improvement. This philosophy helps us release high-quality products more quickly, with less bugs with every release."
+        },
+        {
+            "icon": "/services/ui-ux-design/choose-us/innovation.png",
+            "title": "Innovation",
+            "about": "Innovation is the key to continued growth and relevance in business. We foster innovation in our products, services and processes to create and deliver value."
+        }
+    ]
+}

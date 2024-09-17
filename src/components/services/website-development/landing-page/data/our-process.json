@@ -1,0 +1,29 @@
+{
+    "our-process": [
+        {
+            "process-title": "Ideate",
+            "process": "Identify, shape and validate your product idea",
+            "image":""
+        },
+        {
+            "process-title": "Design",
+            "process": "Craft beautiful digital experiences across platforms ",
+            "image":""
+        },
+        {
+            "process-title": "Develop",
+            "process": "Bring products to life with world-class engineering",
+            "image":""
+        },
+        {
+            "process-title": "Maintain",
+            "process": "Safeguard your product’s quality and reliability",
+            "image":""
+        },
+        {
+            "process-title": "Scale",
+            "process": "Gain flexibility to adjust and expand on the fly",
+            "image":""
+        }
+    ]
+}

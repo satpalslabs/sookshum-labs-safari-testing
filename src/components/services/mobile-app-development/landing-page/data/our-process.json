@@ -1,0 +1,28 @@
+{
+    "our-process": [
+        {
+            "process-title": "Definition of objectives",
+            "gradient": " linear-gradient(90deg,#8ca0b8b3 0%, #6c97e1b3 100%)"
+        },
+        {
+            "process-title": "Analysis and Exploration",
+            "gradient": "linear-gradient(90deg, #6996e3b3 0%, #7ebceab3 100%)"
+        },
+        {
+            "process-title": "Selection of technologies",
+            "gradient": "linear-gradient(90deg, #7ebdeab3 0%, #98dccdb3 100%)"
+        },
+        {
+            "process-title": "Imaginative Design",
+            "gradient": "linear-gradient(90deg, #98ddcbb3 0%, #b7e9a8b3 100%)"
+        },
+        {
+            "process-title": "Robust Development",
+            "gradient": "linear-gradient(90deg, #b9e9a7b3 0%, #dcd08cb3 100%)"
+        },
+        {
+            "process-title": "Launch and expansion",
+            "gradient": "linear-gradient(90deg, #ddbc80b3 0%, #e05c45b3 100%)"
+        }
+    ]
+}

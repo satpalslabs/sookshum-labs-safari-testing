@@ -1,0 +1,54 @@
+{
+    "industries": [
+        {
+            "title": "Healthcare",
+            "image": "/home/industries/healthcare.png",
+            "description": "We develop apps & websites that streamline operations, elevate patient care, and empower healthcare.",
+            "points": [
+                "Telemedicine Platform",
+                "Patient Health Management System",
+                "Virtual Health Coaching"
+            ]
+        },
+        {
+            "title": "E-Commerce",
+            "image": "/home/industries/e-commerce.png",
+            "description": "We craft user-friendly e-commerce solutions that drive conversions and build customer loyalty.",
+            "points": [
+                "Multi-Channel Retail Platforms",
+                "B2B platforms",
+                "B2C solutions"
+            ]
+        },
+        {
+            "title": "Sports",
+            "image": "/home/industries/sports.png",
+            "description": "We design and develop fan-centric sports platforms that drive engagement and connect communities.",
+            "points": [
+                "Fitness Tracking Apps",
+                "Personal Training & Coaching Solutions",
+                "Activity and Performance Tracking solutions"
+            ]
+        },
+        {
+            "title": "Business Solutions",
+            "image": "/home/industries/business-solutions.png",
+            "description": "We craft custom design & development solutions to streamline workflows, boost efficiency, and fuel growth.",
+            "points": [
+                "CRM apps",
+                "Project Management apps",
+                "Custom Business solutions"
+            ]
+        },
+        {
+            "title": "On-Demand Solutions ",
+            "image": "/home/industries/on-demand-solutions.png",
+            "description": "Craft seamless on demand experiences with our design and development expertise. Get what you need.",
+            "points": [
+                "Online Classes App",
+                "E-Learning Portals ",
+                "School Management"
+            ]
+        }
+    ]
+}

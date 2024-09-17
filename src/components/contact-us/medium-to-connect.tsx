@@ -1,0 +1,78 @@
+"use client";
+import React, { useRef } from "react";
+import data from "./data/medium-to-connect.json";
+import { useInView } from "@lib/use-in-view";
+import Card from "@components/basic-components/card";
+import Description from "@components/basic-components/description";
+import H5 from "@components/basic-components/headings/H5";
+import DarkButton from "@components/basic-components/button";
+export type Medium = {
+  title: string;
+  description: string;
+  "button-text": string;
+  "image-path": string;
+};
+
+const mediums: Medium[] = data.mediums;
+const Mediums: React.FC = () => {
+  const ref = useRef<HTMLDivElement>(null);
+  const isInView = useInView(ref);
+
+  return (
+    <section
+      ref={ref}
+      className="px-[80px] lg:px-10 xs:px-5 pt-[120px] md:pt-[90px] sm:pt-[70px] xs:pt-[60px]  bg-black overflow-hidden max-w-[1920px] mx-auto"
+    >
+      <section className={` ${isInView ? "grayscale-0" : "grayscale"} w-full `}>
+        <div className="grid grid-cols-2 gap-5 lg:gap-[18px] xs:grid-cols-1 xs:gap-[16px]">
+          {mediums?.map((value: Medium, index: number) => (
+            <MediumCard value={value} isInView={isInView} key={index} />
+          ))}
+        </div>
+      </section>
+    </section>
+  );
+};
+
+export default Mediums;
+
+const MediumCard: React.FC<{ value: Medium; isInView: boolean }> = (props) => (
+  <Card style="mt-[43px] gap-6" isInView={props.isInView}>
+    <div className="px-4 md:px-2 sm:px-[6px] md:flex-1 pb-8 xxl:pb-16 xs:pb-5 flex ">
+      <img
+        className="h-[136px] lg:h-[132px] xxl:-mt-[10%] sm:h-[108px] xs:-mt-[16%] lg:-mt-[20%] sm:-mt-[10%] object-cover -mt-[15%]"
+        alt=""
+        src={props.value["image-path"]}
+      />
+    </div>
+    <div className=" flex flex-col px-4 md:px-2 sm:px-[6px] grow h-fit gap-6 sm:h-auto sm:gap-[0.5rem]">
+      <H5 text={props.value.title} style="!text-white" />
+      <div className="flex flex-col gap-4">
+        <Description
+          children={null}
+          text={props.value.description}
+          classes=""
+        />
+        <div
+          id={
+            props.value["button-text"].includes("meeting")
+              ? "meeting"
+              : "chatwithus"
+          }
+          className="w-fit cursor-pointer"
+          onClick={() => {
+            if (props.value["button-text"].includes("meeting")) {
+              window.open("https://appointments.sookshum-labs.com/", "_blank");
+            } else {
+              if (window.$zoho && window.$zoho.salesiq) {
+                window.$zoho.salesiq.floatwindow.visible("show");
+              }
+            }
+          }}
+        >
+          <DarkButton text={props.value["button-text"]} style="" />
+        </div>
+      </div>
+    </div>
+  </Card>
+);

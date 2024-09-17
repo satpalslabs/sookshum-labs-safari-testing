@@ -1,0 +1,19 @@
+{
+    "services": [
+        {
+            "imageUrl": "/services/web-app-development/landing-page/why-us/our-team.png",
+            "heading": "We Strategies",
+            "description": "We do a comprehensive feasibility analysis including creating proposed action plans for every major feature to compare different approaches and solutions to finalize the best approach."
+        },
+        {
+            "imageUrl": "/services/web-app-development/landing-page/why-us/develop.png",
+            "heading": "We develop",
+            "description": "Our team builds scalable, high-performance web applications that deliver exceptional user experiences across all devices."
+        },
+        {
+            "imageUrl": "/services/web-app-development/landing-page/why-us/deploy.png",
+            "heading": "We Deploy ",
+            "description": "We ensure seamless deployment of your web app, offering ongoing support to maintain performance and scalability post-launch."
+        }
+    ]
+}

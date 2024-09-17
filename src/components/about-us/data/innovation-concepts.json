@@ -1,0 +1,16 @@
+{
+    "concepts": [
+        {
+            "heading": "Our Mission",
+            "title": "Help businesses solve their technological challenges in the software industry",
+            "description": "By delivering custom software solutions tailored to unique business needs.",
+            "icon": "/about-us/innovation-concepts/aim.png"
+        },
+        {
+            "heading": "Our Vision",
+            "title": "To lead in IT services, helping businesses solve technological challenges at scale",
+            "description": "By harnessing the power of cutting-edge technologies and innovative solutions.",
+            "icon": "/about-us/innovation-concepts/search.png"
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "e-commerce-services": [
+        {
+            "heading": "Marketplace development",
+            "description": "Our marketplace development services are designed to help businesses build robust, scalable, and user-friendly multi-vendor platforms. Whether you're launching a B2B, B2C, or peer-to-peer marketplace, we provide custom solutions tailored to your specific needs. We focus on creating seamless user experiences, efficient vendor management systems, and secure payment gateways to ensure your marketplace runs smoothly. With a strong emphasis on scalability and security, we develop platforms that can grow alongside your business. From the initial concept through development, launch, and ongoing support, our team is dedicated to helping you create a thriving marketplace that stands out in today’s competitive landscape."
+        },
+        {
+            "heading": "Performance & UI/UX optimization",
+            "description": "Enhance your eCommerce site’s speed, performance, and user experience with our expert UI/UX optimization services for higher conversions."
+        },
+        {
+            "heading": "Software integrations",
+            "description": "We will seamlessly integrate your ERP, CRM, logistics platform or any other third-party service into your eCommerce store."
+        },
+        {
+            "heading": "Replatforming",
+            "description": "Is your current eCommerce platform limiting your potential? Our replatforming services will transition you to a scalable, feature-rich solution that grows with your business, enhancing performance and functionality to better meet your evolving needs."
+        },
+        {
+            "heading": "eCommerce from scratch",
+            "description": "Starting from scratch? We build custom eCommerce solutions tailored to your unique business needs. Our team designs and develops robust, scalable online stores with intuitive user interfaces, secure payment systems, and seamless functionality, ensuring a successful launch and a platform that grows with your business."
+        },
+        {
+            "heading": "eCommerce consulting",
+            "description": "Our eCommerce consulting services provide expert guidance to optimize and grow your online business. We offer strategic insights into market trends, technology choices, and user experience improvements to enhance your store’s performance. From streamlining operations to implementing best practices and innovative solutions, our consultants work closely with you to craft tailored solutions. Whether you're looking to boost conversions, increase customer retention, or integrate new technologies, our team is dedicated to providing actionable recommendations and support to help you achieve success in the competitive eCommerce landscape."
+        },
+        {
+            "heading": "Mobile applications",
+            "description": "Elevate your business with custom mobile applications designed for seamless integration with your eCommerce platform. Our apps deliver engaging user experiences and drive sales across iOS and Android devices."
+        },
+        {
+            "heading": "eCommerce design",
+            "description": "Transform your online store with our expert eCommerce design services, creating visually stunning, user-friendly interfaces that drive conversions and enhance customer experiences across all devices."
+        },
+        {
+            "heading": "eCommerce team augmentation",
+            "description": "Need to ship lots of deliverables but don’t want to staff up? Our skilled team can seamlessly integrate with your team, enhancing productivity and driving project success."
+        },
+        {
+            "heading": "B2B eCommerce Development",
+            "description": "Our B2B eCommerce development services are designed to meet the complex needs of businesses trading with other businesses. From custom catalogs and advanced search features to secure payment solutions and comprehensive analytics, we build solutions that optimize efficiency and drive growth. Our team works closely with you to understand your specific requirements and deliver a tailored B2B eCommerce platform that supports your business objectives, improves buyer-seller interactions, and ensures a competitive edge in the marketplace."
+        },
+        {
+            "heading": "Headless website development",
+            "description": "Our headless eCommerce website development services offer unparalleled flexibility and performance. By decoupling the front end from the back end, we create custom, scalable solutions that deliver seamless user experiences and rapid content updates. This approach enables personalized design and faster integration with various platforms and devices."
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "web-app-development-services": [
+        {
+            "image": "/services/web-app-development/landing-page/services/website-development-design.png",
+            "heading": "Customised web app development",
+            "description": "Tailored solutions designed with your unique goals in mind, ensuring a personalised and efficient user experience."
+        },
+        {
+            "image": "/services/web-app-development/landing-page/services/website-development.png",
+            "heading": "Prototyping and idea validation",
+            "description": "We help refine and validate your concept before full scale development, saving time and resources."
+        },
+        {
+            "image": "/services/web-app-development/landing-page/services/landing-pages.png",
+            "heading": "Data analytics and optimization",
+            "description": "Utilising data to enhance user engagement and drive growth, turning insights into actionable strategies."
+        },
+        {
+            "image": "/services/web-app-development/landing-page/services/monitor.png",
+            "heading": "Post-launch support",
+            "description": "Our support extends beyond launch, ensuring your web app adapts and thrives in an ever-evolving digital landscape."
+        }
+    ]
+}
