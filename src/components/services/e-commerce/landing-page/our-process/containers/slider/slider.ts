@@ -6,18 +6,20 @@ let scrollLeft: number;
 let isDragging = false;
 // Ensure the code only runs on the client side
 if (typeof window !== 'undefined') {
-    $(document).ready(function () {
+   $(document).ready(function () {
         let sliderContainer = $('.Slider');
         if (sliderContainer.length) {
+            // Mouse events
             sliderContainer[0].addEventListener("mousedown", start, { passive: true });
-            sliderContainer[0].addEventListener("touchstart", start, { passive: false });
             sliderContainer[0].addEventListener("mousemove", move, { passive: false });
-            sliderContainer[0].addEventListener("touchmove", move, { passive: false });
-
-            sliderContainer.on("mouseleave", end);
-            sliderContainer.on("touchcancel", end);
             sliderContainer.on("mouseup", end);
+            sliderContainer.on("mouseleave", end);
+
+            // Touch events
+            sliderContainer[0].addEventListener("touchstart", start, { passive: false });
+            sliderContainer[0].addEventListener("touchmove", move, { passive: false });
             sliderContainer.on("touchend", end);
+            sliderContainer.on("touchcancel", end);
         }
     });
 }
