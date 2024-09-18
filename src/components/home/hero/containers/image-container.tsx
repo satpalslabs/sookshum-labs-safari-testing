@@ -9,6 +9,7 @@ const ImageContainer: React.FC = () => (
     <div className="xs:mt-[203px] 2xs:mt-[240px] sm:mt-[173px] md:mt-[90px] relative lg:mt-24 bg-[#151515] overflow-visible">
       <video
         autoPlay={true}
+        poster="/home/hero/fallback.png"
         muted
         loop
         className="w-fit h-[900px] lg:h-[668px] sm:[493px] xs:w-full xs:h-auto float-right xxl:-mt-[7.4%] -mt-[10%] lg:-mt-[18%] sm:-mt-[18%] xs:-mt-[44%] sm:-mr-[20%] -mr-[15%] sm:-ml-6 md:ml-[58px] lg:ml-[50px] lg:object-cover"
