@@ -30,7 +30,7 @@ const OurProcess = () => {
         description="Having successfully delivered hundreds of projects, our transparent and agile development process will guide your project from discovery to launch."
         style="w-[986px] lg:w-[491px] lg:mx-auto xs:w-full"
       >
-        <div className="w-full lg:w-[637px] sm:w-full xs:w-[70%] xs:text-balance lg:leading-[1.2] text-wrap tracking-tight text-center mx-auto ">
+        <div className="w-full lg:w-[637px] sm:w-full xs:px-3 xs:w-full 3xs:px-0 xs:text-balance lg:leading-[1.2] text-wrap tracking-tight text-center mx-auto ">
           Our process for{" "}
           <span className="italic font-light w-full">
             {" "}
