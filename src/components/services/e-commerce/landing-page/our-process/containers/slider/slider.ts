@@ -6,20 +6,20 @@ let scrollLeft: number;
 let isDragging = false;
 // Ensure the code only runs on the client side
 if (typeof window !== 'undefined') {
-   $(document).ready(function () {
+     $(document).ready(function () {
         let sliderContainer = $('.Slider');
         if (sliderContainer.length) {
             // Mouse events
             sliderContainer[0].addEventListener("mousedown", start, { passive: true });
             sliderContainer[0].addEventListener("mousemove", move, { passive: false });
-            sliderContainer.on("mouseup", end);
-            sliderContainer.on("mouseleave", end);
+            sliderContainer[0].addEventListener("mouseup", end);
+            sliderContainer[0].addEventListener("mouseleave", end);
 
-            // Touch events
+            // Touch events (set passive to false for touchstart and touchmove)
             sliderContainer[0].addEventListener("touchstart", start, { passive: false });
             sliderContainer[0].addEventListener("touchmove", move, { passive: false });
-            sliderContainer.on("touchend", end);
-            sliderContainer.on("touchcancel", end);
+            sliderContainer[0].addEventListener("touchend", end);
+            sliderContainer[0].addEventListener("touchcancel", end);
         }
     });
 }
@@ -125,44 +125,64 @@ function DisableArrow(ind: number) {
     }
 }
 
-// Function to start dragging
-function start(e: any) {
-    e.preventDefault(); // Prevent default scrolling on touch devices
+// Function to handle the start of the drag (mousedown/touchstart)
+export function start(e: any) {
     isDown = true;
     isDragging = false;
-    const slider = $(`.Slider`);
+    
+    // Prevent default on touchstart to avoid scrolling issues in Safari
+    if (e.type === "touchstart") {
+        e.preventDefault();
+    }
+    
+    const slider = $('.Slider');
     slider.addClass("active");
 
+    // Get start position for touch or mouse
     startX = e.touches && e.touches.length > 0 ? e.touches[0].pageX : e.pageX;
     scrollLeft = parseInt(slider.css('transform').split(',')[4]?.trim() || "0", 10);
 }
 
-function move(e: any) {
+// Function to handle dragging movement (mousemove/touchmove)
+export function move(e: any) {
     if (!isDown) return;
-    e.preventDefault();
+
+    // Prevent default action during touchmove to prevent scrolling
+    if (e.type === "touchmove") {
+        e.preventDefault();
+    }
+
     isDragging = true;
     requestAnimationFrame(() => {
         const slider = $('.Slider');
         const x = e.touches && e.touches.length > 0 ? e.touches[0].pageX : e.pageX;
-        const dist = Math.round(x - startX);
-        slider[0].style.transform = `translateX(${Math.round(scrollLeft + dist)}px)`;
+        const dist = x - startX;
+
+        // Apply translateX to the slider based on movement
+        slider.css('transform', `translateX(${scrollLeft + dist}px)`);
     });
 }
 
-function end(e: any) {
+// Function to handle end of drag (mouseup/touchend)
+export function end(e: any) {
     isDown = false;
-    const $slider = $(`.Slider`);
-    $slider.removeClass("active");
+    const slider = $('.Slider');
+    slider.removeClass("active");
 
     if (isDragging) {
-        const $main = $(".Main");
-        const $sliderElements = $slider.children();
-        const centerSlider = ($main.outerWidth() ?? 0) / 2;
+        // Logic to snap to the nearest slide or update the active index
+        const mainWidth = $(".Main").outerWidth() ?? 0;
+        const sliderElements = slider.children();
+        const center = mainWidth / 2;
         let activeIndex: number | null = null;
-        $sliderElements.each((index, el) => {
-            const leftOfDiv = el.getBoundingClientRect().left;
-            const widthOfDiv = el.getBoundingClientRect().width;
-            if ((leftOfDiv < centerSlider) && ((leftOfDiv + widthOfDiv) > centerSlider)) {
+
+        sliderElements.each((index, el) => {
+            const $el = $(el);
+            const left = $el.offset()?.left ?? 0;
+            const width = $el.width() ?? 0;
+            
+            // Check if the element is in the center
+            if (left < center && (left + width) > center) {
                 activeIndex = index;
             }
         });
