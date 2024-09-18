@@ -6,8 +6,7 @@
 import React, { useEffect } from "react";
 import dynamic from "next/dynamic";
 import data from "../../data/index.json";
-import { runSlider, move, end } from "./slider";
-import { start } from "./slider";
+import { runSlider } from "./slider";
 // Child components
 const ProcessServiceCard = dynamic(() => import("./card"));
 const ArrowButtons = dynamic(() => import("./arrow-buttons"));

@@ -9,13 +9,11 @@ if (typeof window !== 'undefined') {
     $(document).ready(function () {
         let sliderContainer = $('.Slider');
         if (sliderContainer.length) {
-            // Add event listeners for mouse and touch interactions
             sliderContainer[0].addEventListener("mousedown", start, { passive: true });
-            sliderContainer[0].addEventListener("touchstart", start, { passive: true });
+            sliderContainer[0].addEventListener("touchstart", start, { passive: false });
             sliderContainer[0].addEventListener("mousemove", move, { passive: false });
             sliderContainer[0].addEventListener("touchmove", move, { passive: false });
 
-            // Use jQuery's .on() for other events
             sliderContainer.on("mouseleave", end);
             sliderContainer.on("touchcancel", end);
             sliderContainer.on("mouseup", end);
@@ -123,7 +121,8 @@ function DisableArrow(ind: number) {
 }
 
 // Function to start dragging
-export function start(e: any) {
+function start(e: any) {
+    e.preventDefault(); // Prevent default scrolling on touch devices
     isDown = true;
     isDragging = false;
     const slider = $(`.Slider`);
@@ -133,38 +132,31 @@ export function start(e: any) {
     scrollLeft = parseInt(slider.css('transform').split(',')[4]?.trim() || "0", 10);
 }
 
-// Function to handle dragging movement
-export function move(e: any) {
+function move(e: any) {
     if (!isDown) return;
     e.preventDefault();
     isDragging = true;
     requestAnimationFrame(() => {
         const slider = $('.Slider');
         const x = e.touches && e.touches.length > 0 ? e.touches[0].pageX : e.pageX;
-        const dist = x - startX;
-        slider.css('transform', `translateX(${scrollLeft + dist}px)`);
+        const dist = Math.round(x - startX);
+        slider[0].style.transform = `translateX(${Math.round(scrollLeft + dist)}px)`;
     });
 }
 
-// Function to end dragging
-export function end(e: any) {
+function end(e: any) {
     isDown = false;
     const $slider = $(`.Slider`);
     $slider.removeClass("active");
 
-    // Only handle end logic if it was a drag
     if (isDragging) {
         const $main = $(".Main");
         const $sliderElements = $slider.children();
         const centerSlider = ($main.outerWidth() ?? 0) / 2;
         let activeIndex: number | null = null;
         $sliderElements.each((index, el) => {
-            const $el = $(el);
-            const leftOfDiv = $el.offset()?.left ?? 0;
-            const widthOfDiv = $el.width() ?? 0;
-            if (leftOfDiv <= 0) {
-                activeIndex = index;
-            }
+            const leftOfDiv = el.getBoundingClientRect().left;
+            const widthOfDiv = el.getBoundingClientRect().width;
             if ((leftOfDiv < centerSlider) && ((leftOfDiv + widthOfDiv) > centerSlider)) {
                 activeIndex = index;
             }
