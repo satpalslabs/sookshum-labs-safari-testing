@@ -40,7 +40,7 @@ const DevelopmentProcessCard = ({
         height={400}
         width={400}
         alt=""
-        className={`${index == 3 ? "h-full w-fit mx-auto sm:w-full " : "h-fit sm:h-full w-full"} sm:object-cover`}
+        className={`${index == 3 ? "h-full w-fit mx-auto sm:w-full " : "h-fit sm:h-full w-full"} object-cover`}
       />
     </div>
     <TextContainer item={item} index={index} />
