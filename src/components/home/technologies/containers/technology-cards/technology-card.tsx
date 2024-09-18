@@ -42,8 +42,8 @@ const TechnologyCard = ({
           index == 0
             ? " -mr-[68px] lg:h-[450px] lg:-mr-0 sm:scale-105  xs:scale-100 xs:h-[390px] xs:mx-auto"
             : index == 1
-            ? "-ml-3 xs:scale-75 xs:mx-auto"
-            : " xs:scale-75 xs:mx-auto"
+            ? "-ml-3 xs:scale-100 xs:mx-auto"
+            : " xs:scale-100 xs:mx-auto"
         }`}
       >
         <img
