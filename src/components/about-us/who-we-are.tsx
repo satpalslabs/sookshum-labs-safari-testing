@@ -28,7 +28,7 @@ const WhoWeAre: React.FC = () => {
             text="Founded in 2016, our journey began with a small but passionate team dedicated to building exceptional software solutions. From our early days, we’ve partnered with clients who continue to work with us, growing together over the years."
           />
         </div>
-        <div className="h-full flex items-end">
+        <div className="flex items-end">
           <Image
             width="2200"
             height="2200"
