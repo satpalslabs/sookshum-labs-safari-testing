@@ -11,13 +11,12 @@ const ImageContainer: React.FC = () => (
         autoPlay={true}
         muted
         loop
-        className="w-fit h-[900px] lg:h-[668px] xs:w-full xs:h-auto float-right xxl:-mt-[7.4%] -mt-[10%] lg:-mt-[18%] sm:-mt-[36%] xs:-mt-[44%] sm:-mr-[22%] -mr-[15%] sm:-ml-6 md:ml-[58px] lg:ml-[50px] lg:object-cover"
+        className="w-fit h-[900px] lg:h-[668px] sm:[493px] xs:w-full xs:h-auto float-right xxl:-mt-[7.4%] -mt-[10%] lg:-mt-[18%] sm:-mt-[18%] xs:-mt-[44%] sm:-mr-[20%] -mr-[15%] sm:-ml-6 md:ml-[58px] lg:ml-[50px] lg:object-cover"
         width={1500}
         height={1500}
         // alt="background image"
-        src="/home/hero/bg-video.mp4"
+        src="/home/hero/bg-video.webm"
       >
-        {/* <source src="/home/hero/bg-video.mp4" type="video/mp4" /> */}
         <img
           src="/home/hero/fallback.png"
           title="Your browser does not support the <video> tag"
