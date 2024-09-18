@@ -6,7 +6,7 @@
 import React, { useEffect } from "react";
 import dynamic from "next/dynamic";
 import data from "../../data/index.json";
-import { runSlider } from "./slider";
+import { callOnce, runSlider } from "./slider";
 // Child components
 const ProcessServiceCard = dynamic(() => import("./card"));
 const ArrowButtons = dynamic(() => import("./arrow-buttons"));
@@ -15,6 +15,10 @@ export type ProcessServiceType = {
   description: string;
 };
 export default function Slider() {
+
+  useEffect(()=>{
+    callOnce()
+  },[])
   return (
     <div className="text-[black] max-w-full relative z-0 SliderContainer">
       <div className="flex flex-col gap-[80px] xs:gap-[30px] sm:gap-[50px] lg:gap-[60px] w-full justify-center">

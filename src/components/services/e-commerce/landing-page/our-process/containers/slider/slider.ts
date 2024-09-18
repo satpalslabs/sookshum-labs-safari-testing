@@ -5,23 +5,25 @@ let startX: number;
 let scrollLeft: number;
 let isDragging = false;
 // Ensure the code only runs on the client side
-if (typeof window !== 'undefined') {
-     $(document).ready(function () {
-        let sliderContainer = $('.Slider');
-        if (sliderContainer.length) {
-            // Mouse events
-            sliderContainer[0].addEventListener("mousedown", start, { passive: true });
-            sliderContainer[0].addEventListener("mousemove", move, { passive: false });
-            sliderContainer[0].addEventListener("mouseup", end);
-            sliderContainer[0].addEventListener("mouseleave", end);
+export function callOnce() {
+    if (typeof window !== 'undefined') {
+        $(document).ready(function () {
+            let sliderContainer = $('.Slider');
+            if (sliderContainer.length) {
+                // Mouse events
+                sliderContainer[0].addEventListener("mousedown", start, { passive: true });
+                sliderContainer[0].addEventListener("mousemove", move, { passive: false });
+                sliderContainer[0].addEventListener("mouseup", end);
+                sliderContainer[0].addEventListener("mouseleave", end);
 
-            // Touch events (set passive to false for touchstart and touchmove)
-            sliderContainer[0].addEventListener("touchstart", start, { passive: false });
-            sliderContainer[0].addEventListener("touchmove", move, { passive: false });
-            sliderContainer[0].addEventListener("touchend", end);
-            sliderContainer[0].addEventListener("touchcancel", end);
-        }
-    });
+                // Touch events (set passive to false for touchstart and touchmove)
+                sliderContainer[0].addEventListener("touchstart", start, { passive: false });
+                sliderContainer[0].addEventListener("touchmove", move, { passive: false });
+                sliderContainer[0].addEventListener("touchend", end);
+                sliderContainer[0].addEventListener("touchcancel", end);
+            }
+        });
+    }
 }
 
 
@@ -129,12 +131,12 @@ function DisableArrow(ind: number) {
 export function start(e: any) {
     isDown = true;
     isDragging = false;
-    
+
     // Prevent default on touchstart to avoid scrolling issues in Safari
     if (e.type === "touchstart") {
         e.preventDefault();
     }
-    
+
     const slider = $('.Slider');
     slider.addClass("active");
 
@@ -180,7 +182,7 @@ export function end(e: any) {
             const $el = $(el);
             const left = $el.offset()?.left ?? 0;
             const width = $el.width() ?? 0;
-            
+
             // Check if the element is in the center
             if (left < center && (left + width) > center) {
                 activeIndex = index;
