@@ -15,9 +15,9 @@ const ImageContainer: React.FC = () => (
         width={1500}
         height={1500}
         // alt="background image"
-        src="/home/hero/bg-video.webm"
+        src="/home/hero/bg-video.mp4"
       >
-        <source src="/home/hero/bg-video.webm" type="video/webm" />
+        <source src="/home/hero/bg-video.mp4" type="video/mp4" />
         <img
           src="/home/hero/fallback.png"
           title="Your browser does not support the <video> tag"
