@@ -26,7 +26,6 @@ const CoreServices: React.FC = () => {
             return <ServiceCard item={item} key={index} />;
           })}
       </div>
-      <img src="/home/core-services/design.svg" />
     </div>
   );
 };
