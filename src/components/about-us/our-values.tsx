@@ -57,12 +57,12 @@ const OurValueCard: React.FC<{ value: valuePoint; isInView: boolean }> = (
   <Card style="mt-[43px] gap-6 w-full" isInView={props.isInView}>
     <div className="px-4 md:px-2 sm:px-[6px] md:flex-1 pb-8 xxl:pb-16 xs:pb-5 flex ">
       <img
-        className="h-[136px] lg:h-[132px] xxl:-mt-[15%] sm:h-[108px] xs:-mt-[16%] lg:-mt-[20%] sm:-mt-[10%] object-cover -mt-[15%]"
+        className="h-[136px] lg:h-[132px] xxl:-mt-[19.3%] sm:h-[108px] xs:-mt-[16%] lg:-mt-[20%] sm:-mt-[10%] object-cover -mt-[30%]"
         alt=""
         src={props.value.icon}
       />
     </div>
-    <div className=" flex flex-col px-4 md:px-2  xxl:-mt-[10%] -mt-[5%] sm:px-[6px] lg:-mt-10 xs:mt-0 grow h-fit gap-6 lg:gap-3 sm:h-auto sm:gap-[0.5rem]">
+    <div className=" flex flex-col px-4 md:px-2  xxl:-mt-[10%] -mt-[10%] sm:px-[6px] lg:-mt-10 xs:mt-0 grow h-fit gap-6 lg:gap-3 sm:h-auto sm:gap-[0.5rem]">
       <H5 text={props.value.title} style="!text-white leading-[1.3]" />
       <Description children={null} text={props.value.about} classes="text-lg !font-normal" />
     </div>
