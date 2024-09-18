@@ -17,7 +17,7 @@ const ImageContainer: React.FC = () => (
         // alt="background image"
         src="/home/hero/bg-video.mp4"
       >
-        <source src="/home/hero/bg-video.mp4" type="video/mp4" />
+        {/* <source src="/home/hero/bg-video.mp4" type="video/mp4" /> */}
         <img
           src="/home/hero/fallback.png"
           title="Your browser does not support the <video> tag"
