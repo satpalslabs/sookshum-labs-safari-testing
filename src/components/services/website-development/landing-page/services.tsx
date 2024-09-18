@@ -49,7 +49,7 @@ export default Services;
 const ServiceCards: React.FC<{ isInView: boolean }> = ({ isInView }) => (
   <div className="grid grid-cols-3 gap-4 w-full xs:grid-cols-1">
     {services.map((service: ServiceType, index: number) => (
-      <Card key={index} style="mt-0 group h-full grow" isInView={isInView}>
+      <Card key={index} style="mt-0 group grow" isInView={isInView}>
         <div className="flex flex-col gap-[32px] sm:gap-3 p-4 lg:p-2 grow">
           <div className="w-[100px] sm:w-[60px] h-[100px] sm:h-[60px] relative rounded-2xl overflow-hidden">
             <Image fill sizes="" alt="" src={service.image} />
