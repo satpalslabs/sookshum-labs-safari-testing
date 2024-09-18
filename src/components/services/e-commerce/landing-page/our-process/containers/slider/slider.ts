@@ -6,20 +6,20 @@ let scrollLeft: number;
 let isDragging = false;
 // Ensure the code only runs on the client side
 if (typeof window !== 'undefined') {
-    $(document).ready(function () {
+   $(document).ready(function () {
         let sliderContainer = $('.Slider');
         if (sliderContainer.length) {
-            // Add event listeners for mouse and touch interactions
+            // Mouse events
             sliderContainer[0].addEventListener("mousedown", start, { passive: true });
-            sliderContainer[0].addEventListener("touchstart", start, { passive: true });
             sliderContainer[0].addEventListener("mousemove", move, { passive: false });
-            sliderContainer[0].addEventListener("touchmove", move, { passive: false });
-
-            // Use jQuery's .on() for other events
-            sliderContainer.on("mouseleave", end);
-            sliderContainer.on("touchcancel", end);
             sliderContainer.on("mouseup", end);
+            sliderContainer.on("mouseleave", end);
+
+            // Touch events
+            sliderContainer[0].addEventListener("touchstart", start, { passive: false });
+            sliderContainer[0].addEventListener("touchmove", move, { passive: false });
             sliderContainer.on("touchend", end);
+            sliderContainer.on("touchcancel", end);
         }
     });
 }
@@ -33,9 +33,11 @@ export function runSlider(clickedDivIndex: number) {
     const sliderWidth = $slider.outerWidth() ?? 0;
     const mainWidth = $main.outerWidth() ?? 0;
     const centerSlider = mainWidth / 2;
+
+    // Use getBoundingClientRect() for more accurate positioning in Safari
     const $clickedDiv = $($sliderElements[clickedDivIndex]);
-    const leftClickedDiv = $clickedDiv.position()?.left ?? 0;
-    const centerClickedDiv = ($clickedDiv.width() ?? 0) / 2;
+    const leftClickedDiv = $clickedDiv[0].getBoundingClientRect().left - $slider[0].getBoundingClientRect().left;
+    const centerClickedDiv = ($clickedDiv[0].getBoundingClientRect().width ?? 0) / 2;
     const rightFromCenter = sliderWidth - leftClickedDiv;
     let translateValue: number;
 
@@ -52,7 +54,8 @@ export function runSlider(clickedDivIndex: number) {
         translateValue = mainWidth - sliderWidth;
     }
 
-    $slider.css("transform", `translateX(${translateValue}px)`);
+    // Round the translateX value to avoid fractional pixels
+    $slider.css("transform", `translateX(${Math.round(translateValue)}px)`);
 
     // Update active slide and UI elements
     $sliderElements.each((index, el) => {
