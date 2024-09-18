@@ -95,29 +95,26 @@ const SecondGrid: React.FC<{ isInView: boolean }> = ({ isInView }) => (
 );
 
 const ThirdGrid: React.FC<{ isInView: boolean }> = ({ isInView }) => (
-  <div className="grid grid-cols-3 grid-rows-9 w-full gap-5 sm:grid-cols-2 xs:!flex xs:flex-col sm:grid-rows-4">
-    <Card
-      style="mt-0 row-span-6 sm:row-span-1 col-span-1 sm:hidden"
-      isInView={isInView}
-    >
+  <div className="grid grid-cols-3 grid-rows-9 w-full gap-5 sm:grid-cols-2 xs:!flex xs:flex-col sm:flex sm:flex-wrap">
+    <Card style="mt-0 row-span-6  col-span-1 sm:hidden" isInView={isInView}>
       <ServiceCard style="min-h-[212px] sm:min-h-0" service={services[5]} />
     </Card>
-    <Card style="mt-0 row-span-3 sm:row-span-1  col-span-1" isInView={isInView}>
+    <Card style="mt-0 row-span-3  sm:w-[48.5%] col-span-1" isInView={isInView}>
       <ServiceCard style="min-h-[212px] sm:min-h-0" service={services[6]} />
     </Card>
-    <Card style="mt-0 row-span-4 sm:row-span-1 col-span-1" isInView={isInView}>
+    <Card style="mt-0 row-span-4 sm:w-[48.5%]  col-span-1" isInView={isInView}>
       <ServiceCard style="min-h-[212px] sm:min-h-0" service={services[7]} />
     </Card>
-    <Card style="mt-0 row-span-3 sm:row-span-2 col-span-1" isInView={isInView}>
+    <Card style="mt-0 row-span-3 sm:w-[48.5%] col-span-1" isInView={isInView}>
       <ServiceCard style="min-h-[212px] sm:min-h-0" service={services[8]} />
     </Card>
     <Card
-      style="mt-0 row-span-5 col-span-1 sm:row-span-2 sm:min-h-full"
+      style="mt-0 row-span-5 col-span-1  sm:w-[48.5%]  sm:min-h-full sm:row-span-1"
       isInView={isInView}
     >
       <ServiceCard style="min-h-[212px] sm:min-h-full" service={services[9]} />
     </Card>
-    <Card style="mt-0 row-span-3 sm:row-span-1 col-span-2" isInView={isInView}>
+    <Card style="mt-0 row-span-3 col-span-2" isInView={isInView}>
       <ServiceCard style="min-h-[212px] sm:min-h-0" service={services[10]} />
     </Card>
   </div>
@@ -131,7 +128,10 @@ const ServiceCard: React.FC<{ service: ServiceType; style: string }> = ({
     className={`flex flex-col gap-5 grow p-4 lg:px-2 xxl:min-h-[auto] ${style}`}
   >
     <H6 text={service.heading} classes="text-white" />
-    <Description text={""} classes="text-lg font-[400] leading-tight grow-1 !font-normal">
+    <Description
+      text={""}
+      classes="text-lg font-[400] leading-tight grow-1 !font-normal"
+    >
       <div dangerouslySetInnerHTML={{ __html: service.description }} />
     </Description>
   </div>
