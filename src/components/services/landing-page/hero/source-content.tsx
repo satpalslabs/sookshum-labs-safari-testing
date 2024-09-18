@@ -17,6 +17,7 @@ const SourceContent: React.FC<contentProps> = (props) => (
           src={props.source}
           muted
           loop
+          playsInline
           className="mt-0"
         >
           <source src={props.source} type="video/webm" />
