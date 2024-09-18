@@ -10,8 +10,8 @@ if (typeof window !== 'undefined') {
         let sliderContainer = $('.Slider');
         if (sliderContainer.length) {
             // Add event listeners for mouse and touch interactions
-            sliderContainer[0].addEventListener("mousedown", start, { passive: false });
-            sliderContainer[0].addEventListener("touchstart", start, { passive: false });
+            sliderContainer[0].addEventListener("mousedown", start, { passive: true });
+            sliderContainer[0].addEventListener("touchstart", start, { passive: true });
             sliderContainer[0].addEventListener("mousemove", move, { passive: false });
             sliderContainer[0].addEventListener("touchmove", move, { passive: false });
 
@@ -138,12 +138,12 @@ export function move(e: any) {
     if (!isDown) return;
     e.preventDefault();
     isDragging = true;
-
-    const slider = $(`.Slider`);
-    const x = e.touches && e.touches.length > 0 ? e.touches[0].pageX : e.pageX;
-    const dist = x - startX;
-
-    slider.css("transform", `translateX(${scrollLeft + dist}px)`);
+    requestAnimationFrame(() => {
+        const slider = $('.Slider');
+        const x = e.touches && e.touches.length > 0 ? e.touches[0].pageX : e.pageX;
+        const dist = x - startX;
+        slider.css('transform', `translateX(${scrollLeft + dist}px)`);
+    });
 }
 
 // Function to end dragging

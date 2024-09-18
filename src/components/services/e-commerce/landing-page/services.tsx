@@ -99,17 +99,17 @@ const ThirdGrid: React.FC<{ isInView: boolean }> = ({ isInView }) => (
     <Card style="mt-0 row-span-6  col-span-1 sm:hidden" isInView={isInView}>
       <ServiceCard style="min-h-[212px] sm:min-h-0" service={services[5]} />
     </Card>
-    <Card style="mt-0 row-span-3  sm:w-[48.5%] col-span-1" isInView={isInView}>
+    <Card style="mt-0 row-span-3  sm:w-[48.5%] xs:w-full col-span-1" isInView={isInView}>
       <ServiceCard style="min-h-[212px] sm:min-h-0" service={services[6]} />
     </Card>
-    <Card style="mt-0 row-span-4 sm:w-[48.5%]  col-span-1" isInView={isInView}>
+    <Card style="mt-0 row-span-4 sm:w-[48.5%] xs:w-full  col-span-1" isInView={isInView}>
       <ServiceCard style="min-h-[212px] sm:min-h-0" service={services[7]} />
     </Card>
-    <Card style="mt-0 row-span-3 sm:w-[48.5%] col-span-1" isInView={isInView}>
+    <Card style="mt-0 row-span-3 sm:w-[48.5%] xs:w-full col-span-1" isInView={isInView}>
       <ServiceCard style="min-h-[212px] sm:min-h-0" service={services[8]} />
     </Card>
     <Card
-      style="mt-0 row-span-5 col-span-1  sm:w-[48.5%]  sm:min-h-full sm:row-span-1"
+      style="mt-0 row-span-5 col-span-1  sm:w-[48.5%] xs:w-full  sm:min-h-full sm:row-span-1"
       isInView={isInView}
     >
       <ServiceCard style="min-h-[212px] sm:min-h-full" service={services[9]} />

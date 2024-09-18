@@ -21,7 +21,7 @@ export default function Slider() {
       <div className="flex flex-col gap-[80px] xs:gap-[30px] sm:gap-[50px] lg:gap-[60px] w-full justify-center">
         <div className="w-full Main ">
           <div className="w-fit relative">
-            <div className="flex w-fit Slider transition-all ease-out duration-[0.5s] px-[80px] lg:px-[44px] sm:px-[30px] select-none	">
+            <div className="flex w-fit Slider transition-all ease-out duration-[0.5s] px-[80px] lg:px-[44px] sm:px-[30px] select-none	touch-pan-x">
               {data["process-services"].map(
                 (industry: ProcessServiceType, index: number) => (
                   <ProcessServiceCard
