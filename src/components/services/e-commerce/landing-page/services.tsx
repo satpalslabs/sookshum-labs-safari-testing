@@ -27,7 +27,7 @@ const Services: React.FC = () => {
         description="We accelerate your success with our fast and reliable eCommerce services tailored to your business to help achieve your business goals efficiently and effectively"
         style="w-[800px] xs:w-full mx-auto"
       >
-        <div className="xs:w-full xs:text-wrap xs:text-center">
+        <div className="xs:w-full xs:text-wrap text-center">
           Our <span className="italic font-light">eCommerce </span>
           services at a glance
         </div>
@@ -95,29 +95,29 @@ const SecondGrid: React.FC<{ isInView: boolean }> = ({ isInView }) => (
 );
 
 const ThirdGrid: React.FC<{ isInView: boolean }> = ({ isInView }) => (
-  <div className="grid grid-cols-3 grid-rows-9 w-full gap-5 sm:grid-cols-2 xs:!flex xs:flex-col sm:grid-rows-1">
+  <div className="grid grid-cols-3 grid-rows-9 w-full gap-5 sm:grid-cols-2 xs:!flex xs:flex-col sm:grid-rows-4">
     <Card
       style="mt-0 row-span-6 sm:row-span-1 col-span-1 sm:hidden"
       isInView={isInView}
     >
       <ServiceCard style="min-h-[212px] sm:min-h-0" service={services[5]} />
     </Card>
-    <Card style="mt-0 row-span-3 col-span-1" isInView={isInView}>
+    <Card style="mt-0 row-span-3 sm:row-span-1  col-span-1" isInView={isInView}>
       <ServiceCard style="min-h-[212px] sm:min-h-0" service={services[6]} />
     </Card>
-    <Card style="mt-0 row-span-4 sm:row-span-3  col-span-1" isInView={isInView}>
+    <Card style="mt-0 row-span-4 sm:row-span-1 col-span-1" isInView={isInView}>
       <ServiceCard style="min-h-[212px] sm:min-h-0" service={services[7]} />
     </Card>
-    <Card style="mt-0 row-span-3 sm:row-span-1 col-span-1" isInView={isInView}>
+    <Card style="mt-0 row-span-3 sm:row-span-2 col-span-1" isInView={isInView}>
       <ServiceCard style="min-h-[212px] sm:min-h-0" service={services[8]} />
     </Card>
     <Card
-      style="mt-0 row-span-5 col-span-1 sm:min-h-full sm:row-span-1"
+      style="mt-0 row-span-5 col-span-1 sm:row-span-2 sm:min-h-full"
       isInView={isInView}
     >
       <ServiceCard style="min-h-[212px] sm:min-h-full" service={services[9]} />
     </Card>
-    <Card style="mt-0 row-span-3 col-span-2" isInView={isInView}>
+    <Card style="mt-0 row-span-3 sm:row-span-1 col-span-2" isInView={isInView}>
       <ServiceCard style="min-h-[212px] sm:min-h-0" service={services[10]} />
     </Card>
   </div>
