@@ -9,21 +9,20 @@ if (typeof window !== 'undefined') {
     $(document).ready(function () {
         let sliderContainer = $('.Slider');
         if (sliderContainer.length) {
-            // Mouse events
-            sliderContainer[0].addEventListener("mousedown", start, { passive: true });
-            sliderContainer[0].addEventListener("mousemove", move, { passive: false });
-            sliderContainer[0].addEventListener("mouseup", end);
-            sliderContainer[0].addEventListener("mouseleave", end);
-
-            // Touch events (set passive to false for touchstart and touchmove)
+            // Add event listeners for mouse and touch interactions
+            sliderContainer[0].addEventListener("mousedown", start, { passive: false });
             sliderContainer[0].addEventListener("touchstart", start, { passive: false });
+            sliderContainer[0].addEventListener("mousemove", move, { passive: false });
             sliderContainer[0].addEventListener("touchmove", move, { passive: false });
-            sliderContainer[0].addEventListener("touchend", end);
+
+            // Handle end events for both mouse and touch
+            sliderContainer[0].addEventListener("mouseleave", end);
             sliderContainer[0].addEventListener("touchcancel", end);
+            sliderContainer[0].addEventListener("mouseup", end);
+            sliderContainer[0].addEventListener("touchend", end);
         }
     });
 }
-
 
 // Function to run the slider to a specific slide
 export function runSlider(clickedDivIndex: number) {
@@ -125,72 +124,77 @@ function DisableArrow(ind: number) {
     }
 }
 
-// Function to handle the start of the drag (mousedown/touchstart)
-export function start(e: any) {
+export function start(e: MouseEvent | TouchEvent) {
     isDown = true;
     isDragging = false;
-
-    // Prevent default on touchstart to avoid scrolling issues in Safari
-    if (e.type === "touchstart") {
-        e.preventDefault();
-    }
-
-    const slider = $('.Slider');
+    const slider = $(`.Slider`);
     slider.addClass("active");
 
-    // Get start position for touch or mouse
-    startX = e.touches && e.touches.length > 0 ? e.touches[0].pageX : e.pageX;
+    if (e instanceof TouchEvent && e.touches.length > 0) {
+        startX = e.touches[0].pageX;
+    } else if (e instanceof MouseEvent) {
+        startX = e.pageX;
+    }
+
     scrollLeft = parseInt(slider.css('transform').split(',')[4]?.trim() || "0", 10);
 }
 
-// Function to handle dragging movement (mousemove/touchmove)
-export function move(e: any) {
+export function move(e: MouseEvent | TouchEvent) {
     if (!isDown) return;
 
-    // Prevent default action during touchmove to prevent scrolling
-    if (e.type === "touchmove") {
-        e.preventDefault();
-    }
+    e.preventDefault();  // Ensure the default behavior (like page scrolling) is prevented
 
     isDragging = true;
-    requestAnimationFrame(() => {
-        const slider = $('.Slider');
-        const x = e.touches && e.touches.length > 0 ? e.touches[0].pageX : e.pageX;
-        const dist = x - startX;
+    const slider = $('.Slider');
+    let x: number;
 
-        // Apply translateX to the slider based on movement
+    if (e instanceof TouchEvent && e.touches.length > 0) {
+        x = e.touches[0].pageX;
+    } else if (e instanceof MouseEvent) {
+        x = e.pageX;
+    } else {
+        return;
+    }
+
+    const dist = x - startX;
+    requestAnimationFrame(() => {
         slider.css('transform', `translateX(${scrollLeft + dist}px)`);
     });
 }
 
-// Function to handle end of drag (mouseup/touchend)
-export function end(e: any) {
+export function end() {
     isDown = false;
-    const slider = $('.Slider');
-    slider.removeClass("active");
+    const $slider = $(`.Slider`);
+    $slider.removeClass("active");
 
     if (isDragging) {
-        // Logic to snap to the nearest slide or update the active index
-        const mainWidth = $(".Main").outerWidth() ?? 0;
-        const sliderElements = slider.children();
-        const center = mainWidth / 2;
-        let activeIndex: number | null = null;
-
-        sliderElements.each((index, el) => {
-            const $el = $(el);
-            const left = $el.offset()?.left ?? 0;
-            const width = $el.width() ?? 0;
-
-            // Check if the element is in the center
-            if (left < center && (left + width) > center) {
-                activeIndex = index;
-            }
-        });
-
-        if (activeIndex !== null) {
-            runSlider(activeIndex);
-        }
+        // Handle the logic for aligning to the closest slide when dragging ends
+        alignSlider();
     }
 
     isDragging = false;
+}
+
+function alignSlider() {
+    const $slider = $(`.Slider`);
+    const $main = $(".Main");
+    const $sliderElements = $slider.children();
+    const centerSlider = ($main.outerWidth() ?? 0) / 2;
+    let activeIndex: number | null = null;
+
+    $sliderElements.each((index, el) => {
+        const $el = $(el);
+        const leftOfDiv = $el.offset()?.left ?? 0;
+        const widthOfDiv = $el.width() ?? 0;
+        if (leftOfDiv <= 0) {
+            activeIndex = index;
+        }
+        if ((leftOfDiv < centerSlider) && ((leftOfDiv + widthOfDiv) > centerSlider)) {
+            activeIndex = index;
+        }
+    });
+
+    if (activeIndex !== null) {
+        runSlider(activeIndex);
+    }
 }
