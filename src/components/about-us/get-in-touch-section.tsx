@@ -34,7 +34,7 @@ const BottomSection: React.FC = () => (
                 }
               />
               <a href="https://careers.sookshum-labs.com/jobs" target="_blank">
-                <DarkButton style="group-hover:!bg-none" text="Careers" />
+                <DarkButton style="group-hover:!bg-none h-full sm:!px-5" text="Careers" />
               </a>
             </div>
           </div>
@@ -42,7 +42,7 @@ const BottomSection: React.FC = () => (
         <Card isInView={true} style={"pb-0 "}>
           <div className="p-8 lg:p-4 flex flex-col gap-[97px] sm:gap-[40px] grow">
             <H2>
-              <div className="text-wrap text-[52px] lg:text-[32px] sm:text-[22px] sm:leading-[1.4] tracking-tight font-poppins font-medium grow">
+              <div className="text-wrap text-[52px] lg:text-[32px] sm:text-[22px] sm:leading-[1.4] w-[80%] lg:w-full tracking-tight font-poppins !font-[600]">
                 Want to create amazing products together?
               </div>
             </H2>

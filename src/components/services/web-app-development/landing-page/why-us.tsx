@@ -46,7 +46,7 @@ const ChooseUsCards: React.FC<{ isInView: boolean }> = ({ isInView }) => (
         <div className="flex flex-col gap-[75px] lg:gap-[62px] sm:gap-[30px] xs:gap-2 p-4 pb-0 h-full">
           <H6
             text={ChooseUsCard.heading}
-            classes="text-white w-[80%] grow xxl:text-3xl md:text-[20px] md:w-full md:leading-[1.2] leading-[1.6]"
+            classes="text-white w-[80%] xxl:text-3xl md:text-[20px] md:w-full md:leading-[1.2] leading-[1.6]"
           />
           <div className="relative w-[160px] lg:w-[126px] sm:w-[100px] h-[160px] lg:h-[126px] sm:h-[100px]">
             <Image

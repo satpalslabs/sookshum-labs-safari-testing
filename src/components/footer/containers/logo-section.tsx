@@ -8,7 +8,7 @@ import Description from "@components/basic-components/description";
 import PrimaryButton from "@components/basic-components/primary-buttom";
 import DarkButton from "@components/basic-components/button";
 const LogoSection: React.FC = () => (
-  <div className="flex grow gap-5 flex-col max-w-[354px] col-span-5 h-fit lg:max-w-[300px]  xs:mx-auto">
+  <div className="flex grow gap-5 flex-col max-w-[354px] col-span-5 h-fit lg:max-w-[300px]  xs:mx-auto sm:mb-5 xs:mb-0">
     <Link href="/">
       {/* Website Logo */}
       <img

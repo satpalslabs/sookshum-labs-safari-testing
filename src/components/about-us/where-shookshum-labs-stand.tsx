@@ -139,7 +139,7 @@ const DetailReviewCard1: React.FC<{
   detail: string;
 }> = (props) => (
   <Card isInView={props.isInView} style="">
-    <div className="flex flex-col gap-[53px] lg:gap-[37px] sm:gap-[55px] xs:gap-[25px] justify-between p-4 pb-0">
+    <div className="flex flex-col gap-[53px] lg:gap-[37px] sm:gap-5 justify-between p-4 pb-0">
       <H2>
         <div className="w-full text-wrap lg:text-[36px] font-[400] sm:text-[24px] leading-[1.4] ">
           {props.heading}

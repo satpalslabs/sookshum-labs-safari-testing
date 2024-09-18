@@ -14,7 +14,7 @@ type props = {
 
 const GraphQLButton: React.FC<props> = ({ text, style,image }) => (
   <Button
-    className={`w-fit !p-6 xs:!p-3 xs:!w-full xs:!overflow-hidden xs:!text-ellipsis !border-borderDarkButton [backdrop-filter:blur(100px)] !text-light flex !gap-2 items-center !rounded-[32px] !border-solid !border !bg-darkButton !shadow-buttonInset !text-center !justify-between !text-nowrap  hover:!bg-buttonGradient ${style} !normal-case`}
+    className={`w-fit !p-6 xs:!p-3 sm:!py-4 xs:!w-full xs:!overflow-hidden xs:!text-ellipsis !border-borderDarkButton [backdrop-filter:blur(100px)] !text-light flex !gap-2 items-center !rounded-[32px] !border-solid !border !bg-darkButton !shadow-buttonInset !text-center !justify-between !text-nowrap  hover:!bg-buttonGradient ${style} !normal-case`}
   >
     <Image
       src={image}

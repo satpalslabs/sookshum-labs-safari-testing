@@ -80,7 +80,7 @@ const ServiceCards: React.FC<{ isInView: boolean }> = ({ isInView }) => {
             width="2200"
             alt=""
             src={services[activeCardIndex]["image-url"]}
-            className="w-fit grow mx-auto h-[340px] lg:h-[216px] sm:h-[173px]"
+            className="w-fit grow mx-auto h-[340px] lg:h-[216px] sm:h-[173px] sm:object-contain"
           />
         </div>
       </Card>

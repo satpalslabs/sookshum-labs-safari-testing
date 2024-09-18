@@ -11,8 +11,20 @@ const SourceContent: React.FC<contentProps> = (props) => (
       }  overflow-y-hidden overflow-x-hidden z-0 grayscale max-w-[1920px] mx-auto`}
     >
       {props.showContent == "video" ? (
-        <video autoPlay={true} muted loop className="mt-0">
+        <video
+          autoPlay={true}
+          poster={props.fallback}
+          src={props.source}
+          muted
+          loop
+          className="mt-0"
+        >
           <source src={props.source} type="video/webm" />
+
+          <img
+            src={props.fallback}
+            title="Your browser does not support the <video> tag"
+          />
         </video>
       ) : (
         <img className="w-full object-cover" src={props.source} alt="" />

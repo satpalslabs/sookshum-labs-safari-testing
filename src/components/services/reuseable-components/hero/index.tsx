@@ -8,6 +8,7 @@ export type HeroSection = {
   URL: string;
   "contact-us": boolean;
   image: boolean;
+  fallback:string;
   gradientTextStyle: string;
   aboutPage: string;
   style: {
@@ -23,6 +24,7 @@ const Hero: React.FC<HeroSection> = (props) => (
       <SourceContent
         showContent={props?.image ? "image" : "video"}
         source={props.URL}
+        fallback={props.fallback}
         style={props.style}
       />
     )}

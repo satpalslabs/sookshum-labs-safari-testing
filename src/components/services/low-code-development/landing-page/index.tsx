@@ -17,6 +17,7 @@ import { HomeProps } from "@app/page";
 const content_heroSection: HeroSection = {
   URL: "/services/website-development/landing-page/hero-background-image.png",
   "contact-us": true,
+  fallback:"",
   image: true,
   buttonText: "Low Code Development",
   additionalDescription: "",

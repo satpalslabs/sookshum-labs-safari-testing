@@ -37,7 +37,7 @@ const PredictableResults: React.FC = () => {
                   height="2200"
                   alt=""
                   src={predictedResultPoint.icon}
-                  className="w-fit h-[162px] lg:h-[100px] sm:h-[80px] shrink-0"
+                  className="w-fit h-[162px] lg:h-[100px] sm:h-[80px] sm:object-contain shrink-0"
                 />
                 <H5
                   text={predictedResultPoint.title}

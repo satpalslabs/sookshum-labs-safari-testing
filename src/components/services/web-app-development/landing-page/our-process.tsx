@@ -64,7 +64,7 @@ const OurProcessDetailComponent: React.FC<{ isInView: boolean }> = ({
         <Image
           width="1200"
           height="1200"
-          className="h-[297px] lg:h-[230px] xs:h-[150px] lg:px-[15px] xxl:w-fit w-fit mx-auto"
+          className="h-[297px] lg:h-[230px] sm:w-[50%] sm:object-contain xs:h-[150px] lg:px-[15px] xxl:w-fit w-fit mx-auto"
           src={processData[activeProcess].image}
           alt=""
         />

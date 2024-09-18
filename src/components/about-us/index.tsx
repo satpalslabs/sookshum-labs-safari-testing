@@ -19,6 +19,7 @@ const content_heroSection: HeroSection = {
   "contact-us": false,
   additionalDescription: "",
   gradientText: "About us",
+  fallback:"",
   style: {
     sourceStyle:
       "xxl:left-[50%] left-[8%] xxl:scale-[1.1] xxl:top-[-18%] xxl:-translate-x-[50%] left-[15%] lg:left-[2%] xs:-left-[4%]",

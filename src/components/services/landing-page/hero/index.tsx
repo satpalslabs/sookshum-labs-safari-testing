@@ -7,6 +7,7 @@ export type contentProps = {
     gradientDivStyle: string;
     sourceStyle: string;
   };
+  fallback:string;
   source: string;
 };
 const Hero: React.FC = () => (
@@ -21,6 +22,7 @@ const Hero: React.FC = () => (
         gradientDivStyle: "",
         sourceStyle: "",
       }}
+      fallback="/services/fallback.png"
       source="/services/service.mp4"
     />
   </div>

@@ -5,7 +5,7 @@ import React from "react";
 import { HeroSection } from ".";
 
 const GradientSection: React.FC<HeroSection> = (props) => (
-  <div className="w-full xxl:w-[80%] relative z-20 mt-[32px] lg:mt-[77px] px-[81px] h-fit overflow-hidden sm:px-5 md:px-[20px] lg:px-10 2xs:px-5 pt-[72px] pb-[65] lg:pt-[0px] sm:pb-8 sm:pt-0 xs:pt-0 xs:pb-16 max-w-[1920px] mx-auto">
+  <div className="w-full xxl:w-full relative z-20 mt-[32px] lg:mt-[77px] px-[81px] h-fit overflow-hidden sm:px-5 md:px-[20px] lg:px-10 2xs:px-5 pt-[72px] pb-[65] lg:pt-[0px] sm:pb-8 sm:pt-0 xs:pt-0 xs:pb-16 max-w-[1920px] mx-auto">
     <div className=" flex flex-col items-center justify-center w-full text-center gap-[30px] lg:gap-4 xs:gap-3">
       <DarkButton text={props.buttonText} style="" />
       {props.additionalDescription && (
