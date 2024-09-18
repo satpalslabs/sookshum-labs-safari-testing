@@ -28,7 +28,7 @@ const OurProcess = () => {
         description="Whether you want to consult an idea, add missing capabilities, quickly expand your team, or hand over a  project - we’ve got you covered."
         style="w-[794px] lg:w-[491px] lg:mx-auto xs:w-full"
       >
-        <div className="w-[80%] lg:w-[637px] sm:w-full xs:w-[70%] xs:text-balance lg:leading-[1.2] text-wrap tracking-tight text-center mx-auto ">
+        <div className="w-[80%] lg:w-[637px] sm:w-full xs:px-5 3xs:px-0 xs:text-balance lg:leading-[1.2] text-wrap tracking-tight text-center mx-auto ">
           Full
           <span className="italic font-light w-full"> digital product </span>
           expertise under one roof

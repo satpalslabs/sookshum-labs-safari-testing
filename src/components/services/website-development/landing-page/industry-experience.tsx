@@ -64,10 +64,10 @@ const IndustryExperienceDetailedComponent: React.FC = () => {
             />
             <div className="absolute bg-darkOpacity w-full h-full z-10 rounded-full top-0 left-0">
               {/* Text container */}
-              <div className="flex flex-col gap-[26px] w-[411px] sm:w-[282px] mx-auto justify-center items-center h-full text-center xs:hidden">
-                <H3 style="sm:text-[14px]" text={activeIndustry.heading} />
+              <div className="flex flex-col gap-[26px] w-[411px] sm:w-[282px] mx-auto justify-center items-center h-full text-center xs:w-[205px] xs:gap-2">
+                <H3 style="sm:text-[14px] xs:text-[13px]" text={activeIndustry.heading} />
                 <Description classes="grow-0 !font-medium" text={null}>
-                  <div className="text-[20px] md:text-[20px] w-full sm:text-[14px] leading-[1.3]">
+                  <div className="text-[20px] md:text-[20px] xs:text-[10px] w-full sm:text-[14px] leading-[1.3]">
                     {activeIndustry["detail-description"]}
                   </div>
                 </Description>

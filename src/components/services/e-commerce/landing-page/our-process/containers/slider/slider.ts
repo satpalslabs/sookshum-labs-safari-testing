@@ -4,6 +4,26 @@ let isDown = false;
 let startX: number;
 let scrollLeft: number;
 let isDragging = false;
+// Ensure the code only runs on the client side
+if (typeof window !== 'undefined') {
+    $(document).ready(function () {
+        let sliderContainer = $('.Slider');
+        if (sliderContainer.length) {
+            // Add event listeners for mouse and touch interactions
+            sliderContainer[0].addEventListener("mousedown", start, { passive: false });
+            sliderContainer[0].addEventListener("touchstart", start, { passive: false });
+            sliderContainer[0].addEventListener("mousemove", move, { passive: false });
+            sliderContainer[0].addEventListener("touchmove", move, { passive: false });
+
+            // Use jQuery's .on() for other events
+            sliderContainer.on("mouseleave", end);
+            sliderContainer.on("touchcancel", end);
+            sliderContainer.on("mouseup", end);
+            sliderContainer.on("touchend", end);
+        }
+    });
+}
+
 
 // Function to run the slider to a specific slide
 export function runSlider(clickedDivIndex: number) {
@@ -138,15 +158,14 @@ export function end(e: any) {
         const $sliderElements = $slider.children();
         const centerSlider = ($main.outerWidth() ?? 0) / 2;
         let activeIndex: number | null = null;
-
         $sliderElements.each((index, el) => {
             const $el = $(el);
-            const leftOfDiv = $el.position().left ?? 0;
+            const leftOfDiv = $el.offset()?.left ?? 0;
             const widthOfDiv = $el.width() ?? 0;
-
             if (leftOfDiv <= 0) {
                 activeIndex = index;
-            } else if (leftOfDiv < centerSlider && (leftOfDiv + widthOfDiv) > centerSlider) {
+            }
+            if ((leftOfDiv < centerSlider) && ((leftOfDiv + widthOfDiv) > centerSlider)) {
                 activeIndex = index;
             }
         });
