@@ -2,7 +2,7 @@
  * This component contains the Footer section.
  */
 import dynamic from "next/dynamic";
-import type React from "react";
+
 // Footer's sub-sections
 const BottomSection = dynamic(() => import("./containers/bottom-section"));
 const TopSection = dynamic(() => import("./containers/top-section"));

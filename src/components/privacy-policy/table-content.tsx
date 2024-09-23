@@ -1,9 +1,9 @@
 "use client";
-import Card from "@components/basic-components/card";
-import data from "./data/table-content.json";
+const Card = dynamic(() => import('@components/basic-components/card'));import data from "./data/table-content.json";
 import H3 from "@components/basic-components/headings/H3";
 import { useState } from "react";
 import { RightAngleArrow } from "@components/header/containers/services";
+import dynamic from "next/dynamic";
 
 type TableContentDataItem = {
   title: string;

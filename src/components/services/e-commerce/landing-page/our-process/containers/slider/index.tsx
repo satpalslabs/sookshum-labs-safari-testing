@@ -3,7 +3,7 @@
  * This client component contains a slider.
  */
 
-import React, { useEffect } from "react";
+import  { useEffect } from "react";
 import dynamic from "next/dynamic";
 import data from "../../data/index.json";
 import { callOnce, runSlider } from "./slider";

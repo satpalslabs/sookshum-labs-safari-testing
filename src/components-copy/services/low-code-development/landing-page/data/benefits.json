@@ -1,0 +1,28 @@
+{
+    "benefits": [
+        {
+            "title":"1000 times + Faster",
+            "description":"With reusable components and visual interfaces you can create applications and systems a thousand times faster than with traditional software development."
+        },
+        {
+            "title":"+ Productivity with - Budget",
+            "description":"By simplifying and optimizing tasks, development teams work more efficiently, saving twice as much time and money without compromising quality. "
+        },
+        {
+            "title":"Flexibility",
+            "description":"Easy integration with existing systems and collaboration with other applications and services."
+        },
+        {
+            "title":"Scalability",
+            "description":"Low Code solutions can be adapted in an agile way to the growth and changing demands of your business."
+        },
+        {
+            "title":"Collaborate Process",
+            "description":"Review progress any time, and work directly with our designers and engineers to cut down on back and forth. "
+        },
+        {
+            "title":"Constant innovation",
+            "description":"With rapid iteration, you can quickly test new ideas, allowing for more agile and efficient decision-making."
+        }
+    ]
+}

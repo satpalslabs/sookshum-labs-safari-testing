@@ -4,8 +4,9 @@
 
 import Description from "@components/basic-components/description";
 import H6 from "@components/basic-components/headings/H6";
-import React from "react";
+
 import { ClientReview } from ".";
+import Image from "next/image";
 
 const Testimonials = ({
   review,
@@ -28,7 +29,9 @@ const Testimonials = ({
     }}
     className={`slideCard h-[360px] max-w-fit w-max  min-w-[408px] md:h-[300px] xs:h-[200px] p-4 py-8 bg-innerContainer shadow-buttonInset rounded-[32px] transition-all duration-500 bg-slider-bg-size bg-[100%_100%] hover:bg-[0%_0%]  border border-transparent cursor-pointer hover:!border-borderPrimary overflow-hidden flex flex-col xs:rounded-2xl gap-6 xs:gap-4 lg:p-3 lg:py-4 lg:rounded-[26px] xs:p-[10px]`}
   >
-    <img
+    <Image
+      height={72}
+      width={600}
       src="/home/testimonials/stars.png"
       alt=""
       className="h-[24px] w-[200px] pl-3 xs:h-4 xs:w-[150px]"
@@ -48,8 +51,6 @@ const Testimonials = ({
     </div>
     <div className="pl-3 flex gap-6 ">
       <img
-        height={400}
-        width={400}
         src={review["client-details"]["client-photo"]}
         alt=""
         className="h-12 w-12 xl:h-[46px] xl:w-[46px] rounded-full xs:w-8 xs:h-8"

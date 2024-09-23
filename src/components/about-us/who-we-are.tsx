@@ -4,7 +4,7 @@ import H2 from "@components/basic-components/headings/H2";
 import H3 from "@components/basic-components/headings/H3";
 import { useInView } from "@lib/use-in-view";
 import Image from "next/image";
-import React, { useRef } from "react";
+import  { useRef } from "react";
 
 const WhoWeAre: React.FC = () => {
   const ref = useRef<HTMLDivElement>(null);

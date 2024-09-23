@@ -2,28 +2,36 @@
  * This component contains the image container of hero section.
  */
 
-import type React from "react";
+import Image from "next/image";
 
 const ImageContainer: React.FC = () => (
   <div className="relative w-fit min-h-fit float-right ma">
     <div className="xs:mt-[203px] 2xs:mt-[240px] sm:mt-[173px] md:mt-[90px] relative lg:mt-24 bg-[#151515] overflow-visible">
       <video
         autoPlay={true}
-        poster="/home/hero/fallback.png"
+        poster="/home/hero/fallback.webp"
         muted
         loop
         playsInline
-        className="w-fit h-[900px] lg:h-[568px] sm:[493px] xs:w-full float-right xxl:-mt-[7.4%] -mt-[10%] lg:-mt-[18%] sm:-mt-[18%] xs:-mt-[54%] sm:-mr-[20%] -mr-[15%] sm:-ml-6 md:ml-[58px] lg:ml-[50px] xs:h-[350px] lg:object-contain"
+        className="w-fit h-[900px] lg:h-[568px] sm:h-[493px] xs:w-full float-right xxl:-mt-[7.4%] -mt-[10%] lg:-mt-[18%] sm:-mt-[18%] xs:-mt-[54%] sm:-mr-[20%] -mr-[15%] sm:-ml-6 md:ml-[58px] lg:ml-[50px] xs:h-[350px] lg:object-contain"
         width={1500}
         height={1500}
-        // alt="background image"
-        src="/home/hero/bg-video.webm"
+        preload="auto"
       >
-        <img
-          src="/home/hero/fallback.png"
+        <source src="/home/hero/bg-video.webm" type="video/webm" />
+        <source src="/home/hero/bg-video.mp4" type="video/mp4" />{" "}
+        {/* Fallback */}
+        <Image
+          width={1200}
+          height={600}
+          className="w-fit h-[900px] lg:h-[568px] sm:h-[493px] xs:w-full float-right xxl:-mt-[7.4%] -mt-[10%] lg:-mt-[18%] sm:-mt-[18%] xs:-mt-[54%] sm:-mr-[20%] -mr-[15%] sm:-ml-6 md:ml-[58px] lg:ml-[50px] xs:h-[350px] lg:object-contain"
+          alt="background image"
+          src="/home/hero/fallback.webp"
+          priority
           title="Your browser does not support the <video> tag"
         />
       </video>
+
       {/* <div
         className={`w-[110%] -left-[10%] right-0 h-[900px] lg:h-[668px] xs:w-[400px] xs:h-[400px] float-right xxl:-mt-[7.4%] -mt-[10%] lg:-mt-[18%] sm:-mt-[36%] lg:mr-0 mr-[2%] sm:-mr-[22%]  md:ml-[58px] lg:ml-[50px] xs:-mt-[44%] bg-gradient-to-l from-black via-gray to-black absolute`}
       ></div> */}
@@ -34,7 +42,7 @@ const ImageContainer: React.FC = () => (
       {/* <div
         className={`h-[600px] w-[500px] right-0 top-[-50%] -mt-[40%] bg-gradient-to-l from-black via-transparent to-black absolute`}
       >ds</div> */}
-      {/* <img
+      {/* <Image
       src="/home/hero/hero-lg.png"
       className="w-full h-full ml-[0px] hidden xs:block "
       width={1500}

@@ -1,0 +1,84 @@
+{
+    "industries": [
+        {
+            "heading": "Travel & Hospitality",
+            "detail-description": "Harness the power of advanced technology to transform your travel and hospitality services with our digital solutions designed to meet your unique needs. Elevate guest experiences, streamline operations, and drive efficiency with our tailored products.",
+            "bg-image": "/services/website-development/landing-page/industry-experience/travel-hospitality.png",
+            "icon-image": "/services/website-development/landing-page/industry-experience/icons/travel-hospitality.png",
+            "style": {
+                "top": "25.26%",
+                "left": "0px"
+            }
+        },
+        {
+            "heading": "E-Commerce",
+            "detail-description": "Elevate your e-commerce business with cutting-edge technology tailored to your specific needs. Our digital solutions streamline operations, enhance customer experiences, and boost sales, empowering you to stay ahead in the competitive online marketplace.",
+            "bg-image": "/services/website-development/landing-page/industry-experience/e-commerce.png",
+            "icon-image": "/services/website-development/landing-page/industry-experience/icons/e-commerce.png",
+            "style": {
+                "top": "48.94%",
+                "left": "-3.30%"
+            }
+        },
+        {
+            "heading": "Media & Entertainment",
+            "detail-description": "Transform your media and entertainment operations with state-of-the-art technology crafted to suit your unique needs. Our digital products enhance content creation, streamline distribution, and elevate audience engagement, revolutionizing your industry approach.",
+            "bg-image": "/services/website-development/landing-page/industry-experience/media.png",
+            "icon-image": "/services/website-development/landing-page/industry-experience/icons/media.png",
+            "style": {
+                "bottom": "20.10%",
+                "left": "3.70%"
+            }
+        },
+        {
+            "heading": "Real Estate",
+            "detail-description": "Leverage cutting-edge technology to revolutionize your real estate operations with our digital products tailored to your specific needs.",
+            "bg-image": "/services/website-development/landing-page/industry-experience/real-estate.png",
+            "icon-image": "/services/website-development/landing-page/industry-experience/icons/real-estate.png",
+            "style": {
+                "bottom": "1.05%",
+                "left": "23.41%"
+            }
+        },
+        {
+            "heading": "ERP",
+            "detail-description": "Revolutionize your business operations with advanced ERP solutions tailored to your specific needs. Our cutting-edge technology integrates seamlessly into your processes, optimizing efficiency, enhancing data visibility, and driving strategic decision-making across your organization.",
+            "bg-image": "/services/website-development/landing-page/industry-experience/erp.png",
+            "icon-image": "/services/website-development/landing-page/industry-experience/icons/erp.png",
+            "style": {
+                "bottom": "1.05%",
+                "right": "23.41%"
+            }
+        },
+        {
+            "heading": "HealthCare",
+            "detail-description": "Transform healthcare delivery with innovative technology solutions tailored to your specific needs. Our digital products enhance patient care, streamline workflows, and improve data management, driving efficiency and better outcomes in the healthcare sector.",
+            "bg-image": "/services/website-development/landing-page/industry-experience/health-care.png",
+            "icon-image": "/services/website-development/landing-page/industry-experience/icons/health-care.png",
+            "style": {
+                "bottom": "20.10%",
+                "right": "3.70%"
+            }
+        },
+        {
+            "heading": "E-Learning",
+            "detail-description": "Elevate your e-learning platform with cutting-edge technology designed to meet your unique needs. Our digital solutions enhance course delivery, boost learner engagement, and streamline administrative tasks, transforming the educational experience and driving success.",
+            "bg-image": "/services/website-development/landing-page/industry-experience/e-learning.png",
+            "icon-image": "/services/website-development/landing-page/industry-experience/icons/e-learning.png",
+            "style": {
+                "top": "48.94%",
+                "right": "-3.30%"
+            }
+        },
+        {
+            "heading": "Logistics",
+            "detail-description": "Optimize your logistics operations with advanced technology tailored to your specific needs. Our digital solutions streamline supply chain management, improve route efficiency, and enhance real-time tracking, transforming your logistics processes and driving operational excellence.",
+            "bg-image": "/services/website-development/landing-page/industry-experience/logistics.png",
+            "icon-image": "/services/website-development/landing-page/industry-experience/icons/logistics.png",
+            "style": {
+                "top": "25.26%",
+                "right": "0px"
+            }
+        }
+    ]
+}

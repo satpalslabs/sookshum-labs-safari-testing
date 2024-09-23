@@ -1,0 +1,194 @@
+{
+    "services": [
+        {
+            "label": "ECommerce Development",
+            "link": "/ecommerce-development-services",
+            "content": {
+                "technologies": [
+                    {
+                        "logo": "/header/logos/shopify.png",
+                        "title": "Shopify",
+                        "about": "Over 4.4 million business are thriving on Shopify. Let’s put your business right at the to with powerful Shopify stores and mobile apps.",
+                        "link": "/shopify-development-services"
+                    },
+                    {
+                        "logo": "/header/logos/magento.png",
+                        "title": "Magento",
+                        "about": "Big brands are thriving with Magento stores. Are you missing out? We can build a feature-rich Magento 2 store for you to lead and scale online!",
+                        "link": "/magento-development-services"
+                    },
+                    {
+                        "logo": "/header/logos/wooCommerce.png",
+                        "title": "WooCommerce",
+                        "about": "Ready to join over 4.7 million successful business using WooCommerce. We build online stores that look amazing and boost sales.",
+                        "link": ""
+                    }
+                ]
+            }
+        },
+        {
+            "label": "Web App Development",
+            "link": "/web-app-development-services",
+            "content": {
+                "technologies": [
+                    {
+                        "logo": "/header/logos/MERN.png",
+                        "title": "MERN Stack Development",
+                        "about": "",
+                        "link": "/mern-stack-development-services"
+                    },
+                    {
+                        "logo": "/header/logos/nodejs.png",
+                        "title": "Nodejs Development",
+                        "about": "",
+                        "link": "/nodejs-development-services"
+                    },
+                    {
+                        "logo": "/header/logos/nestjs.png",
+                        "title": "Nestjs Development",
+                        "about": "",
+                        "link": "nestjs-development-services"
+                    },
+                    {
+                        "logo": "/header/logos/laravel.png",
+                        "title": "Laravel Development",
+                        "about": "",
+                        "link": "/laravel-development-services"
+                    },
+                    {
+                        "logo": "/header/logos/php.png",
+                        "title": "PHP Development",
+                        "about": "",
+                        "link": "/php-development-services"
+                    }
+                ]
+            }
+        },
+        {
+            "label": "Mobile App Development",
+            "link": "/mobile-app-development-services",
+            "content": {
+                "technologies": [
+                    {
+                        "logo": "/header/logos/flutter.png",
+                        "title": "Flutter",
+                        "about": "",
+                        "link": "/flutter-app-development-services"
+                    }
+                ]
+            }
+        },
+        {
+            "label": "UI/UX Design",
+            "link": "/ui-ux-design-services",
+            "content": {
+                "technologies": [
+                    {
+                        "logo": "/header/logos/ux&ui.png",
+                        "title": "UI/UX Design",
+                        "about": "",
+                        "link": "/ui-ux-design-services"
+                    }
+                ]
+            }
+        },
+        {
+            "label": "Low Code Development",
+            "link": "/low-code-development-services",
+            "content": {
+                "technologies": [
+                    {
+                        "logo": "/header/logos/retool.png",
+                        "title": "Retool",
+                        "about": "",
+                        "link": "/retool-development-services"
+                    },
+                    {
+                        "logo": "/header/logos/appsmith.png",
+                        "title": "Appsmith",
+                        "about": "",
+                        "link": "/appsmith-development-services"
+                    },
+                    {
+                        "logo": "/header/logos/tooljet.png",
+                        "title": "Tooljet",
+                        "about": "",
+                        "link": "/tooljet-development-services"
+                    }
+                ]
+            }
+        },
+        {
+            "label": "Admin Development",
+            "link": "/admin-development-services",
+            "content": {
+                "technologies": [
+                    {
+                        "logo": "/header/logos/retool.png",
+                        "title": "Retool",
+                        "about": "",
+                        "link": "/retool-development-services"
+                    },
+                    {
+                        "logo": "/header/logos/appsmith.png",
+                        "title": "Appsmith",
+                        "about": "",
+                        "link": "/appsmith-development-services"
+                    },
+                    {
+                        "logo": "/header/logos/tooljet.png",
+                        "title": "Tooljet",
+                        "about": "",
+                        "link": "/tooljet-development-services"
+                    },
+                    {
+                        "logo": "/header/logos/refine.png",
+                        "title": "Refine",
+                        "about": "",
+                        "link": "/refine-development-services"
+                    },
+                    {
+                        "logo": "/header/logos/nextjs.png",
+                        "title": "Nextjs",
+                        "about": "",
+                        "link": ""
+                    }
+                ]
+            }
+        },
+        {
+            "label": "CMS Development",
+            "link": "/cms-development-services",
+            "content": {
+                "technologies": [
+                    {
+                        "logo": "/header/logos/wordpress.png",
+                        "title": "Wordpress",
+                        "about": "",
+                        "link": "/wordpress-development-services"
+                    }
+                ]
+            }
+        },
+        {
+            "label": "Website Development",
+            "link": "/website-development-services",
+            "content": {
+                "technologies": [
+                    {
+                        "logo": "/header/logos/wordpress.png",
+                        "title": "Wordpress",
+                        "about": "",
+                        "link": "/wordpress-development-services"
+                    },
+                    {
+                        "logo": "/header/logos/webflow.png",
+                        "title": "Webflow",
+                        "about": "",
+                        "link": "/webflow-development-services"
+                    }
+                ]
+            }
+        }
+    ]
+}

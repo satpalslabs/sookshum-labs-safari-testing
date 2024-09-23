@@ -3,7 +3,7 @@
  * This component contains the Button.
  */
 
-import type React from "react";
+
 
 type props = {
   children: React.ReactNode;

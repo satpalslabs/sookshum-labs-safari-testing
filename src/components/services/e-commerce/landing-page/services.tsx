@@ -1,11 +1,11 @@
 "use client";
 import SectionHeader from "@components/basic-components/section-header";
-import React, { useRef } from "react";
+import  { useRef } from "react";
 import data from "./data/services.json";
 import { useInView } from "@lib/use-in-view";
-import Card from "@components/basic-components/card";
-import Description from "@components/basic-components/description";
+const Card = dynamic(() => import('@components/basic-components/card'));import Description from "@components/basic-components/description";
 import H6 from "@components/basic-components/headings/H6";
+import dynamic from "next/dynamic";
 
 type ServiceType = {
   heading: string;

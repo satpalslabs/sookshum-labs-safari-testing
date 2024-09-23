@@ -1,9 +1,10 @@
 /**
  * Route Component.
  */
-// export const dynamic = 'force-dynamic';
+export const dynamic = "force-dynamic";
 
 import Sections from "@components/home";
+
 // import { headers } from "next/headers";
 import { Suspense } from "react";
 
@@ -11,19 +12,21 @@ export interface HomeProps {
   isBot: boolean;
 }
 
-// export function is_Bot() {
-//   let is_bot = false;
-//   is_bot = headers().get("x-is-bot")
-//     ? headers().get("x-is-bot") === "true"
-//     : is_bot;
-//   return is_bot;
-// }
+export function is_Bot() {
+  let is_bot = false;
+  // is_bot = headers().get("x-is-bot")
+  //   ? headers().get("x-is-bot") === "true"
+  //   : is_bot;
+  return is_bot;
+}
 
-export default function Home() {
-  const isBot = false;
+const Home: React.FC = () => {
+  const isBot = is_Bot();
   return (
     <Suspense fallback={null}>
       <Sections isBot={isBot} />
     </Suspense>
   );
-}
+};
+
+export default Home;

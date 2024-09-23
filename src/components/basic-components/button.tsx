@@ -4,8 +4,7 @@
  */
 
 import { Button } from "@mui/material";
-import type React from "react";
-import { useEffect, useState } from "react";
+
 
 type props = {
   text: string;

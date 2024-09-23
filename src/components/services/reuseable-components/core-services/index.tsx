@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+import  { useRef } from "react";
 import Service from "./service-card";
 import serviceData from "../../data/services.json";
 import { useInView } from "@lib/use-in-view";

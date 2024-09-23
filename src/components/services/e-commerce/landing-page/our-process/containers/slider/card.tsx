@@ -3,7 +3,7 @@
  */
 
 import Description from "@components/basic-components/description";
-import React from "react";
+
 import { ProcessServiceType } from ".";
 import H5 from "@components/basic-components/headings/H5";
 import { runSlider } from "./slider";

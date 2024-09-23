@@ -1,7 +1,7 @@
 "use client";
 import Description from "@components/basic-components/description";
 import H2 from "@components/basic-components/headings/H2";
-import React, { useEffect } from "react";
+import  { useEffect } from "react";
 import { animation } from "./scroll-animation";
 const Cover: React.FC = () => {
   useEffect(() => {

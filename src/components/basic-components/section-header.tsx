@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import  { ReactNode } from "react";
 import DarkButton from "./button";
 import H2 from "./headings/H2";
 import Description from "./description";

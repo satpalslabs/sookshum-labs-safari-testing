@@ -1,12 +1,11 @@
 "use client";
-import Card from "@components/basic-components/card";
-import Description from "@components/basic-components/description";
+const Card = dynamic(() => import('@components/basic-components/card'));import Description from "@components/basic-components/description";
 import H2 from "@components/basic-components/headings/H2";
-import H6 from "@components/basic-components/headings/H6";
 import { useInView } from "@lib/use-in-view";
 import data from "./data/where-shookshum-labs-stand.json";
-import React, { useRef } from "react";
+import  { useRef } from "react";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 
 type PrimaryCard = {
   count: string;

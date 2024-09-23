@@ -1,7 +1,7 @@
 import DarkButton from "@components/basic-components/button";
 import GradientText from "@components/basic-components/gradient-text";
-import PrimaryButton from "@components/basic-components/primary-buttom";
-import React from "react";
+import PrimaryButton from "@components/basic-components/primary-button";
+
 type props = {
   buttonText: string;
   gradientText: string;
@@ -21,7 +21,7 @@ const GradientSection: React.FC<props> = ({ buttonText, gradientText }) => (
           icon={true}
           text="Request a quote"
           style=""
-          link="/contact"
+          link="/contact-us"
         />
       </div>
     </div>

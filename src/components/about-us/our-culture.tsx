@@ -4,7 +4,7 @@ import Description from "@components/basic-components/description";
 import H3 from "@components/basic-components/headings/H3";
 import { useInView } from "@lib/use-in-view";
 import Image from "next/image";
-import React, { useRef } from "react";
+import  { useRef } from "react";
 
 const OurCulture: React.FC = () => {
   const ref = useRef<HTMLDivElement>(null);

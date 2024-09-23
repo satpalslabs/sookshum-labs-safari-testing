@@ -3,8 +3,8 @@
  */
 
 import { dataItemType } from ".";
-import H5 from "@components/basic-components/headings/H5";
-import H6 from "@components/basic-components/headings/H6";
+// import H5 from "@components/basic-components/headings/H5";
+// const H6 = dynamic(() => import("@components/basic-components/headings/H6"));
 
 const TextContainer = ({ item }: { item: dataItemType }) => (
   <div className="px-4 lg:px-3 md:px-2 grow xs:px-4 absolute bottom-6 z-66">

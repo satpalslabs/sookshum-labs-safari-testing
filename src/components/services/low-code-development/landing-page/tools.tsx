@@ -1,14 +1,14 @@
 "use client";
 import SectionHeader from "@components/basic-components/section-header";
 import { useInView } from "framer-motion";
-import React, { useRef } from "react";
+import  { useRef, useState } from "react";
 import data from "./data/tools.json";
 import H6 from "@components/basic-components/headings/H6";
-import Card from "@components/basic-components/card";
-import Image from "next/image";
+const Card = dynamic(() => import('@components/basic-components/card'));import Image from "next/image";
 import { Collapse } from "@mui/material";
 import Description from "@components/basic-components/description";
 import { RightAngleArrow } from "@components/header/containers/services";
+import dynamic from "next/dynamic";
 
 type Tool = {
   name: string;
@@ -44,7 +44,7 @@ export default Tools;
 const ToolsDetailComponent: React.FC<{ isInView: boolean }> = ({
   isInView,
 }) => {
-  const [activeFaq, setActiveFaq] = React.useState<number | null>(1);
+  const [activeFaq, setActiveFaq] = useState<number | null>(1);
 
   return (
     <section

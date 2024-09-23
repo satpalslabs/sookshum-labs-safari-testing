@@ -1,4 +1,4 @@
-import React from "react";
+
 import Hero, {
   HeroSection,
 } from "@components/services/reuseable-components/hero";
@@ -7,7 +7,7 @@ import Services from "./services";
 import Testimonials from "@components/basic-components/testimonials";
 import ChooseUs from "./choose-us";
 import Work from "./work";
-import Faqs from "@components/services/reuseable-components/faqs";
+// import Faqs from "@components/services/reuseable-components/faqs";
 import Technologies from "./technologies";
 import LetsConnect from "@components/services/e-commerce/landing-page/need-project";
 import OurProcess from "./our-process";

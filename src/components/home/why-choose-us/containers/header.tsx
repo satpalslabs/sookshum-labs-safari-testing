@@ -2,7 +2,8 @@
  * This file contains the Header section of why choose us section.
  */
 
-import SectionHeader from "@components/basic-components/section-header";
+import dynamic from "next/dynamic";
+const SectionHeader = dynamic(() => import("@components/basic-components/section-header"));
 
 const Header = () => (
   <SectionHeader

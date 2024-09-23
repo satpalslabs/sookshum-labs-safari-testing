@@ -1,0 +1,172 @@
+{
+    "web-app-development-technologies": [
+        {
+            "heading": "Web platform",
+            "platforms": [
+                {
+                    "name": "Front-end Development",
+                    "technologies": [
+                        {
+                            "name": "Next.JS",
+                            "logo": "/services/web-app-development/landing-page/technologies/next.png"
+                        },
+                        {
+                            "name": "React.JS",
+                            "logo": "/services/web-app-development/landing-page/technologies/react.png"
+                        },
+                        {
+                            "name": "Astro",
+                            "logo": "/services/web-app-development/landing-page/technologies/astro.png"
+                        },
+                        {
+                            "name": "Material UI",
+                            "logo": "/services/web-app-development/landing-page/technologies/mui.png"
+                        },
+                        {
+                            "name": "Ant Design",
+                            "logo": "/services/web-app-development/landing-page/technologies/ant.png"
+                        },
+                        {
+                            "name": "shadcn UI",
+                            "logo": "/services/web-app-development/landing-page/technologies/shadcn.png"
+                        },
+                        {
+                            "name": "Apollo Client",
+                            "logo": "/services/web-app-development/landing-page/technologies/apollo.png"
+                        },
+                        {
+                            "name": "GraphQL",
+                            "logo": "/services/web-app-development/landing-page/technologies/graph-QL.png"
+                        },
+                        {
+                            "name": "REST Api",
+                            "logo": "/services/web-app-development/landing-page/technologies/api.png"
+                        }
+                    ]
+                },
+                {
+                    "name": "Back-end Development",
+                    "technologies": [
+                        {
+                            "name": "Node.JS",
+                            "logo": "/services/web-app-development/landing-page/technologies/js.png"
+                        },
+                        {
+                            "name": "NestJS",
+                            "logo": "/services/web-app-development/landing-page/technologies/nestjs.png"
+                        },
+                        {
+                            "name": "Express.JS",
+                            "logo": "/services/web-app-development/landing-page/technologies/expressjs.png"
+                        },
+                        {
+                            "name": "PHP",
+                            "logo": "/services/web-app-development/landing-page/technologies/php.png"
+                        },
+                        {
+                            "name": "Laravel",
+                            "logo": "/services/web-app-development/landing-page/technologies/laravel.png"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "heading": "Database",
+            "platforms": [
+                {
+                    "name": "Database",
+                    "technologies": [
+                        {
+                            "name": "PostgreSQL",
+                            "logo": "/services/web-app-development/landing-page/technologies/postgres.png"
+                        },
+                        {
+                            "name": "MySQL",
+                            "logo": "/services/web-app-development/landing-page/technologies/sql.png"
+                        },
+                        {
+                            "name": "MongoDB",
+                            "logo": "/services/web-app-development/landing-page/technologies/mongo.png"
+                        },
+                        {
+                            "name": "Redis",
+                            "logo": "/services/web-app-development/landing-page/technologies/redis.png"
+                        },
+                        {
+                            "name": "Elasticsearch",
+                            "logo": "/services/web-app-development/landing-page/technologies/elastic-search.png"
+                        },
+                        {
+                            "name": "SQLite",
+                            "logo": "/services/web-app-development/landing-page/technologies/sqlite.png"
+                        },
+                        {
+                            "name": "TypeORM",
+                            "logo": "/services/web-app-development/landing-page/technologies/type-orm.png"
+                        },
+                        {
+                            "name": "Prisma",
+                            "logo": "/services/web-app-development/landing-page/technologies/prisma.png"
+                        },
+                        {
+                            "name": "Sequelize",
+                            "logo": "/services/web-app-development/landing-page/technologies/sequelize.png"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "heading": "Cloud & DevOps",
+            "platforms": [
+                {
+                    "name": "DevOps",
+                    "technologies": [
+                        {
+                            "name": "NGINX",
+                            "logo": "/services/web-app-development/landing-page/technologies/nginx.png"
+                        },
+                        {
+                            "name": "Docker",
+                            "logo": "/services/web-app-development/landing-page/technologies/docker.png"
+                        },
+                        {
+                            "name": "Github Actions",
+                            "logo": "/services/web-app-development/landing-page/technologies/github.png"
+                        }
+                    ]
+                },
+                {
+                    "name": "Cloud",
+                    "technologies": [
+                        {
+                            "name": "Hetzner",
+                            "logo": "/services/web-app-development/landing-page/technologies/hetzner.png"
+                        },
+                        {
+                            "name": "Digital Ocean",
+                            "logo": "/services/web-app-development/landing-page/technologies/digital-ocean.png"
+                        },
+                        {
+                            "name": "Cloudways",
+                            "logo": "/services/web-app-development/landing-page/technologies/cloudways.png"
+                        },
+                        {
+                            "name": "Google Cloud",
+                            "logo": "/services/web-app-development/landing-page/technologies/cloud.png"
+                        },
+                        {
+                            "name": "AWS",
+                            "logo": "/services/web-app-development/landing-page/technologies/aws.png"
+                        },
+                        {
+                            "name": "Azure",
+                            "logo": "/services/web-app-development/landing-page/technologies/azure.png"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

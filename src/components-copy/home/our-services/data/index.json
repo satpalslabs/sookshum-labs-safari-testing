@@ -1,0 +1,40 @@
+{
+    "sections": [
+        {
+            "image_url": "/home/our-services/E-Commerce-Development.png",
+            "heading": "Ecommerce Development",
+            "description": "High-performance Ecommerce solutions tailored to accelerate the success of your business.",
+            "link": "/ecommerce-development-services"
+        },
+        {
+            "image_url": "/home/our-services/Mobile-App-Development.png",
+            "heading": "Mobile App Development",
+            "description": "Custom mobile applications designed to be intuitive and engaging, driving customer acquisition and retention.",
+            "link": "/mobile-app-development-services"
+        },
+        {
+            "image_url": "/home/our-services/Web-App-Development.png",
+            "heading": "Web App Development",
+            "description": "Creating custom web apps that transform ideas into powerful user-centric solutions for digital success.",
+            "link": "/web-app-development-services"
+        },
+        {
+            "image_url": "/home/our-services/UX-Design.png",
+            "heading": "UI/UX Design",
+            "description": "Crafting exceptional experiences by elevating your digital presence with user-centric UI/UX design that captivates, converts and delights.",
+            "link": "/ui-ux-design-services"
+        },
+        {
+            "image_url": "/home/our-services/Low-Code-Development.png",
+            "heading": "Low Code Development",
+            "description": "Accelerate innovation by empowering your team with low-code solutions that turn ideas into powerful applications at lightning speed.",
+            "link": "/low-code-development-services"
+        },
+        {
+            "image_url": "/home/our-services/Website-Development.png",
+            "heading": "Website Development",
+            "description": "Forging your digital identity using expert website development that transforms vision into engaging online experiences.",
+            "link": "/website-development-services"
+        }
+    ]
+}

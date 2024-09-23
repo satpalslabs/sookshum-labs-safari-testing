@@ -1,4 +1,4 @@
-import React from "react";
+
 import Image from "next/image";
 import H6 from "@components/basic-components/headings/H6";
 import { cardContent, service } from "./dropdown";

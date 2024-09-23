@@ -4,7 +4,7 @@
 
 import CheckIcon from "@components/basic-components/check-icon";
 import H2 from "@components/basic-components/headings/H2";
-import PrimaryButton from "@components/basic-components/primary-buttom";
+import PrimaryButton from "@components/basic-components/primary-button";
 import data from "../../data/lets-connect.json";
 import H6 from "@components/basic-components/headings/H6";
 const letsConnectListData: string[] = data.data;
@@ -34,7 +34,7 @@ const TextContainer: React.FC = () => (
       icon={true}
       text="Let’s Connect"
       style="md:mt-[30px] xs:mt-0"
-      link="/contact"
+      link="/contact-us"
     />
   </div>
 );

@@ -2,8 +2,8 @@
 import DarkButton from "@components/basic-components/button";
 import Description from "@components/basic-components/description";
 import H2 from "@components/basic-components/headings/H2";
-import PrimaryButton from "@components/basic-components/primary-buttom";
-import React from "react";
+import PrimaryButton from "@components/basic-components/primary-button";
+
 import { useRef } from "react";
 import { useInView } from "@lib/use-in-view";
 import { dataItemType } from ".";

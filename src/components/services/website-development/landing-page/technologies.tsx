@@ -1,5 +1,4 @@
 import SectionHeader from "@components/basic-components/section-header";
-import React, { useRef } from "react";
 import data from "./data/technologies.json";
 import H4 from "@components/basic-components/headings/H4";
 import Button from "@components/basic-components/button";

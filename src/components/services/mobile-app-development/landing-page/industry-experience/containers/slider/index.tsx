@@ -3,7 +3,7 @@
  * This client component contains a slider.
  */
 
-import React, { useRef, useState } from "react";
+import  { useRef, useState } from "react";
 import dynamic from "next/dynamic";
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles

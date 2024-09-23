@@ -1,4 +1,4 @@
-import React from "react";
+
 type props = { text: string; style: string };
 const H1: React.FC<props> = ({ text, style }) => {
   return (

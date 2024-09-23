@@ -1,6 +1,6 @@
 "use client";
 import SectionHeader from "@components/basic-components/section-header";
-import React, { useRef, useState } from "react";
+import  { useState } from "react";
 import data from "./data/technologies.json";
 import SideNavigation from "@components/services/reuseable-components/web-app-development/side-navigation-card";
 import GraphQLButton from "@components/basic-components/graphQL-button";

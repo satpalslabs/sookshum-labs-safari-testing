@@ -1,0 +1,29 @@
+{
+    "text_containers": [
+        {
+            "title": "Excellent Customer Service",
+            "description": "We don't just solve problems, we build lasting relationships. Experience the exceptional service your brand truly deserves.",
+            "image_url":"/home/choose-us/chat.png"
+        },
+        {
+            "title": "Honest & Valuable Advice",
+            "description": "We provide honest advice to help you make a meaningful impact and achieve significant results for your business.",
+            "image_url":"/home/choose-us/honest&valuable.png"
+        },
+        {
+            "title": "Competitive Price",
+            "description": "Don't trade quality for cost. We deliver top-notch design & development services at competitive rates without compromise.",
+            "image_url":"/home/choose-us/competitive-price.png"
+        },
+        {
+            "title": "Personal Account Manager",
+            "description": "You’ll have a dedicated solutions partner to guide you through every step of the process with expertise.",
+            "image_url":"/home/choose-us/account-manager.png"
+        },
+        {
+            "title": "Team of Experts in their niche",
+            "description": "Our domain-expert teams collaborate seamlessly to turn your vision into reality with precision and creativity.",
+            "image_url":"/home/choose-us/team-of-experts.png"
+        }
+    ]
+}

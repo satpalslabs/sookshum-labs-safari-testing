@@ -4,7 +4,7 @@
 
 import Description from "@components/basic-components/description";
 import H6 from "@components/basic-components/headings/H6";
-import React from "react";
+
 import { industryType } from ".";
 import CheckIcon from "@components/basic-components/check-icon";
 

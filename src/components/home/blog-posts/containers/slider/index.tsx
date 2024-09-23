@@ -3,10 +3,12 @@
  * This component contains a carousal slider.
  */
 
-import React, { useState } from "react";
+import  { useState } from "react";
 import dynamic from "next/dynamic";
 import data from "../../data/index.json";
 import { Swiper, SwiperSlide } from "swiper/react";
+
+
 import { Grid, Navigation } from "swiper/modules";
 const BlogPostCard = dynamic(() => import("./card"));
 const ArrowButtons = dynamic(() => import("./arrow-buttons"));

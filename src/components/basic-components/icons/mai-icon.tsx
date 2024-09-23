@@ -1,4 +1,4 @@
-import React from "react";
+
 
 const MailIcon: React.FC<{ style: string }> = (props) => (
   <svg

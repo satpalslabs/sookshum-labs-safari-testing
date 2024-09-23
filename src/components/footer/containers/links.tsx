@@ -2,7 +2,7 @@
  * This component contains group links.
  */
 
-import React from "react";
+
 import data from "../data/index.json";
 const { columns } = data;
 import Link from "next/link";

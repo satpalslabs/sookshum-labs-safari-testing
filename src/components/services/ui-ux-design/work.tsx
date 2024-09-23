@@ -30,7 +30,7 @@ const Work: React.FC = () => (
     </SectionHeader>
     <div className="grid grid-cols-2 gap-5 lg:gap-[18px] sm:gap-3 xs:grid-cols-1">
       {data.sections.map((dataItem: dataItemType, index: number) => (
-        <WorkCard item={dataItem} key={index} index={index} />
+        <WorkCard item={dataItem} key={index}/>
       ))}
     </div>
   </section>

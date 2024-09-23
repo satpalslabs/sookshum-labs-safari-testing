@@ -3,11 +3,13 @@
  */
 "use client";
 
-import DarkButton from "@components/basic-components/button";
-import Description from "@components/basic-components/description";
 import { dataItemType } from ".";
-import H6 from "@components/basic-components/headings/H6";
 import Link from "next/link";
+import dynamic from "next/dynamic";
+
+const DarkButton = dynamic(() => import("@components/basic-components/button"));
+const Description = dynamic(() => import("@components/basic-components/description"));
+const H6 = dynamic(() => import("@components/basic-components/headings/H6"));
 
 const TextContainer = ({ item }: { item: dataItemType }) => (
   <div className="px-4 lg:px-3 md:px-2 !grow xs:px-4">

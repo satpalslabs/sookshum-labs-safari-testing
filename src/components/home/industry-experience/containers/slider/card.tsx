@@ -2,12 +2,17 @@
  * This component contains each card of slider.
  */
 
-import Description from "@components/basic-components/description";
-import H6 from "@components/basic-components/headings/H6";
-import React from "react";
-import { industryType } from ".";
-import Card from "@components/basic-components/card";
+const Description = dynamic(() => import("@components/basic-components/description"));
 
+const H6 = dynamic(() => import("@components/basic-components/headings/H6"));
+
+import Image from "next/image";
+import { industryType } from ".";
+import dynamic from "next/dynamic";
+const Card = dynamic(() => import("@components/basic-components/card"), {
+  loading: () => <p>Loading...</p>, // Optional: A loading component can be shown while the Card is loading
+  ssr: false, // Optional: Disable server-side rendering for this component if needed
+});
 const Industry = ({
   industry,
   isInView,
@@ -15,8 +20,11 @@ const Industry = ({
   industry: industryType;
   isInView: boolean;
 }) => (
-  <Card isInView={isInView} style="!h-full flex flex-col gap-4 lg:gap-3 sm:gap-2 !pb-0">
-    <img
+  <Card
+    isInView={isInView}
+    style="!h-full flex flex-col gap-4 lg:gap-3 sm:gap-2 !pb-0"
+  >
+    <Image
       height={400}
       width={400}
       src={industry.image}

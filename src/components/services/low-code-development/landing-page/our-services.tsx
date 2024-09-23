@@ -1,14 +1,14 @@
 "use client";
 import SectionHeader from "@components/basic-components/section-header";
-import React, { useRef, useState } from "react";
+import  { useRef, useState } from "react";
 import data from "./data/our-services.json";
 import { useInView } from "@lib/use-in-view";
-import Card from "@components/basic-components/card";
-import H5 from "@components/basic-components/headings/H5";
+const Card = dynamic(() => import('@components/basic-components/card'));import H5 from "@components/basic-components/headings/H5";
 import { RightAngleArrow } from "@components/header/containers/services";
 import { Button } from "@mui/material";
 import Description from "@components/basic-components/description";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 
 type ServiceType = {
   "services-title": string;

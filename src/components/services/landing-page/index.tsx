@@ -1,6 +1,6 @@
 import Testimonials from "@components/basic-components/testimonials";
 import WorkTogether from "@components/basic-components/work-together";
-import React from "react";
+
 import Hero from "./hero";
 import CoreServices from "../reuseable-components/core-services";
 import Cover from "./cover";

@@ -1,12 +1,12 @@
 "use client";
 import { useInView } from "framer-motion";
-import React, { useRef } from "react";
+import  { useRef } from "react";
 import data from "./data/benefits.json";
 import Description from "@components/basic-components/description";
 import H6 from "@components/basic-components/headings/H6";
 import SectionHeader from "@components/basic-components/section-header";
-import Card from "@components/basic-components/card";
-type Benefit = {
+import dynamic from "next/dynamic";
+const Card = dynamic(() => import('@components/basic-components/card'));type Benefit = {
   title: string;
   description: string;
 };

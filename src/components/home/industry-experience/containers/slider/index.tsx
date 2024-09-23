@@ -3,15 +3,18 @@
  * This client component contains a slider.
  */
 
-import React, { useRef, useState } from "react";
+import  { useRef, useState } from "react";
 import dynamic from "next/dynamic";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+
 // Import Swiper styles
 import "swiper/css";
-import { Navigation } from "swiper/modules";
+
 // data
 import data from "../../data/index.json";
 import { useInView } from "@lib/use-in-view";
+
 // Child components
 const Industry = dynamic(() => import("./card"));
 const ArrowButtons = dynamic(() => import("./arrow-buttons"));

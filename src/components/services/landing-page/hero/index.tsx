@@ -1,4 +1,4 @@
-import React from "react";
+
 import GradientSection from "./gradient-section";
 import SourceContent from "./source-content";
 export type contentProps = {

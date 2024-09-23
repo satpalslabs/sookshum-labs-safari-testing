@@ -1,11 +1,7 @@
 import SectionHeader from "@components/basic-components/section-header";
-import React, { useRef } from "react";
 import data from "./data/technologies.json";
 import H4 from "@components/basic-components/headings/H4";
-import Button from "@components/basic-components/button";
-import Card from "@components/basic-components/card";
 import Image from "next/image";
-import H5 from "@components/basic-components/headings/H5";
 import H6 from "@components/basic-components/headings/H6";
 
 type Technology = {

@@ -1,4 +1,4 @@
-import React from "react";
+
 type gradientText = {
   text: string;
   classes: string;

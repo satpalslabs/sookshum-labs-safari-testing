@@ -22,17 +22,24 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
-        <script
-          type="text/javascript"
-          dangerouslySetInnerHTML={{
-            __html: `var $zoho = $zoho || {}; $zoho.salesiq = $zoho.salesiq || { mode: "async", widgetcode: "siq9569795c2af6dac0818cee990f36c0d731470acc86287e49524d79a290df1b08", values: {}, ready: function () { } }; var d = document; s = d.createElement("script"); s.type = "text/javascript"; s.id = "zsiqscript"; s.defer = true; s.src = "https://salesiq.zoho.com/widget"; t = d.getElementsByTagName("script")[0]; t.parentNode.insertBefore(s, t); d.write("<div id='zsiqwidget'></div>")`,
-          }}
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link
+          rel="preload"
+          href="/home/hero/dots.svg"
+          as="image"
+          type="image/svg+xml"
         />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `$zoho.salesiq.ready=function(){ $zoho.salesiq.floatwindow.visible('show'); $zoho.salesiq.chatwindow.closebutton('hide');}`,
-          }}
+        <link rel="stylesheet" />
+        {/* Preconnect to optimize font loading */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
         />
+        <link rel="preconnect" href="https://rsms.me" crossOrigin="anonymous" />
       </Head>
       <body>
         <div className="flex flex-col justify-between font-400 !bg-black text-white w-full max-w-screen overflow-x-hidden min-h-[100vh]">

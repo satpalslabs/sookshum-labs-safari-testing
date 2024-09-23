@@ -2,9 +2,12 @@
  * This file contains the each text card of the text container in why choose us section.
  */
 
-import Description from "@components/basic-components/description";
+
+import dynamic from "next/dynamic";
 import { dataItemType } from "./main-container";
-import H6 from "@components/basic-components/headings/H6";
+
+const H6 = dynamic(() => import("@components/basic-components/headings/H6"));
+const Description = dynamic(() => import("@components/basic-components/description"));
 
 function TextCard({
   item,

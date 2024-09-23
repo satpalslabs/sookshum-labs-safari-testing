@@ -2,7 +2,7 @@
  * This component contains the Buttons used in index file.
  */
 
-import type React from "react";
+
 
 const Buttons: React.FC = () => (
   <button

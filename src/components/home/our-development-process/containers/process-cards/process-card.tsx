@@ -4,6 +4,7 @@
 
 import dynamic from "next/dynamic";
 import { dataItemType } from ".";
+import Image from "next/image";
 const TextContainer = dynamic(() => import("./text-container"));
 
 const DevelopmentProcessCard = ({
@@ -35,7 +36,7 @@ const DevelopmentProcessCard = ({
         index == 3 ? "h-full" : "h-[208px] xxl:h-[300px]"
       } overflow-hidden`}
     >
-      <img
+      <Image
         src={item.image_url}
         height={400}
         width={400}

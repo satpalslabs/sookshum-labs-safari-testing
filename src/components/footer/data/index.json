@@ -1,43 +1,43 @@
 {
     "logos": [
         {
-            "image_source": "/footer/upwork-logo.png",
+            "image_source": "/footer/upwork-logo.webp",
             "alternative_text": "UpWork",
             "link":"https://www.upwork.com/agencies/~01e4010f869721fc50",
             "type": "icons"
         },
         {
-            "image_source": "/footer/BE-logo.png",
+            "image_source": "/footer/BE-logo.webp",
             "alternative_text": "Be",
             "link":"https://www.behance.net/sookshum-labs",
             "type": "icons"
         },
         {
-            "image_source": "/footer/youtube-logo.png",
+            "image_source": "/footer/youtube-logo.webp",
             "alternative_text": "You tube",
             "link":"https://www.youtube.com/channel/UCSquLQvudT9dxRGPn6x8a7A/featured",
             "type": "icons"
         },
         {
-            "image_source": "/footer/linkdin-logo.png",
+            "image_source": "/footer/linkdin-logo.webp",
             "alternative_text": "Linkdin",
             "link":"https://in.linkedin.com/company/sookshumlabs",
             "type": "icons"
         },
         {
-            "image_source": "/footer/facebook-logo.png",
+            "image_source": "/footer/facebook-logo.webp",
             "link":"https://www.facebook.com/sookshumlabs/",
             "alternative_text": "Facebook",
             "type": "icons"
         },
         {
-            "image_source": "/footer/instagram-logo.png",
+            "image_source": "/footer/instagram-logo.webp",
             "alternative_text": "Instagram",
             "link":"https://www.instagram.com/sookshum_labs/",
             "type": "grow"
         },
         {
-            "image_source": "/footer/twitter-logo.png",
+            "image_source": "/footer/twitter-logo.webp",
             "alternative_text": "Twitter",
             "link":"https://twitter.com/sookshumlabs/",
             "type": "grow"

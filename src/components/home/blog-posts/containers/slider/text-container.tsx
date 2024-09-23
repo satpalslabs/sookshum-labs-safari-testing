@@ -2,8 +2,10 @@
  * This component contains a text elements of each slider card.
  */
 
-import Description from "@components/basic-components/description";
-import H6 from "@components/basic-components/headings/H6";
+const Description = dynamic(() => import("@components/basic-components/description"));
+
+const H6 = dynamic(() => import("@components/basic-components/headings/H6"));
+import dynamic from "next/dynamic";
 import { blogType } from ".";
 
 function TextContainer({ item, index }: { item: blogType; index: number }) {

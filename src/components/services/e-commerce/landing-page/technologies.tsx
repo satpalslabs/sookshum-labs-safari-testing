@@ -1,8 +1,8 @@
 "use client";
 import SectionHeader from "@components/basic-components/section-header";
 import { useInView } from "framer-motion";
-import React, { useRef } from "react";
-import Card from "@components/basic-components/card";
+import  { useRef } from "react";
+const Card = dynamic(() => import('@components/basic-components/card'));
 import Description from "@components/basic-components/description";
 import H6 from "@components/basic-components/headings/H6";
 import data from "@components/header/data/services.json";
@@ -11,6 +11,7 @@ import type {
   cardContent,
 } from "@components/header/containers/services/dropdown";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 
 const TechnologiesData: service | undefined = data.services.find(
   (technology) => technology.label == "ECommerce Development"

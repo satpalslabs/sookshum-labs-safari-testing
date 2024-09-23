@@ -1,7 +1,7 @@
 "use client";
 import SectionHeader from "@components/basic-components/section-header";
 import { useInView } from "framer-motion";
-import React, { useRef } from "react";
+import  { useRef } from "react";
 import data from "./data/choose-us.json";
 import Description from "@components/basic-components/description";
 import H6 from "@components/basic-components/headings/H6";

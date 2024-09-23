@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import data from "../../data/services.json";
 import H6 from "@components/basic-components/headings/H6";
 import Image from "next/image";

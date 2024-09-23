@@ -1,7 +1,7 @@
 "use client";
 import SectionHeader from "@components/basic-components/section-header";
 import { useInView } from "framer-motion";
-import React, { useRef, useState } from "react";
+import  { useRef, useState } from "react";
 import data from "./data/industry-experience.json";
 import Image from "next/image";
 import H3 from "@components/basic-components/headings/H3";

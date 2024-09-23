@@ -2,7 +2,7 @@
  * This component contains the work together section.
  */
 import H2 from "@components/basic-components/headings/H2";
-import PrimaryButton from "@components/basic-components/primary-buttom";
+import PrimaryButton from "@components/basic-components/primary-button";
 import data from "./data/lets-connect.json";
 import H5 from "@components/basic-components/headings/H5";
 import CheckIcon from "@components/basic-components/check-icon";
@@ -33,7 +33,7 @@ const TextContainer: React.FC = () => (
         icon={true}
         text="Let’s Connect"
         style="md:mt-[30px] xs:mt-0"
-        link="/contact"
+        link="/contact-us"
       />
     </div>
     <div className="flex flex-col gap-[30px] items-start sm:grow sm:w-fit sm:text-nowrap xs:w-full">

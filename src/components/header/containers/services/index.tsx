@@ -1,7 +1,7 @@
-import dynamic from "next/dynamic";
+// import dynamic from "next/dynamic";
 import { usePathname } from "next/navigation";
-import React, { Fragment, useState } from "react";
-import Dropdown from "./dropdown";
+import  { Fragment, useState } from "react";
+// import Dropdown from "./dropdown";
 import Link from "next/link";
 const NavLinkService = ({
   text,

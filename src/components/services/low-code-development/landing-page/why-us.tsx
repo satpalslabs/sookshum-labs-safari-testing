@@ -1,12 +1,12 @@
 "use client";
 import SectionHeader from "@components/basic-components/section-header";
 import { useInView } from "framer-motion";
-import React, { useRef } from "react";
+import  { useRef } from "react";
 import data from "./data/why-us.json";
-import Card from "@components/basic-components/card";
-import Description from "@components/basic-components/description";
+const Card = dynamic(() => import('@components/basic-components/card'));import Description from "@components/basic-components/description";
 import Image from "next/image";
 import H5 from "@components/basic-components/headings/H5";
+import dynamic from "next/dynamic";
 type ChooseUs = {
   heading: string;
   description: string;

@@ -1,14 +1,9 @@
 "use client";
 import SectionHeader from "@components/basic-components/section-header";
 import { useInView } from "framer-motion";
-import React, { useRef, useState } from "react";
+import  { useRef } from "react";
 import data from "./data/our-process.json";
-import DarkButton from "@components/basic-components/button";
 import H6 from "@components/basic-components/headings/H6";
-import Description from "@components/basic-components/description";
-import Image from "next/image";
-import H4 from "@components/basic-components/headings/H4";
-import H5 from "@components/basic-components/headings/H5";
 
 type Process = {
   "process-title": string;

@@ -1,6 +1,6 @@
 "use client";
 
-import type React from "react";
+
 
 type props = {
   text: string;

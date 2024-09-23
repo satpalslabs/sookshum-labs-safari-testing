@@ -1,4 +1,4 @@
-import React from "react";
+
 import type { contentProps } from ".";
 
 const SourceContent: React.FC<contentProps> = (props) => (

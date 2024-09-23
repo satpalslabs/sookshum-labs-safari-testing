@@ -1,8 +1,9 @@
 "use client";
 import DarkButton from "@components/basic-components/button";
-import Card from "@components/basic-components/card";
+const Card = dynamic(() => import("@components/basic-components/card"));
 import H2 from "@components/basic-components/headings/H2";
-import PrimaryButton from "@components/basic-components/primary-buttom";
+import PrimaryButton from "@components/basic-components/primary-button";
+import dynamic from "next/dynamic";
 export type dataItem = {
   id: string;
   description: string;
@@ -34,7 +35,10 @@ const BottomSection: React.FC = () => (
                 }
               />
               <a href="https://careers.sookshum-labs.com/jobs" target="_blank">
-                <DarkButton style="group-hover:!bg-none h-full sm:!px-5" text="Careers" />
+                <DarkButton
+                  style="group-hover:!bg-none h-full sm:!px-5"
+                  text="Careers"
+                />
               </a>
             </div>
           </div>
@@ -50,7 +54,7 @@ const BottomSection: React.FC = () => (
               icon={true}
               style=""
               text="Get in touch"
-              link="/contact"
+              link="/contact-us"
             />
           </div>
         </Card>

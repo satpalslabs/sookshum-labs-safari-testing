@@ -1,10 +1,13 @@
 "use client";
 
-import H3 from "@components/basic-components/headings/H3";
-import Description from "@components/basic-components/description";
 import { dataItemType } from ".";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import { useInView } from "@lib/use-in-view";
+import $ from "jquery";
+import dynamic from "next/dynamic";
+
+const Description = dynamic(() => import("@components/basic-components/description"));
+const H3 = dynamic(() => import("@components/basic-components/headings/H3"));
 
 const TechnologyCard = ({
   item,
@@ -15,6 +18,14 @@ const TechnologyCard = ({
 }) => {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref);
+  useEffect(() => {
+    let video = $(`#${item.id}`);
+    if (isInView) {
+      video.trigger("play");
+    } else {
+      video.trigger("pause");
+    }
+  }, [isInView]);
   return (
     <div
       ref={ref}
@@ -23,9 +34,7 @@ const TechnologyCard = ({
       } ${isInView ? "grayscale-0" : "grayscale"}
       xs:gap-2 xs:flex-col-reverse`}
     >
-      <div
-        className={`flex flex-col gap-5 lg:gap-4 md:gap-3  h-fit xs:pt-0`}
-      >
+      <div className={`flex flex-col gap-5 lg:gap-4 md:gap-3  h-fit xs:pt-0`}>
         <H3 style="" text={item.title} />
         <Description
           children={null}
@@ -46,13 +55,25 @@ const TechnologyCard = ({
             : " xs:scale-100 xs:mx-auto"
         }`}
       >
-        <img
-          src={item.image_url}
-          width={800}
-          height={800}
-          alt=""
-          className={`h-full w-full object-contain `}
-        />
+        <video
+          autoPlay={false}
+          // poster={item.image_url}
+          muted
+          id={item.id}
+          playsInline
+          className="h-full w-full object-contain "
+          width={1500}
+          height={1500}
+          src={item.video_url}
+          onMouseEnter={(e: any) => {
+            e.target.play();
+          }}
+          onTouchStart={(e: any) => {
+            e.target.play();
+          }}
+          
+        >
+        </video>
       </div>
     </div>
   );

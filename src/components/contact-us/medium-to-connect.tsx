@@ -1,11 +1,11 @@
 "use client";
-import React, { useRef } from "react";
+import  { useRef } from "react";
 import data from "./data/medium-to-connect.json";
 import { useInView } from "@lib/use-in-view";
-import Card from "@components/basic-components/card";
-import Description from "@components/basic-components/description";
+const Card = dynamic(() => import('@components/basic-components/card'));import Description from "@components/basic-components/description";
 import H5 from "@components/basic-components/headings/H5";
 import DarkButton from "@components/basic-components/button";
+import dynamic from "next/dynamic";
 export type Medium = {
   title: string;
   description: string;

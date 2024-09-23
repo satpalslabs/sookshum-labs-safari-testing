@@ -3,11 +3,11 @@ import Description from "@components/basic-components/description";
 import H3 from "@components/basic-components/headings/H3";
 import { useInView } from "@lib/use-in-view";
 import data from "./data/innovation-concepts.json";
-import React, { useRef } from "react";
-import Card from "@components/basic-components/card";
-import Image from "next/image";
+import  { useRef } from "react";
+const Card = dynamic(() => import('@components/basic-components/card'));import Image from "next/image";
 import H4 from "@components/basic-components/headings/H4";
 import H6 from "@components/basic-components/headings/H6";
+import dynamic from "next/dynamic";
 
 type Concept = {
   heading: string;

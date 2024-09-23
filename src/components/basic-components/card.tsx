@@ -1,4 +1,4 @@
-import React from "react";
+
 type props = {
   children: React.ReactNode;
   isInView: boolean;

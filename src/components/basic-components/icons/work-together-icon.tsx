@@ -1,4 +1,4 @@
-import React from "react";
+
 
 const WorkTogetherIcon: React.FC<{ style: string }> = (props) => (
   <svg

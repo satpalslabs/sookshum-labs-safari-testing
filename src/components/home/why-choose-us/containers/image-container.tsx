@@ -2,6 +2,8 @@
  * This file contains the image container of why choose us section.
  */
 
+import Image from "next/image";
+
 const ImageContainer = ({
   source,
   isInView,
@@ -15,7 +17,7 @@ const ImageContainer = ({
       isInView ? "grayscale-0" : "grayscale"
     } }`}
   >
-    <img
+    <Image
       height={500}
       width={500}
       className="w-[500px] m-auto md:w-[368px] md:h-[368px] object-contain"

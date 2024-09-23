@@ -2,8 +2,8 @@
  * This component contains a nav-links.
  */
 
-import PrimaryButton from "@components/basic-components/primary-buttom";
-import type React from "react";
+import PrimaryButton from "@components/basic-components/primary-button";
+
 import dynamic from "next/dynamic";
 import NavLinkService from "./services";
 const NavLink = dynamic(() => import("./nav-link"));
@@ -62,7 +62,7 @@ const Nav = ({
           icon={true}
           text="Get in touch"
           style="w-full hidden xs:flex text-center !h-[48px] mt-[22px] !text-sm rounded-[26px] sm:shrink-0 relative z-20"
-          link="/contact"
+          link="/contact-us"
         />
       </div>
     </div>

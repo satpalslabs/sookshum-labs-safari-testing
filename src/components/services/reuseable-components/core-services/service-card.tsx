@@ -1,6 +1,6 @@
 import Description from "@components/basic-components/description";
 import H5 from "@components/basic-components/headings/H5";
-import React from "react";
+
 import { serviceType } from ".";
 import Card from "../../../basic-components/card";
 

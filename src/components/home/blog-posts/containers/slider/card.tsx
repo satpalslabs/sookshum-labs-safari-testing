@@ -4,6 +4,7 @@
 
 import dynamic from "next/dynamic";
 import { blogType } from ".";
+import Image from "next/image";
 const TextContainer = dynamic(() => import("./text-container"));
 
 function BlogPostCard({ blogPost, index }: { blogPost: blogType; index: number }) {
@@ -20,7 +21,7 @@ function BlogPostCard({ blogPost, index }: { blogPost: blogType; index: number }
             : "xxl:h-[345px] xl:h-[335px] lg:h-[234px] sm:h-[222px] xs:h-[157px] bg-customYellow"
         }`}
       >
-        <img
+        <Image
           src={blogPost.image}
           height={800}
           width={800}

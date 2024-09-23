@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React, { Fragment } from "react";
+import  { Fragment } from "react";
 const NavLink = ({
   text,
   link,

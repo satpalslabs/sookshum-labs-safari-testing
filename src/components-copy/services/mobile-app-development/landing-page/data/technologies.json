@@ -1,0 +1,52 @@
+{
+    "web-development-technologies": {
+        "Front End Development": [
+            {
+                "technology-name": "Flutter",
+                "image-address": "/services/mobile-app-devlopment/technologies/flutter.png"
+            },
+            {
+                "technology-name": "React Native",
+                "image-address": "/services/mobile-app-devlopment/technologies/react-native.png"
+            }
+        ],
+        "Backend Development": [
+            {
+                "technology-name": "Firebase",
+                "image-address": "/services/mobile-app-devlopment/technologies/firebase.png"
+            },
+            {
+                "technology-name": "Supabase",
+                "image-address": "/services/mobile-app-devlopment/technologies/supabase.png"
+            },
+            {
+                "technology-name": "MongoDB",
+                "image-address": "/services/mobile-app-devlopment/technologies/mongodb.png"
+            },
+            {
+                "technology-name": "MySQL",
+                "image-address": "/services/mobile-app-devlopment/technologies/mysql.png"
+            },
+            {
+                "technology-name": "Node js",
+                "image-address": "/services/mobile-app-devlopment/technologies/nodejs.png"
+            },
+            {
+                "technology-name": "PostgresSQL",
+                "image-address": "/services/mobile-app-devlopment/technologies/postgress.png"
+            },
+            {
+                "technology-name": "DreamFactory",
+                "image-address": "/services/mobile-app-devlopment/technologies/dream-factory.png"
+            },
+            {
+                "technology-name": "Laravel",
+                "image-address": "/services/web-app-development/landing-page/technologies/laravel.png"
+            },
+            {
+                "technology-name": "Nest JS",
+                "image-address": "/services/web-app-development/landing-page/technologies/nestjs.png"
+            }
+        ]
+    }
+}

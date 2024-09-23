@@ -1,7 +1,7 @@
 import DarkButton from "@components/basic-components/button";
 import GradientText from "@components/basic-components/gradient-text";
-import PrimaryButton from "@components/basic-components/primary-buttom";
-import React from "react";
+import PrimaryButton from "@components/basic-components/primary-button";
+
 import { HeroSection } from ".";
 
 const GradientSection: React.FC<HeroSection> = (props) => (
@@ -34,7 +34,7 @@ const GradientSection: React.FC<HeroSection> = (props) => (
           icon={true}
           text="Request a quote"
           style="xs:mt-[32px] mt-[50px] lg:mt-[28px] sm:mt-[20px]"
-          link="/contact"
+          link="/contact-us"
         />
       )}
     </div>

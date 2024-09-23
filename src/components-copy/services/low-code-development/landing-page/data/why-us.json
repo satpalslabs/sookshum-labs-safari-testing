@@ -1,0 +1,22 @@
+{
+    "why-us": [
+        {
+            "heading": "Streamlined Process ",
+            "description": "From the first contact, to signing to contract to project management and implementation - all the processes are polished and streamlined through years of improvements.",
+            "icon": "/services/low-code-development/landing-page/why-us/icons/process-icon.png",
+            "color": "#FFFBAF"
+        },
+        {
+            "heading": "Top Notch Development Team",
+            "description": "Our expert low-code development team delivers custom solutions quickly, ensuring high-quality results with reduced time to market.",
+            "icon": "/services/low-code-development/landing-page/why-us/icons/position-icon.png",
+            "color": "#AFFFD2"
+        },
+        {
+            "heading": "All positive Reviews",
+            "description": "We receive dozens of positive reviews. Our customers love that we care about their budgets, deadlines, and outcomes!",
+            "icon": "/services/low-code-development/landing-page/why-us/icons/ranking-icon.png",
+            "color": "#FFAFF7"
+        }
+    ]
+}

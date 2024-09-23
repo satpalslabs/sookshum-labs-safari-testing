@@ -1,0 +1,45 @@
+{
+    "tools": [
+        {
+            "name": "Appsmith",
+            "description": "Appsmith is an open-source developer tool that enables the rapid development of these applications. You can drag and drop pre-built widgets to build UI. Connect securely to your databases & API using its datasources.",
+            "image_url": "/services/low-code-development/landing-page/tools/appsmith.png"
+        },
+        {
+            "name": "Tooljet",
+            "description": "Tooljet is an open-source low-code framework that enables building powerful applications with ease. Its intuitive low-code platform accelerates development, enabling rapid deployment and customization without extensive coding knowledge",
+            "image_url": "/services/low-code-development/landing-page/tools/tooljet.png"
+        },
+        {
+            "name": "Webflow",
+            "description": "Webflow transforms web design with its low-code platform. Build responsive, custom websites visually with powerful tools, without needing to code, for a seamless design-to-launch experience",
+            "image_url": "/services/low-code-development/landing-page/tools/webflow.png"
+        },
+        {
+            "name": "Framer",
+            "description": "Framer revolutionizes design and development with its low-code platform. Create stunning, interactive web and mobile apps effortlessly, combining powerful design tools with intuitive development capabilities.",
+            "image_url": "/services/low-code-development/landing-page/tools/zapier.png"
+        },
+        {
+            "name": "Bubble",
+            "description": "Bubble offers a no-code solution for building web applications. It allows designing, developing, and launching complex apps with a visual interface, enabling rapid deployment and seamless customization.",
+            "image_url": "/services/low-code-development/landing-page/tools/airtable.png"
+        },
+        {
+            "name": "Retool",
+            "description": "Retool streamlines app development with its low-code platform. Quickly build and deploy custom applications using pre-built components and integrations, empowering teams to work smarter, faster.",
+            "image_url": "/services/low-code-development/landing-page/tools/retool.png"
+        }
+    ],
+    "icons": [
+        "/services/low-code-development/landing-page/tools/retool.png",
+        "/services/low-code-development/landing-page/tools/appsmith.png",
+        "/services/low-code-development/landing-page/tools/tooljet.png",
+        "/services/low-code-development/landing-page/tools/b.png",
+        "/services/low-code-development/landing-page/tools/icon.png",
+        "/services/low-code-development/landing-page/tools/webflow.png",
+        "/services/low-code-development/landing-page/tools/zapier.png",
+        "/services/low-code-development/landing-page/tools/make.png",
+        "/services/low-code-development/landing-page/tools/git.png"
+    ]
+}

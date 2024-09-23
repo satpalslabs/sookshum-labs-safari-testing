@@ -1,6 +1,6 @@
 import SectionHeader from "@components/basic-components/section-header";
 import Image from "next/image";
-import React from "react";
+
 
 const OurProcess = () => {
   return (

@@ -2,9 +2,11 @@
  * This file contains the Header section of Blog posts section.
  */
 
-import DarkButton from "@components/basic-components/button";
-import Description from "@components/basic-components/description";
-import H2 from "@components/basic-components/headings/H2";
+const DarkButton = dynamic(() => import("@components/basic-components/button"));
+const Description = dynamic(() => import("@components/basic-components/description"));
+
+import dynamic from "next/dynamic";
+const H2 = dynamic(() => import("@components/basic-components/headings/H2"));
 
 function Header() {
   return (

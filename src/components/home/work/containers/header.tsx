@@ -2,7 +2,8 @@
  * This file contains the header of our work section.
  */
 
-import SectionHeader from "@components/basic-components/section-header";
+import dynamic from "next/dynamic";
+const SectionHeader = dynamic(() => import("@components/basic-components/section-header"));
 
 const Header: React.FC = () => (
   <SectionHeader

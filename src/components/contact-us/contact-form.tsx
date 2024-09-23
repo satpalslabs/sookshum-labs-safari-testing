@@ -1,6 +1,5 @@
 "use client";
-import Card from "@components/basic-components/card";
-import H5 from "@components/basic-components/headings/H5";
+const Card = dynamic(() => import('@components/basic-components/card'));import H5 from "@components/basic-components/headings/H5";
 import TextArea from "@components/basic-components/form-components/text-area";
 import HelperText from "@components/basic-components/form-components/helper-text";
 import CustomCheckBox from "@components/basic-components/form-components/checkbox";
@@ -8,7 +7,7 @@ import Description from "@components/basic-components/description";
 import MailIcon from "@components/basic-components/icons/mai-icon";
 import H6 from "@components/basic-components/headings/H6";
 import WorkTogetherIcon from "@components/basic-components/icons/work-together-icon";
-import PrimaryButton from "@components/basic-components/primary-buttom";
+import PrimaryButton from "@components/basic-components/primary-button";
 import { useEffect, useRef, useState } from "react";
 import CustomInput from "@components/basic-components/form-components/input";
 import { Bounce, ToastContainer, toast } from "react-toastify";
@@ -16,8 +15,9 @@ import dialCodes from "./data/country-codes.json";
 import "react-toastify/dist/ReactToastify.css";
 import Image from "next/image";
 import $ from "jquery";
+import dynamic from "next/dynamic";
 const ContactForm: React.FC = () => (
-  <div className="w-full relative z-20 mt-[32px] lg:mt-[71px] sm:mt-[32px] xs:mt-[30px] h-fit overflow-hidden max-w-[1920px] px-[80px] lg:px-10 xs:px-5 pt-[120px] md:pt-[90px] sm:pt-[70px] xs:pt-[60px] mx-auto">
+  <div className="w-full relative z-20 mt-[32px] sm:mt-[32px] xs:mt-[30px] h-fit overflow-hidden max-w-[1920px] px-[80px] lg:px-10 xs:px-5 pt-[120px] md:pt-[90px] sm:pt-[70px] xs:pt-[30px] mx-auto">
     <div className=" flex sm:flex-col gap-10 sm:gap-[30px] w-full">
       <ContentUsForm />
       <InformationAboutCompany />

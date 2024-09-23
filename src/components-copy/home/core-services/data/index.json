@@ -1,0 +1,17 @@
+[
+    {
+        "id": "Design",
+        "description": "Transforming ideas into visual masterpieces, we craft stunning user experiences that captivate and convert your target audience.",
+        "animation_path": "/home/core-services/design.json"
+    },
+    {
+        "id": "Develop",
+        "description": "Product development guided by industry standards, ensuring the efficient delivery of reliable and top-tier robust and scalable software solutions.",
+        "animation_path": "/home/core-services/develop.json"
+    },
+    {
+        "id": "Grow",
+        "description": "Accelerating digital product growth via iterative improvements and refinements ensuring market leadership and sustained user engagement.",
+        "animation_path": "/home/core-services/grow.json"
+    }
+]

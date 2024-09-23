@@ -2,15 +2,15 @@
 /**
  * This component contains the header section.
  */
-import type React from "react";
+
 import { useState } from "react";
 import dynamic from "next/dynamic";
 
 // header's sub-sections
-import PrimaryButton from "@components/basic-components/primary-buttom";
 const Nav = dynamic(() => import("./containers/nav"));
 const Logo = dynamic(() => import("./containers/logo"));
 const MenuButton = dynamic(() => import("./containers/menu-button"));
+import PrimaryButton from "@components/basic-components/primary-button";
 
 const Header: React.FC = () => {
   const [showLinks, setShowLinks] = useState<boolean>(false);
@@ -27,7 +27,7 @@ const Header: React.FC = () => {
           icon={true}
           text="Get in touch"
           style="xs:hidden relative z-20"
-          link="/contact"
+          link="/contact-us"
         />
         <MenuButton showLinks={showLinks} setShowLinks={setShowLinks} />
       </section>

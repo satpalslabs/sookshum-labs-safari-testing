@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React from "react";
+
 import { service } from "./dropdown";
 import ServiceContent from "./dropdown-service-content";
 import { RightAngleArrow } from ".";

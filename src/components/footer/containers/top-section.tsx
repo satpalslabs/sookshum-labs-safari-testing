@@ -2,7 +2,7 @@
  * This component contains Footer group links.
  */
 
-import React from "react";
+
 import LogoSection from "./logo-section";
 import data from "../data/index.json";
 const { columns } = data;

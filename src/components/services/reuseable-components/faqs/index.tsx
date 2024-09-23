@@ -1,11 +1,12 @@
 "use client";
-import Card from "@components/basic-components/card";
-import SectionHeader from "@components/basic-components/section-header";
-import React from "react";
+const Card = dynamic(() => import('@components/basic-components/card'));import SectionHeader from "@components/basic-components/section-header";
+
 import FAQS from "./data/faqs.json";
 import H6 from "@components/basic-components/headings/H6";
 import { Collapse } from "@mui/material";
 import Description from "@components/basic-components/description";
+import { useState } from "react";
+import dynamic from "next/dynamic";
 type FaqType = {
   question: string;
   answer: string;
@@ -15,7 +16,7 @@ interface Data {
 }
 const data: Data = FAQS;
 const Faqs: React.FC<{ DataKey: keyof Data }> = ({ DataKey }) => {
-  const [activeFaq, setActiveFaq] = React.useState<number | null>(2);
+  const [activeFaq, setActiveFaq] = useState<number | null>(2);
   const faqData = data[DataKey as keyof Data];
 
   return (

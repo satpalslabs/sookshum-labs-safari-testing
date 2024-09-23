@@ -1,11 +1,11 @@
 "use client";
-import React, { useRef } from "react";
+import  { useRef } from "react";
 import data from "./data/our-values.json";
 import { useInView } from "@lib/use-in-view";
-import Card from "@components/basic-components/card";
-import Description from "@components/basic-components/description";
+const Card = dynamic(() => import('@components/basic-components/card'));import Description from "@components/basic-components/description";
 import H5 from "@components/basic-components/headings/H5";
 import H2 from "@components/basic-components/headings/H2";
+import dynamic from "next/dynamic";
 export type valuePoint = {
   icon: string;
   title: string;

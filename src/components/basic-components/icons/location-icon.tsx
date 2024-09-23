@@ -1,4 +1,4 @@
-import React from "react";
+
 
 const LocationIcon: React.FC<{ style: string }> = (props) => (
   <svg

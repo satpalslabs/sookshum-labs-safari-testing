@@ -20,7 +20,7 @@ const WorkCards: React.FC<{ type: string }> = ({ type }) => (
     {data.sections
       .filter((i) => i.type.includes(type))
       .map((dataItem: dataItemType, index: number) => (
-        <WorkCard item={dataItem} key={index} index={index} />
+        <WorkCard item={dataItem} key={index} />
       ))}
   </div>
 );

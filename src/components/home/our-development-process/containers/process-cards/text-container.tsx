@@ -2,10 +2,12 @@
  * This file contains the text section for each service card.
  */
 
-import React from "react";
-import Description from "@components/basic-components/description";
+
+
+import dynamic from "next/dynamic";
 import { dataItemType } from ".";
-import H6 from "@components/basic-components/headings/H6";
+const H6 = dynamic(() => import("@components/basic-components/headings/H6"));
+const Description = dynamic(() => import("@components/basic-components/description"));
 
 const TextContainer = ({
   item,

@@ -3,7 +3,7 @@
  * This file contains the slider.
  */
 
-import React, { useEffect, useRef } from "react";
+import  { useEffect, useRef } from "react";
 import data from "../../data/index.json";
 import Testimonials from "./card";
 import { useInView } from "@lib/use-in-view";

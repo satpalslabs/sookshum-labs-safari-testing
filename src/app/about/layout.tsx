@@ -3,7 +3,6 @@
  */
 
 import type { Metadata } from "next";
-import "@styles/globals.css";
 import Head from "next/head";
 export const metadata: Metadata = {
   icons: {

@@ -1,4 +1,4 @@
-import React from "react";
+
 import Services from "./services";
 import Testimonials from "@components/basic-components/testimonials";
 import ChooseUs from "./why-us";
@@ -10,7 +10,7 @@ import Hero, {
   HeroSection,
 } from "@components/services/reuseable-components/hero";
 import CoreServices from "@components/services/reuseable-components/core-services";
-import Faqs from "@components/services/reuseable-components/faqs";
+// import Faqs from "@components/services/reuseable-components/faqs";
 import { HomeProps } from "@app/page";
 
 const content_heroSection: HeroSection = {

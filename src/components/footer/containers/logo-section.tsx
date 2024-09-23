@@ -3,10 +3,10 @@
  */
 
 import Link from "next/link";
-import type React from "react";
+
 import Description from "@components/basic-components/description";
-import PrimaryButton from "@components/basic-components/primary-buttom";
-import DarkButton from "@components/basic-components/button";
+import PrimaryButton from "@components/basic-components/primary-button";
+// import DarkButton from "@components/basic-components/button";
 const LogoSection: React.FC = () => (
   <div className="flex grow gap-5 flex-col max-w-[354px] col-span-5 h-fit lg:max-w-[300px]  xs:mx-auto sm:mb-5 xs:mb-0">
     <Link href="/">
@@ -30,7 +30,7 @@ const LogoSection: React.FC = () => (
         icon={true}
         text="Request a quote"
         style=""
-        link="/contact"
+        link="/contact-us"
       />
       {/* Temporary disable */}
       {/* <DarkButton

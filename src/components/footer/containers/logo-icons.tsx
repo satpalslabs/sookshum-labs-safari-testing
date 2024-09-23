@@ -1,7 +1,7 @@
 /**
  * This component contains logo icons.
  */
-import React from "react";
+
 import Link from "next/link";
 import data from "../data/index.json";
 const { logos } = data;
@@ -18,8 +18,8 @@ const LogoIcons: React.FC = () => (
         <Link href={logo.link} target="_blank">
           <img
             className={`w-[37px] sm:w-[25px] xs:h-[30px] xs:w-[30px] sm:h-6 h-9 `}
-            width={200}
-            height={200}
+            width={76}
+            height={76}
             src={logo.image_source}
             alt={logo.alternative_text}
           />
