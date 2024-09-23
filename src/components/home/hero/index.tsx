@@ -17,7 +17,12 @@ const Hero: React.FC = () => (
     <img
       alt=""
       src="/home/hero/dots.svg"
-      className="absolute -bottom-[30%] lg:-bottom-[20%] sm:-bottom-[-25%] xs:-bottom-[0.1%] xs:z-[99999] z-20 w-full max-w-[1920px] mx-auto"
+      className="absolute xxl:-top-[45.3%] -top-[35.3%] lg:-top-[25%] sm:-top-[18.95%] xs:top-[-18.4%] xs:z-[99999] w-full max-w-[1920px] mx-auto"
+    />
+    <img
+      alt=""
+      src="/home/hero/dots.svg"
+      className="absolute -bottom-[30%] lg:-bottom-[26%] sm:-bottom-[20%] xs:h-[100px] xs:bottom-[-8.1%] xs:z-[99999] z-20 w-full max-w-[1920px] mx-auto"
     />
   </section>
 );

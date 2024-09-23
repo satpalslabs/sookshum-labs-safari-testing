@@ -45,7 +45,7 @@ const WorkTogether = dynamic(() => import("../basic-components/work-together"));
 const Sections: React.FC<HomeProps> = (props) => (
   <main className="mt-14 xl:mt-[52px] bg-black lg:mt-0 h-full">
     <Hero />
-    <CoreServices />
+    {/* <CoreServices /> */}
     <OurServices />
     <DevelopmentProcess />
     <ChooseUs />
@@ -57,11 +57,7 @@ const Sections: React.FC<HomeProps> = (props) => (
     {/* <BlogPosts /> */}
     <WorkTogether />
     <div className="bg-black xs:hidden top-0 absolute w-full -z-10 h-[150px]" />
-    <img
-      alt=""
-      src="/home/hero/dots.svg"
-      className="absolute -top-[1.3%] sm:-top-[0.95%] xs:top-[-0.4%] xs:z-[99999] w-full max-w-[1920px] mx-auto"
-    />
+  
   </main>
 );
 
