@@ -9,35 +9,35 @@ import Loading from "@app/loading";
 const Hero = dynamic(() => import("./hero"));
 const CoreServices = dynamic(() => import("./core-services"), {
   ssr: false,
-  loading: () => <Loading />,
+  loading: () => <p>Loading...</p>,
 });
 const OurServices = dynamic(() => import("./our-services"), {
   ssr: false,
-  loading: () => <Loading />,
+  loading: () => <p>Loading...</p>,
 });
 const DevelopmentProcess = dynamic(() => import("./our-development-process"), {
   ssr: false,
-  loading: () => <Loading />,
+  loading: () => <p>Loading...</p>,
 });
 const ChooseUs = dynamic(() => import("./why-choose-us"), {
   ssr: false,
-  loading: () => <Loading />,
+  loading: () => <p>Loading...</p>,
 });
 const Technologies = dynamic(() => import("./technologies"), {
   ssr: false,
-  loading: () => <Loading />,
+  loading: () => <p>Loading...</p>,
 });
 const IndustryExperience = dynamic(() => import("./industry-experience"), {
   ssr: false,
-  loading: () => <Loading />,
+  loading: () => <p>Loading...</p>,
 });
 const Testimonials = dynamic(() => import("../basic-components/testimonials"), {
   ssr: false,
-  loading: () => <Loading />,
+  loading: () => <p>Loading...</p>,
 });
 const Work = dynamic(() => import("./work"), {
   ssr: false,
-  loading: () => <Loading />,
+  loading: () => <p>Loading...</p>,
 });
 // const BlogPosts = dynamic(() => import("./blog-posts"));
 const WorkTogether = dynamic(() => import("../basic-components/work-together"));

@@ -5,7 +5,7 @@ export const d = "force-dynamic";
 
 const Sections = dynamic(() => import("@components/home"), {
   ssr: false,
-  loading: () => <Loading />,
+  loading: () => <p>Loading...</p>,
 });
 import dynamic from "next/dynamic";
 // import { headers } from "next/headers";
