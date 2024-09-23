@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /sitemap.xml
+Disallow: https://www.sookshum-labs.com/sitemap.xml
+
+
+# Sitemap location (optional)
+Sitemap: https://www.sookshum-labs.com/sitemap.xml
