@@ -9,7 +9,7 @@ import Image from "next/image";
 const Button = dynamic(() => import("./button"));
 
 const TextContainer: React.FC = () => (
-  <div className="absolute top-0 left-0  pl-[81px] pt-[22px] flex flex-col gap-[14px] z-10 lg:pl-10 xs:pl-5">
+  <div className=" pl-[81px] pt-[22px] flex flex-col gap-[14px] z-10 lg:pl-10 xs:pl-5">
     <Button />
     <div className="flex flex-col gap-[10px]">
       <div className="bg-gradientText bg-clip-text text-transparent text-[67px] 2xs:text-[30px] sm:text-[48px] lg:text-[57px] font-poppins font-[600] leading-[111px] 2xs:leading-[46px] sm:leading-[76px] lg:leading-[92px] 2xs:w-[98%] sm:w-[500px] md:w-[800px] w-[806px]  lg:w-[800px] tracking-tight relative">

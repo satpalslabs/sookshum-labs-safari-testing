@@ -2,14 +2,14 @@
  * This component contains the Hero section.
  */
 import dynamic from "next/dynamic";
-// import Image from "next/image";
+import Image from "next/image";
 
 const TextContainer = dynamic(() => import("./containers/text-container"));
 const ImageContainer = dynamic(() => import("./containers/image-container"));
 
 const Hero: React.FC = () => (
   <section
-    className="relative overflow-hidden max-w-[1920px] mx-auto"
+    className="flex relative justify-between h-fit max-w-[1920px] mx-auto"
     id="hero"
   >
     <TextContainer />
@@ -17,9 +17,7 @@ const Hero: React.FC = () => (
     <img
       alt=""
       src="/home/hero/dots.svg"
-      width={1920}
-      height={600}
-      className="absolute -bottom-[8%] sm:-bottom-[6%] xs:-bottom-[0.1%] xs:z-[99999] z-20 w-full max-w-[1920px] mx-auto"
+      className="absolute -bottom-[30%] lg:-bottom-[20%] sm:-bottom-[-25%] xs:-bottom-[0.1%] xs:z-[99999] z-20 w-full max-w-[1920px] mx-auto"
     />
   </section>
 );

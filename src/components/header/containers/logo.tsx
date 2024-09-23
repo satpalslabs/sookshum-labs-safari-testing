@@ -9,7 +9,6 @@ const Logo: React.FC = () => (
     <Image
       height={60}
       width={200}
-      loading="eager"
       className="w-[154px] h-full xs:w-[128px]"
       src="/header/Top-Nav-logo.svg"
       alt="Logo"

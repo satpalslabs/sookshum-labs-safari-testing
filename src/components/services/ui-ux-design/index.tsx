@@ -1,4 +1,3 @@
-
 import Testimonials from "@components/basic-components/testimonials";
 import WorkTogether from "@components/basic-components/work-together";
 import Work from "./work";
@@ -16,15 +15,15 @@ const content_heroSection: HeroSection = {
   URL: "/services/ui-ux-design/ui-ux-bg.webm",
   "contact-us": true,
   image: false,
-  fallback:"/services/ui-ux-design/fallback.png",
+  fallback: "/services/ui-ux-design/fallback.png",
   additionalDescription: null,
   buttonText: "UI/UX Designing",
   gradientText: "Human-centred UI/UX product design services",
   style: {
     sourceStyle:
-    "xxl:left-[50%] xxl:scale-[1.25] scale-[1.3] h-[630px] xxl:h-[680px] lg:scale-[1.35] xs:scale-[1.8] lg:h-[300px] sm:h-[320px] xs:h-[180px] overflow-hidden xs:h-[230px] xxl:-translate-x-[12%] -top-[13%] xxl:!-top-[25%] left-[15%] lg:left-[2%] lg:-top-[28%] xs:-left-[4%] xs:-top-[10%] xxl:left-[50%] xxl:-translate-x-[47%]",
-  gradientDivStyle:
-    "xxl:left-[50%] xxl:scale-[1.3] scale-[1.5] h-[530px] xxl:h-[600px] lg:scale-[1.35] xs:scale-[1] lg:h-[300px] sm:h-[320px] xs:h-[440px] overflow-hidden xs:h-[130px] xxl:-translate-x-[12%] -top-[13%] xxl:!-top-[10%] left-[15%] lg:left-[2%] lg:-top-[28%] xs:-left-[0%] xs:-top-[35%] xxl:left-[50%] xxl:-translate-x-[47%]",
+      "xxl:left-[50%] xxl:scale-[1.45] scale-[1.3] h-[630px] xxl:h-[680px] lg:scale-[1.35] xs:scale-[1.8] lg:h-[390px] md:h-[420px] sm:h-[380px] xs:h-[180px] overflow-hidden xs:!h-[150px] xxl:-translate-x-[12%] -top-[13%] xxl:-top-[17%] left-[15%] lg:left-[2%] lg:-top-[28%] xs:-left-[4%] xs:-top-[10%]",
+    gradientDivStyle:
+      "xxl:mt-[2%] lg:-mt-[8%] sm:-mt-[15%] lg:h-[570px] sm:h-[560px]",
   },
   aboutPage:
     "We craft successful digital products that align user needs with business goals, using a human-centered design approach to bring them to life.",

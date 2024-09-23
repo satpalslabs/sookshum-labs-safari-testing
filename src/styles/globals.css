@@ -25,7 +25,7 @@
     --slider-circle-gradient: linear-gradient(158.39deg, rgba(255, 255, 255, 0.1) 14.19%, rgba(255, 255, 255, 2.5e-05) 50.59%, rgba(255, 255, 255, 2.5e-05) 68.79%, rgba(255, 255, 255, 0.025) 105.18%);
     --dark-button-gradient: linear-gradient(94.33deg, rgba(230, 134, 36, 0.092549) 1.23%, rgba(230, 134, 36, 0.2) 98.22%);
     --text-gradient: linear-gradient(92.21deg, #8BB3FF 9.36%, #E68624 57.5%, #FF358A 99.51%);
-    --hover-gradient: linear-gradient(0deg, #282828b3, #282828b3), linear-gradient(181.14deg, #e6862400 86.43%, #e686243b 120.21%), linear-gradient(91.05deg, #e6862400 87.12%, #e686243b 120.22%), linear-gradient(1.14deg, #e6862400 88.01%, #e686243b 115.85%), linear-gradient(271.05deg, #e6862400 87.8%, #e686243b 116.94%);
+    --hover-gradient: linear-gradient(0deg, #282828b3, #282828b3), linear-gradient(181.14deg, #e6862400 86.43%, #e6852448 120.21%), linear-gradient(91.05deg, #e6862400 87.12%, #e686243b 120.22%), linear-gradient(1.14deg, #e685240a 88.01%, #e6852447 115.85%), linear-gradient(271.05deg, #e6862400 87.8%, #e685245d 116.94%);
     --dark-gradient: linear-gradient(180deg, #1E1E1E 0%, rgba(0, 0, 0, 0) 100%);
     --orange-background: linear-gradient(118.99deg, #E68624 1.91%, #804B14 97.83%);
     --slider-gradient: linear-gradient(180deg, #15151538 0%, #000000 100%);

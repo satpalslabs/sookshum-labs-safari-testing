@@ -42,7 +42,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://rsms.me" crossOrigin="anonymous" />
       </Head>
       <body>
-        <div className="flex flex-col justify-between font-400 !bg-black text-white w-full max-w-screen overflow-x-hidden min-h-[100vh]">
+        <div className="flex flex-col justify-between font-400 !bg-black text-white w-full max-w-screen overflow-hidden min-h-[100vh]">
           <Header />
           <div className="!bg-black z-10 relative grow">{children}</div>
           <Footer />

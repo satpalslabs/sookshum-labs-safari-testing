@@ -1,7 +1,7 @@
 import dynamic from "next/dynamic";
 import { DotLottie, DotLottieReact } from "@lottiefiles/dotlottie-react";
 import { dataItem } from "..";
-import { useRef } from "react";
+import { useCallback, useRef } from "react";
 
 // Dynamic imports with React.lazy
 const Card = dynamic(() => import("@components/basic-components/card"));
@@ -16,18 +16,21 @@ const ServiceCard = ({
 }) => {
   const dotLottieRef = useRef<DotLottie | null>(null);
 
-  const playAnimation = () => {
+  const playAnimation = useCallback(() => {
     if (dotLottieRef.current) {
       dotLottieRef.current.play();
     }
-  };
+  }, []);
   // Debounced playAnimation function
 
-  const handleKeyDown = (e: React.KeyboardEvent) => {
-    if (e.key === "Enter") {
-      playAnimation();
-    }
-  };
+  const handleKeyDown = useCallback(
+    (e: React.KeyboardEvent) => {
+      if (e.key === "Enter") {
+        playAnimation();
+      }
+    },
+    [playAnimation]
+  );
 
   return (
     <div
@@ -51,7 +54,7 @@ const ServiceCard = ({
                   dotLottieRef.current = dotLottieInstance;
                 }}
                 renderConfig={{
-                  devicePixelRatio: 0,
+                  devicePixelRatio:0
                 }}
                 useFrameInterpolation={false}
                 className="w-full h-auto"

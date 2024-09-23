@@ -15,7 +15,7 @@ const GradientSection: React.FC<props> = ({ buttonText, gradientText }) => (
       <div className=" flex-1 flex flex-col items-center justify-center gap-[2.5rem] text-center  lg:p-[2.5rem] lg:box-border md:p-[1.875rem] md:box-border sm:p-[1.25rem] sm:box-border">
         <div className=" flex flex-col items-center justify-start gap-[1.875rem] text-[5.375rem] ">
           <DarkButton text={buttonText} style="" />
-          <GradientText text={gradientText} classes="" />
+          <GradientText text={gradientText} classes="3xs:text-[29px]" />
         </div>
         <PrimaryButton
           icon={true}
