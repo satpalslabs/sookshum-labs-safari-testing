@@ -33,13 +33,12 @@ export default function RootLayout({
         />
         <link rel="stylesheet" />
         {/* Preconnect to optimize font loading */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="anonymous"/>
         <link
           rel="preconnect"
           href="https://fonts.gstatic.com"
           crossOrigin="anonymous"
         />
-        <link rel="preconnect" href="https://rsms.me" crossOrigin="anonymous" />
       </Head>
       <body>
         <div className="flex flex-col justify-between font-400 !bg-black text-white w-full max-w-screen overflow-hidden min-h-[100vh]">
