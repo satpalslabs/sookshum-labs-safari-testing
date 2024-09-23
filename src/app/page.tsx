@@ -1,12 +1,16 @@
 /**
  * Route Component.
  */
-export const dynamic = "force-dynamic";
+export const d = "force-dynamic";
 
-import Sections from "@components/home";
-
+const Sections = dynamic(() => import("@components/home"), {
+  ssr: false,
+  loading: () => <Loading />,
+});
+import dynamic from "next/dynamic";
 // import { headers } from "next/headers";
 import { Suspense } from "react";
+import Loading from "./loading";
 
 export interface HomeProps {
   isBot: boolean;
