@@ -17,6 +17,8 @@ const Hero: React.FC = () => (
     <img
       alt=""
       src="/home/hero/dots.svg"
+      width={1920}
+      height={600}
       className="absolute -bottom-[8%] sm:-bottom-[6%] xs:-bottom-[0.1%] xs:z-[99999] z-20 w-full max-w-[1920px] mx-auto"
     />
   </section>
