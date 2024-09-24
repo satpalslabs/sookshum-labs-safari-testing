@@ -3,14 +3,10 @@
  */
 export const d = "force-dynamic";
 
-const Sections = dynamic(() => import("@components/home"), {
-  ssr: false,
-  loading: () => <Loading />,
-});
+const Sections = dynamic(() => import("@components/home"));
 import dynamic from "next/dynamic";
 import { headers } from "next/headers";
 import { Suspense } from "react";
-import Loading from "./loading";
 
 export interface HomeProps {
   isBot: boolean;

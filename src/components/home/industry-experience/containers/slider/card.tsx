@@ -2,7 +2,9 @@
  * This component contains each card of slider.
  */
 
-const Description = dynamic(() => import("@components/basic-components/description"));
+const Description = dynamic(
+  () => import("@components/basic-components/description")
+);
 
 const H6 = dynamic(() => import("@components/basic-components/headings/H6"));
 
@@ -12,19 +14,17 @@ import dynamic from "next/dynamic";
 const Card = dynamic(() => import("@components/basic-components/card"), {
   ssr: false, // Optional: Disable server-side rendering for this component if needed
 });
-const Industry = ({
-  industry,
-  isInView,
-}: {
+const Industry: React.FC<{
   industry: industryType;
   isInView: boolean;
-}) => (
+}> = ({ industry, isInView }) => (
   <Card
     isInView={isInView}
     style="!h-full flex flex-col gap-4 lg:gap-3 sm:gap-2 !pb-0"
   >
-    <Image  blurDataURL="URL"  placeholder="blur" 
-
+    <Image
+      blurDataURL="URL"
+      placeholder="blur"
       height={400}
       width={400}
       src={industry.image}

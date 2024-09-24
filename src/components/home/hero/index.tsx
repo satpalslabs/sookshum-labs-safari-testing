@@ -1,16 +1,12 @@
 /**
  * This component contains the Hero section.
  */
-import Loading from "@app/loading";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import dots from "/public/home/hero/dots.svg";
 
 const TextContainer = dynamic(() => import("./containers/text-container"));
-const ImageContainer = dynamic(() => import("./containers/image-container"), {
-  ssr: false,
-  loading: () => <Loading />,
-});
+const ImageContainer = dynamic(() => import("./containers/image-container"));
 
 const Hero: React.FC = () => (
   <section

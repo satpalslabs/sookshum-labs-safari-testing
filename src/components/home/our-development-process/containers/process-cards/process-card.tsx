@@ -7,15 +7,11 @@ import { dataItemType } from ".";
 import Image from "next/image";
 const TextContainer = dynamic(() => import("./text-container"));
 
-const DevelopmentProcessCard = ({
-  item,
-  index,
-  isInView,
-}: {
+const DevelopmentProcessCard: React.FC<{
   item: dataItemType;
   index: number;
   isInView: boolean;
-}) => (
+}> = ({ item, index, isInView }) => (
   <div
     style={{
       gridColumn: `span ${item.cols} / span ${item.cols}`,

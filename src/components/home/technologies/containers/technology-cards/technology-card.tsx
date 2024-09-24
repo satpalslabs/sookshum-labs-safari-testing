@@ -6,16 +6,15 @@ import { useInView } from "@lib/use-in-view";
 import $ from "jquery";
 import dynamic from "next/dynamic";
 
-const Description = dynamic(() => import("@components/basic-components/description"));
+const Description = dynamic(
+  () => import("@components/basic-components/description")
+);
 const H3 = dynamic(() => import("@components/basic-components/headings/H3"));
 
-const TechnologyCard = ({
-  item,
-  index,
-}: {
+const TechnologyCard: React.FC<{
   item: dataItemType;
   index: number;
-}) => {
+}> = ({ item, index }) => {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref);
   useEffect(() => {
@@ -71,9 +70,7 @@ const TechnologyCard = ({
           onTouchStart={(e: any) => {
             e.target.play();
           }}
-          
-        >
-        </video>
+        ></video>
       </div>
     </div>
   );
