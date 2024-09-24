@@ -24,9 +24,9 @@ const content_heroSection: HeroSection = {
   gradientText: "Web App Development Services",
   style: {
     sourceStyle:
-    "xxl:left-[50%] xxl:scale-[1.45] scale-[1.3] h-[630px] xxl:h-[680px] lg:scale-[1.35] xs:scale-[1.8] lg:h-[390px] md:h-[420px] sm:h-[380px] xs:h-[180px] overflow-hidden xs:!h-[150px] xxl:-translate-x-[12%] -top-[13%] xxl:-top-[17%] left-[15%] lg:left-[2%] lg:-top-[28%] xs:-left-[4%] xs:-top-[10%]",
-  gradientDivStyle:
-    "xxl:mt-[2%] lg:-mt-[8%] sm:-mt-[15%] lg:h-[570px] sm:h-[560px]",
+      "xxl:left-[50%] xxl:!scale-[1.45] !scale-[2] !h-[550px] xxl:!h-[680px] lg:!scale-[1.35] lg:!h-[380px] md:!h-[400px] sm:!h-[380px] xs:!h-[160px] xs:!scale-[3.8] 2xs:!scale-[3] 2xs:!h-[150px] overflow-hidden  xxl:-translate-x-[12%] -top-[13%] xxl:-top-[17%] left-[15%] lg:left-[2%] lg:-top-[28%] xs:-left-[4%] xs:-top-[10%]",
+    gradientDivStyle:
+      "xxl:mt-[2%] lg:!-mt-[8%] sm:!-mt-[12%] xs:!-mt-[10%] 2xs:!-mt-[9%] lg:!h-[550px] sm:!h-[560px] 2xs:!h-[500px] xs:!h-[580px]",
   },
   aboutPage:
     "Transform your ideas into powerful web applications with our expert web app development services.",

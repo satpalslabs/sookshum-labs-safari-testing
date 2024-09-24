@@ -27,7 +27,7 @@ const PrimaryButton: React.FC<props> = ({ text, style, icon = true, link }) => {
   };
   return (
     <>
-      {link == "" ? (
+      {link === "" ? (
         <div
           id="primary-button"
           className={`text-white px-6 h-[55px] xs:flex xs:justify-center rounded-full xs:text-[13px] transition-all font-poppins font-medium bg-primary w-fit lg:h-[48px] lg:px-5 lg:text-[13px] flex items-center hover:scale-105 ${style} `}

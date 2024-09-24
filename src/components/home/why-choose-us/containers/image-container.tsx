@@ -3,27 +3,33 @@
  */
 
 import Image from "next/image";
+import { dataItemType } from "./main-container";
 
 const ImageContainer = ({
-  source,
+  item,
   isInView,
 }: {
-  source: string;
+  item: dataItemType;
   isInView: boolean;
 }) => (
   <div
     className={`grow-0 flex items-center col-span-6
        shadow-buttonInset bg-innerContainer rounded-[32px] lg:rounded-[26px] sm:gap-3 xs:hidden grayscale transition-all ${
-      isInView ? "grayscale-0" : "grayscale"
-    } }`}
+         isInView ? "grayscale-0" : "grayscale"
+       } }`}
   >
-    <Image
-      height={500}
-      width={500}
+    <video
+      autoPlay={true}
+      src={item.video_url}
+      muted
+      playsInline
       className="w-[500px] m-auto md:w-[368px] md:h-[368px] object-contain"
-      alt=""
-      src={source}
-    />
+    >
+      <img
+        src={item.image_url}
+        title="Your browser does not support the <video> tag"
+      />
+    </video>
   </div>
 );
 

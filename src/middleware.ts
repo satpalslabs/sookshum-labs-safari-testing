@@ -1,26 +1,25 @@
-import { NextRequest, NextResponse, userAgent } from 'next/server';
-import { isbot } from 'isbot'; // Default import
-import { headers } from 'next/headers';
-
+import { NextRequest, NextResponse } from 'next/server';
+import { isbot } from 'isbot';
 
 export function middleware(request: NextRequest) {
-    const url = request.nextUrl
-    const user_agent = headers().get("user-agent") || ''
-
     const userAgent = request.headers.get('user-agent') || '';
-    console.log(userAgent, request.headers)
-    const isBot = isbot(user_agent); // Use isbot correctly
+    const isBot = isbot(userAgent);
 
-    const requestHeaders = new Headers(request.headers);
-    requestHeaders.set('x-is-bot', isBot ? 'true' : 'false');
-    // console.log("User-Agent:", request.headers.get('user-agent'));
-    // console.log("Is Bot:", isBot);
-    return NextResponse.next({
-        request: {
-            headers: requestHeaders
-        }
-    });
+    const response = NextResponse.next();
+
+    // Set the x-is-bot header
+    response.headers.set('x-is-bot', isBot ? 'true' : 'false');
+
+    // Set the X-Robots-Tag header based on environment
+    if (process.env.VERCEL_ENV != 'production') {
+        response.headers.set('X-Robots-Tag', 'noindex, nofollow');
+    } else {
+        response.headers.set('X-Robots-Tag', 'index, follow');
+    }
+
+    return response;
 }
+
 export const config = {
-    matcher:'/'
+    matcher: '/:path*'
 }

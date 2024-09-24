@@ -2,7 +2,9 @@
  * This component contains the text container of hero section.
  */
 
-const PrimaryButton = dynamic(() => import("@components/basic-components/primary-button"));
+const PrimaryButton = dynamic(
+  () => import("@components/basic-components/primary-button")
+);
 
 import dynamic from "next/dynamic";
 import Image from "next/image";
@@ -32,7 +34,7 @@ const TextContainer: React.FC = () => (
     <PrimaryButton
       icon={true}
       text="Request a quote"
-      style="md:mt-[30px] mt-[66px]"
+      style="md:mt-[30px] mt-[66px] cursor-pointer"
       link="/contact-us"
     />
   </div>

@@ -42,7 +42,7 @@ export async function POST(request: NextRequest) {
           <div>Please find the attached files related to this project for your review.</div> <br />
           <div>Best regards,</div>
           <div><b>Sookshum labs team</b></div>
-          <img style="height:30px; margin-top:10px" src="https://www.sookshum-labs.com/wp-content/uploads/2021/09/Top-Nav-logo.png" alt="Embedded Image">
+          <img style="height:30px; margin-top:10px" src="https://www.sookshum-labs.com/header/Top-Nav-logo.svg" alt="Sookshum labs Logo">
           </div>`,
     attachments: data.files,
 

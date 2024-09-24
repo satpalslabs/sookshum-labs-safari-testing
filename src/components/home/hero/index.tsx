@@ -16,18 +16,22 @@ const Hero: React.FC = () => (
     className="flex relative justify-between h-fit max-w-[1920px] mx-auto"
     id="hero"
   >
+    <div className="absolute  -top-[15%]  h-[200px] lg:-top-[10%] xs:top-[-15.4%] xs:z-[99999] w-screen overflow-hidden">
+      <img
+        alt=""
+        src="/home/hero/dots.svg"
+        className="scale-[3.8] lg:scale-[3] xs:scale-[2] min-w-[100vw]  h-[100px]"
+      />
+    </div>
     <TextContainer />
     <ImageContainer />
-    <img
-      alt=""
-      src="/home/hero/dots.svg"
-      className="absolute xxl:-top-[45.3%] -top-[35.3%] lg:-top-[25%] sm:-top-[18.95%] xs:top-[-18.4%] xs:z-[99999] w-full max-w-[1920px] mx-auto"
-    />
-    <img
-      alt=""
-      src="/home/hero/dots.svg"
-      className="absolute -bottom-[30%] lg:-bottom-[26%] sm:-bottom-[20%] xs:h-[100px] xs:bottom-[-8.1%] xs:z-[99999] z-20 w-full max-w-[1920px] mx-auto"
-    />
+    <div className="absolute -bottom-[20%] lg:-bottom-[23%] xs:bottom-[8%] h-[200px] xs:h-[40px] z-20 w-full overflow-visible">
+      <img
+        alt=""
+        src="/home/hero/dots.svg"
+        className=" scale-[3.8] lg:scale-[3] xs:scale-[2] min-w-[100vw]  h-[100px]"
+      />
+    </div>
   </section>
 );
 

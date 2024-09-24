@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     icon: "/favicon.png",
   },
   title: "Sookshum Labs: Custom Software Development Company",
+  description:" We build modern digital products for startups and enterprises around the globe."
 };
 
 export default function RootLayout({
@@ -24,7 +25,6 @@ export default function RootLayout({
       <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
         <link
           rel="preload"
           href="/home/hero/dots.svg"
@@ -33,7 +33,11 @@ export default function RootLayout({
         />
         <link rel="stylesheet" />
         {/* Preconnect to optimize font loading */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="anonymous"/>
+        <link
+          rel="preconnect"
+          href="https://fonts.googleapis.com"
+          crossOrigin="anonymous"
+        />
         <link
           rel="preconnect"
           href="https://fonts.gstatic.com"

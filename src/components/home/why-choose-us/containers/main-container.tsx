@@ -14,6 +14,7 @@ export type dataItemType = {
   title: string;
   description: string;
   image_url: string;
+  video_url: string;
 };
 
 function MainContainer() {
@@ -23,10 +24,10 @@ function MainContainer() {
   return (
     <div
       ref={ref}
-      className="w-full gap-5 grid grid-cols-10 md:gap-[14px] xs:grid-cols-1"
+      className="w-full gap-5 grid grid-cols-10 md:gap-[14px] xs:grid-cols-1 !shrink-0"
     >
       <ImageContainer
-        source={data.text_containers[selectedCardIndex].image_url}
+        item={data.text_containers[selectedCardIndex]}
         isInView={isInView}
       />
       <div className="flex flex-col gap-5 md:gap-3 col-span-4">

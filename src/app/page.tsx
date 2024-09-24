@@ -8,7 +8,7 @@ const Sections = dynamic(() => import("@components/home"), {
   loading: () => <Loading />,
 });
 import dynamic from "next/dynamic";
-// import { headers } from "next/headers";
+import { headers } from "next/headers";
 import { Suspense } from "react";
 import Loading from "./loading";
 
@@ -18,9 +18,9 @@ export interface HomeProps {
 
 export function is_Bot() {
   let is_bot = false;
-  // is_bot = headers().get("x-is-bot")
-  //   ? headers().get("x-is-bot") === "true"
-  //   : is_bot;
+  is_bot = headers().get("x-is-bot")
+    ? headers().get("x-is-bot") === "true"
+    : is_bot;
   return is_bot;
 }
 
