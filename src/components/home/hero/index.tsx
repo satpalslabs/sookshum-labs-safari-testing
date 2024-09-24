@@ -13,12 +13,12 @@ const Hero: React.FC = () => (
     className="flex relative justify-between h-fit max-w-[1920px] mx-auto"
     id="hero"
   >
-    <div className="absolute  -top-[90px]  h-[200px] lg:-top-[10%] xs:top-[-15.4%] z-20 w-screen overflow-hidden">
+    <div className="absolute -top-[90px] h-[200px] lg:-top-[10%] xs:top-[-15.4%] z-20 w-screen overflow-hidden">
       <Image
         alt=""
-        loading="eager"
         src={dots}
-        className="scale-[3.8] lg:scale-[3] xs:scale-[2] min-w-[100vw]  h-[100px]"
+        priority // Use priority instead of eager
+        className="scale-[3.8] lg:scale-[3] xs:scale-[2] min-w-[100vw] h-[100px]"
       />
     </div>
     <TextContainer />
@@ -27,7 +27,7 @@ const Hero: React.FC = () => (
       <Image
         alt=""
         src={dots}
-        className=" scale-[3.8] lg:scale-[3] xs:scale-[2] min-w-[100vw]  h-[100px]"
+        className="scale-[3.8] lg:scale-[3] xs:scale-[2] min-w-[100vw] h-[100px]"
       />
     </div>
   </section>
