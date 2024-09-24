@@ -7,9 +7,9 @@ import { HomeProps } from "@app/page";
 import Loading from "@app/loading";
 
 const Hero = dynamic(() => import("./hero"));
-const CoreServices = dynamic(() => import("./core-services"), {
-  ssr: false,
-});
+// const CoreServices = dynamic(() => import("./core-services"), {
+//   ssr: false,
+// });
 const OurServices = dynamic(() => import("./our-services"), {
   ssr: false,
 });
@@ -37,7 +37,7 @@ const WorkTogether = dynamic(() => import("../basic-components/work-together"));
 const Sections: React.FC<HomeProps> = (props) => (
   <main className="mt-14 xl:mt-[52px] bg-black lg:mt-0 h-full">
     <Hero />
-    <CoreServices />
+    {/* <CoreServices /> */}
     <OurServices />
     <DevelopmentProcess />
     <ChooseUs />
