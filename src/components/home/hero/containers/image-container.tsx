@@ -12,18 +12,17 @@ const ImageContainer: React.FC = () => (
       muted
       loop
       playsInline
-      className="w-fit h-[700px] xxl:h-[800px] lg:h-[568px] sm:h-[503px] xs:w-full float-right xxl:-mt-[7.4%] -mt-[10%] lg:-mt-[5%] sm:mt-[8%] xs:mt-[-9%] 2xs:mt-[-25%]  sm:-mr-[20%] -mr-[15%] sm:-ml-6 md:ml-[58px] lg:ml-[50px] xs:h-[650px] lg:object-contain"
+      className="w-fit h-[700px] xxl:h-[800px] lg:h-[568px] sm:h-[503px] xs:w-full xxl:-mt-[7.4%] -mt-[10%] lg:-mt-[5%] sm:mt-[8%] xs:mt-[-9%] 2xs:mt-[-25%]  sm:-mr-[20%] -mr-[15%] sm:-ml-6 md:ml-[58px] lg:ml-[50px] xs:h-[650px] lg:object-contain"
       width={1500}
       height={1500}
       preload="auto"
     >
       <source src="/home/hero/bg-video.webm" type="video/webm" />
-      <source src="/home/hero/bg-video.mp4" type="video/mp4" />
       {/* Fallback */}
       <Image
         width={1200}
         height={600}
-        className="w-fit h-[900px] lg:h-[568px] sm:h-[493px] xs:w-full float-right xxl:-mt-[7.4%] -mt-[10%] lg:-mt-[18%] sm:-mt-[18%] xs:-mt-[54%] sm:-mr-[20%] -mr-[15%] sm:-ml-6 md:ml-[58px] lg:ml-[50px] xs:h-[350px] lg:object-contain"
+        className="w-fit h-[700px] xxl:h-[800px] lg:h-[568px] sm:h-[503px] xs:w-full xxl:-mt-[7.4%] -mt-[10%] lg:-mt-[5%] sm:mt-[8%] xs:mt-[-9%] 2xs:mt-[-25%]  sm:-mr-[20%] -mr-[15%] sm:-ml-6 md:ml-[58px] lg:ml-[50px] xs:h-[650px] lg:object-contain"
         alt="background image"
         src="/home/hero/fallback.webp"
         priority
