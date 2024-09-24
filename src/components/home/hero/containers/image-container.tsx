@@ -3,29 +3,30 @@
  */
 
 import Image from "next/image";
-import fallbackImage from '/public/home/hero/fallback.webp'
+import fallbackImage from "/public/home/hero/fallback.webp";
 const ImageContainer: React.FC = () => (
   <div className="absolute right-0 xxl:-top-8 top-0 sm:-top-10 xs:-top-8 w-fit min-h-fit float-right ">
     <video
       autoPlay={true}
       poster="/home/hero/fallback.webp"
       muted
-      loop      
+      loop
       playsInline
-      className="w-fit h-[700px] xxl:h-[800px] float-right lg:h-[568px] sm:h-[503px] xs:w-full xxl:-mt-[7.4%] -mt-[10%] lg:-mt-[5%] sm:mt-[8%] xs:mt-[-9%] 2xs:mt-[-25%]  sm:-mr-[20%] -mr-[15%] sm:-ml-6 md:ml-[58px] lg:ml-[50px] xs:h-[650px] lg:object-contain"
+      preload="metadata" // Changed from "auto" to "metadata" for faster initial loading
+      className="w-fit h-[700px] xxl:h-[800px] float-right lg:h-[568px] sm:h-[503px] xs:w-full xxl:-mt-[7.4%] -mt-[10%] lg:-mt-[5%] sm:mt-[8%] xs:mt-[-9%] 2xs:mt-[-25%] sm:-mr-[20%] -mr-[15%] sm:-ml-6 md:ml-[58px] lg:ml-[50px] xs:h-[650px] lg:object-contain"
       width={1500}
       height={1500}
-      preload="auto"
     >
       <source src="/home/hero/bg-video.webm" type="video/webm" />
-      {/* Fallback */}
+      {/* Fallback Image */}
       <Image
-        className="w-fit h-[700px] xxl:h-[800px] lg:h-[568px] sm:h-[503px] xs:w-full xxl:-mt-[7.4%] -mt-[10%] lg:-mt-[5%] sm:mt-[8%] xs:mt-[-9%] 2xs:mt-[-25%]  sm:-mr-[20%] -mr-[15%] sm:-ml-6 md:ml-[58px] lg:ml-[50px] xs:h-[650px] lg:object-contain"
+        className="w-fit h-[700px] xxl:h-[800px] lg:h-[568px] sm:h-[503px] xs:w-full xxl:-mt-[7.4%] -mt-[10%] lg:-mt-[5%] sm:mt-[8%] xs:mt-[-9%] 2xs:mt-[-25%] sm:-mr-[20%] -mr-[15%] sm:-ml-6 md:ml-[58px] lg:ml-[50px] xs:h-[650px] lg:object-contain"
         alt="background image"
         src={fallbackImage}
         title="Your browser does not support the <video> tag"
         blurDataURL="URL"
         placeholder="blur"
+        priority // Ensures this image is prioritized for loading
       />
     </video>
 
