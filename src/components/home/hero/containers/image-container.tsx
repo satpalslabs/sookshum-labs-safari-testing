@@ -5,55 +5,31 @@
 import Image from "next/image";
 import fallbackImage from "/public/home/hero/fallback.webp";
 const ImageContainer: React.FC = () => (
-  <div className="absolute right-0 xxl:-top-8 top-0 sm:-top-10 xs:-top-8 w-fit min-h-fit float-right ">
+  <div className="absolute right-0 top-0 w-full h-[700px] lg:h-[568px]">
     <video
       autoPlay={true}
       poster="/home/hero/fallback.webp"
       muted
       loop
       playsInline
-      preload="metadata" // Changed from "auto" to "metadata" for faster initial loading
-      className="w-fit h-[700px] xxl:h-[800px] float-right lg:h-[568px] sm:h-[503px] xs:w-full xxl:-mt-[7.4%] -mt-[10%] lg:-mt-[5%] sm:mt-[8%] xs:mt-[-9%] 2xs:mt-[-25%] sm:-mr-[20%] -mr-[15%] sm:-ml-6 md:ml-[58px] lg:ml-[50px] xs:h-[650px] lg:object-contain"
-      width={1500}
-      height={1500}
+      preload="metadata"
+      className="w-full h-[700px] lg:h-[568px] object-contain"
     >
       <source src="/home/hero/bg-video.webm" type="video/webm" />
       {/* Fallback Image */}
       <Image
-        className="w-fit h-[700px] xxl:h-[800px] lg:h-[568px] sm:h-[503px] xs:w-full xxl:-mt-[7.4%] -mt-[10%] lg:-mt-[5%] sm:mt-[8%] xs:mt-[-9%] 2xs:mt-[-25%] sm:-mr-[20%] -mr-[15%] sm:-ml-6 md:ml-[58px] lg:ml-[50px] xs:h-[650px] lg:object-contain"
+        className="w-full h-[700px] lg:h-[568px] object-contain"
         alt="background image"
         src={fallbackImage}
-        title="Your browser does not support the <video> tag"
+        width={1500}
+        height={700}
         blurDataURL="URL"
         placeholder="blur"
-        priority // Ensures this image is prioritized for loading
+        priority
       />
     </video>
-
-    {/* <div
-        className={`w-[110%] -left-[10%] right-0 h-[900px] lg:h-[668px] xs:w-[400px] xs:h-[400px] float-right xxl:-mt-[7.4%] -mt-[10%] lg:-mt-[18%] sm:-mt-[36%] lg:mr-0 mr-[2%] sm:-mr-[22%]  md:ml-[58px] lg:ml-[50px] xs:-mt-[44%] bg-gradient-to-l from-black via-gray to-black absolute`}
-      ></div> */}
-
-    {/* <div
-      className={`max-w-[150%] w-[100%]  right-0 h-[900px] lg:h-[668px] xs:w-[400px] xs:h-[600px] float-right xxl:-mt-[7.4%] -mt-[10%] lg:-mt-[18%] sm:-mt-[36%] sm:-mr-[0%] lg:mr-0 mr-[2%] sm:-ml-6 md:ml-[58px] lg:ml-[50px] xs:-mt-[44%] xs:!right-0 xs:left-none xs:ml-0 bg-gradient-to-l from-black via-transparent to-black absolute`}
-    ></div> */}
-    {/* <div
-        className={`h-[600px] w-[500px] right-0 top-[-50%] -mt-[40%] bg-gradient-to-l from-black via-transparent to-black absolute`}
-      >ds</div> */}
-    {/* <Image  blurDataURL="URL"  placeholder="blur" 
-
-      src="/home/hero/hero-lg.png"
-      className="w-full h-full ml-[0px] hidden xs:block "
-      width={1500}
-      height={1500}
-      alt="background image"
-    /> */}
-    {/* <div className="w-[900px] h-[900px] absolute hex-wrapper top-0 z-[80] rotate-12 right-0">
-      <div className="hex-outer">
-        <div className="hex-inner"></div>
-      </div>
-    </div> */}
   </div>
 );
+
 
 export default ImageContainer;

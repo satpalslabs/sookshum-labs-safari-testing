@@ -41,6 +41,7 @@ export default function RootLayout({
           type="image/svg+xml"
         />
         <link rel="stylesheet" />
+        <link rel="preload" href="/home/hero/fallback.webp" as="image" />
       </Head>
       <body>
         <div className="flex flex-col justify-between !font-poppins !bg-black text-white w-full max-w-screen overflow-hidden min-h-[100vh]">
