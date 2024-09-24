@@ -9,9 +9,7 @@ const H6 = dynamic(() => import("@components/basic-components/headings/H6"));
 import Image from "next/image";
 import { industryType } from ".";
 import dynamic from "next/dynamic";
-import Loading from "@app/loading";
 const Card = dynamic(() => import("@components/basic-components/card"), {
-  loading: () => <Loading />, // Optional: A loading component can be shown while the Card is loading
   ssr: false, // Optional: Disable server-side rendering for this component if needed
 });
 const Industry = ({
