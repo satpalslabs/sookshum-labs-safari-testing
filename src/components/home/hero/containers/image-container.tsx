@@ -12,7 +12,7 @@ const ImageContainer: React.FC = () => (
       muted
       loop
       playsInline
-      className="w-fit h-[700px] xxl:h-[800px] lg:h-[568px] sm:h-[503px] xs:w-full xxl:-mt-[7.4%] -mt-[10%] lg:-mt-[5%] sm:mt-[8%] xs:mt-[-9%] 2xs:mt-[-25%]  sm:-mr-[20%] -mr-[15%] sm:-ml-6 md:ml-[58px] lg:ml-[50px] xs:h-[650px] lg:object-contain"
+      className="w-fit h-[700px] xxl:h-[800px] float-right lg:h-[568px] sm:h-[503px] xs:w-full xxl:-mt-[7.4%] -mt-[10%] lg:-mt-[5%] sm:mt-[8%] xs:mt-[-9%] 2xs:mt-[-25%]  sm:-mr-[20%] -mr-[15%] sm:-ml-6 md:ml-[58px] lg:ml-[50px] xs:h-[650px] lg:object-contain"
       width={1500}
       height={1500}
       preload="auto"
