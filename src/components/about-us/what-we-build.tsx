@@ -3,7 +3,7 @@ import Description from "@components/basic-components/description";
 import H3 from "@components/basic-components/headings/H3";
 import { useInView } from "@lib/use-in-view";
 import Image from "next/image";
-import  { useRef } from "react";
+import { useRef } from "react";
 
 const WhatWeBuild: React.FC = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -52,6 +52,8 @@ const WhatWeBuild: React.FC = () => {
           alt=""
           src="/about-us/who-we-are/screen.png"
           className="grow h-[633px] lg:h-[403px] sm:h-[291px] xs:h-[219px] overflow-hidden object-cover rounded-[32px]"
+          blurDataURL="URL"
+          placeholder="blur"
         />
       </div>
     </section>

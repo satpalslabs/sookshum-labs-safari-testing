@@ -3,8 +3,9 @@ import Description from "@components/basic-components/description";
 import H3 from "@components/basic-components/headings/H3";
 import { useInView } from "@lib/use-in-view";
 import data from "./data/innovation-concepts.json";
-import  { useRef } from "react";
-const Card = dynamic(() => import('@components/basic-components/card'));import Image from "next/image";
+import { useRef } from "react";
+const Card = dynamic(() => import("@components/basic-components/card"));
+import Image from "next/image";
 import H4 from "@components/basic-components/headings/H4";
 import H6 from "@components/basic-components/headings/H6";
 import dynamic from "next/dynamic";
@@ -51,10 +52,16 @@ const InnovationConcepts: React.FC = () => {
                 height="2200"
                 src={concept.icon}
                 className="w-[100px] h-[100px] lg:w-[80px] lg:h-[80px] "
+                blurDataURL="URL"
+                placeholder="blur"
               />
-              <H4 text={concept.heading} style="text-[26px] !font-[600]"/>
-              <H6 text={concept.title} classes="!text-white xxl:text-[23px] "/>
-              <Description text={concept.description} classes="text-lg xxl:text-[20px] !text-white !font-normal" children={null} />
+              <H4 text={concept.heading} style="text-[26px] !font-[600]" />
+              <H6 text={concept.title} classes="!text-white xxl:text-[23px] " />
+              <Description
+                text={concept.description}
+                classes="text-lg xxl:text-[20px] !text-white !font-normal"
+                children={null}
+              />
             </div>
           </Card>
         ))}

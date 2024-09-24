@@ -4,7 +4,7 @@ import Description from "@components/basic-components/description";
 import H3 from "@components/basic-components/headings/H3";
 import { useInView } from "@lib/use-in-view";
 import Image from "next/image";
-import  { useRef } from "react";
+import { useRef } from "react";
 
 const OurCulture: React.FC = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -24,6 +24,8 @@ const OurCulture: React.FC = () => {
         alt=""
         src="/about-us/our-culture-1.png"
         className="w-full h-[500px] xxl:h-[700px] lg:h-[354px] xs:h-[219px] overflow-hidden object-cover rounded-[32px]"
+        blurDataURL="URL"
+        placeholder="blur"
       />
 
       <Description

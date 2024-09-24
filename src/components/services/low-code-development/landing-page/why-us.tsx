@@ -52,7 +52,8 @@ const ChooseUsCards: React.FC<{ isInView: boolean }> = ({ isInView }) => (
       ))}
     </Card>
     <div className="grow relative w-full">
-      <Image
+      <Image  blurDataURL="URL"  placeholder="blur" 
+
         height="2200"
         width="2200"
         alt=""
@@ -71,7 +72,8 @@ const ChooseUsCard: React.FC<{ item: ChooseUs }> = ({ item }) => (
         background: item.color,
       }}
     >
-      <Image
+      <Image  blurDataURL="URL"  placeholder="blur" 
+
         height="400"
         width="400"
         alt=""

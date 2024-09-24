@@ -46,7 +46,8 @@ const ServiceCards: React.FC<{ isInView: boolean }> = ({ isInView }) => (
       <Card key={index} style="mt-0 group" isInView={isInView}>
         <div className="flex flex-col gap-[32px] sm:gap-3 p-4 lg:p-2">
           <div className="w-[100px] sm:w-[60px] h-[100px] sm:h-[60px] relative rounded-2xl overflow-hidden">
-            <Image fill sizes="" alt="" src={service.image} />
+            <Image  blurDataURL="URL"  placeholder="blur" 
+ fill sizes="" alt="" src={service.image} />
           </div>
           <div className="flex flex-col gap-5 lg:gap-[12px] sm:gap-2 grow">
             <H6 text={service.heading} classes="text-white w-[80%] lg:w-full" />

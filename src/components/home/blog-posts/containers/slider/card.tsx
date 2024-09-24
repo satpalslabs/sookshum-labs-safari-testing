@@ -7,7 +7,13 @@ import { blogType } from ".";
 import Image from "next/image";
 const TextContainer = dynamic(() => import("./text-container"));
 
-function BlogPostCard({ blogPost, index }: { blogPost: blogType; index: number }) {
+function BlogPostCard({
+  blogPost,
+  index,
+}: {
+  blogPost: blogType;
+  index: number;
+}) {
   return (
     <div
       className={`bg-innerContainer rounded-[32px] w-[602px] xxl:w-[650px] lg:w-[430px] sm:w-[400px] p-4 sm:p-3 xs:p-2 xs:w-[274px] lg:p-[11px] shadow-buttonInset sm:col-auto z-0`}
@@ -35,6 +41,8 @@ function BlogPostCard({ blogPost, index }: { blogPost: blogType; index: number }
                     : "top-0 h-[275px] w-[299px] lg:w-[205px] lg:h-[190px] sm:w-[205px] sm:h-[189px] xs:w-[141px] xs:h-[129px]"
                 }`
           }`}
+          blurDataURL="URL"
+          placeholder="blur"
         />
         {blogPost.type == "cover" && (
           <div className="bg-gradient-to-b from-[#00000000] to-[#1E1E1E] h-[162px] absolute bottom-0 w-full rounded-b-2xl z-0"></div>

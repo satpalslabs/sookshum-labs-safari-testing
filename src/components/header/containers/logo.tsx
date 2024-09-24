@@ -12,6 +12,8 @@ const Logo: React.FC = () => (
       className="w-[154px] h-full xs:w-[128px]"
       src="/header/Top-Nav-logo.svg"
       alt="Logo"
+      blurDataURL="URL"
+      placeholder="blur"
     />
   </Link>
 );

@@ -4,7 +4,7 @@ import H2 from "@components/basic-components/headings/H2";
 import H3 from "@components/basic-components/headings/H3";
 import { useInView } from "@lib/use-in-view";
 import Image from "next/image";
-import  { useRef } from "react";
+import { useRef } from "react";
 
 const WhoWeAre: React.FC = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -35,6 +35,8 @@ const WhoWeAre: React.FC = () => {
             alt=""
             src="/about-us/who-we-are/founders.png"
             className="xxl:h-[402px] h-[452px] lg:h-[354px] sm:h-[291px]  xs:h-[219px] object-cover rounded-[32px]"
+            blurDataURL="URL"
+            placeholder="blur"
           />
         </div>
       </div>
@@ -45,6 +47,8 @@ const WhoWeAre: React.FC = () => {
           alt=""
           src="/about-us/who-we-are/1.png"
           className="xxl:h-[392px] h-[342px] lg:h-[354px] sm:h-[258px] xs:h-[139px] object-cover rounded-[32px]"
+          blurDataURL="URL"
+          placeholder="blur"
         />
         <Image
           width="2200"
@@ -52,6 +56,8 @@ const WhoWeAre: React.FC = () => {
           alt=""
           src="/about-us/who-we-are/2.png"
           className="xxl:h-[402px] h-[342px] lg:h-[354px] sm:h-[258px] xs:h-[139px] object-cover rounded-[32px]"
+          blurDataURL="URL"
+          placeholder="blur"
         />
       </div>
     </section>

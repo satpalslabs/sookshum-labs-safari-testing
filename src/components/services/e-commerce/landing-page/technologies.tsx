@@ -49,7 +49,8 @@ const TechnologiesCards: React.FC<{ isInView: boolean }> = ({ isInView }) => (
         <Card key={index} style="mt-0" isInView={isInView}>
           <div className="flex flex-col gap-5 lg:gap-[12px] p-4">
             <div className="w-[100px] lg:w-[80px] sm:w-[60px] h-[100px] lg:h-[80px] sm:h-[60px] relative rounded-2xl overflow-hidden">
-              <Image fill sizes="" alt="" src={TechnologiesCard.logo} />
+              <Image  blurDataURL="URL"  placeholder="blur" 
+ fill sizes="" alt="" src={TechnologiesCard.logo} />
             </div>
             <H6 text={TechnologiesCard?.title} classes="text-white w-[80%]" />
             <Description

@@ -58,7 +58,8 @@ const ToolsDetailComponent: React.FC<{ isInView: boolean }> = ({
       >
         <div className="grid grid-cols-3 gap-5 w-full">
           {data.icons.map((icon: string, index: number) => (
-            <Image
+            <Image  blurDataURL="URL"  placeholder="blur" 
+
               alt="Tools"
               width="2200"
               height="2200"

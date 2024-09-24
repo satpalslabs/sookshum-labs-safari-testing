@@ -55,7 +55,8 @@ const IndustryExperienceDetailedComponent: React.FC = () => {
         {/* Main center div with Image and text */}
         <div className="rounded-full h-full w-full p-[10px] sm:p-2 border-borderDarkButton [backdrop-filter:blur(100px)] border-solid border shadow-buttonInset bg-darkButton">
           <div className="w-full h-full rounded-full relative">
-            <Image
+            <Image  blurDataURL="URL"  placeholder="blur" 
+
               height="2200"
               width="2200"
               className="w-full h-full object-cover rounded-full z-0"
@@ -93,7 +94,8 @@ const IndustryExperienceDetailedComponent: React.FC = () => {
               setActiveIndustry(industry);
             }}
           >
-            <Image
+            <Image  blurDataURL="URL"  placeholder="blur" 
+
               height="2200"
               width="2200"
               className="w-full object-contain"

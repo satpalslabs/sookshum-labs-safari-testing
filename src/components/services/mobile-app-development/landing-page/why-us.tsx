@@ -108,7 +108,8 @@ const ChooseUsCard: React.FC<{ isInView: boolean; ind: number }> = ({
       } p-4 pb-0 sm:gap-2 h-full`}
     >
       <div className="grow">
-        <Image
+        <Image  blurDataURL="URL"  placeholder="blur" 
+
           src={whyUsData[ind].imageUrl}
           alt={whyUsData[ind].heading}
           height="2200"

@@ -14,7 +14,8 @@ const WorkCard = ({ item }: { item: dataItemType;}) => (
     }}
     className="bg-innerContainer rounded-[50px] lg:rounded-[26px] shadow-buttonInset cursor-pointer overflow-hidden  p-4 sm:p-3 xs:p-2 relative col-span-1 sm:col-auto xs:[grid-area:auto!important] group"
   >
-    <Image
+    <Image  blurDataURL="URL"  placeholder="blur" 
+
       src={item.image_url}
       height={2200}
       width={800}

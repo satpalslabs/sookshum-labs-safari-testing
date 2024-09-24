@@ -75,7 +75,8 @@ const ServiceCards: React.FC<{ isInView: boolean }> = ({ isInView }) => {
               classes="text-lg pr-6 lg:pr-0 !font-normal"
             />
           </div>
-          <Image
+          <Image  blurDataURL="URL"  placeholder="blur" 
+
             height="2200"
             width="2200"
             alt=""
@@ -135,7 +136,8 @@ const ServiceCard: React.FC<props> = (props) => (
             children={null}
             classes="text-lg pr-6 lg:pr-0 !font-normal"
           />
-          <Image
+          <Image  blurDataURL="URL"  placeholder="blur" 
+
             height="2200"
             width="2200"
             alt=""

@@ -25,7 +25,8 @@ const Industry = ({
     isInView={isInView}
     style="!h-full flex flex-col gap-4 lg:gap-3 sm:gap-2 !pb-0"
   >
-    <Image
+    <Image  blurDataURL="URL"  placeholder="blur" 
+
       height={400}
       width={400}
       src={industry.image}

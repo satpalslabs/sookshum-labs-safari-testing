@@ -1,6 +1,7 @@
 "use client";
 
-const Card = dynamic(() => import('@components/basic-components/card'));import H5 from "@components/basic-components/headings/H5";
+const Card = dynamic(() => import("@components/basic-components/card"));
+import H5 from "@components/basic-components/headings/H5";
 import data from "./data/get-in-touch.json";
 import H3 from "@components/basic-components/headings/H3";
 import Image from "next/image";
@@ -43,6 +44,8 @@ const QuickMailCard: React.FC<{ item: DataCard }> = (props) => (
           height="1200"
           src={props.item.icon}
           className="w-[46px] lg:w-[32px] sm:h-fit"
+          blurDataURL="URL"
+          placeholder="blur"
         />
       </div>
       <H3

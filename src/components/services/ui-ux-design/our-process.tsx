@@ -16,7 +16,8 @@ const OurProcess = () => {
         </div>
       </SectionHeader>
       <section>
-        <ImageContainer />
+        <Image  blurDataURL="URL"  placeholder="blur" 
+Container />
       </section>
     </header>
   );
@@ -26,21 +27,24 @@ export default OurProcess;
 
 const ImageContainer: React.FC = () => (
   <div>
-    <Image
+    <Image  blurDataURL="URL"  placeholder="blur" 
+
       width={1800}
       height={490}
       className="w-full xxl:min-w-full xxl:h-fit h-[490px] lg:h-[356px] sm:hidden"
       src="/services/ui-ux-design/our-process/desktop.png"
       alt=""
     />
-    <Image
+    <Image  blurDataURL="URL"  placeholder="blur" 
+
       width={1000}
       height={1000}
       className="hidden sm:block w-full h-[658px] xs:hidden"
       src="/services/ui-ux-design/our-process/tab.png"
       alt=""
     />
-    <Image
+    <Image  blurDataURL="URL"  placeholder="blur" 
+
       width={1000}
       height={1500}
       className="hidden xs:block w-full h-[1111px]"

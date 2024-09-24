@@ -51,7 +51,8 @@ const TechnologiesCards: React.FC = () => (
                     key={technologyButton["technology-name"]}
                   >
                     <div>
-                      <Image
+                      <Image  blurDataURL="URL"  placeholder="blur" 
+
                         height="800"
                         width="800"
                         src={technologyButton["image-address"]}

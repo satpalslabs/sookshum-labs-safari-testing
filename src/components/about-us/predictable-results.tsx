@@ -31,13 +31,18 @@ const PredictableResults: React.FC = () => {
         <div className="grid grid-cols-3 grid-rows-1 xs:gap-5 xs:grid-cols-1 w-full">
           {predictableResults.map(
             (predictedResultPoint: PredictedResultPoint, index: number) => (
-              <div key={index} className="flex flex-col xs:flex-row items-center text-center xs:justify-between xs:w-full gap-5">
+              <div
+                key={index}
+                className="flex flex-col xs:flex-row items-center text-center xs:justify-between xs:w-full gap-5"
+              >
                 <Image
                   width="2200"
                   height="2200"
                   alt=""
                   src={predictedResultPoint.icon}
                   className="w-fit h-[162px] lg:h-[100px] sm:h-[80px] sm:object-contain shrink-0"
+                  blurDataURL="URL"
+                  placeholder="blur"
                 />
                 <H5
                   text={predictedResultPoint.title}

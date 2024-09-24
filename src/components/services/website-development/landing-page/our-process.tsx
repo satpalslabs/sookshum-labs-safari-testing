@@ -52,7 +52,8 @@ const OurProcessDetailComponent: React.FC<{ isInView: boolean }> = ({
     <TextContainer />
 
     <div className="grow relative w-full">
-      <Image
+      <Image  blurDataURL="URL"  placeholder="blur" 
+
         height="2200"
         width="2200"
         alt=""

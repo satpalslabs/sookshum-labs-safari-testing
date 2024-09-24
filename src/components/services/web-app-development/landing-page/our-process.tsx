@@ -61,7 +61,8 @@ const OurProcessDetailComponent: React.FC<{ isInView: boolean }> = ({
         setActiveProcess={setActiveProcess}
       />
       <div className="grid grid-cols-2 col-span-2 sm:grid-cols-none sm:flex xs:flex-col xs:gap-5">
-        <Image
+        <Image  blurDataURL="URL"  placeholder="blur" 
+
           width="1200"
           height="1200"
           className="h-[297px] lg:h-[230px] sm:w-[50%] sm:object-contain xs:h-[150px] lg:px-[15px] xxl:w-fit w-fit mx-auto"

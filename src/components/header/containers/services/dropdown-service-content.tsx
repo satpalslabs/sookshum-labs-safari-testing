@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 import H6 from "@components/basic-components/headings/H6";
 import { cardContent, service } from "./dropdown";
@@ -21,7 +20,14 @@ const ServiceContent = ({
           onClick={() => setActive(false)}
         >
           <div className="sm:hidden h-[60px] w-[60px] relative rounded-2xl overflow-hidden">
-            <Image fill sizes="" alt="" src={cardContent.logo} />
+            <Image
+              fill
+              sizes=""
+              alt=""
+              src={cardContent.logo}
+              blurDataURL="URL"
+              placeholder="blur"
+            />
           </div>
           <div className="flex flex-col gap-2 justify-center">
             <H6

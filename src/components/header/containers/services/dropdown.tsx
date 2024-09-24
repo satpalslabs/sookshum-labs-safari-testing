@@ -1,4 +1,4 @@
-import  { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import data from "../../data/services.json";
 import H6 from "@components/basic-components/headings/H6";
 import Image from "next/image";
@@ -99,7 +99,14 @@ const DetailServiceContentSection = ({
     <ServiceContent activeService={activeService} setActive={setActive} />
     <div className="flex flex-col h-fit w-fit sm:w-full bg-innerContainer border border-solid border-borderDarkButton shadow-buttonInset rounded-[32px] p-4 gap-2">
       <div className="h-[180px] w-[316px] lg:w-[232px] lg:h-[190px] relative rounded-[20px] overflow-hidden sm:w-full">
-        <Image fill sizes="" alt="" src={"/header/work-together.png"} />
+        <Image
+          fill
+          sizes=""
+          alt=""
+          src={"/header/work-together.png"}
+          blurDataURL="URL"
+          placeholder="blur"
+        />
       </div>
       <H6
         text={"Let’s Create a Project?"}

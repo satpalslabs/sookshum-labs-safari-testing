@@ -44,7 +44,8 @@ const ChooseUsCards: React.FC<{ isInView: boolean }> = ({ isInView }) => (
       <Card key={index} style="mt-0" isInView={isInView}>
         <div className="flex flex-col gap-[60px] px-4 pt-4 lg:px-2 lg:pt-2 sm:gap-[32px]">
           <div className="w-[80px] h-[80px] sm:w-[52px] sm:h-[52px] relative">
-            <Image fill alt="" src={ChooseUsCard.image_url} />
+            <Image  blurDataURL="URL"  placeholder="blur" 
+ fill alt="" src={ChooseUsCard.image_url} />
           </div>
           <div className="flex flex-col gap-5 lg:gap-3 sm:gap-2">
             <H4 style="" text={ChooseUsCard.heading} />

@@ -13,6 +13,8 @@ const ImageContainer: React.FC = () => {
         className="w-full h-auto"
         src="/home/work-together/work-together.webp"
         alt="work-together"
+        blurDataURL="URL"
+        placeholder="blur"
       />
     </div>
   );

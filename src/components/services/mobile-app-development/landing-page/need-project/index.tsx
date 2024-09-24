@@ -19,7 +19,8 @@ const LetsConnect: React.FC = () => (
   >
     <div className="flex xs:flex-col relative shadow-buttonInset bg-innerContainer rounded-[32px] sm:rounded-[20px] xs:pb-8 xs:gap-8">
       <TextContainer />
-      <ImageContainer />
+      <Image  blurDataURL="URL"  placeholder="blur" 
+Container />
     </div>
   </div>
 );

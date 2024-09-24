@@ -49,7 +49,8 @@ const ChooseUsCards: React.FC<{ isInView: boolean }> = ({ isInView }) => (
             classes="text-white w-[80%] grow xxl:text-3xl md:text-[20px] md:w-full md:leading-[1.2] leading-[1.6]"
           />
           <div className="relative w-[160px] lg:w-[126px] sm:w-[100px] h-[160px] lg:h-[126px] sm:h-[100px]">
-            <Image
+            <Image  blurDataURL="URL"  placeholder="blur" 
+
               fill
               src={ChooseUsCard.imageUrl}
               alt={ChooseUsCard.heading}

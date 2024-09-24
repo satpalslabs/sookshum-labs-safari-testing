@@ -29,6 +29,8 @@ const ServiceCard = ({
         width={800}
         alt=""
         className="h-full w-full object-cover"
+        blurDataURL="URL"
+        placeholder="blur"
       />
     </div>
     <TextContainer item={item} />

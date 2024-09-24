@@ -1,5 +1,6 @@
 "use client";
-const Card = dynamic(() => import('@components/basic-components/card'));import H5 from "@components/basic-components/headings/H5";
+const Card = dynamic(() => import("@components/basic-components/card"));
+import H5 from "@components/basic-components/headings/H5";
 import TextArea from "@components/basic-components/form-components/text-area";
 import HelperText from "@components/basic-components/form-components/helper-text";
 import CustomCheckBox from "@components/basic-components/form-components/checkbox";
@@ -381,6 +382,8 @@ const ContentUsForm: React.FC = () => {
                       height="1200"
                       className="h-[40px] w-fit"
                       alt="file-icon"
+                      blurDataURL="URL"
+                      placeholder="blur"
                     />
                     <div className="flex flex-col gap-[-16px] h-fit">
                       <Description
@@ -417,6 +420,8 @@ const ContentUsForm: React.FC = () => {
                         height="1200"
                         className="h-[30px] w-fit"
                         alt="file-icon"
+                        blurDataURL="URL"
+                        placeholder="blur"
                       />
                     </button>
                   </div>
@@ -452,7 +457,9 @@ const ContentUsForm: React.FC = () => {
       >
         <PrimaryButton
           icon={true}
-          style={`${disableForm ? "!bg-darkOrange cursor-not-allowed":"cursor-pointer"}`}
+          style={`${
+            disableForm ? "!bg-darkOrange cursor-not-allowed" : "cursor-pointer"
+          }`}
           text="Send a message"
           link=""
         />

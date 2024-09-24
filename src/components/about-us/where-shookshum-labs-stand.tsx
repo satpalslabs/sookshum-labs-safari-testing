@@ -1,9 +1,10 @@
 "use client";
-const Card = dynamic(() => import('@components/basic-components/card'));import Description from "@components/basic-components/description";
+const Card = dynamic(() => import("@components/basic-components/card"));
+import Description from "@components/basic-components/description";
 import H2 from "@components/basic-components/headings/H2";
 import { useInView } from "@lib/use-in-view";
 import data from "./data/where-shookshum-labs-stand.json";
-import  { useRef } from "react";
+import { useRef } from "react";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 
@@ -223,6 +224,8 @@ const DetailReviewCard3: React.FC<{ isInView: boolean }> = (props) => (
           src="/about-us/where-we-are/world-map.png"
           alt="world map"
           className="absolute right-0 h-full w-[800px]  lg:w-[700px] sm:top-0 sm:object-cover"
+          blurDataURL="URL"
+          placeholder="blur"
         />
       </div>
     </div>
@@ -233,10 +236,11 @@ const CardWithPrimaryBackground: React.FC<{
   isInView: boolean;
   item: PrimaryCard;
 }> = (props) => (
-  <Card isInView={props.isInView} style="!bg-orangeBackground h-full xs:min-h-[250px]">
-    <div
-      className={`h-full flex flex-col p-4 pb-0 justify-between `}
-    >
+  <Card
+    isInView={props.isInView}
+    style="!bg-orangeBackground h-full xs:min-h-[250px]"
+  >
+    <div className={`h-full flex flex-col p-4 pb-0 justify-between `}>
       {/* {props.item.type == "team" && <Contributors />} */}
       <div className="flex flex-col sm:gap-1 font-poppins font-medium !text-white xxl:w-[34%] w-[42%] lg:w-[63%] sm:w-[48%] xs:w-[37%]">
         <div className=" text-[66px] sm:text-[52px]">{props.item.count}</div>

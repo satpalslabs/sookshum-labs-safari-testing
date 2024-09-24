@@ -26,7 +26,7 @@ function MainContainer() {
       ref={ref}
       className="w-full gap-5 grid grid-cols-10 md:gap-[14px] xs:grid-cols-1 !shrink-0"
     >
-      <ImageContainer
+      <ImageContainer 
         item={data.text_containers[selectedCardIndex]}
         isInView={isInView}
       />

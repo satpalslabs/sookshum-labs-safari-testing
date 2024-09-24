@@ -27,6 +27,8 @@ const ImageContainer: React.FC = () => (
         src="/home/hero/fallback.webp"
         priority
         title="Your browser does not support the <video> tag"
+        blurDataURL="URL"
+        placeholder="blur"
       />
     </video>
 
@@ -40,7 +42,8 @@ const ImageContainer: React.FC = () => (
     {/* <div
         className={`h-[600px] w-[500px] right-0 top-[-50%] -mt-[40%] bg-gradient-to-l from-black via-transparent to-black absolute`}
       >ds</div> */}
-    {/* <Image
+    {/* <Image  blurDataURL="URL"  placeholder="blur" 
+
       src="/home/hero/hero-lg.png"
       className="w-full h-full ml-[0px] hidden xs:block "
       width={1500}

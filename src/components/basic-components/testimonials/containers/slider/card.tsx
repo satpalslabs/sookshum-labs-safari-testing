@@ -35,6 +35,8 @@ const Testimonials = ({
       src="/home/testimonials/stars.png"
       alt=""
       className="h-[24px] w-[200px] pl-3 xs:h-4 xs:w-[150px]"
+      blurDataURL="URL"
+      placeholder="blur"
     />
     <div className="px-3 pb-0 grow">
       <Description
