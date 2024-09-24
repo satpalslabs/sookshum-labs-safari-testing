@@ -22,17 +22,12 @@ const ServiceCard = ({
     }`}
   >
     <div className="w-full  xll:h-[136px] lg:h-[221px] sm:h-[261px] flex items-center justify-center xs:h-[239px] h-[334px] xxl:h-[354px] overflow-hidden">
-      <div className="relative h-full w-full">
-        <Image
-          loading="eager"
-          src={item.image_url}
-          fill
-          alt=""
-          className="h-full w-full object-cover"
-          blurDataURL="URL"
-          placeholder="blur"
-        />
-      </div>
+      <img
+        loading="eager"
+        src={item.image_url}
+        alt=""
+        className="h-full w-full object-cover"
+      />
     </div>
     <TextContainer item={item} />
   </div>

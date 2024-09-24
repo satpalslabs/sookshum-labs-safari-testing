@@ -20,6 +20,7 @@ const Hero: React.FC = () => (
     <div className="absolute  -top-[90px]  h-[200px] lg:-top-[10%] xs:top-[-15.4%] z-20 w-screen overflow-hidden">
       <Image
         alt=""
+        loading="eager"
         src={dots}
         className="scale-[3.8] lg:scale-[3] xs:scale-[2] min-w-[100vw]  h-[100px]"
       />
