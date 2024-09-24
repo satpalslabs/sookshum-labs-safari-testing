@@ -24,7 +24,7 @@ const Nav = ({
       }
     >
       <div
-        className={`flex sm:h-fit sm:overflow-auto sm:flex-col sm:px-[31px] sm:py-6 sm:rounded-b-[26px] sm:bg-layoutBackground gap-8 sm:gap-0 font-[Poppins] font-600 text-base`}
+        className={`flex sm:h-fit sm:overflow-auto sm:flex-col sm:px-[31px] sm:py-6 sm:rounded-b-[26px] sm:bg-layoutBackground gap-8 sm:gap-0 font-poppins font-600 text-base`}
       >
         <NavLink
           setShowLinks={setShowLinks}

@@ -54,7 +54,7 @@ const tailwindConfig: Config = {
       },
       spacing: {},
       fontFamily: {
-        poppins: "Poppins",
+        poppins: 'var(--font-poppins)',
       },
       borderRadius: {
         "13xl": "32px",

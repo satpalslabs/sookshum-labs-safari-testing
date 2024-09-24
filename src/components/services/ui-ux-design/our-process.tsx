@@ -16,8 +16,7 @@ const OurProcess = () => {
         </div>
       </SectionHeader>
       <section>
-        <Image  blurDataURL="URL"  placeholder="blur" 
-Container />
+            <ImageContainer />
       </section>
     </header>
   );
