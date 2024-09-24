@@ -1,34 +1,35 @@
 /**
- * This is a route layout (contains header, main and footer sections).
+ * This is a route layout (contains header, main, and footer sections).
  */
 
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import Header from "../components/header";
-import "@styles/globals.css";
+import "@styles/globals.css"; // Ensure this is necessary
 import Footer from "@components/footer";
 import Head from "next/head";
+
 export const metadata: Metadata = {
   icons: {
     icon: "/favicon.png",
   },
   title: "Sookshum Labs: Custom Software Development Company",
   description:
-    " We build modern digital products for startups and enterprises around the globe.",
+    "We build modern digital products for startups and enterprises around the globe.",
 };
 
 const poppins = Poppins({
   subsets: ["latin"],
-  display: "swap",
   variable: "--font-poppins",
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  display: "swap", // Keep this for better loading experience
+  weight: ["400", "500", "600"], // Reduce weights to those actually used
 });
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en" className={`${poppins.variable}`}>
       <Head>
@@ -40,8 +41,13 @@ export default function RootLayout({
           as="image"
           type="image/svg+xml"
         />
-        <link rel="stylesheet" />
         <link rel="preload" href="/home/hero/fallback.webp" as="image" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
       </Head>
       <body>
         <div className="flex flex-col justify-between !font-poppins !bg-black text-white w-full max-w-screen overflow-hidden min-h-[100vh]">
