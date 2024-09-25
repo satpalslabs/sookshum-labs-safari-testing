@@ -3,7 +3,6 @@
  */
 import is_Bot from "@lib/is-bot";
 import dynamic from "next/dynamic";
-import { headers } from "next/headers";
 import { Suspense, useMemo } from "react";
 
 const Sections = dynamic(() => import("@components/home"));
