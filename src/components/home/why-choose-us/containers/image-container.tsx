@@ -31,7 +31,7 @@ const ImageContainer = ({
       className={`grow-0 flex items-center col-span-6
        shadow-buttonInset ${
          isIphone
-           ? "bg-whyUsSmallDeviceContainer"
+           ? "bg-innerContainer"
            : isIOS
            ? "bg-whyUsContainer"
            : "bg-innerContainer"
