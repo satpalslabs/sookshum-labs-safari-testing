@@ -14,7 +14,7 @@ const ImageContainer = ({
 }) => (
   <div
     className={`grow-0 flex items-center col-span-6
-       shadow-buttonInset bg-innerContainer rounded-[32px] lg:rounded-[26px] sm:gap-3 xs:hidden grayscale transition-all ${
+       shadow-buttonInset bg-whyUsContainer rounded-[32px] lg:rounded-[26px] sm:gap-3 xs:hidden grayscale transition-all ${
          isInView ? "grayscale-0" : "grayscale"
        } }`}
   >
@@ -24,7 +24,7 @@ const ImageContainer = ({
       muted
       loop
       playsInline
-      className="w-[500px] m-auto md:w-[368px] md:h-[368px] object-contain"
+      className="w-[500px] m-auto  md:w-[368px] md:h-[368px] object-contain"
     >
       <img
         src={item.image_url}

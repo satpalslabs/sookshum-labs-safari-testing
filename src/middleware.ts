@@ -10,8 +10,11 @@ export function middleware(request: NextRequest) {
     // Set the x-is-bot header
     response.headers.set('x-is-bot', isBot ? 'true' : 'false');
 
-    // Set the X-Robots-Tag header based on environment
-    if (process.env.VERCEL_ENV != 'production') {
+    // Conditionally set the X-Robots-Tag header
+    const isLocalhost = request.headers.get('host')?.includes('localhost');
+
+    // Prevent indexing only for non-production and non-localhost environments (e.g., staging)
+    if (process.env.VERCEL_ENV !== 'production' && !isLocalhost) {
         response.headers.set('X-Robots-Tag', 'noindex, nofollow');
     } else {
         response.headers.set('X-Robots-Tag', 'index, follow');
@@ -22,4 +25,4 @@ export function middleware(request: NextRequest) {
 
 export const config = {
     matcher: '/:path*'
-}
+};

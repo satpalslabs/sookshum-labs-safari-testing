@@ -2,6 +2,7 @@ import type { Config } from "tailwindcss";
 
 const tailwindConfig: Config = {
   content: [
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
@@ -50,11 +51,12 @@ const tailwindConfig: Config = {
         sliderCircle: "var(--slider-circle-gradient)",
         darkOrange: "var(--dark-orange)",
         darkOpacity: "var(--dark-with-opacity)",
-        customBlue: "var(--custom-blue)"
+        customBlue: "var(--custom-blue)",
+        whyUsContainer: "var(--why-us-container)"
       },
       spacing: {},
       fontFamily: {
-        poppins: 'var(--font-poppins)',
+        poppins: "var(--font-poppins)",
       },
       borderRadius: {
         "13xl": "32px",
