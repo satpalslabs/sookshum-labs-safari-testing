@@ -16,7 +16,7 @@ const ImageContainer: React.FC = () => (
       className="w-fit xxl:h-[800px] h-[700px] lg:h-[538px] sm:h-[468px] object-fill"
     >
       <source src="/home/hero/bg-video.webm" type="video/webm" />
-      <source src="/home/hero/bg-video.webm" type="video/mp4" />
+      <source src="/home/hero/bg-video.mp4" type="video/mp4" />
       {/* Fallback Image */}
       <Image
         className="w-fit -ml-[32%] xs:-ml-[2%] xxl:h-[800px] h-[700px] lg:h-[538px] sm:h-[468px] object-cover"
