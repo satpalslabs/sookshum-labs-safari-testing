@@ -14,11 +14,13 @@ const ImageContainer = ({
   isInView: boolean;
 }) => {
   const [isIOS, setIsIOS] = useState(false);
-
+  const [isIphone, setIsIphone] = useState(false);
   useEffect(() => {
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
     const isMacOS = navigator.platform === "MacIntel";
-
-    if (isMacOS) {
+    if (isIOS) {
+      setIsIphone(true);
+    } else if (isMacOS) {
       setIsIOS(true);
     }
   }, []);
@@ -27,7 +29,11 @@ const ImageContainer = ({
     <div
       className={`grow-0 flex items-center col-span-6
        shadow-buttonInset ${
-         isIOS ? "bg-whyUsContainer" : "bg-innerContainer"
+         isIphone
+           ? "bg-whyUsSmallDeviceContainer"
+           : isIOS
+           ? "bg-whyUsContainer"
+           : "bg-innerContainer"
        } rounded-[32px] lg:rounded-[26px] sm:gap-3 xs:hidden grayscale transition-all ${
         isInView ? "grayscale-0" : "grayscale"
       } }`}
