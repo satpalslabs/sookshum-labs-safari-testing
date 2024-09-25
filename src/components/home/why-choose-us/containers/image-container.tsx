@@ -16,8 +16,12 @@ const ImageContainer = ({
   const [isIOS, setIsIOS] = useState(false);
 
   useEffect(() => {
-    const userAgent = navigator.userAgent || "";
-    setIsIOS(/iPad|iPhone|iPod/.test(userAgent));
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+    const isMacOS = navigator.platform === "MacIntel";
+
+    if (isIOS || isMacOS) {
+      setIsIOS(true);
+    }
   }, []);
 
   return (
