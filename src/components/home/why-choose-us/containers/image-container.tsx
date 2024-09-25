@@ -13,27 +13,18 @@ const ImageContainer = ({
   item: dataItemType;
   isInView: boolean;
 }) => {
-  const [isRetina, setIsRetina] = useState(window.devicePixelRatio > 1);
+  const [isIOS, setIsIOS] = useState(false);
 
   useEffect(() => {
-    const checkDevicePixelRatio = () => {
-      setIsRetina(window.devicePixelRatio > 1);
-    };
-
-    // Initial check on mount
-    checkDevicePixelRatio();
-
-    // Add event listener for resize
-    window.addEventListener("resize", checkDevicePixelRatio);
-    console.log(isRetina, window.devicePixelRatio);
-    return () => window.removeEventListener("resize", checkDevicePixelRatio);
+    const userAgent = navigator.userAgent || "";
+    setIsIOS(/iPad|iPhone|iPod/.test(userAgent));
   }, []);
 
   return (
     <div
       className={`grow-0 flex items-center col-span-6
        shadow-buttonInset ${
-         isRetina ? "bg-whyUsContainer" : "bg-innerContainer"
+         isIOS ? "bg-whyUsContainer" : "bg-innerContainer"
        } rounded-[32px] lg:rounded-[26px] sm:gap-3 xs:hidden grayscale transition-all ${
         isInView ? "grayscale-0" : "grayscale"
       } }`}
