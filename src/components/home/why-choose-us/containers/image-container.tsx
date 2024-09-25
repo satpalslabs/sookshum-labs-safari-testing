@@ -22,6 +22,8 @@ const ImageContainer = ({
       autoPlay={true}
       src={item.video_url}
       muted
+      loop
+      
       playsInline
       className="w-[500px] m-auto md:w-[368px] md:h-[368px] object-contain"
     >

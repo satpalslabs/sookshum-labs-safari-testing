@@ -8,7 +8,7 @@ const SectionHeader = dynamic(() => import("@components/basic-components/section
 const Header: React.FC = () => (
   <SectionHeader
     style=""
-    buttonText="Service"
+    buttonText="Services"
     description="We'll help you define your brand, build a powerful online presence, and reach your target audience effectively."
   >
     <div>

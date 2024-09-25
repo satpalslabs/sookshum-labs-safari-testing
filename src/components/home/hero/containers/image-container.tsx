@@ -8,12 +8,11 @@ const ImageContainer: React.FC = () => (
   <div className="absolute -right-[10%] -top-[15%] lg:-top-[5%] sm:top-[3%] xs:top-[-13%] sm:-right-[15%] w-fit h-[700px] lg:h-[568px]">
     <video
       autoPlay={true}
-      // poster="/home/hero/fallback.webp"
       muted
       loop
       playsInline
       preload="metadata"
-      className="w-fit xxl:h-[800px] h-[700px] lg:h-[538px] sm:h-[468px] object-fill"
+      className="w-[auto] xxl:h-[800px] h-[700px] lg:h-[538px] sm:h-[468px] object-fill"
     >
       <source src="/home/hero/bg-video.webm" type="video/webm" />
       <source src="/home/hero/bg-video.mp4" type="video/mp4" />
