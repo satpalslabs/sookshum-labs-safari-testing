@@ -1,8 +1,7 @@
-import { is_Bot } from "@app/page";
 import LandingPageLowCodeDevelopment from "@components/services/low-code-development/landing-page";
+import is_Bot from "@lib/is-bot";
 import { NextPage } from "next";
 export const dynamic = 'force-dynamic';
-// import { headers } from "next/headers";
 
 const LowCodeDevelopmentServices: NextPage = () => {
   const isBot = is_Bot();

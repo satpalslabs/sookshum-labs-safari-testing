@@ -1,4 +1,4 @@
-import { is_Bot } from "@app/page";
+import is_Bot from "@lib/is-bot";
 import ServiceComponent from "@components/services/landing-page";
 import { NextPage } from "next";
 export const dynamic = 'force-dynamic';
