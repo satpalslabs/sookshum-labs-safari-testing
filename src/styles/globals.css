@@ -29,7 +29,7 @@
     --light-black-gradient: #00000052;
     --gradient-circle-border: linear-gradient(360deg, rgba(255, 255, 255, 0.45) 0%, rgba(255, 255, 255, 0.27) 30.11%, rgba(255, 255, 255, 0.054) 45.16%, rgba(255, 255, 255, 0) 75.26%);
     --dark-with-opacity: #0000009a;
-    --why-us-container: #1e1e1e;
+    --why-us-container: rgb(28, 28, 28);
     --light-border: #F8F8F8;
     --custom-blue: #5CC9FF;
     --debug: 1;
