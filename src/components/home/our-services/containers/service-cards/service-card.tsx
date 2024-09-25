@@ -28,7 +28,6 @@ const ServiceCard = ({
         src={item.image_url}
         fill
         alt={"Service Image"} // Provide meaningful alt text
-        objectFit="cover" // Maintain aspect ratio and cover
         className="object-cover" // Ensure the image covers the space correctly
       />
     </div>

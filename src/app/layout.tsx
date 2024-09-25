@@ -14,8 +14,7 @@ export const metadata: Metadata = {
     icon: "/favicon.png",
   },
   title: "Sookshum Labs: Custom Software Development Company",
-  description:
-    "We build modern digital products for startups and enterprises around the globe.",
+  description: "",
 };
 
 const poppins = Poppins({
