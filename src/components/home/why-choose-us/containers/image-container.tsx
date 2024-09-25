@@ -25,7 +25,7 @@ const ImageContainer = ({
 
     // Add event listener for resize
     window.addEventListener("resize", checkDevicePixelRatio);
-
+    console.log(isRetina, window.devicePixelRatio);
     return () => window.removeEventListener("resize", checkDevicePixelRatio);
   }, []);
 
