@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
   title: "Sookshum Labs: Custom Software Development Company",
   description:
-    "",
+    "We are a reliable technology partner to meet your custom software solution needs",
 };
 
 const poppins = Poppins({

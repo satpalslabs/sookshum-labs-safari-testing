@@ -49,7 +49,7 @@ const ServiceCard = ({
                 id="firstLottie"
                 mode="bounce"
                 speed={1.5}
-                src={item.animation_path}
+                src={'/home/core-services/dummy-json.json'}
                 dotLottieRefCallback={(dotLottieInstance: DotLottie | null) => {
                   dotLottieRef.current = dotLottieInstance;
                 }}
