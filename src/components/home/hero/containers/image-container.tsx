@@ -5,20 +5,21 @@
 import Image from "next/image";
 import fallbackImage from "/public/home/hero/fallback.webp";
 const ImageContainer: React.FC = () => (
-  <div className="absolute -right-[10%] -top-[15%] lg:-top-[5%] sm:top-[3%] xs:top-[-13%] sm:-right-[15%] w-full h-[700px] lg:h-[568px]">
+  <div className="absolute -right-[10%] -top-[15%] lg:-top-[5%] sm:top-[3%] xs:top-[-13%] sm:-right-[15%] w-fit h-[700px] lg:h-[568px]">
     <video
       autoPlay={true}
-      poster="/home/hero/fallback.webp"
+      // poster="/home/hero/fallback.webp"
       muted
       loop
       playsInline
       preload="metadata"
-      className="w-fit xxl:h-[800px] h-[700px] lg:h-[538px] sm:h-[468px] object-contain float-right"
+      className="w-fit xxl:h-[800px] h-[700px] lg:h-[538px] sm:h-[468px] object-fill"
     >
       <source src="/home/hero/bg-video.webm" type="video/webm" />
+      <source src="/home/hero/bg-video.webm" type="video/mp4" />
       {/* Fallback Image */}
       <Image
-        className="w-full h-[700px] lg:h-[568px] object-contain"
+        className="w-fit -ml-[32%] xs:-ml-[2%] xxl:h-[800px] h-[700px] lg:h-[538px] sm:h-[468px] object-cover"
         alt="background image"
         src={fallbackImage}
         width={1500}

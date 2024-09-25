@@ -37,7 +37,7 @@ const Testimonials = ({
       className="h-[24px] w-[200px] pl-3 xs:h-4 xs:w-[150px]"
       blurDataURL="URL"
       placeholder="blur"
-      loading="lazy" // Lazy load the image
+      loading="eager" // Lazy load the image
       priority={false} 
     />
     <div className="px-3 pb-0 grow">

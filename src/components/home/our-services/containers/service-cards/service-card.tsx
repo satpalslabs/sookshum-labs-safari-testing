@@ -22,12 +22,12 @@ const ServiceCard = ({
         : "border-transparent grayscale"
     }`}
   >
-    <div className="w-full xll:h-[136px] lg:h-[221px] sm:h-[261px] flex items-center justify-center xs:h-[239px] h-[334px] xxl:h-[354px] overflow-hidden">
+    <div className="w-full xll:h-[136px] lg:h-[221px] sm:h-[261px] flex items-center justify-center xs:h-[239px] h-[334px] xxl:h-[354px] overflow-hidden relative">
       <Image
         loading="eager"
         src={item.image_url}
+        fill
         alt={"Service Image"} // Provide meaningful alt text
-        layout="fill" // Use 'fill' to cover the parent container
         objectFit="cover" // Maintain aspect ratio and cover
         className="object-cover" // Ensure the image covers the space correctly
       />
