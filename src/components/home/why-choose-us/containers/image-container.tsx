@@ -42,6 +42,8 @@ const ImageContainer = ({
         navigator.maxTouchPoints > 2 &&
         /MacIntel/.test(navigator.platform)
       ) {
+        return true;
+      }else{
         return isIOS();
       }
     }
