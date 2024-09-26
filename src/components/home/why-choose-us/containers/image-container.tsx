@@ -18,7 +18,7 @@ const ImageContainer = ({
   useEffect(() => {
     const isiOS = isIpadOS();
     const isMacOS = navigator.platform === "MacIntel";
-    if (isMacOS && !isiOS) {
+    if (isMacOS && isiOS) {
       setIsIOS(true);
     }
     function isIOS() {
