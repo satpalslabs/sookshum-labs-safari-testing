@@ -14,14 +14,36 @@ const ImageContainer = ({
   isInView: boolean;
 }) => {
   const [isIOS, setIsIOS] = useState(false);
-  const [isIphone, setIsIphone] = useState(false);
+  // const [isIphone, setIsIphone] = useState(false);
   useEffect(() => {
-    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+    const isiOS = isIpadOS();
     const isMacOS = navigator.platform === "MacIntel";
-    if (isIOS) {
-      setIsIphone(true);
-    } else if (isMacOS) {
+    if (isMacOS && !isiOS) {
       setIsIOS(true);
+    }
+    function isIOS() {
+      if (
+        /iPad|iPhone|iPod/.test(navigator.platform) ||
+        /iPad|iPhone|iPod/.test(navigator.userAgent)
+      ) {
+        return true;
+      } else {
+        return (
+          navigator.maxTouchPoints &&
+          navigator.maxTouchPoints > 2 &&
+          /MacIntel/.test(navigator.platform)
+        );
+      }
+    }
+
+    function isIpadOS() {
+      if (
+        navigator.maxTouchPoints &&
+        navigator.maxTouchPoints > 2 &&
+        /MacIntel/.test(navigator.platform)
+      ) {
+        return isIOS();
+      }
     }
   }, []);
 
@@ -29,11 +51,7 @@ const ImageContainer = ({
     <div
       className={`grow-0 flex items-center col-span-6
        shadow-buttonInset ${
-         isIphone
-           ? "bg-innerContainer"
-           : isIOS
-           ? "bg-whyUsContainer"
-           : "bg-innerContainer"
+         isIOS ? "bg-whyUsContainer" : "bg-innerContainer"
        } rounded-[32px] lg:rounded-[26px] sm:gap-3 xs:hidden grayscale transition-all ${
         isInView ? "grayscale-0" : "grayscale"
       } }`}

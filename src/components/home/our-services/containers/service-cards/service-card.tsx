@@ -16,7 +16,7 @@ const ServiceCard = ({
   isInView: boolean;
 }) => (
   <div
-    className={`group flex flex-col gap-2 pb-8 min-h-fit lg:pb-6 bg-innerContainer rounded-[32px] lg:rounded-[26px] sm:gap-3 shadow-buttonInset transition-all duration-1000 hover:bg-gradientOnHover border border-transparent cursor-pointer hover:!border-borderPrimary overflow-hidden sm:w-[49%] xs:w-full ${
+    className={`group flex flex-col gap-2 pb-8 min-h-fit lg:pb-6 bg-innerContainer rounded-[32px] lg:rounded-[26px] sm:gap-3 shadow-buttonInset transition-all duration-1000 hover:bg-gradientOnHover border border-transparent cursor-pointer hover:!border-borderPrimary overflow-hidden sm:w-[48.98%] xs:w-full ${
       isInView
         ? "!border-viewportBorder grayscale-0"
         : "border-transparent grayscale"
