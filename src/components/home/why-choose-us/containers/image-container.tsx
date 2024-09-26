@@ -54,19 +54,26 @@ const ImageContainer = ({
          isInView ? "grayscale-0" : "grayscale"
        } }`}
     >
-      <video
-        autoPlay={true}
-        src={isIOS ? item.image_url : item.video_url}
-        muted
-        loop
-        playsInline
-        className="w-[500px] m-auto  md:w-[368px] md:h-[368px] object-contain"
-      >
+      {isIOS ? (
         <img
           src={item.image_url}
-          title="Your browser does not support the <video> tag"
+          className="w-[500px] m-auto  md:w-[368px] md:h-[368px] object-contain"
         />
-      </video>
+      ) : (
+        <video
+          autoPlay={true}
+          src={item.video_url}
+          muted
+          loop
+          playsInline
+          className="w-[500px] m-auto  md:w-[368px] md:h-[368px] object-contain"
+        >
+          <img
+            src={item.image_url}
+            title="Your browser does not support the <video> tag"
+          />
+        </video>
+      )}
     </div>
   );
 };
