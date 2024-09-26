@@ -16,35 +16,35 @@ const ImageContainer = ({
   const [isIOS, setIsIOS] = useState(false);
   // const [isIphone, setIsIphone] = useState(false);
   useEffect(() => {
-    // const isiOS = isIpadOS();
+    const isiOS = isIpadOS();
     const isMacOS = navigator.platform === "MacIntel";
-    if (isMacOS ) {
+    if (isMacOS || isiOS) {
       setIsIOS(true);
     }
-    // function isIOS() {
-    //   if (
-    //     /iPad|iPhone|iPod/.test(navigator.platform) ||
-    //     /iPad|iPhone|iPod/.test(navigator.userAgent)
-    //   ) {
-    //     return true;
-    //   } else {
-    //     return (
-    //       navigator.maxTouchPoints &&
-    //       navigator.maxTouchPoints > 2 &&
-    //       /MacIntel/.test(navigator.platform)
-    //     );
-    //   }
-    // }
+    function isIOS() {
+      if (
+        /iPad|iPhone|iPod/.test(navigator.platform) ||
+        /iPad|iPhone|iPod/.test(navigator.userAgent)
+      ) {
+        return true;
+      } else {
+        return (
+          navigator.maxTouchPoints &&
+          navigator.maxTouchPoints > 2 &&
+          /MacIntel/.test(navigator.platform)
+        );
+      }
+    }
 
-    // function isIpadOS() {
-    //   if (
-    //     navigator.maxTouchPoints &&
-    //     navigator.maxTouchPoints > 2 &&
-    //     /MacIntel/.test(navigator.platform)
-    //   ) {
-    //     return isIOS();
-    //   }
-    // }
+    function isIpadOS() {
+      if (
+        navigator.maxTouchPoints &&
+        navigator.maxTouchPoints > 2 &&
+        /MacIntel/.test(navigator.platform)
+      ) {
+        return isIOS();
+      }
+    }
   }, []);
 
   return (
