@@ -50,15 +50,13 @@ const ImageContainer = ({
   return (
     <div
       className={`grow-0 flex items-center col-span-6
-       shadow-buttonInset ${
-         isIOS ? "bg-whyUsContainer" : "bg-innerContainer"
-       } rounded-[32px] lg:rounded-[26px] sm:gap-3 xs:hidden grayscale transition-all ${
-        isInView ? "grayscale-0" : "grayscale"
-      } }`}
+       shadow-buttonInset bg-innerContainer rounded-[32px] lg:rounded-[26px] sm:gap-3 xs:hidden grayscale transition-all ${
+         isInView ? "grayscale-0" : "grayscale"
+       } }`}
     >
       <video
         autoPlay={true}
-        src={item.video_url}
+        src={isIOS ? item.image_url : item.video_url}
         muted
         loop
         playsInline
