@@ -16,7 +16,7 @@ const ImageContainer: React.FC = () => {
         blurDataURL="URL"
         placeholder="blur"
       /> */}
-      <img src="/home/work-together/work-together.png" alt="work-together" />
+      <img src="/home/work-together/work-together.webp" alt="work-together" />
     </div>
   );
 };
