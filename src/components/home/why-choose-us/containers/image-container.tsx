@@ -13,13 +13,13 @@ const ImageContainer = ({
   item: dataItemType;
   isInView: boolean;
 }) => {
-  const [isIOS, setIsIOS] = useState(false);
+  const [isMacOS, setIsMacOS] = useState(false);
   const [isIphone, setIsIphone] = useState(false);
   useEffect(() => {
     const isiOS = isIpadOS();
     const isMacOS = navigator.platform === "MacIntel";
     if (isMacOS) {
-      setIsIOS(true);
+      setIsMacOS(true);
     } else if (isiOS) {
       setIsIphone(true);
     }
@@ -54,11 +54,13 @@ const ImageContainer = ({
   return (
     <div
       className={`grow-0 flex items-center col-span-6
-       shadow-buttonInset bg-innerContainer rounded-[32px] lg:rounded-[26px] sm:gap-3 xs:hidden grayscale transition-all ${
-         isInView ? "grayscale-0" : "grayscale"
-       } }`}
+       shadow-buttonInset ${
+         isMacOS ? "bg-whyUsContainerMacOS" : "bg-innerContainer"
+       } rounded-[32px] lg:rounded-[26px] sm:gap-3 xs:hidden grayscale transition-all ${
+        isInView ? "grayscale-0" : "grayscale"
+      } }`}
     >
-      {isIOS ? (
+      {isIphone ? (
         <img
           src={item.image_url}
           alt="fallback image"

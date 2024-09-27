@@ -52,7 +52,7 @@ const tailwindConfig: Config = {
         darkOrange: "var(--dark-orange)",
         darkOpacity: "var(--dark-with-opacity)",
         customBlue: "var(--custom-blue)",
-        whyUsContainer: "var(--why-us-container-mac-OS)",
+        whyUsContainerMacOS: "var(--why-us-container-mac-OS)",
         whyUsSmallDeviceContainer: "var(--why-us-container-mac-small-devices)"
       },
       spacing: {},
