@@ -20,12 +20,12 @@ const ImageContainer = ({
     const isiOS = isIOS();
     const isiPad = isIpadOS();
     const isMacOS = navigator.platform === "MacIntel";
-    if (isMacOS) {
-      setIsMacOS(true);
-    } else if (isiPad && !isiOS) {
+    if (isiPad && !isiOS) {
       setIsIPad(true);
     } else if (isiOS) {
       setIsIphone(true);
+    } else if (isMacOS) {
+      setIsMacOS(true);
     }
     function isIOS() {
       if (
@@ -33,12 +33,6 @@ const ImageContainer = ({
         /iPad|iPhone|iPod/.test(navigator.userAgent)
       ) {
         return true;
-      } else {
-        return (
-          navigator.maxTouchPoints &&
-          navigator.maxTouchPoints > 2 &&
-          /MacIntel/.test(navigator.platform)
-        );
       }
     }
 
