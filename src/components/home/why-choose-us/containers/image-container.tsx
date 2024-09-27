@@ -22,7 +22,7 @@ const ImageContainer = ({
     const isMacOS = navigator.platform === "MacIntel";
     if (isMacOS) {
       setIsMacOS(true);
-    } else if (isiPad) {
+    } else if (isiPad && !isiOS) {
       setIsIPad(true);
     } else if (isiOS) {
       setIsIphone(true);
