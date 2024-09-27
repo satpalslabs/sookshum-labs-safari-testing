@@ -49,7 +49,7 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
       </Head>
-      <body>
+      <body className="bg-black">
         <div className="flex flex-col justify-between !font-poppins !bg-black text-white w-full max-w-screen overflow-hidden min-h-[100vh]">
           <Header />
           <div className="!bg-black z-10 relative grow">{children}</div>

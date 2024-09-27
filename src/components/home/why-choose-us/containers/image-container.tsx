@@ -14,12 +14,14 @@ const ImageContainer = ({
   isInView: boolean;
 }) => {
   const [isIOS, setIsIOS] = useState(false);
-  // const [isIphone, setIsIphone] = useState(false);
+  const [isIphone, setIsIphone] = useState(false);
   useEffect(() => {
     const isiOS = isIpadOS();
     const isMacOS = navigator.platform === "MacIntel";
-    if (isMacOS || isiOS) {
+    if (isMacOS) {
       setIsIOS(true);
+    } else if (isiOS) {
+      setIsIphone(true);
     }
     function isIOS() {
       if (
