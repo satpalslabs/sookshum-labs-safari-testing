@@ -131,17 +131,17 @@ export function start(e: any) {
     isDown = true;
     isDragging = false;
 
-    // Prevent default on touchstart to avoid scrolling issues in Safari
-    if (e.type === "touchstart") {
-        e.preventDefault();
-    }
-
     const slider = $('.Slider');
     slider.addClass("active");
 
     // Get start position for touch or mouse
     startX = e.touches && e.touches.length > 0 ? e.touches[0].pageX : e.pageX;
     scrollLeft = parseInt(slider.css('transform').split(',')[4]?.trim() || "0", 10);
+
+    // Prevent default only if interacting with the slider, but not when scrolling
+    // if (e.type === "touchstart" && e.target.closest('.Slider')) {
+    //     e.preventDefault();  // Only prevent default if necessary
+    // }
 }
 
 // Function to handle dragging movement (mousemove/touchmove)
