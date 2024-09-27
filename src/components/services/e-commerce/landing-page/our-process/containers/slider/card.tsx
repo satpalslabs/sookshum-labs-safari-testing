@@ -19,8 +19,11 @@ const ProcessServiceCard = ({
   index: number;
 }) => (
   <div
-    className={`w-[318px] md:w-[300px] sm:w-[281px] xxl:w-[412px] cursor-pointer shrink-0 flex flex-col gap-[21px] slider-item active-slider-item z-10`}
+    className={`w-[318px] md:w-[300px] sm:w-[281px] xxl:w-[412px] cursor-pointer shrink-0 flex flex-col gap-[21px] slider-item active-slider-item z-10  pointer-events-auto`}
     onClick={() => {
+      runSlider(index);
+    }}
+    onTouchEnd={() => {
       runSlider(index);
     }}
   >

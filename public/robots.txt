@@ -1,6 +1,6 @@
 User-agent: *
 Disallow: /sitemap.xml
-Disallow: https://www.sookshum-labs.com/sitemap.xml
+Disallow: /robots.txt
 
 
 # Sitemap location (optional)

@@ -38,7 +38,7 @@ const Testimonials = ({
       blurDataURL="URL"
       placeholder="blur"
       loading="eager" // Lazy load the image
-      priority={false} 
+      priority={false}
     />
     <div className="px-3 pb-0 grow">
       <Description
@@ -54,9 +54,11 @@ const Testimonials = ({
       />
     </div>
     <div className="pl-3 flex gap-6 ">
-      <img
+      <Image
+        width={130}
+        height={80}
         src={review["client-details"]["client-photo"]}
-        alt=""
+        alt="client-photo"
         className="h-12 w-12 xl:h-[46px] xl:w-[46px] rounded-full xs:w-8 xs:h-8"
       />
       <div className="flex flex-col justify-between">

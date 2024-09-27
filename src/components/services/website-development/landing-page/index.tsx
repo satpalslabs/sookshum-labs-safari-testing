@@ -16,7 +16,7 @@ import { HomeProps } from "@app/page";
 const content_heroSection: HeroSection = {
   gradientTextStyle: "",
   URL: "/services/website-development/landing-page/website-bg.webm",
-  fallback: "/services/website-development/landing-page/fallback.png",
+  fallback: "/services/website-development/landing-page/fallback.webp",
   "contact-us": true,
   image: false,
   buttonText: "Website Development",

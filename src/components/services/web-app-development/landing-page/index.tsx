@@ -18,7 +18,7 @@ const content_heroSection: HeroSection = {
   URL: "/services/web-app-development/landing-page/web-app-bg.webm",
   "contact-us": true,
   image: false,
-  fallback:"/services/web-app-development/landing-page/fallback.png",
+  fallback:"/services/web-app-development/landing-page/fallback.webp",
   buttonText: "Web App Development",
   additionalDescription: "",
   gradientText: "Web App Development Services",

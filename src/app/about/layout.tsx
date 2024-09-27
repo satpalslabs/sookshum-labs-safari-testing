@@ -5,10 +5,7 @@
 import type { Metadata } from "next";
 import Head from "next/head";
 export const metadata: Metadata = {
-  icons: {
-    icon: "/favicon.png",
-  },
-  title: "Sookshum Labs: Custom Software Development Company",
+  title: "About Us | Sookshum Labs",
 };
 
 export default function RootLayout({

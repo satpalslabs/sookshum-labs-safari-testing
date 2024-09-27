@@ -15,7 +15,7 @@ const content_heroSection: HeroSection = {
   URL: "/services/ui-ux-design/ui-ux-bg.webm",
   "contact-us": true,
   image: false,
-  fallback: "/services/ui-ux-design/fallback.png",
+  fallback: "/services/ui-ux-design/fallback.webp",
   additionalDescription: null,
   buttonText: "UI/UX Designing",
   gradientText: "Human-centred UI/UX product design services",

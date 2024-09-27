@@ -50,7 +50,7 @@ const WhatWeBuild: React.FC = () => {
           width="2200"
           height="2200"
           alt=""
-          src="/about-us/who-we-are/screen.png"
+          src="/about-us/who-we-are/screen.webp"
           className="grow h-[633px] lg:h-[403px] sm:h-[291px] xs:h-[219px] overflow-hidden object-cover rounded-[32px]"
           blurDataURL="URL"
           placeholder="blur"

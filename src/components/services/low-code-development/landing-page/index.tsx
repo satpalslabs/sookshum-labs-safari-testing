@@ -15,7 +15,7 @@ import CoreServices from "@components/services/reuseable-components/core-service
 import { HomeProps } from "@app/page";
 
 const content_heroSection: HeroSection = {
-  URL: "/services/website-development/landing-page/hero-background-image.png",
+  URL: "/services/hero-background-image.webp",
   "contact-us": true,
   fallback:"",
   image: true,

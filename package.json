@@ -14,7 +14,10 @@
     "@emotion/styled": "^11.13.0",
     "@lottiefiles/dotlottie-react": "^0.8.12",
     "@mui/material": "^6.0.0",
+    "@react-three/drei": "^9.114.0",
+    "@react-three/fiber": "^8.17.8",
     "@types/nodemailer": "^6.4.15",
+    "@types/three": "^0.168.0",
     "aos": "^2.3.4",
     "framer-motion": "^11.3.29",
     "isbot": "^5.1.17",
@@ -27,7 +30,8 @@
     "react-toastify": "^10.0.5",
     "sharp": "^0.33.5",
     "smtp": "^0.1.4",
-    "swiper": "^11.1.14"
+    "swiper": "^11.1.14",
+    "three": "^0.168.0"
   },
   "devDependencies": {
     "@cloudflare/next-on-pages": "^1.13.2",

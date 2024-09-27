@@ -12,7 +12,6 @@ type props = {
 };
 
 const CustomInput: React.FC<props> = (props) => {
-  console.log(props);
   return (
     <input
       className={`py-6 w-fit  text-white text-base px-8 md:px-[20px] border-borderDarkButton [backdrop-filter:blur(100px)] sm:py-4 sm:px-5 rounded-[32px] border-solid border bg-darkButton shadow-buttonInset ${props.style} normal-case text-[16px] md:text-sm sm:text-[11px] font-normal font-poppins overflow-hidden focus:outline-none focus:border-[#ffffff2d]`}
@@ -32,7 +31,6 @@ const CustomInput: React.FC<props> = (props) => {
             (props.prefix == "" ||
               valueWithoutPrefix.includes(props.prefix.trim()) == false))
         ) {
-          console.log("true");
           props.setValue((prev: any) => ({
             ...prev,
             [props.keyName]: valueWithoutPrefix.replaceAll(props.prefix, ""),

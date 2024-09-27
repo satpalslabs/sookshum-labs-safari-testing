@@ -22,7 +22,7 @@ const OurCulture: React.FC = () => {
         width="3200"
         height="3200"
         alt=""
-        src="/about-us/our-culture-1.png"
+        src="/about-us/our-culture-1.webp"
         className="w-full h-[500px] xxl:h-[700px] lg:h-[354px] xs:h-[219px] overflow-hidden object-cover rounded-[32px]"
         blurDataURL="URL"
         placeholder="blur"

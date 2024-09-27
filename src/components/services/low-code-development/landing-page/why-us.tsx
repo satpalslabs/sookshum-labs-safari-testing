@@ -57,7 +57,7 @@ const ChooseUsCards: React.FC<{ isInView: boolean }> = ({ isInView }) => (
         height="2200"
         width="2200"
         alt=""
-        src="/services/low-code-development/landing-page/why-us/why-us.png"
+        src="/services/low-code-development/landing-page/why-us/why-us.webp"
         className="w-full h-full object-contain absolute xs:relative xs:h-fit"
       />
     </div>

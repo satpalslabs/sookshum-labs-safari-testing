@@ -28,7 +28,7 @@ const SourceContent: React.FC<contentProps> = (props) => (
           />
         </video>
       ) : (
-        <img className="w-full object-cover" src={props.source} alt="" />
+        <img className="w-full object-cover" src={props.source} alt="Background image" />
       )}
     </div>
     <div

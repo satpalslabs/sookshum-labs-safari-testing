@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
   title: "Sookshum Labs: Custom Software Development Company",
   description:
-    "We are a reliable technology partner to meet your custom software solution needs",
+    "Sookshum Labs is a custom software development company specializing in full-stack development for web and mobile solutions. We excel in building high-quality eCommerce platforms, websites, web apps, and mobile apps tailored to your business needs. ur expertise ensures scalable, secure, and high-performing software that helps businesses thrive in the digital age. Partner with Sookshum Labs to create innovative and reliable solutions that drive growth and success.",
 };
 
 const poppins = Poppins({

@@ -23,7 +23,7 @@ const Hero: React.FC = () => (
     </div>
     <TextContainer />
     <ImageContainer />
-    <div className="absolute -bottom-[20%] lg:-bottom-[23%] xs:bottom-[8%] h-[200px] xs:h-[40px] z-20 w-full overflow-visible">
+    <div className="absolute -bottom-[20%] lg:-bottom-[23%] xs:bottom-[8%] h-[200px] xs:h-[40px] z-20 w-full overflow-hidden">
       <Image
         alt=""
         src={dots}

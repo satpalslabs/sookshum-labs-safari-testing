@@ -13,13 +13,14 @@ export function middleware(request: NextRequest) {
     // Conditionally set the X-Robots-Tag header
     const isLocalhost = request.headers.get('host')?.includes('localhost');
 
-    // Prevent indexing only for non-production and non-localhost environments (e.g., staging)
-    if (process.env.VERCEL_ENV !== 'production' && !isLocalhost) {
-        response.headers.set('X-Robots-Tag', 'noindex, nofollow');
-    } else {
+    // Allow indexing for both production and preview environments
+    if (process.env.VERCEL_ENV === 'production' || process.env.VERCEL_ENV === 'preview') {
         response.headers.set('X-Robots-Tag', 'index, follow');
     }
-
+    // Block indexing for local and development environments
+    else if (process.env.VERCEL_ENV === 'development' || isLocalhost) {
+        response.headers.set('X-Robots-Tag', 'noindex, nofollow');
+    }
     return response;
 }
 

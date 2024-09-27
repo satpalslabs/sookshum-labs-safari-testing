@@ -7,22 +7,21 @@ let isDragging = false;
 // Ensure the code only runs on the client side
 export function callOnce() {
     if (typeof window !== 'undefined') {
-        $(document).ready(function () {
-            let sliderContainer = $('.Slider');
-            if (sliderContainer.length) {
-                // Mouse events
-                sliderContainer[0].addEventListener("mousedown", start, { passive: true });
-                sliderContainer[0].addEventListener("mousemove", move, { passive: false });
-                sliderContainer[0].addEventListener("mouseup", end);
-                sliderContainer[0].addEventListener("mouseleave", end);
+        let sliderContainer = $('.Slider');
+        const $sliderElements = sliderContainer.children();
+        if (sliderContainer.length) {
+            // Mouse events
+            sliderContainer[0].addEventListener("mousedown", start, { passive: true });
+            sliderContainer[0].addEventListener("mousemove", move, { passive: false });
+            sliderContainer[0].addEventListener("mouseup", end);
+            sliderContainer[0].addEventListener("mouseleave", end);
 
-                // Touch events (set passive to false for touchstart and touchmove)
-                sliderContainer[0].addEventListener("touchstart", start, { passive: false });
-                sliderContainer[0].addEventListener("touchmove", move, { passive: false });
-                sliderContainer[0].addEventListener("touchend", end);
-                sliderContainer[0].addEventListener("touchcancel", end);
-            }
-        });
+            // Touch events (set passive to false for touchstart and touchmove)
+            sliderContainer[0].addEventListener("touchstart", start, { passive: false });
+            sliderContainer[0].addEventListener("touchmove", move, { passive: false });
+            sliderContainer[0].addEventListener("touchend", end);
+            sliderContainer[0].addEventListener("touchcancel", end);
+        }
     }
 }
 

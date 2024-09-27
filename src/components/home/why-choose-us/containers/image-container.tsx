@@ -14,11 +14,11 @@ const ImageContainer = ({
   isInView: boolean;
 }) => {
   const [isIOS, setIsIOS] = useState(false);
-  const [isIphone, setIsIphone] = useState(false);
+  // const [isIphone, setIsIphone] = useState(false);
   useEffect(() => {
     const isiOS = isIpadOS();
     const isMacOS = navigator.platform === "MacIntel";
-    if (isMacOS || !isiOS) {
+    if (isMacOS || isiOS) {
       setIsIOS(true);
     }
     function isIOS() {
@@ -52,29 +52,32 @@ const ImageContainer = ({
   return (
     <div
       className={`grow-0 flex items-center col-span-6
-       shadow-buttonInset ${
-         isIphone
-           ? "bg-innerContainer"
-           : isIOS
-           ? "bg-whyUsContainer"
-           : "bg-innerContainer"
-       } rounded-[32px] lg:rounded-[26px] sm:gap-3 xs:hidden grayscale transition-all ${
-        isInView ? "grayscale-0" : "grayscale"
-      } }`}
+       shadow-buttonInset bg-innerContainer rounded-[32px] lg:rounded-[26px] sm:gap-3 xs:hidden grayscale transition-all ${
+         isInView ? "grayscale-0" : "grayscale"
+       } }`}
     >
-      <video
-        autoPlay={true}
-        src={item.video_url}
-        muted
-        loop
-        playsInline
-        className="w-[500px] m-auto  md:w-[368px] md:h-[368px] object-contain"
-      >
+      {isIOS ? (
         <img
           src={item.image_url}
-          title="Your browser does not support the <video> tag"
+          alt="fallback image"
+          className="w-[500px] m-auto  md:w-[368px] md:h-[368px] object-contain h-[500px]"
         />
-      </video>
+      ) : (
+        <video
+          autoPlay={true}
+          src={item.video_url}
+          muted
+          loop
+          playsInline
+          className="w-[500px] m-auto  md:w-[368px] md:h-[368px] object-contain h-[500px]"
+        >
+          <img
+            src={item.image_url}
+            title="Your browser does not support the <video> tag"
+            alt="fallback image"
+          />
+        </video>
+      )}
     </div>
   );
 };

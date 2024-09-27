@@ -13,7 +13,7 @@ import BottomSection from "./get-in-touch-section";
 
 const content_heroSection: HeroSection = {
   gradientTextStyle: "",
-  URL: "/services/website-development/landing-page/hero-background-image.png",
+  URL: "/services/hero-background-image.webp",
   image: true,
   buttonText: "Journey And Stories",
   "contact-us": false,

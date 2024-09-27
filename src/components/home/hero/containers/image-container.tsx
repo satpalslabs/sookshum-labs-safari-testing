@@ -25,7 +25,7 @@ const ImageContainer: React.FC = () => (
         height={700}
         blurDataURL="URL"
         placeholder="blur"
-        priority
+        // priority
       />
     </video>
   </div>
