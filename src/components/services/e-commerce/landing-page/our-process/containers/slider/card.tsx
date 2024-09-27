@@ -23,7 +23,7 @@ const ProcessServiceCard = ({
     onClick={() => {
       runSlider(index);
     }}
-    onTouchEnd={() => {
+    onTouchStart={() => {
       runSlider(index);
     }}
   >
