@@ -69,7 +69,7 @@ const SingleCard: React.FC<{
     }`}
   >
     <div
-      className={`shadow-buttonInset p-6 sm:p-[18px] h-full pb-[60px] sm:pb-[48px] xs:pb-[34px] rounded-[32px] sm:rounded-[24px] transition-all duration-1000 border-[1.5px] cursor-auto bg-innerBlurContainer ${
+      className={`shadow-buttonInset transition-all duration-1000 p-6 sm:p-[18px] h-full pb-[60px] sm:pb-[48px] xs:pb-[34px] rounded-[32px] sm:rounded-[24px] border-[1.5px] cursor-auto bg-[#28282866] hover:bg-gradientOnHover ${
         isInView
           ? "border-viewportBorder grayscale-0"
           : "border-transparent grayscale"
