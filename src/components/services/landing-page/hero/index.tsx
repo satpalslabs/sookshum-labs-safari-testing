@@ -22,8 +22,8 @@ const Hero: React.FC = () => (
         gradientDivStyle: "",
         sourceStyle: "",
       }}
-      fallback="/services/fallback.webp"
-      source="/services/service.mp4"
+      fallback="/services/landing-page/fallback.webp"
+      source="/services/landing-page/service.mp4"
     />
   </div>
 );

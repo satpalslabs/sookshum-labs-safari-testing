@@ -1,11 +1,12 @@
 "use client";
 import SectionHeader from "@components/basic-components/section-header";
 import { useInView } from "framer-motion";
-import  { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import data from "./data/industry-experience.json";
 import Image from "next/image";
 import H3 from "@components/basic-components/headings/H3";
 import Description from "@components/basic-components/description";
+import OuterComponent from "@components/basic-components/outer-component";
 
 type IndustryType = {
   heading: string;
@@ -20,26 +21,28 @@ const IndustryExperience = () => {
   const isInView = useInView(ref);
 
   return (
-    <section
-      ref={ref}
-      className={`px-[80px] lg:px-10 xs:px-5 pt-[120px] md:pt-[90px] sm:pt-[70px] xs:pt-[60px] transition-all duration-500 flex flex-col gap-[70px] md:gap-[50px] sm:gap-12   items-center bg-black overflow-hidden max-w-[1920px] mx-auto ${
-        isInView ? "grayscale-0" : "grayscale"
-      }`}
-    >
-      {/* Header */}
-      <SectionHeader
-        buttonText="Industries we serve"
-        description="Our team is dedicated to designing innovative apps and websites that meet the unique demands of sectors ranging from healthcare to retail, all powered by the latest in technology."
-        style="w-[770px] lg:w-[491px] lg:mx-auto sm:w-[636px] xs:w-full xs:!px-0"
+    <OuterComponent>
+      <div
+        ref={ref}
+        className={`transition-all duration-500 flex flex-col gap-[70px] md:gap-[50px] sm:gap-12 items-center bg-black overflow-hidden max-w-[1920px] mx-auto ${
+          isInView ? "grayscale-0" : "grayscale"
+        }`}
       >
-        <div className="w-full lg:w-[637px] sm:w-[80%] xs:w-full lg:leading-[1.2] text-wrap tracking-tight text-center mx-auto ">
-          Our diverse industry
-          <span className="italic font-light w-full"> experiences?</span>
-        </div>
-      </SectionHeader>
-      {/* Detail component */}
-      <IndustryExperienceDetailedComponent />
-    </section>
+        {/* Header */}
+        <SectionHeader
+          buttonText="Industries we serve"
+          description="Our team is dedicated to designing innovative apps and websites that meet the unique demands of sectors ranging from healthcare to retail, all powered by the latest in technology."
+          style="w-[770px] lg:w-[491px] lg:mx-auto sm:w-[636px] xs:w-full xs:!px-0"
+        >
+          <div className="w-full lg:w-[637px] sm:w-[80%] xs:w-full lg:leading-[1.2] text-wrap tracking-tight text-center mx-auto ">
+            Our diverse industry
+            <span className="italic font-light w-full"> experiences?</span>
+          </div>
+        </SectionHeader>
+        {/* Detail component */}
+        <IndustryExperienceDetailedComponent />
+      </div>
+    </OuterComponent>
   );
 };
 export default IndustryExperience;
@@ -55,8 +58,9 @@ const IndustryExperienceDetailedComponent: React.FC = () => {
         {/* Main center div with Image and text */}
         <div className="rounded-full h-full w-full p-[10px] sm:p-2 border-borderDarkButton [backdrop-filter:blur(100px)] border-solid border shadow-buttonInset bg-darkButton">
           <div className="w-full h-full rounded-full relative">
-            <Image  blurDataURL="URL"  placeholder="blur" 
-
+            <Image
+              blurDataURL="URL"
+              placeholder="blur"
               height="2200"
               width="2200"
               className="w-full h-full object-cover rounded-full z-0"
@@ -66,7 +70,10 @@ const IndustryExperienceDetailedComponent: React.FC = () => {
             <div className="absolute bg-darkOpacity w-full h-full z-10 rounded-full top-0 left-0">
               {/* Text container */}
               <div className="flex flex-col gap-[26px] w-[411px] sm:w-[282px] mx-auto justify-center items-center h-full text-center xs:w-[205px] xs:gap-2">
-                <H3 style="sm:text-[14px] xs:text-[13px]" text={activeIndustry.heading} />
+                <H3
+                  style="sm:text-[14px] xs:text-[13px]"
+                  text={activeIndustry.heading}
+                />
                 <Description classes="grow-0 !font-medium" text={null}>
                   <div className="text-[20px] md:text-[20px] xs:text-[10px] w-full sm:text-[14px] leading-[1.3]">
                     {activeIndustry["detail-description"]}
@@ -94,8 +101,9 @@ const IndustryExperienceDetailedComponent: React.FC = () => {
               setActiveIndustry(industry);
             }}
           >
-            <Image  blurDataURL="URL"  placeholder="blur" 
-
+            <Image
+              blurDataURL="URL"
+              placeholder="blur"
               height="2200"
               width="2200"
               className="w-full object-contain"

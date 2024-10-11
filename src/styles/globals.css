@@ -15,6 +15,7 @@
     --custom-white: #f4f0f0;
     --custom-yellow: #FCCE62;
     --view-port-border: #73737366;
+    --inner-container-blur: #28282866;
     --inner-container: #282828B2;
     --custom-dark-shadow: #F8F8F80F;
     --slider-circle-gradient: linear-gradient(158.39deg, rgba(255, 255, 255, 0.1) 14.19%, rgba(255, 255, 255, 2.5e-05) 50.59%, rgba(255, 255, 255, 2.5e-05) 68.79%, rgba(255, 255, 255, 0.025) 105.18%);
@@ -139,7 +140,7 @@ body {
 
 
 
-u .unreset {
+.unreset {
     /**
 * Unreset CSS
 *

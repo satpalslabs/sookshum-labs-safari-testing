@@ -1,0 +1,32 @@
+{
+    "services": [
+        {
+            "heading": "Custom <br /> Development",
+            "image_url": "/services/e-commerce-development/magento-development-services/why-choose-us/custom-development.png"
+        },
+        {
+            "heading": "Experienced <br/> team",
+            "image_url": "/services/web-app-development/landing-page/why-us/our-team.png"
+        },
+        {
+            "heading": "Performance &  <br/> Optiimization",
+            "image_url": "/services/web-app-development/landing-page/why-us/workflow-enhancement.png"
+        },
+        {
+            "heading": "Adobe Solution <br/> Partner",
+            "image_url": "/services/e-commerce-development/magento-development-services/why-choose-us/adobe-solutions-partner.png"
+        },
+        {
+            "heading": "Seamless <br /> Migrations",
+            "image_url": "/services/e-commerce-development/magento-development-services/why-choose-us/seamless-migrations.png"
+        },
+        {
+            "heading": "On-time <br /> project delivery",
+            "image_url": "/services/web-app-development/landing-page/why-us/in-depth.png"
+        },
+        {
+            "heading": "Maintenance & <br/> Support",
+            "image_url": "/services/web-app-development/landing-page/services/monitor.png"
+        }
+    ]
+}

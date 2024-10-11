@@ -1,7 +1,7 @@
 // import dynamic from "next/dynamic";
 import { usePathname } from "next/navigation";
 import  { Fragment, useState } from "react";
-// import Dropdown from "./dropdown";
+import Dropdown from "./dropdown";
 import Link from "next/link";
 const NavLinkService = ({
   text,
@@ -23,12 +23,12 @@ const NavLinkService = ({
       )}
       <div
         // Temporary disable
-        // onMouseLeave={() => {
-        //   setHovered(false);
-        // }}
-        // onMouseEnter={() => {
-        //   setHovered(true);
-        // }}
+        onMouseLeave={() => {
+          setHovered(false);
+        }}
+        onMouseEnter={() => {
+          setHovered(true);
+        }}
         className={"sm:flex-col sm:gap-0 sm:w-full"}
       >
         <Link
@@ -48,7 +48,7 @@ const NavLinkService = ({
         >
           <Fragment>{text}</Fragment>
           {/* Temporary disabled */}
-          {/* <svg
+          <svg
             className={`w-3 h-2 group-hover:fill-white transition-transform ${
               hovered && "rotate-180"
             } sm:hidden`}
@@ -64,7 +64,7 @@ const NavLinkService = ({
               d="M8.58579 0.333344C9.47669 0.333344 9.92286 1.41049 9.29289 2.04045L5.70711 5.62624C5.31658 6.01676 4.68342 6.01676 4.29289 5.62624L0.707108 2.04045C0.0771428 1.41049 0.523309 0.333344 1.41421 0.333344H8.58579Z"
               fill="currentColor"
             />
-          </svg> */}
+          </svg>
           <RightAngleArrow className="group-hover:stroke-white stroke-current hidden sm:block transition-all sm:group-hover:rotate-90" />
         </Link>
         <LinkForSmallScreens
@@ -76,11 +76,11 @@ const NavLinkService = ({
           setShowLinks={setShowLinks}
         />
         {/* Temporary disabled */}
-        {/* <Dropdown
+        <Dropdown
           active={hovered}
           setActive={setHovered}
           setShowLinks={setShowLinks}
-        /> */}
+        />
       </div>
     </div>
   );
@@ -120,7 +120,7 @@ const LinkForSmallScreens = ({
     </Link>
     {/* Temporary disabled */}
 
-    {/* <div
+    <div
       onClick={() => {
         setHovered((pre) => !pre);
       }}
@@ -130,7 +130,7 @@ const LinkForSmallScreens = ({
           hovered && "rotate-90"
         }`}
       />
-    </div> */}
+    </div>
   </div>
 );
 

@@ -1,20 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // Other Next.js configuration options
-  //  output:"export",
-  async headers() {
-    return [
-      {
-        source: '/(.*)', // Apply to all routes or specific paths
-        headers: [
-          {
-            key: 'Cache-Control',
-            value: 'max-age=0, must-revalidate', // Example of more flexible caching
-          },
-        ],
-      },
-    ];
-  },
+  //  output:"export", 
   async redirects() {
     return [
       {
@@ -62,6 +49,11 @@ const nextConfig = {
         destination: "/about",
         permanent: true,
       },
+      {
+        source: "/contact",
+        destination: "/contact-us",
+        permanent: true,
+      }
     ];
   },
 };

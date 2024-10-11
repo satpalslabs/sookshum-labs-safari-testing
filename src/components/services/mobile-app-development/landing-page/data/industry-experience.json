@@ -2,7 +2,7 @@
     "industries": [
         {
             "title": "Healthcare Apps",
-            "image": "/services/mobile-app-devlopment/industry-experience/healthcare-apps.png",
+            "image": "/services/mobile-app-devlopment/landing-page/industry-experience/healthcare-apps.png",
             "description": "Whether you need telemedicine, health monitoring, EHR/EMR solutions, or custom healthcare app development, our expert mobile app developers are ready to build feature-rich healthcare apps tailored to your needs.",
             "points": [
                 "Telemedicine Solution",
@@ -14,7 +14,7 @@
         },
         {
             "title": "Fintech Apps",
-            "image": "/services/mobile-app-devlopment/industry-experience/fintech-apps.png",
+            "image": "/services/mobile-app-devlopment/landing-page/industry-experience/fintech-apps.png",
             "description": "Our developers are proficient in industry regulations and compliance standards, creating secure, feature-rich fintech apps that empower businesses to deliver seamless, innovative financial services.",
             "points": [
                 "Digital Wallets",
@@ -26,7 +26,7 @@
         },
         {
             "title": "E-commerce & Retail Apps",
-            "image": "/services/mobile-app-devlopment/industry-experience/e-commerce-apps.png",
+            "image": "/services/mobile-app-devlopment/landing-page/industry-experience/e-commerce-apps.png",
             "description": "Hire expert mobile app developers for eCommerce app development to create seamless, convenient shopping experiences that drive sales growth and help businesses expand their customer base and market reach.",
             "points": [
                 "Custom eCommerce Store Development",
@@ -38,7 +38,7 @@
         },
         {
             "title": "Education & eLearning",
-            "image": "/services/mobile-app-devlopment/industry-experience/blub.png",
+            "image": "/services/mobile-app-devlopment/landing-page/industry-experience/blub.png",
             "description": "We develop interactive, engaging platforms that enrich educational experiences, making knowledge accessible anytime, anywhere. Our solutions empower both students and educators to thrive.",
             "points": [
                 "Online Learning Platforms",

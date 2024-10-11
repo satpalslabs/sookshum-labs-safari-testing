@@ -13,7 +13,7 @@ const SideNavigation: React.FC<{
     className={`flex !text-primary text-opacity-5 flex-col gap-[10px] lg:gap-[10px] w-full sm:w-fit shrink-0 ${props.style} !normal-case`}
   >
     <div
-      className="flex gap-[27px] text-white items-center w-full lg:gap-[17px] sm:gap-[10px] shrink-0 xs:gap-[17px] cursor-pointer"
+      className="flex gap-[27px] font-poppins text-white items-center w-full lg:gap-[17px] sm:gap-[10px] shrink-0 xs:gap-[17px] cursor-pointer"
       onClick={() => {
         props.setActive(props.ind);
       }}
@@ -27,7 +27,7 @@ const SideNavigation: React.FC<{
       <div className="flex gap-[57px] shrink-0 lg:gap-[26px] items-center xs:flex-col xs:items-start xs:gap-1 xs:grow">
         <H6
           text={props.title}
-          classes="text-white text-base leading-[1.6] xs:pr-5 tracking-tight"
+          classes="text-white text-base leading-[1.6] xs:pr-5 !font-poppins tracking-tight"
         />
       </div>
     </div>

@@ -1,0 +1,32 @@
+[
+    {
+        "heading": "SaaS products",
+        "description": "Develop and deploy Software as a Service (SaaS) applications rapidly, catering to diverse industries with Laravel’s versatility. ",
+        "image_url": "/services/web-app-development/laravel-development-services/our-services/box.png"
+    },
+    {
+        "heading": "Enterprise applications",
+        "description": "Laravel’s architecture and tools are well-suited for crafting complex, data-intensive enterprise applications that require high performance and reliability.",
+        "image_url": "/services/web-app-development/laravel-development-services/our-services/kit.png"
+    },
+    {
+        "heading": "API development",
+        "description": "Laravel simplifies API development, making it an excellent choice for building robust and scalable APIs to support decoupled architecture, mobile apps, and third-party integrations.",
+        "image_url": "/services/web-app-development/laravel-development-services/our-services/api-development.png"
+    },
+    {
+        "heading": "Startups and MVPs",
+        "description": "Launch minimum viable products (MVPs) quickly to validate ideas and attract investors with Laravel’s fast development capabilities ",
+        "image_url": "/services/web-app-development/laravel-development-services/why-us/rocket.png"
+    },
+    {
+        "heading": "Online portals",
+        "description": "Create flexible and user-friendly customer portal solutions tailored to your company’s needs to make customer interactions a breeze. ",
+        "image_url": "/services/web-app-development/landing-page/why-us/develop.png"
+    },
+    {
+        "heading": "Commerce-driven applications",
+        "description": "Laravel’s robust features make it an ideal choice for building scalable and secure commerce-driven platforms, empowering businesses to manage transactions and payments. ",
+        "image_url": "/services/web-app-development/laravel-development-services/our-services/driven-applications.png"
+    }
+]

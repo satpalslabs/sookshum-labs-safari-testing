@@ -61,9 +61,9 @@ const Dropdown = ({
           : "max-height 0.3s ease, opacity 0.3s ease 0.3s", // First, reduce height, then fade out opacity
         overflow: "hidden", // Prevent content overflow when collapsed
       }}
-      className={`absolute z-50 w-full max-w-[1920px] mx-auto top-[70px] sm:relative left-0 pt-[1%] sm:-top-4 sm:pt-0 sm:pl-6 sm:pr-4 xs:pl-4 `}
+      className={`absolute z-50 w-full max-w-[1920px] mx-auto bottom-0 translate-y-full sm:relative left-0 sm:-top-4 sm:pt-0 sm:pl-6 sm:pr-4 xs:pl-4 `}
     >
-      <div className="mt-[20px] flex sm:flex-col gap-[105px] lg:gap-5 sm:gap-[48px] z-50 w-full bg-layoutBackground sm:bg-transparent border border-t-0 border-borderDarkButton sm:border-none rounded-b-[32px]  font-poppins text-gray-400 top-[70px] left-0 px-[81px] py-8 lg:px-10 lg:py-[34px] sm:!px-0 sm:py-0">
+      <div className=" flex sm:flex-col gap-[105px] lg:gap-5 sm:gap-[48px] z-50 w-full bg-layoutBackground sm:bg-transparent border border-t-0 border-borderDarkButton sm:border-none rounded-b-[32px]  font-poppins text-gray-400 top-[70px] left-0 px-[81px] py-8 lg:px-10 lg:py-[34px] sm:!px-0 sm:py-0">
         <div className="flex flex-col justify-center gap-2 grow ">
           {data.services.map((item: service, index: number) => (
             <DropdownService

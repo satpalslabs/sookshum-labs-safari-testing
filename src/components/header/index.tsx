@@ -16,7 +16,7 @@ const Header: React.FC = () => {
   const [showLinks, setShowLinks] = useState<boolean>(false);
   return (
     <header
-      className={`relative flex justify-between items-center w-full max-w-[1920px] bg-transparent z-50 font-poppins text-gray-400 mx-auto px-[80px] py-8 lg:px-10 lg:py-[34px] md:px-[40px] xs:!px-5 xs:py-[20px] ${
+      className={`relative h-fit flex justify-between items-center w-full max-w-[1920px] bg-transparent z-50 font-poppins text-gray-400 mx-auto px-[80px] py-8 lg:px-10 lg:py-[34px] md:px-[40px] xs:!px-5 xs:py-[20px] ${
         showLinks && "sm:fixed sm:bg-black"
       } `}
     >

@@ -6,15 +6,13 @@ import PrimaryButton from "@components/basic-components/primary-button";
 import data from "./data/lets-connect.json";
 import H5 from "@components/basic-components/headings/H5";
 import CheckIcon from "@components/basic-components/check-icon";
+import OuterComponent from "@components/basic-components/outer-component";
 
 let letsConnectListData: string[] = data.data;
 const LetsConnect: React.FC = () => (
-  <div
-    className=" px-[80px] lg:px-10 xs:px-5 pt-[120px] md:pt-[90px] sm:pt-[70px] xs:pt-[60px]   bg-black max-w-[1920px] w-full overflow-hidden mx-auto"
-    id="core_services"
-  >
+  <OuterComponent>
     <TextContainer />
-  </div>
+  </OuterComponent>
 );
 
 export default LetsConnect;

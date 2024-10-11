@@ -1,11 +1,13 @@
 "use client";
-import  { useRef } from "react";
+import { useRef } from "react";
 import data from "./data/medium-to-connect.json";
 import { useInView } from "@lib/use-in-view";
-const Card = dynamic(() => import('@components/basic-components/card'));import Description from "@components/basic-components/description";
+const Card = dynamic(() => import("@components/basic-components/card"));
+import Description from "@components/basic-components/description";
 import H5 from "@components/basic-components/headings/H5";
 import DarkButton from "@components/basic-components/button";
 import dynamic from "next/dynamic";
+import OuterComponent from "@components/basic-components/outer-component";
 export type Medium = {
   title: string;
   description: string;
@@ -19,18 +21,18 @@ const Mediums: React.FC = () => {
   const isInView = useInView(ref);
 
   return (
-    <section
-      ref={ref}
-      className="px-[80px] lg:px-10 xs:px-5 pt-[120px] md:pt-[90px] sm:pt-[70px] xs:pt-[60px]  bg-black overflow-hidden max-w-[1920px] mx-auto"
-    >
-      <section className={` ${isInView ? "grayscale-0" : "grayscale"} w-full `}>
+    <OuterComponent>
+      <section
+        ref={ref}
+        className={` ${isInView ? "grayscale-0" : "grayscale"} w-full `}
+      >
         <div className="grid grid-cols-2 gap-5 lg:gap-[18px] xs:grid-cols-1 xs:gap-[16px]">
           {mediums?.map((value: Medium, index: number) => (
             <MediumCard value={value} isInView={isInView} key={index} />
           ))}
         </div>
       </section>
-    </section>
+    </OuterComponent>
   );
 };
 

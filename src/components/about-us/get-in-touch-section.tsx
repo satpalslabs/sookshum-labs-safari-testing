@@ -2,6 +2,7 @@
 import DarkButton from "@components/basic-components/button";
 const Card = dynamic(() => import("@components/basic-components/card"));
 import H2 from "@components/basic-components/headings/H2";
+import OuterComponent from "@components/basic-components/outer-component";
 import PrimaryButton from "@components/basic-components/primary-button";
 import dynamic from "next/dynamic";
 export type dataItem = {
@@ -10,10 +11,7 @@ export type dataItem = {
 };
 
 const BottomSection: React.FC = () => (
-  <div
-    className=" px-[80px] lg:px-10 xs:px-5 pt-[120px] md:pt-[90px] sm:pt-[70px] xs:pt-[60px]  bg-black max-w-[1920px] w-full overflow-hidden mx-auto"
-    id="core_services"
-  >
+  <OuterComponent>
     <div className="h-fit w-full">
       <div className="grid grid-cols-2 xs:grid-cols-1 gap-5 w-full">
         <Card isInView={true} style={"pb-0 grow"}>
@@ -60,7 +58,7 @@ const BottomSection: React.FC = () => (
         </Card>
       </div>
     </div>
-  </div>
+  </OuterComponent>
 );
 
 export default BottomSection;

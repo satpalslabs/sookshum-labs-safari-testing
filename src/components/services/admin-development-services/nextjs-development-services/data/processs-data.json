@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Requirement Analysis ",
+        "description": "The goal of requirement analysis is to test the Next.js project idea.",
+        "image": "/contact-us/mediums/chat-with-us.webp"
+    },
+    {
+        "title": "UI/UX design",
+        "description": "The goal of a discovery stage is to test and develop the project idea.",
+        "image": "/services/landing-page/cover/pencil.png"
+    },
+    {
+        "title": "Development and testing",
+        "description": "Through continuous testing, we make sure the code we develop is clean, effective, and free of bugs.",
+        "image": "/services/admin-development/nextjs-development-services/why-us/cutting-edge-technologies.webp"
+    },
+    {
+        "title": "Maintenance",
+        "description": "Software grows outdated, technical errors occur, and the project idea undergoes changes.",
+        "image": "/services/admin-development/nextjs-development-services/our-process/maintenance.webp"
+    }
+]

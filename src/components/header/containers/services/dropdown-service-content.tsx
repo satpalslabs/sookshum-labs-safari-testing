@@ -15,8 +15,8 @@ const ServiceContent = ({
       (cardContent: cardContent, index: number) => (
         <Link
           href={cardContent.link}
+          className="flex items-center transition-all duration-500 sm:items-start bg-innerContainer sm:bg-transparent border sm:border-none border-solid border-transparent shadow-buttonInset  hover:bg-borderDarkButton hover:border-borderDarkButton sm:shadow-none w-full rounded-[32px] gap-4 p-4 sm:p-0"
           key={index}
-          className="flex items-center sm:items-start bg-innerContainer sm:bg-transparent border sm:border-none border-solid border-borderDarkButton shadow-buttonInset sm:shadow-none w-full rounded-[32px] gap-4 p-4 sm:p-0"
           onClick={() => setActive(false)}
         >
           <div className="sm:hidden h-[60px] w-[60px] relative rounded-2xl overflow-hidden">

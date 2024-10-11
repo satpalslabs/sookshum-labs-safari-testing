@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Requirement Analysis ",
+        "description": "This is a stage that involves detailed information, research and close inspection of the business ideal, goals and objectives. It also involves developing a development strategy and defining the various stages of development. "
+    },
+    {
+        "title": "Wireframing & Design",
+        "description": "The design stage is an important one and involves close coordination with the client using several techniques like wire-framing and prototyping. It involes brainstorming, creating several mock-ups and using several other techniques to develop the best interface to incorporate the business logic. "
+    },
+    {
+        "title": "Programming & Development",
+        "description": "It involves selecting the approximate tech stack and implementing advanced technologies if required. The project is broken into modules and each one is developed as per the priority by following a proven methodology, with regular updates provided at predefined intervals. "
+    },
+    {
+        "title": "Testing & Debugging",
+        "description": "The testing process takes place at every stage of the project and it is tested thoroughly at the end of the project. This includes both manual and automated testing with the help of several testing software. "
+    },
+    {
+        "title": "Deployment & Maintenance",
+        "description": "The project is released after acceptance testing ensuring it meets the requirements and is free from bugs. It also involves inspecting for performance issues. The software is also supported after release and maintenance tasks like upgrading, security updates, modifying functionality and more."
+    }
+]

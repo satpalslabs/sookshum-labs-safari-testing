@@ -1,0 +1,14 @@
+[
+    {
+        "heading": "Complex Web Applications  ",
+        "description": "Ideal for big and complex web applications needing both frontend and backend capabilities. Next.js offers the full-stack functionalities required for developing scalable and feature-rich solutions."
+    },
+    {
+        "heading": "Multi-Market Solutions",
+        "description": "Suited for applications that cater to multiple regions with diverse content and languages. Next.js internationalization features make it easy to manage and deliver localized content."
+    },
+    {
+        "heading": "Advanced eCommerce Platforms ",
+        "description": "Perfect for online stores and marketplaces that require extensive customization and performance optiomizations. Next.js supports complex project catalogs and seamless integration with payment gateways."
+    }
+]

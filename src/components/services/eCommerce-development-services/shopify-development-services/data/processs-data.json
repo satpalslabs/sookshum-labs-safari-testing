@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Pricing and Initial Consultation ",
+        "description": "We begin with an initial consultation to understand your project requirements, goals, and budget. We provide a detailed proposal outlining the scope of work, pricing, and timetable.",
+        "image": "/contact-us/mediums/chat-with-us.webp"
+    },
+    {
+        "title": "Planning and Strategy",
+        "description": "We create a detailed project plan, choose the right eCommerce development and hosting platform, and outline the design and development stages.",
+        "image": "/about-us/our-values/accountability.png"
+    },
+    {
+        "title": "Design",
+        "description": "Our team designs intuitive and user-friendly eCommerce interfaces, focusing on enhancing the shopping experience for both B2B and B2C customers. ",
+        "image": "/services/mobile-app-devlopment/landing-page/why-us/design.png"
+    },
+    {
+        "title": "Development",
+        "description": "Our skilled eCommerce developers build your online business platform, integrating essential features like shopping carts, product management, and secure payment systems, tailored for business functionalities.",
+        "image": "/services/e-commerce-development/magento-development-services/our-process/development.webp"
+    },
+    {
+        "title": "Testing and Quality Assurance",
+        "description": "We conduct comprehensive testing, including usability, performance, and security, to ensure your online store provides a seamless and secure shopping experience. ",
+        "image": "/services/web-app-development/landing-page/services/monitor.png"
+    },
+    {
+        "title": "Deployment and Support",
+        "description": "Our seasoned team launches your eCommerce applications and provides ongoing support, including regular updates and maintenance, to ensure optimal performance and customer satisfaction.",
+        "image": "/services/mobile-app-devlopment/landing-page/why-us/scale.png"
+    }
+]

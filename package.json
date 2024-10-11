@@ -2,6 +2,7 @@
   "name": "sookshum-labs-website",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -14,15 +15,13 @@
     "@emotion/styled": "^11.13.0",
     "@lottiefiles/dotlottie-react": "^0.8.12",
     "@mui/material": "^6.0.0",
-    "@react-three/drei": "^9.114.0",
-    "@react-three/fiber": "^8.17.8",
+    "@types/lodash": "^4.17.7",
     "@types/nodemailer": "^6.4.15",
-    "@types/three": "^0.168.0",
     "aos": "^2.3.4",
     "framer-motion": "^11.3.29",
     "isbot": "^5.1.17",
     "jquery": "^3.7.1",
-    "lottie-web": "^5.12.2",
+    "lodash": "^4.17.21",
     "next": "14.2.4",
     "nodemailer": "^6.9.15",
     "react": "^18",
@@ -30,8 +29,7 @@
     "react-toastify": "^10.0.5",
     "sharp": "^0.33.5",
     "smtp": "^0.1.4",
-    "swiper": "^11.1.14",
-    "three": "^0.168.0"
+    "swiper": "^11.1.9"
   },
   "devDependencies": {
     "@cloudflare/next-on-pages": "^1.13.2",

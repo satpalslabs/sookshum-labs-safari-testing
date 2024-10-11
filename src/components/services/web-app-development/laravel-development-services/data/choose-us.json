@@ -1,0 +1,22 @@
+[
+  {
+    "heading": "Higher quality for less",
+    "description": "Being official Laravel partners, we attract some of the region’s top Laravel developers. And due to our local tax benefits, you access their expertise at a fraction of your local rates. So you’re cutting down your product development costs while getting a significant boost in staff seniority and the quality of work done on your product.",
+    "image_url": "about-us/predictable-results/rank.png"
+  },
+  {
+    "heading": "Scale your team on-demand",
+    "description": "With around 100 developers on board, we are flexible in adapting to our client’s growing staffing needs. We promptly accommodate every request, from identifying a single developer to work with your internal team to assigning an entire dedicated agile team to your product with developers, designers, a project manager, and a QA.",
+    "image_url": "/services/website-development/landing-page/why-us/our-team.png"
+  },
+  {
+    "heading": "Get a longer runway",
+    "description": "If you’re a startup, we are your life vest. You get an experienced product development team with a significant price arbitrage, saving you the time and headspace to focus on finding product-market fit and growing your business. And if you’re working on a SaaS, Laravel is THE technology to speed up your product development",
+    "image_url": "/about-us/predictable-results/working-files.png"
+  },
+  {
+    "heading": "Shippable product by each sprint",
+    "description": "We’ve refined our delivery operations to ensure you get a demo of shippable features at the end of each sprint. That way, you can rest assured that you’ll never get stuck in the notorious “development hell” - the state where you’ve been planning to go live with your product in 2 weeks for the past six months.",
+    "image_url": "/services/web-app-development/laravel-development-services/why-us/rocket.png"
+  }
+]

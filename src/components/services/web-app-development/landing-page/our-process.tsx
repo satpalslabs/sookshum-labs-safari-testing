@@ -1,13 +1,15 @@
 "use client";
 import SectionHeader from "@components/basic-components/section-header";
 import { useInView } from "framer-motion";
-import  { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import data from "./data/our-process.json";
 import Image from "next/image";
 import H4 from "@components/basic-components/headings/H4";
 import Description from "@components/basic-components/description";
 import CheckIcon from "@components/basic-components/check-icon";
 import SideNavigation from "@components/services/reuseable-components/web-app-development/side-navigation-card";
+import OuterComponent from "@components/basic-components/outer-component";
+import OuterFlexComponent from "@components/basic-components/main-flex-container";
 
 type Process = {
   "process-title": string;
@@ -16,15 +18,9 @@ type Process = {
   "key-points": string[];
 };
 const processData: Process[] = data["our-process"];
-const OurProcess = () => {
-  const ref = useRef<HTMLDivElement>(null);
-  const isInView = useInView(ref);
-
-  return (
-    <section
-      ref={ref}
-      className="px-[80px] lg:px-10 xs:px-5 pt-[120px] md:pt-[90px] sm:pt-[70px] xs:pt-[60px] flex flex-col gap-[70px] md:gap-[50px] sm:gap-12 items-center bg-black overflow-hidden max-w-[1920px] mx-auto"
-    >
+const OurProcess = () => (
+  <OuterComponent>
+    <OuterFlexComponent>
       <SectionHeader
         buttonText="Our Process"
         description="Having successfully delivered hundreds of projects, our transparent and agile development process will guide your project from discovery to launch."
@@ -39,19 +35,22 @@ const OurProcess = () => {
           success.
         </div>
       </SectionHeader>
-      <OurProcessDetailComponent isInView={isInView} />
-    </section>
-  );
-};
+      <OurProcessDetailComponent />
+    </OuterFlexComponent>
+  </OuterComponent>
+);
 
 export default OurProcess;
 
-const OurProcessDetailComponent: React.FC<{ isInView: boolean }> = ({
-  isInView,
-}) => {
+const OurProcessDetailComponent: React.FC = () => {
   const [activeProcess, setActiveProcess] = useState<number>(0);
+
+  const ref = useRef<HTMLDivElement>(null);
+  const isInView = useInView(ref);
+
   return (
     <section
+      ref={ref}
       className={` ${
         isInView ? "grayscale-0" : "grayscale"
       } grid grid-cols-3  transition-all duration-500 sm:grid-cols-none sm:flex sm:flex-col sm:gap-5 w-full `}
@@ -61,8 +60,9 @@ const OurProcessDetailComponent: React.FC<{ isInView: boolean }> = ({
         setActiveProcess={setActiveProcess}
       />
       <div className="grid grid-cols-2 col-span-2 sm:grid-cols-none sm:flex xs:flex-col xs:gap-5">
-        <Image  blurDataURL="URL"  placeholder="blur" 
-
+        <Image
+          blurDataURL="URL"
+          placeholder="blur"
           width="1200"
           height="1200"
           className="h-[297px] lg:h-[230px] sm:w-[50%] sm:object-contain xs:h-[150px] lg:px-[15px] xxl:w-fit w-fit mx-auto"

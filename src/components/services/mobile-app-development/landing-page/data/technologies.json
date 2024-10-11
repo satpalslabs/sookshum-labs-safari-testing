@@ -3,41 +3,41 @@
         "Front End Development": [
             {
                 "technology-name": "Flutter",
-                "image-address": "/services/mobile-app-devlopment/technologies/flutter.png"
+                "image-address": "/services/mobile-app-devlopment/landing-page/technologies/flutter.png"
             },
             {
                 "technology-name": "React Native",
-                "image-address": "/services/mobile-app-devlopment/technologies/react-native.png"
+                "image-address": "/services/mobile-app-devlopment/landing-page/technologies/react-native.png"
             }
         ],
         "Backend Development": [
             {
                 "technology-name": "Firebase",
-                "image-address": "/services/mobile-app-devlopment/technologies/firebase.png"
+                "image-address": "/services/mobile-app-devlopment/landing-page/technologies/firebase.png"
             },
             {
                 "technology-name": "Supabase",
-                "image-address": "/services/mobile-app-devlopment/technologies/supabase.png"
+                "image-address": "/services/mobile-app-devlopment/landing-page/technologies/supabase.png"
             },
             {
                 "technology-name": "MongoDB",
-                "image-address": "/services/mobile-app-devlopment/technologies/mongodb.png"
+                "image-address": "/services/mobile-app-devlopment/landing-page/technologies/mongodb.png"
             },
             {
                 "technology-name": "MySQL",
-                "image-address": "/services/mobile-app-devlopment/technologies/mysql.png"
+                "image-address": "/services/mobile-app-devlopment/landing-page/technologies/mysql.png"
             },
             {
                 "technology-name": "Node js",
-                "image-address": "/services/mobile-app-devlopment/technologies/nodejs.png"
+                "image-address": "/services/mobile-app-devlopment/landing-page/technologies/nodejs.png"
             },
             {
                 "technology-name": "PostgresSQL",
-                "image-address": "/services/mobile-app-devlopment/technologies/postgress.png"
+                "image-address": "/services/mobile-app-devlopment/landing-page/technologies/postgress.png"
             },
             {
                 "technology-name": "DreamFactory",
-                "image-address": "/services/mobile-app-devlopment/technologies/dream-factory.png"
+                "image-address": "/services/mobile-app-devlopment/landing-page/technologies/dream-factory.png"
             },
             {
                 "technology-name": "Laravel",

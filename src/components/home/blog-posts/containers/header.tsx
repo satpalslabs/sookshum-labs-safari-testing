@@ -14,7 +14,7 @@ function Header() {
       <DarkButton style="!border-borderDarkButton" text="Blogs" />
       <H2>
         <div className="sm:text-wrap text-center leading-[34px]">
-        See our recent{" "}
+        See Our Recent{" "}
           <span className="italic font-light">Blog Posts.</span>
         </div>
       </H2>

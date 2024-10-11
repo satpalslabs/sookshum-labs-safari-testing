@@ -1,14 +1,17 @@
 "use client";
 import SectionHeader from "@components/basic-components/section-header";
-import  { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import data from "./data/our-services.json";
 import { useInView } from "@lib/use-in-view";
-const Card = dynamic(() => import('@components/basic-components/card'));import H5 from "@components/basic-components/headings/H5";
+const Card = dynamic(() => import("@components/basic-components/card"));
+import H5 from "@components/basic-components/headings/H5";
 import { RightAngleArrow } from "@components/header/containers/services";
 import { Button } from "@mui/material";
 import Description from "@components/basic-components/description";
 import Image from "next/image";
 import dynamic from "next/dynamic";
+import OuterFlexComponent from "@components/basic-components/main-flex-container";
+import OuterComponent from "@components/basic-components/outer-component";
 
 type ServiceType = {
   "services-title": string;
@@ -18,15 +21,9 @@ type ServiceType = {
 };
 
 const services: ServiceType[] = data["our-services"];
-const Services: React.FC = () => {
-  const ref = useRef<HTMLDivElement>(null);
-  const isInView = useInView(ref);
-
-  return (
-    <section
-      ref={ref}
-      className="px-[80px] lg:px-10 xs:px-5 pt-[120px] md:pt-[90px] sm:pt-[70px] xs:pt-[60px] flex flex-col gap-[80px] md:gap-[60px] sm:gap-12   items-center bg-black overflow-hidden max-w-[1920px] mx-auto"
-    >
+const Services: React.FC = () => (
+  <OuterComponent>
+    <OuterFlexComponent>
       <SectionHeader
         buttonText="Our Services"
         description="We bring your idea to life on time and on budget"
@@ -36,17 +33,20 @@ const Services: React.FC = () => {
           What we do
         </div>
       </SectionHeader>
-      <ServiceCards isInView={isInView} />
-    </section>
-  );
-};
+      <ServiceCards />
+    </OuterFlexComponent>
+  </OuterComponent>
+);
 
 export default Services;
 
-const ServiceCards: React.FC<{ isInView: boolean }> = ({ isInView }) => {
+const ServiceCards: React.FC = () => {
   const [activeCardIndex, setActiveCardIndex] = useState<number>(0);
+  const ref = useRef<HTMLDivElement>(null);
+  const isInView = useInView(ref);
+
   return (
-    <div className="flex gap-4 sm:gap-3 w-full h-full">
+    <div className="flex gap-4 sm:gap-3 w-full h-full" ref={ref}>
       <div className="w-[46.8%] flex flex-col gap-4 sm:gap-2 shrink-0 h-full grow-0 xs:w-full">
         {services.map((service: ServiceType, index: number) => (
           <ServiceCard
@@ -75,8 +75,9 @@ const ServiceCards: React.FC<{ isInView: boolean }> = ({ isInView }) => {
               classes="text-lg pr-6 lg:pr-0 !font-normal"
             />
           </div>
-          <Image  blurDataURL="URL"  placeholder="blur" 
-
+          <Image
+            blurDataURL="URL"
+            placeholder="blur"
             height="2200"
             width="2200"
             alt=""
@@ -136,8 +137,9 @@ const ServiceCard: React.FC<props> = (props) => (
             children={null}
             classes="text-lg pr-6 lg:pr-0 !font-normal"
           />
-          <Image  blurDataURL="URL"  placeholder="blur" 
-
+          <Image
+            blurDataURL="URL"
+            placeholder="blur"
             height="2200"
             width="2200"
             alt=""

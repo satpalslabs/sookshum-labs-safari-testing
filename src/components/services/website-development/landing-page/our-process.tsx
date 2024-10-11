@@ -1,12 +1,14 @@
 "use client";
 import SectionHeader from "@components/basic-components/section-header";
 import { useInView } from "framer-motion";
-import  { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import data from "./data/our-process.json";
 import DarkButton from "@components/basic-components/button";
 import H6 from "@components/basic-components/headings/H6";
 import Description from "@components/basic-components/description";
 import Image from "next/image";
+import OuterComponent from "@components/basic-components/outer-component";
+import OuterFlexComponent from "@components/basic-components/main-flex-container";
 
 type Process = {
   "process-title": string;
@@ -14,15 +16,9 @@ type Process = {
   image: string;
 };
 const processData: Process[] = data["our-process"];
-const OurProcess = () => {
-  const ref = useRef<HTMLDivElement>(null);
-  const isInView = useInView(ref);
-
-  return (
-    <section
-      ref={ref}
-      className="px-[80px] lg:px-10 xs:px-5 pt-[120px] md:pt-[90px] sm:pt-[70px] xs:pt-[60px] flex flex-col gap-[70px] md:gap-[50px] sm:gap-12   items-center bg-black overflow-hidden max-w-[1920px] mx-auto"
-    >
+const OurProcess = () => (
+  <OuterComponent>
+    <OuterFlexComponent>
       <SectionHeader
         buttonText="Our Process"
         description="Whether you want to consult an idea, add missing capabilities, quickly expand your team, or hand over a  project - we’ve got you covered."
@@ -34,35 +30,40 @@ const OurProcess = () => {
           expertise under one roof
         </div>
       </SectionHeader>
-      <OurProcessDetailComponent isInView={isInView} />
-    </section>
-  );
-};
+      <OurProcessDetailComponent />
+    </OuterFlexComponent>
+  </OuterComponent>
+);
 
 export default OurProcess;
 
-const OurProcessDetailComponent: React.FC<{ isInView: boolean }> = ({
-  isInView,
-}) => (
-  <section
-    className={` ${
-      isInView ? "grayscale-0" : "grayscale"
-    } grid grid-cols-2 transition-all duration-500 sm:grid-cols-1 gap-[62px] w-full pt-[88px] pb-[75px] lg:pt-[43px] lg:pb-[56px] md:gap-0 sm:gap-[35px] sm:py-0 xs:gap-[15px]`}
-  >
-    <TextContainer />
+const OurProcessDetailComponent: React.FC = () => {
+  const ref = useRef<HTMLDivElement>(null);
+  const isInView = useInView(ref);
 
-    <div className="grow relative w-full">
-      <Image  blurDataURL="URL"  placeholder="blur" 
+  return (
+    <section
+      ref={ref}
+      className={` ${
+        isInView ? "grayscale-0" : "grayscale"
+      } grid grid-cols-2 transition-all duration-500 sm:grid-cols-1 gap-[62px] w-full pt-[88px] pb-[75px] lg:pt-[43px] lg:pb-[56px] md:gap-0 sm:gap-[35px] sm:py-0 xs:gap-[15px]`}
+    >
+      <TextContainer />
 
-        height="2200"
-        width="2200"
-        alt=""
-        src="/services/website-development/landing-page/our-process.png"
-        className="w-full h-full object-contain absolute sm:relative sm:w-[auto] sm:h-[461px] xs:h-[300px] mx-auto"
-      />
-    </div>
-  </section>
-);
+      <div className="grow relative w-full">
+        <Image
+          blurDataURL="URL"
+          placeholder="blur"
+          height="2200"
+          width="2200"
+          alt=""
+          src="/services/website-development/landing-page/our-process.png"
+          className="w-full h-full object-contain absolute sm:relative sm:w-[auto] sm:h-[461px] xs:h-[300px] mx-auto"
+        />
+      </div>
+    </section>
+  );
+};
 
 const TextContainer: React.FC = () => {
   const [activeProcess, setActiveProcess] = useState<number>(0);
@@ -95,7 +96,9 @@ const TextContainer: React.FC = () => {
               >
                 <Description
                   text={process.process}
-                  classes={` ${ind != activeProcess && "hidden"} text-lg !font-normal`}
+                  classes={` ${
+                    ind != activeProcess && "hidden"
+                  } text-lg !font-normal`}
                   children={null}
                 ></Description>
               </div>

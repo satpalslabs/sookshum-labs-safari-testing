@@ -6,6 +6,7 @@ import data from "./data/get-in-touch.json";
 import H3 from "@components/basic-components/headings/H3";
 import Image from "next/image";
 import dynamic from "next/dynamic";
+import OuterComponent from "@components/basic-components/outer-component";
 
 type DataCard = {
   icon: string;
@@ -15,10 +16,7 @@ type DataCard = {
 const dataCards: DataCard[] = data.cards;
 
 const BottomSection: React.FC = () => (
-  <div
-    className="px-[80px] lg:px-10 xs:px-5 pt-[120px] md:pt-[90px] sm:pt-[70px] xs:pt-[60px]  bg-black max-w-[1920px] w-full overflow-hidden mx-auto"
-    id="core_services"
-  >
+  <OuterComponent>
     <div className="h-fit w-full">
       <div className="grid grid-cols-2 xs:grid-cols-1 gap-5 w-full">
         {dataCards.map((item: DataCard, index: number) => (
@@ -28,7 +26,7 @@ const BottomSection: React.FC = () => (
         ))}
       </div>
     </div>
-  </div>
+  </OuterComponent>
 );
 
 export default BottomSection;

@@ -1,0 +1,42 @@
+[
+    {
+        "title": "Rapid Development",
+        "description": "Laravel provides a robust set of tools and features that make it easy to develop web applications quickly and efficiently. Faster development times mean lower costs and quicker results for your business. ",
+        "image": "/services/web-app-development/laravel-development-services/benefits/fire.png"
+    },
+    {
+        "title": "Security",
+        "description": "Security is a concern for all companies. You need to protect your users’ personal data and be confident that your application is not vulnerable to attack. Laravel has top of the line security built in, protecting against SQL injection, cross-site request forgery, cross-site scripting, and more.",
+        "image": "/services/web-app-development/laravel-development-services/benefits/lock.png"
+    },
+    {
+        "title": "Performance ",
+        "description": "Websites and applications that respond quickly typically receive more traffic, have better conversion rates and rank more highly in searches. Laravel is designed to be fast, with caching and caching integrations built in. It is one of the highest performing PHP frameworks available. ",
+        "image": "/services/web-app-development/laravel-development-services/benefits/performance.png"
+    },
+    {
+        "title": "Scalability ",
+        "description": "As demand for any software grows, stresses are put on the performance, complexity and reliability of the application. Laravel is well equipped to cope with these stresses, it provides an array of tools and techniques which can be implemented to scale up your application without having to completely rebuild or change technology. Laravel can and does handle applications with millions of requests per day. ",
+        "image": "/services/web-app-development/laravel-development-services/why-us/rocket.png"
+    },
+    {
+        "title": "Easy Maintenance",
+        "description": "Websites and applications built in Laravel are generally easy to maintain over time. The clean, well documented code means it is easy for developers to pick up where others left off. Backwards compatibility between versions means that iit won’t break with updates. Laravel’s place as the most popular PHP framework means that there are many experienced developers available.",
+        "image": "/services/web-app-development/laravel-development-services/benefits/settings.png"
+    },
+    {
+        "title": "Cost ",
+        "description": "Laravel is an open source framework, meaning there are no direct costs for using it. The features that Laravel provides enable applications to be built extremely quickly, making it an incredibly cost effective choice compared to other technologies and frameworks. ",
+        "image": "/about-us/predictable-results/working-files.png"
+    },
+    {
+        "title": "Multilingual",
+        "description": "Laravel provides built in routing features which make it simple to provide your website or application in multiple languages without compromising SEO in each region.",
+        "image": "/services/web-app-development/laravel-development-services/benefits/speaker.png"
+    },
+    {
+        "title": "Ecosystem and Community",
+        "description": "Laravel has a vibrant community and a vast ecosystem of packages and extensions. It is in active development and gaining in popularity every year. It is a tried and trusted choice for your business.",
+        "image": "/services/website-development/landing-page/why-us/our-team.png"
+    }
+]

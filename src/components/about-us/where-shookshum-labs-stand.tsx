@@ -7,6 +7,7 @@ import data from "./data/where-shookshum-labs-stand.json";
 import { useRef } from "react";
 import Image from "next/image";
 import dynamic from "next/dynamic";
+import OuterComponent from "@components/basic-components/outer-component";
 
 type PrimaryCard = {
   count: string;
@@ -20,57 +21,59 @@ const WhereWeAre: React.FC = () => {
   const isInView = useInView(ref);
 
   return (
-    <section
-      ref={ref}
-      className="px-[80px] lg:px-10 xs:px-5 pt-[120px] md:pt-[90px] sm:pt-[70px] xs:pt-[60px] flex flex-col gap-[70px] md:gap-[50px] sm:gap-12 items-center bg-black overflow-hidden max-w-[1920px] mx-auto"
-    >
+    <OuterComponent>
       <div
-        className={`w-[83%] xxl:w-[65%] xs:w-full xs:px-0 mx-auto text-center`}
+        ref={ref}
+        className="flex flex-col gap-[70px] md:gap-[50px] sm:gap-12 items-center"
       >
-        <H2>
-          <div className="w-full text-wrap  leading-[1.4] xs:tracking-tight">
-            Today <i className="relative font-light">Sookshum Labs</i> Continues
-            To Grow And Is{" "}
-            <span className="relative">
-              Trusted
-              <span className="absolute bottom-3 lg:bottom-2 -left-0 w-full translate-y-[20px]">
-                <LeadingUnderline />
-              </span>
-            </span>{" "}
-            By Clients Globally For Delivering{" "}
-            <span className="relative">
-              Reliable
-              <span className="absolute bottom-0 lg:bottom-1 left-0 w-full translate-y-[20px]">
-                <GloballyUnderline />
-              </span>
-            </span>{" "}
-            And Innovative Solutions
-          </div>
-        </H2>
-      </div>
+        <div
+          className={`w-[83%] xxl:w-[65%] xs:w-full xs:px-0 mx-auto text-center`}
+        >
+          <H2>
+            <div className="w-full text-wrap  leading-[1.4] xs:tracking-tight">
+              Today <i className="relative font-light">Sookshum Labs</i>{" "}
+              Continues To Grow And Is{" "}
+              <span className="relative">
+                Trusted
+                <span className="absolute bottom-3 lg:bottom-2 -left-0 w-full translate-y-[20px]">
+                  <LeadingUnderline />
+                </span>
+              </span>{" "}
+              By Clients Globally For Delivering{" "}
+              <span className="relative">
+                Reliable
+                <span className="absolute bottom-0 lg:bottom-1 left-0 w-full translate-y-[20px]">
+                  <GloballyUnderline />
+                </span>
+              </span>{" "}
+              And Innovative Solutions
+            </div>
+          </H2>
+        </div>
 
-      <div className="flex flex-col gap-5 lg:gap-4 sm:gap-3">
-        {primaryCards.map((primaryCard: PrimaryCard, index: number) => (
-          <div
-            key={index}
-            className={`flex xs:flex-col gap-5 lg:gap-4 sm:gap-3 ${
-              primaryCard["card-position"] == "right" &&
-              "flex-row-reverse xs:flex-col-reverse"
-            }`}
-          >
-            <div className="xxl:w-[34%] w-[37.73%] sm:w-[43%] xs:w-full shrink-0 ">
-              <CardWithPrimaryBackground
-                item={primaryCard}
-                isInView={isInView}
-              />
+        <div className="flex flex-col gap-5 lg:gap-4 sm:gap-3">
+          {primaryCards.map((primaryCard: PrimaryCard, index: number) => (
+            <div
+              key={index}
+              className={`flex xs:flex-col gap-5 lg:gap-4 sm:gap-3 ${
+                primaryCard["card-position"] == "right" &&
+                "flex-row-reverse xs:flex-col-reverse"
+              }`}
+            >
+              <div className="xxl:w-[34%] w-[37.73%] sm:w-[43%] xs:w-full shrink-0 ">
+                <CardWithPrimaryBackground
+                  item={primaryCard}
+                  isInView={isInView}
+                />
+              </div>
+              <div className="grow">
+                <ReviewCard isInView={isInView} index={index} />
+              </div>
             </div>
-            <div className="grow">
-              <ReviewCard isInView={isInView} index={index} />
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </section>
+    </OuterComponent>
   );
 };
 

@@ -1,5 +1,6 @@
 "use client";
-const Card = dynamic(() => import('@components/basic-components/card'));import SectionHeader from "@components/basic-components/section-header";
+const Card = dynamic(() => import("@components/basic-components/card"));
+import SectionHeader from "@components/basic-components/section-header";
 
 import FAQS from "./data/faqs.json";
 import H6 from "@components/basic-components/headings/H6";
@@ -7,6 +8,8 @@ import { Collapse } from "@mui/material";
 import Description from "@components/basic-components/description";
 import { useState } from "react";
 import dynamic from "next/dynamic";
+import OuterComponent from "@components/basic-components/outer-component";
+import OuterFlexComponent from "@components/basic-components/main-flex-container";
 type FaqType = {
   question: string;
   answer: string;
@@ -20,29 +23,31 @@ const Faqs: React.FC<{ DataKey: keyof Data }> = ({ DataKey }) => {
   const faqData = data[DataKey as keyof Data];
 
   return (
-    <section className=" px-[80px] lg:px-10 xs:px-5 pt-[120px] md:pt-[90px] sm:pt-[70px] xs:pt-[60px] flex flex-col gap-[80px] md:gap-[60px] sm:gap-12 py-[70px] md:py-0 xs:pt-0 xs:py-12  items-center bg-black overflow-hidden max-w-[1920px] mx-auto">
-      <SectionHeader
-        buttonText="FAQs"
-        description="We craft digital experiences that drive results. We'll help you achieve your business goals, from increased brand awareness to skyrocketing sales."
-        style="w-[1000px] w-full xs:px-10"
-      >
-        <div className="xs:w-full xs:text-wrap xs:text-center">
-          Got questions? We've got{" "}
-          <span className="italic font-light">answers! </span>
+    <OuterComponent>
+      <OuterFlexComponent>
+        <SectionHeader
+          buttonText="FAQs"
+          description="We craft digital experiences that drive results. We'll help you achieve your business goals, from increased brand awareness to skyrocketing sales."
+          style="w-[1000px] w-full xs:px-10"
+        >
+          <div className="xs:w-full xs:text-wrap xs:text-center">
+            Got questions? We've got{" "}
+            <span className="italic font-light">answers! </span>
+          </div>
+        </SectionHeader>
+        <div className="flex flex-col gap-3">
+          {faqData?.map((faq: FaqType, index: number) => (
+            <FAQ
+              faq={faq}
+              active={activeFaq == index}
+              index={index}
+              key={index}
+              setActive={setActiveFaq}
+            />
+          ))}
         </div>
-      </SectionHeader>
-      <div className="flex flex-col gap-3">
-        {faqData?.map((faq: FaqType, index: number) => (
-          <FAQ
-            faq={faq}
-            active={activeFaq == index}
-            index={index}
-            key={index}
-            setActive={setActiveFaq}
-          />
-        ))}
-      </div>
-    </section>
+      </OuterFlexComponent>
+    </OuterComponent>
   );
 };
 

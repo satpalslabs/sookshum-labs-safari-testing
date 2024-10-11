@@ -1,14 +1,17 @@
 "use client";
 import SectionHeader from "@components/basic-components/section-header";
 import { useInView } from "framer-motion";
-import  { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import data from "./data/tools.json";
 import H6 from "@components/basic-components/headings/H6";
-const Card = dynamic(() => import('@components/basic-components/card'));import Image from "next/image";
+const Card = dynamic(() => import("@components/basic-components/card"));
+import Image from "next/image";
 import { Collapse } from "@mui/material";
 import Description from "@components/basic-components/description";
 import { RightAngleArrow } from "@components/header/containers/services";
 import dynamic from "next/dynamic";
+import OuterComponent from "@components/basic-components/outer-component";
+import OuterFlexComponent from "@components/basic-components/main-flex-container";
 
 type Tool = {
   name: string;
@@ -16,15 +19,9 @@ type Tool = {
   image_url: string;
 };
 const tools: Tool[] = data.tools;
-const Tools = () => {
-  const ref = useRef<HTMLDivElement>(null);
-  const isInView = useInView(ref);
-
-  return (
-    <section
-      ref={ref}
-      className="px-[80px] lg:px-10 xs:px-5 pt-[120px] md:pt-[90px] sm:pt-[70px] xs:pt-[60px] flex flex-col gap-[70px] md:gap-[50px] sm:gap-12   items-center bg-black overflow-hidden max-w-[1920px] mx-auto"
-    >
+const Tools = () => (
+  <OuterComponent>
+    <OuterFlexComponent>
       <SectionHeader
         buttonText="Tools "
         description="Want us to build a no-code app for you from scratch? You are one click away!"
@@ -34,20 +31,21 @@ const Tools = () => {
           Our Arsenal Of Magic Tools
         </div>
       </SectionHeader>
-      <ToolsDetailComponent isInView={isInView} />
-    </section>
-  );
-};
+      <ToolsDetailComponent />
+    </OuterFlexComponent>
+  </OuterComponent>
+);
 
 export default Tools;
 
-const ToolsDetailComponent: React.FC<{ isInView: boolean }> = ({
-  isInView,
-}) => {
+const ToolsDetailComponent: React.FC = () => {
   const [activeFaq, setActiveFaq] = useState<number | null>(1);
+  const ref = useRef<HTMLDivElement>(null);
+  const isInView = useInView(ref);
 
   return (
     <section
+      ref={ref}
       className={` ${
         isInView ? "grayscale-0" : "grayscale"
       } flex gap-10 xxl:gap-[100px] transition-all duration-500 xs:flex xs:flex-col xs:gap-5 w-full pt-[88px] pb-[75px] lg:pt-[43px] lg:pb-[56px] sm:py-0 `}
@@ -58,8 +56,9 @@ const ToolsDetailComponent: React.FC<{ isInView: boolean }> = ({
       >
         <div className="grid grid-cols-3 gap-5 w-full">
           {data.icons.map((icon: string, index: number) => (
-            <Image  blurDataURL="URL"  placeholder="blur" 
-
+            <Image
+              blurDataURL="URL"
+              placeholder="blur"
               alt="Tools"
               width="2200"
               height="2200"

@@ -60,7 +60,7 @@ const GoalIcon: React.FC = () => (
       <img
         className="absolute animate-top transition-all duration-700 ease-linear top-[25%]"
         alt=""
-        src="/services/cover/goal.png"
+        src="/services/landing-page/cover/goal.png"
       />
     </div>
   </div>
@@ -73,7 +73,7 @@ const Blub: React.FC = () => (
       <img
         className="absolute animate-top transition-all duration-700 ease-linear top-[25%]"
         alt=""
-        src="/services/cover/blub.png"
+        src="/services/landing-page/cover/blub.png"
       />
     </div>
   </div>
@@ -85,7 +85,7 @@ const Clipboard: React.FC = () => (
       <img
         alt=""
         className="absolute animate-top transition-all w-full duration-700 ease-linear top-[25%]"
-        src="/services/cover/clipboard.png"
+        src="/services/landing-page/cover/clipboard.png"
       />
     </div>
   </div>
@@ -98,7 +98,7 @@ const PencilIcon: React.FC = () => (
       <img
         className="absolute animate-bottom transition-all duration-700 ease-linear bottom-[25%]"
         alt=""
-        src="/services/cover/pencil.png"
+        src="/services/landing-page/cover/pencil.png"
       />
     </div>
   </div>
@@ -111,7 +111,7 @@ const CodeIcon: React.FC = () => (
       <img
         className="absolute animate-bottom transition-all duration-700 ease-linear bottom-[25%]"
         alt=""
-        src="/services/cover/code.png"
+        src="/services/landing-page/cover/code.png"
       />
     </div>
   </div>
@@ -124,7 +124,7 @@ const GraphIcon: React.FC = () => (
       <img
         className="absolute animate-bottom transition-all duration-700 ease-linear bottom-[25%]"
         alt=""
-        src="/services/cover/graph.png"
+        src="/services/landing-page/cover/graph.png"
       />
     </div>
   </div>

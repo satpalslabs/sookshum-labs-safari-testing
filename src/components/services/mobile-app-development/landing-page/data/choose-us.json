@@ -1,27 +1,27 @@
 {
     "services": [
         {
-            "imageUrl": "/services/mobile-app-devlopment/why-us/ideate.png",
+            "imageUrl": "/services/mobile-app-devlopment/landing-page/why-us/ideate.png",
             "heading": "Ideate",
             "description": "Guided by the project manager, we start to identify, shape and validate your product idea, in order to have a perfect alignment from the requirements perspective."
         },
         {
-            "imageUrl": "/services/mobile-app-devlopment/why-us/design.png",
+            "imageUrl": "/services/mobile-app-devlopment/landing-page/why-us/design.png",
             "heading": "Design",
             "description": "Conducting UX research, UI ideation, and brainstorming to map the entire user journey, creating a cohesive design solution aligned with the project’s goals and requirements."
         },
         {
-            "imageUrl": "/services/mobile-app-devlopment/why-us/develop.png",
+            "imageUrl": "/services/mobile-app-devlopment/landing-page/why-us/develop.png",
             "heading": "Develop",
             "description": "We bring designs concepts to life using leading technologies and our expertise. Every product is optimized for performance, ensuring seamless functionality across platforms with meticulous attention to detail."
         },
         {
-            "imageUrl": "/services/mobile-app-devlopment/why-us/maintain.png",
+            "imageUrl": "/services/mobile-app-devlopment/landing-page/why-us/maintain.png",
             "heading": "Maintain",
             "description": "Creating exceptional products is just the beginning. Our team ensures your product maintains the highest standards of quality and reliability. We provide ongoing support and protection to safeguard your product’s success, ensuring it continues to perform optimally over time."
         },
         {
-            "imageUrl": "/services/mobile-app-devlopment/why-us/scale.png",
+            "imageUrl": "/services/mobile-app-devlopment/landing-page/why-us/scale.png",
             "heading": "Scale",
             "description": "We’ll support your product’s growth by ensuring it has the flexibility and capacity to accommodate new features, add-ons, and future upgrades. Our team ensures your product evolves seamlessly, adapting to new demands and allowing you to scale efficiently as your business and technology needs expand."
         }

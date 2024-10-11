@@ -34,7 +34,7 @@ const SourceContent: React.FC<contentProps> = (props) => (
     <div
       className={`absolute  ${
         props.showContent == "video"
-          ? `scale-[1] xxl:left-[50%] xxl:translate-x-[-50%] min-w-[100vw] w-screen xxl:h-[800px] xxl:object-cover h-[800px] xs:scale-[1] sm:h-[470px] lg:h-[700px] md:h-[600px] xs:h-[600px] lg:-top-[25%] md:-top-[25%] xs:-top-[40%] xxl:-top-[58%] -top-[40%]`
+          ? `scale-[1] xxl:left-[50%] xxl:translate-x-[-50%] min-w-[100vw] w-screen xxl:h-[720px] xxl:object-cover h-[800px] xs:scale-[1] sm:h-[470px] lg:h-[700px] md:h-[600px] xs:h-[600px] lg:-top-[25%] md:-top-[25%] xs:-top-[40%] xxl:-top-[41%] -top-[40%]`
           : `scale-[1.4] xxl:left-[3%] w-screen h-[520px] xs:-top-[1%] xs:scale-[3] sm:h-[290px] xs:h-[180px] lg:h-[421px]  xxl:h-[90%] xxl:-top-[8%] -top-[10%]`
       }  overflow-y-hidden overflow-x-hidden z-0 grayscale max-w-[1920px] mx-auto bg-gradient-to-t from-black via-lightBlack to-black  ${
         props.style.gradientDivStyle

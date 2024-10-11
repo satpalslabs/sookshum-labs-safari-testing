@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const poppins = Poppins({
   subsets: ["latin"],
   variable: "--font-poppins",
-  display: "swap", // Keep this for better loading experience
+  display: "fallback", // Keep this for better loading experience
   weight: ["400", "500", "600"], // Reduce weights to those actually used
 });
 

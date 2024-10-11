@@ -1,9 +1,11 @@
 "use client";
-const Card = dynamic(() => import('@components/basic-components/card'));import data from "./data/table-content.json";
+const Card = dynamic(() => import("@components/basic-components/card"));
+import data from "./data/table-content.json";
 import H3 from "@components/basic-components/headings/H3";
 import { useState } from "react";
 import { RightAngleArrow } from "@components/header/containers/services";
 import dynamic from "next/dynamic";
+import OuterComponent from "@components/basic-components/outer-component";
 
 type TableContentDataItem = {
   title: string;
@@ -12,12 +14,12 @@ type TableContentDataItem = {
 
 const tableContentData: TableContentDataItem[] = data["Table of Contents"];
 const TableContent: React.FC = () => (
-  <div className="w-full bg-black overflow-hidden px-[80px] lg:px-10 xs:px-5 pt-[120px] md:pt-[90px] sm:pt-[70px] xs:pt-[60px] sm:gap-[1.875rem] max-w-[1920px] mx-auto">
+  <OuterComponent>
     <div className=" flex xs:flex-col gap-10 sm:gap-5 w-full">
       <Table />
       <TableContentComponent />
     </div>
-  </div>
+  </OuterComponent>
 );
 
 export default TableContent;
@@ -64,7 +66,11 @@ const Table: React.FC = () => {
               )}
             </ul>
           </div>
-          <RightAngleArrow className={`xs:block hidden transition-all absolute top-2 h-[16px] right-2 stroke-white ${active && "rotate-90"}`} />
+          <RightAngleArrow
+            className={`xs:block hidden transition-all absolute top-2 h-[16px] right-2 stroke-white ${
+              active && "rotate-90"
+            }`}
+          />
         </div>
       </Card>
     </div>

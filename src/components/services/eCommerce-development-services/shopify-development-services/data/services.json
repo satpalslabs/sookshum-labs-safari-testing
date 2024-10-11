@@ -1,0 +1,47 @@
+[
+    {
+        "heading": "Custom Shopify Web Development",
+        "description": "Stand out among your competitors with striking designs and seamless functionality. ",
+        "image_url": "/services/web-app-development/landing-page/why-us/develop.png"
+    },
+    {
+        "heading": "Shopify Store Migration",
+        "description": "Our experts handle your migration process efficiently and smoothly without downtime.",
+        "image_url": "/services/website-development/landing-page/why-us/tech-partner.png"
+    },
+    {
+        "heading": "Shopify Plus Development",
+        "description": "Our development team specialists in maximizing the potential of Shopify Plus.",
+        "image_url": "/services/e-commerce-development/shopify-development-services/our-services/shopify-plus-development.png"
+    },
+    {
+        "heading": "Shopify Store Optimization",
+        "description": "Elevate your online store by enhancing user experience, navigation, and speed.",
+        "image_url": "/services/web-app-development/landing-page/services/landing-pages.png"
+    },
+    {
+        "heading": "Shopify App Development",
+        "description": "We design and develop Shopify apps that seamlessly integrate with your store.",
+        "image_url": "/services/web-app-development/landing-page/services/website-development-design.png"
+    },
+    {
+        "heading": "Shopify Integrations",
+        "description": "Connect and streamline your online store with our powerful Shopify Integrations.",
+        "image_url": "/services/e-commerce-development/shopify-development-services/our-services/shopify-integrations.png"
+    },
+    {
+        "heading": "Shopify Theme Customization",
+        "description": "Provide a unique and memorable user experience for your customers.",
+        "image_url": "/services/ui-ux-design/service/web-app-design.png"
+    },
+    {
+        "heading": "Shopify PWA Development",
+        "description": "We transform your Shopify store into a fast, responsive, and immersive web app.",
+        "image_url": "/services/mobile-app-devlopment/landing-page/lets-connect.webp"
+    },
+    {
+        "heading": "On-Demand Shopify Developers",
+        "description": "Empower your eCommerce journey by hiring our dedicated Shopify Developers.",
+        "image_url": "/services/web-app-development/landing-page/why-us/our-team.png"
+    }
+]

@@ -1,0 +1,36 @@
+{
+    "process-services": [
+        {
+            "title": "Pricing and Initial Consultation ",
+            "description": "We begin with an initial consultation to understand your project requirements, goals, and budget. We provide a detailed proposal outlining the scope of work, pricing, and timetable."
+        },
+        {
+            "title": "Design for Shopify Store",
+            "description": "Our team is dedicated to creating attractive, user-friendly designs that increase conversion. Discover how we create UI, UX and web designs here."
+        },
+        {
+            "title": "Theme Development",
+            "description": "Our team starts creating your custom Shopify store.<br /> We focus on crafting a compatible design and highly functional eCommerce platform that aligns with your brand and business goals."
+        },
+        {
+            "title": "Store development",
+            "description": "Our testers conduct rigorous testing to ensure your Shopify store functions flawlessly.<br /> We perform functionality tests, usability tests, and security checks. We base our actions on Quality Assurance."
+        },
+        {
+            "title": "Client Review and Possible Amendments  ",
+            "description": "We present the Shopify store for your review and feedback.<br /> You have the opportunity to change requests about design and functionality modifications. Every task comes to final testing."
+        },
+        {
+            "title": "Deployment ",
+            "description": "After your review and optional amendments, we ensure a flawless deployment, transitioning your Shopify store from its developmental stage to full production."
+        },
+        {
+            "title": "Your Project Acceptance  ",
+            "description": "After we provide the last updates, you have 30 days to report your comments. You can accept the project once you are satisfied with the final deliverable."
+        },
+        {
+            "title": "Project development and maintenance  ",
+            "description": "We offer project maintenance and development after your Shopify store’s successful launch. You can request new features, updates, or modifications to your Shopify store in response to changing business needs. "
+        }
+    ]
+}

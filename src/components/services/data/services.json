@@ -1,85 +1,85 @@
 {
     "landing-page-services": [
         {
-            "path": "/services/core-services/user.webp",
+            "path": "/services/landing-page/core-services/user.webp",
             "count": "Diverse Industry Expertise",
             "about": "Our client base spans a wide range of industries and sectors, , showcasing our wide-ranging expertise and adaptability."
         },
         {
-            "path": "/services/core-services/code.webp",
+            "path": "/services/landing-page/core-services/code.webp",
             "count": "Proven Trust and Reliability",
             "about": "With an average client relationship period of over 5 years, we demonstrate reliability and earned trust."
         },
         {
-            "path": "/services/core-services/star.png",
+            "path": "/services/landing-page/core-services/star.png",
             "count": "Outstanding reviews",
             "about": "We consistently earn perfect ratings and outstanding reviews from our clients for every project we deliver."
         }
     ],
     "ui-ux-design": [
         {
-            "path": "/services/core-services/user.webp",
+            "path": "/services/landing-page/core-services/user.webp",
             "count": "69+ clients",
             "about": "Our client base spans a wide range of industries and sectors. "
         },
         {
-            "path": "/services/core-services/code.webp",
+            "path": "/services/landing-page/core-services/code.webp",
             "count": "60+ projects",
             "about": "Our project count includes a diverse range of industries and sectors."
         },
         {
-            "path": "/services/core-services/star.png",
+            "path": "/services/landing-page/core-services/star.png",
             "count": "4.5+ reviews",
             "about": "Our clients consistently rave about the high-quality work we deliver."
         }
     ],
     "ecommerce-development-landing-page-services": [
         {
-            "path": "/services/core-services/user.webp",
+            "path": "/services/landing-page/core-services/user.webp",
             "count": "69+ clients",
             "about": "Our client base spans a wide range of industries and sectors. "
         },
         {
-            "path": "/services/core-services/code.webp",
+            "path": "/services/landing-page/core-services/code.webp",
             "count": "60+ projects",
             "about": "Our project count includes a diverse range of industries and sectors."
         },
         {
-            "path": "/services/core-services/star.png",
+            "path": "/services/landing-page/core-services/star.png",
             "count": "4.5+ reviews",
             "about": "Our clients consistently rave about the high-quality work we deliver."
         }
     ],
     "website-development-landing-page-services": [
         {
-            "path": "/services/core-services/user.webp",
+            "path": "/services/landing-page/core-services/user.webp",
             "count": "69+ clients",
             "about": "Our client base spans a wide range of industries and sectors. "
         },
         {
-            "path": "/services/core-services/code.webp",
+            "path": "/services/landing-page/core-services/code.webp",
             "count": "60+ projects",
             "about": "Our project count includes a diverse range of industries and sectors."
         },
         {
-            "path": "/services/core-services/star.png",
+            "path": "/services/landing-page/core-services/star.png",
             "count": "4.5+ reviews",
             "about": "Our clients consistently rave about the high-quality work we deliver."
         }
     ],
     "website-app-development-landing-page-services": [
         {
-            "path": "/services/core-services/user.webp",
+            "path": "/services/landing-page/core-services/user.webp",
             "count": "69+ clients",
             "about": "Our client base spans a wide range of industries and sectors. "
         },
         {
-            "path": "/services/core-services/code.webp",
+            "path": "/services/landing-page/core-services/code.webp",
             "count": "60+ projects",
             "about": "Our project count includes a diverse range of industries and sectors."
         },
         {
-            "path": "/services/core-services/star.png",
+            "path": "/services/landing-page/core-services/star.png",
             "count": "4.5+ reviews",
             "about": "Our clients consistently rave about the high-quality work we deliver."
         }

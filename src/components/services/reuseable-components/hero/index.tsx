@@ -18,7 +18,7 @@ export type HeroSection = {
 };
 
 const Hero: React.FC<HeroSection> = (props) => (
-  <div className="w-full relative">
+  <div className="w-full relative max-w-[1920px] mx-auto">
     <GradientSection {...props} />
     {props.URL && (
       <SourceContent
