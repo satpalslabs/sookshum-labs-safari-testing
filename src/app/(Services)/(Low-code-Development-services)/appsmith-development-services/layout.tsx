@@ -4,7 +4,7 @@
 
 import type { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "Low Code Development Services | Sookshum Labs",
+  title: "Appsmith Development Services | Sookshum Labs",
 };
 
 export default function RootLayout({

@@ -96,7 +96,7 @@ const SmallScreenDropdown = ({
       </div>
     </div>
     {activeService?.label == service?.label && (
-      <ServiceContent activeService={activeService} setActive={setActive} />
+      <ServiceContent activeService={activeService} setActive={setActive} setShowLinks={setShowLinks}/>
     )}
   </div>
 );

@@ -31,6 +31,7 @@ const tailwindConfig: Config = {
         gradientBorderCircle: "var(--gradient-circle-border)",
         orangeBackground: "var(--orange-background)"
       },
+      
       colors: {
         primary: 'var(--primary)',
         borderPrimary: 'var(--border-primary)',
@@ -46,6 +47,7 @@ const tailwindConfig: Config = {
         customYellow: 'var(--custom-yellow)',
         viewportBorder: 'var(--view-port-border)',
         innerContainer: 'var(--inner-container)',
+        innerBlurContainer: 'var(--inner-container-blur)',
         borderDarkButton: "#ffffff1a",
         shadowOrange: "var(--shadow-orange)",
         sliderCircle: "var(--slider-circle-gradient)",

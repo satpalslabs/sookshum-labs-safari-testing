@@ -1,0 +1,34 @@
+{
+    "industries": [
+        {
+            "title": "Cross Platform <br /> Development",
+            "image": "/services/mobile-app-devlopment/landing-page/lets-connect.webp",
+            "description": "Hire expert Flutter developers to build cross-platform applications with a single codebase. We provide remote Flutter developers for all phases of the project right from design, development, migration, testing, maintenance to launching apps."
+        },
+        {
+            "title": "Flutter Consultation <br /> Services ",
+            "image": "/services/mobile-app-devlopment/flutter-development-services/our-services/chat.png",
+            "description": "Offshore Flutter developers to provide expert consulting services to startups and enterprises, as well as decipher effective ways to utilize Flutter for your business strategy. Our developers identify ways to leverage the best methods to utilize Flutter."
+        },
+        {
+            "title": "Application Design",
+            "image": "/services/mobile-app-devlopment/flutter-development-services/our-services/design.png",
+            "description": "Get Flutter UI/UX specialists to envision a result-oriented strategy as well as build highly appealing and engaging interfaces right from visual design, usability of information to architecture, we have you covered in all apsects. Hire Flutter experts to create appealing applications. "
+        },
+        {
+            "title": "Flutter App Maintenance",
+            "image": "/services/mobile-app-devlopment/flutter-development-services/our-services/mvp.png",
+            "description": "We have a dedicated Flutter application developer team specializing to top-notch maintenance services to ensure the seamless functioning of your Flutter application, incorporating the latest features, troubleshooting, upgrades and much more. "
+        },
+        {
+            "title": "Flutter Migration  ",
+            "image": "/services/mobile-app-devlopment/flutter-development-services/our-services/migration.png",
+            "description": "Hire Flutter programmers to seamlessly migrate your existing mobile application to Flutter technology in a hassle-free manner to keep your application up to date and optimized to meet performance goals "
+        },
+        {
+            "title": "API Integration ",
+            "image": "/services/web-app-development/laravel-development-services/our-services/api-development.png",
+            "description": "Our Flutter app developers specialize iin third-party integration to incorporate several features such as payment, GPS and much more in your app. For all your API migration needs, hire Flutter developer from Hidden Brains."
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+[
+    {
+        "image": "/services/mobile-app-devlopment/flutter-development-services/our-services/chat.png",
+        "title": "Transparency",
+        "description": "Sookshum Labs ensures a clear and transparent process from start to finish, allowing clients to stay fully informed about the progress and details of their projects. "
+    },
+    {
+        "image": "/services/mobile-app-devlopment/landing-page/why-us/maintain.png",
+        "title": "Communication",
+        "description": "Effective communication is prioritized to ensure that all project requirements are clearly understood and met, facilitating smooth collaboration and timely delivery. "
+    },
+    {
+        "image": "/services/admin-development/nextjs-development-services/why-us/cutting-edge-technologies.webp",
+        "title": "Business Ethics",
+        "description": "Sookshum Labs adheres to high standards of professionalism and integrity, ensuring that all dealings are conducted ethically and responsibly. "
+    },
+    {
+        "image": "/services/web-app-development/landing-page/why-us/develop.png",
+        "title": "Cost-Effectiveness ",
+        "description": "Clients receive competitive pricing for NestJs development, providing access to top-tier services without compromising on quailty or breaking the budget."
+    }
+]

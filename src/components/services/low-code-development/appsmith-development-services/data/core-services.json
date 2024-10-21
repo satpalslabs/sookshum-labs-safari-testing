@@ -1,0 +1,14 @@
+[
+    {
+        "image": "/services/admin-development/nextjs-development-services/our-process/maintenance.webp",
+        "description": "We develop apps and systems to replace or supplement your existing business software"
+    },
+    {
+        "image": "/services/low-code-development/appsmith-development-services/core-services/puzzle.png",
+        "description": "We create custom connectors and integrate a low-code app with any BPM system your business uses"
+    },
+    {
+        "image": "/services/low-code-development/appsmith-development-services/core-services/box.png",
+        "description": "Before you invest in full-scale app development let’s develop a performant PoC."
+    }
+]

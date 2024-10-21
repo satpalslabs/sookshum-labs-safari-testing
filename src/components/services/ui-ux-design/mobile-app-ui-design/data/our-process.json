@@ -1,0 +1,18 @@
+[
+    {
+        "title": "Discover",
+        "description": "We start with an initial consultation to tailor services for your project and timeframe, considering your company, industry, required features and design preferences. "
+    },
+    {
+        "title": "Moodboards & Wireframes ",
+        "description": "We’ll create moodboards with potential creative directions and app screen exampled aligned with your project’s specifications. Then we’ll create wireframes for the structure of the screens, and incorporate any previous analytics findings to optimise the user journey. "
+    },
+    {
+        "title": "Design Concepts ",
+        "description": "Once we incorporate moodboard feedback and finalise the greyscale prototype we’ll then create a design concept for a few screens in line with the creative direction chosen, and once approved move onto the remaining screens. "
+    },
+    {
+        "title": "Delivery ",
+        "description": "Once the designs are finalised we will then share the development-ready Figma files, which contains all styling information and required assets. We are happy to help with any questions the developers may have."
+    }
+]

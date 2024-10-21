@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Design",
+        "description": "With overr 100 components and a comprehensive IDE, Retool offers the industry’s fastest inner loop for seamless development. "
+    },
+    {
+        "title": "Code",
+        "description": "Retool caters to developers, allowing coding from anywhere and seamless connection to any system."
+    },
+    {
+        "title": "Debug",
+        "description": "Easily view stack traces, track query runs, inspect app state, and delve into dependencies. "
+    },
+    {
+        "title": "Review",
+        "description": "Version control changes in Retool with Git and uses PRs to merge updates. "
+    },
+    {
+        "title": "Deploy",
+        "description": "Effortlessly manage deployments, releases, and environments directly within Retool."
+    }
+]

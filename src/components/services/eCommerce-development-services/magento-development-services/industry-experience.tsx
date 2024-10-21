@@ -59,6 +59,7 @@ const Tabs: React.FC<{
         onClick={() => {
           props.setActiveTab(ind);
         }}
+        key={ind}
       >
         <div className="!text-white text-nowrap">{industry.tab}</div>
         {props.activeTab == ind && (
@@ -88,7 +89,7 @@ const DetailView: React.FC<{
           width="1800"
           height="1800"
           src={industries_data[props.activeTab].detail.image}
-          className="w-fit h-[614px] lg:h-[426px] sm:h-[390px] xs:h-fit xs:w-full xs:scale-[1.18]  object-contain"
+          className=" h-[614px] lg:h-[426px] sm:h-[390px] xs:h-fit xs:w-full xs:scale-[1.18]  object-contain"
           blurDataURL="URL"
           placeholder="blur"
         />

@@ -26,9 +26,8 @@ const GradientSection: React.FC<HeroSection> = (props) => (
             : "text-[30px] lg:text-[23px] sm:text-base leading-[1.1] xs:!px-0 xs:text-[11.5px]"
         }
           } `}
-      >
-        {props.aboutPage}
-      </div>
+        dangerouslySetInnerHTML={{ __html: props.aboutPage }}
+      ></div>
       {props["contact-us"] && (
         <PrimaryButton
           icon={true}

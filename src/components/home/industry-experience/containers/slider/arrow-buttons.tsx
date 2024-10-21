@@ -5,10 +5,17 @@
 const ArrowButtons: React.FC<{
   atStart: boolean;
   atEnd: boolean;
-}> = ({ atStart, atEnd }) => (
+  swiperContainerRef: any;
+}> = ({ atStart, atEnd, swiperContainerRef }) => (
   <div className="absolute right-[6%] lg:right-[4%] -top-[40%] lg:-top-[44%] sm:right-4  xs:hidden">
     <div className="flex gap-5">
-      <button className="arrow-right" name="Move right">
+      <button
+        id="arrow-right"
+        name="Move right"
+        onClick={() => {
+          swiperContainerRef.current.swiper.slidePrev();
+        }}
+      >
         <svg
           width="14"
           height="9"
@@ -25,7 +32,13 @@ const ArrowButtons: React.FC<{
           />
         </svg>
       </button>
-      <button className="arrow-left arrow">
+      <button
+        id="arrow-left"
+        className=" arrow"
+        onClick={() => {
+          swiperContainerRef.current.swiper.slideNext();
+        }}
+      >
         <svg
           width="14"
           height="9"

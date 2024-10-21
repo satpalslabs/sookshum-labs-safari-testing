@@ -32,18 +32,6 @@
             "content": {
                 "technologies": [
                     {
-                        "logo": "/header/logos/MERN.png",
-                        "title": "MERN Stack Development",
-                        "about": "",
-                        "link": "/mern-stack-development-services"
-                    },
-                    {
-                        "logo": "/header/logos/nodejs.png",
-                        "title": "Nodejs Development",
-                        "about": "",
-                        "link": "/nodejs-development-services"
-                    },
-                    {
                         "logo": "/header/logos/nestjs.png",
                         "title": "Nestjs Development",
                         "about": "",
@@ -56,10 +44,10 @@
                         "link": "/laravel-development-services"
                     },
                     {
-                        "logo": "/header/logos/php.png",
-                        "title": "PHP Development",
+                        "logo": "/header/logos/nextjs.png",
+                        "title": "Nextjs",
                         "about": "",
-                        "link": "/php-development-services"
+                        "link": "/nextjs-development-services"
                     }
                 ]
             }
@@ -84,10 +72,28 @@
             "content": {
                 "technologies": [
                     {
-                        "logo": "/header/logos/ux&ui.png",
-                        "title": "UI/UX Design",
+                        "logo": "/services/mobile-app-devlopment/landing-page/why-us/design.png",
+                        "title": "Mobile App UI Design",
                         "about": "",
-                        "link": "/ui-ux-design-services"
+                        "link": "/mobile-app-ui-design-services"
+                    },
+                    {
+                        "logo": "/services/web-app-development/landing-page/why-us/develop.png",
+                        "title": "Website UI Design",
+                        "about": "",
+                        "link": "/website-ui-design-services"
+                    },
+                    {
+                        "logo": "/header/logos/web-app.png",
+                        "title": "Web App UI Design",
+                        "about": "",
+                        "link": "/web-app-ui-design-services"
+                    },
+                    {
+                        "logo": "/header/logos/landing-page.png",
+                        "title": "Landing Page UI Design",
+                        "about": "",
+                        "link": "/landing-page-ui-design-services"
                     }
                 ]
             }
@@ -108,64 +114,6 @@
                         "title": "Appsmith",
                         "about": "",
                         "link": "/appsmith-development-services"
-                    },
-                    {
-                        "logo": "/header/logos/tooljet.png",
-                        "title": "Tooljet",
-                        "about": "",
-                        "link": "/tooljet-development-services"
-                    }
-                ]
-            }
-        },
-        {
-            "label": "Admin Development",
-            "link": "/admin-development-services",
-            "content": {
-                "technologies": [
-                    {
-                        "logo": "/header/logos/retool.png",
-                        "title": "Retool",
-                        "about": "",
-                        "link": "/retool-development-services"
-                    },
-                    {
-                        "logo": "/header/logos/appsmith.png",
-                        "title": "Appsmith",
-                        "about": "",
-                        "link": "/appsmith-development-services"
-                    },
-                    {
-                        "logo": "/header/logos/tooljet.png",
-                        "title": "Tooljet",
-                        "about": "",
-                        "link": "/tooljet-development-services"
-                    },
-                    {
-                        "logo": "/header/logos/refine.png",
-                        "title": "Refine",
-                        "about": "",
-                        "link": "/refine-development-services"
-                    },
-                    {
-                        "logo": "/header/logos/nextjs.png",
-                        "title": "Nextjs",
-                        "about": "",
-                        "link": "/nextjs-development-services"
-                    }
-                ]
-            }
-        },
-        {
-            "label": "CMS Development",
-            "link": "/cms-development-services",
-            "content": {
-                "technologies": [
-                    {
-                        "logo": "/header/logos/wordpress.png",
-                        "title": "Wordpress",
-                        "about": "",
-                        "link": "/wordpress-development-services"
                     }
                 ]
             }
@@ -174,20 +122,7 @@
             "label": "Website Development",
             "link": "/website-development-services",
             "content": {
-                "technologies": [
-                    {
-                        "logo": "/header/logos/wordpress.png",
-                        "title": "Wordpress",
-                        "about": "",
-                        "link": "/wordpress-development-services"
-                    },
-                    {
-                        "logo": "/header/logos/webflow.png",
-                        "title": "Webflow",
-                        "about": "",
-                        "link": "/webflow-development-services"
-                    }
-                ]
+                "technologies": []
             }
         }
     ]

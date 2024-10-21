@@ -1,0 +1,17 @@
+[
+    {
+        "image": "/about-us/innovation-concepts/search.png",
+        "title": "Discover",
+        "description": "<li>User Research </li><li>User Surveys</li><li>User Personas</li><li>User Stories</li>"
+    },
+    {
+        "image": "/services/landing-page/cover/pencil.png",
+        "title": "Define",
+        "description": "<li>Information Architecture </li> <li>Site Maps</li><li>Empathy Mapping</li><li>User Journey Map</li>"
+    },
+    {
+        "image": "/services/web-app-development/laravel-development-services/why-us/rocket.png",
+        "title": "Deliver",
+        "description": "<li>Paper prototyping</li> <li>High Fidelity Mockups</li><li>Invision Prototype</li>"
+    }
+]

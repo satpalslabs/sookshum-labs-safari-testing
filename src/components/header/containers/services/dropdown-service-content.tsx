@@ -6,9 +6,11 @@ import Link from "next/link";
 const ServiceContent = ({
   activeService,
   setActive,
+  setShowLinks,
 }: {
   activeService: service | null;
   setActive: React.Dispatch<React.SetStateAction<boolean>>;
+  setShowLinks: React.Dispatch<React.SetStateAction<boolean>>;
 }) => (
   <div className="flex flex-col grow sm:grow-0 items-start gap-[14px] sm:w-full sm:pl-2">
     {activeService?.content.technologies.map(
@@ -17,7 +19,10 @@ const ServiceContent = ({
           href={cardContent.link}
           className="flex items-center transition-all duration-500 sm:items-start bg-innerContainer sm:bg-transparent border sm:border-none border-solid border-transparent shadow-buttonInset  hover:bg-borderDarkButton hover:border-borderDarkButton sm:shadow-none w-full rounded-[32px] gap-4 p-4 sm:p-0"
           key={index}
-          onClick={() => setActive(false)}
+          onClick={() => {
+            setActive(false);
+            setShowLinks(false);
+          }}
         >
           <div className="sm:hidden h-[60px] w-[60px] relative rounded-2xl overflow-hidden">
             <Image

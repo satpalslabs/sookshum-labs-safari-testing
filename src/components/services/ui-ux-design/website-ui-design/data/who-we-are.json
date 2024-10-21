@@ -1,0 +1,17 @@
+[
+    {
+        "image": "/about-us/innovation-concepts/search.png",
+        "title": "Promo landing pages",
+        "description": "The landing page is designed to grab the visitor’s attention, present them with a specific product orr service, and then encourage them to take the desired."
+    },
+    {
+        "image": "/services/web-app-development/laravel-development-services/why-us/rocket.png",
+        "title": "Corporate websites ",
+        "description": "A corporate website helps introduce your company to the audience, showcasing your values and presenting the complexity and sophistication of your processes and services."
+    },
+    {
+        "image": "/services/web-app-development/laravel-development-services/why-us/rocket.png",
+        "title": "Website Refreshing",
+        "description": "A website refresh or redesign is a comprehensive overhaul that includes substantial changes to the content, structure, visuals, and code of your current website, all aimed at better serving your visitors. A great website redesign tends to boost revenue, lower bounce rates, and improve user experience. "
+    }
+]

@@ -1,0 +1,27 @@
+[
+    {
+        "image": "/services/mobile-app-devlopment/flutter-development-services/our-services/chat.png",
+        "heading": "Web App UX Strategy ",
+        "description": "We provide personalized assistance at every stage of the web app design."
+    },
+    {
+        "image": "/services/web-app-development/landing-page/services/website-development-design.png",
+        "heading": "Enterprise Web App UI",
+        "description": "Our UI design services make these products easier to launch, use, scale, and maintain."
+    },
+    {
+        "image": "/services/admin-development/nextjs-development-services/our-process/maintenance.webp",
+        "heading": "MVP UI Design",
+        "description": "Designing and refining actual, usable web apps multiple times is a valuable practice. "
+    },
+    {
+        "image": "/services/website-development/landing-page/website-development-services/landing-pages.png",
+        "heading": "Web App Redesign",
+        "description": "Perform competitive market research, and then create a brand-new app UI/UX information architecture. "
+    },
+    {
+        "image": "/services/mobile-app-devlopment/landing-page/why-us/maintain.png",
+        "heading": "Web App Dashboard Design",
+        "description": "We can design customized dashboard for your web app"
+    }
+]

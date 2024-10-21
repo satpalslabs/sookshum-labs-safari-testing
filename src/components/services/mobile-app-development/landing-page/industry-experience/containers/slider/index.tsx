@@ -3,7 +3,7 @@
  * This client component contains a slider.
  */
 
-import  { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import dynamic from "next/dynamic";
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
@@ -28,6 +28,7 @@ export default function Slider() {
   const [atEnd, setAtEnd] = useState<boolean>(false);
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref);
+  const swiperContainerRef = useRef<any>(null);
 
   const handleSlideChange = (swiper: any) => {
     setAtStart(swiper.isBeginning);
@@ -36,6 +37,7 @@ export default function Slider() {
   return (
     <div ref={ref} className="text-[black] max-w-full relative">
       <Swiper
+        ref={swiperContainerRef}
         slidesPerView={2.8}
         spaceBetween={20}
         breakpoints={{
@@ -49,9 +51,8 @@ export default function Slider() {
         }}
         grabCursor={true}
         onSlideChange={handleSlideChange}
-        navigation={{ nextEl: ".arrow-left", prevEl: ".arrow-right" }}
         modules={[Navigation]}
-        className="!px-[81px] sm:!px-5 md:!px-[30px] lg:!px-10 2xs:!px-3 h-fit"
+        className="!px-[81px] sm:!px-5 md:!px-[30px] !overflow-visible lg:!px-10 2xs:!px-3 h-fit"
       >
         {data.industries.map((industry: industryType, index: number) => (
           <SwiperSlide key={index} className="!h-auto">
@@ -59,7 +60,11 @@ export default function Slider() {
           </SwiperSlide>
         ))}
       </Swiper>
-      <ArrowButtons atEnd={atEnd} atStart={atStart} />
+      <ArrowButtons
+        swiperContainerRef={swiperContainerRef}
+        atEnd={atEnd}
+        atStart={atStart}
+      />
     </div>
   );
 }

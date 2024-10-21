@@ -1,5 +1,5 @@
 
-import NextJS_DevelopmentServices from "@components/services/admin-development-services/nextjs-development-services";
+import NextJS_DevelopmentServices from "@components/services/web-app-development/nextjs-development-services";
 import is_Bot from "@lib/is-bot";
 import { NextPage } from "next";
 export const dynamic = 'force-dynamic';

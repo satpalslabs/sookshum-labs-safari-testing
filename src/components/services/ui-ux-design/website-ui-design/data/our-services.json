@@ -1,0 +1,26 @@
+[
+    {
+        "heading": "Enterprise UX",
+        "description": "Full range of enterprise application UX UI design services including legacy systems redesign, new product design, design systems implementation and Enterprise UX audit."
+    },
+    {
+        "heading": "UX for startups",
+        "description": "Affordable UI UX design packages for startups. Designing pitch decks to clickable prototypes and helping startups visualize their ideas and develop products that have high customer conversion rates."
+    },
+    {
+        "heading": "UX audit",
+        "description": "UX audit services from EAA accessibility compliance to heuristics evaluation and design systems evaluation to transform your products to be highly competitive and conversion-oriented. "
+    },
+    {
+        "heading": "Design Systems",
+        "description": "Implementation and maintenance of design system from initial assessment to building component libraries and continuous enhancement and support."
+    },
+    {
+        "heading": "Front end development",
+        "description": "Transforming your UI UX designs to highly responsive front-end /UI using the latest technologies, including HTML, Angular, React JS, Javascript and WordPress."
+    },
+    {
+        "heading": "Dashboard Design",
+        "description": "Maximize data potential with actionable dashboard designs. Our dashboard design services will help you gain better operational insights and visibility by translating raw data into highly effective visuals."
+    }
+]

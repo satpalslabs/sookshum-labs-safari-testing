@@ -4,7 +4,7 @@
 
 import type { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "eCommerce Development Services | Sookshum Labs",
+  title: "Magento Development Services | Sookshum Labs",
 };
 
 export default function RootLayout({

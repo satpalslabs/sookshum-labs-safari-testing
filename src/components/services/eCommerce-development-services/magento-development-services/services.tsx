@@ -54,6 +54,7 @@ const OurServicesMainContainer = () => {
         <Card
           style="!flex-row justify-between items-center !p-6 !pb-6 lg:!p-6 sm:!p-5 xxl:gap-4 lg:gap-4 shrink-0 sm:last:col-start-2  !rounded-[32px]"
           isInView={isInView}
+          key={ind}
         >
           <Image
             src={service.prefix_image}

@@ -1,0 +1,19 @@
+{
+    "results": [
+        {
+            "icon": "/about-us/predictable-results/rank.png",
+            "title": "Get strong digital presence ",
+            "description": "Improve your reputation and brand awareness, make your website memorable. "
+        },
+        {
+            "icon": "/services/web-app-development/landing-page/why-us/workflow-enhancement.png",
+            "title": "Attract quality leads and increase sales",
+            "description": "Professional landing page design will attract more leads and will help to convert them into regular customers as well as higher profits. "
+        },
+        {
+            "icon": "/services/admin-development/nextjs-development-services/why-us/transparency.webp",
+            "title": "Reach your target audience ",
+            "description": "Before creating the design for your landing page- we research your target audience to meet their preferences, needs and goals. "
+        }
+    ]
+}

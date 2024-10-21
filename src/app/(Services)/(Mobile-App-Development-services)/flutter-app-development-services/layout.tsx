@@ -4,7 +4,7 @@
 
 import type { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "Low Code Development Services | Sookshum Labs",
+  title: "Flutter App Development Services | Sookshum Labs",
 };
 
 export default function RootLayout({

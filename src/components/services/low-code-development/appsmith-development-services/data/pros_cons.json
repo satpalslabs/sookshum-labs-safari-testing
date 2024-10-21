@@ -1,0 +1,25 @@
+[
+    {
+        "type": "pros",
+        "image": "/services/low-code-development/appsmith-development-services/pros-cons/pros.png",
+        "cards": [
+            "You are able to develop only web-based applications.",
+            "Limited customization (i.e. no ability to create custom components).",
+            "JS programming skills are needed for the creation of custom business logic."
+        ]
+    },
+    {
+        "type": "cons",
+        "image": "/services/low-code-development/appsmith-development-services/pros-cons/cons.png",
+        "cards": [
+            "Write business logic snippets using JS to transform data, manipulate UI, or trigger workflows. ",
+            "Manage widgets without HTML/CSS. ",
+            "Ability to update and query your database directly from the UI.",
+            "Changes in your application are reflected instantly with every edit. No need to compile.",
+            "Ready-made connectors for a large number of cloud and on-premise databases as well as REST and GraphQL APIs.",
+            "You can deploy Appsmith on your server in 5 minutes. ",
+            "Connect directly to any database (PostgreSQL, MySQL & MongoDB) instances. ",
+            "Simple configuration to create flows when users interact with the UI."
+        ]
+    }
+]

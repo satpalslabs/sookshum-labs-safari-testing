@@ -1,0 +1,22 @@
+[
+    {
+        "image": "/header/logos/landing-page.png",
+        "title": "Landing Page Designs",
+        "description": "Custom wireframing and landing pages designed from scratch or based on existing formats to maximize conversions or page objectives. "
+    },
+    {
+        "image": "/services/admin-development/nextjs-development-services/our-services/website-design.webp",
+        "title": "Website, Blog, and App Graphics",
+        "description": "Custom-designed graphics to be used on a website landing page. Blog article, or within an App."
+    },
+    {
+        "image": "/services/ui-ux-design/landing-page-ui-design/t.png",
+        "title": "Design Systems ",
+        "description": "Compilation and development of a design system taking into account your brand’s requirements and objectives."
+    },
+    {
+        "image": "/services/ui-ux-design/landing-page-ui-design/ui-design.png",
+        "title": "Web UI Design",
+        "description": "Development of website elements in a user-friendly manner taking into account UI requirements to maximize landing page conversions. "
+    }
+]

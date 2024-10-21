@@ -6,10 +6,10 @@ import Testimonials from "@components/basic-components/testimonials";
 import Work from "./work";
 import { HomeProps } from "@app/page";
 import WhoWeAre from "./who-we-are";
-import LetsConnect from "./need-project";
 import Benefits from "./benefits";
 import ChooseUs from "./choose-us";
 import OurProcess from "./our-process";
+import LetsConnect from "./need-project";
 
 const content_heroSection: HeroSection = {
   gradientTextStyle: "",

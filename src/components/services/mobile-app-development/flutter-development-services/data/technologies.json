@@ -1,0 +1,124 @@
+[
+    {
+        "tab": "Frameworks",
+        "technologies": [
+            {
+                "icon": "/header/logos/flutter.png",
+                "name": "Flutter"
+            },
+            {
+                "icon": "/header/logos/flutter.png",
+                "name": "Flutter SDK"
+            },
+            {
+                "icon": "/services/mobile-app-devlopment/flutter-development-services/logos/dart.png",
+                "name": "Dart SDK"
+            }
+        ]
+    },
+    {
+        "tab": "Tools & Utilities",
+        "technologies": [
+            {
+                "icon": "/services/mobile-app-devlopment/flutter-development-services/logos/android-studio.png",
+                "name": "Android Studio"
+            },
+            {
+                "icon": "/services/mobile-app-devlopment/flutter-development-services/logos/vs-code.png",
+                "name": "Visual Studio"
+            },
+            {
+                "icon": "/services/mobile-app-devlopment/flutter-development-services/logos/git.png",
+                "name": "Git"
+            },
+            {
+                "icon": "/services/mobile-app-devlopment/flutter-development-services/logos/git-lab.png",
+                "name": "GitLab"
+            },
+            {
+                "icon": "/services/mobile-app-devlopment/flutter-development-services/logos/bit-bucket.png",
+                "name": "Bit Bucket"
+            }
+        ]
+    },
+    {
+        "tab": "Database",
+        "technologies": [
+            {
+                "icon": "/services/mobile-app-devlopment/landing-page/technologies/firebase.png",
+                "name": "Firebase"
+            },
+            {
+                "icon": "/services/web-app-development/landing-page/technologies/mongo.png",
+                "name": "MangoDB"
+            },
+            {
+                "icon": "/services/web-app-development/landing-page/technologies/postgres.png",
+                "name": "PostgreSQL"
+            },
+            {
+                "icon": "/services/web-app-development/landing-page/technologies/sqlite.png",
+                "name": "SQLite"
+            },
+            {
+                "icon": "/services/mobile-app-devlopment/landing-page/technologies/supabase.png",
+                "name": "SupaBase"
+            }
+        ]
+    },
+    {
+        "tab": "CI/CD Tools",
+        "technologies": [
+            {
+                "icon": "/services/mobile-app-devlopment/flutter-development-services/logos/travis.png",
+                "name": "Travis"
+            },
+            {
+                "icon": "/services/mobile-app-devlopment/flutter-development-services/logos/cirrus.png",
+                "name": "Cirrus"
+            },
+            {
+                "icon": "/services/mobile-app-devlopment/flutter-development-services/logos/code-magic.png",
+                "name": "Codemagic"
+            }
+        ]
+    },
+    {
+        "tab": "Testing",
+        "technologies": [
+            {
+                "icon": "/services/mobile-app-devlopment/flutter-development-services/logos/selenium.png",
+                "name": "Selenium"
+            },
+            {
+                "icon": "/services/mobile-app-devlopment/flutter-development-services/logos/postman.png",
+                "name": "Postman"
+            },
+            {
+                "icon": "/services/mobile-app-devlopment/flutter-development-services/logos/test-rail.png",
+                "name": "Test Rail"
+            },
+            {
+                "icon": "/services/mobile-app-devlopment/flutter-development-services/logos/apache.png",
+                "name": "Apache JMeter"
+            }
+        ]
+    },
+    {
+        "tab": "Cloud",
+        "technologies": [
+            {
+                "icon": "/services/mobile-app-devlopment/flutter-development-services/logos/aws.png",
+                "name": "AWS"
+            },
+            {
+                "icon": "/services/web-app-development/landing-page/technologies/azure.png",
+                "name": "Azure"
+            },
+            {
+                "icon": "/services/web-app-development/landing-page/technologies/cloud.png",
+                "name": "Google Cloud"
+            }
+        ]
+    }
+]

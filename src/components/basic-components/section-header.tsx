@@ -11,6 +11,7 @@ type props = {
 };
 const SectionHeader: React.FC<props> = ({
   buttonText,
+
   description,
   children,
   style,
@@ -21,10 +22,13 @@ const SectionHeader: React.FC<props> = ({
     <DarkButton style="" text={buttonText} />
     <H2>{children}</H2>
     <Description
-      children={null}
-      text={description}
-      classes={"!text-lg lg:!text-sm sm:!text-[13px] xs:!text-[12px] !leading-[1.4] !text-light !font-[300]"}
-    />
+      text={""}
+      classes={
+        "!text-lg lg:!text-sm sm:!text-[13px] xs:!text-[12px] !leading-[1.4] !text-light !font-[300]"
+      }
+    >
+      <div dangerouslySetInnerHTML={{ __html: description }} />
+    </Description>
   </div>
 );
 
