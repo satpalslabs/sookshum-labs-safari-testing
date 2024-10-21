@@ -8,7 +8,7 @@ const ImageContainer: React.FC = () => {
       <img
         src="/services/admin-development/nextjs-development-services/lets-connect.png"
         alt="let's connect"
-        className="h-[370px] lg:h-[330px] sm:h-[250px] xs:w-full xs:h-fit shrink-0"
+        className="h-[370px] lg:h-[330px] sm:h-[250px] xs:w-full xs:h-auto shrink-0"
       />
     </div>
   );

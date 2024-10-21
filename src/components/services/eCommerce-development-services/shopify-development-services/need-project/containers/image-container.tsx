@@ -8,7 +8,7 @@ const ImageContainer: React.FC = () => {
       <img
         src="/services/e-commerce-development/shopify-development-services/lets-connect.webp"
         alt="let's connect"
-        className="h-[370px] lg:h-[330px] xs:w-full xs:h-fit shrink-0"
+        className="h-[370px] lg:h-[330px] xs:w-full xs:h-auto shrink-0"
       />
     </div>
   );
