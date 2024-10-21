@@ -46,7 +46,7 @@ const MainContainer: React.FC = () => {
       {pros_cons.map((item: card, index: number) => (
         <div
           key={index}
-          className={`flex flex-col flex-wrap gap-5 lg:gap-4 sm:gap-3 ${
+          className={`flex flex-col h-full flex-wrap gap-5 lg:gap-4 sm:gap-3 ${
             item.type == "pros"
               ? "max-h-[498px] lg:max-h-[464px] sm:max-h-fit"
               : "xxl:max-h-[1226px] max-h-[1326px] lg:max-h-[1106px] sm:max-h-fit"

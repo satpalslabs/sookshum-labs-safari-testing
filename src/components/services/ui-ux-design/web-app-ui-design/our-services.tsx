@@ -57,7 +57,7 @@ const SingleCard: React.FC<{
   index: number;
 }> = ({ isInView, data, index }) => (
   <div
-    className={`relative rotate-0 h-full ${
+    className={`relative rotate-0 ${
       index > 2 ? "col-span-3" : "col-span-2"
     }`}
   >

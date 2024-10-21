@@ -54,7 +54,7 @@ const MainContainer: React.FC = () => {
           className="flex xs:flex-col-reverse xs:gap-[10px] items-center justify-between"
           key={index}
         >
-          <div className="flex flex-col  gap-4 lg:gap-3 sm:gap-2 w-[40.8%] sm:w-[42%] xs:w-full shrink-0">
+          <div className="flex flex-col  gap-4 lg:gap-3 sm:gap-2 w-[40.8%] sm:w-[40%] xs:w-full shrink-0">
             <H6
               text={item.title}
               classes="text-white xxl:text-3xl !font-[500] !text-[20px] sm:!text-[14px] md:!leading-[1.4] !leading-[1.6]"

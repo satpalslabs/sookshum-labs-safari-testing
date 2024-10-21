@@ -21,7 +21,7 @@ const content_heroSection: HeroSection = {
   fallback: "",
   style: {
     sourceStyle:
-      "xxl:left-[50%] xxl:h-[700px]  left-[8%] xxl:scale-[1.1] xxl:top-[-18%] xxl:-translate-x-[50%] left-[15%] lg:left-[2%] xs:-left-[4%]",
+      "xxl:left-[50%] xxl:h-[660px]  left-[8%] xxl:scale-[1.1] xxl:top-[-18%] xxl:-translate-x-[50%] left-[15%] lg:left-[2%] xs:-left-[4%]",
     gradientDivStyle:
       "xxl:!h-[560px] xxl:left-[50%] xxl:-translate-x-[35%]  !h-[550px] lg:!h-[450px] sm:!h-[350px] xs:!h-[240px] xs:!top-[-20%] !top-[-15%] xxl:!top-[-6%]",
   },
