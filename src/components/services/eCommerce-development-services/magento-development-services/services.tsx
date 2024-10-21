@@ -61,7 +61,7 @@ const OurServicesMainContainer = () => {
             alt=""
             width="400"
             height="400"
-            className="w-fit h-[45px] lg:h-[32px] xs:w-[24px] xs:h-[24px] shrink-0"
+            className="h-[45px] lg:h-[32px] xs:w-[24px] xs:h-[24px] w-auto shrink-0"
             blurDataURL="URL"
             placeholder="blur"
           />

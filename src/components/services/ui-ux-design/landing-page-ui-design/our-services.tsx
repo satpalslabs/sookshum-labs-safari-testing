@@ -57,7 +57,7 @@ const OurServicesMainContainer = () => {
             alt=""
             width="400"
             height="400"
-            className="h-[20px] shrink-0"
+            className="w-[20px] h-[20px] shrink-0"
             blurDataURL="URL"
             placeholder="blur"
           />

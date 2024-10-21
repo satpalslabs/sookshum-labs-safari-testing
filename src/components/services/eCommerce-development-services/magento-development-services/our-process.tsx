@@ -78,7 +78,7 @@ const MainContainer = () => {
                       alt=""
                       width="400"
                       height="400"
-                      className="h-[52px] lg:h-[38px] shrink-0"
+                      className="h-[52px] w-auto lg:h-[38px] shrink-0"
                       blurDataURL="URL"
                       placeholder="blur"
                     />
