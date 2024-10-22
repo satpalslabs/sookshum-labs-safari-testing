@@ -105,8 +105,8 @@ const FAQ: React.FC<props> = ({ item, active, index, setActive }) => {
                 classes="!text-[20px] lg:!text-sm sm:!text-[13px] !text-white !font-normal"
               />
               <div className="grid grid-cols-2 xs:grid-cols-1 xs:gap-5 gap-5 lg:gap-3 gap-y-8">
-                {item.detail.map((detailPage: detail) => (
-                  <div className="flex flex-col gap-5 lg:gap-3">
+                {item.detail.map((detailPage: detail,index:number) => (
+                  <div key={index} className="flex flex-col gap-5 lg:gap-3">
                     <H4 text={detailPage.title} style="lg:!text-[20px]" />
                     <div className="flex flex-col gap-3">
                       <Description

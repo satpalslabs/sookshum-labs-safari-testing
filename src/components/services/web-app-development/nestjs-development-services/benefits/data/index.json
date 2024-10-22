@@ -1,34 +1,34 @@
 [
     {
         "title": "Scalable Solutions",
-        "description": "Nest.Js software development provides scalable solutions that can adapt to your business needs as they grow, ensuring flexibility and performance."
+        "description": "NestJs software development provides scalable solutions that can adapt to your business needs as they grow, ensuring flexibility and performance."
     },
     {
         "title": "Efficient Backend Development",
-        "description": "Benefit from efficient backend development processes with Nest.Js allowing for robust and maintainable server-side applications. "
+        "description": "Benefit from efficient backend development processes with NestJs allowing for robust and maintainable server-side applications. "
     },
     {
         "title": "Dependency Injection ",
-        "description": "Nest.Js uses dependency injection to improve modularity and enable better organized, maintainable code structures. "
+        "description": "NestJs uses dependency injection to improve modularity and enable better organized, maintainable code structures. "
     },
     {
         "title": "Extensive Module Ecosystem",
-        "description": "Leverage the extensive module ecosystem of Nest.Js for rapid development and integration of various functionalities. "
+        "description": "Leverage the extensive module ecosystem of NestJs for rapid development and integration of various functionalities. "
     },
     {
         "title": "In-built Validation",
-        "description": "Nest.Js Supports in-built validation features which sreamline data validation processes and enhance data integrity."
+        "description": "NestJs Supports in-built validation features which sreamline data validation processes and enhance data integrity."
     },
     {
         "title": "Robust Support for TypeScript",
-        "description": "Benefit from the strong support for TypeScript in Nest.Js enabling type-checking and improved code quality. "
+        "description": "Benefit from the strong support for TypeScript in NestJs enabling type-checking and improved code quality. "
     },
     {
         "title": "WebSockets Integration ",
-        "description": "Nest.Js enables seamless integration of WebSockets for real-time communication in your applications, enhancing user experience. "
+        "description": "NestJs enables seamless integration of WebSockets for real-time communication in your applications, enhancing user experience. "
     },
     {
         "title": "Community Support",
-        "description": "Join a vibrant community of developers utilizing Nest.Js for software development, providing access to resources, updates, and best practices.  "
+        "description": "Join a vibrant community of developers utilizing NestJs for software development, providing access to resources, updates, and best practices.  "
     }
 ]

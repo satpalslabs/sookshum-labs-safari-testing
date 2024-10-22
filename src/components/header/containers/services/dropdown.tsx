@@ -104,7 +104,9 @@ const DetailServiceContentSection = ({
       setActive={setActive}
       setShowLinks={setShowLinks}
     />
-    <div className="flex flex-col h-fit w-fit sm:w-full bg-innerContainer border border-solid border-borderDarkButton shadow-buttonInset rounded-[32px] p-4 gap-2">
+    <div className="flex flex-col h-fit w-fit sm:w-full bg-innerContainer border border-solid border-borderDarkButton shadow-buttonInset rounded-[32px] cursor-pointer p-4 gap-2" onClick={()=>{
+      window.open("/contact-us","_self")
+    }}>
       <div className="h-[180px] w-[316px] lg:w-[232px] lg:h-[190px] relative rounded-[20px] overflow-hidden sm:w-full">
         <Image
           fill

@@ -82,7 +82,7 @@ const ServiceCards: React.FC = () => {
             width="2200"
             alt=""
             src={services[activeCardIndex]["image-url"]}
-            className="grow mx-auto h-[340px] lg:h-[216px] sm:h-[173px] sm:object-contain"
+            className="grow mx-auto h-[340px] w-auto lg:h-[216px] sm:h-[173px] sm:object-contain"
           />
         </div>
       </Card>

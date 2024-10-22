@@ -27,7 +27,7 @@ const Industry = ({
       width={400}
       src={industry.image}
       alt=""
-      className="h-[80px] lg:h-[50px] object-contain float-left sm:max-w-[100px]"
+      className="h-[80px] lg:h-[50px] max-w-fit object-contain float-left sm:max-w-[100px]"
     />
     <div className="p-4 flex flex-col gap-[18px] xs:p-1 grow">
       <H6 classes="text-white" text={industry.title} />

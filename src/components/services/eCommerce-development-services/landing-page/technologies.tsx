@@ -42,29 +42,39 @@ const TechnologiesCards: React.FC = () => {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref);
   return (
-    <div ref={ref} className="grid grid-cols-3 gap-4 w-full xs:grid-cols-1">
+    <div ref={ref} className="grid grid-cols-2 gap-4 w-full xs:grid-cols-1">
       {TechnologiesData?.content.technologies.map(
         (TechnologiesCard: cardContent, index: number) => (
-          <Card key={index} style="mt-0" isInView={isInView}>
-            <div className="flex flex-col gap-5 lg:gap-[12px] p-4">
-              <div className="w-[100px] lg:w-[80px] sm:w-[60px] h-[100px] lg:h-[80px] sm:h-[60px] relative rounded-2xl overflow-hidden">
-                <Image
-                  blurDataURL="URL"
-                  placeholder="blur"
-                  fill
-                  sizes=""
-                  alt=""
-                  src={TechnologiesCard.logo}
+          <div
+            key={index}
+            onClick={() => {
+              window.open(TechnologiesCard.link, "_self");
+            }}
+          >
+            <Card style="mt-0" isInView={isInView}>
+              <div className="flex flex-col gap-5 lg:gap-[12px] p-4">
+                <div className="w-[100px] lg:w-[80px] sm:w-[60px] h-[100px] lg:h-[80px] sm:h-[60px] relative rounded-2xl overflow-hidden">
+                  <Image
+                    blurDataURL="URL"
+                    placeholder="blur"
+                    fill
+                    sizes=""
+                    alt=""
+                    src={TechnologiesCard.logo}
+                  />
+                </div>
+                <H6
+                  text={TechnologiesCard?.title}
+                  classes="text-white w-[80%]"
+                />
+                <Description
+                  children={null}
+                  text={TechnologiesCard?.about}
+                  classes="grow text-lg !font-normal"
                 />
               </div>
-              <H6 text={TechnologiesCard?.title} classes="text-white w-[80%]" />
-              <Description
-                children={null}
-                text={TechnologiesCard?.about}
-                classes="grow text-lg !font-normal"
-              />
-            </div>
-          </Card>
+            </Card>
+          </div>
         )
       )}
     </div>

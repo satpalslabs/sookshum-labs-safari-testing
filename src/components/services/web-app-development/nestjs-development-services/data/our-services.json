@@ -1,32 +1,32 @@
 [
     {
         "image": "/services/web-app-development/landing-page/services/website-development-design.png",
-        "title": "Nest.Js Backend <br /> Development",
-        "description": "Our team specializes in building scalable and efficient backend systems using Nest.Js to power your applications."
+        "title": "NestJs Backend <br /> Development",
+        "description": "Our team specializes in building scalable and efficient backend systems using NestJs to power your applications."
     },
     {
         "image": "/services/low-code-development/landing-page/our-services/solutions.webp",
-        "title": "Nest.Js API <br /> Development",
-        "description": "We create secure and reliable APIs tailored to your requirements using the Nest.Js framework."
+        "title": "NestJs API <br /> Development",
+        "description": "We create secure and reliable APIs tailored to your requirements using the NestJs framework."
     },
     {
         "image": "/services/admin-development/nextjs-development-services/our-process/maintenance.webp",
-        "title": "Nest.Js Application <br /> Maintenance ",
-        "description": "Ensure the smooth operation of your Nest.Js applications with our comprehensive maintenance and support services. "
+        "title": "NestJs Application <br /> Maintenance ",
+        "description": "Ensure the smooth operation of your NestJs applications with our comprehensive maintenance and support services. "
     },
     {
         "image": "/services/landing-page/cover/pencil.png",
-        "title": "UI/UX Design for Nest.Js <br /> Applications",
-        "description": "Craft intuitive user interfaces and engaging user experiences for your Nest.Js applications to delight users."
+        "title": "UI/UX Design for NestJs <br /> Applications",
+        "description": "Craft intuitive user interfaces and engaging user experiences for your NestJs applications to delight users."
     },
     {
         "image": "/services/mobile-app-devlopment/landing-page/why-us/maintain.png",
-        "title": "Nest.Js Migration <br /> Services ",
-        "description": "Effortlessly migrate your existing applications to Nest.Js with our expert migration services for a seamless transition. "
+        "title": "NestJs Migration <br /> Services ",
+        "description": "Effortlessly migrate your existing applications to NestJs with our expert migration services for a seamless transition. "
     },
     {
         "image": "/services/mobile-app-devlopment/landing-page/why-us/scale.png",
-        "title": "Nest.Js Data <br />Visualization Solutions",
-        "description": "Visualize and explore your data effectively with custom data visualization solutions integrated with your Nest.Js applications."
+        "title": "NestJs Data <br />Visualization Solutions",
+        "description": "Visualize and explore your data effectively with custom data visualization solutions integrated with your NestJs applications."
     }
 ]

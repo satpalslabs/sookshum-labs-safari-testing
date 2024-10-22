@@ -24,7 +24,7 @@ const OurProcess: React.FC = () => (
       >
         <div className="xs:w-full w-full sm:w-[80%] mx-auto leading-[1.4] text-wrap text-center">
           Process Of
-          <span className="italic font-light"> Nest.Js </span> Development
+          <span className="italic font-light"> NestJs </span> Development
         </div>
       </SectionHeader>
       <OurProcessMainContainer />

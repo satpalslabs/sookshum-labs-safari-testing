@@ -4,7 +4,7 @@
 
 import type { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "Nest.Js Development Services | Sookshum Labs",
+  title: "NestJs Development Services | Sookshum Labs",
 };
 
 export default function RootLayout({
