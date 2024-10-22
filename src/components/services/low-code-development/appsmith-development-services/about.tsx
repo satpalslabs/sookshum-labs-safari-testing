@@ -48,6 +48,8 @@ const About: React.FC = () => {
                     style={{
                       boxShadow: " 0px 0px 9.14px 0px #F8F8F840 inset",
                       backdropFilter: "blur(163.14285278320312px",
+                      WebkitBackdropFilter: "blur(17.3487px)",
+
                     }}
                   >
                     <img

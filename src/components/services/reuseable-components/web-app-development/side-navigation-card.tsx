@@ -23,6 +23,7 @@ const SideNavigation: React.FC<{
         } md:px-8 md:py-[8px] sm:px-[20px] sm:py-[8px] xs:w-[56px] xs:h-[34px] xs:!p-0 xs:text-center xs:justify-center xs:items-center shrink-0`}
         style={{
           backdropFilter: "blur(100px)",
+          WebkitBackdropFilter: "blur(19.3487px)",
           boxShadow: "2px 4px 16px 0px #F8F8F80F inset",
         }}
       >

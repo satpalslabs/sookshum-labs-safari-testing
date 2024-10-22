@@ -67,8 +67,8 @@ const SingleCard: React.FC<{
     }  ${(index + 1) % 2 == 0 ? "bg-gradientOnHover" : "bg-[#28282866]"} } `}
     style={{
       boxShadow: "1.75px 3.49px 13.98px 0px #F8F8F80F inset",
+      WebkitBackdropFilter: "blur(87.3487px)",
       backdropFilter: "blur(87.34871673583984px)",
-      WebkitBackdropFilter: "blur(87.3487px)"
     }}
   >
     <div className="flex flex-col gap-5 xxl:gap-8 sm:gap-[15px]">

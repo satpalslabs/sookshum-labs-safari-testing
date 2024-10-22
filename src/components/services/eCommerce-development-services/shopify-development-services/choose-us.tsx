@@ -87,6 +87,8 @@ const SingleCard: React.FC<{
       style={{
         boxShadow: "1.75px 3.49px 13.98px 0px #F8F8F80F inset",
         backdropFilter: "blur(87.34871673583984px)",
+        WebkitBackdropFilter: "blur(17.3487px)",
+
       }}
     >
       <div className="flex flex-col gap-5 xxl:gap-8 sm:gap-[15px]">
