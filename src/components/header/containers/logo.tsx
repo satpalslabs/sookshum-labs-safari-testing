@@ -9,7 +9,7 @@ const Logo: React.FC = () => (
     <Image
       height={60}
       width={200}
-      className="w-[154px] h-full xs:w-[128px]"
+      className="w-[154px] xs:max-w-[128px] shrink-0"
       src="/header/Top-Nav-logo.svg"
       alt="Logo"
       blurDataURL="URL"

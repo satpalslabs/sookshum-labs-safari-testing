@@ -96,7 +96,7 @@ const ArrowDiv: React.FC<{ data: ChooseUs }> = ({ data }) => (
         : ""
     } `}
   >
-    <div className="relative min-w-[188px] lg:min-w-[138px]">
+    <div className={`relative min-w-[188px] lg:min-w-[138px] ${data.heading.includes("Performance") && "-mt-[15%] -ml-[35%]"}`}>
       <Description text="" classes="text-center">
         <div
           className="!text-white text-xl font-medium lg:text-sm sm:text-xs"
@@ -110,7 +110,7 @@ const ArrowDiv: React.FC<{ data: ChooseUs }> = ({ data }) => (
             : data.heading.includes("team")
             ? "relative  mx-auto left-0 mt-3 rotate-[37deg] sm:mt-2  xs:-left-8 xs:-mt-2 xs:rotate-[80deg] "
             : data.heading.includes("Performance")
-            ? "absolute -left-16 top-0 rotate-90 mr-8 sm:-left-8 "
+            ? "absolute -left-16 top-0 rotate-90 mr-8 sm:-left-8 xs:top-[70%] xs:left-[13%]"
             : data.heading.includes("Adobe") ||
               data.heading.includes("Seamless")
             ? "absolute top-[-78px] lg:top-[-65px] rotate-[70deg] sm:rotate-[80deg] right-2 sm:right-[40%] xs:rotate-[-15deg] xs:top-[120%] xs:left-[45%]"

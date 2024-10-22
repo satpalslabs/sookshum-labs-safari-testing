@@ -51,7 +51,7 @@ const TechnologiesCards: React.FC = () => {
               window.open(TechnologiesCard.link, "_self");
             }}
           >
-            <Card style="mt-0" isInView={isInView}>
+            <Card style="mt-0 h-full" isInView={isInView}>
               <div className="flex flex-col gap-5 lg:gap-[12px] p-4">
                 <div className="w-[100px] lg:w-[80px] sm:w-[60px] h-[100px] lg:h-[80px] sm:h-[60px] relative rounded-2xl overflow-hidden">
                   <Image

@@ -92,7 +92,7 @@ const TextContainer: React.FC = () => {
                 classes="text-white xxl:text-3xl md:text-[20px] leading-[1.6]"
               />
               <div
-                className={`w-[58.47%] shrink-0 text-wrap lg:grow lg:w-fit lg:max-w-[66%] sm:w-full sm:max-w-full xs:w-full`}
+                className={`w-[58.47%] shrink-0 text-wrap lg:grow lg:w-fit lg:max-w-[66%] sm:w-full sm:max-w-full xs:w-full xs:max-w-[86%]`}
               >
                 <Description
                   text={process.process}
