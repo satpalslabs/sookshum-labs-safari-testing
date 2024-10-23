@@ -1,0 +1,24 @@
+{
+    "industries": [
+        {
+            "title": "Webflow Maintenance ",
+            "image": "/services/low-code-development/landing-page/our-services/code.webp"
+        },
+        {
+            "title": "Website Migration",
+            "image": "/services/ui-ux-design/mobile-app-ui-design/why-us/onboarding.png"
+        },
+        {
+            "title": "Webflow Development Agency Partnership",
+            "image": "/services/admin-development/nextjs-development-services/why-us/cutting-edge-technologies.webp"
+        },
+        {
+            "title": "Webflow Development ",
+            "image": "/services/admin-development/nextjs-development-services/why-us/cutting-edge-technologies.webp"
+        },
+        {
+            "title": "Webflow Consultation",
+            "image": "/services/mobile-app-devlopment/flutter-development-services/our-services/chat.png"
+        }
+    ]
+}

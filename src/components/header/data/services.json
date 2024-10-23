@@ -113,10 +113,49 @@
             }
         },
         {
+            "label": "Admin Development",
+            "link": "/admin-development-services",
+            "content": {
+                "technologies": [
+                    {
+                        "logo": "/header/logos/retool.png",
+                        "title": "Retool",
+                        "about": "",
+                        "link": "/retool-development-services"
+                    },
+                    {
+                        "logo": "/header/logos/appsmith.png",
+                        "title": "Appsmith",
+                        "about": "",
+                        "link": "/appsmith-development-services"
+                    },
+                    {
+                        "logo": "/header/logos/nextjs.png",
+                        "title": "Nextjs",
+                        "about": "",
+                        "link": "/nextjs-development-services"
+                    }
+                ]
+            }
+        },
+        {
             "label": "Website Development",
             "link": "/website-development-services",
             "content": {
-                "technologies": []
+                "technologies": [
+                    {
+                        "logo": "/header/logos/wordpress.png",
+                        "title": "Wordpress",
+                        "about": "",
+                        "link": "/wordpress-development-services"
+                    },
+                    {
+                        "logo": "/header/logos/webflow.png",
+                        "title": "Webflow",
+                        "about": "",
+                        "link": "/webflow-development-services"
+                    }
+                ]
             }
         }
     ]

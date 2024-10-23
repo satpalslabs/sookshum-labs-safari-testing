@@ -1,11 +1,11 @@
-import LandingPageLowCodeDevelopment from "@components/services/low-code-development/landing-page";
+import WordPress_Development from "@components/services/website-development/wordpress-development-services";
 import is_Bot from "@lib/is-bot";
 import { NextPage } from "next";
 export const dynamic = "force-dynamic";
 
-const LowCodeDevelopmentServices: NextPage = () => {
+const WordPressDevelopmentServices: NextPage = () => {
   const isBot = is_Bot();
-  return <div />;
+  return <WordPress_Development isBot={isBot} />;
 };
 
-export default LowCodeDevelopmentServices;
+export default WordPressDevelopmentServices;

@@ -15,10 +15,10 @@ const content_heroSection: HeroSection = {
   gradientTextStyle: "",
   URL: "/services/web-app-development/laravel-development-services/bg-image.png",
   image: true,
-  buttonText: "NestJS App Development",
+  buttonText: "NestJs App Development",
   "contact-us": true,
   additionalDescription: "",
-  gradientText: "NestJS App Development Services",
+  gradientText: "NestJs App Development Services",
   fallback: "",
   style: {
     sourceStyle:
@@ -27,7 +27,7 @@ const content_heroSection: HeroSection = {
       "xxl:!h-[630px] xxl:!left-[20%] xxl:!-translate-x-[0%] xxl:!min-w-screen !h-[650px] lg:!h-[380px] sm:!h-[340px] xs:!h-[220px] xs:!top-[-20%] xxl:!top-[-3%] !top-[-14%] xxl:!top-[-8%]",
   },
   aboutPage:
-    "NestJS is a progressive framework used to build efficient, scalable NodeJS web applications. Crate robust, reliable platforms that stand the test of time with expert NestJS developers at Sookshum Labs.",
+    "NestJs is a progressive framework used to build efficient, scalable NodeJS web applications. Crate robust, reliable platforms that stand the test of time with expert NestJs developers at Sookshum Labs.",
 };
 
 const NestJS_DevelopmentServices: React.FC<HomeProps> = ({ isBot }) => (

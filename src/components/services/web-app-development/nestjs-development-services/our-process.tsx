@@ -57,7 +57,7 @@ const OurProcessMainContainer = () => {
           key={index}
         >
           <div
-            className={`w-[381px] lg:w-[282px] sm:w-[250px] xs:w-full text-center xs:text-start xs:flex xs:flex-col xs:gap-3 xs:bg-innerContainer xs:p-5 xs:rounded-[32px] xs:border-[1.45px] xs:hover:bg-gradientOnHover xs:cursor-pointer xs:transition-all duration-1000 xs:hover:border-borderPrimary ${
+            className={`w-[381px] lg:w-[282px] sm:w-[234px] xs:w-full text-center xs:text-start xs:flex xs:flex-col xs:gap-3 xs:bg-innerContainer xs:p-5 xs:rounded-[32px] xs:border-[1.45px] xs:hover:bg-gradientOnHover xs:cursor-pointer xs:transition-all duration-1000 xs:hover:border-borderPrimary ${
               isInView
                 ? "border-viewportBorder  grayscale-0"
                 : "border-transparent grayscale"

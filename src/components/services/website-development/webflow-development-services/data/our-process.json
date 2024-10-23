@@ -1,0 +1,22 @@
+[
+    {
+        "image": "/services/low-code-development/landing-page/our-services/code.webp",
+        "title": "Website Development",
+        "description": "We meticulously craft your website, ensuring a seamless user experience and optimal performance. The website is designed with the end-user in mind, aiming to provide them with an intuitive and effortless interaction with the site. This involves factors such as easy navigation, clear layout, and intuitive functionalities, all geared towards making the user’s journey on the website as smooth and enjoyable as possible. "
+    },
+    {
+        "image": "/services/admin-development/nextjs-development-services/our-process/maintenance.webp",
+        "title": "CMS Creation & Management",
+        "description": "By having the ability to effortlessly manage and update your content through the CMS, you can ensure that your website remains dynamic and engaging, with new information, products, or services being added as needed."
+    },
+    {
+        "image": "/about-us/our-values/honesty.png",
+        "title": "Lead Capture & Nurturing",
+        "description": "To capture leads and nurture them through automated follow-ups, the integrated system is not just about gathering information but also about actively engaging with potential customers. Leads captured through your website, such as through contact forms or newsletter sign-ups, are automatically added to your CRM."
+    },
+    {
+        "image": "/services/website-development/landing-page/website-development-services/landing-pages.png",
+        "title": "Data-Driven Optimization",
+        "description": "We don’t stop at launch. We continuously analyze user behaviour and utilize A/B testing to optimize your website for conversions, maximizing your return on investment. This involves tracking how users interact with the site, including which pages they visit, how long they stay, and what actions they take. By analyzing this data, insights can be gained into user preferences and behaviour patterns."
+    }
+]
