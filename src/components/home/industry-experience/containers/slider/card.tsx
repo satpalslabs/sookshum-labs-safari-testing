@@ -32,7 +32,7 @@ const Industry: React.FC<{
       className="h-[179px] w-fit lg:h-[112px] pl-3 pb-2 pt-1 object-contain float-left sm:w-[100px]"
     />
     <div className="p-4 flex flex-col gap-[10px] xs:p-1 ">
-      <H6 classes="text-white" text={industry.title} />
+      <H6 classes="!text-white" text={industry.title} />
       <Description
         children={null}
         text={industry.description}

@@ -25,20 +25,22 @@ type ServiceType = {
 
 const services: ServiceType[] = data["web-development-services"];
 const Services: React.FC = () => (
-  <OuterComponent>
-    <OuterFlexComponent>
-      <SectionHeader
-        buttonText="Services"
-        description="We help transform your online presence with our expert website development services, designed to enhance user experience and drive measurable business results."
-        style="w-[770px] text-wrap xs:w-full"
-      >
-        <div className="w-[1000px] leading-[1.4] lg:w-[735px] sm:w-[600px] xs:w-full xxl:w-[1060px] text-center text-wrap mx-auto">
-          We build result-oriented websites open new growth opportunities
-        </div>
-      </SectionHeader>
-      <ServiceCards />
-    </OuterFlexComponent>
-  </OuterComponent>
+  <div id="services">
+    <OuterComponent>
+      <OuterFlexComponent>
+        <SectionHeader
+          buttonText="Services"
+          description="We help transform your online presence with our expert website development services, designed to enhance user experience and drive measurable business results."
+          style="w-[770px] text-wrap xs:w-full"
+        >
+          <div className="w-[1000px] leading-[1.4] capitalize lg:w-[735px] sm:w-[600px] xs:w-full xxl:w-[1060px] text-center text-wrap mx-auto">
+            We build result-oriented websites open new growth opportunities
+          </div>
+        </SectionHeader>
+        <ServiceCards />
+      </OuterFlexComponent>
+    </OuterComponent>
+  </div>
 );
 
 export default Services;
@@ -65,7 +67,7 @@ const ServiceCards: React.FC = () => {
             <div className="flex flex-col gap-5 lg:gap-[12px] sm:gap-2 grow">
               <H6
                 text={service.heading}
-                classes="text-white w-[80%] lg:w-full"
+                classes="!text-white w-[80%] lg:w-full"
               />
               <Description
                 children={null}

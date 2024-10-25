@@ -11,6 +11,7 @@ import Benefits from "./benefits";
 import Technologies from "./technologies";
 import Work from "./work";
 import OurServices from "./our-services";
+import GoTopButton from "@components/basic-components/go-to-top";
 
 const content_heroSection: HeroSection = {
   gradientTextStyle: "",
@@ -28,7 +29,7 @@ const content_heroSection: HeroSection = {
       "xxl:!h-[530px] xxl:left-[50%] xxl:-translate-x-[35%] !h-[550px] lg:!h-[380px] sm:!h-[340px] xs:!h-[220px] xs:!top-[-20%] !top-[-15%] xxl:!top-[-9%]",
   },
   aboutPage:
-    "We build top-notch quality Flutter Appps fast and on-budget. <br/> We have been working with Flutter longer than anyone.",
+    "We deliver high-quality Flutter apps quickly and within budget. With extensive experience in Flutter development, we are among the pioneers in the field.",
 };
 
 const Flutter_DevelopmentServices: React.FC<HomeProps> = ({ isBot }) => (
@@ -45,6 +46,8 @@ const Flutter_DevelopmentServices: React.FC<HomeProps> = ({ isBot }) => (
     {/* Temporary disable */}
     {/* <Faqs DataKey={"ecommerce-development-landing-page"}/> */}
     <LetsConnect />
+    <GoTopButton />
+
   </div>
 );
 

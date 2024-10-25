@@ -17,21 +17,23 @@ type benefit = {
 
 const benefitsData: benefit[] = data;
 const Benefits = () => (
-  <OuterComponent>
-    <OuterFlexComponent>
-      <SectionHeader
-        buttonText="Benefits "
-        description="With our UI UX design company, proficient design approach, unique UI UX design services, <br /> and a track record of successfully designing 200+ digital products,<br /> we deliver experiences that align with your business goals."
-        style="!w-[820px] w-full xs:px-10"
-      >
-        <div className="xs:w-full xs:text-wrap xs:text-center">
-          Drive impact with top <br />{" "}
-          <span className="italic font-light">uI uX design </span>company
-        </div>
-      </SectionHeader>
-      <BenefitCards />
-    </OuterFlexComponent>
-  </OuterComponent>
+  <div id="benefits">
+    <OuterComponent>
+      <OuterFlexComponent>
+        <SectionHeader
+          buttonText="Benefits "
+          description="With our UI UX design company, proficient design approach, unique UI UX design services,and a track record of successfully designing 200+ digital products, we deliver experiences that align with your business goals."
+          style="!w-[820px] sm:!w-[680px] xs:!w-full "
+        >
+          <div className="xs:w-full xs:text-wrap xs:text-center leading-[1.4] capitalize">
+            Drive impact with top <br />{" "}
+            <span className="italic font-light">uI uX design </span>company
+          </div>
+        </SectionHeader>
+        <BenefitCards />
+      </OuterFlexComponent>
+    </OuterComponent>
+  </div>
 );
 
 export default Benefits;
@@ -88,21 +90,21 @@ const ActiveBenefit: React.FC<{
     <div className="xxl:w-[60.17%] w-[53.17%] sm:w-[52.4%] xs:w-full shrink-0 flex flex-col gap-1">
       <H2>
         <div
-          className={`xxl:text-[36px] text-[32px] lg:text-[24px] xs:text-[20px]  transition-all duration-300 leading-[1.3] font-medium`}
+          className={`xxl:text-[24px] text-[20px] sm:text-base xs:text-sm  transition-all duration-300 leading-[1.3] font-medium`}
         >
           {props.detailData.tab}
         </div>
       </H2>
       <Description text={""} classes="">
         <div
-          className="unreset leading-[1.3] xxl:text-[24px] text-[20px] lg:text-sm sm:text-[13px] xs:text-xs text-white grow-1 font-normal"
+          className="unreset leading-[1.3] xxl:!text-[20px] !text-[18px] lg:!text-sm sm:!text-[13px] xs:!text-xs grow-1 font-normal"
           dangerouslySetInnerHTML={{ __html: props.detailData["detail-data"] }}
         />
       </Description>
     </div>
     <img
       src={props.detailData.image}
-      className="object-contain xxl:w-[39%] w-[47%] lg:w-[45%] sm:w-[46%] xs:w-full"
+      className="object-cover xxl:w-[39%] w-[47%] lg:w-[45%] sm:w-[46%] xs:w-full"
     />
   </Card>
 );

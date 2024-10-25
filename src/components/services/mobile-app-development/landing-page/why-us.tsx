@@ -24,12 +24,12 @@ const ChooseUs = () => {
   const isInView = useInView(ref);
 
   return (
-    <div>
+    <div id="why-us">
       <OuterComponent>
         <div className="flex items-center bg-black overflow-hidden max-w-[1920px] mx-auto">
           <div className="flex sm:flex-col gap-[80px] md:gap-[60px] sm:gap-12 justify-between ">
             <H2>
-              <div className="text-wrap text-[47px] lg:text-[36px] sm:text-[26px] leading-[1.1] w-[590px] xxl:w-[90%] lg:w-[80%] sm:w-full lg:tracking-normal tracking-tight">
+              <div className="text-wrap text-white text-[47px] lg:text-[36px] sm:text-[26px] leading-[1.1] w-[590px] xxl:w-[90%] lg:w-[80%] sm:w-full lg:tracking-normal tracking-tight">
                 Our team can design and develop mobile apps to cater individual
                 workflow and requirements of your company. Here’s how we can
                 help you:
@@ -68,9 +68,9 @@ const ChooseUs = () => {
           <SectionHeader
             buttonText="Why us?"
             description="Whether you want to consult and idea, add missing capabilities, quickly expand your team, or hand over a project - we’ve got your covered. "
-            style="w-[900px] lg:w-[50%] sm:w-[65%] xs:w-full"
+            style="w-[900px] lg:w-[50%] sm:w-[65%] xs:w-full "
           >
-            <div className="w-[80%] sm:w-[90%] text-wrap xs:w-full text-center mx-auto xs:text-wrap leading-[1.2]">
+            <div className="w-[80%] sm:w-[90%] text-wrap xs:w-full text-center mx-auto xs:text-wrap leading-[1.4] capitalize">
               Why <span className="italic font-light">choose us </span> for app
               development services?
             </div>
@@ -125,7 +125,7 @@ const ChooseUsCard: React.FC<{ isInView: boolean; ind: number }> = ({
       <div className="flex flex-col gap-6 lg:gap-3 p-4 lg:p-0 pb-0 sm:gap-2 ">
         <H6
           text={whyUsData[ind].heading}
-          classes="text-white w-[80%] grow xxl:text-3xl md:text-[20px] md:w-full md:leading-[1.2] leading-[1.6]"
+          classes="!text-white w-[80%] grow xxl:text-3xl md:text-[20px] md:w-full md:leading-[1.2] leading-[1.6]"
         />
         <Description
           children={null}

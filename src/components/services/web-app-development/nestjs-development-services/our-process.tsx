@@ -15,21 +15,23 @@ interface process {
 
 const process_data: process[] = data;
 const OurProcess: React.FC = () => (
-  <OuterComponent>
-    <OuterFlexComponent>
-      <SectionHeader
-        buttonText="Our Process"
-        description="By implementing a client-centered approach and being attentive to details, we create stellar projects that fulfil our client’s needs. Following Agile methodologies, we adapt and evolve our approach as required throughout the development cycle."
-        style="w-[990px] lg:!w-[740px] xs:!w-[400px] 3xs:!w-[310px]"
-      >
-        <div className="xs:w-full w-full sm:w-[80%] mx-auto leading-[1.4] text-wrap text-center">
-          Process Of
-          <span className="italic font-light"> NestJs </span> Development
-        </div>
-      </SectionHeader>
-      <OurProcessMainContainer />
-    </OuterFlexComponent>
-  </OuterComponent>
+  <div id="our-process">
+    <OuterComponent>
+      <OuterFlexComponent>
+        <SectionHeader
+          buttonText="Our Process"
+          description="By adopting a client-centered approach and paying close attention to detail, we deliver exceptional projects that meet our clients' needs. Utilizing Agile methodologies, we continuously adapt and refine our approach throughout the development cycle."
+          style="w-[990px] lg:!w-[740px] xs:!w-[400px] 3xs:!w-[310px]"
+        >
+          <div className="xs:w-full w-full sm:w-[80%] mx-auto leading-[1.4] capitalize text-wrap text-center">
+            Our Process Of
+            <span className="italic font-light"> NestJS </span> Development
+          </div>
+        </SectionHeader>
+        <OurProcessMainContainer />
+      </OuterFlexComponent>
+    </OuterComponent>
+  </div>
 );
 
 export default OurProcess;
@@ -65,7 +67,7 @@ const OurProcessMainContainer = () => {
           >
             <img src={process.image} className="hidden xs:block w-[52px]  " />
             <div className="flex flex-col gap-3 lg:gap-2">
-              <H4 style="!leading-[1.25]" text={process.title} />
+              <H4 style="!text-white !leading-[1.25]" text={process.title} />
               <Description
                 children={null}
                 classes="!text-lg lg:!text-sm sm:!text-xs w-full sm:!tracking-tight"

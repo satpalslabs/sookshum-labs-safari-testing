@@ -11,7 +11,7 @@ export type contentProps = {
   source: string;
 };
 const Hero: React.FC = () => (
-  <div className="w-full relative shrink-0">
+  <div className="w-full relative shrink-0" id="hero">
     <GradientSection
       buttonText="Our Services"
       gradientText="We craft custom software solutions that power your business growth"

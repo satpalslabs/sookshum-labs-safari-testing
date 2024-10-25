@@ -23,6 +23,7 @@ const Mediums: React.FC = () => {
   return (
     <OuterComponent>
       <section
+        id="medium-to-connect"
         ref={ref}
         className={` ${isInView ? "grayscale-0" : "grayscale"} w-full `}
       >

@@ -1,22 +1,22 @@
 [
     {
         "image": "/services/mobile-app-devlopment/flutter-development-services/our-services/chat.png",
-        "title": "Transparency",
-        "description": "Sookshum Labs ensures a clear and transparent process from start to finish, allowing clients to stay fully informed about the progress and details of their projects. "
+        "title": "Consultancy",
+        "description": "Our expert team will support you in managing your Retool environment, offering valuable insights to help you make informed decisions. "
     },
     {
         "image": "/services/mobile-app-devlopment/landing-page/why-us/maintain.png",
-        "title": "Communication",
-        "description": "Effective communication is prioritized to ensure that all project requirements are clearly understood and met, facilitating smooth collaboration and timely delivery. "
+        "title": "Build your MVP",
+        "description": "We can help you rapidly build your MVP using Retool, allowing you to concentrate on validated learning."
     },
     {
         "image": "/services/admin-development/nextjs-development-services/why-us/cutting-edge-technologies.webp",
-        "title": "Business Ethics",
-        "description": "Sookshum Labs adheres to high standards of professionalism and integrity, ensuring that all dealings are conducted ethically and responsibly. "
+        "title": "Integration",
+        "description": "With its numerous pre-built integrations and custom solutions, we seamlessly connect Retool with your existing software."
     },
     {
         "image": "/services/web-app-development/landing-page/why-us/develop.png",
-        "title": "Cost-Effectiveness ",
-        "description": "Clients receive competitive pricing for NestJs development, providing access to top-tier services without compromising on quailty or breaking the budget."
+        "title": "Training",
+        "description": "We offer hands-on training for utilizing and contributing to Retool apps. Collaborating closely with your team, we provide personalized guidance tailored to your business needs."
     }
 ]

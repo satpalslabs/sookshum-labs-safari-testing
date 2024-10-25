@@ -19,25 +19,27 @@ type Process = {
 };
 const processData: Process[] = data["our-process"];
 const OurProcess = () => (
-  <OuterComponent>
-    <OuterFlexComponent>
-      <SectionHeader
-        buttonText="Our Process"
-        description="Having successfully delivered hundreds of projects, our transparent and agile development process will guide your project from discovery to launch."
-        style="w-[986px] lg:w-[491px] lg:mx-auto xs:w-full"
-      >
-        <div className="w-full lg:w-[637px] sm:w-full xs:px-3 xs:w-full 3xs:px-0 xs:text-balance lg:leading-[1.2] text-wrap tracking-tight text-center mx-auto ">
-          Our process for{" "}
-          <span className="italic font-light w-full">
-            {" "}
-            Web App development{" "}
-          </span>
-          success.
-        </div>
-      </SectionHeader>
-      <OurProcessDetailComponent />
-    </OuterFlexComponent>
-  </OuterComponent>
+  <div id="our-process">
+    <OuterComponent>
+      <OuterFlexComponent>
+        <SectionHeader
+          buttonText="Our Process"
+          description="Having successfully delivered hundreds of projects, our transparent and agile development process will guide your project from discovery to launch."
+          style="w-[986px] lg:w-[491px] lg:mx-auto xs:w-full"
+        >
+          <div className="w-full lg:w-[637px] sm:w-full xs:px-3 xs:w-full 3xs:px-0 xs:text-balance lg:leading-[1.2] text-wrap tracking-tight text-center mx-auto leading-[1.4] capitalize">
+            Our process for{" "}
+            <span className="italic font-light w-full">
+              {" "}
+              Web App development{" "}
+            </span>
+            success.
+          </div>
+        </SectionHeader>
+        <OurProcessDetailComponent />
+      </OuterFlexComponent>
+    </OuterComponent>
+  </div>
 );
 
 export default OurProcess;
@@ -69,17 +71,17 @@ const OurProcessDetailComponent: React.FC = () => {
           src={processData[activeProcess].image}
           alt=""
         />
-        <div className="flex flex-col pt-[18px] lg:pt-[15px] sm:grow">
-          <H4 style="" text={`0${activeProcess + 1}`} />
+        <div className="flex  flex-col pt-[18px] lg:pt-[15px] sm:grow ">
+          <H4 style="!text-white" text={`0${activeProcess + 1}`} />
           <div className="pl-6 pt-1 flex flex-col gap-[51px] sm:gap-[42px] xs:gap-[19px] sm:w-[80%] xs:w-full">
             <div className=" flex flex-col gap-[21px] xs:gap-[10px]">
               <H4
-                style="leading-[1.4] h-fit w-[200px] text-wrap"
+                style="leading-[1.4] h-fit w-[200px] text-wrap !text-white"
                 text={processData[activeProcess]["process-title"]}
               />
               <Description
                 children={null}
-                classes="!text-white leading-[1.4] !font-normal"
+                classes="!text-darkButton_text leading-[1.4] !font-normal "
                 text={processData[activeProcess].description}
               />
             </div>
@@ -92,7 +94,7 @@ const OurProcessDetailComponent: React.FC = () => {
                     </div>
                     <Description
                       children={null}
-                      classes="!text-white leading-[1.4] !font-medium"
+                      classes="!text-darkButton_text leading-[1.4] !font-medium"
                       text={listItem}
                     />
                   </div>

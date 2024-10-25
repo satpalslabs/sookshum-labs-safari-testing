@@ -19,21 +19,23 @@ const TechnologiesData: service | undefined = data.services.find(
   (technology) => technology.label == "ECommerce Development"
 );
 const Technologies = () => (
-  <OuterComponent>
-    <OuterFlexComponent>
-      <SectionHeader
-        buttonText="Technologies we use"
-        description="We'll help you define your brand, build a powerful online presence, and reach your target audience effectively."
-        style="w-[794px] xs:w-full"
-      >
-        <div className="w-full xs:w-full text-wrap text-center mx-auto">
-          Building <span className="italic font-light">Tech-Driven</span>{" "}
-          eCommerce Store
-        </div>
-      </SectionHeader>
-      <TechnologiesCards />
-    </OuterFlexComponent>
-  </OuterComponent>
+  <div id="technologies">
+    <OuterComponent>
+      <OuterFlexComponent>
+        <SectionHeader
+          buttonText="Technologies we use"
+          description="We'll help you define your brand, build a powerful online presence, and reach your target audience effectively."
+          style="w-[794px] xs:w-full"
+        >
+          <div className="w-full xs:w-full text-wrap text-center mx-auto leading-[1.4] capitalize">
+            Building <span className="italic font-light">Tech-Driven</span>{" "}
+            eCommerce Store
+          </div>
+        </SectionHeader>
+        <TechnologiesCards />
+      </OuterFlexComponent>
+    </OuterComponent>
+  </div>
 );
 
 export default Technologies;
@@ -65,7 +67,7 @@ const TechnologiesCards: React.FC = () => {
                 </div>
                 <H6
                   text={TechnologiesCard?.title}
-                  classes="text-white w-[80%]"
+                  classes="!text-white w-[80%]"
                 />
                 <Description
                   children={null}

@@ -19,21 +19,24 @@ type choose_us = {
 
 const chooseUsData: choose_us[] = data;
 const ChooseUs: React.FC = () => (
-  <OuterComponent>
-    <OuterFlexComponent>
-      <SectionHeader
-        buttonText="Why choose us?"
-        description="At Sookshum Labs, we create top-quality Retool projects that contain a peculiar combination of superior coding and clean system architecture. With such products, we realize our aim of helping our clients achieve improved results by delivering them cost-effective services."
-        style="xxl:!w-[75%] !w-full lg:!w-[740px] xs:!w-full"
-      >
-        <div className="xs:w-full sm:w-[80%] w-full mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
-          Why choose us for <span className="italic font-light"> Retool </span>{" "}
-          Development Services?
-        </div>
-      </SectionHeader>
-      <MainContainer />
-    </OuterFlexComponent>
-  </OuterComponent>
+  <div id="why-us">
+    <OuterComponent>
+      <OuterFlexComponent>
+        <SectionHeader
+          buttonText="Why choose us?"
+          description="At Sookshum Labs, we develop high-quality Retool projects that feature a unique blend of exceptional coding and clean system architecture. Through these products, we strive to help our clients achieve better results by providing cost-effective services."
+          style="xxl:!w-[75%] !w-full lg:!w-[740px] xs:!w-full"
+        >
+          <div className="xs:w-full sm:w-[80%] w-full mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
+            Why choose us for{" "}
+            <span className="italic font-light"> Retool </span> Development
+            Services?
+          </div>
+        </SectionHeader>
+        <MainContainer />
+      </OuterFlexComponent>
+    </OuterComponent>
+  </div>
 );
 
 export default ChooseUs;
@@ -61,7 +64,7 @@ const MainContainer: React.FC = () => {
             <div className="flex flex-col gap-4 lg:gap-3 sm:gap-2">
               <H6
                 text={chooseUs.title}
-                classes="text-white xxl:text-3xl !font-[500] !text-[20px] sm:!text-[14px] md:!leading-[1.4] !leading-[1.6]"
+                classes="!text-white xxl:text-3xl !font-[500] capitalize !text-[20px] sm:!text-[14px] md:!leading-[1.4] !leading-[1.6]"
               />
               <Description
                 children={null}

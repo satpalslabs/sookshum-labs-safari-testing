@@ -17,8 +17,11 @@ const PredictableResults: React.FC = () => {
 
   return (
     <section
+      id="predictable-results"
       ref={ref}
-      className="px-[0px] pt-[120px] md:pt-[90px] sm:pt-[70px] xs:pt-[60px] xs:mt-[0px] sm:px-5 md:px-[20px] lg:px-10 2xs:px-5 flex flex-col gap-[36px]   items-center bg-black overflow-hidden max-w-[1920px] mx-auto"
+      className={`px-[0px] pt-[120px] md:pt-[90px] sm:pt-[70px] xs:pt-[60px] xs:mt-[0px] sm:px-5 md:px-[20px] lg:px-10 2xs:px-5 flex flex-col gap-[36px]   items-center bg-black overflow-hidden max-w-[1920px] mx-auto ${
+        isInView ? "grayscale-0" : "grayscale"
+      } w-full `}
     >
       <div
         className={`flex flex-col gap-[60px] lg:gap-[30px] xs:gap-2 items-center xs:w-full xs:px-4 `}

@@ -63,7 +63,7 @@ const Dropdown = ({
       }}
       className={`absolute z-50 w-full max-w-[1920px] mt-3 mx-auto bottom-0 translate-y-full sm:translate-y-0 sm:relative left-0 sm:-top-4 sm:pt-0 sm:pl-6 sm:pr-4 xs:pl-4 `}
     >
-      <div className=" flex sm:flex-col gap-[105px] lg:gap-5 sm:gap-[48px] z-50 w-full bg-layoutBackground sm:bg-transparent border border-t-0 border-borderDarkButton sm:border-none rounded-b-[32px]  font-poppins text-gray-400 top-[70px] left-0 px-[81px] py-8 lg:px-10 lg:py-[34px] sm:!px-0 sm:py-0">
+      <div className=" flex sm:flex-col gap-[105px] lg:gap-5 sm:gap-[48px] z-50 w-full bg-layoutBackground sm:bg-transparent border border-t-0 border-borderDarkButton sm:border-none rounded-b-[32px]  font-poppins text-dropdown_text top-[70px] left-0 px-[81px] py-8 lg:px-10 lg:py-[34px] sm:!px-0 sm:py-0">
         <div className="flex flex-col gap-2 grow ">
           {data.services.map((item: service, index: number) => (
             <DropdownService
@@ -112,7 +112,7 @@ const DetailServiceContentSection = ({
           fill
           sizes=""
           alt=""
-          src={"/header/work-together.png"}
+          src={"/header/work-together-2.svg"}
           blurDataURL="URL"
           placeholder="blur"
         />

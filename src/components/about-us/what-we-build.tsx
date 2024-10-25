@@ -14,6 +14,7 @@ const WhatWeBuild: React.FC = () => {
     <OuterComponent>
       <div
         ref={ref}
+        id="what-we-build"
         className={`flex flex-col gap-5 lg:gap-[40px] sm:gap-[35px] xs:gap-3 ${
           isInView ? "grayscale-0" : "grayscale"
         }`}
@@ -53,7 +54,7 @@ const WhatWeBuild: React.FC = () => {
             height="2200"
             alt=""
             src="/about-us/who-we-are/screen.webp"
-            className="grow h-[633px] lg:h-[403px] sm:h-[291px] xs:h-[219px] overflow-hidden object-cover rounded-[32px]"
+            className="grow xxl:h-[683px] h-[633px] lg:h-[403px] sm:h-[291px] xs:h-[219px] overflow-hidden object-cover rounded-[32px]"
             blurDataURL="URL"
             placeholder="blur"
           />

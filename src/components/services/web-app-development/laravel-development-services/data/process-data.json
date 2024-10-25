@@ -1,22 +1,22 @@
 [
     {
         "title": "Requirement Analysis ",
-        "description": "This is a stage that involves detailed information, research and close inspection of the business ideal, goals and objectives. It also involves developing a development strategy and defining the various stages of development. "
+        "description": "This stage entails gathering detailed information, conducting thorough research, and closely examining the business idea, goals, and objectives. It also includes formulating a development strategy and outlining the different phases of the development process."
     },
     {
         "title": "Wireframing & Design",
-        "description": "The design stage is an important one and involves close coordination with the client using several techniques like wire-framing and prototyping. It involes brainstorming, creating several mock-ups and using several other techniques to develop the best interface to incorporate the business logic. "
+        "description": "The design stage is crucial and requires close collaboration with the client through various techniques, including wireframing and prototyping. It involves brainstorming sessions, creating multiple mock-ups, and employing various methods to develop the optimal interface that effectively integrates the business logic."
     },
     {
         "title": "Programming & Development",
-        "description": "It involves selecting the approximate tech stack and implementing advanced technologies if required. The project is broken into modules and each one is developed as per the priority by following a proven methodology, with regular updates provided at predefined intervals. "
+        "description": "This stage includes selecting an appropriate tech stack and incorporating advanced technologies when necessary. The project is divided into modules, with each one developed based on priority using a proven methodology, ensuring regular updates are provided at predefined intervals."
     },
     {
         "title": "Testing & Debugging",
-        "description": "The testing process takes place at every stage of the project and it is tested thoroughly at the end of the project. This includes both manual and automated testing with the help of several testing software. "
+        "description": "The testing process occurs at every stage of the project and is conducted thoroughly upon its completion. This includes both manual and automated testing, utilizing various testing software to ensure comprehensive coverage."
     },
     {
         "title": "Deployment & Maintenance",
-        "description": "The project is released after acceptance testing ensuring it meets the requirements and is free from bugs. It also involves inspecting for performance issues. The software is also supported after release and maintenance tasks like upgrading, security updates, modifying functionality and more."
+        "description": "The project is released following acceptance testing, ensuring it meets all requirements and is free from bugs. This phase also includes checking for performance issues. Post-release, the software is supported through maintenance tasks such as upgrades, security updates, functionality modifications, and more."
     }
 ]

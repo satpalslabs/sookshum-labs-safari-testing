@@ -2,27 +2,27 @@
     "process-services": [
         {
             "title": "Discovery ",
-            "description": "Our dashboard development methodology begins with an in-depth discovery process of gathering client requirements, goals, and business objectives for the dashboard. This information provides our team with a solid foundation and a way for us to measure our success along the way."
+            "description": "Our dashboard development methodology starts with a comprehensive discovery phase, where we gather client requirements, goals, and business objectives. This information serves as a strong foundation for our team and provides a benchmark for measuring our success throughout the project."
         },
         {
             "title": "Planning",
-            "description": "Following our discovery process and requirements gathering we begin to plan out a detailed schedule and list of deliverables that will be included in this particular dashboard service design and development. However, we are the first to admit that all planning is aspirational and reality soon requires changes. "
+            "description": "After completing our discovery process and gathering requirements, we create a detailed schedule and outline the deliverables for your dashboard design and development. However, we understand that plans can change, and we are prepared to adapt as reality unfolds."
         },
         {
             "title": "Design",
-            "description": "The principles of dashboard design best practices require that we don’t fall in love with our designs and ignore the functional requirements that have been meticulously spelled out from the beginning the functionality needs to lead the way when iit comes to deciding on a particular design direction. "
+            "description": "Dashboard design best practices emphasize the importance of prioritizing functionality over aesthetics. We must avoid becoming overly attached to our designs and instead focus on the functional requirements established from the outset, allowing those needs to guide our design decisions."
         },
         {
             "title": "Development",
-            "description": "Successful digital dashboard development requires that our designers and our developers work hand-in-hand with each other throughout the design process to certify each design concept is achievable and acceptable by your code developers."
+            "description": "Effective digital dashboard development necessitates close collaboration between our designers and developers throughout the entire design process. This teamwork ensures that each design concept is both feasible and meets the approval of your development team."
         },
         {
             "title": "Testing",
-            "description": "The Sookshum philosophy on testing is quite simple: test, re-test, and test again. This is not an exaggeration. There cheapest way to make mistakes is to find them during testing and not after any formal code has been built, and certainly not after a product has been released!"
+            "description": "Our testing philosophy is straightforward: test, retest, and test again. This isn't just a slogan; it's a fundamental approach. The most cost-effective way to identify mistakes is during the testing phase, before any formal code is developed or a product is released."
         },
         {
             "title": "Hand-Off",
-            "description": "Our hand-off process is more of a handshake that extends until an actual go-live date. Our designers know that bug fixing often involves changes to our design,  no matter who caused the bug, and we stay involved and ready to help our development team or your until the very last day of deployment,"
+            "description": "Our hand-off process is a collaborative effort that continues until the go-live date. Our designers understand that bug fixing often requires adjustments to our designs, regardless of the source of the issue. We remain actively engaged and ready to assist our development team or yours until the final deployment day."
         }
     ]
 }

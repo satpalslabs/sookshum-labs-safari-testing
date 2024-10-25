@@ -16,22 +16,27 @@ type Data = {
 const TechnologiesData: Data = data["web-development-technologies"];
 const Technologies = () => {
   return (
-    <OuterComponent>
-      <OuterFlexComponent>
-      <SectionHeader
-        buttonText="Technologies"
-        description="Based on market trends, we strive to develop scalable, maintainable, and futuristic solutions that keep up with the latest technology"
-        style="w-[700px] xs:w-full"
-      >
-        <div className="w-[80%] text-wrap xs:w-full tracking-tight text-center mx-auto xs:leading-[1.3] ">
-          Full
-          <span className="italic font-light w-full"> digital product </span>
-          expertise under one roof
-        </div>
-      </SectionHeader>
-      <TechnologiesCards />
-      </OuterFlexComponent>
-    </OuterComponent>
+    <div id="technologies">
+      <OuterComponent>
+        <OuterFlexComponent>
+          <SectionHeader
+            buttonText="Technologies"
+            description="Based on market trends, we strive to develop scalable, maintainable, and futuristic solutions that keep up with the latest technology"
+            style="w-[750px] sm:w-[95%] xs:w-full"
+          >
+            <div className="w-[80%] text-wrap xs:w-full tracking-tight text-center mx-auto xs:leading-[1.3] leading-[1.4] capitalize">
+              Full
+              <span className="italic font-light w-full">
+                {" "}
+                digital product{" "}
+              </span>
+              expertise under one roof
+            </div>
+          </SectionHeader>
+          <TechnologiesCards />
+        </OuterFlexComponent>
+      </OuterComponent>
+    </div>
   );
 };
 
@@ -55,7 +60,7 @@ const TechnologiesCards: React.FC = () => (
                 (technologyButton: Technology) => (
                   <div
                     className={
-                      "flex flex-col w-full gap-3 lg:gap-6 xs:gap-3 text-center items-center rounded-[27px] p-6 lg:py-5 lg:px-4 shrink-0 border-borderDarkButton [backdrop-filter:blur(100px)] text-light border-solid border bg-darkButton shadow-buttonInset"
+                      "flex flex-col w-full gap-3 lg:gap-6 xs:gap-3 text-center items-center rounded-[27px] p-6 lg:py-5 lg:px-4 shrink-0 border-borderDarkButton [backdrop-filter:blur(100px)] text-secondary border-solid border bg-darkButton shadow-buttonInset"
                     }
                     key={technologyButton["technology-name"]}
                   >

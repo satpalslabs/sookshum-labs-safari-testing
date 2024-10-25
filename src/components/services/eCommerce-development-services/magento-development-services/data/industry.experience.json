@@ -2,41 +2,41 @@
     {
         "tab": "Native AI",
         "detail": {
-            "image":"/services/e-commerce-development/magento-development-services/industry-experience/nativeAi.webp",
+            "image": "/services/e-commerce-development/magento-development-services/industry-experience/nativeAi.webp",
             "heading": "Boost conversions by tapping into powerful tools.",
-            "description": "Create AI-driven personalized experiences - for B2B and B2C customers.<br /><ul><li>Deliver relevant content and promotions in real time.</li><li>Increase your team’s productivity with AI-merchandising tools.</li><li>Use AI to deliver personalized site search, product recommendations, and browsing.</li></ul>"
+            "description": "Develop AI-driven personalized experiences for both B2B and B2C customers by:<br /><ul><li>Providing relevant content and promotions in real-time.</li><li>Enhancing your team's productivity with AI merchandising tools.</li><li>Utilizing AI for tailored site search, product recommendations, and browsing experiences.</li></ul>"
         }
     },
     {
         "tab": "B2B & B2C",
         "detail": {
-            "image":"/services/e-commerce-development/magento-development-services/industry-experience/b2b-b2c.webp",
-            "heading": "Manage multiple brands across channels and audiences while growing into new territory.",
-            "description": "Extend your reach to new countries and customer segments, and evolve sales strategies from a single platform.<br /><ul><li>Oversee both your B2C and B2B sites and marketplaces from one interface.</li><li>Rapidly deploy dozens or hundreds of storefronts at scale.</li><li>Localize each site per brand, catalog, country, and currency.</li><li>Tailor the checkout experience to shoppers around the world with payment services.</li></ul>"
+            "image": "/services/e-commerce-development/magento-development-services/industry-experience/b2b-b2c.webp",
+            "heading": "Manage multiple brands across channels and audiences while expanding into new markets.",
+            "description": "Expand your reach into new countries and customer segments while evolving your sales strategies from a unified platform:<br /><ul><li>Manage both your B2C and B2B sites, along with marketplaces, from a single interface.</li><li>Quickly launch dozens or even hundreds of storefronts at scale.</li><li>Customize each site based on brand, catalog, country, and currency.</li><li>Personalize the checkout experience for global shoppers with diverse payment options.</li></ul>"
         }
     },
     {
         "tab": "Platform architecture",
         "detail": {
-            "image":"/services/e-commerce-development/magento-development-services/industry-experience/platform-architecture.webp",
-            "heading": "An enterprise platform designed for endless growth. ",
-            "description": "Use powerful developer tools and an API-first, headless solutions to innovate quickly.<br /><ul><li>Quickly build custom apps and extend native capabilities with modern development tools and a server-less runtime.</li><li>Easily integrate or replace third-party services with a flexible API orchestration layer.</li><li>Build connected customer experiences across channels with a headless commerce platform.</li></ul>"
+            "image": "/services/e-commerce-development/magento-development-services/industry-experience/platform-architecture.webp",
+            "heading": "A scalable enterprise platform built for limitless growth.",
+            "description": "Use powerful developer tools and an API-first, headless solutions to innovate quickly.<br /><ul><li>Quickly build custom apps and enhance native features using modern development tools and a serverless runtime.</li><li>Seamlessly integrate or swap out third-party services with a versatile API orchestration layer.</li><li>Deliver connected customer experiences across channels with a headless commerce platform.</li></ul>"
         }
     },
     {
         "tab": "Scalable operations",
         "detail": {
-            "image":"/services/e-commerce-development/magento-development-services/industry-experience/scaleable-operations.webp",
-            "heading": "Get site performance, reliability, and speed - no matter the size of your business. ",
-            "description": "Advanced capabilities give you everything you need to provide personalized customer experiences at scale.<br /><ul><li>Deliver fast, flawless experiences during peak events with auto-scaling.</li><li>Reach your goals faster with the help of Adobe Managed Service experts.</li><li>Provide consistent and reliable customer experiences with cloud-native solutions and performance monitoring tools.</li><li>Operate and grow with confidence using a secure, compliant cloud infrastructure.</li></ul>"
+            "image": "/services/e-commerce-development/magento-development-services/industry-experience/scaleable-operations.webp",
+            "heading": "Achieve optimal site performance, reliability, and speed, regardless of your business size.",
+            "description": "Enhanced capabilities equip you with all the tools necessary to deliver personalized customer experiences at scale:<br /><ul><li>Ensure rapid, seamless experiences during peak times with auto-scaling technology.</li><li>Accelerate your success with support from Adobe Managed Service experts.</li><li>Maintain consistent and dependable customer interactions with cloud-native solutions and performance monitoring tools.</li><li>Grow and operate confidently with a secure, compliant cloud infrastructure.</li></ul>"
         }
     },
     {
         "tab": "Adobe Integrations",
         "detail": {
-            "image":"/services/e-commerce-development/magento-development-services/industry-experience/adobe-integrations.webp",
-            "heading": "Power deeper personalization with integrated Adobe Experience Cloud solutions",
-            "description": "Get unmatched insights to understand customers better and deliver the experiences customers expect with these Adobe apps.<br /><ul><li>Share commerce data with Adobe Analytics and Adobe Real-Time Customer Data Platform to get a 360-degree understanding of your customer and business.</li><li>Use commerce data to personalize touchpoints with Adobe Target and Adobe Journey Optimizer. </li><li>Access product information within Adobe Experience Manager to deliver high-impact content in your commerce experiences. </li></ul>"
+            "image": "/services/e-commerce-development/magento-development-services/industry-experience/adobe-integrations.webp",
+            "heading": "Enhance personalization through the integration of Adobe Experience Cloud solutions.",
+            "description": "Gain unparalleled insights to better understand your customers and deliver the experiences they expect with these Adobe applications:<br /><ul><li>Combine commerce data with Adobe Analytics and Adobe Real-Time Customer Data Platform for a comprehensive view of your customer and business.</li><li>Leverage commerce data to personalize interactions using Adobe Target and Adobe Journey Optimizer. </li><li>Utilize product information within Adobe Experience Manager to create compelling content for your commerce experiences.</li></ul>"
         }
     }
 ]

@@ -19,20 +19,22 @@ type service = {
 
 const discoverData: service[] = data;
 const Discover: React.FC = () => (
-  <OuterComponent>
-    <OuterFlexComponent>
-      <SectionHeader
-        buttonText="Discover"
-        description="We don’t just build WordPress sites; we craft digital experiences that resonate, convert, and endure."
-        style="w-[85.5%] lg:!w-[740px] xs:!w-full"
-      >
-        <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
-        What We Offer
-        </div>
-      </SectionHeader>
-      <MainContainer />
-    </OuterFlexComponent>
-  </OuterComponent>
+  <div id="discover">
+    <OuterComponent>
+      <OuterFlexComponent>
+        <SectionHeader
+          buttonText="Discover"
+          description="We don’t just create WordPress sites; we design digital experiences that engage, convert, and stand the test of time."
+          style="w-[85.5%] lg:!w-[740px] xs:!w-full"
+        >
+          <div className="xs:w-full mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
+            What We Offer
+          </div>
+        </SectionHeader>
+        <MainContainer />
+      </OuterFlexComponent>
+    </OuterComponent>
+  </div>
 );
 
 export default Discover;
@@ -60,7 +62,7 @@ const MainContainer: React.FC = () => {
             <div className="flex flex-col gap-4 lg:gap-3 sm:gap-2">
               <H6
                 text={item.title}
-                classes="text-white xxl:text-3xl !font-[500] !text-[20px] sm:!text-[14px] md:!leading-[1.4] !leading-[1.6]"
+                classes="!text-white xxl:text-3xl !font-[500] !text-[20px] sm:!text-[14px] md:!leading-[1.4] !leading-[1.6]"
               />
               <Description
                 children={null}

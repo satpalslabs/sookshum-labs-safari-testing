@@ -11,6 +11,7 @@ import PredictableResults from "./predictable-results";
 import Capabilities from "./capability";
 import WhyUs from "./why-us";
 import OurServices from "./our-services";
+import GoTopButton from "@components/basic-components/go-to-top";
 
 const content_heroSection: HeroSection = {
   gradientTextStyle: "",
@@ -28,7 +29,7 @@ const content_heroSection: HeroSection = {
       "xxl:!h-[520px] xxl:left-[50%] xxl:-translate-x-[35%] !h-[550px] lg:!h-[380px] sm:!h-[340px] xs:!h-[220px] xs:!top-[-20%] !top-[-15%] xxl:!top-[-8%]",
   },
   aboutPage:
-    "Our landing page design company will help you increase your online presence, start driving more leads and convert them into regular customers.",
+    "Our landing page design agency will enhance your online presence, help you attract more leads, and convert them into loyal customers.",
 };
 
 const LandingPageUI_DesignComponent: React.FC<HomeProps> = (props) => (
@@ -45,6 +46,8 @@ const LandingPageUI_DesignComponent: React.FC<HomeProps> = (props) => (
     {/* Temporary disable */}
     {/* <Faqs DataKey={"ui-ux-design"} /> */}
     <LetsConnect />
+    <GoTopButton />
+
   </div>
 );
 

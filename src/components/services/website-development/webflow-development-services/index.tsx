@@ -10,6 +10,7 @@ import OurProcess from "./our-process";
 import OurServices from "./our-services";
 import Work from "./work";
 import LetsConnect from "./need-project";
+import GoTopButton from "@components/basic-components/go-to-top";
 
 const content_heroSection: HeroSection = {
   gradientTextStyle: "",
@@ -27,7 +28,7 @@ const content_heroSection: HeroSection = {
       "xxl:!h-[530px] xxl:left-[50%] xxl:-translate-x-[35%] !h-[550px] lg:!h-[380px] sm:!h-[340px] xs:!h-[220px] xs:!top-[-20%] !top-[-15%] xxl:!top-[-9%] ",
   },
   aboutPage:
-    "As a certified Webflow partner, we’re experts in making that pixel-perfect and fully responsive website with all the necessary functions and integrations.",
+    "We excel in creating pixel-perfect, fully responsive Webflow websites equipped with all the essential functions and integrations.",
 };
 
 const Webflow_Development: React.FC<HomeProps> = ({ isBot }) => (
@@ -35,13 +36,15 @@ const Webflow_Development: React.FC<HomeProps> = ({ isBot }) => (
     <Hero {...content_heroSection} />
     <WhoWeAre />
     <WhyUs />
-    <OurProcess />
     <OurServices />
+    <OurProcess />
     {!isBot && <Work />}
     {!isBot && <Testimonials />}
     {/* Temporary disable */}
     {/* <Faqs DataKey={"website-development-landing-page"} /> */}
     <LetsConnect />
+    <GoTopButton />
+
   </div>
 );
 

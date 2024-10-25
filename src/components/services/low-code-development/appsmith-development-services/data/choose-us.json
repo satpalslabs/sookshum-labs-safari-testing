@@ -2,16 +2,16 @@
     {
         "image": "/services/mobile-app-devlopment/flutter-development-services/our-services/chat.png",
         "title": "Low-Code Development Consulting ",
-        "description": "Our low-code experts can evaluate your project, select the most suitable platform, and provide initial time and cost estimates."
+        "description": "Our low-code experts can assess your project, identify the most appropriate platform, and deliver initial time and cost estimates."
     },
     {
         "image": "/services/admin-development/nextjs-development-services/our-process/maintenance.webp",
         "title": "Development Speed",
-        "description": "Our experience and expertise allow our developers to create software at a fast pace. Our team can complete a project in a few weeks or months, depending on the complexity level. "
+        "description": "Our experience and expertise enable our developers to rapidly create software. Depending on the complexity, our team can complete a project in just a few weeks or months."
     },
     {
         "image": "/services/e-commerce-development/magento-development-services/our-process/development.webp",
         "title": "Deep Low-Code Expertise",
-        "description": "We have delivered low-code apps to businesses across multiple industries for 7+ years. We know what platform to choose and how to connect it with your existing systems. "
+        "description": "For over five years, we have provided low-code applications to businesses across various industries. We understand which platform to select and how to integrate it with your existing systems."
     }
 ]

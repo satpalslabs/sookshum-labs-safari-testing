@@ -10,6 +10,7 @@ import OuterFlexComponent from "@components/basic-components/main-flex-container
 import Description from "@components/basic-components/description";
 import Image from "next/image";
 import H6 from "@components/basic-components/headings/H6";
+import H3 from "@components/basic-components/headings/H3";
 
 type service = {
   title: string;
@@ -19,20 +20,22 @@ type service = {
 
 const processData: service[] = data;
 const OurProcess: React.FC = () => (
-  <OuterComponent>
-    <OuterFlexComponent>
-      <SectionHeader
-        buttonText="Our Process"
-        description="We don’t just create stunning websites, we build collaborative partnerships that fuel your growth. "
-        style="w-[85.5%] lg:!w-[740px] xs:!w-full"
-      >
-        <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
-          Our Collaborative Process{" "}
-        </div>
-      </SectionHeader>
-      <MainContainer />
-    </OuterFlexComponent>
-  </OuterComponent>
+  <div id="our-process">
+    <OuterComponent>
+      <OuterFlexComponent>
+        <SectionHeader
+          buttonText="Our Process"
+          description="We don’t just create stunning websites, we build collaborative partnerships that fuel your growth. "
+          style="w-[85.5%] lg:!w-[740px] xs:!w-full"
+        >
+          <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
+            Our Collaborative Process{" "}
+          </div>
+        </SectionHeader>
+        <MainContainer />
+      </OuterFlexComponent>
+    </OuterComponent>
+  </div>
 );
 
 export default OurProcess;
@@ -61,11 +64,11 @@ const MainContainer: React.FC = () => {
               <Description
                 children={null}
                 text={"STEP " + (index + 1)}
-                classes="grow-0 h-fit !text-light sm:!text-xs text-lg !font-normal"
+                classes="grow-0 h-fit !text-secondary sm:!text-xs text-lg !font-normal"
               />
-              <H6
+              <H3
                 text={item.title}
-                classes="text-white xxl:text-3xl !font-[500] !text-[20px] sm:!text-[14px] md:!leading-[1.4] !leading-[1.6]"
+                style="!text-white xxl:text-3xl !font-[500] !text-[20px] sm:!text-[14px] md:!leading-[1.4] !leading-[1.6]"
               />
               <Description
                 children={null}

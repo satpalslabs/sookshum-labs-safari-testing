@@ -13,7 +13,7 @@ const Description = dynamic(() => import("@components/basic-components/descripti
 const TextContainer = ({ item }: { item: dataItem }) => (
   <div className="flex flex-col gap-6 md:gap-5 px-4 md:px-2 sm:px-[6px] sm:gap-4 grow h-fit">
     <div className="flex flex-col gap-[14px] md:gap-3 pt-8 grow ">
-      <H4 style="" text={item.id} />
+      <H4 style="!text-h3_heading" text={item.id} />
        <Description children={null} text={item.description} classes={"!font-normal"} />
     </div> 
     {/* <DarkButton style="group-hover:!bg-buttonGradient" text="Learn more" /> */}

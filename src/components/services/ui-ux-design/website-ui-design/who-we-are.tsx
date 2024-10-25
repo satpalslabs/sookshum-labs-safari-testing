@@ -19,20 +19,22 @@ type item_type = {
 
 const dataItems: item_type[] = data;
 const WhoWeAre: React.FC = () => (
-  <OuterComponent>
-    <OuterFlexComponent>
-      <SectionHeader
-        buttonText="Who we are"
-        description="We combine our team’s depth of experience in design, our client’s intimate knowledge of the industries they serve and insights uncovered through the discoveries we make."
-        style="xxl:!w-[75%] !w-full lg:!w-[740px] xs:!w-full"
-      >
-        <div className="xs:w-full sm:w-[80%] w-full mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
-          We will give your website a makeover and get you more conversions
-        </div>
-      </SectionHeader>
-      <MainContainer />
-    </OuterFlexComponent>
-  </OuterComponent>
+  <div id="who-we-are">
+    <OuterComponent>
+      <OuterFlexComponent>
+        <SectionHeader
+          buttonText="Who we are"
+          description="We blend our design expertise, our clients industry knowledge, and research-driven insights to create powerful solutions."
+          style="xxl:!w-[75%] !w-full lg:!w-[740px] xs:!w-full"
+        >
+          <div className="xs:w-full sm:w-[80%] w-full mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
+            We will give your website a makeover and get you more conversions
+          </div>
+        </SectionHeader>
+        <MainContainer />
+      </OuterFlexComponent>
+    </OuterComponent>
+  </div>
 );
 
 export default WhoWeAre;
@@ -64,12 +66,12 @@ const MainContainer: React.FC = () => {
             <div className="flex flex-col gap-4 lg:gap-3 sm:gap-2">
               <H6
                 text={item.title}
-                classes="text-white xxl:text-3xl !font-[500] !text-[20px] sm:!text-[14px] md:!leading-[1.4] !leading-[1.6]"
+                classes="text-white xxl:!text-3xl !font-[500] !text-[26px] sm:!text-[18px] md:!leading-[1.4] !leading-[1.6]"
               />
               <Description
                 children={null}
                 text={item.description}
-                classes="grow-0 h-fit sm:!text-xs text-lg !font-normal"
+                classes="grow-0 h-fit sm:!text-xs text-lg !text-white !font-normal"
               />
             </div>
           </div>

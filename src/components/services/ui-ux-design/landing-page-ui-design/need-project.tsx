@@ -22,7 +22,7 @@ const LetsConnect: React.FC = () => (
         </H2>
         <PrimaryButton
           icon={true}
-          text="Let’s Connect"
+          text="Get In Touch"
           style="md:mt-[30px] xs:mt-0"
           link="/contact-us"
         />

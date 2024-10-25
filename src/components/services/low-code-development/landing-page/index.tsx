@@ -3,7 +3,7 @@
 import Services from "./our-services";
 import Testimonials from "@components/basic-components/testimonials";
 import ChooseUs from "./why-us";
-import Work from "./work";
+import Work from "@components/home/work";
 import LetsConnect from "./need-project";
 import Benefits from "./benefits";
 import Tools from "./tools";
@@ -13,6 +13,7 @@ import Hero, {
 import CoreServices from "@components/services/reuseable-components/core-services";
 // import Faqs from "@components/services/reuseable-components/faqs";
 import { HomeProps } from "@app/page";
+import GoTopButton from "@components/basic-components/go-to-top";
 
 const content_heroSection: HeroSection = {
   URL: "/services/landing-page/hero-background-image.webp",
@@ -45,6 +46,8 @@ const LandingPageLowCodeDevelopment: React.FC<HomeProps> = ({isBot}) => (
     {/* Temporary disable */}
     {/* <Faqs DataKey={"website-development-landing-page"} /> */}
     <LetsConnect />
+    <GoTopButton />
+
   </div>
 );
 

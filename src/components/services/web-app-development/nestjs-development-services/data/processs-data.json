@@ -1,22 +1,22 @@
 [
     {
         "title": "Requirement Analysis ",
-        "description": "Our NestJs development company delves into your business requirements and priorities and forms a customized development plan to ensure a seamless NestJs development cycle.",
+        "description": "We thoroughly analyze your business requirements and priorities to create a tailored development plan, ensuring a smooth NestJS development process.",
         "image": "/contact-us/mediums/chat-with-us.webp"
     },
     {
         "title": "UI/UX design",
-        "description": "At the UX/UI stage, we unite your vision and the expertise of our designers to develop an engaging user experience for your product. Our skilled designers focus on blending creativity with functionality while prioritizing user satisfaction.",
+        "description": "During the UX/UI phase, we bring together your vision and our designers expertise to create an engaging user experience for your product. Our talented designers prioritize user satisfaction by seamlessly blending creativity with functionality.",
         "image": "/services/landing-page/cover/pencil.png"
     },
     {
         "title": "Development and testing",
-        "description": "We transform concepts into robust platforms by following rigorous testing procedures and protocols. In this way, we ensure quality performance optimization under differnt loads, even during peak usage.",
+        "description": "We turn concepts into robust platforms by adhering to strict testing procedures and protocols. This approach guarantees quality performance optimization under various loads, even during peak usage.",
         "image": "/services/admin-development/nextjs-development-services/why-us/cutting-edge-technologies.webp"
     },
     {
         "title": "Maintenance",
-        "description": "Incases of potential issues, we implement timely solutions while minimizing downtime. By keeping your product up-to-date, we ensure it remains secure and aligned with the best industry practices. ",
+        "description": "In the event of potential issues, we implement prompt solutions to minimize downtime. By keeping your product updated, we ensure it remains secure and aligned with the best industry practices.",
         "image": "/services/admin-development/nextjs-development-services/our-process/maintenance.webp"
     }
 ]

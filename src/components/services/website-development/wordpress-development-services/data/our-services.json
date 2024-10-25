@@ -2,31 +2,31 @@
     {
         "image": "/services/low-code-development/landing-page/our-services/solutions.webp",
         "title": "WordPress Development",
-        "description": "Elevate your online presence with our cutting-edge engineering solutions. "
+        "description": "Enhance your online presence with our innovative engineering solutions."
     },
     {
         "image": "/services/ui-ux-design/mobile-app-ui-design/why-us/onboarding.png",
         "title": "Design & User Experience",
-        "description": "Captivate your audience with visually stunning, user-centric design."
+        "description": "Engage your audience with visually striking, user-focused designs."
     },
     {
         "image": "/services/admin-development/nextjs-development-services/why-us/transparency.webp",
         "title": "Research & Strategy",
-        "description": "Drive results with data-driven insights for strategic online growth."
+        "description": "Achieve results with data-driven insights that fuel strategic online growth."
     },
     {
         "image": "/services/website-development/landing-page/website-development-services/landing-pages.png",
         "title": "Performance <br /> Optimizations",
-        "description": "Stay ahead of the competition by optimiziing your online performance.  "
+        "description": "Stay ahead of the competition by enhancing your online performance. "
     },
     {
         "image": "/services/admin-development/nextjs-development-services/our-process/maintenance.webp",
         "title": "CMS Migrations",
-        "description": "Unlock efficiency with a move to WordPress."
+        "description": "Unlock greater efficiency by switching to WordPress."
     },
     {
         "image": "/services/mobile-app-devlopment/flutter-development-services/our-services/chat.png",
         "title": "Maintenance & Support",
-        "description": "Take a proactive approach to keep your platform performing at its peak."
+        "description": "Adopt a proactive strategy to maintain peak performance for your platform."
     }
 ]

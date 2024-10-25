@@ -21,12 +21,14 @@ interface ourProcess {
 }
 const ourProcessData: ourProcess[] = data;
 const OurProcess: React.FC = () => (
-  <OuterComponent>
-    <OuterFlexComponent>
-      <Header />
-      <MainContainer />
-    </OuterFlexComponent>
-  </OuterComponent>
+  <div id="our-process">
+    <OuterComponent>
+      <OuterFlexComponent>
+        <Header />
+        <MainContainer />
+      </OuterFlexComponent>
+    </OuterComponent>
+  </div>
 );
 
 export default OurProcess;
@@ -39,9 +41,9 @@ const Header: React.FC = () => (
   <SectionHeader
     style="!w-[1050px] lg:!w-full sm:px-8 xs:px-0"
     buttonText="Our Process"
-    description="Our eCommerce development process iis through and client-centric. From requirement analysis to final deployment and support, we ensure your solution is built with precision, efficiency, and focus on your specific business needs."
+    description="Our eCommerce development process is thorough and client-focused. From requirement analysis to final deployment and support, we ensure that your solution is crafted with precision, efficiency, and a keen emphasis on your unique business needs."
   >
-    <div className="sm:text-wrap text-center leading-[34px]">
+    <div className="sm:text-wrap text-center leading-[1.4]">
       Our eCommerce Development Process
     </div>
   </SectionHeader>

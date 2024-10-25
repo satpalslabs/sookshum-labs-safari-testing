@@ -12,7 +12,7 @@ const Header: React.FC = () => (
     buttonText="Our Services"
     description="We offer web app development services tailored to any business or industry, delivering custom solutions that build user trust and convert visitors into paying customers. "
   >
-    <div className="sm:text-wrap text-center leading-[34px]">
+    <div className="sm:text-wrap text-center leading-[1.4] capitalize">
       Flutter App Development Services{" "}
       <span className="italic font-light">We Offer?</span>
     </div>

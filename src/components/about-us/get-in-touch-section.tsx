@@ -12,7 +12,7 @@ export type dataItem = {
 
 const BottomSection: React.FC = () => (
   <OuterComponent>
-    <div className="h-fit w-full">
+    <div className="h-fit w-full" id="connect">
       <div className="grid grid-cols-2 xs:grid-cols-1 gap-5 w-full">
         <Card isInView={true} style={"pb-0 grow"}>
           <div className="p-8 lg:p-4 flex flex-col gap-[97px] sm:gap-[40px] grow">
@@ -51,7 +51,7 @@ const BottomSection: React.FC = () => (
             <PrimaryButton
               icon={true}
               style=""
-              text="Get in touch"
+              text="Get In Touch"
               link="/contact-us"
             />
           </div>

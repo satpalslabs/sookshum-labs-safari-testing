@@ -14,12 +14,16 @@ export type dataItem = {
 };
 
 const LetsConnect: React.FC = () => (
+  <div id="connect">
+
   <OuterComponent>
     <div className="flex xs:flex-col relative shadow-buttonInset bg-innerContainer rounded-[32px] sm:rounded-[20px] xs:pb-8 xs:gap-8">
       <TextContainer />
           <ImageContainer />
     </div>
   </OuterComponent>
+  </div>
+
 );
 
 export default LetsConnect;

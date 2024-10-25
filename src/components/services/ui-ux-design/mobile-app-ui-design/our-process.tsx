@@ -14,20 +14,22 @@ type benefit = {
 
 const ourProcessData: benefit[] = data;
 const OurProcess = () => (
-  <OuterComponent>
-    <OuterFlexComponent>
-      <SectionHeader
-        buttonText="Our Process "
-        description="Choose Retool for unparalleled flexibility, seamless integrations, and developer-friendly tools that empower you to build powerful internal apps faster than other low-code platforms."
-        style="!w-[1000px] lg:!w-[700px] sm:!w-[600px] xs:!w-full"
-      >
-        <div className="xs:w-full sm:w-[90%] sm:text-wrap xs:text-center !capitalize">
-          What our mobile design process looks like
-        </div>
-      </SectionHeader>
-      <BenefitCards />
-    </OuterFlexComponent>
-  </OuterComponent>
+  <div id="our-process">
+    <OuterComponent>
+      <OuterFlexComponent>
+        <SectionHeader
+          buttonText="Our Process "
+          description="Choose Retool for unmatched flexibility, seamless integrations, and developer-friendly tools that enable you to create robust internal apps more quickly than other low-code platforms."
+          style="!w-[1200px] lg:!w-[700px] sm:!w-[600px] xs:!w-full"
+        >
+          <div className="xs:w-full sm:w-[90%] sm:text-wrap xs:text-center  leading-[1.4] capitalize">
+            What our mobile design process looks like
+          </div>
+        </SectionHeader>
+        <BenefitCards />
+      </OuterFlexComponent>
+    </OuterComponent>
+  </div>
 );
 
 export default OurProcess;
@@ -69,17 +71,16 @@ const SingleCard: React.FC<{
       boxShadow: "1.75px 3.49px 13.98px 0px #F8F8F80F inset",
       backdropFilter: "blur(87.34871673583984px)",
       WebkitBackdropFilter: "blur(17.3487px)",
-
     }}
   >
     <div className="flex flex-col gap-5 xxl:gap-8 sm:gap-[15px]">
       <H4
-        style="!leading-[1.25] !text-[20px] sm:!text-sm !text-light"
+        style="!leading-[1.25] !text-[20px] sm:!text-sm !text-secondary"
         text={`00${index + 1}`}
       />
       <div className="flex flex-col gap-3 sm:gap-[10px] grow">
         <H4
-          style="!leading-[1.25] !text-[20px] sm:!text-sm"
+          style="!leading-[1.25] !text-[20px] !text-white sm:!text-sm"
           text={data.title}
         />
         <Description

@@ -17,20 +17,23 @@ type ChooseUs = {
 };
 const chooseUsData: ChooseUs[] = data.cards;
 const ChooseUs = () => (
-  <OuterComponent>
-    <OuterFlexComponent>
-      <SectionHeader
-        buttonText="Why choose us?"
-        description="Choose us for exceptional UI/UX design tailored to your needs. We blend creativity with strategy to deliver intuitive, impactful designs that drive user engagement and business growth."
-        style="w-[784px] xs:w-full"
-      >
-        <div className="w-[80%] xs:w-full text-wrap text-center mx-auto">
-          How we can help you <span className="italic font-light">Succeed</span>
-        </div>
-      </SectionHeader>
-      <ChooseUsCards />
-    </OuterFlexComponent>
-  </OuterComponent>
+  <div id="why-us">
+    <OuterComponent>
+      <OuterFlexComponent>
+        <SectionHeader
+          buttonText="Why choose us?"
+          description="Choose us for exceptional UI/UX design tailored to your needs. We blend creativity with strategy to deliver intuitive, impactful designs that drive user engagement and business growth."
+          style="w-[784px] xs:w-full"
+        >
+          <div className="w-[80%] xs:w-full text-wrap text-center mx-auto leading-[1.4] capitalize">
+            How we can help you{" "}
+            <span className="italic font-light">Succeed</span>
+          </div>
+        </SectionHeader>
+        <ChooseUsCards />
+      </OuterFlexComponent>
+    </OuterComponent>
+  </div>
 );
 
 export default ChooseUs;
@@ -40,7 +43,10 @@ const ChooseUsCards: React.FC = () => {
   const isInView = useInView(ref);
 
   return (
-    <div ref={ref} className="grid grid-cols-3 sm:grid-cols-2 gap-4 w-full xs:grid-cols-1">
+    <div
+      ref={ref}
+      className="grid grid-cols-3 sm:grid-cols-2 gap-4 w-full xs:grid-cols-1"
+    >
       {chooseUsData.map((ChooseUsCard: ChooseUs, index: number) => (
         <Card key={index} style="mt-0" isInView={isInView}>
           <div className="flex flex-col gap-[60px] px-4 pt-4 lg:px-2 lg:pt-2 sm:gap-[32px]">

@@ -9,17 +9,17 @@ const GradientSection: React.FC<HeroSection> = (props) => (
     <div className=" flex flex-col items-center justify-center w-full text-center gap-[30px] lg:gap-4 xs:gap-3">
       <DarkButton text={props.buttonText} style="" />
       {props.additionalDescription && (
-        <div
+        <h3
           className={`text-[32px] lg:text-[28px] sm:text-base xs:text-xs w-full font-poppins font-semibold tracking-[0.06em] leading-[40px] text-center xs:text-wrap xs:px-4`}
         >
           {props.additionalDescription}
-        </div>
+        </h3>
       )}
       <GradientText
         text={props.gradientText}
         classes={`sm:text-[48px] sm:w-full xs:text-[32px] xxl:w-[80%] xxl:mx-auto ${props.gradientTextStyle}`}
       />
-      <div
+      <h3
         className={`lg:text-[28px] sm:text-base xs:text-xs w-full font-poppins font-medium leading-[1.3] text-center xs:text-wrap xs:px-4 ${
           props.additionalDescription && props.aboutPage
             ? "xl:px-[100px] text-[32px]"
@@ -27,7 +27,7 @@ const GradientSection: React.FC<HeroSection> = (props) => (
         }
           } `}
         dangerouslySetInnerHTML={{ __html: props.aboutPage }}
-      ></div>
+      ></h3>
       {props["contact-us"] && (
         <PrimaryButton
           icon={true}

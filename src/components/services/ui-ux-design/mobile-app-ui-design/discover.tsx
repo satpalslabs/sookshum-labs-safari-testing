@@ -19,21 +19,23 @@ type discover = {
 
 const discoverData: discover[] = data;
 const Discover: React.FC = () => (
-  <OuterComponent>
-    <OuterFlexComponent>
-      <SectionHeader
-        buttonText="Discover"
-        description="We combine our team’s depth of experience in design, our client’s intimate knowledge of the industries they serve and insights uncovered through the discoveries we make."
-        style="w-[70.5%] lg:!w-[740px] xs:!w-full"
-      >
-        <div className="mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
-          Keep your users at the center of your <br /> design process with our
-          UXD practices
-        </div>
-      </SectionHeader>
-      <MainContainer />
-    </OuterFlexComponent>
-  </OuterComponent>
+  <div id="discover">
+    <OuterComponent>
+      <OuterFlexComponent>
+        <SectionHeader
+          buttonText="Discover"
+          description="We merge our team’s extensive design experience with our clients deep understanding of their industries and the insights gained from our research."
+          style="w-[74.5%] lg:!w-[740px] xs:!w-full"
+        >
+          <div className="mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
+            Keep your users at the heart of your design process with our user
+            experience design (UXD) practices.
+          </div>
+        </SectionHeader>
+        <MainContainer />
+      </OuterFlexComponent>
+    </OuterComponent>
+  </div>
 );
 
 export default Discover;
@@ -61,14 +63,14 @@ const MainContainer: React.FC = () => {
             <div className="flex flex-col gap-[4] lg:gap-3 sm:gap-2">
               <H6
                 text={discover.title}
-                classes="text-white xxl:text-[26px] !font-[500] !text-[26px] sm:!text-[14px] md:!leading-[1.4] !leading-[1.6]"
+                classes="!text-white xxl:text-[26px] !font-[500] !text-[26px] sm:!text-[14px] md:!leading-[1.4] !leading-[1.6]"
               />
               <Description
                 text={""}
                 classes="grow-0 h-fit sm:!text-xs text-lg !font-normal"
               >
                 <div
-                  className="unreset text-white"
+                  className="unreset text-h3_heading"
                   dangerouslySetInnerHTML={{ __html: discover.description }}
                 ></div>
               </Description>

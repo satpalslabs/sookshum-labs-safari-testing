@@ -4,6 +4,7 @@
 
 import dynamic from "next/dynamic";
 import { HomeProps } from "@app/page";
+import GoTopButton from "@components/basic-components/go-to-top";
 // import Loading from "@app/loading";
 
 const Hero = dynamic(() => import("./hero"));
@@ -32,6 +33,7 @@ const Sections: React.FC<HomeProps> = (props) => (
     {/* Temporary disabled */}
     {/* <BlogPosts /> */}
     <WorkTogether />
+    <GoTopButton />
     <div className="bg-black xs:hidden top-0 absolute w-full -z-10 h-[150px]" />
   </main>
 );

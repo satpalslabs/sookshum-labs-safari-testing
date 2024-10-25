@@ -20,31 +20,34 @@ const data: BenefitType[] = benefits;
 const Faqs: React.FC = () => {
   const [activeFaq, setActiveFaq] = useState<number | null>(0);
   return (
-    <OuterComponent>
-      <OuterFlexComponent>
-        <SectionHeader
-          buttonText="Benefits "
-          description="Discover the top use cases where Laravel shines for performance, scalability, and seamless user experiences."
-          style="w-[1000px] w-full xs:px-10"
-        >
-          <div className="xs:w-full xs:text-wrap xs:text-center">
-            The Power Of The <span className="italic font-light">Laravel </span>
-            Framework
+    <div id="benefits">
+      <OuterComponent>
+        <OuterFlexComponent>
+          <SectionHeader
+            buttonText="Benefits "
+            description="Discover the top use cases where Laravel shines for performance, scalability, and seamless user experiences."
+            style="w-[1000px] w-full xs:px-10"
+          >
+            <div className="xs:w-full xs:text-wrap xs:text-center leading-[1.4] capitalize">
+              The Power Of The{" "}
+              <span className="italic font-light">Laravel </span>
+              Framework
+            </div>
+          </SectionHeader>
+          <div className="flex flex-col gap-3">
+            {data?.map((faq: BenefitType, index: number) => (
+              <Benefit
+                benefit={faq}
+                active={activeFaq == index}
+                index={index}
+                key={index}
+                setActive={setActiveFaq}
+              />
+            ))}
           </div>
-        </SectionHeader>
-        <div className="flex flex-col gap-3">
-          {data?.map((faq: BenefitType, index: number) => (
-            <Benefit
-              benefit={faq}
-              active={activeFaq == index}
-              index={index}
-              key={index}
-              setActive={setActiveFaq}
-            />
-          ))}
-        </div>
-      </OuterFlexComponent>
-    </OuterComponent>
+        </OuterFlexComponent>
+      </OuterComponent>
+    </div>
   );
 };
 
@@ -72,7 +75,7 @@ const Benefit: React.FC<props> = ({ benefit, active, index, setActive }) => {
         >
           <div className="flex gap-5 items-center">
             <img className="w-8 h-8" src={benefit.image} alt={benefit.title} />
-            <H6 classes="text-white xs:text-left" text={benefit.title} />
+            <H6 classes="!text-white xs:text-left" text={benefit.title} />
           </div>
           <div className="relative">
             <Icon style={`transition-all`} />

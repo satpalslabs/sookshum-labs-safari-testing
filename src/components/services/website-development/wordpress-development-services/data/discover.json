@@ -2,31 +2,31 @@
     {
         "image": "/services/admin-development/nextjs-development-services/our-process/maintenance.webp",
         "title": "CMS Consultation",
-        "description": "Navigate the CMS landscape: Expert guidance to leverage WordPress efficiencies, optimizing performance and user experience. "
+        "description": "Navigate the CMS landscape with expert guidance to harness WordPress efficiencies, enhancing both performance and user experience. "
     },
     {
         "image": "/services/landing-page/cover/pencil.png",
         "title": "Design",
-        "description": "Where aesthetics meet function: Crafting breathtaking WordPress designs that captivate and convert. "
+        "description": "Where aesthetics meet functionality: Creating stunning WordPress designs that captivate and drive conversions."
     },
     {
         "image": "/services/low-code-development/landing-page/our-services/tools.webp",
         "title": "Development",
-        "description": "From concept to code: Expert WordPress development that delivers seamless, sophisticated, and scalable solutions."
+        "description": "From concept to code: Professional WordPress development that provides seamless, sophisticated, and scalable solutions."
     },
     {
         "image": "/services/website-development/landing-page/why-us/tech-partner.png",
         "title": "Migration",
-        "description": "Seamless transitions, zero downtime: Expert migration to WordPress ensuring data integrity and security for a smooth upgrade. "
+        "description": "Smooth transitions and zero downtime: Professional migration to WordPress that ensures data integrity and security for a hassle-free upgrade. "
     },
     {
         "image": "/services/admin-development/nextjs-development-services/why-us/transparency.webp",
         "title": "Performance Audit & Optimization",
-        "description": "Ensuring peak performance: Through rigorous audits and optimizations, we enhance your WordPress site’s speed and efficiency. "
+        "description": "Achieving optimal performance: With thorough audits and optimizations, we boost your WordPress site’s speed and efficiency. "
     },
     {
         "image": "/services/mobile-app-devlopment/flutter-development-services/our-services/chat.png",
         "title": "Support & Maintenance ",
-        "description": "Keeping your site in top shape: Our friendly team makes sure your WordPress site runs smoothly and stays secure."
+        "description": "Maintaining your site’s peak performance: Our dedicated team ensures your WordPress site operates smoothly and remains secure."
     }
 ]

@@ -10,6 +10,7 @@ import OuterFlexComponent from "@components/basic-components/main-flex-container
 import Description from "@components/basic-components/description";
 import Image from "next/image";
 import H6 from "@components/basic-components/headings/H6";
+import H3 from "@components/basic-components/headings/H3";
 
 type service = {
   title: string;
@@ -18,22 +19,24 @@ type service = {
 
 const benefits: service[] = data;
 const Benefits: React.FC = () => (
-  <OuterComponent>
-    <OuterFlexComponent>
-      <SectionHeader
-        buttonText="Our Benefits"
-        description="Streamline operations, enhance control, and boost efficiency with a custom admin app tailored to your business needs. "
-        style="w-[85.5%] lg:!w-[740px] xs:!w-full"
-      >
-        <h1 className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
-          Benefits of{" "}
-          <span className="italic font-light w-full">Admin App</span>{" "}
-          Development
-        </h1>
-      </SectionHeader>
-      <MainContainer />
-    </OuterFlexComponent>
-  </OuterComponent>
+  <div id="our-services">
+    <OuterComponent>
+      <OuterFlexComponent>
+        <SectionHeader
+          buttonText="Our Benefits"
+          description="Optimize your operations, improve oversight, and increase efficiency with a custom admin app designed specifically for your business requirements."
+          style="w-[85.5%] lg:!w-[740px] xs:!w-full"
+        >
+          <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em]  capitalize ">
+            Benefits of{" "}
+            <span className="italic font-light w-full">Admin App</span>{" "}
+            Development
+          </div>
+        </SectionHeader>
+        <MainContainer />
+      </OuterFlexComponent>
+    </OuterComponent>
+  </div>
 );
 
 export default Benefits;
@@ -59,9 +62,9 @@ const MainContainer: React.FC = () => {
               alt={"check"}
             />
             <div className="flex flex-col gap-4 lg:gap-3 sm:gap-2">
-              <H6
+              <H3
                 text={item.title}
-                classes="text-white xxl:text-3xl !font-[500] !text-[20px] sm:!text-[14px] md:!leading-[1.4] !leading-[1.6]"
+                style="!text-white xxl:text-3xl !font-[500] !text-[20px] sm:!text-[14px] md:!leading-[1.4] !leading-[1.6]"
               />
               <Description
                 children={null}

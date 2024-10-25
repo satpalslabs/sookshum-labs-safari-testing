@@ -19,16 +19,18 @@ const CoreServices: React.FC<{ DataKey: keyof Data }> = ({ DataKey }) => {
   const isInView = useInView(ref);
 
   return (
-    <OuterComponent>
-      <div
-        ref={ref}
-        className="grid grid-cols-3 gap-5 lg:gap-[18px] xxl:gap-16 xs:grid-cols-1 xs:gap-[16px]"
-      >
-        {services?.map((service: serviceType, index: number) => (
-          <Service service={service} isInView={isInView} key={index} />
-        ))}
-      </div>
-    </OuterComponent>
+    <div id="core-services">
+      <OuterComponent>
+        <div
+          ref={ref}
+          className="grid grid-cols-3 gap-5 lg:gap-[18px] xxl:gap-16 xs:grid-cols-1 xs:gap-[16px]"
+        >
+          {services?.map((service: serviceType, index: number) => (
+            <Service service={service} isInView={isInView} key={index} />
+          ))}
+        </div>
+      </OuterComponent>
+    </div>
   );
 };
 

@@ -25,7 +25,7 @@ export default function Slider() {
               </div>
               <div className="flex flex-col gap-3">
                 <H5
-                  style="text-white !leading-[1.2] md:text-[18px] pr-6"
+                  style="!text-white  md:text-[18px] pr-6"
                   text={item.title}
                 />
                 <Description

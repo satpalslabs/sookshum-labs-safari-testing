@@ -25,22 +25,24 @@ const IndustryExperience = () => {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <OuterComponent>
-      <OuterFlexComponent>
-        <SectionHeader
-          buttonText="Industries We Serve"
-          description="Our team is dedicated to designing digital solutions that meet the unique demands of various sectors leveraging the latest technology to meet unique industry demands and drive innovation."
-          style="w-[780px] lg:!w-[700px] xs:!w-full"
-        >
-          <div className="w-[800px] xs:w-full xs:text-wrap text-center mx-auto">
-            Our diverse Industry{" "}
-            <span className="italic font-light">Experiences?</span>
-          </div>
-        </SectionHeader>
-        <Tabs activeTab={activeTab} setActiveTab={setActiveTab} />
-        <DetailView activeTab={activeTab} setActiveTab={setActiveTab} />
-      </OuterFlexComponent>
-    </OuterComponent>
+    <div id="industry-experience">
+      <OuterComponent>
+        <OuterFlexComponent>
+          <SectionHeader
+            buttonText="Industries We Serve"
+            description="Our team is committed to creating digital solutions tailored to the specific needs of different sectors, utilizing the latest technology to address industry challenges and foster innovation."
+            style="w-[780px] lg:!w-[700px] xs:!w-full"
+          >
+            <div className="w-[800px] xs:w-full xs:text-wrap text-center mx-auto leading-[1.4] capitalize">
+              Our diverse Industry{" "}
+              <span className="italic font-light">Experiences?</span>
+            </div>
+          </SectionHeader>
+          <Tabs activeTab={activeTab} setActiveTab={setActiveTab} />
+          <DetailView activeTab={activeTab} setActiveTab={setActiveTab} />
+        </OuterFlexComponent>
+      </OuterComponent>
+    </div>
   );
 };
 
@@ -110,7 +112,8 @@ const DetailView: React.FC<{
             />
           </Description>
         </div>
-        <DarkButton text="Learn more" style="" />
+        {/* Temporary disabled */}
+        {/* <DarkButton text="Learn more" style="" /> */}
       </div>
     </div>
   );

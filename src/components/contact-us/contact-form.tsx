@@ -6,6 +6,7 @@ import HelperText from "@components/basic-components/form-components/helper-text
 import CustomCheckBox from "@components/basic-components/form-components/checkbox";
 import Description from "@components/basic-components/description";
 import MailIcon from "@components/basic-components/icons/mai-icon";
+import LocationIcon from "@components/basic-components/icons/location-icon";
 import H6 from "@components/basic-components/headings/H6";
 import WorkTogetherIcon from "@components/basic-components/icons/work-together-icon";
 import PrimaryButton from "@components/basic-components/primary-button";
@@ -18,7 +19,10 @@ import Image from "next/image";
 import $ from "jquery";
 import dynamic from "next/dynamic";
 const ContactForm: React.FC = () => (
-  <div className="w-full relative z-20 mt-[32px] sm:mt-[32px] xs:mt-[30px] h-fit overflow-hidden max-w-[1920px] px-[80px] lg:px-10 xs:px-5 pt-[120px] md:pt-[90px] sm:pt-[70px] xs:pt-[30px] mx-auto">
+  <div
+    id="contact-form"
+    className="w-full relative z-20 mt-[32px] sm:mt-[32px] xs:mt-[30px] h-fit overflow-hidden max-w-[1920px] px-[80px] lg:px-10 xs:px-5 pt-[120px] md:pt-[90px] sm:pt-[70px] xs:pt-[30px] mx-auto"
+  >
     <div className=" flex sm:flex-col gap-10 sm:gap-[30px] w-full">
       <ContentUsForm />
       <InformationAboutCompany />
@@ -34,14 +38,14 @@ const InformationAboutCompany = () => (
       <div className="flex flex-col gap-2">
         <Description text={""} classes="flex items-center gap-2 !font-normal">
           <MailIcon style="w-5 h-5" />
-          <span className="uppercase">Reach Out To Us Via:</span>
+          <span className="uppercase !font-light">Reach Out To Us Via:</span>
         </Description>
         <H5 text="info@sookshum-labs.com" style="!text-white sm:text-[18px]" />
       </div>
       <div className="flex flex-col gap-2">
-        <Description text={""} classes="flex items-center gap-2 !font-normal">
-          <MailIcon style="w-5 h-5" />
-          <span className="uppercase">Our Location:</span>
+        <Description text={""} classes="flex items-center gap-2 !text-white !font-normal">
+          <LocationIcon style="w-5 h-5" />
+          <span className="uppercase !font-light">Our Location:</span>
         </Description>
         <H5 text="India" style="!text-white sm:text-[18px]" />
         <H6
@@ -58,7 +62,7 @@ const InformationAboutCompany = () => (
         <Description
           children={null}
           text="-Henry Ford"
-          classes="text-light italic grow-0"
+          classes="text-secondary italic grow-0"
         />
         <H5
           text="Shall we begin?"
@@ -380,7 +384,7 @@ const ContentUsForm: React.FC = () => {
                       src="/contact-us/file.png"
                       width="1200"
                       height="1200"
-                      className="h-[40px]"
+                      className="h-[40px] w-[40px]"
                       alt="file-icon"
                       blurDataURL="URL"
                       placeholder="blur"
@@ -393,7 +397,7 @@ const ContentUsForm: React.FC = () => {
                       />
                       <Description
                         children={null}
-                        classes="text-light text-xs"
+                        classes="text-secondary text-xs"
                         text={file.fileType}
                       />
                     </div>
@@ -401,7 +405,7 @@ const ContentUsForm: React.FC = () => {
                   <div className="flex gap-3 items-center">
                     <Description
                       children={null}
-                      classes="h-fit text-light"
+                      classes="h-fit text-secondary"
                       text={`${(file.fileSize / 1024).toFixed(1)}kb`}
                     />
                     <button
@@ -418,7 +422,7 @@ const ContentUsForm: React.FC = () => {
                         src="/contact-us/cross.svg"
                         width="1200"
                         height="1200"
-                        className="h-[30px] "
+                        className="h-[30px] w-[30px]"
                         alt="file-icon"
                         blurDataURL="URL"
                         placeholder="blur"

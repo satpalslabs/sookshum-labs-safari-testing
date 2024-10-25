@@ -17,22 +17,24 @@ type Process = {
 };
 const processData: Process[] = data["our-process"];
 const OurProcess = () => (
-  <OuterComponent>
-    <OuterFlexComponent>
-      <SectionHeader
-        buttonText="Our Process"
-        description="Whether you want to consult an idea, add missing capabilities, quickly expand your team, or hand over a  project - we’ve got you covered."
-        style="w-[794px] lg:w-[491px] lg:mx-auto xs:w-full"
-      >
-        <div className="w-[80%] lg:w-[637px] sm:w-full xs:px-5 3xs:px-0 xs:text-balance lg:leading-[1.2] text-wrap tracking-tight text-center mx-auto ">
-          Full
-          <span className="italic font-light w-full"> digital product </span>
-          expertise under one roof
-        </div>
-      </SectionHeader>
-      <OurProcessDetailComponent />
-    </OuterFlexComponent>
-  </OuterComponent>
+  <div id="our-process">
+    <OuterComponent>
+      <OuterFlexComponent>
+        <SectionHeader
+          buttonText="Our Process"
+          description="Whether you want to consult an idea, add missing capabilities, quickly expand your team, or hand over a  project - we’ve got you covered."
+          style="w-[794px] lg:w-[491px] lg:mx-auto xs:w-full"
+        >
+          <div className="w-[80%] lg:w-[637px] sm:w-full xs:px-5 3xs:px-0 xs:text-balance lg:leading-[1.2] text-wrap tracking-tight text-center mx-auto leading-[1.4] capitalize">
+            Full
+            <span className="italic font-light w-full"> digital product </span>
+            expertise under one roof
+          </div>
+        </SectionHeader>
+        <OurProcessDetailComponent />
+      </OuterFlexComponent>
+    </OuterComponent>
+  </div>
 );
 
 export default OurProcess;
@@ -89,7 +91,7 @@ const TextContainer: React.FC = () => {
             <div className="flex gap-[57px] shrink-0 lg:gap-[26px] items-center xs:flex-col xs:items-start xs:gap-1 xs:grow">
               <H6
                 text={process["process-title"]}
-                classes="text-white xxl:text-3xl md:text-[20px] leading-[1.6]"
+                classes="!text-white xxl:text-3xl md:text-[20px] leading-[1.6]"
               />
               <div
                 className={`w-[58.47%] shrink-0 text-wrap lg:grow lg:w-fit lg:max-w-[66%] sm:w-full sm:max-w-full xs:w-full xs:max-w-[86%]`}

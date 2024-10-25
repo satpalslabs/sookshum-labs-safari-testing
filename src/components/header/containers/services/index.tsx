@@ -1,6 +1,6 @@
 // import dynamic from "next/dynamic";
 import { usePathname } from "next/navigation";
-import  { Fragment, useState } from "react";
+import { Fragment, useState } from "react";
 import Dropdown from "./dropdown";
 import Link from "next/link";
 const NavLinkService = ({
@@ -32,11 +32,11 @@ const NavLinkService = ({
         className={"sm:flex-col sm:gap-0 sm:w-full"}
       >
         <Link
-          className={`sm:hidden group relative sm:px-10 sm:text-sm sm:items-center sm:h-[72px] sm:justify-between sm:hover:shadow-buttonInset sm:hover:bg-innerContainer sm:hover:border border-solid  ${
+          className={`sm:hidden group relative sm:px-10 sm:text-sm text-secondaryText sm:items-center sm:h-[72px] sm:justify-between sm:hover:shadow-buttonInset sm:hover:bg-innerContainer sm:hover:border border-solid  ${
             currentPath.includes(link.replaceAll("/", ""))
-              ? "sm:bg-innerContainer sm:shadow-buttonInset text-white "
+              ? "sm:bg-innerContainer font-semibold sm:shadow-buttonInset text-white "
               : ""
-          } sm:rounded-[32px] flex items-center gap-2 hover:text-white ${
+          } sm:rounded-[32px]  flex items-center gap-2 hover:text-white ${
             hovered && "text-white"
           } sm:shadow-none sm:border-none sm:bg-transparent sm:h-[52px] sm:px-4`}
           href={link}

@@ -17,21 +17,23 @@ type ChooseUs = {
 };
 const whyUsData: ChooseUs[] = data.services;
 const ChooseUs = () => (
-  <OuterComponent>
-    <OuterFlexComponent>
-      <SectionHeader
-        buttonText="Why us?"
-        description="We immerse ourselves in the customer’s business, understand their objectives, and take a holistic approach on the project. Therefore, we have been working with most of our clients for years."
-        style="w-[794px] lg:w-[50%] xs:w-full"
-      >
-        <div className="w-full xs:w-full text-center mx-auto xs:text-wrap">
-          What <span className="italic font-light">you’ll</span> get from hiring
-          us
-        </div>
-      </SectionHeader>
-      <ChooseUsCards />
-    </OuterFlexComponent>
-  </OuterComponent>
+  <div id="why-us">
+    <OuterComponent>
+      <OuterFlexComponent>
+        <SectionHeader
+          buttonText="Why us?"
+          description="We immerse ourselves in the customer’s business, understand their objectives, and take a holistic approach on the project. Therefore, we have been working with most of our clients for years."
+          style="w-[794px] lg:w-[50%] xs:w-full"
+        >
+          <div className="w-full xs:w-full text-center mx-auto xs:text-wrap leading-[1.4] capitalize">
+            What <span className="italic font-light">you’ll</span> get from
+            hiring us
+          </div>
+        </SectionHeader>
+        <ChooseUsCards />
+      </OuterFlexComponent>
+    </OuterComponent>
+  </div>
 );
 
 export default ChooseUs;
@@ -47,7 +49,7 @@ const ChooseUsCards: React.FC = () => {
           <div className="flex flex-col gap-[75px] lg:gap-[62px] sm:gap-[30px] xs:gap-2 p-4 pb-0 h-full">
             <H6
               text={ChooseUsCard.heading}
-              classes="text-white w-[80%] xxl:text-3xl md:text-[20px] md:w-full md:leading-[1.2] leading-[1.6]"
+              classes="!text-white w-[80%] xxl:text-3xl md:text-[20px] md:w-full md:leading-[1.2] leading-[1.6]"
             />
             <div className="relative w-[160px] lg:w-[126px] sm:w-[100px] h-[160px] lg:h-[126px] sm:h-[100px]">
               <Image

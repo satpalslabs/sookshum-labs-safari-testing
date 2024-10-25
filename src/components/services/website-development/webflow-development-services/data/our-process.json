@@ -2,21 +2,21 @@
     {
         "image": "/services/low-code-development/landing-page/our-services/code.webp",
         "title": "Website Development",
-        "description": "We meticulously craft your website, ensuring a seamless user experience and optimal performance. The website is designed with the end-user in mind, aiming to provide them with an intuitive and effortless interaction with the site. This involves factors such as easy navigation, clear layout, and intuitive functionalities, all geared towards making the user’s journey on the website as smooth and enjoyable as possible. "
+        "description": "We carefully design your website to deliver a seamless user experience and top-notch performance. With the end-user in focus, we aim to create an intuitive and effortless interaction, incorporating elements like easy navigation, a clear layout, and intuitive functionalities to ensure a smooth and enjoyable journey on the site."
     },
     {
         "image": "/services/admin-development/nextjs-development-services/our-process/maintenance.webp",
         "title": "CMS Creation & Management",
-        "description": "By having the ability to effortlessly manage and update your content through the CMS, you can ensure that your website remains dynamic and engaging, with new information, products, or services being added as needed."
+        "description": "With the capability to easily manage and update your content through the CMS, you can keep your website dynamic and engaging by adding new information, products, or services whenever necessary."
     },
     {
         "image": "/about-us/our-values/honesty.png",
         "title": "Lead Capture & Nurturing",
-        "description": "To capture leads and nurture them through automated follow-ups, the integrated system is not just about gathering information but also about actively engaging with potential customers. Leads captured through your website, such as through contact forms or newsletter sign-ups, are automatically added to your CRM."
+        "description": "The integrated system goes beyond merely gathering information; it captures leads and nurtures them with automated follow-ups to actively engage potential customers. Leads collected from your website—whether through contact forms or newsletter sign-ups—are seamlessly added to your CRM for effective management."
     },
     {
         "image": "/services/website-development/landing-page/website-development-services/landing-pages.png",
         "title": "Data-Driven Optimization",
-        "description": "We don’t stop at launch. We continuously analyze user behaviour and utilize A/B testing to optimize your website for conversions, maximizing your return on investment. This involves tracking how users interact with the site, including which pages they visit, how long they stay, and what actions they take. By analyzing this data, insights can be gained into user preferences and behaviour patterns."
+        "description": "Our commitment doesn’t end at launch. We continuously analyze user behavior and implement A/B testing to optimize your website for conversions, ensuring maximum return on investment. This process involves monitoring user interactions, such as page visits, duration of stay, and actions taken. By examining this data, we uncover valuable insights into user preferences and behavior patterns."
     }
 ]

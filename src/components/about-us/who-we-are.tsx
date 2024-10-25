@@ -14,6 +14,7 @@ const WhoWeAre: React.FC = () => {
   return (
     <OuterComponent>
       <div
+        id="who-we-are"
         ref={ref}
         className={`flex flex-col gap-5 lg:gap-[40px] sm:gap-[35px] xs:gap-3 ${
           isInView ? "grayscale-0" : "grayscale"

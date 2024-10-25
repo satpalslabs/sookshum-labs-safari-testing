@@ -19,23 +19,24 @@ type our_service = {
 
 const ourServicesData: our_service[] = data;
 const OurServices: React.FC = () => (
-  <OuterComponent>
-    <OuterFlexComponent>
-      <SectionHeader
-        buttonText="Our Services"
-        description="We craft digital experiences that drive results. We’ll help you achieve your
-business goals, from increased brand awareness to skyrocketing sales.  "
-        style="w-[780px] lg:!w-[650px] xs:!w-full"
-      >
-        <div className="xs:w-full mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
-          Experience world-Class{" "}
-          <span className="italic font-light"> Mobile Application </span> Design
-          Services
-        </div>
-      </SectionHeader>
-      <MainContainer />
-    </OuterFlexComponent>
-  </OuterComponent>
+  <div id="our-services">
+    <OuterComponent>
+      <OuterFlexComponent>
+        <SectionHeader
+          buttonText="Our Services"
+          description="We create digital experiences that deliver impactful results, helping you reach your business goals, whether that's boosting brand awareness or driving sales to new heights. "
+          style="w-[980px] lg:!w-[650px] xs:!w-full"
+        >
+          <div className="xs:w-full mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
+            Experience world-Class{" "}
+            <span className="italic font-light"> Mobile Application </span>{" "}
+            Design Services
+          </div>
+        </SectionHeader>
+        <MainContainer />
+      </OuterFlexComponent>
+    </OuterComponent>
+  </div>
 );
 
 export default OurServices;
@@ -63,15 +64,15 @@ const MainContainer: React.FC = () => {
                 alt={item.title}
               />
             </div>
-            <div className="flex flex-col gap-4 lg:gap-3 sm:gap-2">
+            <div className="flex flex-col gap-4 lg:gap-3 sm:gap-2 ">
               <H6
                 text={item.title}
-                classes="text-white xxl:text-3xl !font-[500] !text-[20px] sm:!text-[14px] md:!leading-[1.4] !leading-[1.6]"
+                classes="!text-white xxl:text-3xl !font-[500] !text-[20px] sm:!text-[14px] md:!leading-[1.4] !leading-[1.6]"
               />
               <Description
                 children={null}
                 text={item.description}
-                classes="grow-0 h-fit sm:!text-xs text-lg !font-normal"
+                classes="grow-0 h-fit !text-whiteTextPrimary sm:!text-xs text-lg !font-normal"
               />
             </div>
           </div>

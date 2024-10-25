@@ -2,21 +2,21 @@
     {
         "image": "/services/ui-ux-design/website-ui-design/why-us/01.png",
         "title": "User Research ",
-        "description": "Octet uses diverse data-gathering <br />techniques and conducts through user <br /> research to ensure your product addresses <br />the correct user problems."
+        "description": "We utilize a variety of data-gathering techniques and conduct thorough user research to ensure your product effectively addresses the right user challenges."
     },
     {
         "image": "/services/ui-ux-design/website-ui-design/why-us/02.png",
         "title": "UI UX Designing",
-        "description": "We systematically create visually attractive, <br /> interactive interfaces that deliver seamless, intuitive user experiences. "
+        "description": "We methodically design visually appealing, interactive interfaces that provide seamless and intuitive user experiences."
     },
     {
         "image": "/services/ui-ux-design/website-ui-design/why-us/03.png",
         "title": "Usability Testing",
-        "description": "We conduct tests with users for various use <br /> cases, scenarios, and devices to improve <br /> product consistency and accessibility."
+        "description": "We perform user testing across various use cases, scenarios, and devices to enhance product consistency and accessibility."
     },
     {
         "image": "/services/ui-ux-design/website-ui-design/why-us/04.png",
         "title": "UI Development",
-        "description": "We carefully convert designs into templates <br />by building visual components in the framework <br /> for delightful user experience. "
+        "description": "We meticulously transform designs into templates by developing visual components within the framework to create a delightful user experience. "
     }
 ]

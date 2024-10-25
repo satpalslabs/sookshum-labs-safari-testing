@@ -27,7 +27,7 @@ const LogoSection: React.FC = () => (
     <Description
       children={null}
       text="We deliver excellence through our innovative solutions and exceptionally reliable service."
-      classes="font-light"
+      classes="font-light !text-h3_heading"
     />
     <section className="flex items-center gap-4 lg:gap-[10px] grow xs:mx-auto">
       {/* Buttons */}

@@ -17,21 +17,23 @@ type ServiceType = {
 
 const services: ServiceType[] = data;
 const Services: React.FC = () => (
-  <OuterComponent>
-    <OuterFlexComponent>
-      <SectionHeader
-        buttonText="Our Services"
-        description="We stay ahead of the latest developments in Magento and eCommerce technology. This commitment to staying updated means we can offer you the most advanced features and security measures, keeping your online store modern and competitive."
-        style="w-[800px] lg:!w-[740px] xs:!w-[400px] 3xs:!w-[310px]"
-      >
-        <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] sm:text-wrap text-center">
-          Magento Development Services{" "}
-          <span className="italic font-light">We Offer </span>
-        </div>
-      </SectionHeader>
-      <OurServicesMainContainer />
-    </OuterFlexComponent>
-  </OuterComponent>
+  <div id="our-services">
+    <OuterComponent>
+      <OuterFlexComponent>
+        <SectionHeader
+          buttonText="Our Services"
+          description="We keep up with the latest advancements in Magento and eCommerce technology. This dedication to remaining informed allows us to provide you with the most cutting-edge features and security measures, ensuring your online store remains modern and competitive."
+          style="w-[80%] lg:!w-[740px] xs:!w-[400px] 3xs:!w-[310px]"
+        >
+          <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] capitalize sm:text-wrap text-center">
+            Magento Development Services{" "}
+            <span className="italic font-light">We Offer </span>
+          </div>
+        </SectionHeader>
+        <OurServicesMainContainer />
+      </OuterFlexComponent>
+    </OuterComponent>
+  </div>
 );
 
 export default Services;

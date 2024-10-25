@@ -22,24 +22,27 @@ const Technologies = () => {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <OuterComponent>
-      <OuterFlexComponent>
-        <SectionHeader
-          buttonText="Technologies"
-          description="As a dedicated offshore Flutter app development company, we harness the power of the latest tools and technologies to build robust, secure, and innovative solutions that resonate with your brand’s essence while facilitating business resilience."
-          style="w-[880px] lg:!w-[700px] sm:!w-full"
-        >
-          <div className="w-[900px] sm:w-full text-wrap text-center mx-auto leading-[1.4]">
-            Tools And Technologies We Use For Robust
-            <span className="italic font-light"> Flutter App</span> Development
+    <div id="technologies">
+      <OuterComponent>
+        <OuterFlexComponent>
+          <SectionHeader
+            buttonText="Technologies"
+            description="As a dedicated offshore Flutter app development company, we leverage the latest tools and technologies to create robust, secure, and innovative solutions that reflect your brand's essence and enhance business resilience."
+            style="w-[880px] lg:!w-[700px] sm:!w-full"
+          >
+            <div className="w-[900px] sm:w-full text-wrap text-center mx-auto leading-[1.4] capitalize">
+              Tools And Technologies We Use For Robust
+              <span className="italic font-light"> Flutter App</span>{" "}
+              Development
+            </div>
+          </SectionHeader>
+          <div className="flex flex-col gap-[60px] lg:gap-[30px] w-full">
+            <Tabs activeTab={activeTab} setActiveTab={setActiveTab} />
+            <DetailView active={activeTab} />
           </div>
-        </SectionHeader>
-        <div className="flex flex-col gap-[60px] lg:gap-[30px] w-full">
-          <Tabs activeTab={activeTab} setActiveTab={setActiveTab} />
-          <DetailView active={activeTab} />
-        </div>
-      </OuterFlexComponent>
-    </OuterComponent>
+        </OuterFlexComponent>
+      </OuterComponent>
+    </div>
   );
 };
 
@@ -74,7 +77,7 @@ const DetailView: React.FC<{ active: number }> = ({ active }) => (
     {technologies[active].technologies.map((technology: technology) => (
       <div
         className={
-          "flex flex-col justify-between w-[160px] h-[160px] lg:w-[110px] lg:h-[110px] text-center items-center rounded-[27px] lg:rounded-[17px] p-6 lg:py-3 lg:px-3 shrink-0 border-borderDarkButton [backdrop-filter:blur(100px)] text-light border-solid border bg-darkButton shadow-buttonInset"
+          "flex flex-col justify-between w-[160px] h-[160px] lg:w-[110px] lg:h-[110px] text-center items-center rounded-[27px] lg:rounded-[17px] p-6 lg:py-3 lg:px-3 shrink-0 border-borderDarkButton [backdrop-filter:blur(100px)] text-secondary border-solid border bg-darkButton shadow-buttonInset"
         }
         key={technology.name}
       >

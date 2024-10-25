@@ -8,10 +8,11 @@ const SectionHeader = dynamic(() => import("@components/basic-components/section
 const Header: React.FC = () => (
   <SectionHeader
     style=""
+    id="work"
     buttonText="Work"
-    description="Explore our showcase of our recent projects to see tha solutions we’ve recently brought to life."
+    description="Explore our showcase of our recent projects to see the solutions we’ve recently brought to life."
   >
-    <div>
+    <div className="leading-[1.4] capitalize">
       See our recent <span className="italic font-light">Projects.</span>
     </div>
   </SectionHeader>

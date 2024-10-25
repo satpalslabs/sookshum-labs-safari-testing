@@ -14,6 +14,7 @@ const OurCulture: React.FC = () => {
   return (
     <OuterComponent>
       <div
+        id="our-culture"
         ref={ref}
         className={` flex flex-col items-center gap-[32px] lg:gap-[30px] xs:gap-3 ${
           isInView ? "grayscale-0" : "grayscale"

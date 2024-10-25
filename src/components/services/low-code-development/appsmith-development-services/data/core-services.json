@@ -1,14 +1,14 @@
 [
     {
         "image": "/services/admin-development/nextjs-development-services/our-process/maintenance.webp",
-        "description": "We develop apps and systems to replace or supplement your existing business software"
+        "description": "We create applications and systems to either replace or enhance your current business software."
     },
     {
         "image": "/services/low-code-development/appsmith-development-services/core-services/puzzle.png",
-        "description": "We create custom connectors and integrate a low-code app with any BPM system your business uses"
+        "description": "We build custom connectors and integrate low-code applications with any BPM system utilized by your business."
     },
     {
         "image": "/services/low-code-development/appsmith-development-services/core-services/box.png",
-        "description": "Before you invest in full-scale app development let’s develop a performant PoC."
+        "description": "Before investing in full-scale app development, its ideal to create an efficient proof of concept (PoC) for validating your product idea."
     }
 ]

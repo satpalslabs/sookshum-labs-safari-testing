@@ -20,7 +20,7 @@ const dataCards: DataCard[] = data.cards;
 
 const BottomSection: React.FC = () => (
   <OuterComponent>
-    <div className="h-fit w-full">
+    <div className="h-fit w-full" id="connect">
       <div className="grid grid-cols-3 sm:grid-cols-2 sm:grid-rows-2 xs:grid-rows-3 xs:grid-cols-1 gap-5 w-full">
         {dataCards.map((item: DataCard, index: number) => (
           <a href={`mailto:${item["e-mail"]}`} target="_blank" key={index}>
@@ -59,7 +59,7 @@ const BottomSection: React.FC = () => (
               />
               <a href="https://careers.sookshum-labs.com/jobs" target="_blank">
                 <DarkButton
-                  style="group-hover:!bg-none h-full sm:!px-5"
+                  style="group-hover:!bg-none h-full sm:!px-5 !text-white"
                   text="Careers"
                 />
               </a>

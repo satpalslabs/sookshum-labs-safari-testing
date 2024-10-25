@@ -18,12 +18,15 @@ type card = {
 };
 
 const EverythingYouNeed: React.FC = () => (
-  <div className="mt-[70px] lg:mt-[60px] sm:mt-0 xs:-mt-[60px]">
+  <div
+    className="mt-[70px] lg:mt-[60px] sm:mt-0 xs:-mt-[60px]"
+    id="everything-you-need"
+  >
     <OuterComponent>
       <OuterFlexComponent>
         <SectionHeader
           buttonText="Everything You Need"
-          description="Access a team of expert Retool developers, ready to help within 48 hours!"
+          description="Connect with our team of expert Retool developers, available to assist you within 48 hours!"
           style="w-[95.5%] lg:!w-[740px] xs:!w-full"
         >
           <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
@@ -62,7 +65,7 @@ const MainContainer: React.FC = () => {
             <div className="flex flex-col gap-4 lg:gap-3 sm:gap-2">
               <H6
                 text={item.title}
-                classes="text-white xxl:text-3xl !font-[500] !text-[20px] sm:!text-[14px] md:!leading-[1.4] !leading-[1.6]"
+                classes="!text-white xxl:text-3xl !font-[500] !text-[20px] sm:!text-[14px] md:!leading-[1.4] !leading-[1.6]"
               />
               <Description
                 children={null}

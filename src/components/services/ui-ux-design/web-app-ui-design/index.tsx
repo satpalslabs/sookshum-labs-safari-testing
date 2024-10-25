@@ -10,6 +10,7 @@ import Work from "./work";
 import Discover from "./discover";
 import WhyUs from "./why-us";
 import PredictableResults from "./predictable-results";
+import GoTopButton from "@components/basic-components/go-to-top";
 
 const content_heroSection: HeroSection = {
   gradientTextStyle: "",
@@ -27,7 +28,7 @@ const content_heroSection: HeroSection = {
       "xxl:!h-[520px] xxl:left-[50%] xxl:-translate-x-[35%] !h-[550px] lg:!h-[380px] sm:!h-[340px] xs:!h-[220px] xs:!top-[-20%] !top-[-15%] xxl:!top-[-8%]",
   },
   aboutPage:
-    "Having designed dozens of products, we have the experience and know-how needed to create complex designs that are well-thought-out and highly efficient.",
+    "With extensive experience designing dozens of products, we possess the expertise to create complex designs that are both well-considered and highly efficient.",
 };
 
 const WebAppUI_DesignComponent: React.FC<HomeProps> = (props) => (
@@ -43,6 +44,8 @@ const WebAppUI_DesignComponent: React.FC<HomeProps> = (props) => (
     {/* Temporary disable */}
     {/* <Faqs DataKey={"ui-ux-design"} /> */}
     <LetsConnect />
+    <GoTopButton />
+
   </div>
 );
 

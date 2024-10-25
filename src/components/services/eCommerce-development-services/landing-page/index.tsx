@@ -12,6 +12,7 @@ import Technologies from "./technologies";
 import OurProcess from "./our-process";
 import { HomeProps } from "@app/page";
 import LetsConnect from "./need-project";
+import GoTopButton from "@components/basic-components/go-to-top";
 
 const content_heroSection: HeroSection = {
   gradientTextStyle: "",
@@ -43,7 +44,7 @@ const DefaultEcommercePage: React.FC<HomeProps> = ({isBot}) => (
     {/* Temporary disable */}
     {/* <Faqs DataKey={"ecommerce-development-landing-page"}/> */}
     <LetsConnect />
-    {/* <div className="w-full h-[740px] xs:h-[580px] md:h-[600px] lg:h-[600px] sm:h-[480px] xxl:h-[740px] z-10 absolute -top-[1.4%] lg:-top-[2%] md:-top-[1.9%] sm:-top-[2.5%] xs:-top-[1.8%] bg-gradient-to-t from-black via-lightBlack to-black "></div> */}
+    <GoTopButton />
   </div>
 );
 

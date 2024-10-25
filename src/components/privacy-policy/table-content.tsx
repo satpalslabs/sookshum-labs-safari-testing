@@ -28,6 +28,7 @@ const Table: React.FC = () => {
   const [active, setActive] = useState<boolean>(false);
   return (
     <div
+      id="table"
       className={` min-w-[33.9%] lg:min-w-[37.8%] xs:w-full xs:h-[66px] overflow-hidden transition-all duration-1000 ease-linear ${
         active && "xs:h-full"
       }`}
@@ -49,18 +50,8 @@ const Table: React.FC = () => {
             <ul className="flex flex-col gap-[10px] font-poppins !capitalize !px-4 !py-0 !m-0">
               {tableContentData.map(
                 (tableContentItem: TableContentDataItem, index: number) => (
-                  <li
-                    key={index}
-                    className="cursor-pointer !py-0"
-                    onClick={() => {
-                      document
-                        .getElementById(`content-${index}`)
-                        ?.scrollIntoView({
-                          behavior: "smooth",
-                        });
-                    }}
-                  >
-                    {tableContentItem.title}
+                  <li key={index} className="cursor-pointer !py-0">
+                    <a href={`#content-${index}`}>{tableContentItem.title}</a>
                   </li>
                 )
               )}

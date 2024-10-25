@@ -16,10 +16,10 @@ const OurServices: React.FC = () => (
     <OuterFlexComponent>
       <SectionHeader
         buttonText="Our Services"
-        description="As a UI UX design company, we provide end-to-end UI UX services including research, wireframing, UI design and development. Out UI UX services;:"
+        description="As a UI/UX design agency, we offer comprehensive end-to-end services, including research, wireframing, UI design, and development."
         style="w-[800px] lg:!w-[740px] sm:!w-full xs:!w-[400px] 3xs:!w-[310px]"
       >
-        <div className="xs:w-full mx-auto leading-[1.4] sm:text-wrap text-center">
+        <div className="xs:w-full mx-auto leading-[1.4] sm:text-wrap text-center capitalize">
           What Our landing page agency does!
         </div>
       </SectionHeader>
@@ -40,9 +40,6 @@ const OurServicesMainContainer = () => {
       className={`grid grid-rows-4 w-full justify-center grid-cols-3 gap-5 lg:gap-4 sm:grid-rows-5 xs:grid-cols-1 xs:!grid-rows-15 ${
         isInView ? "grayscale-0" : "grayscale"
       }`}
-      // className={`flex flex-wrap justify-center items-center gap-5   ${
-      //   isInView ? "grayscale-0" : "grayscale"
-      // }`}
     >
       {services.map((service: string, ind: number) => (
         <Card

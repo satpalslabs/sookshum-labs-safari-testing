@@ -13,22 +13,24 @@ type Process = {
 };
 const processData: Process[] = data["our-process"];
 const OurProcess = () => (
-  <OuterComponent>
-    <OuterFlexComponent>
-      <SectionHeader
-        buttonText="Our Process"
-        description="Tailored and inspired. Professional and reliable. Our agency strives to provide only the best solutions."
-        style="w-[794px] lg:w-[491px] lg:mx-auto xs:w-full"
-      >
-        <div className="w-[80%] lg:w-[637px] sm:w-full xs:w-[70%] xs:text-balance lg:leading-[1.2] text-wrap tracking-tight text-center mx-auto ">
-          Our Process for
-          <span className="italic font-light w-full"> App Development </span>
-          Success
-        </div>
-      </SectionHeader>
-      <OurProcessDetailComponent />
-    </OuterFlexComponent>
-  </OuterComponent>
+  <div id="our-process">
+    <OuterComponent>
+      <OuterFlexComponent>
+        <SectionHeader
+          buttonText="Our Process"
+          description="Tailored and inspired. Professional and reliable. Our agency strives to provide only the best solutions."
+          style="w-[794px] lg:w-[491px] lg:mx-auto xs:w-full"
+        >
+          <div className="w-[80%] lg:w-[637px] sm:w-full xs:w-[70%] xs:text-balance lg:leading-[1.2] text-wrap tracking-tight text-center mx-auto leading-[1.4] capitalize">
+            Our Process for
+            <span className="italic font-light w-full"> App Development </span>
+            Success
+          </div>
+        </SectionHeader>
+        <OurProcessDetailComponent />
+      </OuterFlexComponent>
+    </OuterComponent>
+  </div>
 );
 
 export default OurProcess;
@@ -58,7 +60,7 @@ const OurProcessDetailComponent: React.FC = () => {
           >
             <H6
               text={processItem["process-title"]}
-              classes={`text-center text-white !text-balance w-[70%] xs:w-[100px] mx-auto leading-[1.3]`}
+              classes={`text-center !text-white !text-balance w-[70%] xs:w-[100px] mx-auto leading-[1.3]`}
             />
             <div
               className="h-[50px] rounded-full"

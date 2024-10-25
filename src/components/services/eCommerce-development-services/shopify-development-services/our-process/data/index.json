@@ -2,35 +2,35 @@
     "process-services": [
         {
             "title": "Pricing and Initial Consultation ",
-            "description": "We begin with an initial consultation to understand your project requirements, goals, and budget. We provide a detailed proposal outlining the scope of work, pricing, and timetable."
+            "description": "We start with an initial consultation to understand your project requirements, goals, and budget. Following that, we provide a comprehensive proposal detailing the scope of work, pricing, and timeline."
         },
         {
             "title": "Design for Shopify Store",
-            "description": "Our team is dedicated to creating attractive, user-friendly designs that increase conversion. Discover how we create UI, UX and web designs here."
+            "description": "Our team is committed to crafting visually appealing, user-friendly designs that not only capture attention but also enhance the overall user experience and boost conversions."
         },
         {
             "title": "Theme Development",
-            "description": "Our team starts creating your custom Shopify store.<br /> We focus on crafting a compatible design and highly functional eCommerce platform that aligns with your brand and business goals."
+            "description": "Our team begins the development of your custom Shopify store by focusing on creating a design that is both compatible and visually appealing. We prioritise building a highly functional eCommerce platform that aligns seamlessly with your brand and business objectives."
         },
         {
-            "title": "Store development",
-            "description": "Our testers conduct rigorous testing to ensure your Shopify store functions flawlessly.<br /> We perform functionality tests, usability tests, and security checks. We base our actions on Quality Assurance."
+            "title": "Testing",
+            "description": "Our testers conduct thorough testing to guarantee that your Shopify store operates flawlessly. We conduct functionality tests, usability assessments, and security checks, all rooted in our commitment to Quality Assurance."
         },
         {
             "title": "Client Review and Possible Amendments  ",
-            "description": "We present the Shopify store for your review and feedback.<br /> You have the opportunity to change requests about design and functionality modifications. Every task comes to final testing."
+            "description": "We present the Shopify store for your review and feedback, giving you the chance to request design and functionality modifications. Each task undergoes final testing before completion."
         },
         {
             "title": "Deployment ",
-            "description": "After your review and optional amendments, we ensure a flawless deployment, transitioning your Shopify store from its developmental stage to full production."
+            "description": "Following your review and any optional amendments, we guarantee a seamless deployment, transitioning your Shopify store from the development phase to full production."
         },
         {
             "title": "Your Project Acceptance  ",
-            "description": "After we provide the last updates, you have 30 days to report your comments. You can accept the project once you are satisfied with the final deliverable."
+            "description": "After we deliver the final updates, you have 30 days to share your feedback. You can officially accept the project once you are fully satisfied with the final deliverable."
         },
         {
             "title": "Project development and maintenance  ",
-            "description": "We offer project maintenance and development after your Shopify store’s successful launch. You can request new features, updates, or modifications to your Shopify store in response to changing business needs. "
+            "description": "We provide ongoing maintenance and development services for your Shopify store after its successful launch. You can request new features, updates, or modifications to adapt to your evolving business needs."
         }
     ]
 }

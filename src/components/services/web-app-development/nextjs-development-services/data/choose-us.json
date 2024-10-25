@@ -1,22 +1,22 @@
 [
     {
         "heading": "User-oriented approach",
-        "description": "Applications developed by our team are designed with end-user in mind.",
+        "description": "Applications created by our team are designed with the end user in focus.",
         "image_url": "/services/landing-page/core-services/user.webp"
     },
     {
         "heading": "Transparency",
-        "description": "In everything we do, from pricing to discussing project objectives, we are honest and open with our clients. ",
+        "description": "In all our interactions, from pricing to discussing project objectives, we maintain honesty and transparency with our clients.",
         "image_url": "/services/admin-development/nextjs-development-services/why-us/transparency.webp"
     },
     {
         "heading": "Custom-built solutions ",
-        "description": "Our years of experience allow us to adapt to every unique idea and be flexible to each business’s needs.",
+        "description": "Our extensive experience enables us to adapt to every unique idea and remain flexible to the needs of each business.",
         "image_url": "/services/mobile-app-devlopment/landing-page/why-us/maintain.png"
     },
     {
         "heading": "Cutting-edge technologies",
-        "description": "We use only proven technologies frameworks, and libraries that ensure flawless performance, app security, and customer protection. ",
+        "description": "We utilize only reliable technologies, frameworks, and libraries that guarantee optimal performance, robust app security, and protection for our customers.",
         "image_url": "/services/admin-development/nextjs-development-services/why-us/cutting-edge-technologies.webp"
     }
 ]

@@ -17,21 +17,23 @@ type ChooseUs = {
 
 const chooseUsData: ChooseUs[] = data;
 const ChooseUs = () => (
-  <OuterComponent>
-    <OuterFlexComponent>
-      <SectionHeader
-        buttonText="Why choose us?"
-        description="Imagine how good you’d be at something if you’d done it every day for the past 8 years. That’s exactly the case with our Shopify developers. Take a look at the benefits of partnering with us:"
-        style="w-[994px] sm:w-[700px] xs:w-full mx-auto"
-      >
-        <div className="w-[full] sm:w-[800px] leading-[1.4] xs:w-full text-wrap text-center mx-auto">
-          Why grow with Sookshum Labs{" "}
-          <span className="italic font-light">Shopify Agency?</span>
-        </div>
-      </SectionHeader>
-      <ChooseUsCards />
-    </OuterFlexComponent>
-  </OuterComponent>
+  <div id="why-us">
+    <OuterComponent>
+      <OuterFlexComponent>
+        <SectionHeader
+          buttonText="Why choose us?"
+          description="We are quite good at this as we have been doing this for the past 8 years. We bring our long term expertise with Shopify to the table. Here’s why partnering with us makes all the difference:"
+          style="w-[994px] sm:w-[700px] xs:w-full mx-auto"
+        >
+          <div className="w-[full] sm:w-[800px] leading-[1.4] capitalize xs:w-full text-wrap text-center mx-auto">
+            Why grow with Sookshum Labs{" "}
+            <span className="italic font-light">Shopify Agency?</span>
+          </div>
+        </SectionHeader>
+        <ChooseUsCards />
+      </OuterFlexComponent>
+    </OuterComponent>
+  </div>
 );
 
 export default ChooseUs;
@@ -88,23 +90,22 @@ const SingleCard: React.FC<{
         boxShadow: "1.75px 3.49px 13.98px 0px #F8F8F80F inset",
         backdropFilter: "blur(87.34871673583984px)",
         WebkitBackdropFilter: "blur(17.3487px)",
-
       }}
     >
       <div className="flex flex-col gap-5 xxl:gap-8 sm:gap-[15px]">
         <div className="flex justify-between items-center">
           <DarkButton
-            style="!text-light !bg-innerContainer sm:!px-[18px] sm:!h-[33px] sm:!text-[10px] md:!text-[12px] sm:!text-[10px] "
+            style="!text-secondary !bg-innerContainer sm:!px-[18px] sm:!h-[33px] sm:!text-[10px] md:!text-[12px] sm:!text-[10px] "
             text={data.button_text}
           />
           <H4
-            style="!leading-[1.25] !text-[20px] sm:!text-sm !text-light"
+            style="!leading-[1.25] !font-medium !text-[20px] sm:!text-sm !text-secondary"
             text={`00${index + 1}`}
           />
         </div>
         <div className="flex flex-col gap-3 sm:gap-[10px]">
           <H4
-            style="!leading-[1.25] !text-[20px] sm:!text-sm"
+            style="!leading-[1.25] !text-[20px] sm:!text-sm !text-white"
             text={data.heading}
           />
           <Description

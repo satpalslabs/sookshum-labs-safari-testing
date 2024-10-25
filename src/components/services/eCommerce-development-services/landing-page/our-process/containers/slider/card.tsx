@@ -44,12 +44,12 @@ const ProcessServiceCard = ({
       <div className=" flex w-fit flex-col gap-[12px] grow xs:p-1">
         <div className="flex gap-3 w-fit relative items-center overflow-visible ">
           <H5
-            style="text-white !leading-[1.2] md:text-[18px] pr-6"
+            style="text-white  md:text-[18px] pr-6 !text-white"
             text={industry.title}
           />
           {/* {isLast && ( */}
           <div
-            className={`font-poppins absolute overflow-visible right-0 translate-x-[50px] w-[50px] items-center text-[30px] md:leading-5 md:text-base sm:text-sm text-white font-medium rocket flex scale-1 transition-all ease-in-out ${
+            className={`font-poppins absolute overflow-visible right-0 translate-x-[50px] w-[50px] items-center text-[30px] md:leading-5 md:text-base sm:text-sm text-white font-medium rocket flex scale-1 transition-all ease-in-out  ${
               !isLast && "!scale-0"
             }`}
           >

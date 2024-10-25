@@ -8,7 +8,7 @@ const Cover: React.FC = () => {
     animation();
   });
   return (
-    <div className=" bg-black overflow-hidden w-full h-full ">
+    <div className=" bg-black overflow-hidden w-full h-full " id="cover">
       <div
         id="animationDiv"
         className="relative p-[5rem] py-[408px] lg:py-[300px] md:py-[277px] sm:py-[186px] xs:py-[333px] z-[2] text-center lg:p-[2.5rem] lg:box-border md:gap-[16.125rem] md:p-[1.875rem] sm:gap-[1.875rem] sm:p-[1.25rem] h-full max-w-[1920px] mx-auto"
@@ -48,7 +48,7 @@ const TextContainer: React.FC = () => (
     <Description
       children={null}
       text="Our services are backed by a team of experts with years of experience in software design, development and maintenance."
-      classes=" w-[50%] xs:w-full font-light"
+      classes=" w-[50%] xs:w-full !font-light !text-white"
     />
   </div>
 );

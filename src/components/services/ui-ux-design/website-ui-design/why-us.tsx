@@ -19,21 +19,24 @@ type item_type = {
 
 const dataItems: item_type[] = data;
 const WhyUs: React.FC = () => (
-  <OuterComponent>
-    <OuterFlexComponent>
-      <SectionHeader
-        buttonText="Why us?"
-        description="As the top UI UX design ageny, we blend research, strategy, and technology to provide customized digital solutions for your eCommerce, web & mobile products. "
-        style="xxl:!w-[800px] !w-full lg:!w-[740px] xs:!w-full"
-      >
-        <div className="xs:w-full sm:w-[80%] w-full mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
-          Redefine Experiences with <br className="sm:hidden" />
-          best <span className="italic font-light"> ui ux design </span> agency
-        </div>
-      </SectionHeader>
-      <MainContainer />
-    </OuterFlexComponent>
-  </OuterComponent>
+  <div id="why-us">
+    <OuterComponent>
+      <OuterFlexComponent>
+        <SectionHeader
+          buttonText="Why us?"
+          description="As a leading UI/UX design agency, we combine research, strategy, and technology to deliver tailored digital solutions for your eCommerce, web, and mobile products."
+          style="xxl:!w-[800px] !w-full lg:!w-[740px] xs:!w-full"
+        >
+          <div className="xs:w-full sm:w-[80%] w-full mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
+            Redefine Experiences with <br className="sm:hidden" />
+            best <span className="italic font-light"> ui ux design </span>{" "}
+            agency
+          </div>
+        </SectionHeader>
+        <MainContainer />
+      </OuterFlexComponent>
+    </OuterComponent>
+  </div>
 );
 
 export default WhyUs;
@@ -57,11 +60,11 @@ const MainContainer: React.FC = () => {
           <div className="flex flex-col  gap-4 lg:gap-3 sm:gap-2 w-[40.8%] sm:w-[40%] xs:w-full shrink-0">
             <H6
               text={item.title}
-              classes="text-white xxl:text-3xl !font-[500] !text-[20px] sm:!text-[14px] md:!leading-[1.4] !leading-[1.6]"
+              classes="text-white xxl:!text-3xl !font-[500] !text-[26px] sm:!text-[18px] md:!leading-[1.4] !leading-[1.6]"
             />
             <Description
               text={""}
-              classes="grow-0 h-fit sm:!text-xs text-lg !font-normal"
+              classes="grow-0 h-fit sm:!text-xs !text-white text-lg !font-normal"
             >
               <div
                 dangerouslySetInnerHTML={{ __html: item.description }}

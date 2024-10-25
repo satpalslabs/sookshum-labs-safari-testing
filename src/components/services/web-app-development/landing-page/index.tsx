@@ -2,7 +2,6 @@
 import Services from "./services";
 import Testimonials from "@components/basic-components/testimonials";
 import ChooseUs from "./why-us";
-import Work from "./work";
 import Technologies from "./technologies";
 import OurProcess from "./our-process";
 import LetsConnect from "./need-project";
@@ -12,6 +11,8 @@ import Hero, {
 import CoreServices from "@components/services/reuseable-components/core-services";
 // import Faqs from "@components/services/reuseable-components/faqs";
 import { HomeProps } from "@app/page";
+import GoTopButton from "@components/basic-components/go-to-top";
+import Work from "@components/home/work";
 
 const content_heroSection: HeroSection = {
   gradientTextStyle: "",
@@ -45,6 +46,8 @@ const LandingPageWebAppDevelopment: React.FC<HomeProps> = ({isBot}) => (
     {/* Temporary disable */}
     {/* <Faqs DataKey={"website-development-landing-page"} /> */}
     <LetsConnect />
+    <GoTopButton />
+
   </div>
 );
 

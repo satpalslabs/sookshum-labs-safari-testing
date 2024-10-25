@@ -9,7 +9,7 @@ const Header: React.FC = () => (
     buttonText="Our Process"
     description="Efficiently tracking and optimizing development time for your ongoing WordPress projects."
   >
-    <div className="sm:text-wrap text-center leading-[1.3]">
+    <div className="sm:text-wrap text-center leading-[1.4] capitalize">
       <span className="italic font-light">WordPress Development </span> Time
       Track For An Existing Project
     </div>

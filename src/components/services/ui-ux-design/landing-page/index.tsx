@@ -9,6 +9,7 @@ import Hero, {
 } from "@components/services/reuseable-components/hero";
 import CoreServices from "@components/services/reuseable-components/core-services";
 import { HomeProps } from "@app/page";
+import GoTopButton from "@components/basic-components/go-to-top";
 
 const content_heroSection: HeroSection = {
   gradientTextStyle: "",
@@ -41,6 +42,8 @@ const UiUxDesignComponent: React.FC<HomeProps> = (props) => (
     {/* Temporary disable */}
     {/* <Faqs DataKey={"ui-ux-design"} /> */}
     <WorkTogether />
+    <GoTopButton />
+
   </div>
 );
 

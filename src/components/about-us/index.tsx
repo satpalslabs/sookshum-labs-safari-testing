@@ -9,6 +9,7 @@ import InnovationConcepts from "./innovation-concepts";
 import OurValues from "./our-values";
 import PredictableResults from "./predictable-results";
 import BottomSection from "./get-in-touch-section";
+import GoTopButton from "@components/basic-components/go-to-top";
 
 const content_heroSection: HeroSection = {
   gradientTextStyle: "",
@@ -41,6 +42,8 @@ const AboutUs: React.FC = () => (
     <OurValues />
     <PredictableResults />
     <BottomSection />
+    <GoTopButton />
+
   </div>
 );
 

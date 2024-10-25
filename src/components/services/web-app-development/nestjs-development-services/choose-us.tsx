@@ -20,21 +20,24 @@ type choose_us = {
 
 const chooseUsData: choose_us[] = data;
 const ChooseUs: React.FC = () => (
-  <OuterComponent>
-    <OuterFlexComponent>
-      <SectionHeader
-        buttonText="Why choose us?"
-        description="In the realm of NestJs Development, Sookshum Labs company stands as a beacon of expertize, innovation and client centric solutions. Choosing us for your NestJs development services means embracing a partnership that goes beyond mere coding. Our commitment to excellence is rooted in a deep understanding of the frameworks capabilities and a passion for crafting solutions that resonate with your business objectives."
-        style="w-[95.5%] lg:!w-[740px] xs:!w-full"
-      >
-        <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
-          Why choose us for <span className="italic font-light"> nestJS </span>{" "}
-          Development Services?
-        </div>
-      </SectionHeader>
-      <MainContainer />
-    </OuterFlexComponent>
-  </OuterComponent>
+  <div id="why-us">
+    <OuterComponent>
+      <OuterFlexComponent>
+        <SectionHeader
+          buttonText="Why choose us?"
+          description="In the world of NestJS development, Sookshum Labs is a leader in expertise, innovation, and client-focused solutions. Partnering with us for your NestJS development needs means more than just coding; it’s a collaboration aimed at achieving your business goals. Our dedication to excellence is founded on a profound understanding of the framework's capabilities and a passion for creating solutions that align with your objectives."
+          style="w-[95.5%] lg:!w-[740px] xs:!w-full"
+        >
+          <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
+            Why choose us for{" "}
+            <span className="italic font-light"> NestJS </span> Development
+            Services?
+          </div>
+        </SectionHeader>
+        <MainContainer />
+      </OuterFlexComponent>
+    </OuterComponent>
+  </div>
 );
 
 export default ChooseUs;
@@ -44,10 +47,7 @@ const MainContainer: React.FC = () => {
   const isInView = useInView(ref);
 
   return (
-    <div
-      ref={ref}
-      className="grid grid-cols-3 gap-4 w-full xs:grid-cols-1"
-    >
+    <div ref={ref} className="grid grid-cols-3 gap-4 w-full xs:grid-cols-1">
       {chooseUsData.map((chooseUs: choose_us, index: number) => (
         <Card key={index} style="mt-0 !pb-4" isInView={isInView}>
           <div className="flex flex-col justify-between lg:p-3 p-4 gap-[97px] lg:gap-5 h-full">
@@ -65,7 +65,7 @@ const MainContainer: React.FC = () => {
             <div className="flex flex-col gap-4 lg:gap-3 sm:gap-2">
               <H6
                 text={chooseUs.title}
-                classes="text-white xxl:text-3xl !font-[500] !text-[20px] sm:!text-[14px] md:!leading-[1.4] !leading-[1.6]"
+                classes="!text-white xxl:text-3xl !font-[500] !text-[20px] sm:!text-[14px] md:!leading-[1.4] !leading-[1.6]"
               />
               <Description
                 children={null}

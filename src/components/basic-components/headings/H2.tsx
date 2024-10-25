@@ -1,11 +1,10 @@
-
 type props = {
   children: React.ReactNode;
 };
 const H2: React.FC<props> = ({ children }) => (
-  <div className="!font-poppins leading-[72px] text-5xl lg:leading-[42px] lg:text-[42px] sm:text-4xl xs:text-[28px] text-white font-medium text-nowrap 3xs:text-wrap">
+  <h2 className="!font-poppins text-5xl leading-[1.4] lg:text-[42px] sm:text-4xl xs:text-[28px] text-white font-medium text-nowrap 3xs:text-wrap">
     {children}
-  </div>
+  </h2>
 );
 
 export default H2;

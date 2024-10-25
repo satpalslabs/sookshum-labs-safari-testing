@@ -18,7 +18,7 @@ const TextContainer: React.FC = () => (
         children={null}
         text="Our app development team builds scalable, secure, and reliable mobile applications for your business."
         classes={
-          "text-lg w-full !font-normal text-white leading-[32px] lg:text-base xs:w-full"
+          "text-lg w-full !font-normal !text-white leading-[32px] lg:text-base xs:w-full"
         }
       />
     </div>

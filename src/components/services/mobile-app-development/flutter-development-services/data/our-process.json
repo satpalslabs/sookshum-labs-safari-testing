@@ -1,22 +1,22 @@
 [
     {
         "heading": "Requirement Analysis",
-        "description": "Strategic consultation to understand your Flutter product requirements, roadmap and vision.",
+        "description": "Strategic consultation to gain insights into your Flutter product requirements, roadmap, and vision.",
         "imageUrl": "/services/admin-development/nextjs-development-services/why-us/transparency.webp"
     },
     {
         "heading": "UX/UI Design",
-        "description": "Industry Benchmark UX Research Wireframes and Flutter App Prototype UI & UX Design",
+        "description": "Industry-Benchmark UX Research, Wireframes, and Flutter App Prototype UI & UX Design.",
         "imageUrl": "/services/mobile-app-devlopment/landing-page/why-us/design.png"
     },
     {
         "heading": "Flutter App Development",
-        "description": "Mobile App Development using Flutter and Agile sprints. We base our apps on the best and fast cross-platform framework: Flutter",
+        "description": "Mobile app development utilizing Flutter and Agile sprints. We build our apps on Flutter, the leading fast cross-platform framework.",
         "imageUrl": "/services/mobile-app-devlopment/landing-page/lets-connect.webp"
     },
     {
         "heading": "Flutter Maintenance & Support",
-        "description": "Flutter App optimization and evolution. Analytics Flutter App enhancements. Hire a dedicated ThinkUp Flutter Squad to update your Flutter app as you need.",
+        "description": "Flutter app optimization and evolution, along with analytics-driven enhancements. Hire a dedicated ThinkUp Flutter Squad to update your Flutter app as needed.",
         "imageUrl": "/services/admin-development/nextjs-development-services/our-process/maintenance.webp"
     }
 ]

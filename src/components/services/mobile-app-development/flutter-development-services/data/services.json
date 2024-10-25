@@ -1,47 +1,32 @@
 [
     {
-        "heading": "Custom Shopify Web Development",
-        "description": "Stand out among your competitors with striking designs and seamless functionality. ",
+        "heading": "Cross Platform Development",
+        "description": "Hire skilled Flutter developers to create cross-platform applications using a single codebase. We offer remote Flutter developers for every phase of the project, including design, development, migration, testing, maintenance, and app launch.",
         "image_url": "/services/web-app-development/landing-page/why-us/develop.png"
     },
     {
-        "heading": "Shopify Store Migration",
-        "description": "Our experts handle your migration process efficiently and smoothly without downtime.",
+        "heading": "Flutter Consultation Services ",
+        "description": "Offshore Flutter developers offer expert consulting services to startups and enterprises, helping to identify effective ways to integrate Flutter into your business strategy. Our developers focus on leveraging the best practices for maximizing the potential of Flutter.",
         "image_url": "/services/website-development/landing-page/why-us/tech-partner.png"
     },
     {
-        "heading": "Shopify Plus Development",
-        "description": "Our development team specialists in maximizing the potential of Shopify Plus.",
+        "heading": "Application Design",
+        "description": "Hire Flutter UI/UX specialists to develop a results-driven strategy and create highly attractive and engaging interfaces. From visual design and information usability to architecture, we cover all aspects. Hire our Flutter experts to build captivating applications.",
         "image_url": "/services/e-commerce-development/shopify-development-services/our-services/shopify-plus-development.png"
     },
     {
-        "heading": "Shopify Store Optimization",
-        "description": "Elevate your online store by enhancing user experience, navigation, and speed.",
+        "heading": "Flutter App Maintenance",
+        "description": "We have a dedicated team of Flutter application developers specializing in top-notch maintenance services to ensure your Flutter application operates seamlessly. Our services include incorporating the latest features, troubleshooting, upgrades, and more.",
         "image_url": "/services/web-app-development/landing-page/services/landing-pages.png"
     },
     {
-        "heading": "Shopify App Development",
-        "description": "We design and develop Shopify apps that seamlessly integrate with your store.",
+        "heading": "Flutter Migration ",
+        "description": "We have a dedicated team of Flutter application developers specializing in top-notch maintenance services to ensure your Flutter application operates seamlessly. Our services include incorporating the latest features, troubleshooting, upgrades, and more.",
         "image_url": "/services/web-app-development/landing-page/services/website-development-design.png"
     },
     {
-        "heading": "Shopify Integrations",
-        "description": "Connect and streamline your online store with our powerful Shopify Integrations.",
+        "heading": "API Integration ",
+        "description": "Our Flutter app developers specialize in third-party integration, allowing you to incorporate various features such as payment processing, GPS, and more into your app. For all your API migration needs, hire a Flutter developer from Hidden Brains.",
         "image_url": "/services/e-commerce-development/shopify-development-services/our-services/shopify-integrations.png"
-    },
-    {
-        "heading": "Shopify Theme Customization",
-        "description": "Provide a unique and memorable user experience for your customers.",
-        "image_url": "/services/ui-ux-design/landing-page/service/web-app-design.png"
-    },
-    {
-        "heading": "Shopify PWA Development",
-        "description": "We transform your Shopify store into a fast, responsive, and immersive web app.",
-        "image_url": "/services/mobile-app-devlopment/landing-page/lets-connect.webp"
-    },
-    {
-        "heading": "On-Demand Shopify Developers",
-        "description": "Empower your eCommerce journey by hiring our dedicated Shopify Developers.",
-        "image_url": "/services/web-app-development/landing-page/why-us/our-team.png"
     }
 ]

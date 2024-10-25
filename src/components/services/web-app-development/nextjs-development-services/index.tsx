@@ -3,13 +3,14 @@ import Hero, {
 } from "@components/services/reuseable-components/hero";
 import Services from "./services";
 import Testimonials from "@components/basic-components/testimonials";
-import Work from "./work";
+import Work from "@components/home/work";
 import { HomeProps } from "@app/page";
 import WhoWeAre from "./who-we-are";
 import LetsConnect from "./need-project";
 import Benefits from "./benefits";
 import ChooseUs from "./choose-us";
 import OurProcess from "./our-process";
+import GoTopButton from "@components/basic-components/go-to-top";
 
 const content_heroSection: HeroSection = {
   gradientTextStyle: "",
@@ -24,10 +25,10 @@ const content_heroSection: HeroSection = {
     sourceStyle:
       "xxl:left-[50%] left-[8%] xxl:scale-[1.1] lg:!h-[330px] sm:!h-[280px] xs:!h-[170px] xxl:top-[-18%] xxl:-translate-x-[50%] left-[15%] lg:left-[2%] xs:-left-[4%]",
     gradientDivStyle:
-      "xxl:!h-[430px] xxl:left-[50%] xxl:-translate-x-[35%] !h-[550px] lg:!h-[380px] sm:!h-[340px] xs:!h-[220px] xs:!top-[-20%] !top-[-15%] xxl:!top-[-8%]",
+      "xxl:!h-[430px] xxl:left-[50%] xxl:-translate-x-[35%] !h-[550px] lg:!h-[380px] sm:!h-[340px] xs:!h-[220px] xs:!top-[-20%] !top-[-15%] xxl:!top-[-10%]",
   },
   aboutPage:
-    "With Next.js application development, your website or eCommerce will become ultimately flexible, performant, and scalable. Our developers will create Next.js websites that are at the same time customizable and SEO-friendly so that you’ll benefit from the perfect end product you need!",
+    "With Next.js application development, your website or eCommerce platform will be highly flexible, performant, and scalable. Our developers will build customizable and SEO-friendly Next.js websites, ensuring you receive the ideal end product to meet your needs!",
 };
 
 const NextJS_DevelopmentServices: React.FC<HomeProps> = ({ isBot }) => (
@@ -43,6 +44,8 @@ const NextJS_DevelopmentServices: React.FC<HomeProps> = ({ isBot }) => (
     {/* Temporary disable */}
     {/* <Faqs DataKey={"ecommerce-development-landing-page"}/> */}
     <LetsConnect />
+    <GoTopButton />
+
   </div>
 );
 

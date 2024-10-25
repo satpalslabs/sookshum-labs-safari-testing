@@ -15,21 +15,23 @@ type Benefit = {
 };
 const whyUsData: Benefit[] = data.benefits;
 const Benefits = () => (
-  <OuterComponent>
-    <OuterFlexComponent>
-      <SectionHeader
-        buttonText="Benefits"
-        description="Discover why low-code/no-code is the perfect tool for building MVPs and scaling your business."
-        style="w-[900px] lg:w-[60%] sm:w-[65%] xs:w-full"
-      >
-        <div className="w-[90%] lg:w-full leading-[1.3] text-wrap xs:w-full text-center mx-auto xs:text-wrap xs:tracking-tight">
-          Why <span className="italic font-light"> Low-Code/No-Code </span> is a
-          Perfect Fit for Startups{" "}
-        </div>
-      </SectionHeader>
-      <BenefitCards />
-    </OuterFlexComponent>
-  </OuterComponent>
+  <div id="benefits">
+    <OuterComponent>
+      <OuterFlexComponent>
+        <SectionHeader
+          buttonText="Benefits"
+          description="Discover why low-code/no-code is the perfect tool for building MVPs and scaling your business."
+          style="w-[900px] lg:w-[60%] sm:w-[65%] xs:w-full"
+        >
+          <div className="w-[90%] lg:w-full leading-[1.4] capitalize text-wrap xs:w-full text-center mx-auto xs:text-wrap xs:tracking-tight">
+            Why <span className="italic font-light"> Low-Code/No-Code </span> is
+            a Perfect Fit for Startups{" "}
+          </div>
+        </SectionHeader>
+        <BenefitCards />
+      </OuterFlexComponent>
+    </OuterComponent>
+  </div>
 );
 
 export default Benefits;
@@ -57,7 +59,7 @@ const BenefitCard: React.FC<{ isInView: boolean; item: Benefit }> = ({
     <div className={`flex flex-col gap-5 p-4 pb-0 xxl:pb-4 sm:gap-2 h-full`}>
       <H6
         text={item.title}
-        classes="text-white w-[80%] grow-0 xxl:text-2xl md:text-[20px] md:w-full md:leading-[1.2] leading-[1.6]"
+        classes="!text-white w-[80%] grow-0 xxl:text-2xl md:text-[20px] md:w-full md:leading-[1.2] leading-[1.6]"
       />
       <Description
         children={null}

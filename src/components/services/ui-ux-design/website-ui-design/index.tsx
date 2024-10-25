@@ -10,6 +10,7 @@ import OurProcess from "./our-process";
 import LetsConnect from "./need-project";
 import Work from "./work";
 import Benefits from "./benefits";
+import GoTopButton from "@components/basic-components/go-to-top";
 
 const content_heroSection: HeroSection = {
   gradientTextStyle: "",
@@ -19,7 +20,7 @@ const content_heroSection: HeroSection = {
   fallback: "",
   additionalDescription: null,
   buttonText: "Website Design",
-  gradientText: "Creating Exciting Websites That Generate Profit",
+  gradientText: "Designing Exciting Websites That Generate Profit",
   style: {
     sourceStyle:
       "xxl:left-[50%] xxl:!h-[1040px] !h-[750px]  left-[8%] xxl:scale-[0.99] lg:!h-[500px] sm:!h-[420px] xs:!h-[220px] xxl:!top-[-69%] xs:!top-[-20%] !top-[-40%] xxl:!-translate-x-[50%] !-translate-x-[8%]  left-[15%] lg:left-[8%]",
@@ -27,7 +28,7 @@ const content_heroSection: HeroSection = {
       "xxl:!h-[550px] xxl:left-[50%] xxl:-translate-x-[50%] !max-w-[1920px] !h-[590px] lg:!h-[450px] sm:!h-[390px] xs:!h-[180px] xs:!top-[2%] lg:!top-[-23%] sm:!top-[-29%] !top-[-8%] xxl:!top-[-8%] !bg-gradient-to-t !from-black !via-[#151515a7] !to-black",
   },
   aboutPage:
-    "We have developed hundreds of websites, and thanks to this experience, we know how to make a site that balances business needs and creativity. ",
+    "With our experience in developing hundreds of websites, we understand how to create a site that effectively balances business requirements and creativity.",
 };
 
 const WebsiteUI_DesignComponent: React.FC<HomeProps> = (props) => (
@@ -43,6 +44,8 @@ const WebsiteUI_DesignComponent: React.FC<HomeProps> = (props) => (
     {/* Temporary disable */}
     {/* <Faqs DataKey={"ui-ux-design"} /> */}
     <LetsConnect />
+    <GoTopButton />
+
   </div>
 );
 

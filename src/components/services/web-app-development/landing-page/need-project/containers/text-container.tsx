@@ -19,7 +19,7 @@ const TextContainer: React.FC = () => (
         text="Leave a request - our experts will analyze your current situation and
           help you choose a solution to scale your business"
         classes={
-          "text-lg w-full !font-normal text-white leading-[32px] lg:text-base xs:w-full"
+          "text-lg w-full !font-normal !text-white leading-[32px] lg:text-base xs:w-full"
         }
       />
     </div>

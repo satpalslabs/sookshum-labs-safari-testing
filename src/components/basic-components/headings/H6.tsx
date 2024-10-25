@@ -3,10 +3,10 @@ type textType = {
   classes: string;
 };
 const H6: React.FC<textType> = ({ text, classes }) => (
-  <div
-    className={`font-poppins text-[19px] md:leading-5 md:text-base sm:text-sm text-light font-medium ${classes}`}
+  <h6
+    className={`font-poppins text-[19px] leading-[1.4] md:text-base sm:text-sm text-h3_heading font-medium ${classes}`}
     dangerouslySetInnerHTML={{ __html: text ?? "" }}
-  ></div>
+  ></h6>
 );
 
 export default H6;

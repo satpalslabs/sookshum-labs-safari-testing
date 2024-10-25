@@ -13,21 +13,25 @@ type ChooseUs = {
 };
 const chooseUsData: ChooseUs[] = data.services;
 const ChooseUs = () => (
-  <OuterComponent>
-    <OuterFlexComponent>
-      <SectionHeader
-        buttonText="Why choose us?"
-        description="Imagine how good you’d be at something if you’d done it every day for the past 8 years. That’s exactly the case with our Magento eCommerce developers. Take a look at the benefits of partnering with us:"
-        style="w-[794px] lg:w-[700px] xs:w-full mx-auto"
-      >
-        <div className="w-full lg:w-[800px] leading-[1.4] xs:w-full text-wrap text-center mx-auto">
-          What you get with our{" "}
-          <span className="italic font-light">Magento development agency</span>
-        </div>
-      </SectionHeader>
-      <ChooseUsCards />
-    </OuterFlexComponent>
-  </OuterComponent>
+  <div id="why-us">
+    <OuterComponent>
+      <OuterFlexComponent>
+        <SectionHeader
+          buttonText="Why choose us?"
+          description="Choose us for our deep expertise in Magento development, personalized solutions tailored to your business needs, and a proven track record of successful projects that drive growth and enhance user experience."
+          style="w-[794px] lg:w-[700px] xs:w-full mx-auto"
+        >
+          <div className="w-full lg:w-[800px] leading-[1.4] capitalize xs:w-full text-wrap text-center mx-auto">
+            What you get with our{" "}
+            <span className="italic font-light">
+              Magento development agency
+            </span>
+          </div>
+        </SectionHeader>
+        <ChooseUsCards />
+      </OuterFlexComponent>
+    </OuterComponent>
+  </div>
 );
 
 export default ChooseUs;
@@ -96,7 +100,11 @@ const ArrowDiv: React.FC<{ data: ChooseUs }> = ({ data }) => (
         : ""
     } `}
   >
-    <div className={`relative min-w-[188px] lg:min-w-[138px] ${data.heading.includes("Performance") && "-mt-[15%] -ml-[35%]"}`}>
+    <div
+      className={`relative min-w-[188px] lg:min-w-[138px] ${
+        data.heading.includes("Performance") && "xs:-mt-[15%] xs:-ml-[35%]"
+      }`}
+    >
       <Description text="" classes="text-center">
         <div
           className="!text-white text-xl font-medium lg:text-sm sm:text-xs"

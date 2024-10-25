@@ -2,39 +2,39 @@
     "process-services": [
         {
             "title": "Site Audit",
-            "description": "We initiate by conducting a comprehensive audit of your current website. This assessment helps us understand the technical setup, functionalities, and areas needing improvement. "
+            "description": "We start with a thorough audit of your current website, allowing us to assess the technical setup, functionalities, and identify areas for improvement."
         },
         {
             "title": "Prioritizing Actions",
-            "description": "Based on the audit results, we prioritize actions to address critical issues first. This structured approach ensures efficient project flow and maximizes your site’s potential "
+            "description": "Using the audit results, we prioritize actions to tackle critical issues first. This organized approach ensures a smooth project flow and maximizes your site’s potential."
         },
         {
             "title": "Redesign / Design",
-            "description": "Our team either redesigns your existing site or enhances the design elements to boost functionality and aesthetic appeal, aligning it more closely with your current business objectives. "
+            "description": "Our team either revamps your existing site or improves its design elements to enhance functionality and visual appeal, ensuring it aligns more closely with your current business objectives. "
         },
         {
             "title": "Theme Development",
-            "description": "We develop or refine your WordPress theme, focusing on creating a responsive optimized, and visually engaging user interface that supports your site’s specific needs."
+            "description": "We create or enhance your WordPress theme, emphasizing a responsive, optimized, and visually engaging user interface tailored to meet your site’s specific needs."
         },
         {
             "title": "Testing",
-            "description": "Through testing ensures the revamped site runs smoothly across all platforms and browsers. We fix any bugs to deliver a robust user experience. "
+            "description": "Through thorough testing, we ensure the revamped site operates seamlessly across all platforms and browsers. We resolve any bugs to provide a reliable user experience."
         },
         {
             "title": "Your Review",
-            "description": "We involve you at every step, seeking your feedback on the redesigned site and making necessary adjustments. We go step by step to satisfy your requirements on the road to completion. "
+            "description": "We engage you at every stage, actively seeking your feedback on the redesigned site and making adjustments as needed. Our step-by-step approach ensures your requirements are met throughout the process until completion."
         },
         {
             "title": "Deployment ",
-            "description": "Deploying the updated website involves meticulous planning to avoid operational downtime. We ensure a seamless transition as your enhanced site goes live."
+            "description": "Launching the updated website requires careful planning to prevent any operational downtime. We guarantee a smooth transition as your upgraded site goes live."
         },
         {
             "title": "Your Project Acceptance ",
-            "description": "After deployment, we conduct a final review with you to ensure every aspect of the site meets your expectations and business needs. You have enough time to check it because we provide a 30-day guarantee. "
+            "description": "Once the site is deployed, we conduct a final review with you to ensure that every aspect aligns with your expectations and business needs. To give you ample time for assessment, we offer a 30-day guarantee."
         },
         {
             "title": "Project Development And Maintenance ",
-            "description": "Post-launch, we remain engaged to provide continuous development and maintenance, ensuring your site evolves with your business and stays technologically robust. "
+            "description": "After launch, we stay committed to offering ongoing development and maintenance, ensuring your site adapts to your business's growth and remains technologically strong."
         }
     ]
 }

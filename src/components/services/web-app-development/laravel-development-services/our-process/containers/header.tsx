@@ -5,11 +5,11 @@ import SectionHeader from "@components/basic-components/section-header";
 
 const Header: React.FC = () => (
   <SectionHeader
-    style="xxl:!w-[1000px] lg:!w-[90%] sm:!w-[80%] xs:!w-full"
+    style="xxl:!w-[80%] !w-[80%] lg:!w-[90%] sm:!w-[80%] xs:!w-full"
     buttonText="Our Process"
-    description="We follow a well-established development methodology to deliver the project in a timely manner. This includes planning it well at the initial stages and setting the milestones. It also includes providing regular updates. "
+    description="We adhere to a proven development methodology to ensure timely project delivery. This involves thorough planning during the initial stages, setting clear milestones, and providing regular updates throughout the process."
   >
-    <div className="sm:text-wrap sm:w-[90%] xs:!w-full text-center leading-[34px]">
+    <div className="sm:text-wrap sm:w-[90%] xs:!w-full text-center leading-[1.4] capitalize">
       <span className="italic font-light">Laravel </span> Development process
     </div>
   </SectionHeader>

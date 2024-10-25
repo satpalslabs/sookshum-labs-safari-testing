@@ -9,7 +9,8 @@ import LetsConnect from "./need-project";
 import OurServices from "./our-services";
 import Benefits from "./benefits";
 import OurProcess from "./our-process";
-import Work from "./work";
+import Work from "@components/home/work";
+import GoTopButton from "@components/basic-components/go-to-top";
 
 const content_heroSection: HeroSection = {
   gradientTextStyle: "",
@@ -27,7 +28,7 @@ const content_heroSection: HeroSection = {
       "xxl:!h-[630px] xxl:!left-[20%] xxl:!-translate-x-[0%] xxl:!min-w-screen !h-[650px] lg:!h-[480px] sm:!h-[440px] xs:!h-[220px] xs:!top-[-20%] xxl:!top-[-3%] !top-[-14%] xxl:!top-[-8%] ",
   },
   aboutPage:
-    "We offers professional Retool development services that assist businesses in unlocking the full potential of the Retool low code platform to build custom applications, streamline workflows, and boost productivity.",
+    "We provide expert Retool development services that help businesses harness the full potential of the Retool low-code platform. Our services enable the creation of custom applications, streamline workflows, and enhance productivity.",
 };
 
 const Retool_DevelopmentServices: React.FC<HomeProps> = ({ isBot }) => (
@@ -43,6 +44,8 @@ const Retool_DevelopmentServices: React.FC<HomeProps> = ({ isBot }) => (
     {/* Temporary disable */}
     {/* <Faqs DataKey={"ecommerce-development-landing-page"}/> */}
     <LetsConnect />
+    <GoTopButton />
+
   </div>
 );
 

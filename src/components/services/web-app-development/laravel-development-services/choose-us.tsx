@@ -18,22 +18,24 @@ type choose_us = {
 
 const chooseUsData: choose_us[] = data;
 const ChooseUs: React.FC = () => (
-  <OuterComponent>
-    <OuterFlexComponent>
-      <SectionHeader
-        buttonText="Why choose us?"
-        description="By leveraging the power of Laravel Our team works with you to enable faster-to-market solutions.  "
-        style="w-[976px] lg:!w-[740px] xs:!w-full"
-      >
-        <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] text-wrap text-center capitalize tracking-[-0.02em]">
-          Why Choose us for
-          <span className="italic font-light"> laravel </span>development
-          outsourcing
-        </div>
-      </SectionHeader>
-      <OurServicesMainContainer />
-    </OuterFlexComponent>
-  </OuterComponent>
+  <div id="why-us">
+    <OuterComponent>
+      <OuterFlexComponent>
+        <SectionHeader
+          buttonText="Why choose us?"
+          description="Our team leverages the power of Laravel to deliver faster-to-market solutions in collaboration with you."
+          style="w-[976px] lg:!w-[740px] xs:!w-full"
+        >
+          <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] text-wrap text-center capitalize tracking-[-0.02em]">
+            Why Choose us for
+            <span className="italic font-light"> laravel </span>development
+            outsourcing
+          </div>
+        </SectionHeader>
+        <OurServicesMainContainer />
+      </OuterFlexComponent>
+    </OuterComponent>
+  </div>
 );
 
 export default ChooseUs;
@@ -65,7 +67,7 @@ const SingleCard: React.FC<{ isInView: boolean; data: choose_us }> = ({
     >
       <img src={data.image_url} className="w-[120px] h-auto lg:w-[80px] " />
       <div className="flex flex-col gap-5 lg:gap-3 sm:gap-2">
-        <H4 style="!leading-[1.25]" text={data.heading} />
+        <H4 style="!leading-[1.25] !text-white" text={data.heading} />
         <Description
           children={null}
           classes="!text-lg lg:!text-sm sm:!text-xs w-full sm:!tracking-tight"

@@ -26,30 +26,32 @@ const OurProcess: React.FC = () => {
   const [activeFaq, setActiveFaq] = useState<number | null>(0);
 
   return (
-    <OuterComponent>
-      <OuterFlexComponent>
-        <SectionHeader
-          buttonText="Our Process"
-          description="Thanks to our design process, we dive deeply into each project. The result is a website that’s perfectly suited to your needs."
-          style="w-[990px] lg:!w-[740px] xs:!w-[400px] 3xs:!w-[310px]"
-        >
-          <div className="xs:w-full w-full sm:w-[80%] mx-auto leading-[1.4] text-wrap text-center !capitalize">
-            Our approach combines research-based insights with creativity
+    <div id="our-process">
+      <OuterComponent>
+        <OuterFlexComponent>
+          <SectionHeader
+            buttonText="Our Process"
+            description="Our design process allows us to thoroughly explore each project, resulting in a website that is perfectly tailored to your needs."
+            style="w-[80%] lg:!w-[740px] xs:!w-[400px] 3xs:!w-[310px]"
+          >
+            <div className="xs:w-full w-full sm:w-[80%] mx-auto leading-[1.4] text-wrap text-center !capitalize">
+              Our approach combines research-based insights with creativity
+            </div>
+          </SectionHeader>
+          <div className="flex flex-col w-full h-fit rounded-[32px] overflow-hidden border-[1.3px] !border-viewportBorder shadow-buttonInset">
+            {process_data?.map((faq: process, index: number) => (
+              <FAQ
+                item={faq}
+                active={activeFaq}
+                index={index}
+                key={index}
+                setActive={setActiveFaq}
+              />
+            ))}
           </div>
-        </SectionHeader>
-        <div className="flex flex-col w-full h-fit rounded-[32px] overflow-hidden border-[1.3px] !border-viewportBorder shadow-buttonInset">
-          {process_data?.map((faq: process, index: number) => (
-            <FAQ
-              item={faq}
-              active={activeFaq}
-              index={index}
-              key={index}
-              setActive={setActiveFaq}
-            />
-          ))}
-        </div>
-      </OuterFlexComponent>
-    </OuterComponent>
+        </OuterFlexComponent>
+      </OuterComponent>
+    </div>
   );
 };
 
@@ -91,9 +93,7 @@ const FAQ: React.FC<props> = ({ item, active, index, setActive }) => {
           <button className="flex w-full  justify-between items-center xs:items-start p-8 !pb-0 lg:p-[28px] sm:p-6">
             <H2>
               <div
-                className={`text-[32px] lg:text-[24px] ${
-                  index == active && "text-[48px] lg:text-[32px]"
-                } transition-all duration-300`}
+                className={`text-[20px] sm:text-[18px] !text-white transition-all duration-300`}
               >{`${index + 1}. ${item.heading}`}</div>
             </H2>
           </button>
@@ -102,30 +102,46 @@ const FAQ: React.FC<props> = ({ item, active, index, setActive }) => {
               <Description
                 children={null}
                 text={item.description}
-                classes="!text-[20px] lg:!text-sm sm:!text-[13px] !text-white !font-normal"
+                classes="!text-[18px] lg:!text-sm sm:!text-[13px] !font-normal"
               />
               <div className="grid grid-cols-2 xs:grid-cols-1 xs:gap-5 gap-5 lg:gap-3 gap-y-8">
-                {item.detail.map((detailPage: detail,index:number) => (
+                {item.detail.map((detailPage: detail, index: number) => (
                   <div key={index} className="flex flex-col gap-5 lg:gap-3">
-                    <H4 text={detailPage.title} style="lg:!text-[20px]" />
+                    <H4
+                      text={detailPage.title}
+                      style="!text-[20px] !text-white sm:!text-[18px]"
+                    />
                     <div className="flex flex-col gap-3">
                       <Description
                         children={null}
                         text={detailPage.des}
-                        classes="!text-[20px] lg:!text-sm sm:!text-[13px] !text-white !font-normal"
+                        classes="!text-[18px] lg:!text-sm sm:!text-[13px]  !font-normal"
                       />
                       {detailPage.deliverables && (
                         <Description
                           children={null}
                           text={"Deliverables"}
-                          classes="!text-[20px] lg:!text-sm sm:!text-[13px] !text-primary !font-normal"
+                          classes="!text-[20px] lg:!text-sm sm:!text-[13px] !text-white !font-medium"
                         />
                       )}
                       <Description
-                        children={null}
-                        text={detailPage.deliverables}
-                        classes="!text-[20px] lg:!text-sm sm:!text-[13px] !text-white !font-normal"
-                      />
+                        text={""}
+                        classes="!text-[18px] lg:!text-sm sm:!text-[13px] !font-normal"
+                      >
+                        {detailPage.deliverables.split(".").length > 2 ? (
+                          <div>
+                            {detailPage.deliverables.split(".").map((item) => (
+                              <li>{item}.</li>
+                            ))}
+                          </div>
+                        ) : (
+                          <>
+                            {detailPage.deliverables && (
+                              <li>{detailPage.deliverables}</li>
+                            )}
+                          </>
+                        )}
+                      </Description>
                     </div>
                   </div>
                 ))}

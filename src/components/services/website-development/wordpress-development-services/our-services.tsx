@@ -10,6 +10,8 @@ import OuterFlexComponent from "@components/basic-components/main-flex-container
 import Description from "@components/basic-components/description";
 import Image from "next/image";
 import H6 from "@components/basic-components/headings/H6";
+import H2 from "@components/basic-components/headings/H2";
+import H3 from "@components/basic-components/headings/H3";
 
 type service = {
   title: string;
@@ -19,21 +21,23 @@ type service = {
 
 const serviceData: service[] = data;
 const OurServices: React.FC = () => (
-  <OuterComponent>
-    <OuterFlexComponent>
-      <SectionHeader
-        buttonText="Our Services"
-        description="We don’t just build WordPress sites; we craft digital experiences that resonate, convert, and endure."
-        style="w-[85.5%] lg:!w-[740px] xs:!w-full"
-      >
-        <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
-          Solutions that advance{" "}
-          <span className="italic font-light "> enterprise objectives</span>{" "}
-        </div>
-      </SectionHeader>
-      <MainContainer />
-    </OuterFlexComponent>
-  </OuterComponent>
+  <div id="our-services">
+    <OuterComponent>
+      <OuterFlexComponent>
+        <SectionHeader
+          buttonText="Our Services"
+          description="We craft digital experiences that drive results. "
+          style="w-[85.5%] lg:!w-[740px] xs:!w-full"
+        >
+          <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
+            Solutions that advance{" "}
+            <span className="italic font-light "> enterprise objectives</span>
+          </div>
+        </SectionHeader>
+        <MainContainer />
+      </OuterFlexComponent>
+    </OuterComponent>
+  </div>
 );
 
 export default OurServices;
@@ -62,9 +66,9 @@ const MainContainer: React.FC = () => {
               />
             </div>
             <div className="flex flex-col gap-4 lg:gap-3 sm:gap-2">
-              <H6
+              <H3
                 text={item.title}
-                classes="text-white xxl:text-3xl !font-[500] !text-[20px] sm:!text-[14px] md:!leading-[1.4] !leading-[1.6]"
+                style="text-white xxl:text-3xl !font-[500] !text-[20px] sm:!text-[14px] md:!leading-[1.4] !leading-[1.6]"
               />
               <Description
                 children={null}

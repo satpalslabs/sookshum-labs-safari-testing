@@ -19,21 +19,23 @@ type choose_us = {
 
 const chooseUsData: choose_us[] = data;
 const ChooseUs: React.FC = () => (
-  <OuterComponent>
-    <OuterFlexComponent>
-      <SectionHeader
-        buttonText="Why choose us?"
-        description="We’ve been working with various low-code development platforms for seven years. We have helped dozens of businesses to succeed in their digital transformation on a moderate budget and within deadlines."
-        style="xxl:!w-[75%] !w-full lg:!w-[740px] xs:!w-full"
-      >
-        <div className="xs:w-full sm:w-[80%] w-full mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
-          Reasons to choose our{" "}
-          <span className="italic font-light"> low-code </span> experts
-        </div>
-      </SectionHeader>
-      <MainContainer />
-    </OuterFlexComponent>
-  </OuterComponent>
+  <div id="why-us">
+    <OuterComponent>
+      <OuterFlexComponent>
+        <SectionHeader
+          buttonText="Why choose us?"
+          description="For the past five years, we have collaborated with various low-code development platforms, assisting numerous businesses in achieving successful digital transformations within budget and on schedule."
+          style="xxl:!w-[75%] !w-full lg:!w-[740px] xs:!w-full"
+        >
+          <div className="xs:w-full sm:w-[80%] w-full mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
+            Reasons to choose our{" "}
+            <span className="italic font-light"> low-code </span> experts
+          </div>
+        </SectionHeader>
+        <MainContainer />
+      </OuterFlexComponent>
+    </OuterComponent>
+  </div>
 );
 
 export default ChooseUs;
@@ -61,7 +63,7 @@ const MainContainer: React.FC = () => {
             <div className="flex flex-col gap-4 lg:gap-3 sm:gap-2">
               <H6
                 text={chooseUs.title}
-                classes="text-white xxl:text-3xl !font-[500] !text-[20px] sm:!text-[14px] md:!leading-[1.4] !leading-[1.6]"
+                classes="!text-white xxl:text-3xl !font-[500] !text-[20px] sm:!text-[14px] md:!leading-[1.4] !leading-[1.6]"
               />
               <Description
                 children={null}

@@ -2,31 +2,31 @@
     {
         "image": "/services/mobile-app-devlopment/flutter-development-services/our-services/chat.png",
         "title": "Free consultation and advice",
-        "description": "We will have multiple calls to understand all your problems and goals and advise you on all options available throughout the process. We will help you find the best solutions for your project so you can make informed decisions based on your objectives, deadlines and budget."
+        "description": "We will schedule multiple meetings to thoroughly understand your challenges and goals, providing you with guidance on all available options throughout the process. Our team will assist you in identifying the best solutions for your project, to help make informed decisions based on your objectives, deadlines, and budget."
     },
     {
         "image": "/services/ui-ux-design/web-app-design/single.png",
         "title": "Full ownership",
-        "description": "You will receive complete ownership of all designs or other assets produced as part of the engagement, including source files. You will also have access to dozens of licenses, plugins and tools free of charge!"
+        "description": "You will have full ownership of all designs and assets created during our engagement, including source files. Additionally, you'll gain access to a wide range of licenses, plugins, and tools at no extra cost!"
     },
     {
         "image": "/services/admin-development/nextjs-development-services/why-us/transparency.webp",
         "title": "Scalable to your needs",
-        "description": "We are here to support you throughout all stages of your journey, so you will have regular calls with your account manager to evaluate progress, discuss upcoming tasks and make any adjustments necessary to the services we provide."
-    },
-    {
-        "image": "/services/mobile-app-devlopment/landing-page/why-us/maintain.png",
-        "title": "Premium quality without the price tag",
-        "description": "Access the top 0.5% of talent for branding, graphic design, motion graphics, video production, UI/UX, web design, and web development for the cost of hiring a mid-level designer. Get premium design agency services with project management and art direction without a hefty price tag."
+        "description": "We are committed to supporting you at every stage of your journey. You will have regular calls with your account manager to assess progress, discuss upcoming tasks, and make any necessary adjustments to the services we provide."
     },
     {
         "image": "/services/mobile-app-devlopment/landing-page/why-us/scale.png",
+        "title": "Premium quality without the price tag",
+        "description": "Gain access to top-tier talent for the cost of hiring a mid-level designer. Enjoy premium design agency services, complete with project management and art direction, without the hefty price tag."
+    },
+    {
+        "image": "/services/mobile-app-devlopment/landing-page/why-us/maintain.png",
         "title": "Seamless integration",
-        "description": "We will create a ClickUp task board where you and your team can review progress. You can also email in tasks, and we're happy to integrate with your existing communication flows; if you want us to join your Slack or use another tool, just let us know!"
+        "description": "We will set up a task board for you and your team to track progress. You can also email tasks directly, and we’re more than happy to integrate with your existing communication channels. If you’d like us to join your Slack or use another tool, just let us know!"
     },
     {
         "image": "/services/web-app-development/landing-page/why-us/deploy.png",
         "title": "Flexibility and lightning speed",
-        "description": "We pride ourselves on a very fast turnaround speed by all design agency standards. Typically, you can expect to receive an update from us every 1-3 working days (depending on the size of the request), so you’ll never be left waiting for long!"
+        "description": "We take pride in our rapid turnaround times, setting the standard for design agencies. You can typically expect updates from us every 1 to 3 working days (depending on the scope of the request), ensuring you won’t be left waiting for long!"
     }
 ]

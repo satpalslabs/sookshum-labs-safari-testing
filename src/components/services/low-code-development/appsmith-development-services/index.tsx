@@ -10,10 +10,11 @@ import About from "./about";
 import POC from "./poc";
 import LetsConnect from "./need-project";
 import Testimonials from "@components/basic-components/testimonials";
-import Work from "./work";
+import Work from "@components/home/work";
 import CoreServices from "./core-services";
 import ChooseUs from "./choose-us";
 import Pros_Cons from "./pros-cons";
+import GoTopButton from "@components/basic-components/go-to-top";
 
 const content_heroSection: HeroSection = {
   URL: "/services/landing-page/hero-background-image.webp",
@@ -30,7 +31,7 @@ const content_heroSection: HeroSection = {
     gradientDivStyle: "xxl:!h-[560px] xxl:left-[50%] xxl:-translate-x-[35%]  !h-[550px] lg:!h-[450px] sm:!h-[350px] xs:!h-[240px] xs:!top-[-20%] !top-[-15%] xxl:!top-[-6%]",
   },
   aboutPage:
-    "Leverage the power of Appsmith, the first ever open-source low-code internal tool builder for creating custom work dashboards and automated workflows. ",
+    "Leverage the power of Appsmith, the pioneering open-source low-code platform for developing custom work dashboards and automating workflows.",
 };
 
 const Appsmith_DevelopmentServices: React.FC<HomeProps> = ({isBot}) => (
@@ -46,6 +47,8 @@ const Appsmith_DevelopmentServices: React.FC<HomeProps> = ({isBot}) => (
     {/* Temporary disable */}
     {/* <Faqs DataKey={"website-development-landing-page"} /> */}
     <LetsConnect />
+    <GoTopButton />
+
   </div>
 );
 

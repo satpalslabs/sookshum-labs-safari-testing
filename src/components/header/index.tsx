@@ -16,6 +16,7 @@ const Header: React.FC = () => {
   const [showLinks, setShowLinks] = useState<boolean>(false);
   return (
     <header
+      id="header"
       className={`relative flex justify-between items-center w-full max-w-[1920px] bg-transparent z-50 font-poppins text-gray-400 mx-auto px-[80px] py-8 lg:px-10 lg:py-[34px] md:px-[40px] xs:!px-5 xs:py-[20px] ${
         showLinks && "sm:fixed sm:bg-black"
       } `}
@@ -25,7 +26,7 @@ const Header: React.FC = () => {
       <section className="flex items-center gap-4">
         <PrimaryButton
           icon={true}
-          text="Get in touch"
+          text="Get In Touch"
           style="xs:hidden relative z-20"
           link="/contact-us"
         />

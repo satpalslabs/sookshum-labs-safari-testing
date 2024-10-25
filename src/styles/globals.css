@@ -8,10 +8,13 @@
     --green-dot: #5FF319;
     --layout-background-color: #151515;
     --dark-button: #282828B3;
+    --dark-button-text: #f8f8f8;
     --border-dark-button: #ffffff1a;
-    --light: #F8F8F8B2;
-    --light-text-primary: #F8F8F8F2;
-    --light-text: #FFFFFFCC;
+    --secondary-color: #F8F8F8B2;
+    --h3-heading:#F8F8F8F2;
+    --light-text-primary: #8F8F8F;
+    --light-text: #ffffffcc;
+    --dropdown-text:#FFFFFF80;
     --custom-white: #f4f0f0;
     --custom-yellow: #FCCE62;
     --view-port-border: #73737366;

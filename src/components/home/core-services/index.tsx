@@ -22,7 +22,7 @@ const CoreServices: React.FC = () => {
     <div
       ref={ref}
       className={`px-[80px] lg:px-10 xs:px-5 py-[72px] pb-0 sm:pb-8 sm:pt-0 xs:py-0 bg-black max-w-[1920px] mx-auto`}
-      id="core_services"
+      id="core-services"
     >
       <div className="grid grid-cols-3 gap-5 lg:gap-[18px] xxl:gap-16 xs:grid-cols-1 xs:gap-[28px]">
         {data &&

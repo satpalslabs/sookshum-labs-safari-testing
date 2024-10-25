@@ -6,9 +6,11 @@ import React from "react";
 
 const WhoWeAre: React.FC = () => {
   return (
-    <OuterComponent>
-      <FlexComponent />
-    </OuterComponent>
+    <div id="who-we-are">
+      <OuterComponent>
+        <FlexComponent />
+      </OuterComponent>
+    </div>
   );
 };
 
@@ -21,7 +23,7 @@ const FlexComponent: React.FC = () => (
         alt=""
         width="611"
         height="506"
-        src="/services/e-commerce-development/magento-development-services/who-we-are/magento-hero.webp"
+        src="/services/e-commerce-development/magento-development-services/who-we-are/magento-hero.png"
         className="w-full xxl:h-[600px] sm:absolute xs:relative lg:w-[522px] sm:w-[388px] xs:w-full sm:scale-110 xs:scale-105 left-2 lg:-ml-[22px] xs:-ml-[10px] shrink-0 object-contain"
         blurDataURL="URL"
         placeholder="blur"
@@ -34,19 +36,18 @@ const FlexComponent: React.FC = () => (
       />
       <Description classes="" text="">
         <div className="text-[20px] lg:text-[14px] sm:text-[13px] xs:text-xs leading-[1.4] text-white">
-          We are a U.S.-based, enterprise-grade eCommerce agency rooted in the
-          Rocky Mountain region, comprised of senior-level engineers who are
-          specialists, not generalists. With deep expertise in our respective
-          niches, we understand the importance of stying ahead in an
-          ever-evolving digital landscape. Your partner should be more than a
-          service provider; they should be an expert advisor, proactively
-          recommending and implementing cutting-edge solutions that drive your
-          growth while eliminating operational headaches.
+          At Sookshum Labs, we are a dedicated team of Magento development
+          experts with years of experience in delivering robust eCommerce
+          solutions. We specialize in creating customized Magento stores that
+          drive sales and enhance user experience. Our skilled developers and
+          designers work closely with you to understand your unique business
+          needs, ensuring every project is tailored to your goals. Committed to
+          innovation and excellence, we leverage the latest technologies and
+          best practices to optimize your online store.
           <br />
           <br />
-          If you’re a brand or retailer seeking more specialized expertise from
-          your agency, it’s time to partner with a team that truly knows how to
-          deliver.
+          Partner with us to unlock the full potential of your Magento platform
+          and elevate your eCommerce success.
         </div>
       </Description>
     </div>

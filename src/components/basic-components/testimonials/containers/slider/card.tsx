@@ -50,7 +50,7 @@ const Testimonials = ({
             : review.review.split(" ").length > 50
             ? "max-w-[480px] xs:max-w-[380px]"
             : "max-w-[400px] xs:max-w-[330px]"
-        } !text-base leading-6 font-[300] md:!text-sm xs:!text-[10px] !font-light`}
+        } !text-base !text-h3_heading leading-6 font-[300] md:!text-sm xs:!text-[10px] !font-light`}
       />
     </div>
     <div className="pl-3 flex gap-6 ">
@@ -69,7 +69,7 @@ const Testimonials = ({
         <Description
           children={null}
           text={review["client-details"]["client-profession"]}
-          classes="text-light !font-light xs:!text-[10px]"
+          classes="!text-secondary !font-light xs:!text-[10px]"
         />
       </div>
     </div>

@@ -9,6 +9,7 @@ import OurProcess from "./our-process";
 import Work from "./work";
 import Testimonials from "@components/basic-components/testimonials";
 import LetsConnect from "./need-project";
+import GoTopButton from "@components/basic-components/go-to-top";
 
 const content_heroSection: HeroSection = {
   gradientTextStyle: "",
@@ -26,7 +27,7 @@ const content_heroSection: HeroSection = {
       "xxl:!h-[550px] xxl:left-[50%] xxl:-translate-x-[35%] !h-[580px] lg:!h-[450px] sm:!h-[390px] xs:!h-[180px] xs:!top-[2%] lg:!top-[-23%] sm:!top-[-28.4%] !top-[-8%] xxl:!top-[-8%] !bg-gradient-to-t !from-black !via-[#151515a7] !to-black",
   },
   aboutPage:
-    "With our defined approach and step by step process, we deliver beyond what’s expected. Our team does’t limit itself to delivering a product. We craft brilliance together and deliver experiences that are ever-evolving.",
+    "With our structured approach and step-by-step process, we consistently exceed expectations. Our team goes beyond merely delivering a product; we collaborate to create exceptional solutions that offer continuously evolving experiences.",
 };
 
 const MobileAppUI_DesignComponent: React.FC<HomeProps> = (props) => (
@@ -41,6 +42,8 @@ const MobileAppUI_DesignComponent: React.FC<HomeProps> = (props) => (
     {/* Temporary disable */}
     {/* <Faqs DataKey={"ui-ux-design"} /> */}
     <LetsConnect />
+    <GoTopButton />
+
   </div>
 );
 

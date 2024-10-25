@@ -29,12 +29,12 @@ const Benefit: React.FC<{
   >
     <div className="flex flex-col gap-5 xxl:gap-8 sm:gap-[15px]">
       <H4
-        style="!leading-[1.25] !text-[20px] sm:!text-sm !text-light"
+        style="!leading-[1.25] !text-[20px] sm:!text-sm !text-secondary"
         text={`00${index + 1}`}
       />
       <div className="flex flex-col gap-3 sm:gap-[10px] grow">
         <H4
-          style="!leading-[1.25] !text-[20px] sm:!text-sm"
+          style="!leading-[1.25] !text-white !text-[20px] sm:!text-sm"
           text={data.title}
         />
         <Description

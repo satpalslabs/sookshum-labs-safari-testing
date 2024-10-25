@@ -7,11 +7,11 @@ const Header: React.FC = () => (
   <SectionHeader
     style="!w-[80%] xs:!w-full"
     buttonText="Our Process"
-    description="Sookshum Labs digital product design and dashboard development process is a meticulously crafted journey that begins with a deep understanding of your objectives and user needs. From research and ideation to final deployment, We apply a structured and agile approach to ensure your digital product not only meets but exceeds expectations. "
+    description="At Sookshum Labs, our digital product design and dashboard development process is a thoughtfully crafted journey that starts with a thorough understanding of your goals and user requirements. From research and ideation to final deployment, we utilize a structured and agile approach to ensure your digital product not only meets but surpasses expectations."
   >
-    <h2 className="sm:text-wrap text-center leading-[1.3]">
+    <div className="sm:text-wrap text-center leading-[1.4] capitalize">
       Our Process For success
-    </h2>
+    </div>
   </SectionHeader>
 );
 

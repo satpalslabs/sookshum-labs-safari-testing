@@ -4,7 +4,7 @@
 import { nextCard, prevCard } from "./slider";
 
 const ArrowButtons = () => (
-  <div className="absolute right-[6%] lg:right-[4%] -top-[40%] lg:-top-[44%] sm:right-4 xs:hidden">
+  <div className="absolute right-[6%] lg:right-[4%] -top-[30%] lg:-top-[34%] sm:-top-[64%] sm:right-2 xs:hidden">
     <div className="flex gap-5">
       <button
         className="slider-prev-arrow text-[#777E90]"

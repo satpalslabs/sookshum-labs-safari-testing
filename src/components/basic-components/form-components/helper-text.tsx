@@ -9,7 +9,7 @@ type props = {
 
 const HelperText: React.FC<props> = ({ text, style }) => {
   return (
-    <span className={`text-light font-poppins font-normal sm:text-sm xs:text-xs ${style} `}>
+    <span className={`text-secondary font-poppins font-normal sm:text-sm xs:text-xs ${style} `}>
       {text}
     </span>
   );

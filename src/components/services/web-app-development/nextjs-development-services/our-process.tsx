@@ -15,21 +15,23 @@ interface process {
 
 const process_data: process[] = data;
 const OurProcess: React.FC = () => (
-  <OuterComponent>
-    <OuterFlexComponent>
-      <SectionHeader
-        buttonText="Our Process"
-        description="We guide businesses through every stage of software development while delivering effective and elegantly designed solutions to improve your daily business processes."
-        style="w-[990px] lg:!w-[740px] xs:!w-[400px] 3xs:!w-[310px]"
-      >
-        <div className="xs:w-full w-full sm:w-[80%] mx-auto leading-[1.4] text-wrap text-center">
-          Process Of
-          <span className="italic font-light"> Next.js </span> Development
-        </div>
-      </SectionHeader>
-      <OurProcessMainContainer />
-    </OuterFlexComponent>
-  </OuterComponent>
+  <div id="our-process">
+    <OuterComponent>
+      <OuterFlexComponent>
+        <SectionHeader
+          buttonText="Our Process"
+          description="We support businesses at every stage of software development, providing effective and elegantly designed solutions to enhance your daily operations."
+          style="w-[990px] lg:!w-[740px] xs:!w-[400px] 3xs:!w-[310px]"
+        >
+          <div className="xs:w-full w-full sm:w-[80%] mx-auto leading-[1.4] capitalize text-wrap text-center">
+            Process Of
+            <span className="italic font-light"> Next.js </span> Development
+          </div>
+        </SectionHeader>
+        <OurProcessMainContainer />
+      </OuterFlexComponent>
+    </OuterComponent>
+  </div>
 );
 
 export default OurProcess;
@@ -65,7 +67,7 @@ const OurProcessMainContainer = () => {
           >
             <img src={process.image} className="hidden xs:block w-[52px]  " />
             <div className="flex flex-col gap-3 lg:gap-2">
-              <H4 style="!leading-[1.25]" text={process.title} />
+              <H4 style="!leading-[1.25] !text-white" text={process.title} />
               <Description
                 children={null}
                 classes="!text-lg lg:!text-sm sm:!text-xs w-full sm:!tracking-tight"

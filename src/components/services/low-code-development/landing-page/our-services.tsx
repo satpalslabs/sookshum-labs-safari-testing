@@ -22,20 +22,22 @@ type ServiceType = {
 
 const services: ServiceType[] = data["our-services"];
 const Services: React.FC = () => (
-  <OuterComponent>
-    <OuterFlexComponent>
-      <SectionHeader
-        buttonText="Our Services"
-        description="We bring your idea to life on time and on budget"
-        style="w-[770px] text-wrap xs:w-full"
-      >
-        <div className="w-[1000px] leading-[1.4] lg:w-[735px] sm:w-[600px] xs:w-full xxl:w-[1060px] text-center text-wrap mx-auto">
-          What we do
-        </div>
-      </SectionHeader>
-      <ServiceCards />
-    </OuterFlexComponent>
-  </OuterComponent>
+  <div id="our-services">
+    <OuterComponent>
+      <OuterFlexComponent>
+        <SectionHeader
+          buttonText="Our Services"
+          description="We bring your idea to life on time and on budget"
+          style="w-[770px] text-wrap xs:w-full"
+        >
+          <div className="w-[1000px] leading-[1.4] capitalize lg:w-[735px] sm:w-[600px] xs:w-full xxl:w-[1060px] text-center text-wrap mx-auto">
+            What we do
+          </div>
+        </SectionHeader>
+        <ServiceCards />
+      </OuterFlexComponent>
+    </OuterComponent>
+  </div>
 );
 
 export default Services;
@@ -135,7 +137,7 @@ const ServiceCard: React.FC<props> = (props) => (
           <Description
             text={props.service["detailed-description"]}
             children={null}
-            classes="text-lg pr-6 lg:pr-0 !font-normal"
+            classes="text-lg pr-6 lg:pr-0 !font-normal !text-h3-heading"
           />
           <Image
             blurDataURL="URL"

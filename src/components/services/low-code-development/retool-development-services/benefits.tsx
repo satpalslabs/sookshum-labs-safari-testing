@@ -17,21 +17,23 @@ type ChooseUs = {
 };
 const chooseUsData: ChooseUs[] = data;
 const Benefits = () => (
-  <OuterComponent>
-    <OuterFlexComponent>
-      <SectionHeader
-        buttonText="Benefits"
-        description="Choose Retool for unparalleled flexibility, seamless integrations, and developer-friendly tools that empower you to build powerful internal apps faster than other low-code platforms."
-        style="xxl:!w-[60%] !w-[80%] xs:!w-full"
-      >
-        <div className="w-full xs:w-full text-wrap text-center mx-auto !capitalize">
-          Why choose Retool over other <br className="xs:hidden" />{" "}
-          <span className="italic font-light">low-code </span>platforms?
-        </div>
-      </SectionHeader>
-      <BenefitsCards />
-    </OuterFlexComponent>
-  </OuterComponent>
+  <div id="benefits">
+    <OuterComponent>
+      <OuterFlexComponent>
+        <SectionHeader
+          buttonText="Benefits"
+          description="Choose Retool for unmatched flexibility, seamless integrations, and developer-friendly tools that enable you to create powerful internal apps more quickly than with other low-code platforms."
+          style="xxl:!w-[60%] !w-[80%] xs:!w-full"
+        >
+          <div className="w-full xs:w-full text-wrap text-center mx-auto leading-[1.4] capitalize">
+            Why choose Retool over other <br className="xs:hidden" />{" "}
+            <span className="italic font-light">low-code </span>platforms?
+          </div>
+        </SectionHeader>
+        <BenefitsCards />
+      </OuterFlexComponent>
+    </OuterComponent>
+  </div>
 );
 
 export default Benefits;
@@ -62,7 +64,7 @@ const BenefitsCards: React.FC = () => {
             <div className="flex flex-col gap-4 lg:gap-3 sm:gap-2">
               <H6
                 text={benefit.heading}
-                classes="text-white xxl:text-3xl !font-[500] !text-[20px] sm:!text-[14px] md:!leading-[1.4] !leading-[1.6]"
+                classes="!text-white xxl:text-3xl !font-[500] !text-[20px] sm:!text-[14px] md:!leading-[1.4] !leading-[1.6]"
               />
               <Description
                 children={null}

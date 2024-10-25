@@ -6,8 +6,9 @@ import CoreServices from "../reuseable-components/core-services";
 import Cover from "./cover";
 import Technologies from "./technologies";
 import { HomeProps } from "@app/page";
+import GoTopButton from "@components/basic-components/go-to-top";
 
-function ServiceComponent({isBot}:HomeProps) {
+function ServiceComponent({ isBot }: HomeProps) {
   return (
     <div className="relative ">
       <Hero />
@@ -16,6 +17,7 @@ function ServiceComponent({isBot}:HomeProps) {
       <Technologies />
       {!isBot && <Testimonials />}
       <WorkTogether />
+      <GoTopButton />
     </div>
   );
 }

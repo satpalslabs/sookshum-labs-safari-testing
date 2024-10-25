@@ -3,13 +3,14 @@ import Hero, {
 } from "@components/services/reuseable-components/hero";
 import Services from "./services";
 import Testimonials from "@components/basic-components/testimonials";
-import Work from "./work";
+import Work from "@components/home/work";
 import { HomeProps } from "@app/page";
 import WhoWeAre from "./who-we-are";
 import Benefits from "./benefits";
 import ChooseUs from "./choose-us";
 import OurProcess from "./our-process";
 import LetsConnect from "./need-project";
+import GoTopButton from "@components/basic-components/go-to-top";
 
 const content_heroSection: HeroSection = {
   gradientTextStyle: "",
@@ -28,7 +29,7 @@ const content_heroSection: HeroSection = {
       "xxl:!h-[630px] xxl:!left-[20%] xxl:!-translate-x-[0%] xxl:!min-w-screen !h-[650px] lg:!h-[380px] sm:!h-[340px] xs:!h-[220px] xs:!top-[-20%] xxl:!top-[-3%] !top-[-14%] xxl:!top-[-8%]",
   },
   aboutPage:
-    "More than just a dev team, we provide the strategy and expertise needed to launch your product.",
+    "We’re more than just a development team – we bring the strategy and expertise to successfully launch your product.",
 };
 
 const Laravel_DevelopmentServices: React.FC<HomeProps> = ({ isBot }) => (
@@ -44,6 +45,8 @@ const Laravel_DevelopmentServices: React.FC<HomeProps> = ({ isBot }) => (
     {/* Temporary disable */}
     {/* <Faqs DataKey={"ecommerce-development-landing-page"}/> */}
     <LetsConnect />
+    <GoTopButton />
+
   </div>
 );
 

@@ -10,9 +10,11 @@ import OuterComponent from "@components/basic-components/outer-component";
 
 let letsConnectListData: string[] = data.data;
 const LetsConnect: React.FC = () => (
-  <OuterComponent>
-    <TextContainer />
-  </OuterComponent>
+  <div id="connect">
+    <OuterComponent>
+      <TextContainer />
+    </OuterComponent>
+  </div>
 );
 
 export default LetsConnect;
@@ -40,7 +42,7 @@ const TextContainer: React.FC = () => (
           <div className="flex items-center justify-center w-[27px] h-[27px] bg-primary rounded-full">
             <CheckIcon />
           </div>
-          <H5 style="text-white xs:!text-[16px]" text={listItem} />
+          <H5 style="!text-white xs:!text-[16px]" text={listItem} />
         </div>
       ))}
     </div>

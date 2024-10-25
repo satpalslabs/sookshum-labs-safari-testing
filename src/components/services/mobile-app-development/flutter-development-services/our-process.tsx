@@ -17,21 +17,23 @@ type Process = {
 };
 const process: Process[] = data;
 const OurProcess = () => (
-  <OuterComponent>
-    <OuterFlexComponent>
-      <SectionHeader
-        buttonText="Our Process"
-        description="By leveraging the power of Flutter Our team works with you to enable faster-to-market solutions. "
-        style="!w-[954px] sm:!w-[80%] xs:!w-full"
-      >
-        <div className="w-full xs:w-full text-center mx-auto xs:text-wrap">
-          Our <span className="italic font-light">Flutter</span> Development
-          Process
-        </div>
-      </SectionHeader>
-      <ProcessMainContainer />
-    </OuterFlexComponent>
-  </OuterComponent>
+  <div id="our-process">
+    <OuterComponent>
+      <OuterFlexComponent>
+        <SectionHeader
+          buttonText="Our Process"
+          description="By leveraging the capabilities of Flutter, our team collaborates with you to deliver faster-to-market solutions."
+          style="!w-[954px] sm:!w-[80%] xs:!w-full"
+        >
+          <div className="w-full xs:w-full text-center mx-auto xs:text-wrap leading-[1.4] capitalize">
+            Our <span className="italic font-light">Flutter</span> Development
+            Process
+          </div>
+        </SectionHeader>
+        <ProcessMainContainer />
+      </OuterFlexComponent>
+    </OuterComponent>
+  </div>
 );
 
 export default OurProcess;
@@ -62,7 +64,7 @@ const ProcessMainContainer: React.FC = () => {
             <div className="flex flex-col gap-4">
               <H6
                 text={processCard.heading}
-                classes="text-white w-[80%] xxl:text-3xl !font-[500] !text-[20px] md:w-full md:!leading-[1.4] !leading-[1.6]"
+                classes="!text-white w-[80%] xxl:text-3xl !font-[500] !text-[20px] md:w-full md:!leading-[1.4] !leading-[1.6]"
               />
               <Description
                 children={null}

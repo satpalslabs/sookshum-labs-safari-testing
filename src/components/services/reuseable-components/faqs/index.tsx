@@ -30,10 +30,10 @@ const Faqs: React.FC<{ DataKey: keyof Data }> = ({ DataKey }) => {
           description="We craft digital experiences that drive results. We'll help you achieve your business goals, from increased brand awareness to skyrocketing sales."
           style="w-[1000px] w-full xs:px-10"
         >
-          <div className="xs:w-full xs:text-wrap xs:text-center">
+          <h2 className="xs:w-full xs:text-wrap xs:text-center leading-[1.4] capitalize">
             Got questions? We've got{" "}
             <span className="italic font-light">answers! </span>
-          </div>
+          </h2>
         </SectionHeader>
         <div className="flex flex-col gap-3">
           {faqData?.map((faq: FaqType, index: number) => (

@@ -8,17 +8,18 @@ import ChooseUs from "./choose-us";
 import OurServices from "./our-services";
 import OurProcess from "./our-process";
 import LetsConnect from "./need-project";
-import Work from "./work";
+import Work from "@components/home/work";
 import Benefits from "./benefits";
+import GoTopButton from "@components/basic-components/go-to-top";
 
 const content_heroSection: HeroSection = {
   gradientTextStyle: "",
   URL: "/services/web-app-development/laravel-development-services/bg-image.png",
   image: true,
-  buttonText: "NestJs App Development",
+  buttonText: "NestJS App Development",
   "contact-us": true,
   additionalDescription: "",
-  gradientText: "NestJs App Development Services",
+  gradientText: "NestJS App Development Services",
   fallback: "",
   style: {
     sourceStyle:
@@ -27,10 +28,10 @@ const content_heroSection: HeroSection = {
       "xxl:!h-[630px] xxl:!left-[20%] xxl:!-translate-x-[0%] xxl:!min-w-screen !h-[650px] lg:!h-[380px] sm:!h-[340px] xs:!h-[220px] xs:!top-[-20%] xxl:!top-[-3%] !top-[-14%] xxl:!top-[-8%]",
   },
   aboutPage:
-    "NestJs is a progressive framework used to build efficient, scalable NodeJS web applications. Crate robust, reliable platforms that stand the test of time with expert NestJs developers at Sookshum Labs.",
+    "NestJS is an advanced framework designed for developing efficient and scalable web applications using Node.js. At Sookshum Labs, our expert NestJS developers create robust and reliable platforms that endure the test of time.",
 };
 
-const NestJS_DevelopmentServices: React.FC<HomeProps> = ({ isBot }) => (
+const NestJs_DevelopmentServices: React.FC<HomeProps> = ({ isBot }) => (
   <div className="relative">
     <Hero {...content_heroSection} />
     <WhoWeAre />
@@ -43,7 +44,9 @@ const NestJS_DevelopmentServices: React.FC<HomeProps> = ({ isBot }) => (
     {/* Temporary disable */}
     {/* <Faqs DataKey={"ecommerce-development-landing-page"}/> */}
     <LetsConnect />
+    <GoTopButton />
+
   </div>
 );
 
-export default NestJS_DevelopmentServices;
+export default NestJs_DevelopmentServices;

@@ -12,7 +12,7 @@ const Header: React.FC = () => (
     buttonText="Our Services"
     description="A Complete Webflow end-to-end solution, no matter your needs."
   >
-    <div className="sm:text-wrap text-center leading-[34px]">
+    <div className="sm:text-wrap text-center leading-[1.4] capitalize">
       Our <span className="italic font-light">Webflow</span> Development
       Services
     </div>

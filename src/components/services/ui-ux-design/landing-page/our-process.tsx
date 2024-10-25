@@ -5,21 +5,23 @@ import Image from "next/image";
 
 const OurProcess = () => {
   return (
-    <OuterComponent>
-      <OuterFlexComponent>
-        <SectionHeader
-          buttonText="Our Process"
-          description="We integrate a business-driven and user-centered UX approach in our product design, ensuring that both business goals and user needs are met effectively."
-          style="w-[794px] md:w-[650px] "
-        >
-          <div className="w-full md:w-[700px] lg:leading-[63px] sm:leading-[54px] xs:leading-[32px] xs:w-full text-wrap text-center">
-            Our <span className="italic font-light">UI/UX design </span> aligns
-            perfectly with your business goals.
-          </div>
-        </SectionHeader>
-        <ImageContainer />
-      </OuterFlexComponent>
-    </OuterComponent>
+    <div id="our-process">
+      <OuterComponent>
+        <OuterFlexComponent>
+          <SectionHeader
+            buttonText="Our Process"
+            description="We integrate a business-driven and user-centered UX approach in our product design, ensuring that both business goals and user needs are met effectively."
+            style="w-[794px] md:w-[650px] "
+          >
+            <div className="w-full md:w-[700px] lg:leading-[63px] sm:leading-[54px] xs:leading-[32px] xs:w-full text-wrap text-center leading-[1.4] capitalize">
+              Our <span className="italic font-light">UI/UX design </span>{" "}
+              aligns perfectly with your business goals.
+            </div>
+          </SectionHeader>
+          <ImageContainer />
+        </OuterFlexComponent>
+      </OuterComponent>
+    </div>
   );
 };
 

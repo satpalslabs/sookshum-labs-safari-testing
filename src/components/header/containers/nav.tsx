@@ -19,7 +19,7 @@ const Nav = ({
     <div
       className={
         showLinks
-          ? "sm:fixed overflow-auto z-10 sm:h-[calc(100vh-116px)] text-lightText sm:top-[112px] xs:top-[88px] bottom-0 sm:w-full  sm:left-0  sm:z-[9999]"
+          ? "sm:fixed overflow-auto z-10 sm:h-[calc(100vh-116px)] text-secondaryText sm:top-[112px] xs:top-[88px] bottom-0 sm:w-full  sm:left-0  sm:z-[9999]"
           : "sm:h-0 overflow-hidden"
       }
     >
@@ -60,7 +60,7 @@ const Nav = ({
         /> */}
         <PrimaryButton
           icon={true}
-          text="Get in touch"
+          text="Get In Touch"
           style="w-full hidden xs:flex text-center !h-[48px] mt-[22px] !text-sm rounded-[26px] sm:shrink-0 relative z-20"
           link="/contact-us"
         />

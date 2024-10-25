@@ -5,11 +5,11 @@ import SectionHeader from "@components/basic-components/section-header";
 
 const Header: React.FC = () => (
   <SectionHeader
-    style=""
+    style="xxl:!w-[60%] !w-[70%]"
     buttonText="Our Process"
-    description="Having successfully delivered hundreds of projects, our transparent and agile development process will guide your project from discovery to launch."
+    description="With hundreds of successful projects under our belt, our transparent and agile development process will steer your project from discovery to launch."
   >
-    <div className="sm:text-wrap text-center leading-[34px]">
+    <div className="sm:text-wrap text-center leading-[1.4] capitalize">
       Our process for shopify development success.
     </div>
   </SectionHeader>

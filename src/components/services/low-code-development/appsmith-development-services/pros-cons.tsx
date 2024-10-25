@@ -19,20 +19,22 @@ type card = {
 
 const pros_cons: card[] = data;
 const Pros_Cons: React.FC = () => (
-  <OuterComponent>
-    <OuterFlexComponent>
-      <SectionHeader
-        buttonText="Pros & Cons"
-        description="Explore the pros and cons of Appsmith – from its open-source flexibility and easy integrations to potential limitations in scaling and customization. Is it the right low-code platform for you?"
-        style="xxl:!w-[75%] !w-full lg:!w-[740px] xs:!w-full"
-      >
-        <div className="xs:w-full  w-full mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
-          <span className="italic font-light"> Appsmith </span> Pros & Cons
-        </div>
-      </SectionHeader>
-      <MainContainer />
-    </OuterFlexComponent>
-  </OuterComponent>
+  <div id="pros&cons">
+    <OuterComponent>
+      <OuterFlexComponent>
+        <SectionHeader
+          buttonText="Pros & Cons"
+          description="Explore the pros and cons of Appsmith, including its open-source flexibility and seamless integrations, as well as potential challenges related to scaling and customization. Is it the ideal low-code platform for your needs?"
+          style="xxl:!w-[75%] !w-full lg:!w-[740px] xs:!w-full"
+        >
+          <div className="xs:w-full  w-full mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
+            <span className="italic font-light"> Appsmith </span> Pros & Cons
+          </div>
+        </SectionHeader>
+        <MainContainer />
+      </OuterFlexComponent>
+    </OuterComponent>
+  </div>
 );
 
 export default Pros_Cons;
@@ -54,7 +56,9 @@ const MainContainer: React.FC = () => {
         >
           {item.cards.map((des, ind) => (
             <Card
-              style={`mt-0 !pb-4 lg:!p-[10px] sm:!p-[4px] !h-fit w-[calc(50%-10px)] sm:w-full ${item.type=="pros" && "!bg-innerBlurContainer"}`}
+              style={`mt-0 !pb-4 lg:!p-[10px] sm:!p-[4px] !h-fit w-[calc(50%-10px)] sm:w-full ${
+                item.type == "pros" && "!bg-innerBlurContainer"
+              }`}
               isInView={isInView}
               key={ind}
             >

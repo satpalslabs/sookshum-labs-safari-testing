@@ -2,31 +2,31 @@
     {
         "image_url": "/services/web-app-development/landing-page/why-us/deploy.png",
         "heading": "Flexibility in deployment ",
-        "description": "Supports cloud, on-premises, and hybrid deployment options."
+        "description": "Offers support for cloud, on-premises, and hybrid deployment options."
     },
     {
         "image_url": "/services/ui-ux-design/landing-page/choose-us/security.png",
         "heading": "Security and compliance",
-        "description": "Focuses on enterprise-grade security features, including regular permissions and robust audit logs."
+        "description": "Emphasizes enterprise-grade security features, including regular permissions and comprehensive audit logs."
     },
     {
         "image_url": "/services/admin-development/nextjs-development-services/our-process/maintenance.webp",
         "heading": "Real-time collaboration ",
-        "description": "Provides advanced collaboration features like real-time updates, version control, and shared editing."
+        "description": "Offers advanced collaboration features such as real-time updates, version control, and shared editing."
     },
     {
         "image_url": "/services/admin-development/nextjs-development-services/why-us/cutting-edge-technologies.webp",
         "heading": "Customization with code",
-        "description": "Allows extensive customization with JavaScript, SQL, and other programming languages. "
+        "description": "Enables extensive customization using JavaScript, SQL, and various other programming languages."
     },
     {
         "image_url": "/services/mobile-app-devlopment/landing-page/why-us/maintain.png",
         "heading": "Extensive Integrations ",
-        "description": "Offers various integrations with databases, APIs, and third-party services."
+        "description": "Provides multiple integrations with databases, APIs, and third-party services."
     },
     {
         "image_url": "/services/mobile-app-devlopment/landing-page/why-us/scale.png",
         "heading": "Component Reusability",
-        "description": "Retool’s library of pre-built components can be easily customized and reused. "
+        "description": "Retool’s library of pre-built components can be easily customized and reused."
     }
 ]

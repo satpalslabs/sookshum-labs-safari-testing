@@ -14,7 +14,7 @@ export type dataItem = {
 };
 
 const LetsConnect: React.FC = () => (
-  <div className="px-[80px] lg:px-10 xs:px-5 pt-[120px] md:pt-[90px] sm:pt-[70px] xs:pt-[60px] max-w-[1920px] w-full overflow-hidden xs:overflow-visible mx-auto">
+  <div id="connect" className="px-[80px] lg:px-10 xs:px-5 pt-[120px] md:pt-[90px] sm:pt-[70px] xs:pt-[60px] max-w-[1920px] w-full overflow-hidden xs:overflow-visible mx-auto">
     <div className="flex xs:flex-col relative shadow-buttonInset bg-innerContainer rounded-[32px] sm:rounded-[20px] xs:pb-8 xs:gap-8">
       <TextContainer />
       <ImageContainer />

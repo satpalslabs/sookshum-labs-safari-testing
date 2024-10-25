@@ -14,20 +14,23 @@ type benefit = {
 
 const benefitsData: benefit[] = data;
 const Benefits = () => (
-  <OuterComponent>
-    <OuterFlexComponent>
-      <SectionHeader
-        buttonText="Benefits"
-        description="Discover the top use cases where Next.js shines for performance, scalability, and seamless user experiences."
-        style="w-[994px] sm:w-[700px] xs:w-full mx-auto"
-      >
-        <div className="w-[full] sm:w-[800px] leading-[1.4] xs:w-full text-wrap text-center mx-auto">
-          Best Use Cases For <span className="italic font-light">Next.Js</span>
-        </div>
-      </SectionHeader>
-      <BenefitCards />
-    </OuterFlexComponent>
-  </OuterComponent>
+  <div id="benefits">
+    <OuterComponent>
+      <OuterFlexComponent>
+        <SectionHeader
+          buttonText="Benefits"
+          description="Discover the top use cases where Next.js shines for performance, scalability, and seamless user experiences."
+          style="w-[994px] sm:w-[700px] xs:w-full mx-auto"
+        >
+          <div className="w-[full] sm:w-[800px] leading-[1.4] capitalize xs:w-full text-wrap text-center mx-auto">
+            Best Use Cases For{" "}
+            <span className="italic font-light">Next.js</span>
+          </div>
+        </SectionHeader>
+        <BenefitCards />
+      </OuterFlexComponent>
+    </OuterComponent>
+  </div>
 );
 
 export default Benefits;
@@ -82,12 +85,12 @@ const SingleCard: React.FC<{
     >
       <div className="flex flex-col gap-5 xxl:gap-8 sm:gap-[15px]">
         <H4
-          style="!leading-[1.25] !text-[20px] sm:!text-sm !text-light"
+          style="!leading-[1.25] !text-[20px] sm:!text-sm !text-secondary"
           text={`00${index + 1}`}
         />
         <div className="flex flex-col gap-3 sm:gap-[10px]">
           <H4
-            style="!leading-[1.25] !text-[20px] sm:!text-sm"
+            style="!leading-[1.25] !text-white !text-[20px] sm:!text-sm"
             text={data.heading}
           />
           <Description

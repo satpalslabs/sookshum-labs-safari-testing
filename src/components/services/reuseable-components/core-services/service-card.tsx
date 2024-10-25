@@ -21,7 +21,7 @@ function Service({
         />
       </div>
       <div className=" flex flex-col px-4 md:px-2 sm:px-[6px] grow h-fit gap-[0.5rem] sm:h-auto sm:gap-[0.5rem]">
-        <H5 text={service.count} style="!text-white !leading-[1.4]" />
+        <H5 text={service.count} style="!leading-[1.4]" />
         <Description children={null} text={service.about} classes="!font-normal" />
       </div>
     </Card>

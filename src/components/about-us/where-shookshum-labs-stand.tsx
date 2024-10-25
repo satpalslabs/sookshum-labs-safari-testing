@@ -23,6 +23,7 @@ const WhereWeAre: React.FC = () => {
   return (
     <OuterComponent>
       <div
+        id="where-us"
         ref={ref}
         className="flex flex-col gap-[70px] md:gap-[50px] sm:gap-12 items-center"
       >
@@ -148,41 +149,13 @@ const DetailReviewCard1: React.FC<{
           {props.heading}
         </div>
       </H2>
-      {/* <div
-        className={` bg-slider-bg-size bg-[100%_100%] cursor-pointer overflow-hidden flex flex-col gap-8 sm:gap-[15px] xs:gap-4 max-w-fit`}
-      >
-        <img
-          height={400}
-          width={400}
-          src="/home/testimonials/stars.png"
-          alt=""
-          className="h-[24px] sm:h-[18px] w-fit xs:h-4 xs:w-fit"
-        /> */}
       <div>
         <Description
           children={null}
           text={props.detail}
-          classes="lg:pr-10 xs:pr-0 xs:!text-xs xs:w-full text-xl lg:text-base leading-6 font-[300] md:!text-base"
+          classes="lg:pr-10 !text-h3_heading xs:pr-0 xs:!text-xs xs:w-full text-xl lg:text-base leading-6 !font-[300] md:!text-base"
         />
       </div>
-      {/* <div className="flex gap-6 items-center">
-          <img
-            height={400}
-            width={400}
-            src="/home/testimonials/client.png"
-            alt=""
-            className="h-12 w-12 xl:h-[46px] sm:w-[32px] sm:h-[32px] xl:w-[46px] rounded-full xs:w-8 xs:h-8"
-          />
-          <div className="flex flex-col gap-2 sm:gap-1 xs:gap-1">
-            <H6 classes="text-white" text="Belinda Meyers" />
-            <Description
-              children={null}
-              text="CEO of JD"
-              classes="text-light"
-            />
-          </div>
-        </div> */}
-      {/* </div> */}
     </div>
   </Card>
 );

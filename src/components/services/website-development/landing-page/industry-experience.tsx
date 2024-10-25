@@ -21,28 +21,30 @@ const IndustryExperience = () => {
   const isInView = useInView(ref);
 
   return (
-    <OuterComponent>
-      <div
-        ref={ref}
-        className={`transition-all duration-500 flex flex-col gap-[70px] md:gap-[50px] sm:gap-12 items-center bg-black overflow-hidden max-w-[1920px] mx-auto ${
-          isInView ? "grayscale-0" : "grayscale"
-        }`}
-      >
-        {/* Header */}
-        <SectionHeader
-          buttonText="Industries we serve"
-          description="Our team is dedicated to designing innovative apps and websites that meet the unique demands of sectors ranging from healthcare to retail, all powered by the latest in technology."
-          style="w-[770px] lg:w-[491px] lg:mx-auto sm:w-[636px] xs:w-full xs:!px-0"
+    <div id="industry-experience">
+      <OuterComponent>
+        <div
+          ref={ref}
+          className={`transition-all duration-500 flex flex-col gap-[70px] md:gap-[50px] sm:gap-12 items-center bg-black overflow-hidden max-w-[1920px] mx-auto ${
+            isInView ? "grayscale-0" : "grayscale"
+          }`}
         >
-          <div className="w-full lg:w-[637px] sm:w-[80%] xs:w-full lg:leading-[1.2] text-wrap tracking-tight text-center mx-auto ">
-            Our diverse industry
-            <span className="italic font-light w-full"> experiences?</span>
-          </div>
-        </SectionHeader>
-        {/* Detail component */}
-        <IndustryExperienceDetailedComponent />
-      </div>
-    </OuterComponent>
+          {/* Header */}
+          <SectionHeader
+            buttonText="Industries we serve"
+            description="Our team is dedicated to designing innovative apps and websites that meet the unique demands of sectors ranging from healthcare to retail, all powered by the latest in technology."
+            style="w-[770px] lg:w-[491px] lg:mx-auto sm:w-[636px] xs:w-full xs:!px-0"
+          >
+            <div className="w-full lg:w-[637px] sm:w-[80%] xs:w-full lg:leading-[1.2] text-wrap tracking-tight text-center mx-auto leading-[1.4] capitalize">
+              Our diverse industry
+              <span className="italic font-light w-full"> experiences?</span>
+            </div>
+          </SectionHeader>
+          {/* Detail component */}
+          <IndustryExperienceDetailedComponent />
+        </div>
+      </OuterComponent>
+    </div>
   );
 };
 export default IndustryExperience;

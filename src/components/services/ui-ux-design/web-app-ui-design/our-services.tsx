@@ -17,20 +17,22 @@ type ServiceType = {
 
 const services: ServiceType[] = data;
 const OurServices: React.FC = () => (
-  <OuterComponent>
-    <OuterFlexComponent>
-      <SectionHeader
-        buttonText="Our Services"
-        description="As a UI UX design company, we provide end-to-end UI UX services including research, wireframing, UI design and development. "
-        style="w-[800px] lg:!w-[740px] sm:!w-[89%] xs:!w-[400px] 3xs:!w-[310px]"
-      >
-        <div className="xs:w-full text-wrap sm:w-full mx-auto leading-[1.4] sm:text-wrap text-center capitalize">
-          UI UX design services to bring your product vision to life
-        </div>
-      </SectionHeader>
-      <OurServicesMainContainer />
-    </OuterFlexComponent>
-  </OuterComponent>
+  <div id="our-services">
+    <OuterComponent>
+      <OuterFlexComponent>
+        <SectionHeader
+          buttonText="Our Services"
+          description="As a UI/UX design company, we offer comprehensive end-to-end services, including research, wireframing, UI design, and development."
+          style="w-[800px] lg:!w-[740px] sm:!w-[89%] xs:!w-[400px] 3xs:!w-[310px]"
+        >
+          <div className="xs:w-full text-wrap sm:w-full mx-auto leading-[1.4] sm:text-wrap text-center capitalize">
+            UI UX design services to bring your product vision to life
+          </div>
+        </SectionHeader>
+        <OurServicesMainContainer />
+      </OuterFlexComponent>
+    </OuterComponent>
+  </div>
 );
 
 export default OurServices;
@@ -57,15 +59,13 @@ const SingleCard: React.FC<{
   index: number;
 }> = ({ isInView, data, index }) => (
   <div
-    className={`relative rotate-0 ${
-      index > 2 ? "col-span-3" : "col-span-2"
-    }`}
+    className={`relative rotate-0 ${index > 2 ? "col-span-3" : "col-span-2"}`}
   >
     <Card
       style="!rounded-[32px] !p-8 !pb-8 lg:!p-7 lg:!pb-[70px] sm:!p-6 sm:!pb-[55px] xs:!p-5 xs:!pb-[33px] justify-between !gap-5 lg:!gap-3 sm:!gap-2 h-full"
       isInView={isInView}
     >
-      <H4 style="!leading-[1.25]" text={data.heading} />
+      <H4 style="!text-white !leading-[1.25]" text={data.heading} />
       <Description
         children={null}
         classes="!text-lg lg:!text-sm sm:!text-xs w-full sm:!tracking-tight"

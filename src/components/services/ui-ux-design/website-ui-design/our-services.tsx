@@ -17,20 +17,22 @@ type ServiceType = {
 
 const services: ServiceType[] = data;
 const OurServices: React.FC = () => (
-  <OuterComponent>
-    <OuterFlexComponent>
-      <SectionHeader
-        buttonText="Our Services"
-        description="As a UI UX design company, we provide end-to-end UI UX services including research, wireframing, UI design and development. "
-        style="w-[800px] lg:!w-[740px] xs:!w-[400px] 3xs:!w-[310px]"
-      >
-        <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] sm:text-wrap text-center capitalize">
-          UI UX design services to bring your product vision to life
-        </div>
-      </SectionHeader>
-      <OurServicesMainContainer />
-    </OuterFlexComponent>
-  </OuterComponent>
+  <div id="our-services">
+    <OuterComponent>
+      <OuterFlexComponent>
+        <SectionHeader
+          buttonText="Our Services"
+          description="As a UI/UX design company, we offer comprehensive end-to-end services, including research, wireframing, UI design, and development. Explore our UI/UX services:"
+          style="w-[800px] lg:!w-[740px] xs:!w-[400px] 3xs:!w-[310px]"
+        >
+          <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] text-wrap text-center capitalize">
+            UI UX design services to bring your product vision to life
+          </div>
+        </SectionHeader>
+        <OurServicesMainContainer />
+      </OuterFlexComponent>
+    </OuterComponent>
+  </div>
 );
 
 export default OurServices;
@@ -60,7 +62,7 @@ const SingleCard: React.FC<{ isInView: boolean; data: ServiceType }> = ({
       style="!rounded-[32px] !p-8 !pb-8 lg:!p-7 sm:!p-6 xs:!p-5 justify-between !gap-5 lg:!gap-3 sm:!gap-2 h-full"
       isInView={isInView}
     >
-      <H4 style="!leading-[1.25]" text={data.heading} />
+      <H4 style="!leading-[1.25] !text-white" text={data.heading} />
       <Description
         children={null}
         classes="!text-lg lg:!text-sm sm:!text-xs w-full sm:!tracking-tight"

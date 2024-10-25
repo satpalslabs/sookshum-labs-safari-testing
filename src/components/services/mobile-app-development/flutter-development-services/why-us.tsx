@@ -16,22 +16,24 @@ type Process = {
 };
 const chooseUsData: Process[] = data;
 const WhyUs = () => (
-  <OuterComponent>
-    <OuterFlexComponent>
-      <SectionHeader
-        buttonText="Why choose us?"
-        description="As a leading Flutter development  company, we understand the importance of creating a visually captivating and distinctive brand identity that seamlessly aligns with your business objectives. Every iOS, Android and web app we create with our Flutter app developers is the spitting image of the brand it represents. "
-        style="w-[986px] lg:w-[491px] lg:mx-auto xs:w-full"
-      >
-        <div className="w-full lg:w-[637px] sm:w-full xs:px-3 xs:w-full 3xs:px-0 xs:text-balance lg:leading-[1.2] text-wrap tracking-tight text-center mx-auto ">
-          Why Choose Us For{" "}
-          <span className="italic font-light w-full">Flutter</span> App
-          Development Company? 
-        </div>
-      </SectionHeader>
-      <WhyUsDetailComponent />
-    </OuterFlexComponent>
-  </OuterComponent>
+  <div id="why-us">
+    <OuterComponent>
+      <OuterFlexComponent>
+        <SectionHeader
+          buttonText="Why choose us?"
+          description="As a leading Flutter development company, we recognize the significance of crafting a visually stunning and unique brand identity that aligns perfectly with your business goals. Every iOS, Android, and web app developed by our Flutter experts is a true reflection of the brand it embodies."
+          style="w-[986px] lg:w-[491px] lg:mx-auto xs:w-full"
+        >
+          <div className="w-full lg:w-[637px] sm:w-full xs:px-3 xs:w-full 3xs:px-0 xs:text-balance lg:leading-[1.2] text-wrap tracking-tight text-center mx-auto leading-[1.4] capitalize">
+            Why Choose Us For{" "}
+            <span className="italic font-light w-full">Flutter</span> App
+            Development Company?
+          </div>
+        </SectionHeader>
+        <WhyUsDetailComponent />
+      </OuterFlexComponent>
+    </OuterComponent>
+  </div>
 );
 
 export default WhyUs;
@@ -61,16 +63,16 @@ const WhyUsDetailComponent: React.FC = () => {
           alt=""
         />
         <div className="flex flex-col pt-[18px] lg:pt-[15px] sm:grow">
-          <H4 style="" text={`0${active + 1}`} />
+          <H4 style="!text-white" text={`0${active + 1}`} />
           <div className="pl-6 pt-1 flex flex-col gap-[51px] sm:gap-[42px] xs:gap-[19px] sm:w-[80%] xs:w-full">
             <div className=" flex flex-col gap-[21px] xs:gap-[10px]">
               <H4
-                style="leading-[1.4] h-fit text-wrap"
+                style="leading-[1.4] h-fit text-wrap !text-white"
                 text={chooseUsData[active]["process-title"]}
               />
               <Description
                 children={null}
-                classes="!text-white leading-[1.4] !font-normal"
+                classes="!text-white text-lg leading-[1.4] !font-normal"
                 text={chooseUsData[active].description}
               />
             </div>

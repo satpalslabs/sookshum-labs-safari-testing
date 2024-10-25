@@ -15,11 +15,11 @@ const NavLink = ({
   const currentPath: string = usePathname();
   return (
     <Link
-      className={`sm:p-4 group sm:px-10 sm:text-sm sm:flex sm:items-center sm:h-[72px] sm:justify-between sm:shadow-none sm:bg-transparent sm:border-none border-solid  ${
+      className={`sm:p-4 text-secondaryText font-normal group sm:px-10 sm:text-sm sm:flex sm:items-center sm:h-[72px] sm:justify-between sm:shadow-none sm:bg-transparent sm:border-none border-solid  ${
         (link == "/" ? currentPath == "/" : currentPath.includes(link))
-          ? " text-white  sm:shadow-none sm:bg-transparent sm:border-none border-solid  "
+          ? " text-white  sm:shadow-none font-semibold sm:bg-transparent sm:border-none border-solid  "
           : ""
-      } sm:rounded-[32px] flex items-center gap-2 hover:text-white xs:shadow-none xs:border-none xs:bg-transparent xs:h-[52px] xs:px-4`}
+      } sm:rounded-[32px] flex items-center gap-2 font-normal hover:text-white xs:shadow-none xs:border-none xs:bg-transparent xs:h-[52px] xs:px-4`}
       href={link}
       onClick={() => {
         if (showLinks) {

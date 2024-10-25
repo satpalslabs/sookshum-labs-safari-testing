@@ -26,6 +26,7 @@ const InnovationConcepts: React.FC = () => {
   return (
     <OuterComponent>
       <div
+        id="innovation-concepts"
         ref={ref}
         className={`flex flex-col items-center gap-[40px] lg:gap-[30px] xs:gap-3 ${
           isInView ? "grayscale-0" : "grayscale"

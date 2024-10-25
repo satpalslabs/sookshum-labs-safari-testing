@@ -2,21 +2,21 @@
     {
         "image": "/header/logos/landing-page.png",
         "title": "Landing Page Designs",
-        "description": "Custom wireframing and landing pages designed from scratch or based on existing formats to maximize conversions or page objectives. "
+        "description": "Custom wireframes and landing pages are crafted from scratch or adapted from existing formats to optimize conversions and meet page objectives. We focus on user experience, compelling visuals, and strategic call-to-action elements. "
     },
     {
         "image": "/services/admin-development/nextjs-development-services/our-services/website-design.webp",
         "title": "Website, Blog, and App Graphics",
-        "description": "Custom-designed graphics to be used on a website landing page. Blog article, or within an App."
+        "description": "We create stunning, custom graphics tailored for your website, blog, and app. We focus on enhancing your brand identity and user engagement through visually appealing designs. Our graphics are optimized for various platforms, ensuring consistency and effectiveness in capturing attention."
     },
     {
         "image": "/services/ui-ux-design/landing-page-ui-design/t.png",
         "title": "Design Systems ",
-        "description": "Compilation and development of a design system taking into account your brand’s requirements and objectives."
+        "description": "We specialize in creating comprehensive design systems that align with your brand’s vision and objectives. Our approach ensures consistency across all digital platforms, streamlining design processes and enhancing collaboration."
     },
     {
         "image": "/services/ui-ux-design/landing-page-ui-design/ui-design.png",
         "title": "Web UI Design",
-        "description": "Development of website elements in a user-friendly manner taking into account UI requirements to maximize landing page conversions. "
+        "description": "We specialize in creating intuitive and visually appealing web UI designs that enhance user experience and engagement. We design user interfaces that align with your brand identity and business goals, ensuring seamless navigation and effective interactions across all digital platforms. "
     }
 ]

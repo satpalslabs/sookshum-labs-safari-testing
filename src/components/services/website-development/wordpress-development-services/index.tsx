@@ -11,6 +11,7 @@ import Why_us from "./why-us";
 import OurServices from "./our-services";
 import LetsConnect from "./need-project";
 import Work from "./work";
+import GoTopButton from "@components/basic-components/go-to-top";
 
 const content_heroSection: HeroSection = {
   gradientTextStyle: "",
@@ -20,7 +21,7 @@ const content_heroSection: HeroSection = {
   image: true,
   buttonText: "Wordpress Development",
   additionalDescription: "",
-  gradientText: "We Build & Migrate Fast, Secure & Modern WordPress Websites",
+  gradientText: "Elevate Your Online Presence with Expert WordPress Development",
   style: {
     sourceStyle:
       "xxl:left-[50%] xxl:!h-[700px] left-[8%] xxl:scale-[1] lg:!h-[330px] sm:!h-[280px] xs:!h-[170px] xxl:top-[-21%] xxl:-translate-x-[50%] left-[15%] lg:left-[2%] xs:-left-[4%]",
@@ -43,6 +44,7 @@ const WordPress_Development: React.FC<HomeProps> = ({ isBot }) => (
     {/* Temporary disable */}
     {/* <Faqs DataKey={"website-development-landing-page"} /> */}
     <LetsConnect />
+    <GoTopButton />
   </div>
 );
 

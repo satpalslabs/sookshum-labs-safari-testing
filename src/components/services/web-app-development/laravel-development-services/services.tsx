@@ -18,21 +18,23 @@ type ServiceType = {
 
 const services: ServiceType[] = data;
 const Services: React.FC = () => (
-  <OuterComponent>
-    <OuterFlexComponent>
-      <SectionHeader
-        buttonText="Our Services"
-        description="We offer web app development services tailored to any business or industry, delivering custom solutions that build user trust and convert visitors into paying customers. "
-        style="w-[976px] lg:!w-[878px] sm:!w-[100%] xs:!w-[400px] 3xs:!w-[310px]"
-      >
-        <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] sm: text-wrap text-center tracking-[-0.02em] capitalize">
-          <span className="italic font-light">Laravel’s </span> versatile
-          applications across a variety of use-cases
-        </div>
-      </SectionHeader>
-      <OurServicesMainContainer />
-    </OuterFlexComponent>
-  </OuterComponent>
+  <div id="our-services">
+    <OuterComponent>
+      <OuterFlexComponent>
+        <SectionHeader
+          buttonText="Our Services"
+          description="We provide web app development services customized for any business or industry, creating solutions that foster user trust and turn visitors into paying customers."
+          style="w-[976px] lg:!w-[878px] sm:!w-[100%] xs:!w-[400px] 3xs:!w-[310px]"
+        >
+          <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] sm: text-wrap text-center tracking-[-0.02em] capitalize">
+            <span className="italic font-light">Laravel’s </span> versatile
+            applications across a variety of use-cases
+          </div>
+        </SectionHeader>
+        <OurServicesMainContainer />
+      </OuterFlexComponent>
+    </OuterComponent>
+  </div>
 );
 
 export default Services;
@@ -67,7 +69,7 @@ const SingleCard: React.FC<{ isInView: boolean; data: ServiceType }> = ({
         className="w-[120px] h-auto lg:w-[80px] transition-all duration-1000"
       />
       <div className="flex flex-col gap-5 lg:gap-3 sm:gap-2">
-        <H4 style="!leading-[1.25]" text={data.heading} />
+        <H4 style="!leading-[1.25]  !text-white" text={data.heading} />
         <Description
           children={null}
           classes="!text-lg lg:!text-sm sm:!text-xs w-full sm:!tracking-tight"

@@ -21,7 +21,7 @@ const OurValues: React.FC = () => {
 
   return (
     <OuterComponent>
-      <div ref={ref} className="flex flex-col gap-[36px]  items-center">
+      <div ref={ref} id="our-values" className="flex flex-col gap-[36px]  items-center">
         <div
           className={`flex flex-col gap-6 lg:gap-3 xs:gap-2 items-center w-[70%] lg:w-[500px] xs:w-full xs:px-4 `}
         >

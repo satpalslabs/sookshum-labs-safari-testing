@@ -17,12 +17,12 @@ const Discover: React.FC = () => (
       <Description
         text={""}
         classes={
-          "!text-lg lg:!text-sm sm:!text-[13px] xs:!text-[12px] lg:w-[60%] sm:w-[80%] xs:w-full !leading-[1.4] !text-light !font-[300]"
+          "!text-lg lg:!text-sm sm:!text-[13px] xs:!text-[12px] lg:w-[60%] sm:w-[80%] xs:w-full !leading-[1.4] !text-white !font-[300]"
         }
       >
         <div>
-          Our landing page design approach is result-driven and it’s crucial for
-          us to make your landing reach important metrics and business goals.
+          Our landing page design approach is results-driven, and we prioritize
+          helping your landing page achieve key metrics and business objectives.
         </div>
       </Description>
     </div>

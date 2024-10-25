@@ -29,10 +29,10 @@ const Industry: React.FC<{
       width={400}
       src={industry.image}
       alt=""
-      className="h-[80px] max-w-fit pl-3 pb-2 pt-1 object-contain float-left sm:max-w-[100px]"
+      className="h-[120px] lg:h-[80px] max-w-fit pl-3 pb-2 pt-1 object-contain float-left "
     />
     <div className="p-4 flex flex-col gap-[10px] xs:p-1 ">
-      <H6 classes="text-white" text={industry.title} />
+      <H6 classes="!text-white" text={industry.title} />
       <Description
         children={null}
         text={industry.description}

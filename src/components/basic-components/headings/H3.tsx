@@ -5,11 +5,11 @@ type textType = {
   style: string;
 };
 const H3: React.FC<textType> = ({ text, style }) => (
-  <div
-    className={`font-poppins leading-6 text-[36px] md:leading-5 md:text-2xl sm:text-xl text-white font-medium ${style}`}
+  <h3
+    className={`font-poppins leading-[1.2] text-[36px] md:leading-5 md:text-2xl sm:text-xl text-h3_heading font-medium ${style}`}
   >
     {text}
-  </div>
+  </h3>
 );
 
 export default H3;

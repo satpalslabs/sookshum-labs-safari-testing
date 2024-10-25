@@ -19,21 +19,23 @@ type service = {
 
 const ourServiceData: service[] = data;
 const OurServices: React.FC = () => (
-  <OuterComponent>
-    <OuterFlexComponent>
-      <SectionHeader
-        buttonText="Our services"
-        description="Sookshum Labs specializes in NestJs development, providing custom solutions to meet your business requirements. "
-        style="w-[95.5%] lg:!w-[740px] xs:!w-full"
-      >
-        <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
-          Our <span className="italic font-light"> NestJs </span> Software
-          Development Services
-        </div>
-      </SectionHeader>
-      <MainContainer />
-    </OuterFlexComponent>
-  </OuterComponent>
+  <div id="our-services">
+    <OuterComponent>
+      <OuterFlexComponent>
+        <SectionHeader
+          buttonText="Our services"
+          description="Sookshum Labs speciialiizes iin NestJS development, providing custom solutions to meet your business requirements. "
+          style="w-[95.5%] lg:!w-[740px] xs:!w-full"
+        >
+          <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] capitalize text-wrap text-center tracking-[-0.02em]">
+            Our <span className="italic font-light"> NestJS </span> Software
+            Development Services
+          </div>
+        </SectionHeader>
+        <MainContainer />
+      </OuterFlexComponent>
+    </OuterComponent>
+  </div>
 );
 
 export default OurServices;
@@ -61,7 +63,7 @@ const MainContainer: React.FC = () => {
             <div className="flex flex-col gap-4 lg:gap-3 sm:gap-2">
               <H6
                 text={ourservice.title}
-                classes="text-white xxl:text-3xl !font-[500] !text-[20px] sm:!text-[14px] md:!leading-[1.4] !leading-[1.6]"
+                classes="!text-white xxl:text-3xl !font-[500] !text-[20px] sm:!text-[14px] md:!leading-[1.4] !leading-[1.6]"
               />
               <Description
                 children={null}

@@ -40,7 +40,7 @@ const FooterLinks: React.FC<{ column: ColumnKeyType }> = ({ column }) => (
             href={link.url}
             key={index}
             target={link.url.includes("http") ? "_blank" : "_self"}
-            className="hover:underline"
+            className="hover:underline hover:text-white text-customWhite "
           >
             {link.label}
           </Link>

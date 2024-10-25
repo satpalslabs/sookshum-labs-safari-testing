@@ -1,73 +1,73 @@
 [
     {
         "heading": "Research ",
-        "description": "Using a Swot analysis, we’ll evaluate your best performing competitors’ strategies. We’ll then use this to ascertain how to take advantage of their strengths and weaknesses.",
+        "description": "Through SWOT analysis, we will assess the strategies of your top-performing competitors. This evaluation will help us identify how to leverage their strengths and weaknesses to your advantage",
         "detail": [
             {
                 "title": "UX research",
-                "des": "This is the launchpad for every project. Here, we analyze your current product, competitors, and target market. We then bring all these strands together to create a site map and a list of UX features that can be actioned.",
+                "des": "This serves as the launchpad for every project. We analyze your current product, competitors, and target market, then integrate these insights to develop a site map and a list of actionable UX features.",
                 "deliverables": "Site map . Key findings for UX improvements . SWOT analysis"
             },
             {
                 "title": "UX strategy",
-                "des": "The scope of a UX strategy ranges from a single product, service, or feature, to multiple products and services. A string strategy ensures that user-centered insights are integrated into a business plan.",
+                "des": "The scope of a UX strategy can encompass a single product, service, or feature, as well as multiple products and services. A strong strategy ensures that user-centered insights are woven into the overall business plan.",
                 "deliverables": "Plan of action designed to deliver improved UX over an established timeframe."
             }
         ]
     },
     {
         "heading": "Experience design",
-        "description": "Turn the results of the analysis into user-friendly pages and blocks that comply with generally accepted rules of usability and convert visitors into customers.",
+        "description": "Transform the analysis results into user-friendly pages and blocks that adhere to established usability principles, effectively converting visitors into customers.",
         "detail": [
             {
                 "title": "Wireframes",
-                "des": "This stage helps us understand the logic and structure of the future service. We create and approve prototypes for every single flow.",
-                "deliverables": "Our UX/ UI design agency excels in crafting and approving wireframe prototypes for a thorough understanding of future service logic and structure. "
+                "des": "This stage allows us to grasp the logic and structure of the future service. We develop and finalize prototypes for each individual flow.",
+                "deliverables": "Our UX/UI design agency specializes in developing wireframe prototypes to ensure a clear understanding of the future service's logic and structure. "
             },
             {
                 "title": "Clickable prototypes ",
-                "des": "using a clickable prototype, we can demonstrate and test how the website will actually behave under near-realistic conditions. ",
-                "deliverables": "Plan of action designed to deliver improved UX over an established timeframe."
+                "des": "By using a clickable prototype, we can showcase and test how the website will function in near-realistic conditions. ",
+                "deliverables": "Action plan designed to deliver improved UX over an established timeframe."
             }
         ]
     },
     {
         "heading": "Interface design",
-        "description": "It is the part where the magic begins. We start with the mood board and design conception for the future design. After this, we create the UI design for the whole project and make a UI kit or Design system for developers.",
+        "description": "This is where the magic happens. We begin with a mood board and design concept for the future design. From there, we create the UI design for the entire project and develop a UI kit or design system for the developers.",
         "detail": [
             {
                 "title": "Moodboard",
-                "des": "To determine the visual direction and style of the interface, our team creates mood boards and coordinates them with the client. This allows you to choose the most suitable solution at the earliest stages and avoid throwing multiple improvements at the design stage when cardinal changes in direction take a lot of time.",
-                "deliverables": "Moodboard to choose the suitable visual direction. "
+                "des": "To establish the visual direction and style of the interface, our team creates mood boards and collaborates with the client. This approach enables you to select the most suitable solution early on, helping to avoid extensive revisions later in the design phase that can be time-consuming.",
+                "deliverables": "Moodboard to choose the suitable visual direction."
             },
             {
                 "title": "Design Conception",
-                "des": "Based on the research and the direction chosen in the moodboards, we create the first visual concept of the site to demonstrate the chosen style in real conditions before creating the finished UI design.",
+                "des": "Building on the research and the direction established in the mood boards, we develop the initial visual concept of the site to showcase the selected style in realistic conditions before finalizing the UI design.",
                 "deliverables": "The design concept that helps to establish the visual direction."
             },
             {
                 "title": "Mockup design",
-                "des": "Collecting all previous work, we proceed to craft the actual UI design, incorporating aesthetic and graphic elements such as illustrations and motion. These elements, soon to be brought to life, are systematically validated with customers step by step.",
+                "des": "After gathering all previous work, we begin crafting the actual UI design, integrating aesthetic and graphic elements like illustrations and motion. These components, soon to be realized, are systematically validated with customers at each step.",
                 "deliverables": "High-fidelity mockups "
             },
             {
                 "title": "Delivery",
-                "des": "After creating the UI design for the entire project, we develop a UI kit for developers and prepare to implement and bring the project to life.",
-                "deliverables": "Handoff file for development with UI-kit"
+                "des": "Once the UI design for the entire project is complete, we create a UI kit for developers and prepare for implementation to bring the project to life.",
+                "deliverables": "Developer Handoff file for development with UI Kit"
             }
         ]
     },
     {
         "heading": "Development",
-        "description": "The development team is always in touch with the designers, which allows us to prevent many possible problems in advance and promptly close existing issues.",
+        "description": "The development team maintains constant communication with the designers, enabling us to proactively prevent potential problems and swiftly address any existing issues.",
         "detail": [ {
             "title": "No-code development",
-            "des": "Discover an easily implementable, highly optimized solution to launch your website quickly or create an MVP version of your product with minimal resource investment.",
+            "des": "Discover a highly optimized, easily implementable solution to quickly launch your website or create an MVP version of your product with minimal resource investment.",
             "deliverables": ""
         },
         {
             "title": "Web App development",
-            "des": "In custom code, there are no facets of what is possible if the implementation contains business value. We help to find unique custom solutions and offer simpler, yet equally effective ways thanks to our experience.",
+            "des": "In custom code, the possibilities are limitless when the implementation delivers business value. We help identify unique custom solutions and provide simpler yet equally effective alternatives, drawing on our extensive experience.",
             "deliverables": ""
         },
         {

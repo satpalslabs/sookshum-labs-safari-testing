@@ -10,11 +10,11 @@ const Header: React.FC = () => (
   <SectionHeader
     style="!w-[900px] lg:!w-full"
     buttonText="Benefits"
-    description="Discover the advantages of choosing NestJs for your software development needs and how it can benefit your business. "
+    description="Discover the advantages of choosing NestJS for your software development needs and how it can enhance your business. "
   >
-    <div className="sm:text-wrap text-center leading-[34px] capitalize">
+    <div className="sm:text-wrap text-center leading-[1.4] capitalize">
       Benefits of
-      <span className="italic font-light"> NestJs </span>Software Development
+      <span className="italic font-light"> NestJS </span>Software Development
     </div>
   </SectionHeader>
 );

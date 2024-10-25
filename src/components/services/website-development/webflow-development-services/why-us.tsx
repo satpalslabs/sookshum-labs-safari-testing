@@ -10,6 +10,7 @@ import OuterFlexComponent from "@components/basic-components/main-flex-container
 import Description from "@components/basic-components/description";
 import Image from "next/image";
 import H6 from "@components/basic-components/headings/H6";
+import H3 from "@components/basic-components/headings/H3";
 
 type service = {
   title: string;
@@ -19,21 +20,23 @@ type service = {
 
 const why_usData: service[] = data;
 const WhyUs: React.FC = () => (
-  <OuterComponent>
-    <OuterFlexComponent>
-      <SectionHeader
-        buttonText="Why us?"
-        description="We are not just the typical Webflow agency that started our a few months ago. Sookshum Labs has over 8+ years of experience and a track record of hundreds of successful Webflow projects behind.  "
-        style="w-[85.5%] lg:!w-[740px] xs:!w-full"
-      >
-        <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
-          Why choose us for <span className="italic font-light">Webflow</span>{" "}
-          development?
-        </div>
-      </SectionHeader>
-      <MainContainer />
-    </OuterFlexComponent>
-  </OuterComponent>
+  <div id="why-us">
+    <OuterComponent>
+      <OuterFlexComponent>
+        <SectionHeader
+          buttonText="Why us?"
+          description="Sookshum Labs stands out from the average Webflow agency. With a solid foundation and a proven history of several successful Webflow projects, we deliver exceptional results that elevate your web presence."
+          style="w-[85.5%] lg:!w-[740px] xs:!w-full"
+        >
+          <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
+            Why choose us for <span className="italic font-light">Webflow</span>{" "}
+            development?
+          </div>
+        </SectionHeader>
+        <MainContainer />
+      </OuterFlexComponent>
+    </OuterComponent>
+  </div>
 );
 
 export default WhyUs;
@@ -59,9 +62,9 @@ const MainContainer: React.FC = () => {
               />
             </div>
             <div className="flex flex-col gap-4 lg:gap-3 sm:gap-2">
-              <H6
+              <H3
                 text={item.title}
-                classes="text-white xxl:text-3xl !font-[500] !text-[20px] sm:!text-[14px] md:!leading-[1.4] !leading-[1.6]"
+                style="!text-white xxl:text-3xl !font-[500] !text-[20px] sm:!text-[14px] md:!leading-[1.4] !leading-[1.6]"
               />
               <Description
                 children={null}
