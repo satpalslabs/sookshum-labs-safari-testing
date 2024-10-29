@@ -19,10 +19,10 @@ type card = {
 
 const pros_cons: card[] = data;
 const Pros_Cons: React.FC = () => (
-  <div id="pros&cons">
     <OuterComponent>
       <OuterFlexComponent>
         <SectionHeader
+          id="pros&cons"
           buttonText="Pros & Cons"
           description="Explore the pros and cons of Appsmith, including its open-source flexibility and seamless integrations, as well as potential challenges related to scaling and customization. Is it the ideal low-code platform for your needs?"
           style="xxl:!w-[75%] !w-full lg:!w-[740px] xs:!w-full"
@@ -34,7 +34,6 @@ const Pros_Cons: React.FC = () => (
         <MainContainer />
       </OuterFlexComponent>
     </OuterComponent>
-  </div>
 );
 
 export default Pros_Cons;

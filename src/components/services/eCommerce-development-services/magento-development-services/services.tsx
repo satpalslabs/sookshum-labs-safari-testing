@@ -17,10 +17,10 @@ type ServiceType = {
 
 const services: ServiceType[] = data;
 const Services: React.FC = () => (
-  <div id="our-services">
     <OuterComponent>
       <OuterFlexComponent>
         <SectionHeader
+          id="our-service"
           buttonText="Our Services"
           description="We keep up with the latest advancements in Magento and eCommerce technology. This dedication to remaining informed allows us to provide you with the most cutting-edge features and security measures, ensuring your online store remains modern and competitive."
           style="w-[80%] lg:!w-[740px] xs:!w-[400px] 3xs:!w-[310px]"
@@ -33,7 +33,6 @@ const Services: React.FC = () => (
         <OurServicesMainContainer />
       </OuterFlexComponent>
     </OuterComponent>
-  </div>
 );
 
 export default Services;

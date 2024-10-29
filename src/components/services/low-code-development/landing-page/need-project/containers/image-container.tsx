@@ -2,12 +2,16 @@
  * This component contains the images.
  */
 
+import Image from "next/image";
+
 const ImageContainer: React.FC = () => {
   return (
     <div className="relative grow xs:flex xs:items-center">
-      <img
+      <Image
+        height={1000}
+        width={1200}
         src="/services/low-code-development/landing-page/lets-connect.webp"
-        className="h-full scale-[1.2] top-[-8%] right-[10%] absolute xs:relative xs:w-fit xs:scale-90 xs:right-0 sm:object-contain"
+        className="h-full w-auto scale-[1.4] top-[-10%] right-[15%] object-contain absolute xs:relative xs:w-fit xs:scale-90 xs:right-0 sm:object-contain"
         alt="let's connect"
       />
     </div>

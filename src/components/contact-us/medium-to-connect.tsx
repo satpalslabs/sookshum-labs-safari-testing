@@ -8,6 +8,7 @@ import H5 from "@components/basic-components/headings/H5";
 import DarkButton from "@components/basic-components/button";
 import dynamic from "next/dynamic";
 import OuterComponent from "@components/basic-components/outer-component";
+import Image from "next/image";
 export type Medium = {
   title: string;
   description: string;
@@ -42,8 +43,10 @@ export default Mediums;
 const MediumCard: React.FC<{ value: Medium; isInView: boolean }> = (props) => (
   <Card style="mt-[43px] gap-6" isInView={props.isInView}>
     <div className="px-4 md:px-2 sm:px-[6px] md:flex-1 pb-8 xxl:pb-16 xs:pb-5 flex ">
-      <img
-        className="h-[136px] lg:h-[132px] xxl:-mt-[10%] sm:h-[108px] xs:-mt-[16%] lg:-mt-[20%] sm:-mt-[10%] object-cover -mt-[15%]"
+      <Image
+        width={600}
+        height={600}
+        className="h-[136px] lg:h-[132px] w-auto xxl:-mt-[10%] sm:h-[108px] xs:-mt-[16%] lg:-mt-[20%] sm:-mt-[10%] object-cover -mt-[15%]"
         alt=""
         src={props.value["image-path"]}
       />

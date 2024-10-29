@@ -21,26 +21,25 @@ export type dataItemType = {
 };
 
 const Work: React.FC = () => (
-  <div id="work">
-    <OuterComponent>
-      <OuterFlexComponent>
-        <SectionHeader
-          style=""
-          buttonText="Work"
-          description="Explore our showcase of our recent projects to see the solutions we’ve recently brought to life."
-        >
-          <div className="leading-[1.4] capitalize">
-            See our recent <span className="italic font-light">Projects.</span>
-          </div>
-        </SectionHeader>
-        <div className="grid grid-cols-2 gap-5 lg:gap-[18px] sm:gap-3 xs:grid-cols-1">
-          {data.sections.map((dataItem: dataItemType, index: number) => (
-            <WorkCard item={dataItem} key={index} />
-          ))}
+  <OuterComponent>
+    <OuterFlexComponent>
+      <SectionHeader
+        id="work"
+        style=""
+        buttonText="Work"
+        description="Explore our showcase of our recent projects to see the solutions we’ve recently brought to life."
+      >
+        <div className="leading-[1.4] capitalize">
+          See our recent <span className="italic font-light">Projects.</span>
         </div>
-      </OuterFlexComponent>
-    </OuterComponent>
-  </div>
+      </SectionHeader>
+      <div className="grid grid-cols-2 gap-5 lg:gap-[18px] sm:gap-3 xs:grid-cols-1">
+        {data.sections.map((dataItem: dataItemType, index: number) => (
+          <WorkCard item={dataItem} key={index} />
+        ))}
+      </div>
+    </OuterFlexComponent>
+  </OuterComponent>
 );
 
 export default Work;

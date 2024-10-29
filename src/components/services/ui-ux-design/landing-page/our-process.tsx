@@ -5,23 +5,22 @@ import Image from "next/image";
 
 const OurProcess = () => {
   return (
-    <div id="our-process">
-      <OuterComponent>
-        <OuterFlexComponent>
-          <SectionHeader
-            buttonText="Our Process"
-            description="We integrate a business-driven and user-centered UX approach in our product design, ensuring that both business goals and user needs are met effectively."
-            style="w-[794px] md:w-[650px] "
-          >
-            <div className="w-full md:w-[700px] lg:leading-[63px] sm:leading-[54px] xs:leading-[32px] xs:w-full text-wrap text-center leading-[1.4] capitalize">
-              Our <span className="italic font-light">UI/UX design </span>{" "}
-              aligns perfectly with your business goals.
-            </div>
-          </SectionHeader>
-          <ImageContainer />
-        </OuterFlexComponent>
-      </OuterComponent>
-    </div>
+    <OuterComponent>
+      <OuterFlexComponent>
+        <SectionHeader
+          id="our-process"
+          buttonText="Our Process"
+          description="We integrate a business-driven and user-centered UX approach in our product design, ensuring that both business goals and user needs are met effectively."
+          style="w-[794px] md:w-[650px] "
+        >
+          <div className="w-full md:w-[700px] lg:leading-[63px] sm:leading-[54px] xs:leading-[32px] xs:w-full text-wrap text-center leading-[1.4] capitalize">
+            Our <span className="italic font-light">UI/UX design </span> aligns
+            perfectly with your business goals.
+          </div>
+        </SectionHeader>
+        <ImageContainer />
+      </OuterFlexComponent>
+    </OuterComponent>
   );
 };
 
@@ -52,7 +51,7 @@ const ImageContainer: React.FC = () => (
       placeholder="blur"
       width={1000}
       height={1500}
-      className="hidden xs:block w-full h-[1111px]"
+      className="hidden  xs:block w-full h-[1111px] 3xs:h-[850px] object-contain"
       src="/services/ui-ux-design/landing-page/our-process/mobile.png"
       alt=""
     />

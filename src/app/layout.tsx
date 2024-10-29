@@ -5,17 +5,70 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import Header from "../components/header";
-import "@styles/globals.css"; // Ensure this is necessary
+import "@styles/globals.css"; 
 import Footer from "@components/footer";
 import Head from "next/head";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
   icons: {
     icon: "/favicon.png",
+    apple: "/favicon.png", // Apple touch icon for iOS devices
+  },
+  alternates: {
+    canonical: "/",
+    languages: {
+      "en-US": "/en-US",
+      "de-DE": "/de-DE",
+    },
   },
   title: "Sookshum Labs: Custom Software Development Company",
   description:
-    "Sookshum Labs specializes in custom full-stack development for web and mobile solutions, creating tailored eCommerce platforms, websites, web apps, and mobile apps to meet your business needs with high-quality results.",
+    "Sookshum Labs offers custom full-stack development for web and mobile, delivering tailored eCommerce platforms, websites, and apps to meet your business needs.",
+  keywords: [
+    "Custom Software Development",
+    "Full-stack Development",
+    "Web Development",
+    "Mobile App Development",
+    "eCommerce Development",
+  ],
+  openGraph: {
+    title: "Sookshum Labs: Custom Software Development Company",
+    description:
+      "Sookshum Labs offers custom full-stack development for web and mobile, delivering tailored eCommerce platforms, websites, and apps to meet your business needs.",
+    url: "https://www.sookshumlabs.com",
+    type: "website",
+    locale: "en_US",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Sookshum Labs Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Sookshum Labs Logo",
+      },
+    ],
+    title: "Sookshum Labs: Custom Software Development Company",
+    description:
+      "Sookshum Labs offers custom full-stack development for web and mobile, delivering tailored eCommerce platforms, websites, and apps to meet your business needs.",
+    site: "https://www.sookshumlabs.com", 
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  themeColor: "#000000", 
+  viewport: "width=device-width, initial-scale=1.0",
 };
 
 const poppins = Poppins({
@@ -23,7 +76,7 @@ const poppins = Poppins({
   style: ["normal", "italic"],
   variable: "--font-poppins",
   display: "fallback", // Keep this for better loading experience
-  weight: ["300", "400", "500", "600", "700", "800"], // Reduce weights to those actually used
+  weight: ["300", "400", "500", "600", "700", "800"], // Font weights that we used
 });
 
 export default function RootLayout({
@@ -32,10 +85,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${poppins.variable}`}>
+    <html lang="en" className={`${poppins.variable} scroll-smooth`}>
       <Head>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link
           rel="preload"
           href="/home/hero/dots.svg"
@@ -50,6 +101,7 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
       </Head>
+      <GoogleAnalytics gaId="G-G8NZYDBNBL" />
       <body className="bg-black">
         <div className="flex flex-col justify-between !font-poppins !bg-black text-white w-full max-w-screen overflow-hidden min-h-[100vh]">
           <Header />

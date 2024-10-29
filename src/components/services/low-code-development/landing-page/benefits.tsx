@@ -15,10 +15,10 @@ type Benefit = {
 };
 const whyUsData: Benefit[] = data.benefits;
 const Benefits = () => (
-  <div id="benefits">
     <OuterComponent>
       <OuterFlexComponent>
         <SectionHeader
+          id="benefits"
           buttonText="Benefits"
           description="Discover why low-code/no-code is the perfect tool for building MVPs and scaling your business."
           style="w-[900px] lg:w-[60%] sm:w-[65%] xs:w-full"
@@ -31,7 +31,6 @@ const Benefits = () => (
         <BenefitCards />
       </OuterFlexComponent>
     </OuterComponent>
-  </div>
 );
 
 export default Benefits;

@@ -9,7 +9,7 @@ const ArrowButtons: React.FC<{
   swiperContainerRef: any;
 }> = ({ atStart, atEnd, swiperContainerRef }) => {
   return (
-    <div className="absolute right-[6%] lg:right-[4%] -top-[40%] lg:-top-[44%] sm:right-4  xs:hidden">
+    <div className="absolute right-[6%] lg:right-[4%] -top-[40%] lg:-top-[35%] sm:right-4  xs:hidden">
       <div className="flex gap-5">
         <button
           id="arrow-right-1"

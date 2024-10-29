@@ -19,24 +19,23 @@ type service = {
 
 const benefits: service[] = data;
 const Benefits: React.FC = () => (
-  <div id="our-services">
-    <OuterComponent>
-      <OuterFlexComponent>
-        <SectionHeader
-          buttonText="Our Benefits"
-          description="Optimize your operations, improve oversight, and increase efficiency with a custom admin app designed specifically for your business requirements."
-          style="w-[85.5%] lg:!w-[740px] xs:!w-full"
-        >
-          <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em]  capitalize ">
-            Benefits of{" "}
-            <span className="italic font-light w-full">Admin App</span>{" "}
-            Development
-          </div>
-        </SectionHeader>
-        <MainContainer />
-      </OuterFlexComponent>
-    </OuterComponent>
-  </div>
+  <OuterComponent>
+    <OuterFlexComponent>
+      <SectionHeader
+        id="benefits"
+        buttonText="Benefits"
+        description="Optimize your operations, improve oversight, and increase efficiency with a custom admin app designed specifically for your business requirements."
+        style="w-[85.5%] lg:!w-[740px] xs:!w-full"
+      >
+        <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em]  capitalize ">
+          Benefits of{" "}
+          <span className="italic font-light w-full">Admin App</span>{" "}
+          Development
+        </div>
+      </SectionHeader>
+      <MainContainer />
+    </OuterFlexComponent>
+  </OuterComponent>
 );
 
 export default Benefits;

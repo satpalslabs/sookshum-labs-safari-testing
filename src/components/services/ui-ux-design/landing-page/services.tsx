@@ -19,23 +19,22 @@ type ServiceType = {
 
 const services: ServiceType[] = data.services;
 const Services: React.FC = () => (
-  <div id="our-services">
-    <OuterComponent>
-      <OuterFlexComponent>
-        <SectionHeader
-          buttonText="Services"
-          description="Transform your user experience with our expert UI/UX design services. We create intuitive, engaging interfaces tailored to your needs."
-          style=""
-        >
-          <div className="leading-[1.4] capitalize">
-            Our <span className="italic font-light">UI/UX Design </span>
-            Services
-          </div>
-        </SectionHeader>
-        <ServiceCards />
-      </OuterFlexComponent>
-    </OuterComponent>
-  </div>
+  <OuterComponent>
+    <OuterFlexComponent>
+      <SectionHeader
+        id="our-services"
+        buttonText="Services"
+        description="Transform your user experience with our expert UI/UX design services. We create intuitive, engaging interfaces tailored to your needs."
+        style=""
+      >
+        <div className="leading-[1.4] capitalize">
+          Our <span className="italic font-light">UI/UX Design </span>
+          Services
+        </div>
+      </SectionHeader>
+      <ServiceCards />
+    </OuterFlexComponent>
+  </OuterComponent>
 );
 
 export default Services;

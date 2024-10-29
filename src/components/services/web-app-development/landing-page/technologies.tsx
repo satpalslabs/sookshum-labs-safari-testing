@@ -24,28 +24,27 @@ const TechnologiesData: PlatformGroup[] =
   data["web-app-development-technologies"];
 const Technologies = () => {
   return (
-    <div id="technologies">
-      <OuterComponent>
-        <OuterFlexComponent>
-          <SectionHeader
-            buttonText="Technologies"
-            description="All the resources required for the full implementation of the project are in-house: designers, PMs, front-end and back-end developers, testers. We hire the best talent."
-            style="w-[790px] lg:w-[90%] xs:w-full"
-          >
-            <div className="w-full flex flex-col xs:w-full tracking-tight text-center mx-auto xs:leading-[1.3] leading-[1.4] capitalize">
-              <div className="w-full">Tools & technologies</div>
-              <div className="xs:text-wrap ">
-                we use for{" "}
-                <span className="italic font-light w-full">
-                  Web App Development
-                </span>
-              </div>
+    <OuterComponent>
+      <OuterFlexComponent>
+        <SectionHeader
+          id="technologies"
+          buttonText="Technologies"
+          description="All the resources required for the full implementation of the project are in-house: designers, PMs, front-end and back-end developers, testers. We hire the best talent."
+          style="w-[790px] lg:w-[90%] xs:w-full"
+        >
+          <div className="w-full flex flex-col xs:w-full tracking-tight text-center mx-auto xs:leading-[1.3] leading-[1.4] capitalize">
+            <div className="w-full">Tools & technologies</div>
+            <div className="xs:text-wrap ">
+              we use for{" "}
+              <span className="italic font-light w-full">
+                Web App Development
+              </span>
             </div>
-          </SectionHeader>
-          <TechnologiesCards />
-        </OuterFlexComponent>
-      </OuterComponent>
-    </div>
+          </div>
+        </SectionHeader>
+        <TechnologiesCards />
+      </OuterFlexComponent>
+    </OuterComponent>
   );
 };
 

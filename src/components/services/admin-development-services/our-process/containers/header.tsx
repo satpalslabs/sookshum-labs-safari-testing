@@ -5,6 +5,7 @@ import SectionHeader from "@components/basic-components/section-header";
 
 const Header: React.FC = () => (
   <SectionHeader
+    id="our-process"
     style="!w-[80%] xs:!w-full"
     buttonText="Our Process"
     description="At Sookshum Labs, our digital product design and dashboard development process is a thoughtfully crafted journey that starts with a thorough understanding of your goals and user requirements. From research and ideation to final deployment, we utilize a structured and agile approach to ensure your digital product not only meets but surpasses expectations."

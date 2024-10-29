@@ -22,27 +22,25 @@ const Technologies = () => {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <div id="technologies">
-      <OuterComponent>
-        <OuterFlexComponent>
-          <SectionHeader
-            buttonText="Technologies"
-            description="As a dedicated offshore Flutter app development company, we leverage the latest tools and technologies to create robust, secure, and innovative solutions that reflect your brand's essence and enhance business resilience."
-            style="w-[880px] lg:!w-[700px] sm:!w-full"
-          >
-            <div className="w-[900px] sm:w-full text-wrap text-center mx-auto leading-[1.4] capitalize">
-              Tools And Technologies We Use For Robust
-              <span className="italic font-light"> Flutter App</span>{" "}
-              Development
-            </div>
-          </SectionHeader>
-          <div className="flex flex-col gap-[60px] lg:gap-[30px] w-full">
-            <Tabs activeTab={activeTab} setActiveTab={setActiveTab} />
-            <DetailView active={activeTab} />
+    <OuterComponent>
+      <OuterFlexComponent>
+        <SectionHeader
+          id="technologies"
+          buttonText="Technologies"
+          description="As a dedicated offshore Flutter app development company, we leverage the latest tools and technologies to create robust, secure, and innovative solutions that reflect your brand's essence and enhance business resilience."
+          style="w-[880px] lg:!w-[700px] sm:!w-full"
+        >
+          <div className="w-[900px] sm:w-full text-wrap text-center mx-auto leading-[1.4] capitalize">
+            Tools And Technologies We Use For Robust
+            <span className="italic font-light"> Flutter App</span> Development
           </div>
-        </OuterFlexComponent>
-      </OuterComponent>
-    </div>
+        </SectionHeader>
+        <div className="flex flex-col gap-[60px] lg:gap-[30px] w-full">
+          <Tabs activeTab={activeTab} setActiveTab={setActiveTab} />
+          <DetailView active={activeTab} />
+        </div>
+      </OuterFlexComponent>
+    </OuterComponent>
   );
 };
 

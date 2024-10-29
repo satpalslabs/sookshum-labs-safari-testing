@@ -17,22 +17,21 @@ type ServiceType = {
 
 const services: ServiceType[] = data;
 const OurServices: React.FC = () => (
-  <div id="our-services">
-    <OuterComponent>
-      <OuterFlexComponent>
-        <SectionHeader
-          buttonText="Our Services"
-          description="As a UI/UX design company, we offer comprehensive end-to-end services, including research, wireframing, UI design, and development."
-          style="w-[800px] lg:!w-[740px] sm:!w-[89%] xs:!w-[400px] 3xs:!w-[310px]"
-        >
-          <div className="xs:w-full text-wrap sm:w-full mx-auto leading-[1.4] sm:text-wrap text-center capitalize">
-            UI UX design services to bring your product vision to life
-          </div>
-        </SectionHeader>
-        <OurServicesMainContainer />
-      </OuterFlexComponent>
-    </OuterComponent>
-  </div>
+  <OuterComponent>
+    <OuterFlexComponent>
+      <SectionHeader
+        id="our-services"
+        buttonText="Our Services"
+        description="As a UI/UX design company, we offer comprehensive end-to-end services, including research, wireframing, UI design, and development."
+        style="w-[800px] lg:!w-[740px] sm:!w-[89%] xs:!w-[400px] 3xs:!w-[310px]"
+      >
+        <div className="xs:w-full text-wrap sm:w-full mx-auto leading-[1.4] sm:text-wrap text-center capitalize">
+          UI UX design services to bring your product vision to life
+        </div>
+      </SectionHeader>
+      <OurServicesMainContainer />
+    </OuterFlexComponent>
+  </OuterComponent>
 );
 
 export default OurServices;

@@ -18,25 +18,24 @@ type service = {
 
 const why_usData: service[] = data;
 const Why_us: React.FC = () => (
-  <div id="why-us">
-    <OuterComponent>
-      <OuterFlexComponent>
-        <SectionHeader
-          buttonText="Why us?"
-          description="Custom WordPress solutions designed to enhance and elevate your online presence."
-          style="w-[85.5%] lg:!w-[740px] xs:!w-full"
-        >
-          <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
-            Why Choose us for{" "}
-            <span className="italic font-light w-full">
-              wordPress Development?
-            </span>
-          </div>
-        </SectionHeader>
-        <MainContainer />
-      </OuterFlexComponent>
-    </OuterComponent>
-  </div>
+  <OuterComponent>
+    <OuterFlexComponent>
+      <SectionHeader
+        id="why-us"
+        buttonText="Why us?"
+        description="Custom WordPress solutions designed to enhance and elevate your online presence."
+        style="w-[85.5%] lg:!w-[740px] xs:!w-full"
+      >
+        <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
+          Why Choose us for{" "}
+          <span className="italic font-light w-full">
+            wordPress Development?
+          </span>
+        </div>
+      </SectionHeader>
+      <MainContainer />
+    </OuterFlexComponent>
+  </OuterComponent>
 );
 
 export default Why_us;

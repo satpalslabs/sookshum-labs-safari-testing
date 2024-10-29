@@ -5,7 +5,6 @@ import React from "react";
 
 const WhoWeAre: React.FC = () => {
   return (
-    <div id="who-we-are">
       <OuterComponent>
         <div className="flex flex-col gap-3">
           <H5 style="!text-white !font-[600]" text={"Our Approach"} />
@@ -15,7 +14,6 @@ const WhoWeAre: React.FC = () => {
           />
         </div>
       </OuterComponent>
-    </div>
   );
 };
 

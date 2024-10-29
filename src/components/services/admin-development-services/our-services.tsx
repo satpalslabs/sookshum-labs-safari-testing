@@ -21,6 +21,7 @@ const OurServices: React.FC = () => (
   <OuterComponent>
     <OuterFlexComponent>
       <SectionHeader
+        id="our-services"
         buttonText="Our Services"
         description="Our team is committed to delivering unlimited data visualization options, including graphs, charts, and tables, to turn your raw data into clear insights that enable informed decision-making."
         style="w-[85.5%] lg:!w-[740px] xs:!w-full"
@@ -59,7 +60,10 @@ const MainContainer: React.FC = () => {
                 text={""}
                 classes="grow-0 h-fit sm:!text-xs text-lg !font-normal"
               >
-                <div className="unreset" dangerouslySetInnerHTML={{ __html: item.description }} />
+                <div
+                  className="unreset"
+                  dangerouslySetInnerHTML={{ __html: item.description }}
+                />
               </Description>
             </div>
           </div>

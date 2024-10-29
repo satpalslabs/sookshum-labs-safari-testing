@@ -22,6 +22,7 @@ const Capabilities: React.FC = () => (
   <OuterComponent>
     <OuterFlexComponent>
       <SectionHeader
+        id="our-capabilities"
         buttonText="Our Capabilities"
         description="We blend our team’s extensive design experience with our clients deep industry knowledge and the insights we uncover through our research."
         style="w-[950px] lg:!w-[740px] sm:!w-[650px] xs:!w-full"

@@ -15,11 +15,9 @@ type card = {
 
 const core_services: card[] = data;
 const CoreServices: React.FC = () => (
-  <div id="core--services">
     <OuterComponent>
       <MainContainer />
     </OuterComponent>
-  </div>
 );
 
 export default CoreServices;

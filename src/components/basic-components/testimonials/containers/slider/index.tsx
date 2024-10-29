@@ -7,7 +7,6 @@ import { useEffect, useRef } from "react";
 import data from "../../data/index.json";
 import Testimonials from "./card";
 import { useInView } from "@lib/use-in-view";
-import { slide } from "./slide";
 
 export type ClientReview = {
   review: string;
@@ -43,7 +42,7 @@ export default function Slider() {
 const SliderItems = ({ isInView }: { isInView: boolean }) => (
   <div
     id="testimonials-slider"
-    className="relative pt-[81px] w-fit flex-nowrap transition-transform duration-[15s] ease-linear flex gap-5 sm:gap-[14px] sm:pb-8 py-[70px] sm:pt-0 bg-black overflow-visible px-0 xs:!py-[0px] justify-start animate-testimonialSlider"
+    className="relative pt-[81px] w-fit flex-nowrap flex gap-5 sm:gap-[14px] sm:pb-8 py-[70px] sm:pt-0 bg-black overflow-visible px-0 xs:!py-[0px] justify-start animate-testimonialSlider"
   >
     {data.testimonials.map((testimonial: ClientReview, index: number) => (
       <Testimonials

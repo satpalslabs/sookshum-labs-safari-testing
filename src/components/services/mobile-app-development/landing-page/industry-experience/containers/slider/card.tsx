@@ -7,6 +7,7 @@ import H6 from "@components/basic-components/headings/H6";
 
 import { industryType } from ".";
 import CheckIcon from "@components/basic-components/check-icon";
+import Image from "next/image";
 
 const Industry = ({
   industry,
@@ -16,13 +17,13 @@ const Industry = ({
   isInView: boolean;
 }) => (
   <div
-    className={`p-4 pt-6 w-fit bg-innerContainer shadow-buttonInset rounded-[32px] transition-all duration-1000 hover:bg-gradientOnHover  border border-transparent cursor-pointer hover:!border-borderPrimary overflow-hidden flex flex-col gap-[44px] pb-8 lg:p-3 lg:rounded-[26px] sm:gap-3 h-full grow ${
+    className={`p-4 pt-6 bg-innerContainer shadow-buttonInset rounded-[32px] transition-all duration-1000 hover:bg-gradientOnHover  border border-transparent cursor-pointer hover:!border-borderPrimary overflow-hidden flex flex-col gap-[44px] pb-8 lg:p-3 lg:rounded-[26px] sm:gap-3 h-full grow ${
       isInView
         ? "!border-viewportBorder  grayscale-0"
         : "border-transparent grayscale"
     }`}
   >
-    <img
+    <Image
       height={400}
       width={400}
       src={industry.image}
@@ -34,7 +35,7 @@ const Industry = ({
       <Description
         children={null}
         text={industry.description}
-        classes="w-full sm:px-3 xs:px-0 text-[18px] !font-normal"
+        classes="w-full text-[18px] !font-normal"
       />
       <ul className="flex flex-col gap-2 text-white list-disc text-lg lg:text-sm xs:pl-0 font-poppins font-medium grow">
         {industry.points.map((point: string, index: any) => (

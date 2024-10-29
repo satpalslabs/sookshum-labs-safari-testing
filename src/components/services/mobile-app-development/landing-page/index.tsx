@@ -16,7 +16,7 @@ import GoTopButton from "@components/basic-components/go-to-top";
 const content_heroSection: HeroSection = {
   gradientTextStyle: "",
   URL: "/services/mobile-app-devlopment/landing-page/mobile-app-bg.webm",
-  fallback: "/services/mobile-app-devlopment/landing-page/fallback.png",
+  fallback: "/services/mobile-app-devlopment/landing-page/fallback.webp",
   "contact-us": true,
   image: false,
   buttonText: "Mobile App Development",

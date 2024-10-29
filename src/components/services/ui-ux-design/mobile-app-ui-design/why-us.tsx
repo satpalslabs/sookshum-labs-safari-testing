@@ -19,22 +19,21 @@ type choose_us = {
 
 const chooseUsData: choose_us[] = data;
 const WhyUs: React.FC = () => (
-  <div id="why-us">
-    <OuterComponent>
-      <OuterFlexComponent>
-        <SectionHeader
-          buttonText="Why us?"
-          description="We create digital experiences that deliver results, helping you achieve your business objectives, from enhancing brand awareness to boosting sales."
-          style="w-[900px] lg:!w-[650px] xs:!w-full"
-        >
-          <div className="xs:w-full mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
-            Why work with <span className="italic font-light"> us? </span>
-          </div>
-        </SectionHeader>
-        <MainContainer />
-      </OuterFlexComponent>
-    </OuterComponent>
-  </div>
+  <OuterComponent>
+    <OuterFlexComponent>
+      <SectionHeader
+        id="why-us"
+        buttonText="Why us?"
+        description="We create digital experiences that deliver results, helping you achieve your business objectives, from enhancing brand awareness to boosting sales."
+        style="w-[900px] lg:!w-[650px] xs:!w-full"
+      >
+        <div className="xs:w-full mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
+          Why work with <span className="italic font-light"> us? </span>
+        </div>
+      </SectionHeader>
+      <MainContainer />
+    </OuterFlexComponent>
+  </OuterComponent>
 );
 
 export default WhyUs;

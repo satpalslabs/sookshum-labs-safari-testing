@@ -13,7 +13,6 @@ export type dataItemType = {
 
 function Technologies() {
   return (
-    <div id="technologies">
       <OuterComponent>
         <div className="w-fit bg-black overflow-hidden flex flex-col items-center justify-start z-[3] md:gap-[3.125rem] md:box-border sm: sm:w-auto sm:gap-[1.875rem] sm:box-border">
           {data.technologies.map((dataItem: dataItemType, index: number) => (
@@ -21,7 +20,6 @@ function Technologies() {
           ))}
         </div>
       </OuterComponent>
-    </div>
   );
 }
 

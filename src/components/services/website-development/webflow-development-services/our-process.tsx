@@ -20,22 +20,21 @@ type service = {
 
 const processData: service[] = data;
 const OurProcess: React.FC = () => (
-  <div id="our-process">
-    <OuterComponent>
-      <OuterFlexComponent>
-        <SectionHeader
-          buttonText="Our Process"
-          description="We don’t just create stunning websites, we build collaborative partnerships that fuel your growth. "
-          style="w-[85.5%] lg:!w-[740px] xs:!w-full"
-        >
-          <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
-            Our Collaborative Process{" "}
-          </div>
-        </SectionHeader>
-        <MainContainer />
-      </OuterFlexComponent>
-    </OuterComponent>
-  </div>
+  <OuterComponent>
+    <OuterFlexComponent>
+      <SectionHeader
+        id="our-process"
+        buttonText="Our Process"
+        description="We don’t just create stunning websites, we build collaborative partnerships that fuel your growth. "
+        style="w-[85.5%] lg:!w-[740px] xs:!w-full"
+      >
+        <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
+          Our Collaborative Process{" "}
+        </div>
+      </SectionHeader>
+      <MainContainer />
+    </OuterFlexComponent>
+  </OuterComponent>
 );
 
 export default OurProcess;

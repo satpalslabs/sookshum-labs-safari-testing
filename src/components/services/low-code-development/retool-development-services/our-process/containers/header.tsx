@@ -5,6 +5,7 @@ import SectionHeader from "@components/basic-components/section-header";
 
 const Header: React.FC = () => (
   <SectionHeader
+  id="our-process"
     style="xxl:!w-[50%] !w-[75%] lg:!w-[80%] sm:!w-[90%] xs:!w-full"
     buttonText="Our Process"
     description="Leverage Retool to create custom applications that automate processes, integrate systems, and enhance efficiency."

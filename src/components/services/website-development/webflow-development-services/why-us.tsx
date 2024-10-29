@@ -20,23 +20,22 @@ type service = {
 
 const why_usData: service[] = data;
 const WhyUs: React.FC = () => (
-  <div id="why-us">
-    <OuterComponent>
-      <OuterFlexComponent>
-        <SectionHeader
-          buttonText="Why us?"
-          description="Sookshum Labs stands out from the average Webflow agency. With a solid foundation and a proven history of several successful Webflow projects, we deliver exceptional results that elevate your web presence."
-          style="w-[85.5%] lg:!w-[740px] xs:!w-full"
-        >
-          <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
-            Why choose us for <span className="italic font-light">Webflow</span>{" "}
-            development?
-          </div>
-        </SectionHeader>
-        <MainContainer />
-      </OuterFlexComponent>
-    </OuterComponent>
-  </div>
+  <OuterComponent>
+    <OuterFlexComponent>
+      <SectionHeader
+        id="why-us"
+        buttonText="Why us?"
+        description="Sookshum Labs stands out from the average Webflow agency. With a solid foundation and a proven history of several successful Webflow projects, we deliver exceptional results that elevate your web presence."
+        style="w-[85.5%] lg:!w-[740px] xs:!w-full"
+      >
+        <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
+          Why choose us for <span className="italic font-light">Webflow</span>{" "}
+          development?
+        </div>
+      </SectionHeader>
+      <MainContainer />
+    </OuterFlexComponent>
+  </OuterComponent>
 );
 
 export default WhyUs;

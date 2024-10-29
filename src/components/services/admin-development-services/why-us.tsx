@@ -19,10 +19,10 @@ type service = {
 
 const why_us: service[] = data;
 const WhyUs: React.FC = () => (
-  <div id="why-us">
     <OuterComponent>
       <OuterFlexComponent>
         <SectionHeader
+          id="why-us"
           buttonText="Why us?"
           description="Sookshum Labs stands out as a top admin app development company, driving businesses forward in the digital landscape. "
           style="w-[80.5%] lg:!w-[740px] xs:!w-full"
@@ -36,7 +36,6 @@ const WhyUs: React.FC = () => (
         <MainContainer />
       </OuterFlexComponent>
     </OuterComponent>
-  </div>
 );
 
 export default WhyUs;

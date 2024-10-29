@@ -6,11 +6,9 @@ import React from "react";
 
 const WhoWeAre: React.FC = () => {
   return (
-    <div id="who-we-are">
       <OuterComponent>
         <FlexComponent />
       </OuterComponent>
-    </div>
   );
 };
 

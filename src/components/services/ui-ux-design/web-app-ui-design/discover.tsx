@@ -19,23 +19,22 @@ type item_type = {
 
 const dataItems: item_type[] = data;
 const Discover: React.FC = () => (
-  <div id="discover">
-    <OuterComponent>
-      <OuterFlexComponent>
-        <SectionHeader
-          buttonText="Discover"
-          description="As a leading UI/UX design agency, we combine research, strategy, and technology to deliver customized digital solutions for your eCommerce, web, and mobile products."
-          style="xxl:!w-[800px] !w-[750px] lg:!w-[740px] sm:!w-[640px] xs:!w-full"
-        >
-          <div className="xs:w-full sm:w-[80%] w-full mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
-            We create digital products that
-            <br className="sm:hidden" /> your users love
-          </div>
-        </SectionHeader>
-        <MainContainer />
-      </OuterFlexComponent>
-    </OuterComponent>
-  </div>
+  <OuterComponent>
+    <OuterFlexComponent>
+      <SectionHeader
+        id="discover"
+        buttonText="Discover"
+        description="As a leading UI/UX design agency, we combine research, strategy, and technology to deliver customized digital solutions for your eCommerce, web, and mobile products."
+        style="xxl:!w-[800px] !w-[750px] lg:!w-[740px] sm:!w-[640px] xs:!w-full"
+      >
+        <div className="xs:w-full sm:w-[80%] w-full mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
+          We create digital products that
+          <br className="sm:hidden" /> your users love
+        </div>
+      </SectionHeader>
+      <MainContainer />
+    </OuterFlexComponent>
+  </OuterComponent>
 );
 
 export default Discover;

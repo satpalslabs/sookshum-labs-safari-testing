@@ -9,6 +9,7 @@ import Card from "@components/basic-components/card";
 import Description from "@components/basic-components/description";
 import H4 from "@components/basic-components/headings/H4";
 import DarkButton from "@components/basic-components/button";
+import Image from "next/image";
 type ChooseUs = {
   heading: string;
   description: string;
@@ -17,23 +18,22 @@ type ChooseUs = {
 
 const chooseUsData: ChooseUs[] = data;
 const ChooseUs = () => (
-  <div id="why-us">
-    <OuterComponent>
-      <OuterFlexComponent>
-        <SectionHeader
-          buttonText="Why choose us?"
-          description="We are quite good at this as we have been doing this for the past 8 years. We bring our long term expertise with Shopify to the table. Here’s why partnering with us makes all the difference:"
-          style="w-[994px] sm:w-[700px] xs:w-full mx-auto"
-        >
-          <div className="w-[full] sm:w-[800px] leading-[1.4] capitalize xs:w-full text-wrap text-center mx-auto">
-            Why grow with Sookshum Labs{" "}
-            <span className="italic font-light">Shopify Agency?</span>
-          </div>
-        </SectionHeader>
-        <ChooseUsCards />
-      </OuterFlexComponent>
-    </OuterComponent>
-  </div>
+  <OuterComponent>
+    <OuterFlexComponent>
+      <SectionHeader
+        id="why-us"
+        buttonText="Why choose us?"
+        description="We are quite good at this as we have been doing this for the past 8 years. We bring our long term expertise with Shopify to the table. Here’s why partnering with us makes all the difference:"
+        style="w-[994px] sm:w-[700px] xs:w-full mx-auto"
+      >
+        <div className="w-[full] sm:w-[800px] leading-[1.4] capitalize xs:w-full text-wrap text-center mx-auto">
+          Why grow with Sookshum Labs{" "}
+          <span className="italic font-light">Shopify Agency?</span>
+        </div>
+      </SectionHeader>
+      <ChooseUsCards />
+    </OuterFlexComponent>
+  </OuterComponent>
 );
 
 export default ChooseUs;
@@ -55,12 +55,15 @@ const ChooseUsCards = () => {
             isInView={isInView}
           />
         ))}
-        <img
+        <Image
           className={`absolute w-[370px] sm:w-[239px] top-[40.77%] translate-x-[-146px] lg:translate-x-[-89px] xs:translate-x-[-241px] -z-10 h-[233px] sm:h-[177px] object-cover rounded-[32px] xs:hidden  transition-all duration-1000 ${
             isInView ? "grayscale-0" : "grayscale"
           }`}
           src="/services/e-commerce-development/shopify-development-services/why-us/bg-image.png"
-        ></img>
+          width={800}
+          height={900}
+          alt="image"
+        />
       </div>
     </div>
   );

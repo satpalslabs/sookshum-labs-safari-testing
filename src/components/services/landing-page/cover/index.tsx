@@ -1,8 +1,9 @@
 "use client";
 import Description from "@components/basic-components/description";
 import H2 from "@components/basic-components/headings/H2";
-import  { useEffect } from "react";
+import { useEffect } from "react";
 import { animation } from "./scroll-animation";
+import Image from "next/image";
 const Cover: React.FC = () => {
   useEffect(() => {
     animation();
@@ -57,7 +58,9 @@ const TextContainer: React.FC = () => (
 const GoalIcon: React.FC = () => (
   <div className="  absolute w-[6.094rem] left-[13.98%] top-[27.86%] lg:top-[26.51%] sm:top-[15.9%] xs:top-[18.57%] xs:left-4 h-[6.094rem] object-contain lg:w-[5.375rem] md:w-[4.125rem] ">
     <div className="relative w-full h-[200px] lg:h-[150px] sm:h-[100px] xs:h-[200px]">
-      <img
+      <Image
+        width="200"
+        height="200"
         className="absolute animate-top transition-all duration-700 ease-linear top-[25%]"
         alt=""
         src="/services/landing-page/cover/goal.png"
@@ -70,7 +73,9 @@ const GoalIcon: React.FC = () => (
 const Blub: React.FC = () => (
   <div className=" w-[6.244rem] transition-all duration-[1s] absolute h-fit top-[17.44%] left-[47%] xs:left-[45%] sm:top-[14.46%] xs:top-[13.21%] lg:top-[3.98%]  object-contain lg:w-[5.375rem] md:w-[4.125rem] ">
     <div className="relative w-full h-[200px] lg:h-[150px] sm:h-[100px] xs:h-[200px]">
-      <img
+      <Image
+        width="200"
+        height="200"
         className="absolute animate-top transition-all duration-700 ease-linear top-[25%]"
         alt=""
         src="/services/landing-page/cover/blub.png"
@@ -82,7 +87,9 @@ const Blub: React.FC = () => (
 const Clipboard: React.FC = () => (
   <div className="  w-[5.369rem] right-[16.04%] top-[25.97%] lg:top-[24.86%] sm:top-[13.9%] xs:top-[16.4%] xs:right-4 absolute h-[5.369rem] object-contain lg:w-[5.375rem] md:w-[4.125rem] ">
     <div className="relative w-full h-[200px] lg:h-[150px] sm:h-[100px] xs:h-[200px]">
-      <img
+      <Image
+        width="200"
+        height="200"
         alt=""
         className="absolute animate-top transition-all w-full duration-700 ease-linear top-[25%]"
         src="/services/landing-page/cover/clipboard.png"
@@ -95,7 +102,9 @@ const Clipboard: React.FC = () => (
 const PencilIcon: React.FC = () => (
   <div className=" w-[5.35rem] transition-all duration-[1s] absolute h-fit left-[11.87%] bottom-[9.57%] lg:bottom-[9.40%] sm:bottom-[22.34%] xs:left-4 xs:bottom-[17.6%]  object-contain lg:w-[5.375rem] md:w-[4.125rem] ">
     <div className="relative w-full h-[200px] lg:h-[150px] sm:h-[100px] xs:h-[200px]">
-      <img
+      <Image
+        width="200"
+        height="200"
         className="absolute animate-bottom transition-all duration-700 ease-linear bottom-[25%]"
         alt=""
         src="/services/landing-page/cover/pencil.png"
@@ -108,7 +117,9 @@ const PencilIcon: React.FC = () => (
 const CodeIcon: React.FC = () => (
   <div className=" w-[6.244rem] transition-all duration-[1s] absolute h-fit bottom-[2.44%] left-[47%] xs:left-[45%] sm:bottom-[14.46%] xs:bottom-[10.21%] lg:bottom-[3.98%]  object-contain lg:w-[5.375rem] md:w-[4.125rem] ">
     <div className="relative w-full h-[200px] lg:h-[150px] sm:h-[100px] xs:h-[200px]">
-      <img
+      <Image
+        width="200"
+        height="200"
         className="absolute animate-bottom transition-all duration-700 ease-linear bottom-[25%]"
         alt=""
         src="/services/landing-page/cover/code.png"
@@ -121,7 +132,9 @@ const CodeIcon: React.FC = () => (
 const GraphIcon: React.FC = () => (
   <div className=" w-[7.419rem] transition-all duration-[1s] absolute h-fit bottom-[9.7%] lg:bottom-[9.54%] right-[11.01%] sm:bottom-[22.16%] xs:right-4 xs:bottom-[18.54%] object-contain lg:w-[5.375rem] md:w-[4.125rem] ">
     <div className="relative w-full h-[200px] lg:h-[150px] sm:h-[100px] xs:h-[200px]">
-      <img
+      <Image
+        width="200"
+        height="200"
         className="absolute animate-bottom transition-all duration-700 ease-linear bottom-[25%]"
         alt=""
         src="/services/landing-page/cover/graph.png"

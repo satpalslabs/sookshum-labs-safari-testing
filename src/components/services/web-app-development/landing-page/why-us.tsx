@@ -17,23 +17,22 @@ type ChooseUs = {
 };
 const whyUsData: ChooseUs[] = data.services;
 const ChooseUs = () => (
-  <div id="why-us">
-    <OuterComponent>
-      <OuterFlexComponent>
-        <SectionHeader
-          buttonText="Why us?"
-          description="We immerse ourselves in the customer’s business, understand their objectives, and take a holistic approach on the project. Therefore, we have been working with most of our clients for years."
-          style="w-[794px] lg:w-[50%] xs:w-full"
-        >
-          <div className="w-full xs:w-full text-center mx-auto xs:text-wrap leading-[1.4] capitalize">
-            What <span className="italic font-light">you’ll</span> get from
-            hiring us
-          </div>
-        </SectionHeader>
-        <ChooseUsCards />
-      </OuterFlexComponent>
-    </OuterComponent>
-  </div>
+  <OuterComponent>
+    <OuterFlexComponent>
+      <SectionHeader
+        id="why-us"
+        buttonText="Why us?"
+        description="We immerse ourselves in the customer’s business, understand their objectives, and take a holistic approach on the project. Therefore, we have been working with most of our clients for years."
+        style="w-[794px] lg:w-[50%] xs:w-full"
+      >
+        <div className="w-full xs:w-full text-center mx-auto xs:text-wrap leading-[1.4] capitalize">
+          What <span className="italic font-light">you’ll</span> get from hiring
+          us
+        </div>
+      </SectionHeader>
+      <ChooseUsCards />
+    </OuterFlexComponent>
+  </OuterComponent>
 );
 
 export default ChooseUs;

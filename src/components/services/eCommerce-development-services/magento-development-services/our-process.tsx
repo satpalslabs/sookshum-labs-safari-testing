@@ -21,14 +21,12 @@ interface ourProcess {
 }
 const ourProcessData: ourProcess[] = data;
 const OurProcess: React.FC = () => (
-  <div id="our-process">
-    <OuterComponent>
-      <OuterFlexComponent>
-        <Header />
-        <MainContainer />
-      </OuterFlexComponent>
-    </OuterComponent>
-  </div>
+  <OuterComponent>
+    <OuterFlexComponent>
+      <Header />
+      <MainContainer />
+    </OuterFlexComponent>
+  </OuterComponent>
 );
 
 export default OurProcess;
@@ -39,6 +37,7 @@ export default OurProcess;
 
 const Header: React.FC = () => (
   <SectionHeader
+    id="our-process"
     style="!w-[1050px] lg:!w-full sm:px-8 xs:px-0"
     buttonText="Our Process"
     description="Our eCommerce development process is thorough and client-focused. From requirement analysis to final deployment and support, we ensure that your solution is crafted with precision, efficiency, and a keen emphasis on your unique business needs."
@@ -152,9 +151,12 @@ const LeftSmallArrow: React.FC<{ item: ourProcess; ind: number }> = ({
         : "sm:border-t-none sm:border-transparent"
     } xs:border-transparent`}
   >
-    <img
+    <Image
+      width={100}
+      height={100}
+      alt="image"
       src="/services/e-commerce-development/magento-development-services/our-process/arrow.svg"
-      className={`translate-y-[calc(-50%-1px)] -rotate-90 right-[-4px] absolute ${
+      className={`w-fit h-fit translate-y-[calc(-50%-1px)] -rotate-90 right-[-4px] absolute ${
         /Analysis|Development/.test(item.title) ? "hidden" : ""
       } ${(ind + 1) % 2 == 0 ? "sm:block" : "sm:hidden"} xs:hidden`}
     />
@@ -178,9 +180,12 @@ const TopArrowWithLine: React.FC<{ item: ourProcess; ind: number }> = ({
         : "xs:border-transparent"
     } `}
   >
-    <img
+    <Image
+      width={100}
+      height={100}
+      alt="image"
       src="/services/e-commerce-development/magento-development-services/our-process/arrow.svg"
-      className={`translate-x-[calc(-50%-1px)] bottom-[-2px] left-0 absolute ${
+      className={`h-fit w-fit translate-x-[calc(-50%-1px)] bottom-[-2px] left-0 absolute ${
         /Development/.test(item.title) ? "" : "hidden"
       } ${
         ind != 0

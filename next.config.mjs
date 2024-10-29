@@ -20,8 +20,8 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: "/magento-development",
-        destination: "/ecommerce-development-services",
+        source: "/shopify-development",
+        destination: "/shopify-development-services",
         permanent: true,
       },
       {
@@ -36,7 +36,7 @@ const nextConfig = {
       },
       {
         source: "/magento-development",
-        destination: "/ecommerce-development-services",
+        destination: "/magento-development-services",
         permanent: false,
       },
       {

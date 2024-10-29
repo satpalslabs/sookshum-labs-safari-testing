@@ -25,24 +25,23 @@ const IndustryExperience = () => {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <div id="industry-experience">
-      <OuterComponent>
-        <OuterFlexComponent>
-          <SectionHeader
-            buttonText="Industries We Serve"
-            description="Our team is committed to creating digital solutions tailored to the specific needs of different sectors, utilizing the latest technology to address industry challenges and foster innovation."
-            style="w-[780px] lg:!w-[700px] xs:!w-full"
-          >
-            <div className="w-[800px] xs:w-full xs:text-wrap text-center mx-auto leading-[1.4] capitalize">
-              Our diverse Industry{" "}
-              <span className="italic font-light">Experiences?</span>
-            </div>
-          </SectionHeader>
-          <Tabs activeTab={activeTab} setActiveTab={setActiveTab} />
-          <DetailView activeTab={activeTab} setActiveTab={setActiveTab} />
-        </OuterFlexComponent>
-      </OuterComponent>
-    </div>
+    <OuterComponent>
+      <OuterFlexComponent>
+        <SectionHeader
+          id="industry-experience"
+          buttonText="Industries We Serve"
+          description="Our team is committed to creating digital solutions tailored to the specific needs of different sectors, utilizing the latest technology to address industry challenges and foster innovation."
+          style="w-[780px] lg:!w-[700px] xs:!w-full"
+        >
+          <div className="w-[800px] xs:w-full xs:text-wrap text-center mx-auto leading-[1.4] capitalize">
+            Our diverse Industry{" "}
+            <span className="italic font-light">Experiences?</span>
+          </div>
+        </SectionHeader>
+        <Tabs activeTab={activeTab} setActiveTab={setActiveTab} />
+        <DetailView activeTab={activeTab} setActiveTab={setActiveTab} />
+      </OuterFlexComponent>
+    </OuterComponent>
   );
 };
 

@@ -5,7 +5,8 @@ import SectionHeader from "@components/basic-components/section-header";
 
 const Header: React.FC = () => (
   <SectionHeader
-    style="xxl:!w-[60%] !w-[70%]"
+    id="our-process"
+    style="xxl:!w-[60%] !w-[70%] xs:!w-full"
     buttonText="Our Process"
     description="With hundreds of successful projects under our belt, our transparent and agile development process will steer your project from discovery to launch."
   >

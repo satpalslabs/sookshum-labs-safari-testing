@@ -7,6 +7,7 @@ import PrimaryButton from "@components/basic-components/primary-button";
 import { useRef } from "react";
 import { useInView } from "@lib/use-in-view";
 import { dataItemType } from ".";
+import Image from "next/image";
 
 function Technology({ item }: { item: dataItemType }) {
   const ref = useRef<HTMLDivElement>(null);
@@ -21,12 +22,18 @@ function Technology({ item }: { item: dataItemType }) {
     >
       <div
         className={`w-fit ${
-          item["image-position"] == "right" ? "" : "max-w-[80%] w-full sm:max-w-full"
+          item["image-position"] == "right"
+            ? ""
+            : "max-w-[80%] w-full sm:max-w-full"
         } `}
       >
-        <div className={`flex flex-col w-fit gap-5  lg:gap-4 grow-0 md:gap-3  h-fit xs:text-left xs:items-start xs:pt-0 ${
-          item["image-position"] == "right" ? "max-w-[90%] md:max-w-full pr-3" : "max-w-[80%] md:max-w-[95%] sm:max-w-full xs:w-full xs:float-left float-right"
-        }`}>
+        <div
+          className={`flex flex-col w-fit gap-5  lg:gap-4 grow-0 md:gap-3  h-fit xs:text-left xs:items-start xs:pt-0 ${
+            item["image-position"] == "right"
+              ? "max-w-[90%] md:max-w-full pr-3"
+              : "max-w-[80%] md:max-w-[95%] sm:max-w-full xs:w-full xs:float-left float-right"
+          }`}
+        >
           <DarkButton
             text={item["top-heading-button"]}
             style={` xs:!float-left !font-normal ${
@@ -59,9 +66,11 @@ function Technology({ item }: { item: dataItemType }) {
         </div>
       </div>
       <div className="grow sm:max-w-[50%] xs:max-w-full">
-        <img
-          className="h-auto max-h-full w-full xs:mx-auto my-auto"
+        <Image
+          width="900"
+          height="900"
           alt=""
+          className="h-auto w-full xs:mx-auto my-auto"
           src={item["image-path"]}
         />
       </div>

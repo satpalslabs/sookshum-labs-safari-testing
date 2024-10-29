@@ -25,22 +25,21 @@ type ServiceType = {
 
 const services: ServiceType[] = data["web-development-services"];
 const Services: React.FC = () => (
-  <div id="services">
-    <OuterComponent>
-      <OuterFlexComponent>
-        <SectionHeader
-          buttonText="Services"
-          description="We help transform your online presence with our expert website development services, designed to enhance user experience and drive measurable business results."
-          style="w-[770px] text-wrap xs:w-full"
-        >
-          <div className="w-[1000px] leading-[1.4] capitalize lg:w-[735px] sm:w-[600px] xs:w-full xxl:w-[1060px] text-center text-wrap mx-auto">
-            We build result-oriented websites open new growth opportunities
-          </div>
-        </SectionHeader>
-        <ServiceCards />
-      </OuterFlexComponent>
-    </OuterComponent>
-  </div>
+  <OuterComponent>
+    <OuterFlexComponent>
+      <SectionHeader
+        id="our-services"
+        buttonText="Our Services"
+        description="We help transform your online presence with our expert website development services, designed to enhance user experience and drive measurable business results."
+        style="w-[770px] text-wrap xs:w-full"
+      >
+        <div className="w-[1000px] leading-[1.4] capitalize lg:w-[735px] sm:w-[600px] xs:w-full xxl:w-[1060px] text-center text-wrap mx-auto">
+          We build result-oriented websites open new growth opportunities
+        </div>
+      </SectionHeader>
+      <ServiceCards />
+    </OuterFlexComponent>
+  </OuterComponent>
 );
 
 export default Services;

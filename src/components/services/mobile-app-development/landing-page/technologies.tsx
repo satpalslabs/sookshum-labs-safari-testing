@@ -16,27 +16,23 @@ type Data = {
 const TechnologiesData: Data = data["web-development-technologies"];
 const Technologies = () => {
   return (
-    <div id="technologies">
-      <OuterComponent>
-        <OuterFlexComponent>
-          <SectionHeader
-            buttonText="Technologies"
-            description="Based on market trends, we strive to develop scalable, maintainable, and futuristic solutions that keep up with the latest technology"
-            style="w-[750px] sm:w-[95%] xs:w-full"
-          >
-            <div className="w-[80%] text-wrap xs:w-full tracking-tight text-center mx-auto xs:leading-[1.3] leading-[1.4] capitalize">
-              Full
-              <span className="italic font-light w-full">
-                {" "}
-                digital product{" "}
-              </span>
-              expertise under one roof
-            </div>
-          </SectionHeader>
-          <TechnologiesCards />
-        </OuterFlexComponent>
-      </OuterComponent>
-    </div>
+    <OuterComponent>
+      <OuterFlexComponent>
+        <SectionHeader
+          id="technologies"
+          buttonText="Technologies"
+          description="Based on market trends, we strive to develop scalable, maintainable, and futuristic solutions that keep up with the latest technology"
+          style="w-[750px] sm:w-[95%] xs:w-full"
+        >
+          <div className="w-[80%] text-wrap xs:w-full tracking-tight text-center mx-auto xs:leading-[1.3] leading-[1.4] capitalize">
+            Full
+            <span className="italic font-light w-full"> digital product </span>
+            expertise under one roof
+          </div>
+        </SectionHeader>
+        <TechnologiesCards />
+      </OuterFlexComponent>
+    </OuterComponent>
   );
 };
 

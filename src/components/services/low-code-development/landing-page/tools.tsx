@@ -20,22 +20,21 @@ type Tool = {
 };
 const tools: Tool[] = data.tools;
 const Tools = () => (
-  <div id="tools">
-    <OuterComponent>
-      <OuterFlexComponent>
-        <SectionHeader
-          buttonText="Tools "
-          description="Want us to build a no-code app for you from scratch? You are one click away!"
-          style="w-[624px] lg:w-[491px] lg:mx-auto xs:w-full"
-        >
-          <div className="w-full lg:w-[637px] sm:w-full xs:w-[70%] xs:text-balance lg:leading-[1.2] text-wrap tracking-tight text-center mx-auto leading-[1.4] capitalize">
-            Our Arsenal Of Magic Tools
-          </div>
-        </SectionHeader>
-        <ToolsDetailComponent />
-      </OuterFlexComponent>
-    </OuterComponent>
-  </div>
+  <OuterComponent>
+    <OuterFlexComponent>
+      <SectionHeader
+        id="tools"
+        buttonText="Tools "
+        description="Want us to build a no-code app for you from scratch? You are one click away!"
+        style="w-[624px] lg:w-[491px] lg:mx-auto xs:w-full"
+      >
+        <div className="w-full lg:w-[637px] sm:w-full xs:w-[70%] xs:text-balance lg:leading-[1.2] text-wrap tracking-tight text-center mx-auto leading-[1.4] capitalize">
+          Our Arsenal Of Magic Tools
+        </div>
+      </SectionHeader>
+      <ToolsDetailComponent />
+    </OuterFlexComponent>
+  </OuterComponent>
 );
 
 export default Tools;

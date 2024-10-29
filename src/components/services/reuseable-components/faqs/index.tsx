@@ -26,6 +26,7 @@ const Faqs: React.FC<{ DataKey: keyof Data }> = ({ DataKey }) => {
     <OuterComponent>
       <OuterFlexComponent>
         <SectionHeader
+          id="faqs"
           buttonText="FAQs"
           description="We craft digital experiences that drive results. We'll help you achieve your business goals, from increased brand awareness to skyrocketing sales."
           style="w-[1000px] w-full xs:px-10"

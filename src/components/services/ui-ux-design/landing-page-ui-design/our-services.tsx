@@ -15,6 +15,7 @@ const OurServices: React.FC = () => (
   <OuterComponent>
     <OuterFlexComponent>
       <SectionHeader
+        id="our-services"
         buttonText="Our Services"
         description="As a UI/UX design agency, we offer comprehensive end-to-end services, including research, wireframing, UI design, and development."
         style="w-[800px] lg:!w-[740px] sm:!w-full xs:!w-[400px] 3xs:!w-[310px]"

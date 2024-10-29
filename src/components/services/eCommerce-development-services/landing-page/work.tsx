@@ -16,10 +16,10 @@ export type dataItemType = {
 };
 
 const Work: React.FC = () => (
-  <div id="work">
     <OuterComponent>
       <OuterFlexComponent>
         <SectionHeader
+          id="work"
           style=""
           buttonText="Work"
           description="Explore our showcase of our recent projects to see the solutions we’ve recently brought to life."
@@ -31,7 +31,6 @@ const Work: React.FC = () => (
         <WorkCards type="" />
       </OuterFlexComponent>
     </OuterComponent>
-  </div>
 );
 
 export default Work;

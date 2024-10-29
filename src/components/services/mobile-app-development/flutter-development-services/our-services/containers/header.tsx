@@ -8,6 +8,7 @@ const SectionHeader = dynamic(
 
 const Header: React.FC = () => (
   <SectionHeader
+    id="our-services"
     style=""
     buttonText="Our Services"
     description="We offer web app development services tailored to any business or industry, delivering custom solutions that build user trust and convert visitors into paying customers. "

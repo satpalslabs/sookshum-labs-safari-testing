@@ -6,6 +6,7 @@ import SectionHeader from "@components/basic-components/section-header";
 const Header: React.FC = () => (
   <SectionHeader
     style=""
+    id="our-process"
     buttonText="Our Process"
     description="Efficiently tracking and optimizing development time for your ongoing WordPress projects."
   >

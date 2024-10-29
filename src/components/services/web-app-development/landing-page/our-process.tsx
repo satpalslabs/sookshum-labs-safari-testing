@@ -19,27 +19,26 @@ type Process = {
 };
 const processData: Process[] = data["our-process"];
 const OurProcess = () => (
-  <div id="our-process">
-    <OuterComponent>
-      <OuterFlexComponent>
-        <SectionHeader
-          buttonText="Our Process"
-          description="Having successfully delivered hundreds of projects, our transparent and agile development process will guide your project from discovery to launch."
-          style="w-[986px] lg:w-[491px] lg:mx-auto xs:w-full"
-        >
-          <div className="w-full lg:w-[637px] sm:w-full xs:px-3 xs:w-full 3xs:px-0 xs:text-balance lg:leading-[1.2] text-wrap tracking-tight text-center mx-auto leading-[1.4] capitalize">
-            Our process for{" "}
-            <span className="italic font-light w-full">
-              {" "}
-              Web App development{" "}
-            </span>
-            success.
-          </div>
-        </SectionHeader>
-        <OurProcessDetailComponent />
-      </OuterFlexComponent>
-    </OuterComponent>
-  </div>
+  <OuterComponent>
+    <OuterFlexComponent>
+      <SectionHeader
+        id="our-process"
+        buttonText="Our Process"
+        description="Having successfully delivered hundreds of projects, our transparent and agile development process will guide your project from discovery to launch."
+        style="!w-[986px] lg:!w-[491px] lg:mx-auto xs:!w-full"
+      >
+        <div className="w-full lg:w-[637px] sm:w-full xs:px-3 xs:w-full 3xs:px-0 xs:text-balance lg:leading-[1.2] text-wrap tracking-tight text-center mx-auto leading-[1.4] capitalize">
+          Our process for{" "}
+          <span className="italic font-light w-full">
+            {" "}
+            Web App development{" "}
+          </span>
+          success.
+        </div>
+      </SectionHeader>
+      <OurProcessDetailComponent />
+    </OuterFlexComponent>
+  </OuterComponent>
 );
 
 export default OurProcess;

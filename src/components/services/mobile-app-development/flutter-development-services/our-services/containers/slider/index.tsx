@@ -48,15 +48,15 @@ export default function Slider() {
           350: { slidesPerView: 1.2 },
           400: { slidesPerView: 1.2 },
           550: { slidesPerView: 2 },
-          639: { slidesPerView: 2.5, spaceBetween: 17 },
-          1050: { slidesPerView: 3.3, spaceBetween: 20 },
-          1500: { slidesPerView: 3.3, spaceBetween: 20 },
+          639: { slidesPerView: 2.3, spaceBetween: 17 },
+          1050: { slidesPerView: 2.8, spaceBetween: 20 },
+          1500: { slidesPerView: 3.0, spaceBetween: 20 },
           1700: { slidesPerView: 3.5, spaceBetween: 30 },
         }}
         grabCursor={true}
         onSlideChange={handleSlideChange}
         modules={[Navigation]}
-        className="!px-[160px] !overflow-visible sm:!px-[60px] 2xs:!px-3"
+        className="!px-[160px] lg:!px-[90px] !overflow-visible sm:!px-[60px] 2xs:!px-3"
       >
         {data.industries.map((industry: industryType, index: number) => (
           <SwiperSlide key={index} className="!h-auto">
@@ -64,7 +64,11 @@ export default function Slider() {
           </SwiperSlide>
         ))}
       </Swiper>
-      <ArrowButtons swiperContainerRef={swiperContainerRef} atEnd={atEnd} atStart={atStart} />
+      <ArrowButtons
+        swiperContainerRef={swiperContainerRef}
+        atEnd={atEnd}
+        atStart={atStart}
+      />
     </div>
   );
 }

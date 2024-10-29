@@ -7,6 +7,7 @@ import H4 from "@components/basic-components/headings/H4";
 import Description from "@components/basic-components/description";
 import { useRef } from "react";
 import { useInView } from "@lib/use-in-view";
+import Image from "next/image";
 interface process {
   title: string;
   description: string;
@@ -15,23 +16,22 @@ interface process {
 
 const process_data: process[] = data;
 const OurProcess: React.FC = () => (
-  <div id="our-process">
-    <OuterComponent>
-      <OuterFlexComponent>
-        <SectionHeader
-          buttonText="Our Process"
-          description="By adopting a client-centered approach and paying close attention to detail, we deliver exceptional projects that meet our clients' needs. Utilizing Agile methodologies, we continuously adapt and refine our approach throughout the development cycle."
-          style="w-[990px] lg:!w-[740px] xs:!w-[400px] 3xs:!w-[310px]"
-        >
-          <div className="xs:w-full w-full sm:w-[80%] mx-auto leading-[1.4] capitalize text-wrap text-center">
-            Our Process Of
-            <span className="italic font-light"> NestJS </span> Development
-          </div>
-        </SectionHeader>
-        <OurProcessMainContainer />
-      </OuterFlexComponent>
-    </OuterComponent>
-  </div>
+  <OuterComponent>
+    <OuterFlexComponent>
+      <SectionHeader
+        id="our-process"
+        buttonText="Our Process"
+        description="By adopting a client-centered approach and paying close attention to detail, we deliver exceptional projects that meet our clients' needs. Utilizing Agile methodologies, we continuously adapt and refine our approach throughout the development cycle."
+        style="w-[990px] lg:!w-[740px] xs:!w-[400px] 3xs:!w-[310px]"
+      >
+        <div className="xs:w-full w-full sm:w-[80%] mx-auto leading-[1.4] capitalize text-wrap text-center">
+          Our Process Of
+          <span className="italic font-light"> NestJS </span> Development
+        </div>
+      </SectionHeader>
+      <OurProcessMainContainer />
+    </OuterFlexComponent>
+  </OuterComponent>
 );
 
 export default OurProcess;
@@ -65,7 +65,13 @@ const OurProcessMainContainer = () => {
                 : "border-transparent grayscale"
             }`}
           >
-            <img src={process.image} className="hidden xs:block w-[52px]  " />
+            <Image
+              height={200}
+              width={200}
+              src={process.image}
+              className="hidden xs:block w-[52px] h-auto"
+              alt="image"
+            />
             <div className="flex flex-col gap-3 lg:gap-2">
               <H4 style="!text-white !leading-[1.25]" text={process.title} />
               <Description
@@ -101,8 +107,11 @@ const OurProcessMainContainer = () => {
                   : "items-end justify-end"
               }`}
             >
-              <img
+              <Image
+                height={200}
+                width={200}
                 src={process.image}
+                alt=""
                 className="w-[62px] h-auto lg:w-[46px] transition-all duration-300 group-hover:scale-125"
               />
             </div>

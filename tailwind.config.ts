@@ -1,3 +1,4 @@
+import { transform } from "lodash";
 import type { Config } from "tailwindcss";
 
 const tailwindConfig: Config = {
@@ -31,7 +32,7 @@ const tailwindConfig: Config = {
         gradientBorderCircle: "var(--gradient-circle-border)",
         orangeBackground: "var(--orange-background)"
       },
-      
+
       colors: {
         primary: 'var(--primary)',
         borderPrimary: 'var(--border-primary)',
@@ -39,11 +40,14 @@ const tailwindConfig: Config = {
         lightBlack: "var(--light-black-gradient)",
         layoutBackground: 'var(--layout-background-color)',
         darkButton: 'var(--dark-button)',
-        light: 'var(--light)',
+        secondary: 'var(--secondary-color)',
+        h3_heading: 'var(--h3-heading)',
         customWhite: 'var(--custom-white)',
         whiteTextPrimary: "var(--light-text-primary)",
         white: "#fff",
         lightText: 'var(--light-text)',
+        darkButton_text: 'var(--dark-button-text)',
+        dropdown_text: 'var(--dropdown-text)',
         customYellow: 'var(--custom-yellow)',
         viewportBorder: 'var(--view-port-border)',
         innerContainer: 'var(--inner-container)',
@@ -74,6 +78,16 @@ const tailwindConfig: Config = {
       maskType: {
         alpha: "alpha"
       },
+      keyframes: {
+        testimonialSlider: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-100%)" }
+        }
+      },
+      animation: {
+        testimonialSlider: "testimonialSlider 120s infinite linear",
+
+      }
     },
   },
   plugins: [],

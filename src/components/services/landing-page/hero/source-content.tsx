@@ -1,4 +1,4 @@
-
+import Image from "next/image";
 import type { contentProps } from ".";
 
 const SourceContent: React.FC<contentProps> = (props) => (
@@ -22,13 +22,23 @@ const SourceContent: React.FC<contentProps> = (props) => (
         >
           <source src={props.source} type="video/webm" />
 
-          <img
+          <Image
+            width="800"
+            height="800"
             src={props.fallback}
             title="Your browser does not support the <video> tag"
+            alt="fallback"
+            className="w-full h-auto object-cover"
           />
         </video>
       ) : (
-        <img className="w-full object-cover" src={props.source} alt="Background image" />
+        <Image
+          width="800"
+          height="800"
+          className="w-full object-cover"
+          src={props.source}
+          alt="Background image"
+        />
       )}
     </div>
     <div

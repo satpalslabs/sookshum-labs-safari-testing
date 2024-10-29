@@ -2,6 +2,7 @@
 import Description from "@components/basic-components/description";
 import H2 from "@components/basic-components/headings/H2";
 import { useInView } from "@lib/use-in-view";
+import Image from "next/image";
 import { useRef } from "react";
 
 function POC() {
@@ -50,9 +51,12 @@ const MainContainer = () => {
         isInView ? " grayscale-0" : "grayscale"
       }`}
     >
-      <img
+      <Image
+        width={1200}
+        height={1200}
         src="/services/low-code-development/appsmith-development-services/about/pc.png"
-        className="h-full w-auto"
+        className="h-full w-auto object-contain"
+        alt="image"
       />
     </div>
   );

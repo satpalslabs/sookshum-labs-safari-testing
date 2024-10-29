@@ -19,22 +19,21 @@ type service = {
 
 const discoverData: service[] = data;
 const Discover: React.FC = () => (
-  <div id="discover">
-    <OuterComponent>
-      <OuterFlexComponent>
-        <SectionHeader
-          buttonText="Discover"
-          description="We don’t just create WordPress sites; we design digital experiences that engage, convert, and stand the test of time."
-          style="w-[85.5%] lg:!w-[740px] xs:!w-full"
-        >
-          <div className="xs:w-full mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
-            What We Offer
-          </div>
-        </SectionHeader>
-        <MainContainer />
-      </OuterFlexComponent>
-    </OuterComponent>
-  </div>
+  <OuterComponent>
+    <OuterFlexComponent>
+      <SectionHeader
+        id="discover"
+        buttonText="Discover"
+        description="We don’t just create WordPress sites; we design digital experiences that engage, convert, and stand the test of time."
+        style="w-[85.5%] lg:!w-[740px] xs:!w-full"
+      >
+        <div className="xs:w-full mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
+          What We Offer
+        </div>
+      </SectionHeader>
+      <MainContainer />
+    </OuterFlexComponent>
+  </OuterComponent>
 );
 
 export default Discover;

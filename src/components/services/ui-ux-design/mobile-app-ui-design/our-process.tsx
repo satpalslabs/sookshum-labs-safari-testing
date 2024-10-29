@@ -14,22 +14,21 @@ type benefit = {
 
 const ourProcessData: benefit[] = data;
 const OurProcess = () => (
-  <div id="our-process">
-    <OuterComponent>
-      <OuterFlexComponent>
-        <SectionHeader
-          buttonText="Our Process "
-          description="Choose Retool for unmatched flexibility, seamless integrations, and developer-friendly tools that enable you to create robust internal apps more quickly than other low-code platforms."
-          style="!w-[1200px] lg:!w-[700px] sm:!w-[600px] xs:!w-full"
-        >
-          <div className="xs:w-full sm:w-[90%] sm:text-wrap xs:text-center  leading-[1.4] capitalize">
-            What our mobile design process looks like
-          </div>
-        </SectionHeader>
-        <BenefitCards />
-      </OuterFlexComponent>
-    </OuterComponent>
-  </div>
+  <OuterComponent>
+    <OuterFlexComponent>
+      <SectionHeader
+        id="our-process"
+        buttonText="Our Process "
+        description="Choose Retool for unmatched flexibility, seamless integrations, and developer-friendly tools that enable you to create robust internal apps more quickly than other low-code platforms."
+        style="!w-[1200px] lg:!w-[700px] sm:!w-[600px] xs:!w-full"
+      >
+        <div className="xs:w-full sm:w-[90%] sm:text-wrap xs:text-center  leading-[1.4] capitalize">
+          What our mobile design process looks like
+        </div>
+      </SectionHeader>
+      <BenefitCards />
+    </OuterFlexComponent>
+  </OuterComponent>
 );
 
 export default OurProcess;

@@ -55,7 +55,9 @@ const ImageContainer = ({
       } }`}
     >
       {isIphone ? (
-        <img
+        <Image
+          width={900}
+          height={900}
           src={item.image_url}
           alt="fallback image"
           className="w-[500px] m-auto  md:w-[368px] md:h-[368px] object-contain h-[500px]"
@@ -69,7 +71,9 @@ const ImageContainer = ({
           playsInline
           className="w-[500px] m-auto  md:w-[368px] md:h-[368px] object-contain h-[500px]"
         >
-          <img
+          <Image
+            width={900}
+            height={900}
             src={item.image_url}
             title="Your browser does not support the <video> tag"
             alt="fallback image"

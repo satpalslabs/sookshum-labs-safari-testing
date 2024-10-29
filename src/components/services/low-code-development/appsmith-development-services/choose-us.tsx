@@ -19,23 +19,22 @@ type choose_us = {
 
 const chooseUsData: choose_us[] = data;
 const ChooseUs: React.FC = () => (
-  <div id="why-us">
-    <OuterComponent>
-      <OuterFlexComponent>
-        <SectionHeader
-          buttonText="Why choose us?"
-          description="For the past five years, we have collaborated with various low-code development platforms, assisting numerous businesses in achieving successful digital transformations within budget and on schedule."
-          style="xxl:!w-[75%] !w-full lg:!w-[740px] xs:!w-full"
-        >
-          <div className="xs:w-full sm:w-[80%] w-full mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
-            Reasons to choose our{" "}
-            <span className="italic font-light"> low-code </span> experts
-          </div>
-        </SectionHeader>
-        <MainContainer />
-      </OuterFlexComponent>
-    </OuterComponent>
-  </div>
+  <OuterComponent>
+    <OuterFlexComponent>
+      <SectionHeader
+        id="why-us"
+        buttonText="Why choose us?"
+        description="For the past five years, we have collaborated with various low-code development platforms, assisting numerous businesses in achieving successful digital transformations within budget and on schedule."
+        style="xxl:!w-[75%] !w-full lg:!w-[740px] xs:!w-full"
+      >
+        <div className="xs:w-full sm:w-[80%] w-full mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
+          Reasons to choose our{" "}
+          <span className="italic font-light"> low-code </span> experts
+        </div>
+      </SectionHeader>
+      <MainContainer />
+    </OuterFlexComponent>
+  </OuterComponent>
 );
 
 export default ChooseUs;

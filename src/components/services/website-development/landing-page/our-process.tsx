@@ -17,24 +17,23 @@ type Process = {
 };
 const processData: Process[] = data["our-process"];
 const OurProcess = () => (
-  <div id="our-process">
-    <OuterComponent>
-      <OuterFlexComponent>
-        <SectionHeader
-          buttonText="Our Process"
-          description="Whether you want to consult an idea, add missing capabilities, quickly expand your team, or hand over a  project - we’ve got you covered."
-          style="w-[794px] lg:w-[491px] lg:mx-auto xs:w-full"
-        >
-          <div className="w-[80%] lg:w-[637px] sm:w-full xs:px-5 3xs:px-0 xs:text-balance lg:leading-[1.2] text-wrap tracking-tight text-center mx-auto leading-[1.4] capitalize">
-            Full
-            <span className="italic font-light w-full"> digital product </span>
-            expertise under one roof
-          </div>
-        </SectionHeader>
-        <OurProcessDetailComponent />
-      </OuterFlexComponent>
-    </OuterComponent>
-  </div>
+  <OuterComponent>
+    <OuterFlexComponent>
+      <SectionHeader
+        id="our-process"
+        buttonText="Our Process"
+        description="Whether you want to consult an idea, add missing capabilities, quickly expand your team, or hand over a  project - we’ve got you covered."
+        style="w-[794px] lg:w-[491px] lg:mx-auto xs:w-full"
+      >
+        <div className="w-[80%] lg:w-[637px] sm:w-full xs:px-5 3xs:px-0 xs:text-balance lg:leading-[1.2] text-wrap tracking-tight text-center mx-auto leading-[1.4] capitalize">
+          Full
+          <span className="italic font-light w-full"> digital product </span>
+          expertise under one roof
+        </div>
+      </SectionHeader>
+      <OurProcessDetailComponent />
+    </OuterFlexComponent>
+  </OuterComponent>
 );
 
 export default OurProcess;

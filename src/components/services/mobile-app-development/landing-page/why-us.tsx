@@ -24,7 +24,7 @@ const ChooseUs = () => {
   const isInView = useInView(ref);
 
   return (
-    <div id="why-us">
+    <div>
       <OuterComponent>
         <div className="flex items-center bg-black overflow-hidden max-w-[1920px] mx-auto">
           <div className="flex sm:flex-col gap-[80px] md:gap-[60px] sm:gap-12 justify-between ">
@@ -66,6 +66,7 @@ const ChooseUs = () => {
       <OuterComponent>
         <OuterFlexComponent>
           <SectionHeader
+            id="why-us"
             buttonText="Why us?"
             description="Whether you want to consult and idea, add missing capabilities, quickly expand your team, or hand over a project - we’ve got your covered. "
             style="w-[900px] lg:w-[50%] sm:w-[65%] xs:w-full "

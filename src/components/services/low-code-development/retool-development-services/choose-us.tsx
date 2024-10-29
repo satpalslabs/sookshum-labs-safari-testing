@@ -19,24 +19,22 @@ type choose_us = {
 
 const chooseUsData: choose_us[] = data;
 const ChooseUs: React.FC = () => (
-  <div id="why-us">
-    <OuterComponent>
-      <OuterFlexComponent>
-        <SectionHeader
-          buttonText="Why choose us?"
-          description="At Sookshum Labs, we develop high-quality Retool projects that feature a unique blend of exceptional coding and clean system architecture. Through these products, we strive to help our clients achieve better results by providing cost-effective services."
-          style="xxl:!w-[75%] !w-full lg:!w-[740px] xs:!w-full"
-        >
-          <div className="xs:w-full sm:w-[80%] w-full mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
-            Why choose us for{" "}
-            <span className="italic font-light"> Retool </span> Development
-            Services?
-          </div>
-        </SectionHeader>
-        <MainContainer />
-      </OuterFlexComponent>
-    </OuterComponent>
-  </div>
+  <OuterComponent>
+    <OuterFlexComponent>
+      <SectionHeader
+        id="why-us"
+        buttonText="Why choose us?"
+        description="At Sookshum Labs, we develop high-quality Retool projects that feature a unique blend of exceptional coding and clean system architecture. Through these products, we strive to help our clients achieve better results by providing cost-effective services."
+        style="xxl:!w-[75%] !w-full lg:!w-[740px] xs:!w-full"
+      >
+        <div className="xs:w-full sm:w-[80%] w-full mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
+          Why choose us for <span className="italic font-light"> Retool </span>{" "}
+          Development Services?
+        </div>
+      </SectionHeader>
+      <MainContainer />
+    </OuterFlexComponent>
+  </OuterComponent>
 );
 
 export default ChooseUs;

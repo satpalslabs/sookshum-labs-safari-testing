@@ -17,23 +17,22 @@ type ChooseUs = {
 };
 const chooseUsData: ChooseUs[] = data;
 const Benefits = () => (
-  <div id="benefits">
-    <OuterComponent>
-      <OuterFlexComponent>
-        <SectionHeader
-          buttonText="Benefits"
-          description="Choose Retool for unmatched flexibility, seamless integrations, and developer-friendly tools that enable you to create powerful internal apps more quickly than with other low-code platforms."
-          style="xxl:!w-[60%] !w-[80%] xs:!w-full"
-        >
-          <div className="w-full xs:w-full text-wrap text-center mx-auto leading-[1.4] capitalize">
-            Why choose Retool over other <br className="xs:hidden" />{" "}
-            <span className="italic font-light">low-code </span>platforms?
-          </div>
-        </SectionHeader>
-        <BenefitsCards />
-      </OuterFlexComponent>
-    </OuterComponent>
-  </div>
+  <OuterComponent>
+    <OuterFlexComponent>
+      <SectionHeader
+        id="benefits"
+        buttonText="Benefits"
+        description="Choose Retool for unmatched flexibility, seamless integrations, and developer-friendly tools that enable you to create powerful internal apps more quickly than with other low-code platforms."
+        style="xxl:!w-[60%] !w-[80%] xs:!w-full"
+      >
+        <div className="w-full xs:w-full text-wrap text-center mx-auto leading-[1.4] capitalize">
+          Why choose Retool over other <br className="xs:hidden" />{" "}
+          <span className="italic font-light">low-code </span>platforms?
+        </div>
+      </SectionHeader>
+      <BenefitsCards />
+    </OuterFlexComponent>
+  </OuterComponent>
 );
 
 export default Benefits;

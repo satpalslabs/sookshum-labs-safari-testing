@@ -19,23 +19,22 @@ type service = {
 
 const ourServiceData: service[] = data;
 const OurServices: React.FC = () => (
-  <div id="our-services">
-    <OuterComponent>
-      <OuterFlexComponent>
-        <SectionHeader
-          buttonText="Our services"
-          description="Sookshum Labs speciialiizes iin NestJS development, providing custom solutions to meet your business requirements. "
-          style="w-[95.5%] lg:!w-[740px] xs:!w-full"
-        >
-          <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] capitalize text-wrap text-center tracking-[-0.02em]">
-            Our <span className="italic font-light"> NestJS </span> Software
-            Development Services
-          </div>
-        </SectionHeader>
-        <MainContainer />
-      </OuterFlexComponent>
-    </OuterComponent>
-  </div>
+  <OuterComponent>
+    <OuterFlexComponent>
+      <SectionHeader
+        id="our-services"
+        buttonText="Our services"
+        description="Sookshum Labs speciialiizes iin NestJS development, providing custom solutions to meet your business requirements. "
+        style="w-[95.5%] lg:!w-[740px] xs:!w-full"
+      >
+        <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] capitalize text-wrap text-center tracking-[-0.02em]">
+          Our <span className="italic font-light"> NestJS </span> Software
+          Development Services
+        </div>
+      </SectionHeader>
+      <MainContainer />
+    </OuterFlexComponent>
+  </OuterComponent>
 );
 
 export default OurServices;

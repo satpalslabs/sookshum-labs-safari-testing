@@ -17,23 +17,21 @@ type ChooseUs = {
 };
 const chooseUsData: ChooseUs[] = data.cards;
 const ChooseUs = () => (
-  <div id="why-us">
-    <OuterComponent>
-      <OuterFlexComponent>
-        <SectionHeader
-          buttonText="Why choose us?"
-          description="Choose us for exceptional UI/UX design tailored to your needs. We blend creativity with strategy to deliver intuitive, impactful designs that drive user engagement and business growth."
-          style="w-[784px] xs:w-full"
-        >
-          <div className="w-[80%] xs:w-full text-wrap text-center mx-auto leading-[1.4] capitalize">
-            How we can help you{" "}
-            <span className="italic font-light">Succeed</span>
-          </div>
-        </SectionHeader>
-        <ChooseUsCards />
-      </OuterFlexComponent>
-    </OuterComponent>
-  </div>
+  <OuterComponent>
+    <OuterFlexComponent>
+      <SectionHeader
+        id="why-us"
+        buttonText="Why choose us?"
+        description="Choose us for exceptional UI/UX design tailored to your needs. We blend creativity with strategy to deliver intuitive, impactful designs that drive user engagement and business growth."
+        style="w-[784px] xs:w-full"
+      >
+        <div className="w-[80%] xs:w-full text-wrap text-center mx-auto leading-[1.4] capitalize">
+          How we can help you <span className="italic font-light">Succeed</span>
+        </div>
+      </SectionHeader>
+      <ChooseUsCards />
+    </OuterFlexComponent>
+  </OuterComponent>
 );
 
 export default ChooseUs;

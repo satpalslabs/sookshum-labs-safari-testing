@@ -1,22 +1,20 @@
-{
-    "primary-cards": [
-        {
-            "count": "8+",
-            "title": "years in business",
-            "type": "business",
-            "card-position":"left"
-        },
-        {
-            "count": "170+",
-            "title": "Successful projects",
-            "type": "projects",
-            "card-position":"right"
-        },
-        {
-            "count": "15+",
-            "title": "Team members",
-            "type": "team",
-            "card-position":"left"
-        }
-    ]
-}
+[
+    {
+        "count": "8+",
+        "title": "years in business",
+        "type": "business",
+        "card-position": "left"
+    },
+    {
+        "count": "170+",
+        "title": "Successful projects",
+        "type": "projects",
+        "card-position": "right"
+    },
+    {
+        "count": "15+",
+        "title": "Team members",
+        "type": "team",
+        "card-position": "left"
+    }
+]

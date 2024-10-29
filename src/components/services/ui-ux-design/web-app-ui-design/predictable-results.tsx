@@ -19,7 +19,6 @@ const PredictableResults: React.FC = () => {
   const isInView = useInView(ref);
 
   return (
-    <div id="predictable-results">
       <OuterComponent>
         <div ref={ref}>
           <div
@@ -68,7 +67,6 @@ const PredictableResults: React.FC = () => {
           </div>
         </div>
       </OuterComponent>
-    </div>
   );
 };
 

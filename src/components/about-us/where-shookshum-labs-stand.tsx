@@ -15,7 +15,7 @@ type PrimaryCard = {
   type: string;
   "card-position": string;
 };
-const primaryCards: PrimaryCard[] = data["primary-cards"];
+const primaryCards: PrimaryCard[] = data;
 const WhereWeAre: React.FC = () => {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref);
@@ -232,7 +232,9 @@ const CardWithPrimaryBackground: React.FC<{
 const Contributors: React.FC = () => (
   <div className="flex -space-x-5 overflow-hidden">
     {[0, 1, 2, 3, 4].map((i: number) => (
-      <img
+      <Image
+        width={400}
+        height={400}
         className="inline-block h-[78px] w-[78px] lg:w-[60px] lg:h-[60px] rounded-full"
         src="/about-us/where-we-are/team-member.png"
         alt="team-member"

@@ -9,6 +9,7 @@ import OuterComponent from "@components/basic-components/outer-component";
 import OuterFlexComponent from "@components/basic-components/main-flex-container";
 import Description from "@components/basic-components/description";
 import H4 from "@components/basic-components/headings/H4";
+import Image from "next/image";
 
 type choose_us = {
   heading: string;
@@ -18,23 +19,22 @@ type choose_us = {
 
 const chooseUsData: choose_us[] = data;
 const ChooseUs: React.FC = () => (
-  <div id="why-us">
-    <OuterComponent>
-      <OuterFlexComponent>
-        <SectionHeader
-          buttonText="Why choose us?"
-          description="By harnessing the power of Next.js, our team collaborates with you to deliver faster-to-market solutions."
-          style="w-[960px] lg:!w-[740px] xs:!w-full"
-        >
-          <div className="xs:w-full sm:w-[80%] mx-auto text-wrap text-center leading-[1.4] capitalize">
-            Why Choose sookshum labs for{" "}
-            <span className="italic font-light"> Next.js </span>Web Development
-          </div>
-        </SectionHeader>
-        <OurServicesMainContainer />
-      </OuterFlexComponent>
-    </OuterComponent>
-  </div>
+  <OuterComponent>
+    <OuterFlexComponent>
+      <SectionHeader
+        id="why-us"
+        buttonText="Why choose us?"
+        description="By harnessing the power of Next.js, our team collaborates with you to deliver faster-to-market solutions."
+        style="w-[960px] lg:!w-[740px] xs:!w-full"
+      >
+        <div className="xs:w-full sm:w-[80%] mx-auto text-wrap text-center leading-[1.4] capitalize">
+          Why Choose sookshum labs for{" "}
+          <span className="italic font-light"> Next.js </span>Web Development
+        </div>
+      </SectionHeader>
+      <OurServicesMainContainer />
+    </OuterFlexComponent>
+  </OuterComponent>
 );
 
 export default ChooseUs;
@@ -64,7 +64,13 @@ const SingleCard: React.FC<{ isInView: boolean; data: choose_us }> = ({
       style="!rounded-[32px] !p-8 !pb-8 lg:!p-7 sm:!p-6 xs:!p-5 justify-between !gap-[51px] lg:!gap-[62px] sm:!gap-[49px] xs:!gap-3 h-full"
       isInView={isInView}
     >
-      <img src={data.image_url} className="w-[120px] h-auto lg:w-[80px] " />
+      <Image
+        height={200}
+        width={200}
+        src={data.image_url}
+        className="w-[120px] h-auto lg:w-[80px] "
+        alt=""
+      />
       <div className="flex flex-col gap-5 lg:gap-3 sm:gap-2">
         <H4 style="!leading-[1.25] !text-white" text={data.heading} />
         <Description

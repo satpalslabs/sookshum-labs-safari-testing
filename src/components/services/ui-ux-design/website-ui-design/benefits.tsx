@@ -9,6 +9,7 @@ import Description from "@components/basic-components/description";
 import { Button } from "@mui/material";
 import Card from "@components/basic-components/card";
 import H2 from "@components/basic-components/headings/H2";
+import Image from "next/image";
 type benefit = {
   tab: string;
   "detail-data": string;
@@ -17,23 +18,22 @@ type benefit = {
 
 const benefitsData: benefit[] = data;
 const Benefits = () => (
-  <div id="benefits">
-    <OuterComponent>
-      <OuterFlexComponent>
-        <SectionHeader
-          buttonText="Benefits "
-          description="With our UI UX design company, proficient design approach, unique UI UX design services,and a track record of successfully designing 200+ digital products, we deliver experiences that align with your business goals."
-          style="!w-[820px] sm:!w-[680px] xs:!w-full "
-        >
-          <div className="xs:w-full xs:text-wrap xs:text-center leading-[1.4] capitalize">
-            Drive impact with top <br />{" "}
-            <span className="italic font-light">uI uX design </span>company
-          </div>
-        </SectionHeader>
-        <BenefitCards />
-      </OuterFlexComponent>
-    </OuterComponent>
-  </div>
+  <OuterComponent>
+    <OuterFlexComponent>
+      <SectionHeader
+        id="benefits"
+        buttonText="Benefits "
+        description="With our UI UX design company, proficient design approach, unique UI UX design services,and a track record of successfully designing 200+ digital products, we deliver experiences that align with your business goals."
+        style="!w-[820px] sm:!w-[680px] xs:!w-full "
+      >
+        <div className="xs:w-full xs:text-wrap xs:text-center leading-[1.4] capitalize">
+          Drive impact with top <br />{" "}
+          <span className="italic font-light">uI uX design </span>company
+        </div>
+      </SectionHeader>
+      <BenefitCards />
+    </OuterFlexComponent>
+  </OuterComponent>
 );
 
 export default Benefits;
@@ -102,9 +102,12 @@ const ActiveBenefit: React.FC<{
         />
       </Description>
     </div>
-    <img
+    <Image
+      height={400}
+      width={400}
+      alt=""
       src={props.detailData.image}
-      className="object-cover xxl:w-[39%] w-[47%] lg:w-[45%] sm:w-[46%] xs:w-full"
+      className="object-cover xxl:w-[39%] w-[47%] lg:w-[45%] sm:w-[46%] xs:w-full h-auto"
     />
   </Card>
 );

@@ -13,24 +13,23 @@ type Process = {
 };
 const processData: Process[] = data["our-process"];
 const OurProcess = () => (
-  <div id="our-process">
-    <OuterComponent>
-      <OuterFlexComponent>
-        <SectionHeader
-          buttonText="Our Process"
-          description="Tailored and inspired. Professional and reliable. Our agency strives to provide only the best solutions."
-          style="w-[794px] lg:w-[491px] lg:mx-auto xs:w-full"
-        >
-          <div className="w-[80%] lg:w-[637px] sm:w-full xs:w-[70%] xs:text-balance lg:leading-[1.2] text-wrap tracking-tight text-center mx-auto leading-[1.4] capitalize">
-            Our Process for
-            <span className="italic font-light w-full"> App Development </span>
-            Success
-          </div>
-        </SectionHeader>
-        <OurProcessDetailComponent />
-      </OuterFlexComponent>
-    </OuterComponent>
-  </div>
+  <OuterComponent>
+    <OuterFlexComponent>
+      <SectionHeader
+        id="our-process"
+        buttonText="Our Process"
+        description="Tailored and inspired. Professional and reliable. Our agency strives to provide only the best solutions."
+        style="!w-[794px] lg:!w-[491px] lg:mx-auto xs:!w-full"
+      >
+        <div className="w-[80%] lg:w-[637px] sm:w-full xs:w-full xs:px-2 xs:text-balance lg:leading-[1.2] text-wrap  text-center mx-auto leading-[1.4] capitalize">
+          Our Process for
+          <span className="italic font-light w-full"> App Development </span>
+          Success
+        </div>
+      </SectionHeader>
+      <OurProcessDetailComponent />
+    </OuterFlexComponent>
+  </OuterComponent>
 );
 
 export default OurProcess;

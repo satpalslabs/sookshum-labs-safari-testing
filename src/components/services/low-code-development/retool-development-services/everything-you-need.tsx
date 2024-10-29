@@ -18,13 +18,11 @@ type card = {
 };
 
 const EverythingYouNeed: React.FC = () => (
-  <div
-    className="mt-[70px] lg:mt-[60px] sm:mt-0 xs:-mt-[60px]"
-    id="everything-you-need"
-  >
+  <div className="mt-[70px] lg:mt-[60px] sm:mt-0 xs:-mt-[60px]">
     <OuterComponent>
       <OuterFlexComponent>
         <SectionHeader
+          id="everything-you-need"
           buttonText="Everything You Need"
           description="Connect with our team of expert Retool developers, available to assist you within 48 hours!"
           style="w-[95.5%] lg:!w-[740px] xs:!w-full"

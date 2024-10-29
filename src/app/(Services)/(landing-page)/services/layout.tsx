@@ -5,6 +5,7 @@
 import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Services | Sookshum Labs",
+  description:"Explore our range of digital services tailored to drive growth. From web and mobile development to eCommerce and admin solutions, we turn ideas into results."
 };
 
 export default function RootLayout({

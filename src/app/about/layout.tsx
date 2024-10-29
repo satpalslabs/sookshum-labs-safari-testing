@@ -6,6 +6,7 @@ import type { Metadata } from "next";
 import Head from "next/head";
 export const metadata: Metadata = {
   title: "About Us | Sookshum Labs",
+  description:"Discover our mission, values, and team. Learn how our expertise and passion drive innovative digital solutions to help your business achieve success."
 };
 
 export default function RootLayout({

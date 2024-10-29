@@ -17,23 +17,22 @@ type Process = {
 };
 const process: Process[] = data;
 const OurProcess = () => (
-  <div id="our-process">
-    <OuterComponent>
-      <OuterFlexComponent>
-        <SectionHeader
-          buttonText="Our Process"
-          description="By leveraging the capabilities of Flutter, our team collaborates with you to deliver faster-to-market solutions."
-          style="!w-[954px] sm:!w-[80%] xs:!w-full"
-        >
-          <div className="w-full xs:w-full text-center mx-auto xs:text-wrap leading-[1.4] capitalize">
-            Our <span className="italic font-light">Flutter</span> Development
-            Process
-          </div>
-        </SectionHeader>
-        <ProcessMainContainer />
-      </OuterFlexComponent>
-    </OuterComponent>
-  </div>
+  <OuterComponent>
+    <OuterFlexComponent>
+      <SectionHeader
+        id="our-process"
+        buttonText="Our Process"
+        description="By leveraging the capabilities of Flutter, our team collaborates with you to deliver faster-to-market solutions."
+        style="!w-[954px] sm:!w-[80%] xs:!w-full"
+      >
+        <div className="w-full xs:w-full text-center mx-auto xs:text-wrap leading-[1.4] capitalize">
+          Our <span className="italic font-light">Flutter</span> Development
+          Process
+        </div>
+      </SectionHeader>
+      <ProcessMainContainer />
+    </OuterFlexComponent>
+  </OuterComponent>
 );
 
 export default OurProcess;

@@ -19,10 +19,10 @@ type our_service = {
 
 const ourServicesData: our_service[] = data;
 const OurServices: React.FC = () => (
-  <div id="our-services">
     <OuterComponent>
       <OuterFlexComponent>
         <SectionHeader
+          id="our-services"
           buttonText="Our Services"
           description="We create digital experiences that deliver impactful results, helping you reach your business goals, whether that's boosting brand awareness or driving sales to new heights. "
           style="w-[980px] lg:!w-[650px] xs:!w-full"
@@ -36,7 +36,6 @@ const OurServices: React.FC = () => (
         <MainContainer />
       </OuterFlexComponent>
     </OuterComponent>
-  </div>
 );
 
 export default OurServices;

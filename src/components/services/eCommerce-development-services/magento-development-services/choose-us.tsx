@@ -7,31 +7,29 @@ import OuterComponent from "@components/basic-components/outer-component";
 import OuterFlexComponent from "@components/basic-components/main-flex-container";
 import Card from "@components/basic-components/card";
 import Description from "@components/basic-components/description";
+import Image from "next/image";
 type ChooseUs = {
   heading: string;
   image_url: string;
 };
 const chooseUsData: ChooseUs[] = data.services;
 const ChooseUs = () => (
-  <div id="why-us">
-    <OuterComponent>
-      <OuterFlexComponent>
-        <SectionHeader
-          buttonText="Why choose us?"
-          description="Choose us for our deep expertise in Magento development, personalized solutions tailored to your business needs, and a proven track record of successful projects that drive growth and enhance user experience."
-          style="w-[794px] lg:w-[700px] xs:w-full mx-auto"
-        >
-          <div className="w-full lg:w-[800px] leading-[1.4] capitalize xs:w-full text-wrap text-center mx-auto">
-            What you get with our{" "}
-            <span className="italic font-light">
-              Magento development agency
-            </span>
-          </div>
-        </SectionHeader>
-        <ChooseUsCards />
-      </OuterFlexComponent>
-    </OuterComponent>
-  </div>
+  <OuterComponent>
+    <OuterFlexComponent>
+      <SectionHeader
+        id="why-us"
+        buttonText="Why choose us?"
+        description="Choose us for our deep expertise in Magento development, personalized solutions tailored to your business needs, and a proven track record of successful projects that drive growth and enhance user experience."
+        style="w-[794px] lg:w-[700px] xs:w-full mx-auto"
+      >
+        <div className="w-full lg:w-[800px] leading-[1.4] capitalize xs:w-full text-wrap text-center mx-auto">
+          What you get with our{" "}
+          <span className="italic font-light">Magento development agency</span>
+        </div>
+      </SectionHeader>
+      <ChooseUsCards />
+    </OuterFlexComponent>
+  </OuterComponent>
 );
 
 export default ChooseUs;
@@ -77,7 +75,13 @@ const SingleCard: React.FC<{ isInView: boolean; data: ChooseUs }> = ({
       style="xxl:w-[200px] xxl:h-[200px] w-[180px] lg:w-[133px] lg:h-[133px] sm:w-[112px] sm:h-[112px] h-[180px] !rounded-[28px] lg:!rounded-5 sm:!rounded-[17px] xxl:!p-7 !p-5 lg:!p-4 rotate-[45deg]"
       isInView={isInView}
     >
-      <img src={data.image_url} className="-rotate-[45deg]" />
+      <Image
+        width={100}
+        height={100}
+        src={data.image_url}
+        alt="circle"
+        className="-rotate-[45deg] w-fit h-fit"
+      />
     </Card>
     <ArrowDiv data={data} />
   </div>
@@ -111,8 +115,11 @@ const ArrowDiv: React.FC<{ data: ChooseUs }> = ({ data }) => (
           dangerouslySetInnerHTML={{ __html: data.heading }}
         />
       </Description>
-      <img
-        className={`  ${
+      <Image
+        width={800}
+        height={900}
+        alt="image"
+        className={`w-fit h-auto  ${
           data.heading.includes("Custom")
             ? "absolute -right-10 sm:-right-4 xs:left-6 xs:rotate-[80deg]"
             : data.heading.includes("team")
@@ -126,7 +133,7 @@ const ArrowDiv: React.FC<{ data: ChooseUs }> = ({ data }) => (
               data.heading.includes("Maintenance")
             ? "absolute top-[-76px] lg:top-[-65px] sm:-top-[120%]  sm:rotate-[-15deg] xs:rotate-[-15deg] xs:top-[120%] xs:left-[45%] left-2 sm:left-[30%]"
             : ""
-        } lg:w-[53px] sm:w-[40px]`}
+        } lg:w-[53px] object-contain sm:w-[40px]`}
         src="/services/e-commerce-development/magento-development-services/why-choose-us/arrow.svg"
       />
     </div>

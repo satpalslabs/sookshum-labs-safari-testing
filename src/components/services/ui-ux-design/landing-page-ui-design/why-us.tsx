@@ -19,22 +19,21 @@ type card = {
 
 const chooseUsData: card[] = data;
 const WhyUs: React.FC = () => (
-  <div id="why-us">
-    <OuterComponent>
-      <OuterFlexComponent>
-        <SectionHeader
-          buttonText="Why Choose us?"
-          description="We leverage our team’s extensive design experience, our clients deep industry knowledge, and the insights we gain through our research."
-          style="w-[900px] lg:!w-[740px] sm:!w-[650px] xs:!w-full"
-        >
-          <div className="xs:w-full  mx-auto text-wrap text-center tracking-[-0.02em] leading-[1.4] capitalize">
-            Why Our landing page design boost your pPC campaign conversion
-          </div>
-        </SectionHeader>
-        <MainContainer />
-      </OuterFlexComponent>
-    </OuterComponent>
-  </div>
+  <OuterComponent>
+    <OuterFlexComponent>
+      <SectionHeader
+        id="why-us"
+        buttonText="Why Choose us?"
+        description="We leverage our team’s extensive design experience, our clients deep industry knowledge, and the insights we gain through our research."
+        style="w-[900px] lg:!w-[740px] sm:!w-[650px] xs:!w-full"
+      >
+        <div className="xs:w-full  mx-auto text-wrap text-center tracking-[-0.02em] leading-[1.4] capitalize">
+          Why Our landing page design boost your pPC campaign conversion
+        </div>
+      </SectionHeader>
+      <MainContainer />
+    </OuterFlexComponent>
+  </OuterComponent>
 );
 
 export default WhyUs;

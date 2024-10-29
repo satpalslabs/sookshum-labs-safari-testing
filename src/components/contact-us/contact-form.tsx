@@ -43,7 +43,10 @@ const InformationAboutCompany = () => (
         <H5 text="info@sookshum-labs.com" style="!text-white sm:text-[18px]" />
       </div>
       <div className="flex flex-col gap-2">
-        <Description text={""} classes="flex items-center gap-2 !text-white !font-normal">
+        <Description
+          text={""}
+          classes="flex items-center gap-2 !text-white !font-normal"
+        >
           <LocationIcon style="w-5 h-5" />
           <span className="uppercase !font-light">Our Location:</span>
         </Description>
@@ -362,10 +365,12 @@ const ContentUsForm: React.FC = () => {
                   }
                 }}
               ></input>
-              <img
+              <Image
+                width={900}
+                height={900}
                 src="/contact-us/attachment.svg"
                 alt="Click to upload"
-                className="absolute right-[2%] bottom-8 cursor-pointer"
+                className="absolute right-[2%] h-6 w-auto bottom-8 cursor-pointer"
                 onClick={handleImageClick}
               />
             </div>

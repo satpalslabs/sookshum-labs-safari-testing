@@ -19,23 +19,22 @@ const TechnologiesData: service | undefined = data.services.find(
   (technology) => technology.label == "ECommerce Development"
 );
 const Technologies = () => (
-  <div id="technologies">
-    <OuterComponent>
-      <OuterFlexComponent>
-        <SectionHeader
-          buttonText="Technologies we use"
-          description="We'll help you define your brand, build a powerful online presence, and reach your target audience effectively."
-          style="w-[794px] xs:w-full"
-        >
-          <div className="w-full xs:w-full text-wrap text-center mx-auto leading-[1.4] capitalize">
-            Building <span className="italic font-light">Tech-Driven</span>{" "}
-            eCommerce Store
-          </div>
-        </SectionHeader>
-        <TechnologiesCards />
-      </OuterFlexComponent>
-    </OuterComponent>
-  </div>
+  <OuterComponent>
+    <OuterFlexComponent>
+      <SectionHeader
+        id="technologies"
+        buttonText="Technologies we use"
+        description="We'll help you define your brand, build a powerful online presence, and reach your target audience effectively."
+        style="w-[794px] xs:w-full"
+      >
+        <div className="w-full xs:w-full text-wrap text-center mx-auto leading-[1.4] capitalize">
+          Building <span className="italic font-light">Tech-Driven</span>{" "}
+          eCommerce Store
+        </div>
+      </SectionHeader>
+      <TechnologiesCards />
+    </OuterFlexComponent>
+  </OuterComponent>
 );
 
 export default Technologies;

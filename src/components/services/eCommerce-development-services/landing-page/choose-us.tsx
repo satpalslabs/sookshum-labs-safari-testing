@@ -7,6 +7,7 @@ import Description from "@components/basic-components/description";
 import H6 from "@components/basic-components/headings/H6";
 import OuterComponent from "@components/basic-components/outer-component";
 import OuterFlexComponent from "@components/basic-components/main-flex-container";
+import Image from "next/image";
 type ChooseUs = {
   heading: string;
   description: string;
@@ -14,23 +15,22 @@ type ChooseUs = {
 };
 const chooseUsData: ChooseUs[] = data.services;
 const ChooseUs = () => (
-  <div id="why-us">
-    <OuterComponent>
-      <OuterFlexComponent>
-        <SectionHeader
-          buttonText="Why choose us?"
-          description="Trusted expertise, innovative solutions, and a proven track record of delivering exceptional ecommerce experiences that drive business growth."
-          style="w-[794px] xs:w-full mx-auto"
-        >
-          <div className="w-full xs:w-full text-wrap text-center mx-auto leading-[1.4] capitalize">
-            Why <span className="italic font-light">Choose us</span> for
-            eCommerce Development Services?
-          </div>
-        </SectionHeader>
-        <ChooseUsCards />
-      </OuterFlexComponent>
-    </OuterComponent>
-  </div>
+  <OuterComponent>
+    <OuterFlexComponent>
+      <SectionHeader
+        id="why-us"
+        buttonText="Why choose us?"
+        description="Trusted expertise, innovative solutions, and a proven track record of delivering exceptional ecommerce experiences that drive business growth."
+        style="w-[794px] xs:w-full mx-auto"
+      >
+        <div className="w-full xs:w-full text-wrap text-center mx-auto leading-[1.4] capitalize">
+          Why <span className="italic font-light">Choose us</span> for eCommerce
+          Development Services?
+        </div>
+      </SectionHeader>
+      <ChooseUsCards />
+    </OuterFlexComponent>
+  </OuterComponent>
 );
 
 export default ChooseUs;
@@ -54,7 +54,7 @@ const ChooseUsCards: React.FC = () => {
           key={index}
         >
           <div className={`w-full overflow-hidden`}>
-            <img
+            <Image
               src={ChooseUsCard.image_url}
               height={400}
               width={400}

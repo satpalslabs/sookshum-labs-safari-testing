@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 type props = {
@@ -53,7 +54,7 @@ const PrimaryButton: React.FC<props> = ({ text, style, icon = true, link }) => {
           >
             <div>{text}</div>
             {icon && (
-              <img
+              <Image
                 src="/header/Top-Nav-button-arrow.svg"
                 className="w-[10px] h-[10px] xs:w-2 xs:h-2"
                 alt="top-arrow"
@@ -91,7 +92,7 @@ const PrimaryButton: React.FC<props> = ({ text, style, icon = true, link }) => {
           >
             <div>{text}</div>
             {icon && (
-              <img
+              <Image
                 src="/header/Top-Nav-button-arrow.svg"
                 className="w-[10px] h-[10px] xs:w-2 xs:h-2"
                 alt="top-arrow"

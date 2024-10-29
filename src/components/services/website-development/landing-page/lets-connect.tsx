@@ -10,11 +10,9 @@ import OuterComponent from "@components/basic-components/outer-component";
 
 let letsConnectListData: string[] = data.data;
 const LetsConnect: React.FC = () => (
-  <div id="connect">
     <OuterComponent>
       <TextContainer />
     </OuterComponent>
-  </div>
 );
 
 export default LetsConnect;

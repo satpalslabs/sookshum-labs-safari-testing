@@ -19,23 +19,22 @@ type service = {
 
 const ourServiceData: service[] = data;
 const OurServices: React.FC = () => (
-  <div id="our-services">
-    <OuterComponent>
-      <OuterFlexComponent>
-        <SectionHeader
-          buttonText="Our services"
-          description="Sookshum Labs specializes in Retool development, delivering tailored solutions to address your business needs."
-          style="w-[85.5%] lg:!w-[740px] xs:!w-full"
-        >
-          <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
-            Get Secure, Fast, And Highly Adaptable Retool Solutions With{" "}
-            <span className="italic font-light"> Sookshum Labs </span>
-          </div>
-        </SectionHeader>
-        <MainContainer />
-      </OuterFlexComponent>
-    </OuterComponent>
-  </div>
+  <OuterComponent>
+    <OuterFlexComponent>
+      <SectionHeader
+        id="our-services"
+        buttonText="Our services"
+        description="Sookshum Labs specializes in Retool development, delivering tailored solutions to address your business needs."
+        style="w-[85.5%] lg:!w-[740px] xs:!w-full"
+      >
+        <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
+          Get Secure, Fast, And Highly Adaptable Retool Solutions With{" "}
+          <span className="italic font-light"> Sookshum Labs </span>
+        </div>
+      </SectionHeader>
+      <MainContainer />
+    </OuterFlexComponent>
+  </OuterComponent>
 );
 
 export default OurServices;

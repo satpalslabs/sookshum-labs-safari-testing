@@ -19,23 +19,22 @@ type discover = {
 
 const discoverData: discover[] = data;
 const Discover: React.FC = () => (
-  <div id="discover">
-    <OuterComponent>
-      <OuterFlexComponent>
-        <SectionHeader
-          buttonText="Discover"
-          description="We merge our team’s extensive design experience with our clients deep understanding of their industries and the insights gained from our research."
-          style="w-[74.5%] lg:!w-[740px] xs:!w-full"
-        >
-          <div className="mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
-            Keep your users at the heart of your design process with our user
-            experience design (UXD) practices.
-          </div>
-        </SectionHeader>
-        <MainContainer />
-      </OuterFlexComponent>
-    </OuterComponent>
-  </div>
+  <OuterComponent>
+    <OuterFlexComponent>
+      <SectionHeader
+        id="discover"
+        buttonText="Discover"
+        description="We merge our team’s extensive design experience with our clients deep understanding of their industries and the insights gained from our research."
+        style="w-[74.5%] lg:!w-[740px] xs:!w-full"
+      >
+        <div className="mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
+          Keep your users at the heart of your design process with our user
+          experience design (UXD) practices.
+        </div>
+      </SectionHeader>
+      <MainContainer />
+    </OuterFlexComponent>
+  </OuterComponent>
 );
 
 export default Discover;

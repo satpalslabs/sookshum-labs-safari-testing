@@ -15,7 +15,7 @@ import Work from "./work";
 
 const content_heroSection: HeroSection = {
   gradientTextStyle: "",
-  URL: "/services/admin-development/bg-image.png",
+  URL: "/services/admin-development/bg-image.webp",
   fallback: "",
   "contact-us": true,
   image: true,

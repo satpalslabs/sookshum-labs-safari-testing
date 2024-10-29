@@ -8,12 +8,13 @@ const OurProcess = () => {
     <OuterComponent>
       <OuterFlexComponent>
         <SectionHeader
+          id="our-process"
           buttonText="Our Process"
           description="We integrate a business-driven and user-centered UX approach in our product design, ensuring that both business goals and user needs are met effectively."
           style="w-[80%] md:w-[750px] sm:w-[650px] "
         >
           <div className="w-full lg:leading-[63px] sm:leading-[54px] xs:leading-[32px] xs:w-full text-wrap text-center leading-[1.4] capitalize">
-          Landing page design process that covers your unique business goals 
+            Landing page design process that covers your unique business goals
           </div>
         </SectionHeader>
         <ImageContainer />
@@ -35,7 +36,7 @@ const ImageContainer: React.FC = () => (
       src="/services/ui-ux-design/landing-page-ui-design/desktop.png"
       alt=""
     />
-      <Image
+    <Image
       blurDataURL="URL"
       placeholder="blur"
       width={1800}
@@ -58,7 +59,7 @@ const ImageContainer: React.FC = () => (
       placeholder="blur"
       width={1000}
       height={1500}
-      className="hidden xs:block w-full h-[1111px]"
+      className="hidden xs:block w-full h-[1111px] 3xs:h-[850px] object-contain"
       src="/services/ui-ux-design/landing-page-ui-design/mobile.png"
       alt=""
     />

@@ -8,6 +8,7 @@ import H5 from "@components/basic-components/headings/H5";
 import H2 from "@components/basic-components/headings/H2";
 import dynamic from "next/dynamic";
 import OuterComponent from "@components/basic-components/outer-component";
+import Image from "next/image";
 export type valuePoint = {
   icon: string;
   title: string;
@@ -61,9 +62,11 @@ const OurValueCard: React.FC<{ value: valuePoint; isInView: boolean }> = (
 ) => (
   <Card style="mt-[43px] gap-6 w-full" isInView={props.isInView}>
     <div className="px-4 md:px-2 sm:px-[6px] md:flex-1 pb-8 xxl:pb-16 xs:pb-5 flex ">
-      <img
-        className="h-[136px] lg:h-[132px] xxl:-mt-[19.3%] sm:h-[108px] xs:-mt-[16%] lg:-mt-[20%] sm:-mt-[10%] object-cover -mt-[30%]"
+      <Image
+        className="h-[136px] w-auto lg:h-[132px] xxl:-mt-[19.3%] sm:h-[108px] xs:-mt-[16%] lg:-mt-[20%] sm:-mt-[10%] object-cover -mt-[30%]"
         alt=""
+        width={600}
+        height={600}
         src={props.value.icon}
       />
     </div>

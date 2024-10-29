@@ -19,22 +19,21 @@ type item_type = {
 
 const dataItems: item_type[] = data;
 const WhoWeAre: React.FC = () => (
-  <div id="who-we-are">
-    <OuterComponent>
-      <OuterFlexComponent>
-        <SectionHeader
-          buttonText="Who we are"
-          description="We blend our design expertise, our clients industry knowledge, and research-driven insights to create powerful solutions."
-          style="xxl:!w-[75%] !w-full lg:!w-[740px] xs:!w-full"
-        >
-          <div className="xs:w-full sm:w-[80%] w-full mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
-            We will give your website a makeover and get you more conversions
-          </div>
-        </SectionHeader>
-        <MainContainer />
-      </OuterFlexComponent>
-    </OuterComponent>
-  </div>
+  <OuterComponent>
+    <OuterFlexComponent>
+      <SectionHeader
+        id="who-we-are"
+        buttonText="Who we are"
+        description="We blend our design expertise, our clients industry knowledge, and research-driven insights to create powerful solutions."
+        style="xxl:!w-[75%] !w-full lg:!w-[740px] xs:!w-full"
+      >
+        <div className="xs:w-full sm:w-[80%] w-full mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
+          We will give your website a makeover and get you more conversions
+        </div>
+      </SectionHeader>
+      <MainContainer />
+    </OuterFlexComponent>
+  </OuterComponent>
 );
 
 export default WhoWeAre;

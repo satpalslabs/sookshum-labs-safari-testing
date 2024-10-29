@@ -16,23 +16,22 @@ export type dataItemType = {
 };
 
 const Work: React.FC = () => (
-  <div id="work">
-    <OuterComponent>
-      <OuterFlexComponent>
-        <SectionHeader
-          style="lg:w-[650px] mx-auto"
-          buttonText="Work"
-          description="Immerse yourself in a showcase of our latest and greatest projects. Get inspired by what's possible."
-        >
-          <div className="w-[80%] lg:w-full text-wrap text-center mx-auto leading-[1.4] capitalize">
-            See Our Recent{" "}
-            <span className="italic font-normal">eCommerce Projects.</span>
-          </div>
-        </SectionHeader>
-        <WorkCards type="" />
-      </OuterFlexComponent>
-    </OuterComponent>
-  </div>
+  <OuterComponent>
+    <OuterFlexComponent>
+      <SectionHeader
+        id="work"
+        style="lg:w-[650px] mx-auto"
+        buttonText="Work"
+        description="Immerse yourself in a showcase of our latest and greatest projects. Get inspired by what's possible."
+      >
+        <div className="w-[80%] lg:w-full text-wrap text-center mx-auto leading-[1.4] capitalize">
+          See Our Recent{" "}
+          <span className="italic font-normal">eCommerce Projects.</span>
+        </div>
+      </SectionHeader>
+      <WorkCards type="" />
+    </OuterFlexComponent>
+  </OuterComponent>
 );
 
 export default Work;

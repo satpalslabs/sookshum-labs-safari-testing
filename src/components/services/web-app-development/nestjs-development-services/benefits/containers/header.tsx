@@ -8,6 +8,7 @@ const SectionHeader = dynamic(
 
 const Header: React.FC = () => (
   <SectionHeader
+    id="benefits"
     style="!w-[900px] lg:!w-full"
     buttonText="Benefits"
     description="Discover the advantages of choosing NestJS for your software development needs and how it can enhance your business. "
