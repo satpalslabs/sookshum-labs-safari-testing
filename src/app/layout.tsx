@@ -28,9 +28,11 @@ export const metadata: Metadata = {
   keywords: [
     "Custom Software Development",
     "Full-stack Development",
-    "Web Development",
+    "Web App Development",
     "Mobile App Development",
     "eCommerce Development",
+    "Low code Development",
+    "Website Development",
   ],
   openGraph: {
     title: "Sookshum Labs: Custom Software Development Company",
@@ -41,7 +43,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "/og-image.png",
+        url: "/og-image.jpg",
         width: 400,
         height: 400,
         alt: "Sookshum Labs Logo",
@@ -52,7 +54,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: [
       {
-        url: "/og-image.png",
+        url: "/og-image.jpg",
         width: 400,
         height: 400,
         alt: "Sookshum Labs Logo",
@@ -67,7 +69,6 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-  themeColor: "#000000",
   viewport: "width=device-width, initial-scale=1.0",
 };
 
