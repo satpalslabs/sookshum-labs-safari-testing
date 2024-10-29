@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://pbs.twimg.com/profile_images/1422196875134787584/tKxland__400x400.jpg",
+        url: "/og-image.jpg",
         width: 400,
         height: 400,
         alt: "Sookshum Labs Logo",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: [
       {
-        url: "https://pbs.twimg.com/profile_images/1422196875134787584/tKxland__400x400.jpg",
+        url: "/og-image.jpg",
         width: 400,
         height: 400,
         alt: "Sookshum Labs Logo",
@@ -69,7 +69,6 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-  viewport: "width=device-width, initial-scale=1.0",
 };
 
 const poppins = Poppins({
@@ -94,6 +93,8 @@ export default function RootLayout({
           as="image"
           type="image/svg+xml"
         />
+        <meta content="text/html; charset=UTF-8" name="Content-Type" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="preload" href="/home/hero/fallback.webp" as="image" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
