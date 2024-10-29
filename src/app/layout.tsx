@@ -5,7 +5,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import Header from "../components/header";
-import "@styles/globals.css"; 
+import "@styles/globals.css";
 import Footer from "@components/footer";
 import Head from "next/head";
 import { GoogleAnalytics } from "@next/third-parties/google";
@@ -41,9 +41,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "/og-image.jpg",
-        width: 1200,
-        height: 630,
+        url: "/og-image.png",
+        width: 400,
+        height: 400,
         alt: "Sookshum Labs Logo",
       },
     ],
@@ -52,22 +52,22 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: [
       {
-        url: "/og-image.jpg",
-        width: 1200,
-        height: 630,
+        url: "/og-image.png",
+        width: 400,
+        height: 400,
         alt: "Sookshum Labs Logo",
       },
     ],
     title: "Sookshum Labs: Custom Software Development Company",
     description:
       "Sookshum Labs offers custom full-stack development for web and mobile, delivering tailored eCommerce platforms, websites, and apps to meet your business needs.",
-    site: "https://www.sookshumlabs.com", 
+    site: "https://www.sookshumlabs.com",
   },
   robots: {
     index: true,
     follow: true,
   },
-  themeColor: "#000000", 
+  themeColor: "#000000",
   viewport: "width=device-width, initial-scale=1.0",
 };
 
