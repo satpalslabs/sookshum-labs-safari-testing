@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "https://pbs.twimg.com/profile_images/1422196875134787584/tKxland__400x400.jpg",
         width: 400,
         height: 400,
         alt: "Sookshum Labs Logo",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "https://pbs.twimg.com/profile_images/1422196875134787584/tKxland__400x400.jpg",
         width: 400,
         height: 400,
         alt: "Sookshum Labs Logo",
