@@ -2,7 +2,6 @@
  * This component contains the Arrow buttons of slider.
  */
 
-
 const ArrowButtons: React.FC<{
   atStart: boolean;
   atEnd: boolean;
@@ -11,11 +10,11 @@ const ArrowButtons: React.FC<{
   return (
     <div className="absolute right-[6%] lg:right-[4%] -top-[40%] lg:-top-[35%] sm:right-4  xs:hidden">
       <div className="flex gap-5">
-        <button
+        <div
           id="arrow-right-1"
-          name="Move right"
+          className="cursor-pointer"
           onClick={() => {
-            swiperContainerRef.current.swiper.slidePrev()
+            swiperContainerRef.current.swiper.slidePrev();
           }}
         >
           <svg
@@ -33,12 +32,12 @@ const ArrowButtons: React.FC<{
               fill={atStart ? "#777E91" : "white"}
             />
           </svg>
-        </button>
-        <button
+        </div>
+        <div
           id="arrow-left-1"
-          className=" arrow"
+          className="cursor-pointer arrow"
           onClick={() => {
-            swiperContainerRef.current.swiper.slideNext()
+            swiperContainerRef.current.swiper.slideNext();
           }}
         >
           <svg
@@ -56,7 +55,7 @@ const ArrowButtons: React.FC<{
               fill={atEnd ? "#777E91" : "white"}
             />
           </svg>
-        </button>
+        </div>
       </div>
     </div>
   );

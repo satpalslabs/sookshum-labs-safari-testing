@@ -12,14 +12,13 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
   icons: {
-    icon: "/favicon.png",
-    apple: "/favicon.png", // Apple touch icon for iOS devices
+    icon: "/favicon.ico",
   },
   alternates: {
-    canonical: "/",
+    canonical: "https://www.sookshum-labs.com/",
     languages: {
-      "en-US": "/en-US",
-      "de-DE": "/de-DE",
+      "en-US": "https://www.sookshum-labs.com/en-US",
+      "de-DE": "https://www.sookshum-labs.com/de-DE",
     },
   },
   title: "Sookshum Labs: Custom Software Development Company",
@@ -85,7 +84,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${poppins.variable} scroll-smooth`}>
+    <html lang="en-US" className={`${poppins.variable} scroll-smooth`} suppressHydrationWarning>
       <Head>
         <link
           rel="preload"

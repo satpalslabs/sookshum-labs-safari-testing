@@ -5,7 +5,6 @@
 import dynamic from "next/dynamic";
 import { dataItemType } from "./main-container";
 
-const H6 = dynamic(() => import("@components/basic-components/headings/H6"));
 const Description = dynamic(
   () => import("@components/basic-components/description")
 );
@@ -24,7 +23,9 @@ const TextCard: React.FC<{
     }`}
     onClick={() => setSelectedItem(index)}
   >
-    <H6 classes="text-white" text={item.title} />
+    <div className="font-poppins text-[19px] leading-[1.4] md:text-base sm:text-sm text-h3_heading font-medium">
+      {item.title}
+    </div>
     {item.description && (
       <Description
         children={null}

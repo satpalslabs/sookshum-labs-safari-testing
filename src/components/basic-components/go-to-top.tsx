@@ -17,8 +17,8 @@ const GoTopButton = () => {
   }, []);
 
   return (
-    <button
-      className={`transition-all duration-300 z-[99999] fixed p-3 rounded-full bg-innerContainer bottom-[120px] lg:bottom-[110px] sm:bottom-[100px] xs:bottom-[90px] border border-viewportBorder shadow-darkButton hover:shadow-buttonInset hover:bg-buttonGradient right-[15px]   ${
+    <div
+      className={`transition-all cursor-pointer duration-300 z-[99999] fixed p-3 rounded-full bg-innerContainer bottom-[120px] lg:bottom-[110px] sm:bottom-[100px] xs:bottom-[90px] border border-viewportBorder shadow-darkButton hover:shadow-buttonInset hover:bg-buttonGradient right-[15px]   ${
         showGoTop ? " opacity-100" : "opacity-0"
       }`}
       onClick={handleScrollUp}
@@ -40,7 +40,7 @@ const GoTopButton = () => {
           />
         </svg>
       </div>
-    </button>
+    </div>
   );
 };
 export default GoTopButton;

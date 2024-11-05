@@ -9,8 +9,8 @@ const MenuButton = ({
   showLinks: boolean;
   setShowLinks: React.Dispatch<React.SetStateAction<boolean>>;
 }) => (
-  <button
-    className="hidden sm:flex sm:flex-col h-12 justify-center"
+  <div
+    className="hidden sm:flex sm:flex-col h-12 justify-center cursor-pointer"
     onClick={() => setShowLinks((prev: boolean) => !prev)}
   >
     <svg
@@ -41,7 +41,7 @@ const MenuButton = ({
         fill="#F8F8F8"
       />
     </svg>
-  </button>
+  </div>
 );
 
 export default MenuButton;

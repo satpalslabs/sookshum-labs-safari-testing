@@ -6,8 +6,6 @@ const Description = dynamic(
   () => import("@components/basic-components/description")
 );
 
-const H6 = dynamic(() => import("@components/basic-components/headings/H6"));
-
 import Image from "next/image";
 import { industryType } from ".";
 import dynamic from "next/dynamic";
@@ -32,7 +30,9 @@ const Industry: React.FC<{
       className="h-[179px] w-fit lg:h-[112px] pl-3 pb-2 pt-1 object-contain float-left sm:w-[100px]"
     />
     <div className="p-4 flex flex-col gap-[10px] xs:p-1 ">
-      <H6 classes="!text-white" text={industry.title} />
+      <div className="font-poppins text-[19px] leading-[1.4] md:text-base sm:text-sm font-medium text-white ">
+        {industry.title}
+      </div>
       <Description
         children={null}
         text={industry.description}
