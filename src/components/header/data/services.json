@@ -1,7 +1,7 @@
 {
     "services": [
         {
-            "label": "ECommerce Development",
+            "label": "E-commerce Development",
             "link": "/ecommerce-development-services",
             "content": {
                 "technologies": [
@@ -39,7 +39,7 @@
                     },
                     {
                         "logo": "/header/logos/nextjs.png",
-                        "title": "Nextjs",
+                        "title": "Nextjs Development",
                         "about": "",
                         "link": "/nextjs-development-services"
                     }

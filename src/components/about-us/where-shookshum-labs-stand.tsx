@@ -127,7 +127,7 @@ const ReviewCard: React.FC<{ isInView: boolean; index: number }> = (props) => {
         <DetailReviewCard1
           heading={"170+ Projects Delivered with Precision and Excellence"}
           detail={
-            "With over 170 successful projects under our belt, we have consistently delivered solutions that drive real results. Our track record reflects our ability to tackle diverse challenges, adapt to evolving technologies, and create custom solutions that fit our clients’ unique business needs. From small startups to global enterprises, we’ve partnered with companies across industries to build innovative web, ecommerce, and mobile platforms that not only meet but exceed expectations. Every project we take on is a testament to our focus on quality, collaboration, and long-term client success. rust us to bring the same level of dedication and precision to your next project."
+            "With over 170 successful projects under our belt, we have consistently delivered solutions that drive real results. Our track record reflects our ability to tackle diverse challenges, adapt to evolving technologies, and create custom solutions that fit our clients’ unique business needs. From small startups to global enterprises, we’ve partnered with companies across industries to build innovative web, ecommerce, and mobile platforms that not only meet but exceed expectations. Every project we take on is a testament to our focus on quality, collaboration, and long-term client success. Trust us us to bring the same level of dedication and precision to your next project."
           }
           isInView={props.isInView}
         />

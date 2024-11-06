@@ -11,9 +11,6 @@ import Head from "next/head";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
-  icons: {
-    icon: "/favicon.ico",
-  },
   alternates: {
     canonical: "https://www.sookshum-labs.com/",
     languages: {
