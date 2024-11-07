@@ -15,12 +15,14 @@ import CustomInput from "@components/basic-components/form-components/input";
 import { Bounce, ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Image from "next/image";
-import $ from "jquery";
 import dynamic from "next/dynamic";
 import {
   isPossiblePhoneNumber,
   isValidPhoneNumber,
 } from "react-phone-number-input";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
+
 const ContactForm: React.FC = () => (
   <div
     id="contact-form"
@@ -99,6 +101,7 @@ const ContentUsForm: React.FC = () => {
   const fileInputRef = useRef<HTMLInputElement | null>(null);
   const [error, setError] = useState<any>({});
   const [disableForm, setDisableForm] = useState<boolean>(false);
+  const [country, setCountry] = useState<string>("IN");
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
@@ -309,26 +312,26 @@ const ContentUsForm: React.FC = () => {
                 </span>
               )}
             </span>
-            <span>
-              <CustomInput
-                setError={setError}
-                type="number"
-                text="Your Phone Number"
-                style={`w-full ${
-                  error["phone-no"] &&
-                  error["phone-no"] != "" &&
-                  "!text-[red] !placeholder-[red] mb-1"
-                }`}
+            <div className="relative flex flex-col gap-1 w-full">
+              <PhoneInput
+                country={"us"}
                 value={formData["phone-no"]}
-                setValue={setFormData}
-                keyName={"phone-no"}
+                onChange={(phone) =>
+                  setFormData((prev) => {
+                    return { ...prev, "phone-no": phone };
+                  })
+                }
+                dropdownClass="!border-borderDarkButton ![backdrop-filter:blur(100px)] !border-none !w-[520px] !p-5 !rounded-b-xl !pt-2 !text-lg !font-poppins !border-solid !border !bg-darkButton !shadow-buttonInset no-scrollbar"
+                inputClass=" !py-10 !w-full !px-8 !pl-16  !text-white !text-base md:!px-[20px] !border-borderDarkButton ![backdrop-filter:blur(100px)] sm:!py-4 sm:!px-5 !rounded-[32px] !border-solid !border !bg-darkButton !shadow-buttonInset !normal-case !text-[16px] md:!text-sm sm:!text-[11px] !font-normal !font-poppins !overflow-hidden focus:!outline-none focus:!border-[#ffffff2d] !outline-none focus:!border-[#ffffff2d]"
+                searchClass="!bg-transparent"
+                buttonClass="!bg-transparent !border-none hover:!bg-transparent !ml-4"
               />
               {error["phone-no"] != "" && (
                 <span className="text-sm pl-4 font-poppins font-light text-[red]">
                   {error["phone-no"]}
                 </span>
               )}
-            </span>
+            </div>
           </div>
           <H5 text="Tell us more about your project" style="!text-white" />
           <div>

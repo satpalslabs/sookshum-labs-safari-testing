@@ -11,10 +11,10 @@
     --dark-button-text: #f8f8f8;
     --border-dark-button: #ffffff1a;
     --secondary-color: #F8F8F8B2;
-    --h3-heading:#F8F8F8F2;
+    --h3-heading: #F8F8F8F2;
     --light-text-primary: #8F8F8F;
     --light-text: #ffffffcc;
-    --dropdown-text:#FFFFFF80;
+    --dropdown-text: #FFFFFF80;
     --custom-white: #f4f0f0;
     --custom-yellow: #FCCE62;
     --view-port-border: #73737366;
@@ -67,6 +67,24 @@
         -ms-overflow-style: none;
         scrollbar-width: none;
     }
+}
+
+[aria-haspopup="listbox"] .flag {
+    scale: 1.4;
+}
+
+.react-tel-input .selected-flag:hover,
+.react-tel-input .selected-flag:focus,
+
+.react-tel-input .flag-dropdown.open .selected-flag {
+    background-color: transparent !important;
+    transition: all 300ms linear !important;
+}
+
+.react-tel-input .country-list .country:hover,.react-tel-input .country-list .country.highlight{
+    background-color:  #f79b12e1  !important;
+    border-radius: 6px;
+  
 }
 
 /* @media (prefers-color-scheme: dark) {

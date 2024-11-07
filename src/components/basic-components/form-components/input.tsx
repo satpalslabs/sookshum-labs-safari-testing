@@ -31,7 +31,7 @@ const CustomInput: React.FC<props> = (props) => {
           if (
             props.type == "number" &&
             props.keyName == "phone-no" &&
-            value.length > 4
+            value.length > 5
           ) {
             value = formatPhoneNumberIntl(value);
           }
