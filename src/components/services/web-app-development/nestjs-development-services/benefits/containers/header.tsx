@@ -13,7 +13,7 @@ const Header: React.FC = () => (
     buttonText="Benefits"
     description="Discover the advantages of choosing NestJS for your software development needs and how it can enhance your business. "
   >
-    <div className="sm:text-wrap text-center leading-[1.4] capitalize">
+    <div className="sm:text-wrap text-center leading-[1.4]">
       Benefits of
       <span className="italic font-light"> NestJS </span>Software Development
     </div>

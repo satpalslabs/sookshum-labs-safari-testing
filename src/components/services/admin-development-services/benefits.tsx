@@ -27,7 +27,7 @@ const Benefits: React.FC = () => (
         description="Optimize your operations, improve oversight, and increase efficiency with a custom admin app designed specifically for your business requirements."
         style="w-[85.5%] lg:!w-[740px] xs:!w-full"
       >
-        <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em]  capitalize ">
+        <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em]   ">
           Benefits of{" "}
           <span className="italic font-light w-full">Admin App</span>{" "}
           Development

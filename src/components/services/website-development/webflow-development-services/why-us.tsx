@@ -9,7 +9,6 @@ import OuterComponent from "@components/basic-components/outer-component";
 import OuterFlexComponent from "@components/basic-components/main-flex-container";
 import Description from "@components/basic-components/description";
 import Image from "next/image";
-import H6 from "@components/basic-components/headings/H6";
 import H3 from "@components/basic-components/headings/H3";
 
 type service = {
@@ -28,9 +27,9 @@ const WhyUs: React.FC = () => (
         description="Sookshum Labs stands out from the average Webflow agency. With a solid foundation and a proven history of several successful Webflow projects, we deliver exceptional results that elevate your web presence."
         style="w-[85.5%] lg:!w-[740px] xs:!w-full"
       >
-        <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
+        <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] ">
           Why choose us for <span className="italic font-light">Webflow</span>{" "}
-          development?
+          Development?
         </div>
       </SectionHeader>
       <MainContainer />

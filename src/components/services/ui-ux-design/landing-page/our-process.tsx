@@ -13,9 +13,9 @@ const OurProcess = () => {
           description="We integrate a business-driven and user-centered UX approach in our product design, ensuring that both business goals and user needs are met effectively."
           style="w-[794px] md:w-[650px] "
         >
-          <div className="w-full md:w-[700px] lg:leading-[63px] sm:leading-[54px] xs:leading-[32px] xs:w-full text-wrap text-center leading-[1.4] capitalize">
-            Our <span className="italic font-light">UI/UX design </span> aligns
-            perfectly with your business goals.
+          <div className="w-full md:w-[700px] lg:leading-[63px] sm:leading-[54px] xs:leading-[32px] xs:w-full text-wrap text-center leading-[1.4]">
+            Our <span className="italic font-light">UI/UX Design </span> Aligns
+            Perfectly with Your Business Goals.
           </div>
         </SectionHeader>
         <ImageContainer />

@@ -11,11 +11,17 @@ import Head from "next/head";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.sookshum-labs.com"),
+  icons: {
+    icon: "https://www.sookshum-labs.com/favicon.png",
+    apple: "https://www.sookshum-labs.com/favicon.png",
+    shortcut: "https://www.sookshum-labs.com/favicon.png",
+  },
   alternates: {
     canonical: "https://www.sookshum-labs.com/",
     languages: {
-      "en-US": "https://www.sookshum-labs.com/en-US",
-      "de-DE": "https://www.sookshum-labs.com/de-DE",
+      "en-US": "https://www.sookshum-labs.com",
+      "de-DE": "https://www.sookshum-labs.com",
     },
   },
   title: "Sookshum Labs: Custom Software Development Company",
@@ -81,13 +87,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en-US" className={`${poppins.variable} scroll-smooth`} suppressHydrationWarning>
+    <html
+      lang="en-US"
+      className={`${poppins.variable} scroll-smooth`}
+      suppressHydrationWarning
+    >
       <Head>
         <link
           rel="preload"
           href="/home/hero/dots.svg"
           as="image"
           type="image/svg+xml"
+        />
+        <link
+          rel="shortcut icon"
+          href="https://www.sookshum-labs.com/favicon.png"
+          sizes="any"
+          type="image/png"
         />
         <meta content="text/html; charset=UTF-8" name="Content-Type" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />

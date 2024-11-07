@@ -27,7 +27,7 @@ const OurServices: React.FC = () => (
         description="Sookshum Labs speciialiizes iin NestJS development, providing custom solutions to meet your business requirements. "
         style="w-[95.5%] lg:!w-[740px] xs:!w-full"
       >
-        <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] capitalize text-wrap text-center tracking-[-0.02em]">
+        <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4]  text-wrap text-center tracking-[-0.02em]">
           Our <span className="italic font-light"> NestJS </span> Software
           Development Services
         </div>

@@ -7,7 +7,7 @@ type description = {
 
 const Description: React.FC<description> = ({ text, children, classes }) => (
   <div
-    className={`font-poppins grow text-base leading-6 md:leading-5 md:text-sm sm:text-xs font-normal text-secondary ${classes}`}
+    className={`font-poppins grow text-base leading-6 md:leading-5 md:text-sm sm:text-[13px] font-normal text-secondary ${classes}`}
   >
     {children ? children : text}
   </div>

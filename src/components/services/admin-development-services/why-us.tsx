@@ -27,10 +27,10 @@ const WhyUs: React.FC = () => (
           description="Sookshum Labs stands out as a top admin app development company, driving businesses forward in the digital landscape. "
           style="w-[80.5%] lg:!w-[740px] xs:!w-full"
         >
-          <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
-            Why choose us for{" "}
+          <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] ">
+            Why Choose Us for{" "}
             <span className="italic font-light w-full">Admin App</span>{" "}
-            development?
+            Development?
           </div>
         </SectionHeader>
         <MainContainer />

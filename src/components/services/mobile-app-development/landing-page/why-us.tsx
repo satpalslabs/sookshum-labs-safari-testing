@@ -71,9 +71,9 @@ const ChooseUs = () => {
             description="Whether you want to consult and idea, add missing capabilities, quickly expand your team, or hand over a project - we’ve got your covered. "
             style="w-[900px] lg:w-[50%] sm:w-[65%] xs:w-full "
           >
-            <div className="w-[80%] sm:w-[90%] text-wrap xs:w-full text-center mx-auto xs:text-wrap leading-[1.4] capitalize">
-              Why <span className="italic font-light">choose us </span> for app
-              development services?
+            <div className="w-[80%] sm:w-[90%] text-wrap xs:w-full text-center mx-auto xs:text-wrap leading-[1.4]">
+              Why <span className="italic font-light">Choose Us </span> for App
+              Development Services?
             </div>
           </SectionHeader>
           <div ref={ref}>

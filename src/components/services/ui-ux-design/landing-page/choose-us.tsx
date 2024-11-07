@@ -25,8 +25,8 @@ const ChooseUs = () => (
         description="Choose us for exceptional UI/UX design tailored to your needs. We blend creativity with strategy to deliver intuitive, impactful designs that drive user engagement and business growth."
         style="w-[784px] xs:w-full"
       >
-        <div className="w-[80%] xs:w-full text-wrap text-center mx-auto leading-[1.4] capitalize">
-          How we can help you <span className="italic font-light">Succeed</span>
+        <div className="w-[80%] xs:w-full text-wrap text-center mx-auto leading-[1.4] ">
+          How We can Help You <span className="italic font-light">Succeed</span>
         </div>
       </SectionHeader>
       <ChooseUsCards />

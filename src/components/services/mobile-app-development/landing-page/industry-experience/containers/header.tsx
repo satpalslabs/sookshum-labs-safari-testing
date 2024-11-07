@@ -10,10 +10,10 @@ const Header: React.FC = () => (
     buttonText="Industries we serve"
     description="As a leading mobile app development company with a focus on cutting-edge technology advancements, serves businesses across various industries with cutting-edge digital solutions, improving their business operations."
   >
-    <div className="text-wrap text-center w-full tracking-tight leading-[1.4] capitalize">
-      Industries benefiting from our
-      <span className="italic font-light"> mobile app development </span>
-      services
+    <div className="text-wrap text-center w-full tracking-tight leading-[1.4] ">
+      Industries Benefiting from Our
+      <span className="italic font-light"> Mobile App Development </span>
+      Services
     </div>
   </SectionHeader>
 );

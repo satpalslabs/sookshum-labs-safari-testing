@@ -27,9 +27,9 @@ const WhyUs: React.FC = () => (
         description="As a leading UI/UX design agency, we combine research, strategy, and technology to deliver tailored digital solutions for your eCommerce, web, and mobile products."
         style="xxl:!w-[800px] !w-full lg:!w-[740px] xs:!w-full"
       >
-        <div className="xs:w-full sm:w-[80%] w-full mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
+        <div className="xs:w-full sm:w-[80%] w-full mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em]">
           Redefine Experiences with <br className="sm:hidden" />
-          best <span className="italic font-light"> ui ux design </span> agency
+          Best <span className="italic font-light"> UI UX Design </span> Agency
         </div>
       </SectionHeader>
       <MainContainer />

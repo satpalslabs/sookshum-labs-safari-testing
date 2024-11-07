@@ -24,8 +24,8 @@ const OurProcess: React.FC = () => (
         description="We support businesses at every stage of software development, providing effective and elegantly designed solutions to enhance your daily operations."
         style="w-[990px] lg:!w-[740px] xs:!w-[400px] 3xs:!w-[310px]"
       >
-        <div className="xs:w-full w-full sm:w-[80%] mx-auto leading-[1.4] capitalize text-wrap text-center">
-          Process Of
+        <div className="xs:w-full w-full sm:w-[80%] mx-auto leading-[1.4] text-wrap text-center">
+          Process of
           <span className="italic font-light"> Next.js </span> Development
         </div>
       </SectionHeader>

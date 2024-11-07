@@ -27,7 +27,7 @@ const OurServices: React.FC = () => (
           description="We create digital experiences that deliver impactful results, helping you reach your business goals, whether that's boosting brand awareness or driving sales to new heights. "
           style="w-[980px] lg:!w-[650px] xs:!w-full"
         >
-          <div className="xs:w-full mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
+          <div className="xs:w-full mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em]">
             Experience world-Class{" "}
             <span className="italic font-light"> Mobile Application </span>{" "}
             Design Services

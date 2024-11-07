@@ -23,8 +23,8 @@ const ChooseUs = () => (
         description="Trusted expertise, innovative solutions, and a proven track record of delivering exceptional ecommerce experiences that drive business growth."
         style="w-[794px] xs:w-full mx-auto"
       >
-        <div className="w-full xs:w-full text-wrap text-center mx-auto leading-[1.4] capitalize">
-          Why <span className="italic font-light">Choose us</span> for eCommerce
+        <div className="w-full xs:w-full text-wrap text-center mx-auto leading-[1.4]">
+          Why <span className="italic font-light">Choose us</span> for Ecommerce
           Development Services?
         </div>
       </SectionHeader>

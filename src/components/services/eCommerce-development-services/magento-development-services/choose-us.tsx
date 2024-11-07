@@ -22,9 +22,9 @@ const ChooseUs = () => (
         description="Choose us for our deep expertise in Magento development, personalized solutions tailored to your business needs, and a proven track record of successful projects that drive growth and enhance user experience."
         style="w-[794px] lg:w-[700px] xs:w-full mx-auto"
       >
-        <div className="w-full lg:w-[800px] leading-[1.4] capitalize xs:w-full text-wrap text-center mx-auto">
+        <div className="w-full lg:w-[800px] leading-[1.4] xs:w-full text-wrap text-center mx-auto">
           What you get with our{" "}
-          <span className="italic font-light">Magento development agency</span>
+          <span className="italic font-light">Magento Development Agency</span>
         </div>
       </SectionHeader>
       <ChooseUsCards />

@@ -29,9 +29,9 @@ const OurServices: React.FC = () => (
         description="We craft digital experiences that drive results. "
         style="w-[85.5%] lg:!w-[740px] xs:!w-full"
       >
-        <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
-          Solutions that advance{" "}
-          <span className="italic font-light "> enterprise objectives</span>
+        <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] ">
+          Solutions that Advance{" "}
+          <span className="italic font-light "> Enterprise Objectives</span>
         </div>
       </SectionHeader>
       <MainContainer />

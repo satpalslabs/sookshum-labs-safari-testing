@@ -24,8 +24,8 @@ const Work: React.FC = () => (
           buttonText="Work"
           description="Explore our showcase of our recent projects to see the solutions we’ve recently brought to life."
         >
-          <div className="leading-[1.4] capitalize">
-            See our recent <span className="italic font-light">Projects.</span>
+          <div className="leading-[1.4]">
+            See our Recent <span className="italic font-light">Projects.</span>
           </div>
         </SectionHeader>
         <WorkCards type="" />

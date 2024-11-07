@@ -23,7 +23,7 @@ const Benefits = () => (
           description="Discover why low-code/no-code is the perfect tool for building MVPs and scaling your business."
           style="w-[900px] lg:w-[60%] sm:w-[65%] xs:w-full"
         >
-          <div className="w-[90%] lg:w-full leading-[1.4] capitalize text-wrap xs:w-full text-center mx-auto xs:text-wrap xs:tracking-tight">
+          <div className="w-[90%] lg:w-full leading-[1.4] text-wrap xs:w-full text-center mx-auto xs:text-wrap xs:tracking-tight">
             Why <span className="italic font-light"> Low-Code/No-Code </span> is
             a Perfect Fit for Startups{" "}
           </div>

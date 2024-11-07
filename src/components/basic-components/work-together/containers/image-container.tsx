@@ -6,13 +6,13 @@ import Image from "next/image";
 
 const ImageContainer: React.FC = () => {
   return (
-    <div className="-mt-[5%] -mr-[7%] scale-[auto] xxl:scale-[1.1] xxl:-mt-[2.4%] xxl:-mr-[2%] lg:scale-[1.5] lg:mr-[5%] lg:mt-[5.5%] sm:scale-[1.38] sm:mt-[7%] sm:mr-[3%] xs:mx-auto xs:mt-0 xs:scale-95 xs:flex xs:justify-center">
+    <div className="absolute xs:relative xs:w-full xs:top-[auto] xs:left-[auto] xs:right-[auto] xs:h-auto xs:mx-auto h-[650.56px] lg:h-[500px] lg:-right-10 lg:-top-[52px] sm:h-[360px] sm:-right-10 sm:-top-[36px] -right-16 -top-16">
       <Image
-        height={800}
-        width={600}
+        height={1200}
+        width={1200}
         src="/home/work-together/work-together.webp"
         alt="work-together"
-        className="h-full w-auto object-contain"
+        className="h-full w-auto object-contain xs:mx-auto"
       />
     </div>
   );

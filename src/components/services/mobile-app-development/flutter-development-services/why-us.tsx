@@ -24,8 +24,8 @@ const WhyUs = () => (
         description="As a leading Flutter development company, we recognize the significance of crafting a visually stunning and unique brand identity that aligns perfectly with your business goals. Every iOS, Android, and web app developed by our Flutter experts is a true reflection of the brand it embodies."
         style="w-[986px] lg:w-[491px] lg:mx-auto xs:w-full"
       >
-        <div className="w-full lg:w-[637px] sm:w-full xs:px-3 xs:w-full 3xs:px-0 xs:text-balance lg:leading-[1.2] text-wrap tracking-tight text-center mx-auto leading-[1.4] capitalize">
-          Why Choose Us For{" "}
+        <div className="w-full lg:w-[637px] sm:w-full xs:px-3 xs:w-full 3xs:px-0 xs:text-balance lg:leading-[1.2] text-wrap tracking-tight text-center mx-auto leading-[1.4]">
+          Why Choose us for{" "}
           <span className="italic font-light w-full">Flutter</span> App
           Development Company?
         </div>

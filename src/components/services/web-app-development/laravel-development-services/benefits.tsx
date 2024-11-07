@@ -29,8 +29,8 @@ const Faqs: React.FC = () => {
           description="Discover the top use cases where Laravel shines for performance, scalability, and seamless user experiences."
           style="w-[1000px] w-full xs:px-10"
         >
-          <div className="xs:w-full xs:text-wrap xs:text-center leading-[1.4] capitalize">
-            The Power Of The <span className="italic font-light">Laravel </span>
+          <div className="xs:w-full xs:text-wrap xs:text-center leading-[1.4] ">
+            The Power of the <span className="italic font-light">Laravel </span>
             Framework
           </div>
         </SectionHeader>

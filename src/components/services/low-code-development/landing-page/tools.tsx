@@ -28,7 +28,7 @@ const Tools = () => (
         description="Want us to build a no-code app for you from scratch? You are one click away!"
         style="w-[624px] lg:w-[491px] lg:mx-auto xs:w-full"
       >
-        <div className="w-full lg:w-[637px] sm:w-full xs:w-[70%] xs:text-balance lg:leading-[1.2] text-wrap tracking-tight text-center mx-auto leading-[1.4] capitalize">
+        <div className="w-full lg:w-[637px] sm:w-full xs:w-[70%] xs:text-balance lg:leading-[1.2] text-wrap tracking-tight text-center mx-auto leading-[1.4] ">
           Our Arsenal Of Magic Tools
         </div>
       </SectionHeader>

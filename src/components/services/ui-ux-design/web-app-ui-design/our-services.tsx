@@ -25,8 +25,8 @@ const OurServices: React.FC = () => (
         description="As a UI/UX design company, we offer comprehensive end-to-end services, including research, wireframing, UI design, and development."
         style="w-[800px] lg:!w-[740px] sm:!w-[89%] xs:!w-[400px] 3xs:!w-[310px]"
       >
-        <div className="xs:w-full text-wrap sm:w-full mx-auto leading-[1.4] sm:text-wrap text-center capitalize">
-          UI UX design services to bring your product vision to life
+        <div className="xs:w-full text-wrap sm:w-full mx-auto leading-[1.4] sm:text-wrap text-center ">
+          UI UX Design Services to Bring Your Product Vision to Life
         </div>
       </SectionHeader>
       <OurServicesMainContainer />

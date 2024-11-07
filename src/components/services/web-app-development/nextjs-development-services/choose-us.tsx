@@ -27,8 +27,8 @@ const ChooseUs: React.FC = () => (
         description="By harnessing the power of Next.js, our team collaborates with you to deliver faster-to-market solutions."
         style="w-[960px] lg:!w-[740px] xs:!w-full"
       >
-        <div className="xs:w-full sm:w-[80%] mx-auto text-wrap text-center leading-[1.4] capitalize">
-          Why Choose sookshum labs for{" "}
+        <div className="xs:w-full sm:w-[80%] mx-auto text-wrap text-center leading-[1.4]">
+          Why Choose Sookshum Labs for{" "}
           <span className="italic font-light"> Next.js </span>Web Development
         </div>
       </SectionHeader>

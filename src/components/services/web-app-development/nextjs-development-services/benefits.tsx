@@ -22,8 +22,8 @@ const Benefits = () => (
         description="Discover the top use cases where Next.js shines for performance, scalability, and seamless user experiences."
         style="w-[994px] sm:w-[700px] xs:w-full mx-auto"
       >
-        <div className="w-[full] sm:w-[800px] leading-[1.4] capitalize xs:w-full text-wrap text-center mx-auto">
-          Best Use Cases For <span className="italic font-light">Next.js</span>
+        <div className="w-[full] sm:w-[800px] leading-[1.4] xs:w-full text-wrap text-center mx-auto">
+          Best use cases for <span className="italic font-light">Next.js</span>
         </div>
       </SectionHeader>
       <BenefitCards />

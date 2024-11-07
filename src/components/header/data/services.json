@@ -1,7 +1,7 @@
 {
     "services": [
         {
-            "label": "E-commerce Development",
+            "label": "Ecommerce Development",
             "link": "/ecommerce-development-services",
             "content": {
                 "technologies": [
@@ -27,19 +27,19 @@
                 "technologies": [
                     {
                         "logo": "/header/logos/nestjs.png",
-                        "title": "Nestjs Development",
+                        "title": "Nestjs",
                         "about": "",
                         "link": "nestjs-development-services"
                     },
                     {
                         "logo": "/header/logos/laravel.png",
-                        "title": "Laravel Development",
+                        "title": "Laravel",
                         "about": "",
                         "link": "/laravel-development-services"
                     },
                     {
                         "logo": "/header/logos/nextjs.png",
-                        "title": "Nextjs Development",
+                        "title": "Nextjs",
                         "about": "",
                         "link": "/nextjs-development-services"
                     }

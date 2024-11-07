@@ -22,8 +22,8 @@ const OurProcess = () => (
         description="Choose Retool for unmatched flexibility, seamless integrations, and developer-friendly tools that enable you to create robust internal apps more quickly than other low-code platforms."
         style="!w-[1200px] lg:!w-[700px] sm:!w-[600px] xs:!w-full"
       >
-        <div className="xs:w-full sm:w-[90%] sm:text-wrap xs:text-center  leading-[1.4] capitalize">
-          What our mobile design process looks like
+        <div className="xs:w-full sm:w-[90%] sm:text-wrap xs:text-center  leading-[1.4]">
+          What our Mobile Design Process Looks Like
         </div>
       </SectionHeader>
       <BenefitCards />

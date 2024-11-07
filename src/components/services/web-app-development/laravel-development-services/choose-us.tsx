@@ -27,10 +27,10 @@ const ChooseUs: React.FC = () => (
         description="Our team leverages the power of Laravel to deliver faster-to-market solutions in collaboration with you."
         style="w-[976px] lg:!w-[740px] xs:!w-full"
       >
-        <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] text-wrap text-center capitalize tracking-[-0.02em]">
+        <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em]">
           Why Choose us for
-          <span className="italic font-light"> laravel </span>development
-          outsourcing
+          <span className="italic font-light"> Laravel </span>Development
+          Outsourcing
         </div>
       </SectionHeader>
       <OurServicesMainContainer />

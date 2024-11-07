@@ -10,8 +10,8 @@ const Header: React.FC = () => (
     buttonText="Our Process"
     description="With hundreds of successful projects under our belt, our transparent and agile development process will steer your project from discovery to launch."
   >
-    <div className="sm:text-wrap text-center leading-[1.4] capitalize">
-      Our process for shopify development success.
+    <div className="sm:text-wrap text-center leading-[1.4]">
+      Our Process for Shopify Development Success.
     </div>
   </SectionHeader>
 );

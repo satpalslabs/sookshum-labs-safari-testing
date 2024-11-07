@@ -22,11 +22,11 @@ const Technologies = () => {
           description="Explore the advanced tools and technologies we utilize for web development. We use cutting-edge solutions to ensure high performance, security, and scalability for your website projects."
           style="w-[790px] xs:w-full"
         >
-          <div className="w-full flex flex-col xs:w-full tracking-tight text-center mx-auto xs:leading-[1.3] leading-[1.4] capitalize">
+          <div className="w-full flex flex-col xs:w-full tracking-tight text-center mx-auto xs:leading-[1.3] leading-[1.4] ">
             <div className="w-full">Tools & technologies</div>
             <div className="xs:text-wrap">
               we use for{" "}
-              <span className="italic font-light w-full">web development</span>
+              <span className="italic font-light w-full">Web Development</span>
             </div>
           </div>
         </SectionHeader>

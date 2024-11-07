@@ -16,7 +16,7 @@ import OuterComponent from "@components/basic-components/outer-component";
 import OuterFlexComponent from "@components/basic-components/main-flex-container";
 
 const TechnologiesData: service | undefined = data.services.find(
-  (technology) => technology.label == "ECommerce Development"
+  (technology) => technology.label == "Ecommerce Development"
 );
 const Technologies = () => (
   <OuterComponent>

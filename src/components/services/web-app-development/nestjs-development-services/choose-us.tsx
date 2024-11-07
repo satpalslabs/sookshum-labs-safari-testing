@@ -28,7 +28,7 @@ const ChooseUs: React.FC = () => (
         description="In the world of NestJS development, Sookshum Labs is a leader in expertise, innovation, and client-focused solutions. Partnering with us for your NestJS development needs means more than just coding; it’s a collaboration aimed at achieving your business goals. Our dedication to excellence is founded on a profound understanding of the framework's capabilities and a passion for creating solutions that align with your objectives."
         style="w-[95.5%] lg:!w-[740px] xs:!w-full"
       >
-        <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
+        <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] ">
           Why choose us for <span className="italic font-light"> NestJS </span>{" "}
           Development Services?
         </div>

@@ -13,8 +13,8 @@ const OurProcess = () => {
           description="We integrate a business-driven and user-centered UX approach in our product design, ensuring that both business goals and user needs are met effectively."
           style="w-[80%] md:w-[750px] sm:w-[650px] "
         >
-          <div className="w-full lg:leading-[63px] sm:leading-[54px] xs:leading-[32px] xs:w-full text-wrap text-center leading-[1.4] capitalize">
-            Landing page design process that covers your unique business goals
+          <div className="w-full lg:leading-[63px] sm:leading-[54px] xs:leading-[32px] xs:w-full text-wrap text-center leading-[1.4]">
+            Landing Page Design Process that Covers Your Unique Business Goals
           </div>
         </SectionHeader>
         <ImageContainer />

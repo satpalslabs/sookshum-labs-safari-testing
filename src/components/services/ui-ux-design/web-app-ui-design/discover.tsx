@@ -27,9 +27,9 @@ const Discover: React.FC = () => (
         description="As a leading UI/UX design agency, we combine research, strategy, and technology to deliver customized digital solutions for your eCommerce, web, and mobile products."
         style="xxl:!w-[800px] !w-[750px] lg:!w-[740px] sm:!w-[640px] xs:!w-full"
       >
-        <div className="xs:w-full sm:w-[80%] w-full mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
-          We create digital products that
-          <br className="sm:hidden" /> your users love
+        <div className="xs:w-full sm:w-[80%] w-full mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em]">
+          We create Digital Products that
+          <br className="sm:hidden" /> Your Users Love
         </div>
       </SectionHeader>
       <MainContainer />

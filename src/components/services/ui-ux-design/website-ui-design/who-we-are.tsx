@@ -27,8 +27,8 @@ const WhoWeAre: React.FC = () => (
         description="We blend our design expertise, our clients industry knowledge, and research-driven insights to create powerful solutions."
         style="xxl:!w-[75%] !w-full lg:!w-[740px] xs:!w-full"
       >
-        <div className="xs:w-full sm:w-[80%] w-full mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
-          We will give your website a makeover and get you more conversions
+        <div className="xs:w-full sm:w-[80%] w-full mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] ">
+          We will give your Website a Makeover and Get you more Conversions
         </div>
       </SectionHeader>
       <MainContainer />

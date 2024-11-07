@@ -10,8 +10,8 @@ const Header: React.FC = () => (
     buttonText="Our Process"
     description="At Sookshum Labs, our digital product design and dashboard development process is a thoughtfully crafted journey that starts with a thorough understanding of your goals and user requirements. From research and ideation to final deployment, we utilize a structured and agile approach to ensure your digital product not only meets but surpasses expectations."
   >
-    <div className="sm:text-wrap text-center leading-[1.4] capitalize">
-      Our Process For success
+    <div className="sm:text-wrap text-center leading-[1.4] ">
+      Our Process for success
     </div>
   </SectionHeader>
 );

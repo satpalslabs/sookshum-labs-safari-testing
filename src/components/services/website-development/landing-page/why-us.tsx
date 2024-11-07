@@ -25,9 +25,9 @@ const ChooseUs = () => (
         description="We deeply engage with our clients' businesses to understand their objectives and take a comprehensive approach to each project, resulting in long-term partnerships."
         style="w-[794px] lg:w-[50%] xs:w-full"
       >
-        <div className="w-full xs:w-full text-center mx-auto xs:text-wrap leading-[1.4] capitalize">
-          What <span className="italic font-light">you’ll</span> get from hiring
-          us
+        <div className="w-full xs:w-full text-center mx-auto xs:text-wrap leading-[1.4] ">
+          What <span className="italic font-light">you’ll</span> Get from Hiring
+          Us
         </div>
       </SectionHeader>
       <ChooseUsCards />

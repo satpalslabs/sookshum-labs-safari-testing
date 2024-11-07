@@ -26,7 +26,7 @@ const ChooseUs = () => (
         description="We are quite good at this as we have been doing this for the past 8 years. We bring our long term expertise with Shopify to the table. Here’s why partnering with us makes all the difference:"
         style="w-[994px] sm:w-[700px] xs:w-full mx-auto"
       >
-        <div className="w-[full] sm:w-[800px] leading-[1.4] capitalize xs:w-full text-wrap text-center mx-auto">
+        <div className="w-[full] sm:w-[800px] leading-[1.4] xs:w-full text-wrap text-center mx-auto">
           Why grow with Sookshum Labs{" "}
           <span className="italic font-light">Shopify Agency?</span>
         </div>

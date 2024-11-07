@@ -29,9 +29,9 @@ const Work: React.FC = () => (
         buttonText="Work"
         description="Explore our showcase of our recent projects to see the solutions we’ve recently brought to life."
       >
-        <div className="leading-[1.4] capitalize">
-          See our recent <span className="italic font-light">Projects.</span>
-        </div>
+              <div className="leading-[1.4]">
+            See our Recent <span className="italic font-light">Projects.</span>
+          </div>
       </SectionHeader>
       <div className="grid grid-cols-2 gap-5 lg:gap-[18px] sm:gap-3 xs:grid-cols-1">
         {data.sections.map((dataItem: dataItemType, index: number) => (

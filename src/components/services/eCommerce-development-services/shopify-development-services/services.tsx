@@ -27,7 +27,7 @@ const Services: React.FC = () => (
         description="We offer web app development services tailored to any business or industry, delivering custom solutions that build user trust and convert visitors into paying customers."
         style="w-[800px] lg:!w-[740px] xs:!w-[400px] 3xs:!w-[310px]"
       >
-        <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] capitalize sm:text-wrap text-center">
+        <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] sm:text-wrap text-center">
           Shopify Development Services{" "}
           <span className="italic font-light">We Offer </span>
         </div>

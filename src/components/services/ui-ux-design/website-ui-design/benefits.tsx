@@ -26,9 +26,9 @@ const Benefits = () => (
         description="With our UI UX design company, proficient design approach, unique UI UX design services,and a track record of successfully designing 200+ digital products, we deliver experiences that align with your business goals."
         style="!w-[820px] sm:!w-[680px] xs:!w-full "
       >
-        <div className="xs:w-full xs:text-wrap xs:text-center leading-[1.4] capitalize">
-          Drive impact with top <br />{" "}
-          <span className="italic font-light">uI uX design </span>company
+        <div className="xs:w-full xs:text-wrap xs:text-center leading-[1.4]">
+          Drive Impact with Top <br />{" "}
+          <span className="italic font-light">UI UX Design </span>Company
         </div>
       </SectionHeader>
       <BenefitCards />

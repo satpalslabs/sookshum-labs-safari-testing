@@ -24,9 +24,8 @@ const Work: React.FC = () => (
         buttonText="Work"
         description="Immerse yourself in a showcase of our latest and greatest projects. Get inspired by what's possible."
       >
-        <div className="w-[80%] lg:w-full text-wrap text-center mx-auto leading-[1.4] capitalize">
-          See Our Recent{" "}
-          <span className="italic font-normal">eCommerce Projects.</span>
+        <div className="leading-[1.4]">
+          See our Recent <span className="italic font-light">Projects.</span>
         </div>
       </SectionHeader>
       <WorkCards type="" />

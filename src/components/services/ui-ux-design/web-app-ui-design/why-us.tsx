@@ -27,8 +27,8 @@ const WhyUs: React.FC = () => (
         description="We merge our team’s extensive design experience with our clients' deep industry knowledge and the insights we uncover through our research."
         style="xxl:!w-[1150px] !w-[85.5%] lg:!w-[740px] sm:!w-[650px] xs:!w-full"
       >
-        <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
-          Why choose our web design agency services?
+        <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] ">
+          Why choose Our Web Design Agency Services?
         </div>
       </SectionHeader>
       <MainContainer />

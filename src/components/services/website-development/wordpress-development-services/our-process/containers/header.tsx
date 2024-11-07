@@ -10,9 +10,9 @@ const Header: React.FC = () => (
     buttonText="Our Process"
     description="Efficiently tracking and optimizing development time for your ongoing WordPress projects."
   >
-    <div className="sm:text-wrap text-center leading-[1.4] capitalize">
+    <div className="sm:text-wrap text-center leading-[1.4] ">
       <span className="italic font-light">WordPress Development </span> Time
-      Track For An Existing Project
+      Track for an Existing Project
     </div>
   </SectionHeader>
 );

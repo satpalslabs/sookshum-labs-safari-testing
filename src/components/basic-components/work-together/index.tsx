@@ -17,7 +17,7 @@ const WorkTogether: React.FC = () => (
   <OuterComponent>
     <div
       id="connect"
-      className="flex justify-between xs:flex-col relative shadow-buttonInset bg-innerContainer rounded-[32px] sm:rounded-[20px] xs:pb-8 xs:gap-8"
+      className="flex justify-between xs:flex-col relative shadow-buttonInset bg-innerContainer rounded-[32px] sm:rounded-[20px] xs:pb-0 xs:gap-8 "
     >
       <TextContainer />
       <ImageContainer />

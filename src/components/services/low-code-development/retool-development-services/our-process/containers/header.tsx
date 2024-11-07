@@ -10,8 +10,8 @@ const Header: React.FC = () => (
     buttonText="Our Process"
     description="Leverage Retool to create custom applications that automate processes, integrate systems, and enhance efficiency."
   >
-    <div className="text-wrap text-center leading-[1.4] capitalize">
-      Our Streamlined Approach To Building Elegant{" "}
+    <div className="text-wrap text-center leading-[1.4]">
+      Our Streamlined Approach to Building Elegant{" "}
       <span className="italic font-light">Internal Software </span>
     </div>
   </SectionHeader>

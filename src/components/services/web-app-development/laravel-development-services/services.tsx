@@ -27,9 +27,9 @@ const Services: React.FC = () => (
         description="We provide web app development services customized for any business or industry, creating solutions that foster user trust and turn visitors into paying customers."
         style="w-[976px] lg:!w-[878px] sm:!w-[100%] xs:!w-[400px] 3xs:!w-[310px]"
       >
-        <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] sm: text-wrap text-center tracking-[-0.02em] capitalize">
-          <span className="italic font-light">Laravel’s </span> versatile
-          applications across a variety of use-cases
+        <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] sm: text-wrap text-center tracking-[-0.02em] ">
+          <span className="italic font-light">Laravel’s </span> Versatile
+          Applications Across a Variety of use-cases
         </div>
       </SectionHeader>
       <OurServicesMainContainer />

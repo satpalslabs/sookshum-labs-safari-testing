@@ -21,7 +21,7 @@ const OurProcess = () => (
         description="Tailored and inspired. Professional and reliable. Our agency strives to provide only the best solutions."
         style="!w-[794px] lg:!w-[491px] lg:mx-auto xs:!w-full"
       >
-        <div className="w-[80%] lg:w-[637px] sm:w-full xs:w-full xs:px-2 xs:text-balance lg:leading-[1.2] text-wrap  text-center mx-auto leading-[1.4] capitalize">
+        <div className="w-[80%] lg:w-[637px] sm:w-full xs:w-full xs:px-2 xs:text-balance lg:leading-[1.2] text-wrap  text-center mx-auto leading-[1.4] ">
           Our Process for
           <span className="italic font-light w-full"> App Development </span>
           Success

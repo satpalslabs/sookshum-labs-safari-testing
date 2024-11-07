@@ -27,8 +27,8 @@ const ChooseUs: React.FC = () => (
         description="At Sookshum Labs, we develop high-quality Retool projects that feature a unique blend of exceptional coding and clean system architecture. Through these products, we strive to help our clients achieve better results by providing cost-effective services."
         style="xxl:!w-[75%] !w-full lg:!w-[740px] xs:!w-full"
       >
-        <div className="xs:w-full sm:w-[80%] w-full mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
-          Why choose us for <span className="italic font-light"> Retool </span>{" "}
+        <div className="xs:w-full sm:w-[80%] w-full mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] ">
+          Why Choose Us for <span className="italic font-light"> Retool </span>{" "}
           Development Services?
         </div>
       </SectionHeader>

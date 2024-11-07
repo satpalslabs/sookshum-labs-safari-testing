@@ -27,9 +27,9 @@ const EverythingYouNeed: React.FC = () => (
           description="Connect with our team of expert Retool developers, available to assist you within 48 hours!"
           style="w-[95.5%] lg:!w-[740px] xs:!w-full"
         >
-          <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] capitalize">
-            A team of expert <span className="italic font-light"> retool </span>{" "}
-            developers
+          <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] ">
+            A Team of Expert <span className="italic font-light"> Retool </span>{" "}
+            Developers
           </div>
         </SectionHeader>
         <MainContainer />

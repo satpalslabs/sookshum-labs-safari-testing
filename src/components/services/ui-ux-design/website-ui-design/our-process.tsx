@@ -34,8 +34,8 @@ const OurProcess: React.FC = () => {
           description="Our design process allows us to thoroughly explore each project, resulting in a website that is perfectly tailored to your needs."
           style="w-[80%] lg:!w-[740px] xs:!w-[400px] 3xs:!w-[310px]"
         >
-          <div className="xs:w-full w-full sm:w-[80%] mx-auto leading-[1.4] text-wrap text-center !capitalize">
-            Our approach combines research-based insights with creativity
+          <div className="xs:w-full w-full sm:w-[80%] mx-auto leading-[1.4] text-wrap text-center ">
+            Our Approach Combines Research-Based Insights with Creativity
           </div>
         </SectionHeader>
         <div className="flex flex-col w-full h-fit rounded-[32px] bg-innerContainer overflow-hidden border-[1.3px] !border-viewportBorder shadow-buttonInset">

@@ -34,8 +34,8 @@ const Technologies = () => {
         >
           <div className="w-full flex flex-col xs:w-full tracking-tight text-center mx-auto xs:leading-[1.3] leading-[1.4] capitalize">
             <div className="w-full">Tools & technologies</div>
-            <div className="xs:text-wrap ">
-              we use for{" "}
+            <div className="xs:text-wrap normal-case">
+              We Use for{" "}
               <span className="italic font-light w-full">
                 Web App Development
               </span>

@@ -24,8 +24,8 @@ const OurProcess: React.FC = () => (
         description="By adopting a client-centered approach and paying close attention to detail, we deliver exceptional projects that meet our clients' needs. Utilizing Agile methodologies, we continuously adapt and refine our approach throughout the development cycle."
         style="w-[990px] lg:!w-[740px] xs:!w-[400px] 3xs:!w-[310px]"
       >
-        <div className="xs:w-full w-full sm:w-[80%] mx-auto leading-[1.4] capitalize text-wrap text-center">
-          Our Process Of
+        <div className="xs:w-full w-full sm:w-[80%] mx-auto leading-[1.4]  text-wrap text-center">
+          Our Process of
           <span className="italic font-light"> NestJS </span> Development
         </div>
       </SectionHeader>

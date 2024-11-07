@@ -22,8 +22,8 @@ const Benefits = () => (
         description="Discover the top use cases where Flutter shines for performance, scalability, and seamless user experiences."
         style="w-[1000px] w-full xs:px-10"
       >
-        <div className="xs:w-full xs:text-wrap xs:text-center leading-[1.4] capitalize">
-          Best Use Cases For <span className="italic font-light">Flutter </span>
+        <div className="xs:w-full xs:text-wrap xs:text-center leading-[1.4] ">
+          Best Use Cases for <span className="italic font-light">Flutter </span>
         </div>
       </SectionHeader>
       <BenefitCards />
