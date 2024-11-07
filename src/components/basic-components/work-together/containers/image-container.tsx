@@ -8,8 +8,8 @@ const ImageContainer: React.FC = () => {
   return (
     <div className="absolute xs:relative xs:w-full xs:top-[auto] xs:left-[auto] xs:right-[auto] xs:h-auto xs:mx-auto h-[650.56px] lg:h-[500px] lg:-right-10 lg:-top-[52px] sm:h-[360px] sm:-right-10 sm:-top-[36px] -right-16 -top-16">
       <Image
-        height={1200}
-        width={1200}
+        height={1600}
+        width={1600}
         src="/home/work-together/work-together.webp"
         alt="work-together"
         className="h-full w-auto object-contain xs:mx-auto"

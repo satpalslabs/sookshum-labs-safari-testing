@@ -49,7 +49,11 @@
             "label": "",
             "links": [
                 {
-                    "label": "Ecommerce",
+                    "label": "UI/UX Design ",
+                    "url": "/ui-ux-design-services"
+                },
+                {
+                    "label": "Ecommerce Development",
                     "url": "/ecommerce-development-services"
                 },
                 {
@@ -59,10 +63,6 @@
                 {
                     "label": "Mobile App Development",
                     "url": "/mobile-app-development-services"
-                },
-                {
-                    "label": "UI/UX Design ",
-                    "url": "/ui-ux-design-services"
                 },
                 {
                     "label": "Low Code Development ",

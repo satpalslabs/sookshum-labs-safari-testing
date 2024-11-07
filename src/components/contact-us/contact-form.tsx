@@ -13,11 +13,14 @@ import PrimaryButton from "@components/basic-components/primary-button";
 import { useEffect, useRef, useState } from "react";
 import CustomInput from "@components/basic-components/form-components/input";
 import { Bounce, ToastContainer, toast } from "react-toastify";
-import dialCodes from "./data/country-codes.json";
 import "react-toastify/dist/ReactToastify.css";
 import Image from "next/image";
 import $ from "jquery";
 import dynamic from "next/dynamic";
+import {
+  isPossiblePhoneNumber,
+  isValidPhoneNumber,
+} from "react-phone-number-input";
 const ContactForm: React.FC = () => (
   <div
     id="contact-form"
@@ -95,8 +98,7 @@ type FormDataFile = {
 const ContentUsForm: React.FC = () => {
   const fileInputRef = useRef<HTMLInputElement | null>(null);
   const [error, setError] = useState<any>({});
-  const [disableForm, setDisableForm] = useState<boolean>(true);
-  const [dialCode, setDialCode] = useState<string>("");
+  const [disableForm, setDisableForm] = useState<boolean>(false);
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
@@ -124,20 +126,6 @@ const ContentUsForm: React.FC = () => {
     }
   }, [formData]);
 
-  useEffect(() => {
-    async function getDialCode() {
-      let apiKey = "d9e53816d07345139c58d0ea733e3870";
-      return $.getJSON(
-        "https://api.bigdatacloud.net/data/ip-geolocation?key=" + apiKey,
-        function (data) {
-          let dialCode = data.country.isoAlpha2;
-          dialCode = dialCodes.find((d) => d.code == dialCode)?.dial_code;
-          setDialCode(`${dialCode} `);
-        }
-      );
-    }
-    getDialCode();
-  }, []);
   // Function to handle file selection
   const handleFileChange = async (file: File) => {
     try {
@@ -194,11 +182,13 @@ const ContentUsForm: React.FC = () => {
     } else {
       error["name"] = "";
     }
-
-    if (/[a-z]+/g.test(phoneNo)) {
+    validate = isPossiblePhoneNumber(phoneNo);
+    validate = isValidPhoneNumber(phoneNo);
+    if (!validate) {
       error["phone-no"] = "Please enter a valid phone number";
       validate = false;
     } else {
+      validate = true;
       error["phone-no"] = "";
     }
 
@@ -227,7 +217,7 @@ const ContentUsForm: React.FC = () => {
         },
         body: JSON.stringify({
           ...formData,
-          ["phone-no"]: dialCode + formData["phone-no"],
+          ["phone-no"]: formData["phone-no"],
         }),
       });
       let response: {
@@ -283,7 +273,6 @@ const ContentUsForm: React.FC = () => {
               <CustomInput
                 type="string"
                 setError={setError}
-                prefix=""
                 text="Full Name*"
                 style={`w-full ${
                   error.name &&
@@ -303,7 +292,6 @@ const ContentUsForm: React.FC = () => {
             <span>
               <CustomInput
                 setError={setError}
-                prefix=""
                 type="email"
                 text="Your Email*"
                 style={`w-full ${
@@ -324,7 +312,6 @@ const ContentUsForm: React.FC = () => {
             <span>
               <CustomInput
                 setError={setError}
-                prefix={dialCode}
                 type="number"
                 text="Your Phone Number"
                 style={`w-full ${
