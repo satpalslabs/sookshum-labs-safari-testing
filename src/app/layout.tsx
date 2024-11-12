@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicons/favicon.svg",
     apple: "/favicons/apple-touch-icon.png",
-    shortcut: "favicon.svg",
+    shortcut: "/favicons/favicon.svg",
   },
   alternates: {
     canonical: "https://www.sookshum-labs.com/",
