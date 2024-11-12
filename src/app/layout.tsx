@@ -12,10 +12,10 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.sookshum-labs.com"),
-  icons: {
-    icon: "/favicons/favicon.svg",
+  icons: {  
+    icon: "/favicon.png",
     apple: "/favicons/apple-touch-icon.png",
-    shortcut: "/favicons/favicon.svg",
+    shortcut: "/favicon.svg",
   },
   alternates: {
     canonical: "https://www.sookshum-labs.com/",
