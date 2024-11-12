@@ -99,12 +99,6 @@ export default function RootLayout({
           as="image"
           type="image/svg+xml"
         />
-        <link
-          rel="shortcut icon"
-          href="https://www.sookshum-labs.com/favicon.png"
-          sizes="any"
-          type="image/png"
-        />
         <meta content="text/html; charset=UTF-8" name="Content-Type" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="preload" href="/home/hero/fallback.webp" as="image" />
