@@ -47,7 +47,7 @@ const MediumCard: React.FC<{ value: Medium; isInView: boolean }> = (props) => (
         width={600}
         height={600}
         className="h-[136px] lg:h-[132px] w-auto xxl:-mt-[10%] sm:h-[108px] xs:-mt-[16%] lg:-mt-[20%] sm:-mt-[10%] object-cover -mt-[15%]"
-        alt=""
+        alt="image"
         src={props.value["image-path"]}
       />
     </div>

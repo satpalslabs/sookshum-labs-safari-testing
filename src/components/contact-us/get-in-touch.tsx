@@ -36,7 +36,7 @@ const BottomSection: React.FC = () => (
                   style="!text-white sm:text-[14px] !leading-[1.4]"
                 />
                 <Image
-                  alt=""
+                  alt="image"
                   width="1200"
                   height="1200"
                   src={
@@ -79,7 +79,7 @@ const QuickMailCard: React.FC<{ item: DataCard }> = (props) => (
       <div className="flex justify-between grow">
         <H5 text={props.item.title} style="!text-white sm:text-[14px]" />
         <Image
-          alt=""
+          alt="image"
           width="1200"
           height="1200"
           src={props.item.icon}

@@ -58,7 +58,7 @@ const ChooseUsCards: React.FC = () => {
               src={ChooseUsCard.image_url}
               height={400}
               width={400}
-              alt=""
+              alt="image"
               className={`object-contain mx-auto xxl:h-[413px] h-[313px] lg:h-[221px] sm:h-[261px] xs:h-[239px] `}
             />
           </div>

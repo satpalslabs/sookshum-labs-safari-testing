@@ -70,7 +70,7 @@ const OurProcessMainContainer = () => {
               width={400}
               src={process.image}
               className="hidden xs:block w-[52px] h-auto "
-              alt=""
+              alt="image"
             />
             <div className="flex flex-col gap-3 lg:gap-2">
               <H4 style="!leading-[1.25] !text-white" text={process.title} />
@@ -111,7 +111,7 @@ const OurProcessMainContainer = () => {
                 height={300}
                 width={300}
                 src={process.image}
-                alt=""
+                alt="image"
                 className="w-[62px] h-auto lg:w-[46px] transition-all duration-300 group-hover:scale-125"
               />
             </div>

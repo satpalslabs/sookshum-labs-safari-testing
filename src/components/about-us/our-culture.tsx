@@ -24,7 +24,7 @@ const OurCulture: React.FC = () => {
         <Image
           width="3200"
           height="3200"
-          alt=""
+          alt="image"
           src="/about-us/our-culture-1.webp"
           className="w-full h-[500px] xxl:h-[700px] lg:h-[354px] xs:h-[219px] overflow-hidden object-cover rounded-[32px]"
           blurDataURL="URL"

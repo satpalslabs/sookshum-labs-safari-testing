@@ -111,7 +111,7 @@ const OurProcessMainContainer = () => {
                 height={200}
                 width={200}
                 src={process.image}
-                alt=""
+                alt="image"
                 className="w-[62px] h-auto lg:w-[46px] transition-all duration-300 group-hover:scale-125"
               />
             </div>

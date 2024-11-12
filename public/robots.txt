@@ -1,6 +1,4 @@
 User-agent: *
-Disallow: /robots.txt
+Allow: /
 
-
-# Sitemap location (optional)
 Sitemap: https://www.sookshum-labs.com/sitemap.xml

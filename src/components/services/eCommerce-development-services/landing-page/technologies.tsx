@@ -60,7 +60,7 @@ const TechnologiesCards: React.FC = () => {
                     placeholder="blur"
                     fill
                     sizes=""
-                    alt=""
+                    alt="image"
                     src={TechnologiesCard.logo}
                   />
                 </div>

@@ -13,7 +13,7 @@ import GoTopButton from "@components/basic-components/go-to-top";
 
 const content_heroSection: HeroSection = {
   gradientTextStyle: "",
-  URL: "/services/landing-page/hero-background-image.webp",
+  URL: "/about-us/bg-image.png",
   image: true,
   buttonText: "Journey And Stories",
   "contact-us": false,
@@ -22,9 +22,9 @@ const content_heroSection: HeroSection = {
   fallback: "",
   style: {
     sourceStyle:
-      "xxl:left-[50%] xxl:h-[660px]  left-[8%] xxl:scale-[1.1] xxl:top-[-18%] xxl:-translate-x-[50%] left-[15%] lg:left-[2%] xs:-left-[4%]",
+      "xxl:left-[50%] xxl:!scale-100 xxl:!h-[860px] !h-[760px] !top-[-64%] lg:!h-[560px] sm:!h-[460px] xs:!h-[210px] lg:!top-[-64%] xs:!top-[-28%]  xxl:!top-[-84%] xxl:-translate-x-[50%] xs:!-left-[24%] xs:!scale-[2]",
     gradientDivStyle:
-      "xxl:!h-[560px] xxl:left-[50%] xxl:-translate-x-[35%]  !h-[550px] lg:!h-[450px] sm:!h-[350px] xs:!h-[240px] xs:!top-[-20%] !top-[-15%] xxl:!top-[-6%]",
+      "xxl:!h-[550px] !h-[500px] lg:!h-[450px] sm:!h-[350px] xs:!h-[150px] xs:!top-[-20%] lg:!top-[-40%] !top-[-15%] xxl:!top-[-15%]",
   },
   aboutPage:
     "We are your trusted technology partner in crafting exceptional digital experiences.",
@@ -43,7 +43,6 @@ const AboutUs: React.FC = () => (
     <PredictableResults />
     <BottomSection />
     <GoTopButton />
-
   </div>
 );
 

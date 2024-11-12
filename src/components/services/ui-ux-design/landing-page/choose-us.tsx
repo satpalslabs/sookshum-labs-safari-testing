@@ -53,7 +53,7 @@ const ChooseUsCards: React.FC = () => {
                 blurDataURL="URL"
                 placeholder="blur"
                 fill
-                alt=""
+                alt="image"
                 src={ChooseUsCard.image_url}
               />
             </div>

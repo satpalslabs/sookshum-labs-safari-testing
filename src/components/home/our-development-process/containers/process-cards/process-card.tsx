@@ -36,7 +36,7 @@ const DevelopmentProcessCard: React.FC<{
         src={item.image_url}
         height={400}
         width={400}
-        alt=""
+        alt="image"
         className={`${
           index == 3
             ? "h-full w-fit mx-auto sm:w-full "

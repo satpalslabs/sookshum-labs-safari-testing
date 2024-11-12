@@ -55,7 +55,7 @@ const About: React.FC = () => {
                     <Image
                       width="900"
                       height="900"
-                      alt=""
+                      alt="image"
                       className="h-[44px] lg:h-[29px] w-auto shadow-darkButton"
                       src={item}
                     />
@@ -74,7 +74,7 @@ const About: React.FC = () => {
           <Image
             width="900"
             height="900"
-            alt=""
+            alt="image"
             src="/services/low-code-development/appsmith-development-services/about/about-bg.png"
             className="h-full w-full object-cover"
           />

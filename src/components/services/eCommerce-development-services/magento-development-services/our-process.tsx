@@ -76,7 +76,7 @@ const MainContainer = () => {
                   <div className="flex gap-[18px] items-center">
                     <Image
                       src={item.image}
-                      alt=""
+                      alt="image"
                       width="400"
                       height="400"
                       className="h-[52px] w-auto lg:h-[38px] shrink-0"

@@ -67,7 +67,7 @@ const SingleCard: React.FC<{ isInView: boolean; data: ServiceType }> = ({
       <Image
         height={400}
         width={400}
-        alt=""
+        alt="image"
         src={data.image_url}
         className="w-[120px] h-auto lg:w-[80px] object-contain transition-all duration-1000"
       />

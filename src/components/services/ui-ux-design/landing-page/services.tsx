@@ -53,7 +53,7 @@ const ServiceCards: React.FC = () => {
                 blurDataURL="URL"
                 placeholder="blur"
                 fill
-                alt=""
+                alt="image"
                 src={service["image-path"]}
               />
             </div>

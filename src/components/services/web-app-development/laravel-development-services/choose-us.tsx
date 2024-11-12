@@ -70,7 +70,7 @@ const SingleCard: React.FC<{ isInView: boolean; data: choose_us }> = ({
         width={400}
         src={data.image_url}
         className="w-[120px] h-auto lg:w-[80px] object-contain"
-        alt=""
+        alt="image"
       />
       <div className="flex flex-col gap-5 lg:gap-3 sm:gap-2">
         <H4 style="!leading-[1.25] !text-white" text={data.heading} />

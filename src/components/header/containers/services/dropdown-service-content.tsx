@@ -28,7 +28,7 @@ const ServiceContent = ({
             <Image
               fill
               sizes=""
-              alt=""
+              alt="image"
               src={cardContent.logo}
               blurDataURL="URL"
               placeholder="blur"

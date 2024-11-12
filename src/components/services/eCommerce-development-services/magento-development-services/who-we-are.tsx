@@ -18,7 +18,7 @@ const FlexComponent: React.FC = () => (
   <div className="flex xs:flex-col gap-[60px] lg:gap-[30px] sm:gap-3 xs:gap-6">
     <div className="w-2/4 xxl:w-[40%] relative lg:w-[522px] sm:w-[340px] shrink-0 xs:w-full">
       <Image
-        alt=""
+        alt="image"
         width="611"
         height="506"
         src="/services/e-commerce-development/magento-development-services/who-we-are/magento-hero.png"

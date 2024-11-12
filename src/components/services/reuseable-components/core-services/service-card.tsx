@@ -19,7 +19,7 @@ function Service({
           height={400}
           width={400}
           className="h-[165px] lg:h-[132px] xxl:-mt-[15%] sm:h-[108px] xs:-mt-[16%] lg:-mt-[20%] w-auto object-cover -mt-[15%]"
-          alt=""
+          alt="image"
           src={service.path}
         />
       </div>

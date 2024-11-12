@@ -52,7 +52,7 @@ const OurServicesMainContainer = () => {
             src={
               "/services/ui-ux-design/landing-page-ui-design/check-circle.svg"
             }
-            alt=""
+            alt="image"
             width="400"
             height="400"
             className="w-[20px] h-[20px] shrink-0"

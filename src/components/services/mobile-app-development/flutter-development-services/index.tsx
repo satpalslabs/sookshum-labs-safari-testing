@@ -24,9 +24,9 @@ const content_heroSection: HeroSection = {
   fallback: "",
   style: {
     sourceStyle:
-      "xxl:left-[50%] xxl:!h-[700px] left-[8%] xxl:scale-[1] lg:!h-[330px] sm:!h-[280px] xs:!h-[170px] xxl:top-[-21%] xxl:-translate-x-[50%] left-[15%] lg:left-[2%] xs:-left-[4%]",
+      "xxl:!left-[20%] xxl:!h-[700px] h-[600px]  xxl:scale-[1] lg:!scale-[1.2] !top-[-20%] lg:!h-[430px] sm:!h-[380px] xs:!h-[270px] xs:!top-[-15%] xs:!scale-[2] xxl:top-[-21%] xxl:!-translate-x-[20%] lg:!top-[-40%] ",
     gradientDivStyle:
-      "xxl:!h-[530px] xxl:left-[50%] xxl:-translate-x-[35%] !h-[550px] lg:!h-[380px] sm:!h-[340px] xs:!h-[220px] xs:!top-[-20%] !top-[-15%] xxl:!top-[-9%]",
+      "xxl:!h-[530px] !h-[550px] lg:!h-[400px] lg:!top-[-30%] sm:!h-[380px] xs:!h-[220px] xs:!top-[-20%] !top-[-15%] xxl:!top-[-9%]",
   },
   aboutPage:
     "We deliver high-quality Flutter apps quickly and within budget. With extensive experience in Flutter development, we are among the pioneers in the field.",

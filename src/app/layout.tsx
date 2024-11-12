@@ -89,7 +89,7 @@ export default function RootLayout({
   return (
     <html
       lang="en-US"
-      className={`${poppins.variable} scroll-smooth`}
+      className={`${poppins.variable} scroll-smooth scrollbar`}
       suppressHydrationWarning
     >
       <Head>

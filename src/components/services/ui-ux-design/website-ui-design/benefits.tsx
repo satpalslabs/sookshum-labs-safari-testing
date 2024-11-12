@@ -105,7 +105,7 @@ const ActiveBenefit: React.FC<{
     <Image
       height={400}
       width={400}
-      alt=""
+      alt="image"
       src={props.detailData.image}
       className="object-cover xxl:w-[39%] w-[47%] lg:w-[45%] sm:w-[46%] xs:w-full h-auto"
     />

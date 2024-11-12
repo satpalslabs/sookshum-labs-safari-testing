@@ -50,7 +50,7 @@ const InnovationConcepts: React.FC = () => {
             <Card style="" isInView={isInView} key={index}>
               <div className="flex flex-col xxl:gap-6 gap-5 p-4 sm:p-2 pb-0 sm:gap-[12px]">
                 <Image
-                  alt=""
+                  alt="image"
                   width="2200"
                   height="2200"
                   src={concept.icon}

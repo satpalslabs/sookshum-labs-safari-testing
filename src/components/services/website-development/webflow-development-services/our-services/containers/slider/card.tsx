@@ -23,7 +23,7 @@ const Industry: React.FC<{
       height={400}
       width={400}
       src={industry.image}
-      alt=""
+      alt="image"
       className="h-[120px] w-fit lg:h-[80px] pt-1 object-contain float-left sm:w-[80px]"
     />
     <H6 classes="!text-white" text={industry.title} />

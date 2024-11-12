@@ -19,7 +19,7 @@ const WorkCard = ({ item }: { item: dataItemType;}) => (
       src={item.image_url}
       height={2200}
       width={800}
-      alt=""
+      alt="image"
       className="w-full h-full object-cover rounded-[32px] lg:rounded-[26px] transition-all duration-1000 group-hover:scale-105"
     />
     {/* <TextContainer item={item} /> */}

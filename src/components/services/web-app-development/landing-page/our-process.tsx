@@ -68,7 +68,7 @@ const OurProcessDetailComponent: React.FC = () => {
           height="1200"
           className="h-[297px] lg:h-[230px] sm:w-[50%] sm:object-contain xs:h-[150px] lg:px-[15px] xxl:w-fit mx-auto"
           src={processData[activeProcess].image}
-          alt=""
+          alt="image"
         />
         <div className="flex  flex-col pt-[18px] lg:pt-[15px] sm:grow ">
           <H4 style="!text-white" text={`0${activeProcess + 1}`} />

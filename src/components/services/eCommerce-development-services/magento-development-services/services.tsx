@@ -59,7 +59,7 @@ const OurServicesMainContainer = () => {
         >
           <Image
             src={service.prefix_image}
-            alt=""
+            alt="image"
             width="400"
             height="400"
             className="h-[45px] lg:h-[32px] xs:w-[24px] xs:h-[24px] w-auto shrink-0"

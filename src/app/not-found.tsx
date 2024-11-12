@@ -11,7 +11,7 @@ export default function NotFound() {
     <OuterComponent>
       <div className="flex flex-col gap-[54px] sm:gap-6 xs:gap-8 items-center w-full text-center -mt-[35px] lg:mt-[-52px]  sm:-mt-3 xs:-mt-1">
         <Image
-          alt=""
+          alt="image"
           width="2200"
           height="2200"
           src="/not-found.png"

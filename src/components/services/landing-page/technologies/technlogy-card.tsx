@@ -69,7 +69,7 @@ function Technology({ item }: { item: dataItemType }) {
         <Image
           width="900"
           height="900"
-          alt=""
+          alt="image"
           className="h-auto w-full xs:mx-auto my-auto"
           src={item["image-path"]}
         />

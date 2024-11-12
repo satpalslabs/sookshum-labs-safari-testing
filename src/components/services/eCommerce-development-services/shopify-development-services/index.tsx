@@ -13,7 +13,7 @@ import GoTopButton from "@components/basic-components/go-to-top";
 
 const content_heroSection: HeroSection = {
   gradientTextStyle: "",
-  URL: "/services/landing-page/hero-background-image.webp",
+  URL: "/services/e-commerce-development/shopify-development-services/bg-image.png",
   image: true,
   buttonText: "Shopify Development Company",
   "contact-us": true,
@@ -22,9 +22,9 @@ const content_heroSection: HeroSection = {
   fallback: "",
   style: {
     sourceStyle:
-      "xxl:left-[50%] left-[8%] xxl:scale-[1.1] lg:!h-[330px] sm:!h-[280px] xs:!h-[170px] xxl:top-[-18%] xxl:-translate-x-[50%] left-[15%] lg:left-[2%] xs:-left-[4%]",
+      "xxl:!left-[25%] xxl:scale-100 lg:!h-[330px]  xs:!h-[170px] xxl:top-[-40%] xxl:-translate-x-[25%] xxl:!h-[740px] lg:!h-[430px]  sm:!h-[380px] xs:!top-0 xs:!h-[400px] xs:!left-0 xs:!scale-[1]",
     gradientDivStyle:
-      "xxl:!h-[430px] xxl:left-[50%] xxl:-translate-x-[35%] !h-[550px] lg:!h-[380px] sm:!h-[340px] xs:!h-[220px] xs:!top-[-20%] !top-[-15%] xxl:!top-[-10%]",
+      "xxl:!h-[530px] xxl:left-[50%]  !h-[500px] lg:!h-[380px] sm:!h-[340px] xs:!h-[220px] xs:!top-[-20%] !top-[-15%] xxl:!top-[-10%]",
   },
   aboutPage:
     "Expert Shopify Development Services to Build, Customize, and Optimize Your eCommerce Store for Maximum Growth and Success.",

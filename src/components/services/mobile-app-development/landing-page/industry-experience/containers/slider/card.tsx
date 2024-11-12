@@ -27,7 +27,7 @@ const Industry = ({
       height={400}
       width={400}
       src={industry.image}
-      alt=""
+      alt="image"
       className="h-[80px] lg:h-[50px] max-w-fit object-contain float-left"
     />
     <div className="p-4 flex flex-col gap-[18px] xs:p-1 grow">

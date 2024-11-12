@@ -69,7 +69,7 @@ const SingleCard: React.FC<{ isInView: boolean; data: ServiceType }> = ({
         width={400}
         src={data.image_url}
         className="w-[120px] h-auto lg:w-[80px] transition-all duration-1000"
-        alt=""
+        alt="image"
       />
       <div className="flex flex-col gap-5 lg:gap-3 sm:gap-2">
         <H4 style="!leading-[1.25]  !text-white" text={data.heading} />

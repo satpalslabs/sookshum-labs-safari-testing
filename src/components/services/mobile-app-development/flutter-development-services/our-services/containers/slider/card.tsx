@@ -28,7 +28,7 @@ const Industry: React.FC<{
       height={400}
       width={400}
       src={industry.image}
-      alt=""
+      alt="image"
       className="h-[120px] lg:h-[80px] max-w-fit pl-3 pb-2 pt-1 object-contain float-left "
     />
     <div className="p-4 flex flex-col gap-[10px] xs:p-1 ">

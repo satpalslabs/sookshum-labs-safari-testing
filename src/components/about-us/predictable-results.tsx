@@ -41,7 +41,7 @@ const PredictableResults: React.FC = () => {
                 <Image
                   width="2200"
                   height="2200"
-                  alt=""
+                  alt="image"
                   src={predictedResultPoint.icon}
                   className="w-fit h-[162px] lg:h-[100px] sm:h-[80px] sm:object-contain shrink-0"
                   blurDataURL="URL"

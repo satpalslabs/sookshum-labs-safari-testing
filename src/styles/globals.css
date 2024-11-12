@@ -67,10 +67,34 @@
         -ms-overflow-style: none;
         scrollbar-width: none;
     }
+
+    .scrollbar::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+      }
+    
+      .scrollbar::-webkit-scrollbar-track {
+        border-radius: 4px;
+        background: #504f4f4b;
+      }
+    
+      .scrollbar::-webkit-scrollbar-thumb {
+        background: #6b6868de;
+        border-radius: 4px;
+        border: none;
+      }
+    
+      .scrollbar::-webkit-scrollbar-thumb:hover {
+        background: #474647;
+      }
 }
 
 [aria-haspopup="listbox"] .flag {
-    scale: 1.4;
+    scale: 1.8;
+}
+li.country .flag{
+    scale:1.6;
+    margin-right: 12px !important;
 }
 
 .react-tel-input .selected-flag:hover,
@@ -86,6 +110,10 @@
     border-radius: 6px;
   
 }
+li.country{
+    margin-top: 2px !important;
+}
+
 
 /* @media (prefers-color-scheme: dark) {
   :root {

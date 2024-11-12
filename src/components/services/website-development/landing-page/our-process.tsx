@@ -57,7 +57,7 @@ const OurProcessDetailComponent: React.FC = () => {
           placeholder="blur"
           height="2200"
           width="2200"
-          alt=""
+          alt="image"
           src="/services/website-development/landing-page/our-process.png"
           className="w-full h-full object-contain absolute sm:relative sm:w-[auto] sm:h-[461px] xs:h-[300px] mx-auto"
         />

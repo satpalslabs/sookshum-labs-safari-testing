@@ -14,7 +14,7 @@ import GoTopButton from "@components/basic-components/go-to-top";
 
 const content_heroSection: HeroSection = {
   gradientTextStyle: "",
-  URL: "/services/landing-page/hero-background-image.webp",
+  URL: "/services/admin-development/nextjs-development-services/bg-image.png",
   image: true,
   buttonText: "Next.js Development",
   "contact-us": true,
@@ -23,9 +23,9 @@ const content_heroSection: HeroSection = {
   fallback: "",
   style: {
     sourceStyle:
-      "xxl:left-[50%] left-[8%] xxl:scale-[1.1] lg:!h-[330px] sm:!h-[280px] xs:!h-[170px] xxl:top-[-18%] xxl:-translate-x-[50%] left-[15%] lg:left-[2%] xs:-left-[4%]",
+      "xxl:!left-[20%] xxl:scale-[1] xxl:!h-[1080px] !h-[980px] lg:!h-[700px] sm:!h-[540px] xs:!h-[420px] xxl:!top-[-95%] xxl:!-translate-x-[20%] !-top-[70%] lg:!-top-[80%] xs:!scale-[1.2]  xs:!top-[-30%]",
     gradientDivStyle:
-      "xxl:!h-[430px] xxl:left-[50%] xxl:-translate-x-[35%] !h-[550px] lg:!h-[380px] sm:!h-[340px] xs:!h-[220px] xs:!top-[-20%] !top-[-15%] xxl:!top-[-10%]",
+      "xxl:!h-[520px] xxl:left-[50%] !h-[550px] lg:!h-[440px] sm:!h-[340px] xs:!h-[200px] xs:!top-[-5%] !top-[-15%] lg:!top-[-30%] sm:!top-[-40%] xxl:!top-[-10%] ",
   },
   aboutPage:
     "With Next.js application development, your website or eCommerce platform will be highly flexible, performant, and scalable. Our developers will build customizable and SEO-friendly Next.js websites, ensuring you receive the ideal end product to meet your needs!",

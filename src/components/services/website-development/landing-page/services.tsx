@@ -59,7 +59,7 @@ const ServiceCards: React.FC = () => {
                 placeholder="blur"
                 fill
                 sizes=""
-                alt=""
+                alt="image"
                 src={service.image}
               />
             </div>

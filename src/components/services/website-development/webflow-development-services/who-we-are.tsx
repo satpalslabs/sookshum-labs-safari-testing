@@ -12,7 +12,7 @@ const WhoWeAre: React.FC = () => {
           text="Your Website development doesn’t need to become an engineering challenge.  "
         />
         <Image
-          alt=""
+          alt="image"
           width="2200"
           height="2200"
           src={

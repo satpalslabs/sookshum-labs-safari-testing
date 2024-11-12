@@ -81,7 +81,7 @@ const ServiceCards: React.FC = () => {
             placeholder="blur"
             height="2200"
             width="2200"
-            alt=""
+            alt="image"
             src={services[activeCardIndex]["image-url"]}
             className="grow mx-auto h-[340px] w-auto lg:h-[216px] sm:h-[173px] sm:object-contain"
           />
@@ -143,7 +143,7 @@ const ServiceCard: React.FC<props> = (props) => (
             placeholder="blur"
             height="2200"
             width="2200"
-            alt=""
+            alt="image"
             src={props.service["image-url"]}
             className="w-fit grow mx-auto"
           />

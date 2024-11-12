@@ -16,7 +16,7 @@ import GoTopButton from "@components/basic-components/go-to-top";
 
 const content_heroSection: HeroSection = {
   gradientTextStyle: "",
-  URL: "/services/landing-page/hero-background-image.webp",
+  URL: "/services/e-commerce-development/magento-development-services/bg-image.png",
   image: true,
   buttonText: "Magento Development Company",
   "contact-us": true,
@@ -25,15 +25,15 @@ const content_heroSection: HeroSection = {
   fallback: "",
   style: {
     sourceStyle:
-      "xxl:left-[50%] left-[8%] xxl:scale-[1.1] lg:!h-[330px] sm:!h-[280px] xs:!h-[170px] xxl:top-[-18%] xxl:-translate-x-[50%] left-[15%] lg:left-[2%] xs:-left-[4%]",
+      "xxl:left-[30%] xxl:!h-[1080px] !h-[880px] !scale-[0.8] xxl:!scale-[0.7] sm:!scale-[1.1] xs:!scale-[2] lg:!h-[630px] sm:!h-[500px] xs:!h-auto xs:w-full xs:!top-[-10%] xxl:!top-[-60%] lg:!top-[-80%] !top-[-40%] xxl:-translate-x-[30%] sm:!top-[-60%] ",
     gradientDivStyle:
-      "xxl:!h-[430px] xxl:left-[50%] xxl:-translate-x-[35%] !h-[550px] lg:!h-[380px] sm:!h-[340px] xs:!h-[220px] xs:!top-[-20%] !top-[-15%] xxl:!top-[-8%]",
+      "xxl:!h-[530px] xxl:left-[50%] xxl:-translate-x-[35%] !h-[550px] lg:!h-[380px] lg:!top-[-40%] sm:!h-[400px] xs:!h-[350px] xs:!top-[-30%] !top-[-15%] xxl:!top-[-8%]",
   },
   aboutPage: "",
 };
 
 const Shopify_DevelopmentServices: React.FC<HomeProps> = ({ isBot }) => (
-  <div className="relative">
+  <div className="relative ">
     <Hero {...content_heroSection} />
     <WhoWeAre />
     <ChooseUs />

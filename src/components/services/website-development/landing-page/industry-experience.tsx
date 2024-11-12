@@ -66,7 +66,7 @@ const IndustryExperienceDetailedComponent: React.FC = () => {
               width="2200"
               className="w-full h-full object-cover rounded-full z-0"
               src={activeIndustry["bg-image"]}
-              alt=""
+              alt="image"
             />
             <div className="absolute bg-darkOpacity w-full h-full z-10 rounded-full top-0 left-0">
               {/* Text container */}
@@ -108,7 +108,7 @@ const IndustryExperienceDetailedComponent: React.FC = () => {
               height="2200"
               width="2200"
               className="w-full object-contain"
-              alt=""
+              alt="image"
               src={industry["icon-image"]}
             />
             <div

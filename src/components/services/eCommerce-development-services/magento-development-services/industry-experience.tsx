@@ -86,7 +86,7 @@ const DetailView: React.FC<{
     >
       <div className="w-[50%] xs:w-full shrink-0 flex justify-center">
         <Image
-          alt=""
+          alt="image"
           width="1800"
           height="1800"
           src={industries_data[props.activeTab].detail.image}

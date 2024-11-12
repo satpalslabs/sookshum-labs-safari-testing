@@ -35,7 +35,7 @@ const WhoWeAre: React.FC = () => {
             <Image
               width="2200"
               height="2200"
-              alt=""
+              alt="image"
               src="/about-us/who-we-are/founders.webp"
               className="xxl:h-[402px] h-[452px] lg:h-[354px] sm:h-[291px]  xs:h-[219px] object-cover rounded-[32px]"
               blurDataURL="URL"
@@ -47,7 +47,7 @@ const WhoWeAre: React.FC = () => {
           <Image
             width="2200"
             height="2200"
-            alt=""
+            alt="image"
             src="/about-us/who-we-are/1.webp"
             className="xxl:h-[392px] h-[342px] lg:h-[354px] sm:h-[258px] xs:h-[139px] object-cover rounded-[32px]"
             blurDataURL="URL"
@@ -56,7 +56,7 @@ const WhoWeAre: React.FC = () => {
           <Image
             width="2200"
             height="2200"
-            alt=""
+            alt="image"
             src="/about-us/who-we-are/2.webp"
             className="xxl:h-[402px] h-[342px] lg:h-[354px] sm:h-[258px] xs:h-[139px] object-cover rounded-[32px]"
             blurDataURL="URL"

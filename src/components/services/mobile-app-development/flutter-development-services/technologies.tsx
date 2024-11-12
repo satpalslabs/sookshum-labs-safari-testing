@@ -86,7 +86,7 @@ const DetailView: React.FC<{ active: number }> = ({ active }) => (
           width="800"
           src={technology.icon}
           className="w-[70px] h-[70px] lg:w-[43px] lg:h-[43px] object-contain xs:w-[36px] xs:h-[36px]"
-          alt=""
+          alt="image"
         />
         <H6
           text={technology.name}

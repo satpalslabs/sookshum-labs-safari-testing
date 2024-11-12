@@ -17,7 +17,7 @@ import Pros_Cons from "./pros-cons";
 import GoTopButton from "@components/basic-components/go-to-top";
 
 const content_heroSection: HeroSection = {
-  URL: "/services/landing-page/hero-background-image.webp",
+  URL: "/services/low-code-development/appsmith-development-services/bg-image.png",
   "contact-us": true,
   fallback:"",
   image: true,
@@ -27,8 +27,9 @@ const content_heroSection: HeroSection = {
   gradientTextStyle: "w-[90%] lg:w-[80%] xs:!w-full",
   style: {
     sourceStyle:
-      "xxl:left-[50%] xxl:h-[700px]  left-[8%] xxl:scale-[1.1] xxl:top-[-18%] xxl:-translate-x-[50%] left-[15%] lg:left-[2%] xs:-left-[4%]",
-    gradientDivStyle: "xxl:!h-[560px] xxl:left-[50%] xxl:-translate-x-[35%]  !h-[550px] lg:!h-[450px] sm:!h-[350px] xs:!h-[240px] xs:!top-[-20%] !top-[-15%] xxl:!top-[-6%]",
+      " xxl:!h-[910px] sm:!h-[550px] lg:!h-[600px] xxl:!scale-[1] xxl:left-[50%] xxl:!-translate-x-[50%]  xxl:!top-[-38%] !top-[-28%] !h-[850px] !ml-0 xs:!h-[300px] xs:!scale-[1.5] xs:!top-[-20%] sm:!top-[-40%] lg:!top-[-30%]",
+    gradientDivStyle:
+      "xxl:!h-[630px] xxl:!min-w-screen !h-[650px] lg:!h-[450px] sm:!h-[440px]  xs:!h-[380px] xs:!scale-[1.5] xs:!top-[-30%] sm:!top-[-25%] xxl:!top-[-3%] !top-[-14%] xxl:!top-[-8%] ",
   },
   aboutPage:
     "Leverage the power of Appsmith, the pioneering open-source low-code platform for developing custom work dashboards and automating workflows.",

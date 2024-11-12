@@ -59,7 +59,7 @@ const ChooseUsCards: React.FC = () => {
           placeholder="blur"
           height="2200"
           width="2200"
-          alt=""
+          alt="image"
           src="/services/low-code-development/landing-page/why-us/why-us.webp"
           className="w-full h-full object-contain absolute xs:relative xs:h-fit"
         />
@@ -81,7 +81,7 @@ const ChooseUsCard: React.FC<{ item: ChooseUs }> = ({ item }) => (
         placeholder="blur"
         height="400"
         width="400"
-        alt=""
+        alt="image"
         src={item.icon}
         className=" w-[24px] h-[24px] lg:w-[14px] lg:h-[14px]"
       />

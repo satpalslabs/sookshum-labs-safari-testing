@@ -15,7 +15,7 @@ const Hero: React.FC = () => (
   >
     <div className="absolute -top-[90px] h-[200px] lg:-top-[10%] xs:top-[-15.4%] z-20 w-screen overflow-hidden">
       <Image
-        alt=""
+        alt="image"
         src={dots}
         priority // Use priority instead of eager
         className="scale-[3.8] lg:scale-[3] xs:scale-[2] min-w-[100vw] h-[100px]"
@@ -25,7 +25,7 @@ const Hero: React.FC = () => (
     <ImageContainer />
     <div className="absolute -bottom-[20%] lg:-bottom-[23%] xs:bottom-[8%] h-[200px] xs:h-[40px] z-20 w-full overflow-hidden">
       <Image
-        alt=""
+        alt="image"
         src={dots}
         className="scale-[3.8] lg:scale-[3] xs:scale-[2] min-w-[100vw] h-[100px]"
       />

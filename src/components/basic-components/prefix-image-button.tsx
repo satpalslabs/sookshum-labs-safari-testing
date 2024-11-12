@@ -15,7 +15,7 @@ const PrefixImageButton: React.FC<props> = ({ text, style, image }) => (
   >
     <Image
       src={image}
-      alt=""
+      alt="image"
       width="400"
       height="400"
       className="w-[32px] h-[32px] xs:w-[24px] xs:h-[24px]"

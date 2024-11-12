@@ -31,7 +31,7 @@ function BlogPostCard({
           src={blogPost.image}
           height={800}
           width={800}
-          alt=""
+          alt="image"
           className={` ${
             blogPost.type == "cover"
               ? "w-full h-full object-cover"

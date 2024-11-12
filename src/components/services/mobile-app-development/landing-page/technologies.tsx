@@ -68,7 +68,7 @@ const TechnologiesCards: React.FC = () => (
                         width="800"
                         src={technologyButton["image-address"]}
                         className="w-[70px] h-[70px] lg:w-[56px] lg:h-[56px] xs:w-[36px] xs:h-[36px]"
-                        alt=""
+                        alt="image"
                       />
                     </div>
                     <H6

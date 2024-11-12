@@ -185,8 +185,6 @@ const ContentUsForm: React.FC = () => {
     } else {
       error["name"] = "";
     }
-    validate = isPossiblePhoneNumber(phoneNo);
-    validate = isValidPhoneNumber(phoneNo);
     if (!validate) {
       error["phone-no"] = "Please enter a valid phone number";
       validate = false;
@@ -312,7 +310,7 @@ const ContentUsForm: React.FC = () => {
                 </span>
               )}
             </span>
-            <div className="relative flex flex-col gap-1 w-full">
+            <div className="relative flex flex-col gap-1 w-full h-full sm:col-span-2">
               <PhoneInput
                 country={"us"}
                 value={formData["phone-no"]}
@@ -321,10 +319,10 @@ const ContentUsForm: React.FC = () => {
                     return { ...prev, "phone-no": phone };
                   })
                 }
-                dropdownClass="!border-borderDarkButton ![backdrop-filter:blur(100px)] !border-none !w-[520px] !p-5 !rounded-b-xl !pt-2 !text-lg !font-poppins !border-solid !border !bg-darkButton !shadow-buttonInset no-scrollbar"
-                inputClass=" !py-10 !w-full !px-8 !pl-16  !text-white !text-base md:!px-[20px] !border-borderDarkButton ![backdrop-filter:blur(100px)] sm:!py-4 sm:!px-5 !rounded-[32px] !border-solid !border !bg-darkButton !shadow-buttonInset !normal-case !text-[16px] md:!text-sm sm:!text-[11px] !font-normal !font-poppins !overflow-hidden focus:!outline-none focus:!border-[#ffffff2d] !outline-none focus:!border-[#ffffff2d]"
+                dropdownClass="!border ![backdrop-filter:blur(100px)] xxl:!w-[520px] !w-[340px] lg:!w-[300px] md:!w-[250px] sm:!-ml-2 sm:!w-[650px] !max-w-[calc(100vw-60px)] md:!h-[150px] !p-5 lg:!p-2 !rounded-b-[20px] !pt-2 !text-[16px] md:!text-sm sm:!text-[11px] !border-[#ffffff2d] !font-poppins !bg-darkButton !shadow-buttonInset no-scrollbar"
+                inputClass=" !py-9 lg:!py-[34px] !w-full !px-8 !pl-16  !text-white !text-base md:!px-[20px] md:!pl-16 !border-borderDarkButton ![backdrop-filter:blur(100px)] sm:!py-[26px] sm:!px-5 sm:!pl-16 !rounded-[32px]  !border-solid !border !bg-darkButton !shadow-buttonInset !normal-case !text-[16px] md:!text-sm sm:!text-[11px] !font-normal !font-poppins !overflow-hidden focus:!outline-none focus:!border-[#ffffff2d] !outline-none focus:!border-[#ffffff2d]"
                 searchClass="!bg-transparent"
-                buttonClass="!bg-transparent !border-none hover:!bg-transparent !ml-4"
+                buttonClass="!bg-transparent !border-none hover:!bg-transparent !ml-4 "
               />
               {error["phone-no"] != "" && (
                 <span className="text-sm pl-4 font-poppins font-light text-[red]">

@@ -35,7 +35,7 @@ const ImageContainer: React.FC = () => (
       height={490}
       className="w-full xxl:min-w-full xxl:h-fit h-[490px] lg:h-[356px] sm:hidden"
       src="/services/ui-ux-design/landing-page/our-process/desktop.webp"
-      alt=""
+      alt="image"
     />
     <Image
       blurDataURL="URL"
@@ -44,7 +44,7 @@ const ImageContainer: React.FC = () => (
       height={1000}
       className="hidden sm:block w-full h-[658px] xs:hidden"
       src="/services/ui-ux-design/landing-page/our-process/tab.png"
-      alt=""
+      alt="image"
     />
     <Image
       blurDataURL="URL"
@@ -53,7 +53,7 @@ const ImageContainer: React.FC = () => (
       height={1500}
       className="hidden  xs:block w-full h-[1111px] 3xs:h-[850px] object-contain"
       src="/services/ui-ux-design/landing-page/our-process/mobile.png"
-      alt=""
+      alt="image"
     />
   </div>
 );
