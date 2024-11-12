@@ -14,10 +14,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.sookshum-labs.com"),
   icons: {
     icon: [
-      { url: "/favicon.png", type: "image/png" }, // PNG for desktop
-      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicons/favicon-96x96.png", type: "image/png", sizes: "96x96" }, // 96x96 PNG
+      { url: "/favicon.png", type: "image/png" }, // Default PNG
+      { url: "/favicon.svg", type: "image/svg+xml" }, // SVG for scalability
     ],
-    apple: "/favicons/apple-touch-icon.png",
+    apple: "/favicons/apple-touch-icon.png", // For Apple devices
     shortcut: "/favicons/favicon-96x96.png",
   },
   alternates: {
