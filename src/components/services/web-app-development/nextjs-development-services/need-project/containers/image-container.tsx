@@ -10,7 +10,7 @@ const ImageContainer: React.FC = () => {
       <Image
         height={1600}
         width={1600}
-        src="/services/admin-development/nextjs-development-services/lets-connect.png"
+        src="/services/admin-development/nextjs-development-services/lets-connect.webp"
         alt="let's connect"
         className="h-[370px] lg:h-[330px] w-auto sm:h-[250px] xs:w-full xs:h-auto shrink-0 object-contain"
       />

@@ -116,7 +116,7 @@ const DetailServiceContentSection = ({
           height={800}
           className="w-full h-full object-cover"
           alt="image"
-          src={"/header/lets-connect.png"}
+          src={"/header/lets-connect.webp"}
           blurDataURL="URL"
           placeholder="blur"
         />

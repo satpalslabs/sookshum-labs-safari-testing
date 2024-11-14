@@ -14,7 +14,7 @@ import GoTopButton from "@components/basic-components/go-to-top";
 
 const content_heroSection: HeroSection = {
   gradientTextStyle: "",
-  URL: "/services/ui-ux-design/website-ui-design/bg-image.png",
+  URL: "/services/ui-ux-design/website-ui-design/bg-image.webp",
   "contact-us": true,
   image: true,
   fallback: "",

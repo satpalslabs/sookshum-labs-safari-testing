@@ -21,7 +21,7 @@ const FlexComponent: React.FC = () => (
         alt="image"
         width="611"
         height="506"
-        src="/services/e-commerce-development/magento-development-services/who-we-are/magento-hero.png"
+        src="/services/e-commerce-development/magento-development-services/who-we-are/magento-hero.webp"
         className="w-full xxl:h-[600px] sm:absolute xs:relative lg:w-[522px] sm:w-[388px] xs:w-full sm:scale-110 xs:scale-105 left-2 lg:-ml-[22px] xs:-ml-[10px] shrink-0 object-contain"
         blurDataURL="URL"
         placeholder="blur"

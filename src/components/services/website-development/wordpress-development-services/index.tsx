@@ -15,7 +15,7 @@ import GoTopButton from "@components/basic-components/go-to-top";
 
 const content_heroSection: HeroSection = {
   gradientTextStyle: "",
-  URL: "/services/website-development/wordpress-development-services/bg-image.png",
+  URL: "/services/website-development/wordpress-development-services/bg-image.webp",
   fallback: "",
   "contact-us": true,
   image: true,
@@ -26,7 +26,7 @@ const content_heroSection: HeroSection = {
     sourceStyle:
       "xxl:left-[50%] xxl:!scale-100 xxl:!h-[800px] xxl:scale-[1] lg:!h-[530px] sm:!h-[530px] xs:!h-[170px] xxl:!top-[-41%] !h-[680px]  !top-[-21%] lg:!top-[-41%] sm:!top-[-31%] xs:!top-[-15%] xxl:-translate-x-[50%]",
     gradientDivStyle:
-      "xxl:!h-[630px] !h-[550px] lg:!h-[420px] sm:!h-[380px] xs:!h-[220px] xs:!top-[-20%] sm:!top-[-30%] !top-[-15%] xxl:!top-[-9%] ",
+      "xxl:!h-[530px] !h-[550px] lg:!h-[420px] sm:!h-[420px] xs:!h-[220px] xs:!top-[-20%] lg:!top-[-30%] !top-[-15%] xxl:!top-[-9%] ",
   },
   aboutPage: "",
 };

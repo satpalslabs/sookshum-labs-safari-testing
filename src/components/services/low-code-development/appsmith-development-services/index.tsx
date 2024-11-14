@@ -17,7 +17,7 @@ import Pros_Cons from "./pros-cons";
 import GoTopButton from "@components/basic-components/go-to-top";
 
 const content_heroSection: HeroSection = {
-  URL: "/services/low-code-development/appsmith-development-services/bg-image.png",
+  URL: "/services/low-code-development/landing-page/bg-image.webp",
   "contact-us": true,
   fallback:"",
   image: true,

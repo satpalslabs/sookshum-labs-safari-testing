@@ -18,7 +18,7 @@ const content_heroSection: HeroSection = {
   gradientTextStyle: "",
   fallback:"",
   "contact-us": true,
-  URL: "/services/e-commerce-development/landing-page/bg-image.png",
+  URL: "/services/e-commerce-development/landing-page/bg-image.webp",
   image: true,
   buttonText: "eCommerce Development",
   additionalDescription: "COMPLEX COMMERCE MADE SIMPLE",

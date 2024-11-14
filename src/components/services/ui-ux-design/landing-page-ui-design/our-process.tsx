@@ -33,7 +33,7 @@ const ImageContainer: React.FC = () => (
       width={1800}
       height={490}
       className="w-full xxl:min-w-full xxl:h-fit h-[490px] lg:hidden"
-      src="/services/ui-ux-design/landing-page-ui-design/desktop.png"
+      src="/services/ui-ux-design/landing-page-ui-design/desktop.webp"
       alt="image"
     />
     <Image

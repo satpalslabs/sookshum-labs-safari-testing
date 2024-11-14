@@ -14,12 +14,12 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.sookshum-labs.com"),
   icons: {
     icon: [
-      { url: "/favicons/favicon-96x96.png", type: "image/png", sizes: "96x96" }, // 96x96 PNG
+      { url: "/favicon-96x96.png", type: "image/png", sizes: "96x96" }, // 96x96 PNG
       { url: "/favicon.png", type: "image/png" }, // Default PNG
       { url: "/favicon.svg", type: "image/svg+xml" }, // SVG for scalability
     ],
-    apple: "/favicons/apple-touch-icon.png", // For Apple devices
-    shortcut: "/favicons/favicon-96x96.png",
+    apple: "/apple-touch-icon.png", // For Apple devices
+    shortcut: "/favicon-96x96.png",
   },
   alternates: {
     canonical: "https://www.sookshum-labs.com/",
@@ -27,6 +27,9 @@ export const metadata: Metadata = {
       "en-US": "https://www.sookshum-labs.com",
       "de-DE": "https://www.sookshum-labs.com",
     },
+  },
+  appleWebApp: {
+    title: "Sookshum Labs", // The touch web app title for iOS devices
   },
   title: "Sookshum Labs: Custom Software Development Company",
   description:
@@ -103,6 +106,7 @@ export default function RootLayout({
           as="image"
           type="image/svg+xml"
         />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <meta content="text/html; charset=UTF-8" name="Content-Type" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="preload" href="/home/hero/fallback.webp" as="image" />

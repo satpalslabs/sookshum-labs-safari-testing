@@ -59,7 +59,7 @@ const ChooseUsCards = () => {
           className={`absolute w-[370px] sm:w-[239px] top-[40.77%] translate-x-[-146px] lg:translate-x-[-89px] xs:translate-x-[-241px] -z-10 h-[233px] sm:h-[177px] object-cover rounded-[32px] xs:hidden  transition-all duration-1000 ${
             isInView ? "grayscale-0" : "grayscale"
           }`}
-          src="/services/e-commerce-development/shopify-development-services/why-us/bg-image.png"
+          src="/services/e-commerce-development/shopify-development-services/why-us/bg-image.webp"
           width={800}
           height={900}
           alt="image"

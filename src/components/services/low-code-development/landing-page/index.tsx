@@ -16,7 +16,7 @@ import { HomeProps } from "@app/page";
 import GoTopButton from "@components/basic-components/go-to-top";
 
 const content_heroSection: HeroSection = {
-  URL: "/services/low-code-development/landing-page/bg-image.png",
+  URL: "/services/low-code-development/landing-page/bg-image.webp",
   "contact-us": true,
   fallback:"",
   image: true,
@@ -26,8 +26,8 @@ const content_heroSection: HeroSection = {
   gradientTextStyle: "w-[90%] lg:w-[80%] xs:!w-full",
   style: {
     sourceStyle:
-      "xxl:!left-[30%] xxl:h-[700px] xxl:scale-[1.1] !h-[700px] !-top-[20%] xxl:top-[-18%] xxl:!-translate-x-[30%] lg:!h-[550px] sm:!h-[450px] xs:-top-[4%] xs:!scale-[2]",
-    gradientDivStyle: "xxl:left-[50%] xxl:-translate-x-[50%] xxl:!h-[560px] xxl:left-[50%] !h-[560px] lg:!h-[450px] sm:!h-[360px] xs:!h-[240px] xs:!top-[-20%] !top-[-15%] xxl:!top-[-6%]",
+      "xxl:!left-[30%] xxl:!h-[700px] xxl:!scale-[1.1] !h-[700px] !-top-[20%] xxl:top-[-18%] xxl:!-translate-x-[30%] lg:!h-[550px] sm:!h-[450px] xs:!h-[320px] xs:!-top-[4%] xs:!scale-[2]",
+    gradientDivStyle: "xxl:left-[50%] xxl:-translate-x-[50%] xxl:!h-[560px] xxl:left-[50%] !h-[560px] lg:!h-[450px] sm:!h-[360px] xs:!h-[280px]  xs:!top-[-20%] !top-[-15%] xxl:!top-[-8%]",
   },
   aboutPage:
     "We are a digital product studio obsessed with building software that delights your users. We design, build, and deliver your custom solutions - fast.",

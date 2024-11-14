@@ -13,7 +13,7 @@ import GoTopButton from "@components/basic-components/go-to-top";
 
 const content_heroSection: HeroSection = {
   gradientTextStyle: "",
-  URL: "/services/e-commerce-development/shopify-development-services/bg-image.png",
+  URL: "/services/e-commerce-development/shopify-development-services/bg-image.webp",
   image: true,
   buttonText: "Shopify Development Company",
   "contact-us": true,

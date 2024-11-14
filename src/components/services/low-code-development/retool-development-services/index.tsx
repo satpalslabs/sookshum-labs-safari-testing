@@ -14,7 +14,7 @@ import GoTopButton from "@components/basic-components/go-to-top";
 
 const content_heroSection: HeroSection = {
   gradientTextStyle: "",
-  URL: "/services/low-code-development/retool-development-services/bg-image.png",
+  URL: "/services/low-code-development/retool-development-services/bg-image.webp",
   image: true,
   buttonText: "Retool Development",
   "contact-us": true,
@@ -23,9 +23,8 @@ const content_heroSection: HeroSection = {
   fallback: "",
   style: {
     sourceStyle:
-      " xxl:!h-[950px] sm:!h-[550px] lg:!h-[700px] xxl:!scale-[1] xxl:left-[50%] xxl:!-translate-x-[50%]  xxl:!top-[-38%] !top-[-28%] !h-[850px] !ml-0 xs:!h-[400px] xs:!scale-[1.5] xs:!top-[-15%] sm:!top-[-40%] lg:!top-[-30%]",
-    gradientDivStyle:
-      "xxl:!h-[630px] xxl:!min-w-screen !h-[650px] lg:!h-[550px] sm:!h-[440px] xs:!h-[320px] sm:!top-[-25%] xs:!top-[-16%] xxl:!top-[-3%] !top-[-14%] xxl:!top-[-8%] ",
+      "xxl:!left-[30%] xxl:!h-[800px] xxl:!scale-[1.1] !h-[700px] !-top-[20%] xxl:!top-[-38%] xxl:!-translate-x-[30%] lg:!h-[550px] lg:!top-[-40%] sm:!h-[450px] xs:!h-[320px] xs:-top-[4%] xs:!scale-[2]",
+    gradientDivStyle: "xxl:left-[50%] xxl:-translate-x-[50%] xxl:!h-[560px] xxl:left-[50%] !h-[560px] lg:!h-[450px] sm:!h-[360px] xs:!h-[240px]  lg:!top-[-30%]  xs:!top-[-20%] !top-[-15%] xxl:!top-[-6%]",
   },
   aboutPage:
     "We provide expert Retool development services that help businesses harness the full potential of the Retool low-code platform. Our services enable the creation of custom applications, streamline workflows, and enhance productivity.",

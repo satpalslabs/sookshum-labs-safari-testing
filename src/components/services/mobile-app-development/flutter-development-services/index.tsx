@@ -15,7 +15,7 @@ import GoTopButton from "@components/basic-components/go-to-top";
 
 const content_heroSection: HeroSection = {
   gradientTextStyle: "",
-  URL: "/services/mobile-app-devlopment/flutter-development-services/bg-image.png",
+  URL: "/services/mobile-app-devlopment/flutter-development-services/bg-image.webp",
   image: true,
   buttonText: "Flutter App Development",
   "contact-us": true,

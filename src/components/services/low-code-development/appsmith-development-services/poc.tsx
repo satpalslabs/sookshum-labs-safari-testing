@@ -54,7 +54,7 @@ const MainContainer = () => {
       <Image
         width={1200}
         height={1200}
-        src="/services/low-code-development/appsmith-development-services/about/pc.png"
+        src="/services/low-code-development/appsmith-development-services/about/pc.webp"
         className="h-full w-auto object-contain"
         alt="image"
       />

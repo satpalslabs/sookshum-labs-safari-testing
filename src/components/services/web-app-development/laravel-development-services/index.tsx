@@ -14,7 +14,7 @@ import GoTopButton from "@components/basic-components/go-to-top";
 
 const content_heroSection: HeroSection = {
   gradientTextStyle: "",
-  URL: "/services/web-app-development/laravel-development-services/bg-image.png",
+  URL: "/services/web-app-development/laravel-development-services/bg-image.webp",
   image: true,
   buttonText: "Laravel Development",
   "contact-us": true,

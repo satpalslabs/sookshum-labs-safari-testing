@@ -16,7 +16,7 @@ import GoTopButton from "@components/basic-components/go-to-top";
 
 const content_heroSection: HeroSection = {
   gradientTextStyle: "",
-  URL: "/services/e-commerce-development/magento-development-services/bg-image.png",
+  URL: "/services/e-commerce-development/magento-development-services/bg-image.webp",
   image: true,
   buttonText: "Magento Development Company",
   "contact-us": true,

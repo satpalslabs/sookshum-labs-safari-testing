@@ -13,7 +13,7 @@ import GoTopButton from "@components/basic-components/go-to-top";
 
 const content_heroSection: HeroSection = {
   gradientTextStyle: "",
-  URL: "/about-us/bg-image.png",
+  URL: "/about-us/bg-image.webp",
   image: true,
   buttonText: "Journey And Stories",
   "contact-us": false,
