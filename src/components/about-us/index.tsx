@@ -22,9 +22,9 @@ const content_heroSection: HeroSection = {
   fallback: "",
   style: {
     sourceStyle:
-      "xxl:left-[50%] xxl:!scale-100 xxl:!h-[860px] !h-[760px] !top-[-64%] lg:!h-[560px] sm:!h-[460px] xs:!h-[210px] lg:!top-[-64%] xs:!top-[-28%]  xxl:!top-[-84%] xxl:-translate-x-[50%] xs:!-left-[24%] xs:!scale-[2]",
+      "xxl:left-[50%] w-screen xxl:scale-100 xxl:h-[860px] h-[760px] top-[-64%] lg:h-[560px] sm:h-[460px] xs:h-[210px] lg:top-[-64%] xs:top-[-28%]  xxl:top-[-84%] xxl:-translate-x-[50%] xs:-left-[24%] xs:scale-[2]",
     gradientDivStyle:
-      "xxl:!h-[550px] !h-[500px] lg:!h-[450px] sm:!h-[350px] xs:!h-[150px] xs:!top-[-20%] lg:!top-[-40%] !top-[-15%] xxl:!top-[-15%]",
+      "xxl:h-[730px] w-screen h-[700px] lg:h-[600px] sm:h-[490px] xs:h-[450px] xs:top-[-80%] lg:top-[-70%] top-[-45%] xxl:top-[-45%]",
   },
   aboutPage:
     "We are your trusted technology partner in crafting exceptional digital experiences.",

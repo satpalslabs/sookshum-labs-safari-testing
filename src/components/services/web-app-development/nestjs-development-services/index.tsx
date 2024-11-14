@@ -23,9 +23,9 @@ const content_heroSection: HeroSection = {
   fallback: "",
   style: {
     sourceStyle:
-      "xxl:!h-[650px] lg:!h-[330px] sm:!h-[280px] xs:!h-[200px] xxl:!top-[-18%] xs:!scale-[2.4]  !scale-[1.5] lg:!scale-[1.5] xxl:!scale-[1.45] xs:!h-[240px] xs:!top-[-15%] xs:!scale-[2]",
+      "scale-[1.0] xs:scale-[1.4] xxl:left-[50%] xxl:-translate-x-[50%] w-screen xxl:h-[620px] h-[540px] lg:h-[411px] sm:h-[490px] xs:h-[450px] 2xs:scale-[2] xxl:bottom-[10%] bottom-[-1%] lg:bottom-[5%] sm:bottom-[10%] xs:bottom-[-0%] 2xs:bottom-[-20%] ",
     gradientDivStyle:
-      "xxl:!h-[630px] xxl:!left-[20%] xxl:!-translate-x-[0%] xxl:!min-w-screen !h-[650px] lg:!h-[380px] sm:!h-[340px] xs:!h-[220px] xs:!top-[-20%] xxl:!top-[-3%] !top-[-14%] xxl:!top-[-8%]",
+      "scale-[1.0] xxl:left-[50%] xxl:-translate-x-[50%] w-screen xxl:h-[620px] h-[540px] lg:h-[421px] sm:h-[490px] xs:h-[810px] 2xs:h-[580px]   xxl:bottom-[10%] bottom-[-1%] lg:bottom-[4%]  sm:bottom-[10%]  xs:bottom-[-20%] 2xs:bottom-[0%] ",
   },
   aboutPage:
     "NestJS is an advanced framework designed for developing efficient and scalable web applications using Node.js. At Sookshum Labs, our expert NestJS developers create robust and reliable platforms that endure the test of time.",
@@ -45,7 +45,6 @@ const NestJs_DevelopmentServices: React.FC<HomeProps> = ({ isBot }) => (
     {/* <Faqs DataKey={"ecommerce-development-landing-page"}/> */}
     <LetsConnect />
     <GoTopButton />
-
   </div>
 );
 

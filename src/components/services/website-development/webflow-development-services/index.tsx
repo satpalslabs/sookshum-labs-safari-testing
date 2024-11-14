@@ -23,9 +23,9 @@ const content_heroSection: HeroSection = {
   gradientText: "Fast And High-Performing Webflow Websites",
   style: {
     sourceStyle:
-      "xxl:left-[50%] xxl:!h-[700px] left-[8%] xxl:scale-[1] lg:!h-[330px] sm:!h-[280px] xs:!h-[170px] xxl:top-[-21%] xxl:-translate-x-[50%] left-[15%] lg:left-[2%] xs:-left-[25%] xs:!scale-[2.9]",
+      "xxl:left-[50%] w-screen xxl:h-[700px] h-[500px] xxl:scale-[1] lg:h-[330px] sm:h-[280px] xs:h-[170px] xxl:top-[-21%] top-[-25%] xxl:-translate-x-[50%] xs:-left-[25%] xs:scale-[2.9]",
     gradientDivStyle:
-      "xxl:!h-[530px] xxl:left-[50%] xxl:-translate-x-[35%] !h-[550px] lg:!h-[380px] sm:!h-[340px] xs:!h-[220px] xs:!top-[-20%] !top-[-15%] xxl:!top-[-9%] ",
+      "xxl:h-[780px] xs:scale-[2] w-screen h-[550px] lg:h-[380px] sm:h-[340px] xs:h-[220px] xs:top-[-20%] top-[-25%] xxl:top-[-30%] ",
   },
   aboutPage:
     "We excel in creating pixel-perfect, fully responsive Webflow websites equipped with all the essential functions and integrations.",

@@ -22,9 +22,9 @@ const content_heroSection: HeroSection = {
   fallback: "",
   style: {
     sourceStyle:
-      "xxl:!left-[25%] xxl:scale-100 lg:!h-[330px]  xs:!h-[170px] xxl:top-[-40%] xxl:-translate-x-[25%] xxl:!h-[740px] lg:!h-[430px]  sm:!h-[380px] xs:!top-0 xs:!h-[400px] xs:!left-0 xs:!scale-[1]",
+      "scale-[1.0] xxl:left-[50%] xxl:-translate-x-[50%] w-screen xxl:h-[620px] h-[540px] sm:h-[390px] xs:h-[350px] lg:h-[311px]  xxl:bottom-[10%] bottom-[-1%] lg:bottom-[18%] sm:bottom-[10%] xs:bottom-[15%]  ",
     gradientDivStyle:
-      "xxl:!h-[530px] xxl:left-[50%]  !h-[500px] lg:!h-[380px] sm:!h-[340px] xs:!h-[220px] xs:!top-[-20%] !top-[-15%] xxl:!top-[-10%]",
+      "scale-[1.0] xxl:left-[50%] xxl:-translate-x-[50%] w-screen xxl:h-[620px] h-[540px] lg:h-[321px] sm:h-[380px] xs:h-[350px]  xxl:bottom-[10%] bottom-[-1%] lg:bottom-[16%]  sm:bottom-[10%]  xs:bottom-[15%] ",
   },
   aboutPage:
     "Expert Shopify Development Services to Build, Customize, and Optimize Your eCommerce Store for Maximum Growth and Success.",
@@ -43,7 +43,6 @@ const Shopify_DevelopmentServices: React.FC<HomeProps> = ({ isBot }) => (
     {/* <Faqs DataKey={"ecommerce-development-landing-page"}/> */}
     <LetsConnect />
     <GoTopButton />
-
   </div>
 );
 

@@ -23,9 +23,9 @@ const content_heroSection: HeroSection = {
   fallback: "",
   style: {
     sourceStyle:
-      "xxl:!left-[20%] xxl:scale-[1] xxl:!h-[1050px] !h-[980px] lg:!h-[700px] sm:!h-[540px] xs:!h-[420px] xxl:!top-[-95%] xxl:!-translate-x-[20%] !-top-[70%] lg:!-top-[80%] xs:!scale-[1.2]  xs:!top-[-30%]",
+      "scale-[1.0] xs:scale-[1.2] xxl:left-[50%] xxl:-translate-x-[50%] w-screen xxl:h-[1050px] h-[840px] lg:h-[711px] sm:h-[490px] xs:h-[450px]  2xs:h-[400px]  xxl:bottom-[10%] bottom-[-1%] lg:bottom-[5%] sm:bottom-[10%] xs:bottom-[20%] 2xs:bottom-[30%] ",
     gradientDivStyle:
-      "xxl:!h-[520px] xxl:left-[50%] !h-[550px] lg:!h-[440px] sm:!h-[340px] xs:!scale-[1.2] xs:!h-[420px]  xs:!top-[-30%] !top-[-15%] lg:!top-[-30%] sm:!top-[-40%] xxl:!top-[-10%] ",
+      "scale-[1.0] xxl:left-[50%] xxl:-translate-x-[50%] w-screen xxl:h-[780px] h-[840px] lg:h-[621px] sm:h-[490px] xs:h-[850px] 2xs:h-[520px] xxl:bottom-[10%] bottom-[-1%] lg:bottom-[4%]  sm:bottom-[10%]  xs:bottom-[-0%] 2xs:bottom-[18%] ",
   },
   aboutPage:
     "With Next.js application development, your website or eCommerce platform will be highly flexible, performant, and scalable. Our developers will build customizable and SEO-friendly Next.js websites, ensuring you receive the ideal end product to meet your needs!",
@@ -45,7 +45,6 @@ const NextJS_DevelopmentServices: React.FC<HomeProps> = ({ isBot }) => (
     {/* <Faqs DataKey={"ecommerce-development-landing-page"}/> */}
     <LetsConnect />
     <GoTopButton />
-
   </div>
 );
 

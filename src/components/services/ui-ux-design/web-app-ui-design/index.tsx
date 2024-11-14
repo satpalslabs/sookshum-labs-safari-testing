@@ -23,9 +23,9 @@ const content_heroSection: HeroSection = {
   gradientText: "Web App Design That Puts Your Users First",
   style: {
     sourceStyle:
-      "xxl:!left-[50%] xxl:!scale-[1.1] lg:!h-[630px] sm:!h-[480px] xs:!h-[170px] xxl:top-[-35%] xxl:!h-[740px] !h-[720px] xs:!scale-[2] xs:!top-[10%] !top-[-30%] lg:!top-[-50%]  xxl:!-translate-x-[50%]",
+      "scale-[1.0] xxl:left-[50%] xxl:-translate-x-[50%] w-screen xxl:h-[620px] h-[540px] sm:h-[390px] xs:h-[350px] lg:h-[311px]  xxl:bottom-[10%] bottom-[-1%] lg:bottom-[18%] sm:bottom-[25%] xs:bottom-[15%]  ",
     gradientDivStyle:
-      "xxl:!h-[540px] xxl:left-[50%] xxl:-translate-x-[35%] !h-[550px] lg:!h-[480px] lg:!top-[-30%] sm:!h-[380px] xs:!scale-[2] xs:!top-[10%] xs:!h-[180px] xs:!top-[-20%] !top-[-15%] xxl:!top-[-8%]",
+      "scale-[1.0] xxl:left-[50%] xxl:-translate-x-[50%] w-screen xxl:h-[620px] h-[540px] lg:h-[321px] sm:h-[400px] xs:h-[350px]  xxl:bottom-[10%] bottom-[-1%] lg:bottom-[16%]  sm:bottom-[25%]  xs:bottom-[15%] ",
   },
   aboutPage:
     "With extensive experience designing dozens of products, we possess the expertise to create complex designs that are both well-considered and highly efficient.",

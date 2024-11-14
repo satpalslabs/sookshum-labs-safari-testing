@@ -25,9 +25,9 @@ const content_heroSection: HeroSection = {
     "Build Beautiful & Flexible Admin Panels For Easy Backend Management",
   style: {
     sourceStyle:
-      "xxl:!left-[50%] xxl:!h-[700px] !h-[650px] !scale-95 !left-[0%] xxl:scale-[1] lg:!h-[500px] sm:!h-[480px] xs:!h-[170px] xxl:!top-[-23%] !top-[-32%] !top-[-15%] xxl:-translate-x-[50%]  lg:!top-[-55%] sm:!top-[-50%] xs:!top-[-30%] xs:!scale-[2] lg:left-[2%] xs:-left-[4%]",
+      "xxl:left-[50%] w-screen xxl:h-[700px] h-[650px] scale-95 left-[0%] xxl:scale-[1] lg:h-[500px] sm:h-[480px] xs:h-[470px] xxl:top-[-23%] top-[-32%] top-[-15%] xxl:-translate-x-[50%]  lg:top-[-65%] sm:top-[-50%] xs:top-[-30%] 2xs:top-[15%] xs:scale-[2] lg:left-[2%] xs:-left-[4%]",
     gradientDivStyle:
-      "xxl:!h-[530px] xxl:left-[50%] xxl:-translate-x-[35%] !h-[550px] lg:!h-[330px] sm:!h-[300px] xs:!h-[220px] lg:!top-[-26%] !top-[-15%] xxl:!top-[-9%] !bg-gradient-to-t !from-black !via-[#151515a7] !to-transparent",
+      "xxl:h-[640px] w-screen h-[550px] lg:h-[380px] sm:h-[400px] xs:h-[480px] lg:top-[-26%] top-[-15%] xxl:top-[-9%] bg-gradient-to-t from-black via-[#151515a7] to-transparent",
   },
   aboutPage: "",
 };
@@ -40,8 +40,8 @@ const Admin_Development: React.FC<HomeProps> = ({ isBot }) => (
     <OurServices />
     <OurProcess />
     <Benefits />
-    {!isBot && <Work />}
-    {!isBot && <Testimonials />}
+    {isBot && <Work />}
+    {isBot && <Testimonials />}
     {/* Temporary disable */}
     {/* <Faqs DataKey={"website-development-landing-page"} /> */}
     <LetsConnect />

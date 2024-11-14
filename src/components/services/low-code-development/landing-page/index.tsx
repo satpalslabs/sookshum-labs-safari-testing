@@ -26,8 +26,9 @@ const content_heroSection: HeroSection = {
   gradientTextStyle: "w-[90%] lg:w-[80%] xs:!w-full",
   style: {
     sourceStyle:
-      "xxl:!left-[30%] xxl:!h-[700px] xxl:!scale-[1.1] !h-[700px] !-top-[20%] xxl:top-[-18%] xxl:!-translate-x-[30%] lg:!h-[550px] sm:!h-[450px] xs:!h-[320px] xs:!-top-[4%] xs:!scale-[2]",
-    gradientDivStyle: "xxl:left-[50%] xxl:-translate-x-[50%] xxl:!h-[560px] xxl:left-[50%] !h-[560px] lg:!h-[450px] sm:!h-[360px] xs:!h-[280px]  xs:!top-[-20%] !top-[-15%] xxl:!top-[-8%]",
+      "scale-[1.0] xs:scale-[1.8] xxl:left-[50%] xxl:-translate-x-[50%] w-screen xxl:h-[620px] h-[540px] sm:h-[390px] xs:h-[350px] lg:h-[311px]  xxl:bottom-[10%] bottom-[-1%] lg:bottom-[18%] sm:bottom-[25%] xs:bottom-[18%]  ",
+    gradientDivStyle:
+      "scale-[1.0] xs:scale-[2] xxl:left-[50%] xxl:-translate-x-[50%] w-screen xxl:h-[620px] h-[540px] lg:h-[321px] sm:h-[400px] xs:h-[350px]  xxl:bottom-[10%] bottom-[-1%] lg:bottom-[16%]  sm:bottom-[25%]  xs:bottom-[15%] 2xs:bottom-[35%]",
   },
   aboutPage:
     "We are a digital product studio obsessed with building software that delights your users. We design, build, and deliver your custom solutions - fast.",

@@ -24,9 +24,9 @@ const content_heroSection: HeroSection = {
   gradientText: "Elevate Your Online Presence with Expert WordPress Development",
   style: {
     sourceStyle:
-      "xxl:left-[50%] xxl:!scale-100 xxl:!h-[800px] xxl:scale-[1] lg:!h-[530px] sm:!h-[530px] xs:!h-[170px] xxl:!top-[-41%] !h-[680px]  !top-[-21%] lg:!top-[-41%] sm:!top-[-31%] xs:!top-[-15%] xxl:-translate-x-[50%]",
+      "xxl:left-[50%] w-screen xxl:scale-100 xxl:h-[800px] xxl:scale-[1] lg:h-[530px] sm:h-[530px] xs:h-[170px] xxl:top-[-41%] h-[680px] xs:scale-[2] top-[-21%] lg:top-[-41%] sm:top-[-31%] xs:top-[-15%] xxl:-translate-x-[50%]",
     gradientDivStyle:
-      "xxl:!h-[530px] !h-[550px] lg:!h-[420px] sm:!h-[420px] xs:!h-[220px] xs:!top-[-20%] lg:!top-[-30%] !top-[-15%] xxl:!top-[-9%] ",
+      "xxl:h-[730px] w-screen h-[850px] lg:h-[560px] sm:h-[520px] xs:h-[220px] xs:scale-[2]  xs:top-[-20%] lg:top-[-45%] sm:top-[-35%] top-[-25%] xxl:top-[-30%] ",
   },
   aboutPage: "",
 };

@@ -25,9 +25,9 @@ const content_heroSection: HeroSection = {
   fallback: "",
   style: {
     sourceStyle:
-      "xxl:left-[30%] xxl:!h-[1080px] !h-[880px] !scale-[0.8] xxl:!scale-[0.7] sm:!scale-[1.1] xs:!scale-[2] lg:!h-[630px] sm:!h-[500px] xs:!h-auto xs:w-full xs:!top-[-10%] xxl:!top-[-60%] lg:!top-[-80%] !top-[-40%] xxl:-translate-x-[30%] sm:!top-[-60%] ",
+      "scale-[0.55] sm:scale-[0.9] xs:scale-[1.4] xxl:left-[50%] xxl:-translate-x-[50%] w-screen xxl:h-[1250px] h-[840px] sm:h-[390px] xs:h-[350px] lg:h-[611px]  xxl:bottom-[-60%] bottom-[-20%] lg:bottom-[-18%] sm:bottom-[25%] xs:bottom-[4%]  ",
     gradientDivStyle:
-      "xxl:!h-[530px] xxl:left-[50%] xxl:-translate-x-[35%] !h-[550px] lg:!h-[380px] lg:!top-[-40%] sm:!h-[400px] xs:!h-[350px] xs:!top-[-30%] !top-[-15%] xxl:!top-[-8%]",
+      "scale-[1.0]  xs:scale-[1.4] xxl:left-[50%] xxl:-translate-x-[50%] w-screen xxl:h-[700px] h-[540px] lg:h-[351px] sm:h-[350px] xs:h-[350px]  xxl:bottom-[-10%] bottom-[-1%] lg:bottom-[22%]  sm:bottom-[25%]  xs:bottom-[5%] ",
   },
   aboutPage: "",
 };

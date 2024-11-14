@@ -23,8 +23,9 @@ const content_heroSection: HeroSection = {
   fallback: "",
   style: {
     sourceStyle:
-      "xxl:!left-[30%] xxl:!h-[800px] xxl:!scale-[1.1] !h-[700px] !-top-[20%] xxl:!top-[-38%] xxl:!-translate-x-[30%] lg:!h-[550px] lg:!top-[-40%] sm:!h-[450px] xs:!h-[320px] xs:-top-[4%] xs:!scale-[2]",
-    gradientDivStyle: "xxl:left-[50%] xxl:-translate-x-[50%] xxl:!h-[560px] xxl:left-[50%] !h-[560px] lg:!h-[450px] sm:!h-[360px] xs:!h-[240px]  lg:!top-[-30%]  xs:!top-[-20%] !top-[-15%] xxl:!top-[-6%]",
+      "scale-[1.0] xs:scale-[1.8] xxl:left-[50%] xxl:-translate-x-[50%] w-screen xxl:h-[920px] h-[840px] sm:h-[490px] xs:h-[350px] lg:h-[611px]  xxl:bottom-[10%] bottom-[-1%] lg:bottom-[0%] sm:bottom-[25%] xs:bottom-[18%]  ",
+    gradientDivStyle:
+      "scale-[1.0] xs:scale-[2] xxl:left-[50%] xxl:-translate-x-[50%] w-screen xxl:h-[920px] h-[840px] lg:h-[621px] sm:h-[490px] xs:h-[350px]  xxl:bottom-[10%] bottom-[-1%] lg:bottom-[0%]  sm:bottom-[25%] xs:bottom-[15%] 2xs:bottom-[35%] ",
   },
   aboutPage:
     "We provide expert Retool development services that help businesses harness the full potential of the Retool low-code platform. Our services enable the creation of custom applications, streamline workflows, and enhance productivity.",

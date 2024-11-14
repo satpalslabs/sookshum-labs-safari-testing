@@ -40,11 +40,17 @@ const Hero: React.FC = () => {
       />
       <SourceContent
         showContent="image"
+        // style={{
+        //   sourceStyle:
+        //     "xxl:left-[50%] xxl:!-translate-x-[50%] xxl:!h-[680px] xxl:!top-[-30%] !h-[600px]  xxl:!scale-[1] lg:!scale-[1.2] sm:!scale-[1.2] !top-[-20%] lg:!h-[450px] sm:!h-[720px] xs:!h-[580px] xs:!top-[-50%] xs:!scale-[1.2] xxl:top-[-21%] xxl:!-translate-x-[20%] lg:!top-[-30%] sm:!top-[-98%] ",
+        //   gradientDivStyle:
+        //     "xxl:!h-[530px] !h-[550px] lg:!h-[400px] lg:!top-[-20%] sm:!h-[420px] sm:!top-[-20%] xs:!h-[200px] xs:!top-[5%] !top-[-15%] xxl:!top-[-9%]",
+        // }}
         style={{
           sourceStyle:
-            "xxl:left-[50%] xxl:!-translate-x-[50%] xxl:!h-[680px] xxl:!top-[-30%] !h-[600px]  xxl:!scale-[1] lg:!scale-[1.2] sm:!scale-[1.2] !top-[-20%] lg:!h-[450px] sm:!h-[720px] xs:!h-[580px] xs:!top-[-50%] xs:!scale-[1.2] xxl:top-[-21%] xxl:!-translate-x-[20%] lg:!top-[-30%] sm:!top-[-98%] ",
+            "scale-[1.0] lg:scale-[1.4] sm:scale-[1] xxl:left-[50%] xxl:-translate-x-[50%] w-screen h-[540px] sm:h-[690px]  lg:h-[311px] lg:bottom-[18%] sm:bottom-[5%]  xs:bottom-[-5%]  xxl:h-[620px] xxl:bottom-[-10%] bottom-[-1%]",
           gradientDivStyle:
-            "xxl:!h-[530px] !h-[550px] lg:!h-[400px] lg:!top-[-20%] sm:!h-[420px] sm:!top-[-20%] xs:!h-[200px] xs:!top-[5%] !top-[-15%] xxl:!top-[-9%]",
+            "scale-[1.0] lg:scale-[1.4] xxl:left-[50%] xxl:-translate-x-[50%] w-screen xxl:h-[620px] h-[540px]  lg:h-[321px] sm:scale-100 lg:bottom-[16%] sm:h-[690px] sm:bottom-[-5%]  xs:bottom-[-5%]  xxl:bottom-[-10%] bottom-[-1%] ",
         }}
         fallback=""
         source={

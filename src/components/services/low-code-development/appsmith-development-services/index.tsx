@@ -27,9 +27,9 @@ const content_heroSection: HeroSection = {
   gradientTextStyle: "w-[90%] lg:w-[80%] xs:!w-full",
   style: {
     sourceStyle:
-      " xxl:!h-[910px] sm:!h-[550px] lg:!h-[600px] xxl:!scale-[1] xxl:left-[50%] xxl:!-translate-x-[50%]  xxl:!top-[-38%] !top-[-28%] !h-[850px] !ml-0 xs:!h-[300px] xs:!scale-[1.5] xs:!top-[-20%] sm:!top-[-40%] lg:!top-[-30%]",
+      "scale-[1.0] xs:scale-[1.8] xxl:left-[50%] xxl:-translate-x-[50%] w-screen xxl:h-[620px] h-[540px] sm:h-[390px] xs:h-[350px] lg:h-[311px]  xxl:bottom-[10%] bottom-[-1%] lg:bottom-[18%] sm:bottom-[25%] xs:bottom-[18%]  ",
     gradientDivStyle:
-      "xxl:!h-[630px] xxl:!min-w-screen !h-[650px] lg:!h-[450px] sm:!h-[440px]  xs:!h-[380px] xs:!scale-[1.5] xs:!top-[-30%] sm:!top-[-25%] xxl:!top-[-3%] !top-[-14%] xxl:!top-[-8%] ",
+      "scale-[1.0] xs:scale-[2] xxl:left-[50%] xxl:-translate-x-[50%] w-screen xxl:h-[620px] h-[540px] lg:h-[321px] sm:h-[400px] xs:h-[350px]  xxl:bottom-[10%] bottom-[-1%] lg:bottom-[16%]  sm:bottom-[25%]  xs:bottom-[15%] 2xs:bottom-[35%]",
   },
   aboutPage:
     "Leverage the power of Appsmith, the pioneering open-source low-code platform for developing custom work dashboards and automating workflows.",

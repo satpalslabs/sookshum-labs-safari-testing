@@ -24,9 +24,9 @@ const content_heroSection: HeroSection = {
   fallback: "",
   style: {
     sourceStyle:
-      "xxl:!left-[23%] xxl:!h-[650px] !left-[8%] lg:!h-[330px] sm:!h-[280px] xs:!h-[200px] xxl:!top-[-18%] xs:!top-[-5%] xs:!scale-[2.4] xxl:!translate-x-[0%] xxl:!ml-0 !ml-[18%] !scale-[1.5] lg:!scale-[1.5] xs:!ml-[30%] lg:!ml-[25%] xxl:!scale-[1.45] lg:!left-[2%]",
+      "scale-[1.0] w-screen xs:scale-[1.4] xxl:left-[60%] xxl:-translate-x-[60%] w-screen xxl:h-[620px] h-[540px] lg:h-[451px] sm:h-[490px] xs:h-[450px] 2xs:scale-[2] xxl:bottom-[15%] bottom-[20%] lg:bottom-[5%] sm:bottom-[10%] xs:bottom-[-0%] 2xs:bottom-[-20%] ",
     gradientDivStyle:
-      "xxl:!h-[630px] xxl:!left-[20%] xxl:!-translate-x-[0%] xxl:!min-w-screen !h-[650px] lg:!h-[380px] sm:!h-[340px] xs:!h-[220px] xs:!top-[-20%] xxl:!top-[-3%] !top-[-14%] xxl:!top-[-8%]",
+      "scale-[1.0] w-screen xxl:left-[50%] xxl:-translate-x-[50%] w-screen xxl:h-[620px] h-[540px] lg:h-[461px] sm:h-[490px] xs:h-[510px] 2xs:h-[580px]   xxl:bottom-[15%] bottom-[20%] lg:bottom-[4%]  sm:bottom-[10%]  xs:bottom-[-0%] 2xs:bottom-[0%] ",
   },
   aboutPage:
     "We’re more than just a development team – we bring the strategy and expertise to successfully launch your product.",
