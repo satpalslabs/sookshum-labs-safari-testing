@@ -3,7 +3,6 @@
  */
 
 import Image from "next/image";
-import fallbackImage from "/public/home/hero/fallback.webp";
 const ImageContainer: React.FC = () => (
   <div className="absolute -right-[10%] -top-[15%] lg:-top-[5%] sm:top-[3%] xs:top-[-1%] sm:-right-[25%] w-fit h-[700px] lg:h-[568px]">
     <video
@@ -12,16 +11,17 @@ const ImageContainer: React.FC = () => (
       loop
       playsInline
       preload="metadata"
+      poster={"/home/hero/fallback.webp"}
       className="w-[auto] xxl:h-[800px] h-[700px] lg:h-[538px] sm:h-[468px] xs:h-[350px] object-cover xs:object-contain"
     >
       <source src="/home/hero/bg-video.webm" type="video/webm" />
-      <source src="/home/hero/bg-video.mp4" type="video/mp4" />
+      {/* <source src="/home/hero/bg-video.mp4" type="video/mp4" /> */}
 
       {/* Fallback Image */}
       <Image
         className="w-fit -ml-[32%] xs:-ml-[2%] xxl:h-[800px] h-[700px] lg:h-[538px] sm:h-[468px] object-cover"
         alt="background image"
-        src={fallbackImage}
+        src={"/home/hero/fallback.webp"}
         width={1500}
         height={700}
         blurDataURL="URL"
