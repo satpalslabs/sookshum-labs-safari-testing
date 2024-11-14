@@ -269,7 +269,7 @@ const ContentUsForm: React.FC = () => {
       <form action="">
         <div className="flex flex-col gap-5 xxl:gap-6">
           <H5 text="Your contact info" style="!text-white" />
-          <div className="grid grid-cols-2 gap-5 sm:gap-[14px]">
+          <div className="grid grid-cols-2 sm:grid-rows-2 gap-5 sm:gap-[14px]">
             <span>
               <CustomInput
                 type="string"

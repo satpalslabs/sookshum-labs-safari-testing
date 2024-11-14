@@ -12,7 +12,7 @@ const ImageContainer: React.FC = () => {
         height={1600}
         src="/services/e-commerce-development/shopify-development-services/lets-connect.webp"
         alt="let's connect"
-        className="h-[440px] lg:h-[330px] w-auto xs:w-full xs:h-auto shrink-0"
+        className="h-[440px] lg:h-[330px] w-auto xs:w-full xs:h-fit  shrink-0"
       />
     </div>
   );
