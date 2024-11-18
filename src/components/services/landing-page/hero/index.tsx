@@ -24,10 +24,11 @@ const Hero: React.FC = () => {
   };
 
   useEffect(() => {
-    const handleResize = debounce(() => setWidth(window.innerWidth), 200);
+    const handleResize = () => setWidth(window.innerWidth);
     window.addEventListener("resize", handleResize);
 
     // Clean up the event listener on component unmount
+    handleResize();
     return () => {
       window.removeEventListener("resize", handleResize);
     };

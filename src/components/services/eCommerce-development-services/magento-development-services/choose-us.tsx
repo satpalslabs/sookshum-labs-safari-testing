@@ -80,7 +80,7 @@ const SingleCard: React.FC<{ isInView: boolean; data: ChooseUs }> = ({
         height={100}
         src={data.image_url}
         alt="circle"
-        className="-rotate-[45deg] w-fit h-fit"
+        className="-rotate-[45deg] w-[128px] lg:w-[99px] h-[128px] lg:h-[99px] sm:w-[78px] sm:h-[78px]"
       />
     </Card>
     <ArrowDiv data={data} />

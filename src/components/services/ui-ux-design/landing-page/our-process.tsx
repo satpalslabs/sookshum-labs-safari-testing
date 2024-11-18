@@ -42,7 +42,7 @@ const ImageContainer: React.FC = () => (
       placeholder="blur"
       width={1000}
       height={1000}
-      className="hidden sm:block w-full h-[658px] xs:hidden"
+      className="hidden sm:block w-auto h-[658px] xs:hidden"
       src="/services/ui-ux-design/landing-page/our-process/tab.png"
       alt="image"
     />
@@ -51,7 +51,7 @@ const ImageContainer: React.FC = () => (
       placeholder="blur"
       width={1000}
       height={1500}
-      className="hidden  xs:block w-full h-[1111px] 3xs:h-[850px] object-contain"
+      className="hidden  xs:block h-[1111px] 3xs:h-[850px] w-auto"
       src="/services/ui-ux-design/landing-page/our-process/mobile.png"
       alt="image"
     />
