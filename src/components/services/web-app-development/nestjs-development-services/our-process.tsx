@@ -66,8 +66,8 @@ const OurProcessMainContainer = () => {
             }`}
           >
             <Image
-              height={200}
-              width={200}
+              height={400}
+              width={400}
               src={process.image}
               className="hidden xs:block w-[52px] h-auto"
               alt="image"

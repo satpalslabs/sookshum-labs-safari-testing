@@ -15,8 +15,8 @@ const LogoSection: React.FC = () => (
       <Image
         className="w-[186px] h-full xs:w-[128px] xs:mx-auto"
         src="/header/Top-Nav-logo.svg"
-        height={200}
-        width={200}
+        height={300}
+        width={300}
         alt="Logo"
         blurDataURL="URL"
         placeholder="blur"

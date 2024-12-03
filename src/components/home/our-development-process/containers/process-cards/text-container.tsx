@@ -13,11 +13,14 @@ const TextContainer: React.FC<{
   item: dataItemType;
   index: number;
 }> = ({ item, index }) => (
-  <div className="px-4 lg:px-5 md:px-0 grow xs:px-4">
+  <div className="px-4 lg:px-5 md:px-0 grow xs:px-4 relative z-10">
     <div className="flex px-4 flex-col gap-6 md:gap-5 md:px-5 sm:px-[17px] sm:gap-4 grow h-fit md:pr-3 sm:pr-[10.5px] xs:px-0">
       <div className="flex flex-col gap-[14px] md:gap-3 grow sm:gap-[5px] sm:pt-0">
-      <H3 style="!text-[19px] md:!text-base sm:!text-sm !text-white" text={item.title} />
-      <Description
+        <H3
+          style="!text-[19px] md:!text-base sm:!text-sm !text-white"
+          text={item.title}
+        />
+        <Description
           children={null}
           text={item.description}
           classes={`${index == 3 ? "px-6" : ""} sm:px-0 !font-normal`}

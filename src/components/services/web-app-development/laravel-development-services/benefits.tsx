@@ -74,8 +74,8 @@ const Benefit: React.FC<props> = ({ benefit, active, index, setActive }) => {
         >
           <div className="flex gap-5 items-center">
             <Image
-              height={100}
-              width={100}
+              height={400}
+              width={400}
               className="w-8 h-8 object-contain"
               src={benefit.image}
               alt={benefit.title}

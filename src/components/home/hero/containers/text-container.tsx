@@ -21,8 +21,8 @@ const TextContainer: React.FC = () => (
             src="/home/hero/down_line.svg"
             alt="down_line"
             className="absolute w-[33%] left-[52%] sm:w-[40%] 2xs:w-[30%] 2xs:left-[45%] 2xs:top-[40px]  sm:left-[55%] md:left-[40%] lg:left-[40%] top-[95px] sm:top-[62px] lg:top-[82px] "
-            height={100}
-            width={100}
+            height={300}
+            width={300}
             blurDataURL="URL"
             placeholder="blur"
           />

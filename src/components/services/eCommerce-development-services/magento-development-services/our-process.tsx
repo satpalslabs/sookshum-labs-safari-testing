@@ -152,8 +152,8 @@ const LeftSmallArrow: React.FC<{ item: ourProcess; ind: number }> = ({
     } xs:border-transparent`}
   >
     <Image
-      width={100}
-      height={100}
+      width={400}
+      height={400}
       alt="image"
       src="/services/e-commerce-development/magento-development-services/our-process/arrow.svg"
       className={`w-fit h-fit translate-y-[calc(-50%-1px)] -rotate-90 right-[-4px] absolute ${
@@ -181,8 +181,8 @@ const TopArrowWithLine: React.FC<{ item: ourProcess; ind: number }> = ({
     } `}
   >
     <Image
-      width={100}
-      height={100}
+      width={400}
+      height={400}
       alt="image"
       src="/services/e-commerce-development/magento-development-services/our-process/arrow.svg"
       className={`h-fit w-fit translate-x-[calc(-50%-1px)] bottom-[-2px] left-0 absolute ${

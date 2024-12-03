@@ -14,6 +14,7 @@ export type dataItemType = {
   description: string;
   image_url: string;
   link: string;
+  video_url: string;
 };
 
 const ServiceCards: React.FC = () => {

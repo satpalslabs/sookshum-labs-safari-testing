@@ -4,7 +4,7 @@
 
 import Image from "next/image";
 const ImageContainer: React.FC = () => (
-  <div className="absolute -right-[10%] -top-[15%] lg:-top-[5%] sm:top-[3%] xs:top-[-1%] sm:-right-[25%] w-fit h-[700px] lg:h-[568px]">
+  <div className="absolute right-[-2%] -top-[4%] lg:-top-[5%] sm:top-[3%] xs:top-[-1%] sm:-right-[25%] w-fit h-[700px] lg:h-[568px]">
     <video
       autoPlay={true}
       muted
@@ -12,9 +12,9 @@ const ImageContainer: React.FC = () => (
       playsInline
       preload="metadata"
       poster={"/home/hero/fallback.webp"}
-      className="w-[auto] xxl:h-[800px] h-[700px] lg:h-[538px] sm:h-[468px] xs:h-[350px] object-cover xs:object-contain"
+      className="w-[auto] xxl:h-[700px] h-[700px] lg:h-[538px] sm:h-[468px] xs:h-[350px] object-cover xs:object-contain"
     >
-      <source src="/home/hero/bg-video.webm" type="video/webm" />
+      <source src="/home/hero/bg-video1.webm" type="video/webm" />
       {/* <source src="/home/hero/bg-video.mp4" type="video/mp4" /> */}
 
       {/* Fallback Image */}

@@ -65,8 +65,8 @@ const SingleCard: React.FC<{ isInView: boolean; data: choose_us }> = ({
       isInView={isInView}
     >
       <Image
-        height={200}
-        width={200}
+        height={400}
+        width={400}
         src={data.image_url}
         className="w-[120px] h-auto lg:w-[80px] "
         alt="image"

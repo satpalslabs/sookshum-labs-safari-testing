@@ -24,8 +24,8 @@ const Testimonials = ({
         "linear-gradient(to top left,transparent,transparent 50%,rgba(40, 40, 40, 0.7) 50%, rgba(230, 134, 36, 0.0) 86%, rgba(230, 134, 36, 0.23) 100%)",
       filter: isInView ? "grayscale(0)" : "grayscale(1)",
       border: isInView
-        ? "2px solid var(--view-port-border)"
-        : "2px solid transparent",
+        ? "1px solid var(--view-port-border)"
+        : "1px solid transparent",
     }}
     className={`slideCard h-[360px] max-w-fit w-max  min-w-[408px] md:h-[300px] xs:h-[200px] p-4 py-8 bg-innerContainer shadow-buttonInset rounded-[32px] transition-all duration-500 bg-slider-bg-size bg-[100%_100%] hover:bg-[0%_0%]  border border-transparent cursor-pointer hover:!border-borderPrimary overflow-hidden flex flex-col xs:rounded-2xl gap-6 xs:gap-4 lg:p-3 lg:py-4 lg:rounded-[26px] xs:p-[10px]`}
   >

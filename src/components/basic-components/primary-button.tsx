@@ -58,8 +58,8 @@ const PrimaryButton: React.FC<props> = ({ text, style, icon = true, link }) => {
                 src="/header/Top-Nav-button-arrow.svg"
                 className="w-[10px] h-[10px] xs:w-2 xs:h-2"
                 alt="top-arrow"
-                height={100}
-                width={100}
+                height={200}
+                width={200}
               />
             )}
           </div>
@@ -96,8 +96,8 @@ const PrimaryButton: React.FC<props> = ({ text, style, icon = true, link }) => {
                 src="/header/Top-Nav-button-arrow.svg"
                 className="w-[10px] h-[10px] xs:w-2 xs:h-2"
                 alt="top-arrow"
-                height={100}
-                width={100}
+                height={200}
+                width={200}
               />
             )}
           </div>
