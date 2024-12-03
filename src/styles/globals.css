@@ -3,117 +3,129 @@
 @tailwind utilities;
 
 :root {
-    --primary: #F79A12;
-    --border-primary: #E686241F;
-    --green-dot: #5FF319;
-    --layout-background-color: #151515;
-    --dark-button: #282828B3;
-    --dark-button-text: #f8f8f8;
-    --border-dark-button: #ffffff1a;
-    --secondary-color: #F8F8F8B2;
-    --h3-heading: #F8F8F8F2;
-    --light-text-primary: #8F8F8F;
-    --light-text: #ffffffcc;
-    --dropdown-text: #FFFFFF80;
-    --custom-white: #f4f0f0;
-    --custom-yellow: #FCCE62;
-    --view-port-border: #73737366;
-    --inner-container-blur: #28282866;
-    --inner-container: #282828B2;
-    --custom-dark-shadow: #F8F8F80F;
-    --slider-circle-gradient: linear-gradient(158.39deg, rgba(255, 255, 255, 0.1) 14.19%, rgba(255, 255, 255, 2.5e-05) 50.59%, rgba(255, 255, 255, 2.5e-05) 68.79%, rgba(255, 255, 255, 0.025) 105.18%);
-    --dark-button-gradient: linear-gradient(94.33deg, rgba(230, 134, 36, 0.092549) 1.23%, rgba(230, 134, 36, 0.2) 98.22%);
-    --text-gradient: linear-gradient(92.21deg, #8BB3FF 9.36%, #E68624 57.5%, #FF358A 99.51%);
-    --hover-gradient: linear-gradient(0deg, #282828b3, #282828b3), linear-gradient(181.14deg, #e6862400 86.43%, #e686243b 120.21%), linear-gradient(91.05deg, #e6862400 87.12%, #e686243b 120.22%), linear-gradient(1.14deg, #e6862400 88.01%, #e686243b 115.85%), linear-gradient(271.05deg, #e6862400 87.8%, #e686243b 116.94%);
-    --dark-gradient: linear-gradient(180deg, #1E1E1E 0%, rgba(0, 0, 0, 0) 100%);
-    --orange-background: linear-gradient(118.99deg, #E68624 1.91%, #804B14 97.83%);
-    --slider-gradient: linear-gradient(180deg, #15151538 0%, #000000 100%);
-    --shadow-orange: 2px 4px 16px 0px #F8F8F80F inset;
-    --dark-orange: #E17C27CC;
-    --light-black-gradient: #00000052;
-    --gradient-circle-border: linear-gradient(360deg, rgba(255, 255, 255, 0.45) 0%, rgba(255, 255, 255, 0.27) 30.11%, rgba(255, 255, 255, 0.054) 45.16%, rgba(255, 255, 255, 0) 75.26%);
-    --dark-with-opacity: #0000009a;
-    --why-us-container-mac-OS: #1e1e1e;
-    --why-us-container-mac-small-devices: #1e1e1e;
-    --light-border: #F8F8F8;
-    --custom-blue: #5CC9FF;
-    --debug: 1;
-    --bg-background: red;
-    --polygon: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-
-    --rotation: 0;
+  --primary: #f79a12;
+  --border-primary: rgba(230, 134, 36, 0.40);
+  --green-dot: #5ff319;
+  --layout-background-color: #151515;
+  --dark-button: #282828b3;
+  --dark-button-text: #f8f8f8;
+  --border-dark-button: #ffffff1a;
+  --secondary-color: #f8f8f8b2;
+  --h3-heading: #f8f8f8f2;
+  --light-text-primary: #8f8f8f;
+  --light-text: #ffffffcc;
+  --dropdown-text: #ffffff80;
+  --custom-white: #f4f0f0;
+  --custom-yellow: #fcce62;
+  --view-port-border: #73737366;
+  --inner-container-blur: #28282866;
+  --inner-container: #282828b2;
+  --custom-dark-shadow: #f8f8f80f;
+  --slider-circle-gradient: linear-gradient(158.39deg,
+      rgba(255, 255, 255, 0.1) 14.19%,
+      rgba(255, 255, 255, 2.5e-5) 50.59%,
+      rgba(255, 255, 255, 2.5e-5) 68.79%,
+      rgba(255, 255, 255, 0.025) 105.18%);
+  --dark-button-gradient: linear-gradient(94.33deg,
+      rgba(230, 134, 36, 0.092549) 1.23%,
+      rgba(230, 134, 36, 0.2) 98.22%);
+  --text-gradient: linear-gradient(92.21deg,
+      #8bb3ff 9.36%,
+      #e68624 57.5%,
+      #ff358a 99.51%);
+  --hover-gradient: linear-gradient(271deg, rgba(230, 134, 36, 0.00) 87.8%, rgba(230, 134, 36, 0.19) 116.94%), linear-gradient(1deg, rgba(230, 134, 36, 0.00) 88.01%, rgba(230, 134, 36, 0.19) 115.85%), linear-gradient(91deg, rgba(230, 134, 36, 0.00) 87.12%, rgba(230, 134, 36, 0.19) 120.22%), linear-gradient(181deg, rgba(230, 134, 36, 0.00) 86.43%, rgba(230, 134, 36, 0.19) 120.21%);
+  --dark-gradient: linear-gradient(180deg, #1e1e1e 0%, rgba(0, 0, 0, 0) 100%);
+  --orange-background: linear-gradient(118.99deg,
+      #e68624 1.91%,
+      #804b14 97.83%);
+  --slider-gradient: linear-gradient(180deg, #15151538 0%, #000000 100%);
+  --shadow-orange: 2px 4px 16px 0px #f8f8f80f inset;
+  --dark-orange: #e17c27cc;
+  --light-black-gradient: #00000052;
+  --gradient-circle-border: linear-gradient(360deg,
+      rgba(255, 255, 255, 0.45) 0%,
+      rgba(255, 255, 255, 0.27) 30.11%,
+      rgba(255, 255, 255, 0.054) 45.16%,
+      rgba(255, 255, 255, 0) 75.26%);
+  --dark-with-opacity: #0000009a;
+  --why-us-container-mac-OS: #1e1e1e;
+  --why-us-container-mac-small-devices: #1e1e1e;
+  --light-border: #f8f8f8;
+  --custom-blue: #5cc9ff;
+  --debug: 1;
+  --bg-background: red;
+  --polygon: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  --rotation: 0;
 }
 
 .SliderCircle {
-    box-shadow: 0px 122px 31.5px -16px #00000066;
-    box-shadow: 0px 0px 3.2px 0px #F8F8F840 inset;
-    border: 3px solid var(--slider-circle-gradient);
+  box-shadow: 0px 122px 31.5px -16px #00000066;
+  box-shadow: 0px 0px 3.2px 0px #f8f8f840 inset;
+  border: 3px solid var(--slider-circle-gradient);
 }
 
 .Toastify__toast-icon {
-    width: 30px !important;
-    height: 30px !important;
+  width: 30px !important;
+  height: 30px !important;
 }
 
-
 @layer properties {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
 
-    .no-scrollbar::-webkit-scrollbar {
-        display: none;
-    }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
 
-    /* Hide scrollbar for IE, Edge and Firefox */
-    .no-scrollbar {
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-    }
+  .scrollbar::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
 
-    .scrollbar::-webkit-scrollbar {
-        width: 10px;
-        height: 10px;
-      }
-    
-      .scrollbar::-webkit-scrollbar-track {
-        border-radius: 4px;
-        background: #504f4f4b;
-      }
-    
-      .scrollbar::-webkit-scrollbar-thumb {
-        background: #6b6868de;
-        border-radius: 4px;
-        border: none;
-      }
-    
-      .scrollbar::-webkit-scrollbar-thumb:hover {
-        background: #474647;
-      }
+  .scrollbar::-webkit-scrollbar-track {
+    border-radius: 4px;
+    background: #504f4f4b;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: #6b6868de;
+    border-radius: 4px;
+    border: none;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #474647;
+  }
 }
 
 [aria-haspopup="listbox"] .flag {
-    scale: 1.8;
+  scale: 1.8;
 }
-li.country .flag{
-    scale:1.6;
-    margin-right: 12px !important;
+
+li.country .flag {
+  scale: 1.6;
+  margin-right: 12px !important;
 }
 
 .react-tel-input .selected-flag:hover,
 .react-tel-input .selected-flag:focus,
-
 .react-tel-input .flag-dropdown.open .selected-flag {
-    background-color: transparent !important;
-    transition: all 300ms linear !important;
+  background-color: transparent !important;
+  transition: all 300ms linear !important;
 }
 
-.react-tel-input .country-list .country:hover,.react-tel-input .country-list .country.highlight{
-    background-color:  #f79b12e1  !important;
-    border-radius: 6px;
-  
-}
-li.country{
-    margin-top: 2px !important;
+.react-tel-input .country-list .country:hover,
+.react-tel-input .country-list .country.highlight {
+  background-color: #f79b12e1 !important;
+  border-radius: 6px;
 }
 
+li.country {
+  margin-top: 2px !important;
+}
 
 /* @media (prefers-color-scheme: dark) {
   :root {
@@ -186,10 +198,8 @@ body {
 
 } */
 
-
-
 .unreset {
-    /**
+  /**
 * Unreset CSS
 *
 * Copyright (C) 2016 Kite (ixkaito@gmail.com)
@@ -201,322 +211,314 @@ body {
 * Doctor, or Tim Murtaugh's HTML5 Reset.
 */
 
-    html {
-        box-sizing: content-box;
+  html {
+    box-sizing: content-box;
+  }
+
+  body {
+    margin: 8px;
+    line-height: normal;
+  }
+
+  p {
+    margin: 1em 0;
+  }
+
+  blockquote,
+  figure {
+    margin: 1em 40px;
+  }
+
+  q {
+    quotes: "“" "”" "‘" "’";
+
+    &:before {
+      content: open-quote;
     }
 
-    body {
-        margin: 8px;
-        line-height: normal;
+    &:after {
+      content: close-quote;
     }
+  }
 
-    p {
-        margin: 1em 0;
-    }
+  hr {
+    border: 1px inset;
+    box-sizing: border-box;
+    margin: 0.5em auto;
+  }
 
-    blockquote,
-    figure {
-        margin: 1em 40px;
-    }
+  h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0.67em 0;
+  }
 
-    q {
-        quotes: "“" "”" "‘" "’";
+  h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0.83em 0;
+  }
 
-        &:before {
-            content: open-quote;
-        }
+  h3 {
+    font-size: 1.17em;
+    font-weight: bold;
+    margin: 1em 0;
+  }
 
-        &:after {
-            content: close-quote;
-        }
-    }
+  h4 {
+    font-size: 1em;
+    font-weight: bold;
+    margin: 1.33em 0;
+  }
 
-    hr {
-        border: 1px inset;
-        box-sizing: border-box;
-        margin: 0.5em auto;
-    }
+  h5 {
+    font-size: 0.83em;
+    font-weight: bold;
+    margin: 1.67em 0;
+  }
 
+  h6 {
+    font-size: 0.67em;
+    font-weight: bold;
+    margin: 2.33em 0;
+  }
+
+  article,
+  aside,
+  nav,
+  section {
     h1 {
-        font-size: 2em;
-        font-weight: bold;
-        margin: 0.67em 0;
-    }
-
-    h2 {
-        font-size: 1.5em;
-        font-weight: bold;
-        margin: 0.83em 0;
-    }
-
-    h3 {
-        font-size: 1.17em;
-        font-weight: bold;
-        margin: 1em 0;
-    }
-
-    h4 {
-        font-size: 1.00em;
-        font-weight: bold;
-        margin: 1.33em 0;
-    }
-
-    h5 {
-        font-size: 0.83em;
-        font-weight: bold;
-        margin: 1.67em 0;
-    }
-
-    h6 {
-        font-size: 0.67em;
-        font-weight: bold;
-        margin: 2.33em 0;
+      font-size: 1.5em;
+      font-weight: bold;
+      margin: 0.83em 0;
     }
 
     article,
     aside,
     nav,
     section {
+      h1 {
+        font-size: 1.17em;
+        font-weight: bold;
+        margin: 1em 0;
+      }
 
+      article,
+      aside,
+      nav,
+      section {
         h1 {
-            font-size: 1.5em;
-            font-weight: bold;
-            margin: 0.83em 0;
+          font-size: 1em;
+          font-weight: bold;
+          margin: 1.33em 0;
         }
 
         article,
         aside,
         nav,
         section {
+          h1 {
+            font-size: 0.83em;
+            font-weight: bold;
+            margin: 1.67em 0;
+          }
 
+          article,
+          aside,
+          nav,
+          section {
             h1 {
-                font-size: 1.17em;
-                font-weight: bold;
-                margin: 1em 0;
+              font-size: 0.67em;
+              font-weight: bold;
+              margin: 2.33em 0;
             }
-
-            article,
-            aside,
-            nav,
-            section {
-
-                h1 {
-                    font-size: 1.00em;
-                    font-weight: bold;
-                    margin: 1.33em 0;
-                }
-
-                article,
-                aside,
-                nav,
-                section {
-
-                    h1 {
-                        font-size: 0.83em;
-                        font-weight: bold;
-                        margin: 1.67em 0;
-                    }
-
-                    article,
-                    aside,
-                    nav,
-                    section {
-
-                        h1 {
-                            font-size: 0.67em;
-                            font-weight: bold;
-                            margin: 2.33em 0;
-                        }
-                    }
-                }
-            }
+          }
         }
+      }
     }
+  }
 
-    table {
-        border-collapse: separate;
-        border-spacing: 2px;
-        border-color: gray;
-    }
+  table {
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: gray;
+  }
 
-    thead,
-    tbody,
-    tfoot,
-    tr {
-        border-color: inherit;
-        vertical-align: middle;
-    }
+  thead,
+  tbody,
+  tfoot,
+  tr {
+    border-color: inherit;
+    vertical-align: middle;
+  }
 
-    td,
-    th {
-        padding: 1px;
-        vertical-align: inherit;
-    }
+  td,
+  th {
+    padding: 1px;
+    vertical-align: inherit;
+  }
 
-    th {
-        font-weight: bold
-    }
+  th {
+    font-weight: bold;
+  }
 
-    caption {
-        text-align: center;
-    }
+  caption {
+    text-align: center;
+  }
 
-    ul,
-    menu {
-        list-style-type: disc;
-        margin: 1em 0;
-        padding: 0 0 0 40px;
-    }
+  ul,
+  menu {
+    list-style-type: disc;
+    margin: 1em 0;
+    padding: 0 0 0 40px;
+  }
 
-    ol {
-        list-style-type: decimal;
-        margin: 1em 0;
-        padding: 0 0 0 40px;
+  ol {
+    list-style-type: decimal;
+    margin: 1em 0;
+    padding: 0 0 0 40px;
+  }
+
+  ul,
+  ol {
+    ul {
+      list-style-type: circle;
     }
 
     ul,
     ol {
-
-        ul {
-            list-style-type: circle;
-        }
-
-        ul,
-        ol {
-
-            ul {
-                list-style-type: square;
-            }
-        }
+      ul {
+        list-style-type: square;
+      }
     }
+  }
 
-    dd {
-        margin: 0 0 0 40px;
-    }
+  dd {
+    margin: 0 0 0 40px;
+  }
 
-    dl {
-        margin: 1em 0;
-    }
+  dl {
+    margin: 1em 0;
+  }
+
+  ul,
+  ol,
+  menu,
+  dl {
 
     ul,
     ol,
     menu,
     dl {
-
-        ul,
-        ol,
-        menu,
-        dl {
-            margin: 0;
-        }
+      margin: 0;
     }
+  }
 
-    legend {
-        padding: 0 2px;
+  legend {
+    padding: 0 2px;
+  }
+
+  fieldset {
+    border-style: groove;
+    border-width: 2px;
+    border: 2px groove ThreeDFace;
+    margin: 0 2px;
+    padding: 0 2px 3px;
+    -webkit-padding-before: 0.35em;
+    -webkit-padding-start: 0.75em;
+    -webkit-padding-end: 0.75em;
+    -webkit-padding-after: 0.625em;
+  }
+
+  ins {
+    background-color: transparent;
+    font-weight: inherit;
+    text-decoration: underline;
+  }
+
+  b,
+  strong {
+    font-weight: bold;
+  }
+
+  i,
+  cite,
+  em,
+  var,
+  address,
+  dfn {
+    font-style: italic;
+    font-weight: inherit;
+  }
+
+  abbr[title],
+  dfn[title] {
+    border-bottom: 0;
+    cursor: default;
+    font-weight: inherit;
+  }
+
+  tt,
+  code,
+  kbd,
+  samp {
+    font-family: monospace;
+    font-weight: inherit;
+  }
+
+  pre {
+    font-family: monospace;
+    margin: 1em 0;
+    white-space: pre;
+  }
+
+  mark {
+    background-color: yellow;
+    color: black;
+    font-style: normal;
+    font-weight: inherit;
+  }
+
+  big {
+    font-size: larger;
+    font-weight: inherit;
+  }
+
+  small {
+    font-size: smaller;
+    font-weight: inherit;
+  }
+
+  sub,
+  sup {
+    font-weight: inherit;
+    line-height: inherit;
+    position: static;
+  }
+
+  sub {
+    font-size: smaller;
+    bottom: 0;
+    vertical-align: sub;
+  }
+
+  sup {
+    font-size: smaller;
+    top: 0;
+    vertical-align: super;
+  }
+
+  ruby {
+    >rt {
+      font-size: 50%;
     }
+  }
 
-    fieldset {
-        border-style: groove;
-        border-width: 2px;
-        border: 2px groove ThreeDFace;
-        margin: 0 2px;
-        padding: 0 2px 3px;
-        -webkit-padding-before: 0.35em;
-        -webkit-padding-start: 0.75em;
-        -webkit-padding-end: 0.75em;
-        -webkit-padding-after: 0.625em;
-    }
+  iframe {
+    border: 2px inset;
+  }
 
-    ins {
-        background-color: transparent;
-        font-weight: inherit;
-        text-decoration: underline;
-    }
-
-    b,
-    strong {
-        font-weight: bold;
-    }
-
-    i,
-    cite,
-    em,
-    var,
-    address,
-    dfn {
-        font-style: italic;
-        font-weight: inherit;
-    }
-
-    abbr[title],
-    dfn[title] {
-        border-bottom: 0;
-        cursor: default;
-        font-weight: inherit;
-    }
-
-    tt,
-    code,
-    kbd,
-    samp {
-        font-family: monospace;
-        font-weight: inherit;
-    }
-
-    pre {
-        font-family: monospace;
-        margin: 1em 0;
-        white-space: pre;
-    }
-
-    mark {
-        background-color: yellow;
-        color: black;
-        font-style: normal;
-        font-weight: inherit;
-    }
-
-    big {
-        font-size: larger;
-        font-weight: inherit;
-    }
-
-    small {
-        font-size: smaller;
-        font-weight: inherit;
-    }
-
-    sub,
-    sup {
-        font-weight: inherit;
-        line-height: inherit;
-        position: static;
-    }
-
-    sub {
-        font-size: smaller;
-        bottom: 0;
-        vertical-align: sub;
-    }
-
-    sup {
-        font-size: smaller;
-        top: 0;
-        vertical-align: super;
-    }
-
-    ruby {
-
-        >rt {
-            font-size: 50%;
-        }
-    }
-
-    iframe {
-        border: 2px inset;
-    }
-
-    a {
-        text-transform: none !important;
-    }
+  a {
+    text-transform: none !important;
+  }
 }

@@ -82,11 +82,49 @@ const tailwindConfig: Config = {
         testimonialSlider: {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-100%)" }
+        },
+        rotateBorder: {
+          "0%": {
+            top: "0px",
+            transform: "translate(-50%,-50%)",
+            left: "0px",
+          },
+          "25%": {
+            top: "0px",
+            left: "100%",
+            transform: "translate(-50%,-50%)",
+          },
+          "50%": {
+            top: "100%",
+            transform: "translate(-50%,-50%)",
+            left: "100%",
+          },
+          "75%": {
+            top: "100%",
+            transform: "translate(-50%,-50%)",
+            left: "0px",
+          },
+          "100%": {
+            top: "0px",
+            transform: "translate(-50%,-50%)",
+            left: "0px",
+          }
+        },
+        rotate: {
+          "0%": {
+            transform: "rotate(140deg)"
+          },
+          "100%": {
+            transform: "rotate(500deg)"
+          }
         }
+
       },
+
       animation: {
         testimonialSlider: "testimonialSlider 120s infinite linear",
-
+        rotateBorder: "rotateBorder 10s infinite linear ",
+        rotate: "rotate 10s infinite linear "
       }
     },
   },

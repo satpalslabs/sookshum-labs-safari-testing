@@ -7,6 +7,7 @@ import { useRef } from "react";
 import dynamic from "next/dynamic";
 import data from "../../data/index.json";
 import { useInView } from "@lib/use-in-view";
+import ServiceCard2 from "./service-card-2";
 const ServiceCard = dynamic(() => import("./service-card"));
 
 export type dataItemType = {
@@ -23,11 +24,12 @@ const ServiceCards: React.FC = () => {
   return (
     <div
       ref={ref}
-      className="grid grid-cols-3 grid-rows-2 sm:flex sm:flex-wrap  gap-5 sm:grid-cols-2 lg:gap-[18px] sm:gap-3 xs:grid-cols-1 "
+      className="grid grid-cols-3 grid-rows-1 sm:flex sm:flex-wrap  gap-5 sm:grid-cols-2 lg:gap-[18px] sm:gap-3 xs:grid-cols-1 "
     >
       {data.sections.map((dataItem: dataItemType, index: number) => (
         <ServiceCard item={dataItem} key={index} isInView={isInView} />
       ))}
+      <ServiceCard2 isInView={isInView} />
     </div>
   );
 };

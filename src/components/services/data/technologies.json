@@ -5,6 +5,7 @@
             "heading": "Crafting Seamless Online <i style='font-weight:300'>Shopping</i> Experiences",
             "description": "We craft custom e-commerce experiences that supercharge your sales. From ideation to launch, we build beautiful, functional online stores that convert visitors into loyal customers. Our custom approach ensures each store is optimized to maximize conversion and deliver exceptional results.",
             "image-path": "/services/landing-page/tools/E-Commerce.webp",
+            "video-path": "/services/landing-page/tools/eCommerce-video.webm",
             "image-position": "right",
             "link": "/ecommerce-development-services"
         },
@@ -13,6 +14,7 @@
             "heading": "Your App, Our Passion For <i style='font-weight:300'>Digital</i> Innovation",
             "description": "We design and develop custom mobile apps that elevate your business. From initial concept to final launch, we provide innovative solutions tailored to your unique needs, ensuring functionality and performance that drive measurable results. Our goal is to deliver impactful apps that enhance your business and achieve your objectives.",
             "image-path": "/services/landing-page/tools/mobile-app-development.webp",
+            "video-path": "/services/landing-page/tools/mobile-app-video.webm",
             "image-position": "left",
             "link": "/mobile-app-development-services"
         },
@@ -21,6 +23,7 @@
             "heading": "Innovative <i style='font-weight:300'>Web App Solutions</i> that drive results.",
             "description": "We develop web apps ranging from simple tools to complex platforms that address real-world challenges. Our dedicated team blends cutting-edge technology with user-focused design to create solutions that deliver outstanding results, ensuring your web applications are both effective and engaging.",
             "image-path": "/services/landing-page/tools/web-app-development.webp",
+            "video-path": "/services/landing-page/tools/web-app-video.webm",
             "image-position": "right",
             "link": "/web-app-development-services"
         },
@@ -29,6 +32,7 @@
             "heading": "Design that simplifies, engages, <i style='font-weight:300'>and</i> excites",
             "description": "We design intuitive, visually appealing interfaces that are easy to navigate and tailored to your users. By deeply understanding their needs, we create custom designs that enhance engagement and encourage repeat use. Leverage our UI/UX expertise to boost user retention, satisfaction, and distinguish your software in the competitive market.",
             "image-path": "/services/landing-page/tools/UI-UX-design.webp",
+            "video-path": "/services/landing-page/tools/ui-ux-video.webm",
             "image-position": "left",
             "link": "/ui-ux-design-services"
         },
@@ -37,6 +41,7 @@
             "heading": "Unleash the Power of  <i style='font-weight:300'>Low-Code</i> Development",
             "description": "Unlock the power of low-code development with our services. We specialize in creating customized applications swiftly, leveraging low-code platforms to streamline the development process. Our approach ensures rapid delivery of high-quality, scalable solutions tailored to your business needs, all while maintaining flexibility and reducing development time and costs.",
             "image-path": "/services/landing-page/tools/low-code-development.webp",
+            "video-path": "/services/landing-page/tools/low-video.webm",
             "image-position": "right",
             "link": "/low-code-development-services"
         },
@@ -45,6 +50,7 @@
             "heading": "Innovative <i style='font-weight:300'>Web Solutions</i> for the <i style='font-weight:300'>Modern</i> Age",
             "description": "We offer end-to-end website development services, crafting bespoke solutions that blend aesthetics with functionality. We help businesses create dynamic and engaging websites that effectively communicate their message to their target audience. We build powerful online presence that drives engagement and achieves your business goals.",
             "image-path": "/services/landing-page/tools/website-development.webp",
+            "video-path": "/services/landing-page/tools/website-video.webm",
             "image-position": "left",
             "link": "/website-development-services"
         }
