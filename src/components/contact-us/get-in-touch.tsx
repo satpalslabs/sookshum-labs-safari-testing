@@ -7,7 +7,6 @@ import H3 from "@components/basic-components/headings/H3";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 import OuterComponent from "@components/basic-components/outer-component";
-import H2 from "@components/basic-components/headings/H2";
 import PrimaryButton from "@components/basic-components/primary-button";
 import DarkButton from "@components/basic-components/button";
 

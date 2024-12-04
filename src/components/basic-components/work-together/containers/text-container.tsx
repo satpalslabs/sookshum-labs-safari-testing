@@ -3,7 +3,6 @@
  */
 
 import Description from "@components/basic-components/description";
-import H1 from "@components/basic-components/headings/H1";
 import PrimaryButton from "@components/basic-components/primary-button";
 
 const TextContainer: React.FC = () => (

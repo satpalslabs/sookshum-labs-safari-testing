@@ -16,23 +16,36 @@ const TextCard: React.FC<{
   setSelectedItem: Function;
 }> = ({ item, index, selectedItem, setSelectedItem }) => (
   <div
-    className={`w-full flex flex-col gap-2 bg-innerContainer py-8 px-[33px] cursor-pointer rounded-[32px] h-[136px] md:h-[107px] md:pl-5 md:pr-2 md:rounded-[24px] md:gap-1 sm:py-5 sm:!h-fit xs:pl-4 shadow-buttonInset justify-center  transition-all duration-1000 hover:bg-gradientOnHover  border  hover:!border-borderPrimary overflow-hidden ${
+    className={`relative w-full group h-full z-0 cursor-pointer overflow-hidden rounded-[32px] sm:rounded-[20px]  p-[1px] transition-all hover:bg-gradient-to-br  hover:from-borderPrimary hover:via-transparent hover:to-borderPrimary duration-1000 ${
       selectedItem == index
-        ? "!border-borderPrimary bg-gradientOnHover"
-        : "border-transparent"
+        ? `bg-gradient-to-br from-borderPrimary via-transparent   grayscale-0 `
+        : " bg-viewportBorder  grayscale"
     }`}
     onClick={() => setSelectedItem(index)}
   >
-    <div className="font-poppins text-[19px] leading-[1.4] md:text-base sm:text-sm text-h3_heading font-medium">
-      {item.title}
+    <div className="w-full h-full relative z-50 overflow-hidden rounded-[32px] bg-black sm:rounded-[20px] ">
+      <div
+        className={`w-full bg-innerContainer p-4 pb-8 sm:p-[9px] sm:pb-[14px] lg:p-[14px] lg:pb-[23px] relative shadow-buttonInset rounded-[32px] sm:rounded-[20px] flex flex-col gap-2 md:gap-1 py-8 px-[33px] cursor-pointer h-[136px] md:h-[107px] md:pl-5 md:pr-2 md:rounded-[24px]  sm:py-5 sm:!h-fit xs:pl-4 justify-center  transition-all duration-1000 overflow-hidden`}
+      >
+        <div className="font-poppins text-[19px] leading-[1.4] md:text-base sm:text-sm text-h3_heading font-medium">
+          {item.title}
+        </div>
+        {item.description && (
+          <Description
+            children={null}
+            text={item.description}
+            classes={`text-base transition-all !font-normal ease-in-out duration-600 md:text-[13px] sm:!text-xs`}
+          />
+        )}
+      </div>
     </div>
-    {item.description && (
-      <Description
-        children={null}
-        text={item.description}
-        classes={`text-base transition-all !font-normal ease-in-out duration-600 md:text-[13px] sm:!text-xs`}
-      />
-    )}
+    <div
+      className={`absolute z-[999] bg-transparent transition-all duration-1000 top-0 left-0 w-full h-full  ${
+        selectedItem == index
+          ? `bg-gradientOnHover `
+          : "  hover:bg-gradientOnHover"
+      }`}
+    ></div>
   </div>
 );
 
