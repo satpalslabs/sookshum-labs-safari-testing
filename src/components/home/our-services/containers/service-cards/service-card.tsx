@@ -3,7 +3,7 @@
  */
 "use client";
 
-import {  useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { dataItemType } from ".";
 import dynamic from "next/dynamic";
 
@@ -21,7 +21,7 @@ const ServiceCard = ({
   const videoRef = useRef<HTMLVideoElement | null>(null);
   return (
     <div
-      className={`relative w-full group h-full z-0  overflow-hidden rounded-[32px] p-[1px] bg-viewportBorder transition-all hover:bg-gradient-to-br  hover:from-borderPrimary hover:via-transparent hover:to-borderPrimary duration-1000 ${
+      className={`relative grow w-full sm:w-[48.98%] group z-0  overflow-hidden rounded-[32px] p-[1px] bg-viewportBorder transition-all hover:bg-gradient-to-br  hover:from-borderPrimary hover:via-transparent hover:to-borderPrimary duration-1000 ${
         isInView
           ? `bg-viewportBorder  grayscale-0 `
           : "bg-transparent grayscale"
@@ -37,7 +37,7 @@ const ServiceCard = ({
     >
       <div className="w-full h-full overflow-hidden rounded-[32px] bg-black">
         <div
-          className={`flex flex-col gap-2 pb-8 min-h-fit lg:pb-6 bg-innerContainer  lg:rounded-[26px] sm:gap-3 shadow-buttonInset  border-none h-full w-full hover:border-borderPrimary overflow-hidden sm:w-[48.98%] xs:w-full `}
+          className={`flex flex-col gap-2 pb-8 min-h-fit lg:pb-6 bg-innerContainer  lg:rounded-[26px] sm:gap-3 shadow-buttonInset  border-none h-full w-full hover:border-borderPrimary overflow-hidden  xs:w-full `}
         >
           <div className="w-full xll:h-[136px] lg:h-[221px] sm:h-[261px] flex items-center justify-center xs:h-[239px] h-[334px] xxl:h-[354px] overflow-hidden relative">
             <video

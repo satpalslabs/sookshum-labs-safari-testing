@@ -3,6 +3,7 @@
         {
             "title": "Healthcare",
             "image": "/home/industries/healthcare.webp",
+            "video": "/home/industries/healthcare.webm",
             "description": "We develop apps & websites that streamline operations, elevate patient care, and empower healthcare.",
             "points": [
                 "Telemedicine Platform",
@@ -13,6 +14,7 @@
         {
             "title": "Ecommerce",
             "image": "/home/industries/e-commerce.webp",
+            "video": "/home/industries/e-commerce.webm",
             "description": "We craft user-friendly e-commerce solutions that drive conversions and build customer loyalty.",
             "points": [
                 "Multi-Channel Retail Platforms",
@@ -23,6 +25,7 @@
         {
             "title": "Sports",
             "image": "/home/industries/sports.webp",
+            "video": "/home/industries/sports.webm",
             "description": "We design and develop fan-centric sports platforms that drive engagement and connect communities.",
             "points": [
                 "Fitness Tracking Apps",
@@ -33,6 +36,7 @@
         {
             "title": "Business Solutions",
             "image": "/home/industries/business-solutions.webp",
+            "video": "/home/industries/business-solutions.webm",
             "description": "We craft custom design & development solutions to streamline workflows, boost efficiency, and fuel growth.",
             "points": [
                 "CRM apps",
@@ -43,6 +47,7 @@
         {
             "title": "On-Demand Solutions ",
             "image": "/home/industries/on-demand-solutions.webp",
+            "video": "/home/industries/on-demand-solutions.webm",
             "description": "Craft seamless on demand experiences with our design and development expertise. Get what you need.",
             "points": [
                 "Online Classes App",

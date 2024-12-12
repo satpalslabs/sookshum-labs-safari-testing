@@ -12,7 +12,7 @@ const ImageContainer: React.FC = () => (
       playsInline
       preload="metadata"
       // poster={"/home/hero/fallback.webp"}
-      className="w-[auto] xxl:h-[700px] h-[700px] lg:h-[538px] sm:h-[468px] xs:h-[350px] object-cover xs:object-contain"
+      className="w-[auto] xxl:h-[700px] h-[700px] lg:h-[438px] sm:h-[468px] xs:h-[350px] object-cover xs:object-contain"
     >
       <source src="/home/hero/bg-video1.webm" type="video/webm" />
       {/* <source src="/home/hero/bg-video.mp4" type="video/mp4" /> */}

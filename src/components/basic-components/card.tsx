@@ -16,7 +16,7 @@ const Card: React.FC<props> = ({ children, isInView = false, style }) => (
         {children}
       </div>
     </div>
-    <div className="absolute z-[999] bg-transparent transition-all duration-1000 top-0 left-0 w-full h-full group-hover:block group-hover:bg-gradientOnHover "></div>
+    <div className="absolute z-20 bg-transparent transition-all duration-1000 top-0 left-0 w-full h-full group-hover:block group-hover:bg-gradientOnHover "></div>
   </div>
 );
 

@@ -24,6 +24,7 @@ export type industryType = {
   description: string;
   points: Array<string>;
   image: string;
+  video: string;
 };
 
 export default function Slider() {
@@ -48,7 +49,7 @@ export default function Slider() {
           350: { slidesPerView: 1.2 },
           400: { slidesPerView: 1.2 },
           550: { slidesPerView: 2 },
-          639: { slidesPerView: 2.5, spaceBetween: 17 },
+          739: { slidesPerView: 2.2, spaceBetween: 17 },
           1050: { slidesPerView: 3.3, spaceBetween: 20 },
           1500: { slidesPerView: 3.3, spaceBetween: 20 },
           1700: { slidesPerView: 3.5, spaceBetween: 30 },

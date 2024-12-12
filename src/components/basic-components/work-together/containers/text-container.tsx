@@ -18,7 +18,7 @@ const TextContainer: React.FC = () => (
         children={null}
         text="Contact us today to collaborate and bring your vision to life with expert guidance and innovative solutions."
         classes={
-          "text-lg grow-0 text-wrap !font-normal leading-[32px] lg:text-base max-w-full xs:w-full"
+          "text-lg grow-0 text-wrap !font-normal leading-[32px] lg:text-base sm:text-sm max-w-full xs:w-full"
         }
       />
     </div>

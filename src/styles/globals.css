@@ -4,7 +4,7 @@
 
 :root {
   --primary: #f79a12;
-  --border-primary: rgba(230, 134, 36, 0.40);
+  --border-primary: rgba(230, 134, 36, 0.4);
   --green-dot: #5ff319;
   --layout-background-color: #151515;
   --dark-button: #282828b3;
@@ -15,38 +15,93 @@
   --light-text-primary: #8f8f8f;
   --light-text: #ffffffcc;
   --dropdown-text: #ffffff80;
+  --hero-text: linear-gradient(to right bottom, #fff 30%, #ffffff80);
+  --hero-span-text: linear-gradient(120deg, var(--primary) 0%, #df5e26 80%),
+    linear-gradient(130deg, #eaeaea 2.16%, #adadad 93.44%);
   --custom-white: #f4f0f0;
   --custom-yellow: #fcce62;
   --view-port-border: #73737366;
   --inner-container-blur: #28282866;
   --inner-container: #282828b2;
   --custom-dark-shadow: #f8f8f80f;
-  --slider-circle-gradient: linear-gradient(158.39deg,
-      rgba(255, 255, 255, 0.1) 14.19%,
-      rgba(255, 255, 255, 2.5e-5) 50.59%,
-      rgba(255, 255, 255, 2.5e-5) 68.79%,
-      rgba(255, 255, 255, 0.025) 105.18%);
-  --dark-button-gradient: linear-gradient(94.33deg,
-      rgba(230, 134, 36, 0.092549) 1.23%,
-      rgba(230, 134, 36, 0.2) 98.22%);
-  --text-gradient: linear-gradient(92.21deg,
-      #8bb3ff 9.36%,
-      #e68624 57.5%,
-      #ff358a 99.51%);
-  --hover-gradient: linear-gradient(271deg, rgba(230, 134, 36, 0.00) 87.8%, rgba(230, 134, 36, 0.19) 116.94%), linear-gradient(1deg, rgba(230, 134, 36, 0.00) 88.01%, rgba(230, 134, 36, 0.19) 115.85%), linear-gradient(91deg, rgba(230, 134, 36, 0.00) 87.12%, rgba(230, 134, 36, 0.19) 120.22%), linear-gradient(181deg, rgba(230, 134, 36, 0.00) 86.43%, rgba(230, 134, 36, 0.19) 120.21%);
+  --slider-circle-gradient: linear-gradient(
+    158.39deg,
+    rgba(255, 255, 255, 0.1) 14.19%,
+    rgba(255, 255, 255, 2.5e-5) 50.59%,
+    rgba(255, 255, 255, 2.5e-5) 68.79%,
+    rgba(255, 255, 255, 0.025) 105.18%
+  );
+  --dark-button-gradient: linear-gradient(
+    94.33deg,
+    rgba(230, 134, 36, 0.092549) 1.23%,
+    rgba(230, 134, 36, 0.2) 98.22%
+  );
+  --text-gradient: linear-gradient(
+    92.21deg,
+    #8bb3ff 9.36%,
+    #e68624 57.5%,
+    #ff358a 99.51%
+  );
+  --dark-border-primary-button: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 87.89%,
+      rgba(255, 255, 255, 0.2) 110.53%
+    ),
+    linear-gradient(
+      4deg,
+      rgba(255, 255, 255, 0.2) -13.79%,
+      rgba(255, 255, 255, 0) 28.92%
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.2) -7.89%,
+      rgba(255, 255, 255, 0) 12.63%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.2) -12.5%,
+      rgba(255, 255, 255, 0) 25%
+    ),
+    rgba(0, 0, 0, 0.7);
+  --hover-gradient: linear-gradient(
+      271deg,
+      rgba(230, 134, 36, 0) 87.8%,
+      rgba(230, 134, 36, 0.19) 116.94%
+    ),
+    linear-gradient(
+      1deg,
+      rgba(230, 134, 36, 0) 88.01%,
+      rgba(230, 134, 36, 0.19) 115.85%
+    ),
+    linear-gradient(
+      91deg,
+      rgba(230, 134, 36, 0) 87.12%,
+      rgba(230, 134, 36, 0.19) 120.22%
+    ),
+    linear-gradient(
+      181deg,
+      rgba(230, 134, 36, 0) 86.43%,
+      rgba(230, 134, 36, 0.19) 120.21%
+    );
   --dark-gradient: linear-gradient(180deg, #1e1e1e 0%, rgba(0, 0, 0, 0) 100%);
-  --orange-background: linear-gradient(118.99deg,
-      #e68624 1.91%,
-      #804b14 97.83%);
+  --orange-background: linear-gradient(
+    118.99deg,
+    #e68624 1.91%,
+    #804b14 97.83%
+  );
   --slider-gradient: linear-gradient(180deg, #15151538 0%, #000000 100%);
   --shadow-orange: 2px 4px 16px 0px #f8f8f80f inset;
   --dark-orange: #e17c27cc;
+  --dark-button-shadow: rgba(54, 92, 251, 0.08) 0px 1px 2px 0px,
+    rgba(255, 255, 255, 0.4) 0px 0px 6px 0px inset;
   --light-black-gradient: #00000052;
-  --gradient-circle-border: linear-gradient(360deg,
-      rgba(255, 255, 255, 0.45) 0%,
-      rgba(255, 255, 255, 0.27) 30.11%,
-      rgba(255, 255, 255, 0.054) 45.16%,
-      rgba(255, 255, 255, 0) 75.26%);
+  --gradient-circle-border: linear-gradient(
+    360deg,
+    rgba(255, 255, 255, 0.45) 0%,
+    rgba(255, 255, 255, 0.27) 30.11%,
+    rgba(255, 255, 255, 0.054) 45.16%,
+    rgba(255, 255, 255, 0) 75.26%
+  );
   --dark-with-opacity: #0000009a;
   --why-us-container-mac-OS: #1e1e1e;
   --why-us-container-mac-small-devices: #1e1e1e;
@@ -79,26 +134,6 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
-
-  .scrollbar::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-  }
-
-  .scrollbar::-webkit-scrollbar-track {
-    border-radius: 4px;
-    background: #504f4f4b;
-  }
-
-  .scrollbar::-webkit-scrollbar-thumb {
-    background: #6b6868de;
-    border-radius: 4px;
-    border: none;
-  }
-
-  .scrollbar::-webkit-scrollbar-thumb:hover {
-    background: #474647;
-  }
 }
 
 [aria-haspopup="listbox"] .flag {
@@ -126,77 +161,6 @@ li.country .flag {
 li.country {
   margin-top: 2px !important;
 }
-
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
- } */
-
-/* 
-.hex-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  position: relative;
-} */
-/* 
-.hex-outer {
-  width: 100%;
-  height: 100%;
-  background: conic-gradient(from calc(var(--rotation) * 1deg),
-      #e5a64834 10%,
-      #e5a64834 80%,
-      #f79b127c 80% 100%);
-  display: grid;
-  place-items: center;
-  -webkit-clip-path: polygon(92.32051% 40%, 93.79385% 43.1596%, 94.69616% 46.52704%, 95% 50%, 94.69616% 53.47296%, 93.79385% 56.8404%, 92.32051% 60%, 79.82051% 81.65064%, 77.82089% 84.50639%, 75.35575% 86.97152%, 72.5% 88.97114%, 69.3404% 90.44449%, 65.97296% 91.34679%, 62.5% 91.65064%, 37.5% 91.65064%, 34.02704% 91.34679%, 30.6596% 90.44449%, 27.5% 88.97114%, 24.64425% 86.97152%, 22.17911% 84.50639%, 20.17949% 81.65064%, 7.67949% 60%, 6.20615% 56.8404%, 5.30384% 53.47296%, 5% 50%, 5.30384% 46.52704%, 6.20615% 43.1596%, 7.67949% 40%, 20.17949% 18.34936%, 22.17911% 15.49361%, 24.64425% 13.02848%, 27.5% 11.02886%, 30.6596% 9.55551%, 34.02704% 8.65321%, 37.5% 8.34936%, 62.5% 8.34936%, 65.97296% 8.65321%, 69.3404% 9.55551%, 72.5% 11.02886%, 75.35575% 13.02848%, 77.82089% 15.49361%, 79.82051% 18.34936%);
-  clip-path: polygon(92.32051% 40%, 93.79385% 43.1596%, 94.69616% 46.52704%, 95% 50%, 94.69616% 53.47296%, 93.79385% 56.8404%, 92.32051% 60%, 79.82051% 81.65064%, 77.82089% 84.50639%, 75.35575% 86.97152%, 72.5% 88.97114%, 69.3404% 90.44449%, 65.97296% 91.34679%, 62.5% 91.65064%, 37.5% 91.65064%, 34.02704% 91.34679%, 30.6596% 90.44449%, 27.5% 88.97114%, 24.64425% 86.97152%, 22.17911% 84.50639%, 20.17949% 81.65064%, 7.67949% 60%, 6.20615% 56.8404%, 5.30384% 53.47296%, 5% 50%, 5.30384% 46.52704%, 6.20615% 43.1596%, 7.67949% 40%, 20.17949% 18.34936%, 22.17911% 15.49361%, 24.64425% 13.02848%, 27.5% 11.02886%, 30.6596% 9.55551%, 34.02704% 8.65321%, 37.5% 8.34936%, 62.5% 8.34936%, 65.97296% 8.65321%, 69.3404% 9.55551%, 72.5% 11.02886%, 75.35575% 13.02848%, 77.82089% 15.49361%, 79.82051% 18.34936%);
-  animation: rotate 10s linear infinite;
-  position: relative;
-  transform: rotate(-90deg);
-  transform-origin: center;
-}
-
-.hex-inner {
-  background-color: #6c97e1b3;
-
-  width: calc(100% - 6px);
-  height: calc(100% - 6px);
-  background: black;
-  -webkit-clip-path: polygon(92.32051% 40%, 93.79385% 43.1596%, 94.69616% 46.52704%, 95% 50%, 94.69616% 53.47296%, 93.79385% 56.8404%, 92.32051% 60%, 79.82051% 81.65064%, 77.82089% 84.50639%, 75.35575% 86.97152%, 72.5% 88.97114%, 69.3404% 90.44449%, 65.97296% 91.34679%, 62.5% 91.65064%, 37.5% 91.65064%, 34.02704% 91.34679%, 30.6596% 90.44449%, 27.5% 88.97114%, 24.64425% 86.97152%, 22.17911% 84.50639%, 20.17949% 81.65064%, 7.67949% 60%, 6.20615% 56.8404%, 5.30384% 53.47296%, 5% 50%, 5.30384% 46.52704%, 6.20615% 43.1596%, 7.67949% 40%, 20.17949% 18.34936%, 22.17911% 15.49361%, 24.64425% 13.02848%, 27.5% 11.02886%, 30.6596% 9.55551%, 34.02704% 8.65321%, 37.5% 8.34936%, 62.5% 8.34936%, 65.97296% 8.65321%, 69.3404% 9.55551%, 72.5% 11.02886%, 75.35575% 13.02848%, 77.82089% 15.49361%, 79.82051% 18.34936%);
-  clip-path: polygon(92.32051% 40%, 93.79385% 43.1596%, 94.69616% 46.52704%, 95% 50%, 94.69616% 53.47296%, 93.79385% 56.8404%, 92.32051% 60%, 79.82051% 81.65064%, 77.82089% 84.50639%, 75.35575% 86.97152%, 72.5% 88.97114%, 69.3404% 90.44449%, 65.97296% 91.34679%, 62.5% 91.65064%, 37.5% 91.65064%, 34.02704% 91.34679%, 30.6596% 90.44449%, 27.5% 88.97114%, 24.64425% 86.97152%, 22.17911% 84.50639%, 20.17949% 81.65064%, 7.67949% 60%, 6.20615% 56.8404%, 5.30384% 53.47296%, 5% 50%, 5.30384% 46.52704%, 6.20615% 43.1596%, 7.67949% 40%, 20.17949% 18.34936%, 22.17911% 15.49361%, 24.64425% 13.02848%, 27.5% 11.02886%, 30.6596% 9.55551%, 34.02704% 8.65321%, 37.5% 8.34936%, 62.5% 8.34936%, 65.97296% 8.65321%, 69.3404% 9.55551%, 72.5% 11.02886%, 75.35575% 13.02848%, 77.82089% 15.49361%, 79.82051% 18.34936%);
-}
-
-@keyframes rotate {
-  from {
-    --rotation: 0
-  }
-
-  to {
-    --rotation: 360;
-  }
-
-} */
 
 .unreset {
   /**
@@ -405,7 +369,6 @@ body {
   ol,
   menu,
   dl {
-
     ul,
     ol,
     menu,
@@ -509,7 +472,7 @@ body {
   }
 
   ruby {
-    >rt {
+    > rt {
       font-size: 50%;
     }
   }
@@ -521,4 +484,24 @@ body {
   a {
     text-transform: none !important;
   }
+}
+
+.hero-text {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text !important;
+  color: unset;
+  background: linear-gradient(to right bottom, #fff 30%, #ffffff80);
+  text-shadow: -1px -1px 0 #ffffff33, 1px 1px 0 #0000001a;
+  -webkit-text-stroke: 0.4px #ffffff80;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-span {
+  -webkit-text-stroke: 0.4px #e77f2890;
+  -webkit-text-fill-color: transparent;
+  text-shadow: -1px -1px 0 hsla(0, 0%, 100%, 0.2), 1px 1px 0 rgba(0, 0, 0, 0.1);
+  background: linear-gradient(120deg, var(--primary) 0%, #df5e26 80%),
+    linear-gradient(130deg, #eaeaea 2.16%, #adadad 93.44%);
+  color: unset;
 }

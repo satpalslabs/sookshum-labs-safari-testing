@@ -1,3 +1,4 @@
+import { cn } from "@lib/utls";
 
 type description = {
   text: string | null | undefined;
@@ -7,7 +8,9 @@ type description = {
 
 const Description: React.FC<description> = ({ text, children, classes }) => (
   <div
-    className={`font-poppins grow text-base leading-6 md:leading-5 md:text-sm sm:text-[13px] font-normal text-secondary ${classes}`}
+    className={cn(
+      `font-poppins grow text-base leading-6 md:leading-5 md:text-sm sm:text-[13px] font-normal text-secondary ${classes}`
+    )}
   >
     {children ? children : text}
   </div>

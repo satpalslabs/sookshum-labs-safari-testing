@@ -57,7 +57,7 @@ const ServiceCard = ({
           </div>
         </div>
         <div className="transition-all absolute z-50 top-0 w-full flex justify-center translate-x-[-3%] xs:translate-x-[-1%] ">
-          <div className="w-full flex justify-center h-fit  scale-[0.825] sm:scale-[0.625] xs:scale-[0.7]  -translate-y-[40%]  ">
+          <div className="w-full flex justify-center h-fit  scale-[0.825] lg:scale-[0.625] sm:scale-[0.525] xs:scale-[0.7]  -translate-y-[40%]  ">
             <DotLottieReact
               id="firstLottie"
               mode="bounce"
@@ -74,7 +74,7 @@ const ServiceCard = ({
             />
           </div>
         </div>
-        <div className="absolute z-[40] bg-transparent transition-all duration-1000 top-0 left-0 w-full h-full group-hover:block group-hover:bg-gradientOnHover rounded-[32px]"></div>
+        <div className="absolute z-[40] bg-transparent transition-all duration-1000 top-0 left-0 w-full h-full group-hover:block group-hover:bg-gradientOnHover rounded-[32px] sm:rounded-[20px]"></div>
       </div>
     </div>
   );

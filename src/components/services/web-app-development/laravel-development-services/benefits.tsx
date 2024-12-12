@@ -65,6 +65,7 @@ const Benefit: React.FC<props> = ({ benefit, active, index, setActive }) => {
         <button
           className="flex w-full justify-between items-center p-8 !pb-0 lg:p-[28px] sm:p-6"
           onClick={() => {
+            console.log(index);
             if (active) {
               setActive(null);
             } else {

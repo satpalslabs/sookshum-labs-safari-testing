@@ -16,16 +16,16 @@ const TextCard: React.FC<{
   setSelectedItem: Function;
 }> = ({ item, index, selectedItem, setSelectedItem }) => (
   <div
-    className={`relative w-full group h-full z-0 cursor-pointer overflow-hidden rounded-[32px] sm:rounded-[20px]  p-[1px] transition-all hover:bg-gradient-to-br  hover:from-borderPrimary hover:via-transparent hover:to-borderPrimary duration-1000 ${
+    className={`relative w-full group z-0 max-h-fit cursor-pointer overflow-hidden rounded-[32px] sm:rounded-[20px]  p-[1px] transition-all hover:bg-gradient-to-br  hover:from-borderPrimary hover:via-transparent hover:to-borderPrimary duration-1000 ${
       selectedItem == index
         ? `bg-gradient-to-br from-borderPrimary via-transparent   grayscale-0 `
         : " bg-viewportBorder  grayscale"
     }`}
     onClick={() => setSelectedItem(index)}
   >
-    <div className="w-full h-full relative z-50 overflow-hidden rounded-[32px] bg-black sm:rounded-[20px] ">
+    <div className="w-full h-fit relative z-50 overflow-hidden rounded-[32px] bg-black sm:rounded-[20px] ">
       <div
-        className={`w-full bg-innerContainer p-4 pb-8 sm:p-[9px] sm:pb-[14px] lg:p-[14px] lg:pb-[23px] relative shadow-buttonInset rounded-[32px] sm:rounded-[20px] flex flex-col gap-2 md:gap-1 py-8 px-[33px] cursor-pointer h-[136px] md:h-[107px] md:pl-5 md:pr-2 md:rounded-[24px]  sm:py-5 sm:!h-fit xs:pl-4 justify-center  transition-all duration-1000 overflow-hidden`}
+        className={`w-full min-h-full h-fit bg-innerContainer p-4 pb-8 sm:p-[9px] sm:!py-[14px] lg:p-[14px] lg:pb-[20px] relative shadow-buttonInset rounded-[32px] sm:rounded-[20px] flex flex-col gap-2 md:gap-1 py-8 px-[33px] cursor-pointer  md:h-[107px] md:pl-5 md:pr-2 md:rounded-[24px]   sm:!h-fit xs:pl-4 justify-center  transition-all duration-1000 overflow-hidden`}
       >
         <div className="font-poppins text-[19px] leading-[1.4] md:text-base sm:text-sm text-h3_heading font-medium">
           {item.title}

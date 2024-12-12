@@ -2,39 +2,45 @@
     "sections": [
         {
             "image_url": "/home/development-process/Requirement-Gathering.webp",
+            "video_url": "/home/development-process/Requirement-Gathering.webm",
             "title": "Requirement Gathering",
             "description": "We take the time to understand your goals, target audience, and brand identity to craft solutions that truly resonates.",
-            "cols":2
+            "cols": 2
         },
         {
             "image_url": "/home/development-process/Functionality-Mapping&Wireframe.webp",
+            "video_url": "/home/development-process/Functionality-Mapping&Wireframe.webm",
             "title": "Functionality Mapping & Wireframe",
             "description": "We strategically plan key features and functionalities to ensure your website is user-friendly and meets your objectives.",
-            "cols":2
+            "cols": 2
         },
         {
             "image_url": "/home/development-process/UI&UX-Designing.webp",
+            "video_url": "/home/development-process/UI&UX-Designing.webm",
             "title": "UI & UX Designing ",
             "description": "We create visually stunning, user-centric interfaces that are intuitive and engaging, delivering a seamless user experience.",
-            "cols":2
+            "cols": 2
         },
         {
             "image_url": "/home/development-process/Agile-Development.webp",
+            "video_url": "/home/development-process/Agile-Development.webm",
             "title": "Agile Development",
             "description": "Tailored to your needs, our agile development approach involves ongoing refinement and integration of your feedback. This ensures that your digital products evolve seamlessly with your changing needs, delivering a solution that stays relevant and effective throughout its lifecycle. Your input drives continuous improvement for optimal results.",
-            "cols":6
+            "cols": 6
         },
         {
             "image_url": "/home/development-process/Deployment.webp",
+            "video_url": "/home/development-process/Deployment.webm",
             "title": "Deployment",
             "description": "Effortless deployment with precision. We ensure seamless launches, smooth transitions, minimal downtime, and a flawless launch for your digital product’s success.",
-            "cols":3
+            "cols": 3
         },
         {
             "image_url": "/home/development-process/Support&Maintenance.webp",
+            "video_url": "/home/development-process/Support&Maintenance.webm",
             "title": "Support & Maintenance ",
             "description": "Keeping you ahead of the curve. We provide continuous ongoing support and maintenance to ensure your digital products stays secure, up-to-date, and performing optimally.",
-            "cols":3
+            "cols": 3
         }
     ]
 }
