@@ -85,7 +85,7 @@ const ActiveBenefit: React.FC<{
 }> = (props) => (
   <Card
     isInView={props.isInView}
-    style="hover:!bg-none !flex-row !gap-5 xxl:!gap-8 !max-w-full !w-full !p-12 lg:!p-6 xs:!flex-col"
+    style=" flex-row gap-5 xxl:gap-8 max-w-full w-full p-12 lg:p-6 xs:flex-col"
   >
     <div className="xxl:w-[60.17%] w-[53.17%] sm:w-[52.4%] xs:w-full shrink-0 flex flex-col gap-1">
       <H2>

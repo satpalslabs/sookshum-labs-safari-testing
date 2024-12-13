@@ -19,23 +19,23 @@ type service = {
 
 const why_us: service[] = data;
 const WhyUs: React.FC = () => (
-    <OuterComponent>
-      <OuterFlexComponent>
-        <SectionHeader
-          id="why-us"
-          buttonText="Why us?"
-          description="Sookshum Labs stands out as a top admin app development company, driving businesses forward in the digital landscape. "
-          style="w-[80.5%] lg:!w-[740px] xs:!w-full"
-        >
-          <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] ">
-            Why Choose Us for{" "}
-            <span className="italic font-light w-full">Admin App</span>{" "}
-            Development?
-          </div>
-        </SectionHeader>
-        <MainContainer />
-      </OuterFlexComponent>
-    </OuterComponent>
+  <OuterComponent>
+    <OuterFlexComponent>
+      <SectionHeader
+        id="why-us"
+        buttonText="Why us?"
+        description="Sookshum Labs stands out as a top admin app development company, driving businesses forward in the digital landscape. "
+        style="w-[80.5%] lg:!w-[740px] xs:!w-full"
+      >
+        <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em] ">
+          Why Choose Us for{" "}
+          <span className="italic font-light w-full">Admin App</span>{" "}
+          Development?
+        </div>
+      </SectionHeader>
+      <MainContainer />
+    </OuterFlexComponent>
+  </OuterComponent>
 );
 
 export default WhyUs;
@@ -50,7 +50,7 @@ const MainContainer: React.FC = () => {
       className="grid grid-cols-3 grid-rows-2 gap-4 w-full xs:grid-rows-6 xs:grid-cols-1"
     >
       {why_us.map((item: service, index: number) => (
-        <Card key={index} style="mt-0 !pb-4" isInView={isInView}>
+        <Card key={index} style="mt-0 pb-4" isInView={isInView}>
           <div className="flex flex-col justify-between lg:p-3 p-4 gap-[28px] lg:gap-5 h-full">
             <div className="grow ">
               <Image

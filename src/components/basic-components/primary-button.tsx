@@ -1,5 +1,6 @@
 "use client";
 
+import { cn } from "@lib/utls";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -16,7 +17,9 @@ const PrimaryButton: React.FC<props> = ({ text, style, icon = true, link }) => {
       {link === "" ? (
         <div
           id="primary-button"
-          className={`group text-white px-6 h-[55px] xs:flex xs:justify-center rounded-full xs:text-[13px] transition-all font-poppins font-medium relative w-fit lg:h-[48px] lg:px-5 lg:text-[13px] bg-primary hover:[backdrop-filter:blur(100px)] hover:bg-backgroundDarkPrimary  hover:border-borderDarkButton flex  duration-700 items-center z-[80] ${style} `}
+          className={cn(
+            `group text-white px-6 h-[55px] xs:flex xs:justify-center rounded-full xs:text-[13px] transition-all font-poppins font-medium relative w-fit lg:h-[48px] lg:px-5 lg:text-[13px] bg-primary hover:[backdrop-filter:blur(100px)] hover:![background:var(--dark-border-primary-button)] hover:border-borderDarkButton  flex duration-700 items-center z-[100] ${style} `
+          )}
           style={{
             boxShadow: "var(--dark-button-shadow)",
           }}
@@ -42,7 +45,9 @@ const PrimaryButton: React.FC<props> = ({ text, style, icon = true, link }) => {
           href={link}
           target={link.includes("https") ? "_blank" : ""}
           id="primary-button"
-          className={`group text-white px-6 h-[55px] xs:flex xs:justify-center rounded-full xs:text-[13px] transition-all font-poppins font-medium relative w-fit lg:h-[48px] lg:px-5 lg:text-[13px] bg-primary hover:[backdrop-filter:blur(100px)] hover:[background:var(--dark-border-primary-button)] hover:border-borderDarkButton  flex duration-700 items-center z-[100] ${style} `}
+          className={cn(
+            `group text-white px-6 h-[55px] xs:flex xs:justify-center rounded-full xs:text-[13px] transition-all font-poppins font-medium relative w-fit lg:h-[48px] lg:px-5 lg:text-[13px] bg-primary hover:[backdrop-filter:blur(100px)] hover:![background:var(--dark-border-primary-button)] hover:border-borderDarkButton  flex duration-700 items-center z-[100] ${style} `
+          )}
           style={{
             boxShadow: "var(--dark-button-shadow)",
           }}

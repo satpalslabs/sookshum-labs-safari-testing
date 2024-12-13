@@ -71,18 +71,28 @@ const SingleCard: React.FC<{ isInView: boolean; data: ChooseUs }> = ({
   data,
 }) => (
   <div className="relative rotate-0 w-fit h-fit ">
-    <Card
-      style="xxl:w-[200px] xxl:h-[200px] w-[180px] lg:w-[133px] lg:h-[133px] sm:w-[112px] sm:h-[112px] h-[180px] !rounded-[28px] lg:!rounded-5 sm:!rounded-[17px] xxl:!p-7 !p-5 lg:!p-4 rotate-[45deg]"
-      isInView={isInView}
+    <div
+      className={`relative group  z-0 cursor-pointer overflow-hidden bg-viewportBorder transition-all hover:bg-gradient-to-br  hover:from-borderPrimary hover:via-transparent hover:to-borderPrimary duration-1000 xxl:w-[200px] xxl:h-[200px] w-[180px] lg:w-[133px] lg:h-[133px] sm:w-[112px] sm:h-[112px] h-[180px] rotate-[45deg]  rounded-[28px] lg:rounded-5 sm:rounded-[17px] ${
+        isInView
+          ? `bg-viewportBorder  grayscale-0 `
+          : "bg-transparent grayscale"
+      } !p-[1px]`}
     >
-      <Image
-        width={400}
-        height={400}
-        src={data.image_url}
-        alt="circle"
-        className="-rotate-[45deg] w-[128px] lg:w-[99px] h-[128px] lg:h-[99px] sm:w-[78px] sm:h-[78px]"
-      />
-    </Card>
+      <div className="w-full h-full overflow-hidden bg-black rounded-[28px] lg:rounded-5 sm:rounded-[17px]">
+        <div
+          className={`w-full h-full bg-innerContainer sm:p-[9px]  relative shadow-buttonInset  rounded-[28px] lg:rounded-5 sm:rounded-[17px] flex flex-col justify-center items-center xxl:p-7 p-5 lg:p-4 `}
+        >
+          <Image
+            width={400}
+            height={400}
+            src={data.image_url}
+            alt="circle"
+            className="-rotate-[45deg] relative z-40 w-[128px] lg:w-[99px] h-[128px] lg:h-[99px] sm:w-[78px] sm:h-[78px]"
+          />
+        </div>
+      </div>
+      <div className="absolute z-20 bg-transparent transition-all duration-1000 top-0 left-0 w-full h-full group-hover:block group-hover:bg-gradientOnHover "></div>
+    </div>
     <ArrowDiv data={data} />
   </div>
 );

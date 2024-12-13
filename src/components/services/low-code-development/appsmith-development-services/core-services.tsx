@@ -15,9 +15,9 @@ type card = {
 
 const core_services: card[] = data;
 const CoreServices: React.FC = () => (
-    <OuterComponent>
-      <MainContainer />
-    </OuterComponent>
+  <OuterComponent>
+    <MainContainer />
+  </OuterComponent>
 );
 
 export default CoreServices;
@@ -32,7 +32,7 @@ const MainContainer: React.FC = () => {
       className="grid grid-cols-3 gap-4 xxl:gap-10 w-full xs:grid-cols-1"
     >
       {core_services.map((chooseUs: card, index: number) => (
-        <Card key={index} style="mt-0 !pb-4" isInView={isInView}>
+        <Card key={index} style="mt-0 pb-4" isInView={isInView}>
           <div className="flex flex-col justify-between lg:p-3 p-4 gap-[22px] lg:gap-5 h-full">
             <div className="grow ">
               <Image

@@ -19,23 +19,23 @@ type our_service = {
 
 const ourServicesData: our_service[] = data;
 const OurServices: React.FC = () => (
-    <OuterComponent>
-      <OuterFlexComponent>
-        <SectionHeader
-          id="our-services"
-          buttonText="Our Services"
-          description="We create digital experiences that deliver impactful results, helping you reach your business goals, whether that's boosting brand awareness or driving sales to new heights. "
-          style="w-[980px] lg:!w-[650px] xs:!w-full"
-        >
-          <div className="xs:w-full mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em]">
-            Experience world-Class{" "}
-            <span className="italic font-light"> Mobile Application </span>{" "}
-            Design Services
-          </div>
-        </SectionHeader>
-        <MainContainer />
-      </OuterFlexComponent>
-    </OuterComponent>
+  <OuterComponent>
+    <OuterFlexComponent>
+      <SectionHeader
+        id="our-services"
+        buttonText="Our Services"
+        description="We create digital experiences that deliver impactful results, helping you reach your business goals, whether that's boosting brand awareness or driving sales to new heights. "
+        style="w-[980px] lg:!w-[650px] xs:!w-full"
+      >
+        <div className="xs:w-full mx-auto leading-[1.4] text-wrap text-center tracking-[-0.02em]">
+          Experience world-Class{" "}
+          <span className="italic font-light"> Mobile Application </span> Design
+          Services
+        </div>
+      </SectionHeader>
+      <MainContainer />
+    </OuterFlexComponent>
+  </OuterComponent>
 );
 
 export default OurServices;
@@ -50,7 +50,7 @@ const MainContainer: React.FC = () => {
       className="grid grid-cols-4 sm:grid-cols-3 gap-4 w-full xs:grid-cols-1"
     >
       {ourServicesData.map((item: our_service, index: number) => (
-        <Card key={index} style="mt-0 !pb-4" isInView={isInView}>
+        <Card key={index} style="mt-0 pb-4" isInView={isInView}>
           <div className="flex flex-col justify-between lg:p-3 p-4 gap-[28px] lg:gap-5 h-full">
             <div className="grow ">
               <Image

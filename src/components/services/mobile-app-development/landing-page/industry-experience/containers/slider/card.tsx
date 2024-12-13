@@ -8,6 +8,7 @@ import H6 from "@components/basic-components/headings/H6";
 import { industryType } from ".";
 import CheckIcon from "@components/basic-components/check-icon";
 import Image from "next/image";
+import Card from "@components/basic-components/card";
 
 const Industry = ({
   industry,
@@ -16,43 +17,39 @@ const Industry = ({
   industry: industryType;
   isInView: boolean;
 }) => (
-  <div
-    className={`p-4 pt-6 bg-innerContainer shadow-buttonInset rounded-[32px] transition-all duration-1000 hover:bg-gradientOnHover  border border-transparent cursor-pointer hover:!border-borderPrimary overflow-hidden flex flex-col gap-[44px] pb-8 lg:p-3 lg:rounded-[26px] sm:gap-3 h-full grow ${
-      isInView
-        ? "!border-viewportBorder  grayscale-0"
-        : "border-transparent grayscale"
-    }`}
-  >
-    <Image
-      height={400}
-      width={400}
-      src={industry.image}
-      alt="image"
-      className="h-[80px] lg:h-[50px] max-w-fit object-contain float-left"
-    />
-    <div className="p-4 flex flex-col gap-[18px] xs:p-1 grow">
-      <H6 classes="!text-white" text={industry.title} />
-      <Description
-        children={null}
-        text={industry.description}
-        classes="w-full text-[18px] !font-normal"
+  <Card isInView={isInView} style="!pb-0 h-full">
+    <div className="p-1 !h-full flex flex-col gap-4 lg:gap-3 sm:gap-2 ">
+      <Image
+        height={400}
+        width={400}
+        src={industry.image}
+        alt="image"
+        className="h-[80px] lg:h-[60px] max-w-fit object-contain float-left"
       />
-      <ul className="flex flex-col gap-2 text-white list-disc text-lg lg:text-sm xs:pl-0 font-poppins font-medium grow">
-        {industry.points.map((point: string, index: any) => (
-          <div className="flex gap-3" key={index}>
-            <div className="flex shrink-0 items-center justify-center w-[22px] h-[22px] lg:w-[22px] lg:h-[22px] lg:p-1 bg-primary rounded-full">
-              <CheckIcon />
+      <div className="p-3 xs:p-0 grow">
+        <H6 classes="!text-white" text={industry.title} />
+        <Description
+          children={null}
+          text={industry.description}
+          classes="w-full text-[18px] !font-normal"
+        />
+        <ul className="flex flex-col gap-2 text-white list-disc text-lg lg:text-sm xs:pl-0 font-poppins font-medium grow">
+          {industry.points.map((point: string, index: any) => (
+            <div className="flex gap-3" key={index}>
+              <div className="flex shrink-0 items-center justify-center w-[22px] h-[22px] lg:w-[22px] lg:h-[22px] lg:p-1 bg-primary rounded-full">
+                <CheckIcon />
+              </div>
+              <Description
+                children={null}
+                classes="!text-white leading-[1.4] text-base !font-normal"
+                text={point}
+              />
             </div>
-            <Description
-              children={null}
-              classes="!text-white leading-[1.4] text-base !font-normal"
-              text={point}
-            />
-          </div>
-        ))}
-      </ul>
+          ))}
+        </ul>
+      </div>
     </div>
-  </div>
+  </Card>
 );
 
 export default Industry;

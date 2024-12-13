@@ -41,11 +41,10 @@ export default function Slider() {
         slidesPerView={2.8}
         spaceBetween={20}
         breakpoints={{
-           0: { slidesPerView: 1 },
+          0: { slidesPerView: 1 },
           350: { slidesPerView: 1.2 },
           400: { slidesPerView: 1.2 },
-          550: { slidesPerView: 2 },
-          639: { slidesPerView: 2.3, spaceBetween: 17 },
+          639: { slidesPerView: 2, spaceBetween: 17 },
           1050: { slidesPerView: 2.8, spaceBetween: 20 },
           1500: { slidesPerView: 3.0, spaceBetween: 20 },
           1700: { slidesPerView: 3.5, spaceBetween: 30 },

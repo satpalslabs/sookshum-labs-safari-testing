@@ -44,6 +44,8 @@ const Admin_Development: React.FC<HomeProps> = ({ isBot }) => (
     {isBot && <Testimonials />}
     {/* Temporary disable */}
     {/* <Faqs DataKey={"website-development-landing-page"} /> */}
+    <Work />
+    <Testimonials />
     <LetsConnect />
     <GoTopButton />
   </div>

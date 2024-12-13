@@ -1,4 +1,5 @@
 "use client";
+import { cn } from "@lib/utls";
 /**
  * This component contains the Button.
  */
@@ -10,7 +11,9 @@ const DarkButton: React.FC<any> = ({ text, style, id = "" }) => {
   const router = useRouter();
   return (
     <Button
-      className={`!py-[12px] w-fit !px-8 md:!px-[20px] !border-borderDarkButton [backdrop-filter:blur(100px)] !text-secondary sm:!py-2 sm:!px-3 flex gap-2 items-center !rounded-full !border-solid border !bg-darkButton !shadow-buttonInset text-center flex-nowrap group-hover:!bg-buttonGradient !normal-case !text-[16px] md:!text-sm sm:!text-[11px] ${style}`}
+      className={cn(
+        `!py-[12px] z-40 relative w-fit !px-8 md:!px-[20px] !border-borderDarkButton [backdrop-filter:blur(100px)] !text-secondary sm:!py-2 sm:!px-3 flex gap-2 items-center !rounded-full !border-solid border !bg-darkButton !shadow-buttonInset text-center flex-nowrap group-hover:!bg-buttonGradient !normal-case !text-[16px] md:!text-sm sm:!text-[11px] ${style}`
+      )}
       style={{
         backdropFilter: "blur(100px)",
         WebkitBackdropFilter: "blur(100px)",

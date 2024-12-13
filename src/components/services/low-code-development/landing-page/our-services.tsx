@@ -100,57 +100,65 @@ type props = {
 };
 
 const ServiceCard: React.FC<props> = (props) => (
-  <Card
-    isInView={props.isInView}
-    style={` !p-0 w-full !rounded-[32px] ${
-      props.index == props.activeCardIndex &&
-      "!bg-gradientOnHover !border-borderPrimary"
-    } overflow-hidden`}
+  <div
+    className={`relative w-full group z-0 max-h-fit cursor-pointer overflow-hidden rounded-[32px] sm:rounded-[20px]  p-[1px] transition-all hover:bg-gradient-to-br  hover:from-borderPrimary hover:via-transparent hover:to-borderPrimary duration-1000 ${
+      props.index == props.activeCardIndex
+        ? `bg-gradient-to-br from-borderPrimary via-transparent    `
+        : " bg-viewportBorder  "
+    }
+     ${props.isInView ? "grayscale-0" : "grayscale"}`}
+    onClick={() => {
+      props.setActiveCardIndex(props.index);
+    }}
   >
-    <Button
-      className={`!w-full !p-0 !text-primary xs:!text-black hover:bg-transparent !normal-case !text-left ${
-        props.index == props.activeCardIndex && "!bg-gradientOnHover "
-      }`}
-      onClick={() => {
-        props.setActiveCardIndex(props.index);
-      }}
-    >
-      <div className="w-full flex flex-col gap-3 p-[32px] lg:p-6 sm:p-5">
-        <div className="flex gap-5 lg:gap-3 sm:gap-2 w-full items-center">
-          <div
-            className={`flex w-[60px] h-[60px]  lg:w-[42px] lg:h-[42px] justify-center rounded-full items-center`}
-            style={{
-              background: props.service.color,
-            }}
-          >
-            <CodeIcon classes=" w-[24px] h-[24px] lg:w-[14px] lg:h-[14px]" />
+    <div className="w-full h-fit relative z-50 overflow-hidden rounded-[32px] bg-black sm:rounded-[20px] ">
+      <Button
+        className={`!w-full !p-0 !text-primary xs:!text-black !bg-innerContainer !normal-case !text-left `}
+      >
+        <div className="w-full flex flex-col gap-3 p-[32px] lg:p-6 sm:p-5">
+          <div className="flex gap-5 lg:gap-3 sm:gap-2 w-full items-center">
+            <div
+              className={`flex w-[60px] h-[60px]  lg:w-[42px] lg:h-[42px] justify-center rounded-full items-center`}
+              style={{
+                background: props.service.color,
+              }}
+            >
+              <CodeIcon classes=" w-[24px] h-[24px] lg:w-[14px] lg:h-[14px]" />
+            </div>
+            <H5
+              text={props.service["services-title"]}
+              style={"grow !text-white"}
+            />
+            <RightAngleArrow className={"stroke-white"} />
           </div>
-          <H5
-            text={props.service["services-title"]}
-            style={"grow !text-white"}
-          />
-          <RightAngleArrow className={"stroke-white"} />
-        </div>
 
-        <div className="hidden xs:flex flex-col  gap-2 h-full justify-center">
-          <Description
-            text={props.service["detailed-description"]}
-            children={null}
-            classes="text-lg pr-6 lg:pr-0 !font-normal !text-h3-heading"
-          />
-          <Image
-            blurDataURL="URL"
-            placeholder="blur"
-            height="2200"
-            width="2200"
-            alt="image"
-            src={props.service["image-url"]}
-            className="w-fit grow mx-auto"
-          />
+          <div className="hidden xs:flex flex-col  gap-2 h-full justify-center">
+            <Description
+              text={props.service["detailed-description"]}
+              children={null}
+              classes="text-lg pr-6 lg:pr-0 !font-normal !text-h3-heading"
+            />
+            <Image
+              blurDataURL="URL"
+              placeholder="blur"
+              height="2200"
+              width="2200"
+              alt="image"
+              src={props.service["image-url"]}
+              className="w-fit grow mx-auto"
+            />
+          </div>
         </div>
-      </div>
-    </Button>
-  </Card>
+      </Button>
+    </div>
+    <div
+      className={`absolute z-[999] bg-transparent transition-all duration-1000 top-0 left-0 w-full h-full  ${
+        props.index == props.activeCardIndex
+          ? `bg-gradientOnHover `
+          : "  hover:bg-gradientOnHover"
+      }`}
+    ></div>
+  </div>
 );
 
 const CodeIcon: React.FC<{ classes: string }> = ({ classes }) => (

@@ -3,7 +3,9 @@
  */
 
 import dynamic from "next/dynamic";
-const SectionHeader = dynamic(() => import("@components/basic-components/section-header"));
+const SectionHeader = dynamic(
+  () => import("@components/basic-components/section-header")
+);
 
 const Header = () => (
   <SectionHeader
@@ -12,7 +14,7 @@ const Header = () => (
     buttonText="Why us?"
     description="We craft digital experiences that drive results. We'll help you achieve your business goals, from increased brand awareness to skyrocketing sales."
   >
-    <div className="sm:text-wrap text-center leading-[1.4] capitalize">
+    <div className="sm:text-wrap text-center leading-[1.4] capitalize hero-text bg-clip-text">
       Why work with <span className="italic font-light">us?</span>
     </div>
   </SectionHeader>

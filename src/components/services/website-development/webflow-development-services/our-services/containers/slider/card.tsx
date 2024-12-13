@@ -15,7 +15,7 @@ const Industry: React.FC<{
 }> = ({ industry, isInView }) => (
   <Card
     isInView={isInView}
-    style="!h-full flex !justify-between flex-col gap-4 lg:gap-3 sm:gap-2 !p-6"
+    style="h-full flex justify-between flex-col gap-4 lg:gap-3 sm:gap-2 p-6"
   >
     <Image
       blurDataURL="URL"

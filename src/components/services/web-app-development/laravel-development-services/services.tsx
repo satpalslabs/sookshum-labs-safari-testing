@@ -61,7 +61,7 @@ const SingleCard: React.FC<{ isInView: boolean; data: ServiceType }> = ({
 }) => (
   <div className="relative rotate-0 w-fit ">
     <Card
-      style="!rounded-[32px] !p-8 !pb-8 lg:!p-7 sm:!p-6 xs:!p-5 justify-between !gap-4 lg:!gap-5 sm:!gap-[5 xs:!gap-3 h-full"
+      style="rounded-[32px] p-8 pb-8 lg:p-7 sm:p-6 xs:p-5 justify-between gap-4 lg:gap-5 sm:gap-[5 xs:gap-3 h-full"
       isInView={isInView}
     >
       <Image
@@ -72,7 +72,7 @@ const SingleCard: React.FC<{ isInView: boolean; data: ServiceType }> = ({
         alt="image"
       />
       <div className="flex flex-col gap-5 lg:gap-3 sm:gap-2">
-        <H4 style="!leading-[1.25]  !text-white" text={data.heading} />
+        <H4 style="leading-[1.25]  text-white" text={data.heading} />
         <Description
           children={null}
           classes="!text-lg lg:!text-sm sm:!text-xs w-full sm:!tracking-tight"

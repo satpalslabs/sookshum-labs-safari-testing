@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import data from "../../data/services.json";
 import H6 from "@components/basic-components/headings/H6";
 import Image from "next/image";
@@ -32,7 +32,6 @@ const Dropdown = ({
   const [activeService, setActiveService] = useState<service | null>(null);
   const [display, setDisplay] = useState<string>(active ? "" : "none");
   const currentPath: string = usePathname();
-
   useEffect(() => {
     let activeLinkService = data.services.find((i) =>
       currentPath.includes(i.link)
@@ -97,34 +96,49 @@ const DetailServiceContentSection = ({
   activeService: service;
   setActive: React.Dispatch<React.SetStateAction<boolean>>;
   setShowLinks: React.Dispatch<React.SetStateAction<boolean>>;
-}) => (
-  <div className="sm:hidden flex sm:flex-col gap-[105px] lg:gap-4 sm:gap-[14px] w-[63.79%] sm:w-[46.7%] ">
-    <ServiceContent
-      activeService={activeService}
-      setActive={setActive}
-      setShowLinks={setShowLinks}
-    />
-    <div
-      className="flex flex-col h-fit w-fit sm:w-full bg-innerContainer border border-solid border-borderDarkButton shadow-buttonInset rounded-[32px] cursor-pointer p-4 gap-2"
-      onClick={() => {
-        window.open("/contact-us", "_self");
-      }}
-    >
-      <div className="h-[180px] w-[316px] lg:w-[232px] lg:h-[190px] relative rounded-[20px] overflow-hidden sm:w-full">
-        <Image
-          width={800}
-          height={800}
-          className="w-full h-full object-cover"
-          alt="image"
-          src={"/header/lets-connect.webp"}
-          blurDataURL="URL"
-          placeholder="blur"
+}) => {
+  const ref = useRef<HTMLVideoElement | null>(null);
+  const [play, setPlay] = useState(false);
+  return (
+    <div className="sm:hidden flex sm:flex-col gap-[105px] lg:gap-4 sm:gap-[14px] w-[63.79%] sm:w-[46.7%] ">
+      <ServiceContent
+        activeService={activeService}
+        setActive={setActive}
+        setShowLinks={setShowLinks}
+      />
+      <div
+        className="flex flex-col h-fit w-fit sm:w-full bg-innerContainer border border-solid border-borderDarkButton shadow-buttonInset rounded-[32px] cursor-pointer p-4 gap-2"
+        onClick={() => {
+          window.open("/contact-us", "_self");
+        }}
+      >
+        <div
+          className="h-[180px] w-[316px] lg:w-[232px] lg:h-[190px] relative rounded-[20px] overflow-hidden sm:w-full"
+          onMouseEnter={() => {
+            setPlay(true);
+            ref.current?.play();
+          }}
+          onMouseLeave={() => {
+            setPlay(false);
+          }}
+        >
+          <video
+            autoPlay={play}
+            muted
+            loop={play}
+            ref={ref}
+            playsInline
+            preload="metadata"
+            className="w-full h-full object-cover"
+          >
+            <source src={"/header/let-connect.webm"} type="video/webm" />
+          </video>
+        </div>
+        <H6
+          text={"Let’s Create a Project?"}
+          classes="font-normal text-[18px] w-full text-white"
         />
       </div>
-      <H6
-        text={"Let’s Create a Project?"}
-        classes="font-normal text-[18px] w-full text-white"
-      />
     </div>
-  </div>
-);
+  );
+};

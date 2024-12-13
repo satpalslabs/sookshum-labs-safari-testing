@@ -45,14 +45,16 @@ const ChooseUsCards: React.FC = () => {
       ref={ref}
       className="w-full flex gap-5 h-full max-h-full xs:flex-col-reverse"
     >
-      <Card
-        style="w-[46.8%] p-8 flex flex-col gap-8 sm:gap-2 xs:gap-[12px] shrink-0 h-full grow-0 xs:w-full"
-        isInView={isInView}
-      >
-        {whyUsData.map((dataItem: ChooseUs, index: number) => (
-          <ChooseUsCard item={dataItem} key={index} />
-        ))}
-      </Card>
+      <div className="max-w-[46.8%] xs:max-w-full">
+        <Card
+          style=" p-8 flex flex-col gap-8 sm:gap-2 xs:gap-[12px] shrink-0 h-full grow-0 w-full"
+          isInView={isInView}
+        >
+          {whyUsData.map((dataItem: ChooseUs, index: number) => (
+            <ChooseUsCard item={dataItem} key={index} />
+          ))}
+        </Card>
+      </div>
       <div className="grow relative w-full">
         <Image
           blurDataURL="URL"

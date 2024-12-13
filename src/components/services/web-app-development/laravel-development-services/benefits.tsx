@@ -63,7 +63,7 @@ const Benefit: React.FC<props> = ({ benefit, active, index, setActive }) => {
     <Card style="w-full cursor-text !p-0 !rounded-[32px]" isInView={true}>
       <div className={`w-full pb-8 lg:pb-[28px] sm:pb-6`}>
         <button
-          className="flex w-full justify-between items-center p-8 !pb-0 lg:p-[28px] sm:p-6"
+          className="flex w-full justify-between items-center p-8 !pb-0 lg:p-[28px] sm:p-6 relative z-40"
           onClick={() => {
             console.log(index);
             if (active) {

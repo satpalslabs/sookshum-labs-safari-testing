@@ -45,7 +45,7 @@ const MainContainer: React.FC = () => {
   return (
     <div ref={ref} className="grid grid-cols-3 gap-4 w-full xs:grid-cols-1">
       {discoverData.map((item: service, index: number) => (
-        <Card key={index} style="mt-0 !pb-4" isInView={isInView}>
+        <Card key={index} style="mt-0 pb-4" isInView={isInView}>
           <div className="flex flex-col justify-between lg:p-3 p-4 gap-[28px] lg:gap-5 h-full">
             <div className="grow ">
               <Image

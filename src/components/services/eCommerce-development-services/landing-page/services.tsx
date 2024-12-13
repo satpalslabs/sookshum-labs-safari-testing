@@ -42,7 +42,7 @@ const ServiceCards: React.FC = () => {
   const isInView = useInView(ref);
 
   return (
-    <div className="flex flex-col gap-5">
+    <div className="flex flex-col gap-5" ref={ref}>
       <FirstGrid isInView={isInView} />
       <SecondGrid isInView={isInView} />
       <ThirdGrid isInView={isInView} />
@@ -52,22 +52,25 @@ const ServiceCards: React.FC = () => {
 
 const FirstGrid: React.FC<{ isInView: boolean }> = ({ isInView }) => (
   <div className="grid grid-cols-2 w-full gap-5 xs:grid-cols-1 ">
-    <Card style="mt-0 sm:grow-0 sm:h-fit sm:shrink-0 " isInView={isInView}>
+    <Card
+      style="mt-0 transition-none sm:grow-0 sm:h-fit sm:shrink-0 "
+      isInView={isInView}
+    >
       <ServiceCard style="" service={services[0]} />
     </Card>
-    <Card style="mt-0 hidden sm:block" isInView={isInView}>
+    <Card style="mt-0 transition-none hidden sm:block" isInView={isInView}>
       <ServiceCard style="" service={services[1]} />
     </Card>
     <div
       className={`grid grid-rows-2 gap-5 sm:grid-rows-none sm:grid-cols-2 xs:grid-cols-1 sm:col-span-full`}
     >
-      <Card style="mt-0 sm:hidden" isInView={isInView}>
+      <Card style="mt-0 transition-none sm:hidden" isInView={isInView}>
         <ServiceCard style="" service={services[1]} />
       </Card>
-      <Card style="mt-0" isInView={isInView}>
+      <Card style="mt-0 transition-none" isInView={isInView}>
         <ServiceCard style="" service={services[2]} />
       </Card>
-      <Card style="mt-0 hidden sm:block" isInView={isInView}>
+      <Card style="mt-0 transition-none hidden sm:block" isInView={isInView}>
         <ServiceCard style="" service={services[3]} />
       </Card>
     </div>
@@ -77,18 +80,18 @@ const FirstGrid: React.FC<{ isInView: boolean }> = ({ isInView }) => (
 const SecondGrid: React.FC<{ isInView: boolean }> = ({ isInView }) => (
   <div className="flex w-full gap-5 sm:grid sm:grid-cols-2 xs:grid-cols-1 ">
     <Card
-      style="mt-0 w-[41.93%] sm:w-[50%] shrink-0 sm:hidden "
+      style="mt-0 transition-none w-[41.93%] sm:w-[50%] shrink-0 sm:hidden "
       isInView={isInView}
     >
       <ServiceCard style="" service={services[3]} />
     </Card>
     <Card
-      style="mt-0 grow sm:grow-0 sm:w-[50%] sm:w-full sm:shrink-0"
+      style="mt-0 transition-none grow sm:grow-0 sm:w-[50%] sm:w-full sm:shrink-0"
       isInView={isInView}
     >
       <ServiceCard style="" service={services[4]} />
     </Card>
-    <Card style="mt-0 hidden sm:block" isInView={isInView}>
+    <Card style="mt-0 transition-none hidden sm:block" isInView={isInView}>
       <ServiceCard
         style="min-h-[212px] sm:min-h-0 sm:row-span-1"
         service={services[5]}
@@ -99,34 +102,40 @@ const SecondGrid: React.FC<{ isInView: boolean }> = ({ isInView }) => (
 
 const ThirdGrid: React.FC<{ isInView: boolean }> = ({ isInView }) => (
   <div className="grid grid-cols-3 grid-rows-9 w-full gap-5 sm:grid-cols-2 xs:!flex xs:flex-col sm:flex sm:flex-wrap">
-    <Card style="mt-0 row-span-6  col-span-1 sm:hidden" isInView={isInView}>
+    <Card
+      style="mt-0 transition-none row-span-6  col-span-1 sm:hidden"
+      isInView={isInView}
+    >
       <ServiceCard style="min-h-[212px] sm:min-h-0" service={services[5]} />
     </Card>
     <Card
-      style="mt-0 row-span-3  sm:w-[48.5%] xs:w-full col-span-1"
+      style="mt-0 transition-none row-span-3  sm:w-[48.5%] xs:w-full col-span-1"
       isInView={isInView}
     >
       <ServiceCard style="min-h-[212px] sm:min-h-0" service={services[6]} />
     </Card>
     <Card
-      style="mt-0 row-span-4 sm:w-[48.5%] xs:w-full  col-span-1"
+      style="mt-0 transition-none row-span-4 sm:w-[48.5%] xs:w-full  col-span-1"
       isInView={isInView}
     >
       <ServiceCard style="min-h-[212px] sm:min-h-0" service={services[7]} />
     </Card>
     <Card
-      style="mt-0 row-span-3 sm:w-[48.5%] xs:w-full col-span-1"
+      style="mt-0 transition-none row-span-3 sm:w-[48.5%] xs:w-full col-span-1"
       isInView={isInView}
     >
       <ServiceCard style="min-h-[212px] sm:min-h-0" service={services[8]} />
     </Card>
     <Card
-      style="mt-0 row-span-5 col-span-1  sm:w-[48.5%] xs:w-full  sm:min-h-full sm:row-span-1"
+      style="mt-0 transition-none row-span-5 col-span-1  sm:w-[48.5%] xs:w-full  sm:min-h-full sm:row-span-1"
       isInView={isInView}
     >
       <ServiceCard style="min-h-[212px] sm:min-h-full" service={services[9]} />
     </Card>
-    <Card style="mt-0 row-span-3 col-span-2" isInView={isInView}>
+    <Card
+      style="mt-0 transition-none row-span-3 col-span-2"
+      isInView={isInView}
+    >
       <ServiceCard style="min-h-[212px] sm:min-h-0" service={services[10]} />
     </Card>
   </div>

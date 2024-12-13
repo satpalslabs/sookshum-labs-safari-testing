@@ -38,7 +38,7 @@ const ContactForm: React.FC = () => (
 export default ContactForm;
 
 const InformationAboutCompany = () => (
-  <Card isInView={true} style="!p-4 grow-0 h-fit ">
+  <Card isInView={true} style="p-4 grow-0 h-fit ">
     <div className="p-4 flex flex-col gap-8 xxl:gap-14 h-full">
       <div className="flex flex-col gap-2">
         <Description text={""} classes="flex items-center gap-2 !font-normal">
@@ -455,8 +455,8 @@ const ContentUsForm: React.FC = () => {
         <PrimaryButton
           icon={true}
           style={`${
-            disableForm ? "!bg-darkOrange cursor-not-allowed" : "cursor-pointer"
-          }`}
+            disableForm ? "bg-darkOrange cursor-not-allowed" : "cursor-pointer"
+          }   `}
           text="Send a message"
           link=""
         />

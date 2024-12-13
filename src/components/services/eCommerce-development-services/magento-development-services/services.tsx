@@ -17,22 +17,22 @@ type ServiceType = {
 
 const services: ServiceType[] = data;
 const Services: React.FC = () => (
-    <OuterComponent>
-      <OuterFlexComponent>
-        <SectionHeader
-          id="our-service"
-          buttonText="Our Services"
-          description="We keep up with the latest advancements in Magento and eCommerce technology. This dedication to remaining informed allows us to provide you with the most cutting-edge features and security measures, ensuring your online store remains modern and competitive."
-          style="w-[80%] lg:!w-[740px] xs:!w-[400px] 3xs:!w-[310px]"
-        >
-          <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] capitalize sm:text-wrap text-center">
-            Magento Development Services{" "}
-            <span className="italic font-light">We Offer </span>
-          </div>
-        </SectionHeader>
-        <OurServicesMainContainer />
-      </OuterFlexComponent>
-    </OuterComponent>
+  <OuterComponent>
+    <OuterFlexComponent>
+      <SectionHeader
+        id="our-service"
+        buttonText="Our Services"
+        description="We keep up with the latest advancements in Magento and eCommerce technology. This dedication to remaining informed allows us to provide you with the most cutting-edge features and security measures, ensuring your online store remains modern and competitive."
+        style="w-[80%] lg:!w-[740px] xs:!w-[400px] 3xs:!w-[310px]"
+      >
+        <div className="xs:w-full sm:w-[80%] mx-auto leading-[1.4] capitalize sm:text-wrap text-center">
+          Magento Development Services{" "}
+          <span className="italic font-light">We Offer </span>
+        </div>
+      </SectionHeader>
+      <OurServicesMainContainer />
+    </OuterFlexComponent>
+  </OuterComponent>
 );
 
 export default Services;
@@ -53,7 +53,7 @@ const OurServicesMainContainer = () => {
     >
       {services.map((service: ServiceType, ind: number) => (
         <Card
-          style="!flex-row justify-between items-center !p-6 !pb-6 lg:!p-6 sm:!p-5 xxl:gap-4 lg:gap-4 shrink-0 sm:last:col-start-2  !rounded-[32px]"
+          style="!flex-row justify-between items-center p-6 pb-6 lg:p-6 sm:p-5 xs:p-3 xxl:gap-4 lg:gap-4 shrink-0 sm:last:col-start-2  !rounded-[32px]"
           isInView={isInView}
           key={ind}
         >

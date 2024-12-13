@@ -58,7 +58,7 @@ const SingleCard: React.FC<{ isInView: boolean; data: ServiceType }> = ({
 }) => (
   <div className="relative rotate-0 w-fit">
     <Card
-      style="!rounded-[32px] !p-8 !pb-8 lg:!p-7 sm:!p-6 xs:!p-5 justify-between !gap-5 lg:!gap-3 sm:!gap-2 h-full"
+      style="rounded-[32px] p-8 pb-8 lg:p-7 sm:p-6 xs:p-5 justify-between gap-5 lg:gap-3 sm:gap-2 h-full"
       isInView={isInView}
     >
       <H4 style="!leading-[1.25] !text-white" text={data.heading} />

@@ -44,7 +44,7 @@ const OurServicesMainContainer = () => {
     >
       {services.map((service: string, ind: number) => (
         <Card
-          style="!flex-row items-center !p-6 lg:!p-6 sm:!p-5 xxl:gap-4 gap-3 shrink-0  !rounded-[32px]"
+          style="flex-row items-center p-6 lg:p-6 sm:p-5 xxl:gap-4 gap-3 shrink-0  rounded-[32px]"
           isInView={isInView}
           key={ind}
         >

@@ -46,7 +46,7 @@ const Table: React.FC = () => {
           <div className="text-xl font-poppins font-medium tracking-tight">
             Table of Contents
           </div>
-          <div className={`unreset ${!active && "xs:hidden"}`}>
+          <div className={`unreset ${!active && "xs:hidden"} relative z-40`}>
             <ul className="flex flex-col gap-[10px] font-poppins !capitalize !px-4 !py-0 !m-0">
               {tableContentData.map(
                 (tableContentItem: TableContentDataItem, index: number) => (

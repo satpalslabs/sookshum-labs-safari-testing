@@ -47,7 +47,7 @@ const MainContainer: React.FC = () => {
       {dataItems.map((item: item_type, index: number) => (
         <Card
           key={index}
-          style={`mt-0 !pb-4 ${index > 1 && "col-span-2 xs:col-span-1"}`}
+          style={`mt-0 pb-4 ${index > 1 && "col-span-2 xs:col-span-1"}`}
           isInView={isInView}
         >
           <div className="flex flex-col justify-between lg:p-3 p-4 gap-[22px] lg:gap-5 h-full">

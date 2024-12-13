@@ -14,7 +14,7 @@ const BottomSection: React.FC = () => (
   <OuterComponent>
     <div className="h-fit w-full" id="connect">
       <div className="grid grid-cols-2 xs:grid-cols-1 gap-5 w-full">
-        <Card isInView={true} style={"pb-0 grow"}>
+        <Card isInView={true} style={"pb-0 grow cursor-auto"}>
           <div className="p-8 lg:p-4 flex flex-col gap-[97px] sm:gap-[40px] grow">
             <div className="grow">
               <H2>
@@ -26,7 +26,7 @@ const BottomSection: React.FC = () => (
             <div className="flex justify-between">
               <PrimaryButton
                 icon={true}
-                style="!bg-customBlue"
+                style="bg-customBlue"
                 text="Send us CV"
                 link={
                   "https://careers.sookshum-labs.com/forms/0c46d2e5681ac05b1b7932659bdd9f9a2015de74fe8bb6319b00c5b1fdcb1bba"
@@ -41,7 +41,7 @@ const BottomSection: React.FC = () => (
             </div>
           </div>
         </Card>
-        <Card isInView={true} style={"pb-0 "}>
+        <Card isInView={true} style={"pb-0  cursor-auto"}>
           <div className="p-8 lg:p-4 flex flex-col gap-[97px] sm:gap-[40px] grow">
             <H2>
               <div className="text-wrap text-[52px] lg:text-[32px] sm:text-[22px] sm:leading-[1.4] w-[80%] lg:w-full tracking-tight font-poppins !font-[600]">

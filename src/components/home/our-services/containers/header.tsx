@@ -3,7 +3,9 @@
  */
 
 import dynamic from "next/dynamic";
-const SectionHeader = dynamic(() => import("@components/basic-components/section-header"));
+const SectionHeader = dynamic(
+  () => import("@components/basic-components/section-header")
+);
 
 const Header: React.FC = () => (
   <SectionHeader
@@ -12,7 +14,7 @@ const Header: React.FC = () => (
     buttonText="Services"
     description="We'll help you define your brand, build a powerful online presence, and reach your target audience effectively."
   >
-    <div className="leading-[1.4] capitalize">
+    <div className="leading-[1.4] capitalize hero-text bg-clip-text">
       How we can help <span className="italic font-light">you?</span>
     </div>
   </SectionHeader>

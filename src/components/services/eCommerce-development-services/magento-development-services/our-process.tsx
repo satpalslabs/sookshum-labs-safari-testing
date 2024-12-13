@@ -71,7 +71,10 @@ const MainContainer = () => {
             <div className="flex grow gap-[6px] lg:gap-1 items-center h-full">
               {/* Left arrow */}
               <LeftSmallArrow ind={ind} item={item} />
-              <Card isInView={isInView} style="!p-6 !pb-6 xxl:!p-8 grow h-full">
+              <Card
+                isInView={isInView}
+                style="p-6 pb-6 lg:p-6 sm:p-6  xxl:p-8 grow h-full"
+              >
                 <div className="flex flex-col gap-5 lg:gap-3">
                   <div className="flex gap-[18px] items-center">
                     <Image

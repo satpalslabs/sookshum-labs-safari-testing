@@ -26,7 +26,10 @@ const BottomSection: React.FC = () => (
             <QuickMailCard item={item} />
           </a>
         ))}
-        <Card isInView={true} style={"!pb-0 grow sm:col-span-2 xs:col-span-1"}>
+        <Card
+          isInView={true}
+          style={"!pb-0 grow sm:col-span-2 xs:col-span-1 cursor-auto"}
+        >
           <div className="p-8 lg:p-2 lg:pb-4 flex flex-col h-full  justify-between grow">
             <div className="grow">
               <div className="flex justify-between grow">
@@ -50,7 +53,7 @@ const BottomSection: React.FC = () => (
             <div className="flex justify-between">
               <PrimaryButton
                 icon={true}
-                style="!bg-customBlue"
+                style="bg-customBlue"
                 text="Send us CV"
                 link={
                   "https://careers.sookshum-labs.com/forms/0c46d2e5681ac05b1b7932659bdd9f9a2015de74fe8bb6319b00c5b1fdcb1bba"

@@ -22,7 +22,11 @@ const OurValues: React.FC = () => {
 
   return (
     <OuterComponent>
-      <div ref={ref} id="our-values" className="flex flex-col gap-[36px]  items-center">
+      <div
+        ref={ref}
+        id="our-values"
+        className="flex flex-col gap-[94px] lg:gap-[36px]  items-center"
+      >
         <div
           className={`flex flex-col gap-6 lg:gap-3 xs:gap-2 items-center w-[70%] lg:w-[500px] xs:w-full xs:px-4 `}
         >
@@ -44,7 +48,7 @@ const OurValues: React.FC = () => {
         <section
           className={` ${isInView ? "grayscale-0" : "grayscale"} w-full `}
         >
-          <div className="grid grid-cols-4 gap-5 sm:grid-cols-2 lg:gap-[18px] xs:grid-cols-1 xs:gap-[16px]">
+          <div className="grid grid-cols-4 gap-5 sm:grid-cols-2 lg:gap-x-[18px] xs:grid-cols-1 xs:gap-[16px] gap-y-[70px] sm:gap-y-[36px]">
             {ourValuesData?.map((value: valuePoint, index: number) => (
               <OurValueCard value={value} isInView={isInView} key={index} />
             ))}
@@ -60,23 +64,33 @@ export default OurValues;
 const OurValueCard: React.FC<{ value: valuePoint; isInView: boolean }> = (
   props
 ) => (
-  <Card style="mt-[43px] gap-6 w-full" isInView={props.isInView}>
-    <div className="px-4 md:px-2 sm:px-[6px] md:flex-1 pb-8 xxl:pb-16 xs:pb-5 flex ">
+  <div
+    className={`relative w-full group h-full z-0 cursor-pointer rounded-[32px] sm:rounded-[20px]  p-[1px] bg-viewportBorder transition-all hover:bg-gradient-to-br  hover:from-borderPrimary hover:via-transparent hover:to-borderPrimary duration-1000 ${
+      props.isInView
+        ? `bg-viewportBorder  grayscale-0 `
+        : "bg-transparent grayscale"
+    }`}
+  >
+    <div className=" absolute px-4 md:px-2 sm:px-[6px] md:flex-1 pb-8 xxl:pb-16 xs:pb-5 flex ">
       <Image
-        className="h-[136px] w-auto lg:h-[132px] xxl:-mt-[19.3%] sm:h-[108px] xs:-mt-[16%] lg:-mt-[20%] sm:-mt-[10%] object-cover -mt-[30%]"
+        className="h-[136px] z-40 w-auto lg:h-[79px] xxl:-mt-[40.3%] sm:h-[80px] xs:-mt-[16%] lg:-mt-[25%] lg:ml-[15%]  sm:-mt-[25%] object-cover -mt-[30%]"
         alt="image"
         width={600}
         height={600}
         src={props.value.icon}
       />
     </div>
-    <div className=" flex flex-col px-4 md:px-2  xxl:-mt-[10%] -mt-[10%] sm:px-[6px] lg:-mt-10 xs:mt-0 grow h-fit gap-6 lg:gap-3 sm:h-auto sm:gap-[0.5rem]">
-      <H5 text={props.value.title} style="!text-white leading-[1.3]" />
-      <Description
-        children={null}
-        text={props.value.about}
-        classes="text-lg !font-normal"
-      />
+    <div className="w-full h-full relative z-20 overflow-hidden rounded-[32px] bg-black sm:rounded-[20px] ">
+      <div
+        className={`w-full h-full bg-innerContainer p-4 pb-8 sm:p-[9px] sm:pb-[14px] lg:p-[14px] lg:pb-[23px] relative shadow-buttonInset rounded-[32px] sm:rounded-[20px] flex flex-col  lg:pt-[68px] sm:pt-[91px] grow pt-[127px]`}
+      >
+        <H5 text={props.value.title} style="!text-white leading-[1.3]" />
+        <Description
+          children={null}
+          text={props.value.about}
+          classes="text-lg !font-normal"
+        />
+      </div>
     </div>
-  </Card>
+  </div>
 );

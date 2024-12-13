@@ -51,25 +51,24 @@ const ToolsDetailComponent: React.FC = () => {
         isInView ? "grayscale-0" : "grayscale"
       } flex gap-10 xxl:gap-[100px] transition-all duration-500 xs:flex xs:flex-col xs:gap-5 w-full pt-[88px] pb-[75px] lg:pt-[43px] lg:pb-[56px] sm:py-0 `}
     >
-      <Card
-        isInView={isInView}
-        style="xxl:w-[40%] w-[46.5%] xs:w-full shrink-0 h-fit"
-      >
-        <div className="grid grid-cols-3 gap-5 w-full">
-          {data.icons.map((icon: string, index: number) => (
-            <Image
-              blurDataURL="URL"
-              placeholder="blur"
-              alt="Tools"
-              width="2200"
-              height="2200"
-              src={icon}
-              key={index}
-              className="rounded-full "
-            />
-          ))}
-        </div>
-      </Card>
+      <div className="xxl:max-w-[40%] max-w-[46.5%] xs:max-w-full">
+        <Card isInView={isInView} style=" shrink-0 h-fit">
+          <div className="grid grid-cols-3 gap-5 w-full">
+            {data.icons.map((icon: string, index: number) => (
+              <Image
+                blurDataURL="URL"
+                placeholder="blur"
+                alt="Tools"
+                width="2200"
+                height="2200"
+                src={icon}
+                key={index}
+                className="rounded-full "
+              />
+            ))}
+          </div>
+        </Card>
+      </div>
       <div className="flex flex-col justify-between">
         {tools.map((tool: Tool, index: number) => (
           <ToolCollapseContainer

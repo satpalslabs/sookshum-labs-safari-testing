@@ -41,7 +41,7 @@
             "heading": "Unleash the Power of  <i style='font-weight:300'>Low-Code</i> Development",
             "description": "Unlock the power of low-code development with our services. We specialize in creating customized applications swiftly, leveraging low-code platforms to streamline the development process. Our approach ensures rapid delivery of high-quality, scalable solutions tailored to your business needs, all while maintaining flexibility and reducing development time and costs.",
             "image-path": "/services/landing-page/tools/low-code-development.webp",
-            "video-path": "/services/landing-page/tools/low-video.webm",
+            "video-path": "/services/landing-page/tools/low-code-video.webm",
             "image-position": "right",
             "link": "/low-code-development-services"
         },

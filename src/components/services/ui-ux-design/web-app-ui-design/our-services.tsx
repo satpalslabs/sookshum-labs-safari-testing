@@ -61,10 +61,10 @@ const SingleCard: React.FC<{
     className={`relative rotate-0 ${index > 2 ? "col-span-3" : "col-span-2"}`}
   >
     <Card
-      style="!rounded-[32px] !p-8 !pb-8 lg:!p-7 lg:!pb-[70px] sm:!p-6 sm:!pb-[55px] xs:!p-5 xs:!pb-[33px] justify-between !gap-5 lg:!gap-3 sm:!gap-2 h-full"
+      style="rounded-[32px] p-8 pb-8 lg:p-7 lg:pb-[70px] sm:p-6 sm:pb-[55px] xs:p-5 xs:pb-[33px] justify-between gap-5 lg:gap-3 sm:gap-2 h-full"
       isInView={isInView}
     >
-      <H4 style="!text-white !leading-[1.25]" text={data.heading} />
+      <H4 style="text-white leading-[1.25]" text={data.heading} />
       <Description
         children={null}
         classes="!text-lg lg:!text-sm sm:!text-xs w-full sm:!tracking-tight"
