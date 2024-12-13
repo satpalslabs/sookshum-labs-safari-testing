@@ -476,7 +476,7 @@ li.country {
   -webkit-text-stroke: 0.4px #e77f2890;
   -webkit-text-fill-color: transparent;
   background-clip: text !important;
-
+  padding-right: 2px;
   text-shadow: -1px -1px 0 hsla(0, 0%, 100%, 0.2), 1px 1px 0 rgba(0, 0, 0, 0.1);
   background: linear-gradient(120deg, var(--primary) 0%, #df5e26 80%),
     linear-gradient(130deg, #eaeaea 2.16%, #adadad 93.44%);
