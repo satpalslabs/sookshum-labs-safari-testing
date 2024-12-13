@@ -10,9 +10,9 @@ const TextContainer: React.FC = () => (
   <div className="flex  flex-col gap-[60px] md:gap-5 ml-[69px] sm:ml-[28px] sm:gap-4 xs:gap-0 h-fit py-[72px] sm:pt-[32px] sm:pb-[37px] xs:py-[28px] xs:px-6 xs:ml-0 3xs:px-5 lg:w-[319px] w-[395px] xs:w-full">
     <div className="flex flex-col gap-[30px] md:gap-3 w-full">
       <div
-        className={`font-poppins text-[72px] leading-[1.1] xs:leading-[1.2] lg:text-[52px] sm:text-4xl xs:text-[28px] text-white font-semibold tracking-tight`}
+        className={`font-poppins pb-[6px] text-[72px] leading-[1.1] xs:leading-[1.2] lg:text-[52px] sm:text-4xl xs:text-[28px] hero-text font-semibold tracking-tight`}
       >
-        Let's Work <br /> Together.
+        Let's Work <br /> Together
       </div>
       <Description
         children={null}
