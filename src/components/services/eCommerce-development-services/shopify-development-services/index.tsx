@@ -18,7 +18,7 @@ const content_heroSection: HeroSection = {
   buttonText: "Shopify Development Company",
   "contact-us": true,
   additionalDescription: "",
-  gradientText: "Shopify Development Service",
+  gradientText: "<span class='hero-span'>Shopify</span> Development Service",
   fallback: "",
   style: {
     sourceStyle:

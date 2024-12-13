@@ -14,7 +14,9 @@ const SectionHeader: React.FC<any> = ({
     className={`flex flex-col gap-6 lg:gap-[15px] xs:gap-2 items-center text-center w-[661px] lg:w-[500px] xs:w-full xs:px-4 3xs:px-0 xs:!text-wrap ${style}`}
   >
     <DarkButton style="" text={buttonText} id={id} />
-    <H2>{children}</H2>
+    <H2>
+      <div className="hero-text">{children}</div>
+    </H2>
     <Description
       text={""}
       classes={

@@ -20,7 +20,8 @@ const content_heroSection: HeroSection = {
   image: true,
   buttonText: "Webflow Development",
   additionalDescription: "",
-  gradientText: "Fast And High-Performing Webflow Websites",
+  gradientText:
+    "Fast And High-Performing <span class='hero-span'>Webflow</span> Websites",
   style: {
     sourceStyle:
       "xxl:left-[50%] w-screen xxl:h-[700px] h-[500px] xxl:scale-[1] lg:h-[330px] sm:h-[280px] xs:h-[170px] xxl:top-[-21%] top-[-25%] xxl:-translate-x-[50%] xs:-left-[25%] xs:scale-[2.9]",
@@ -44,7 +45,6 @@ const Webflow_Development: React.FC<HomeProps> = ({ isBot }) => (
     {/* <Faqs DataKey={"website-development-landing-page"} /> */}
     <LetsConnect />
     <GoTopButton />
-
   </div>
 );
 

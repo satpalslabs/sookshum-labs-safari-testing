@@ -1,5 +1,3 @@
-
-
 import Services from "./our-services";
 import Testimonials from "@components/basic-components/testimonials";
 import ChooseUs from "./why-us";
@@ -18,11 +16,12 @@ import GoTopButton from "@components/basic-components/go-to-top";
 const content_heroSection: HeroSection = {
   URL: "/services/low-code-development/landing-page/bg-image.webp",
   "contact-us": true,
-  fallback:"",
+  fallback: "",
   image: true,
   buttonText: "Low Code Development",
   additionalDescription: "",
-  gradientText: "Your custom software. Ready next week.",
+  gradientText:
+    "Your <span class='hero-span'>custom software.</span> Ready next week.",
   gradientTextStyle: "w-[90%] lg:w-[80%] xs:!w-full",
   style: {
     sourceStyle:
@@ -34,7 +33,7 @@ const content_heroSection: HeroSection = {
     "We are a digital product studio obsessed with building software that delights your users. We design, build, and deliver your custom solutions - fast.",
 };
 
-const LandingPageLowCodeDevelopment: React.FC<HomeProps> = ({isBot}) => (
+const LandingPageLowCodeDevelopment: React.FC<HomeProps> = ({ isBot }) => (
   <div className="relative">
     <Hero {...content_heroSection} />
     <CoreServices DataKey={"landing-page-services"} />
@@ -48,7 +47,6 @@ const LandingPageLowCodeDevelopment: React.FC<HomeProps> = ({isBot}) => (
     {/* <Faqs DataKey={"website-development-landing-page"} /> */}
     <LetsConnect />
     <GoTopButton />
-
   </div>
 );
 

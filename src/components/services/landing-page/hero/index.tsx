@@ -37,7 +37,7 @@ const Hero: React.FC = () => {
     <div className="w-full relative shrink-0" id="hero">
       <GradientSection
         buttonText="Our Services"
-        gradientText="We craft custom software solutions that power your business growth"
+        gradientText="We craft custom <span class='hero-span'>software solutions</span>  that power your business growth"
       />
       <SourceContent
         showContent="image"

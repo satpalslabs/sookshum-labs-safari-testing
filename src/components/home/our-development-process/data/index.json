@@ -2,7 +2,7 @@
     "sections": [
         {
             "image_url": "/home/development-process/Requirement-Gathering.webp",
-            "video_url": "/home/development-process/Requirement-Gathering.webm",
+            "video_url": "/home/our-services/dash.mp4",
             "title": "Requirement Gathering",
             "description": "We take the time to understand your goals, target audience, and brand identity to craft solutions that truly resonates.",
             "cols": 2
@@ -37,7 +37,7 @@
         },
         {
             "image_url": "/home/development-process/Support&Maintenance.webp",
-            "video_url": "/home/development-process/Support&Maintenance.webm",
+            "video_url": "/home/our-services/dash-1.mp4",
             "title": "Support & Maintenance ",
             "description": "Keeping you ahead of the curve. We provide continuous ongoing support and maintenance to ensure your digital products stays secure, up-to-date, and performing optimally.",
             "cols": 3

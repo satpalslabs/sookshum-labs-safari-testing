@@ -20,7 +20,8 @@ const content_heroSection: HeroSection = {
   fallback: "",
   additionalDescription: null,
   buttonText: "Web App Design",
-  gradientText: "Web App Design That Puts Your Users First",
+  gradientText:
+    "<span class='hero-span'>Web App Design</span> That Puts Your Users First",
   style: {
     sourceStyle:
       "scale-[1.0] xxl:left-[50%] xxl:-translate-x-[50%] w-screen xxl:h-[620px] h-[540px] sm:h-[390px] xs:h-[350px] lg:h-[311px]  xxl:bottom-[10%] bottom-[-1%] lg:bottom-[18%] sm:bottom-[25%] xs:bottom-[15%]  ",
@@ -45,7 +46,6 @@ const WebAppUI_DesignComponent: React.FC<HomeProps> = (props) => (
     {/* <Faqs DataKey={"ui-ux-design"} /> */}
     <LetsConnect />
     <GoTopButton />
-
   </div>
 );
 

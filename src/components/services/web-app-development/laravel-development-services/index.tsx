@@ -20,7 +20,7 @@ const content_heroSection: HeroSection = {
   "contact-us": true,
   additionalDescription: "",
   gradientText:
-    "Take Your Product from Vision to Launch with Expert Laravel developers",
+    "Take Your Product from Vision to Launch with Expert <span class='hero-span'>Laravel developers</span>",
   fallback: "",
   style: {
     sourceStyle:
@@ -46,7 +46,6 @@ const Laravel_DevelopmentServices: React.FC<HomeProps> = ({ isBot }) => (
     {/* <Faqs DataKey={"ecommerce-development-landing-page"}/> */}
     <LetsConnect />
     <GoTopButton />
-
   </div>
 );
 

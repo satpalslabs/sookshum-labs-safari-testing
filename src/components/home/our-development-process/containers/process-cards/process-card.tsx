@@ -64,10 +64,10 @@ const DevelopmentProcessCard: React.FC<{
                 index == 3
                   ? "xxl:h-[500px] h-[420px] min-w-[500px] lg:min-w-[400px] ml-0 lg:h-[350px] sm:h-[250px] "
                   : index == 0
-                  ? "h-full w-[371px] lg:h-[280px] lg:scale-90 mx-auto xs:h-[350px] xs:scale-90 xs:-mt-[60px]"
+                  ? "h-auto w-full object-cover lg:h-[280px] lg:scale-90 mx-auto xs:h-[350px] xs:scale-90 xs:-mt-[60px]"
                   : index < 3
                   ? "h-[350px] lg:h-[280px] w-full -z-[10]  "
-                  : "h-[350px] w-[500px] lg:h-[280px] mx-auto"
+                  : "w-full  h-[400px] mx-auto"
               }  object-cover `}
             >
               <source src={item.video_url} type="video/webm" />

@@ -1,4 +1,3 @@
-
 import Services from "./services";
 import Testimonials from "@components/basic-components/testimonials";
 import ChooseUs from "./why-us";
@@ -19,10 +18,10 @@ const content_heroSection: HeroSection = {
   URL: "/services/web-app-development/landing-page/web-app-bg.webm",
   "contact-us": true,
   image: false,
-  fallback:"/services/web-app-development/landing-page/fallback.webp",
+  fallback: "/services/web-app-development/landing-page/fallback.webp",
   buttonText: "Web App Development",
   additionalDescription: "",
-  gradientText: "Web App Development Services",
+  gradientText: "<span class='hero-span'>Web App</span> Development Services",
   style: {
     sourceStyle:
       "xxl:left-[50%] xxl:!scale-[1.45] !scale-[2] !h-[550px] xxl:!h-[680px] lg:!scale-[1.35] lg:!h-[380px] md:!h-[400px] sm:!h-[380px] xs:!h-[160px] xs:!scale-[3.8] 2xs:!scale-[3] 2xs:!h-[150px] overflow-hidden  xxl:-translate-x-[12%] -top-[13%] xxl:-top-[17%] left-[15%] lg:left-[2%] lg:-top-[28%] xs:-left-[4%] xs:-top-[10%]",
@@ -33,7 +32,7 @@ const content_heroSection: HeroSection = {
     "Transform your ideas into powerful web applications with our expert web app development services.",
 };
 
-const LandingPageWebAppDevelopment: React.FC<HomeProps> = ({isBot}) => (
+const LandingPageWebAppDevelopment: React.FC<HomeProps> = ({ isBot }) => (
   <div className="relative">
     <Hero {...content_heroSection} />
     <CoreServices DataKey={"landing-page-services"} />
@@ -47,7 +46,6 @@ const LandingPageWebAppDevelopment: React.FC<HomeProps> = ({isBot}) => (
     {/* <Faqs DataKey={"website-development-landing-page"} /> */}
     <LetsConnect />
     <GoTopButton />
-
   </div>
 );
 

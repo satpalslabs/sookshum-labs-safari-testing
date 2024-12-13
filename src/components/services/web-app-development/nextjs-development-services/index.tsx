@@ -19,7 +19,7 @@ const content_heroSection: HeroSection = {
   buttonText: "Next.js Development",
   "contact-us": true,
   additionalDescription: "",
-  gradientText: "Next.js Development Services",
+  gradientText: "<span class='hero-span'>Next.js</span> Development Services",
   fallback: "",
   style: {
     sourceStyle:

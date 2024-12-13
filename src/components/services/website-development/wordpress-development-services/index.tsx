@@ -21,7 +21,8 @@ const content_heroSection: HeroSection = {
   image: true,
   buttonText: "Wordpress Development",
   additionalDescription: "",
-  gradientText: "Elevate Your Online Presence with Expert WordPress Development",
+  gradientText:
+    "Elevate Your Online Presence with Expert <span class='hero-span'>WordPress</span> Development",
   style: {
     sourceStyle:
       "xxl:left-[50%] w-screen xxl:scale-100 xxl:h-[800px] xxl:scale-[1] lg:h-[530px] sm:h-[530px] xs:h-[170px] xxl:top-[-41%] h-[680px] xs:scale-[2] top-[-21%] lg:top-[-41%] sm:top-[-31%] xs:top-[-15%] xxl:-translate-x-[50%]",

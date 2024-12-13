@@ -20,7 +20,8 @@ const content_heroSection: HeroSection = {
   buttonText: "Flutter App Development",
   "contact-us": true,
   additionalDescription: "",
-  gradientText: "Flutter App Development Services",
+  gradientText:
+    "<span class='hero-span'>Flutter</span> App Development Services",
   fallback: "",
   style: {
     sourceStyle:

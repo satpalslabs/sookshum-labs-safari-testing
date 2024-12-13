@@ -20,7 +20,8 @@ const content_heroSection: HeroSection = {
   fallback: "",
   additionalDescription: null,
   buttonText: "Website Design",
-  gradientText: "Designing Exciting Websites That Generate Profit",
+  gradientText:
+    "<span class='hero-span'>Designing Exciting Websites</span> That Generate Profit",
   style: {
     sourceStyle:
       "scale-[1.0] w-screen xs:scale-[1.4] xxl:left-[50%] xxl:-translate-x-[50%] w-screen xxl:h-[620px] h-[540px] lg:h-[451px] sm:h-[490px] xs:h-[450px] 2xs:scale-[1.7] xxl:bottom-[10%] bottom-[-1%] lg:bottom-[5%] sm:bottom-[10%] xs:bottom-[-0%] 2xs:bottom-[-20%] ",
@@ -45,7 +46,6 @@ const WebsiteUI_DesignComponent: React.FC<HomeProps> = (props) => (
     {/* <Faqs DataKey={"ui-ux-design"} /> */}
     <LetsConnect />
     <GoTopButton />
-
   </div>
 );
 

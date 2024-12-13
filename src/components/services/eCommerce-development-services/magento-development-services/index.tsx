@@ -21,7 +21,7 @@ const content_heroSection: HeroSection = {
   buttonText: "Magento Development Company",
   "contact-us": true,
   additionalDescription: "",
-  gradientText: "We help <br/> eCommerce evolve",
+  gradientText: "We help <br/> <span class='hero-span'>eCommerce evolve</span>",
   fallback: "",
   style: {
     sourceStyle:

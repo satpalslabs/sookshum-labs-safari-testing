@@ -22,7 +22,7 @@ const content_heroSection: HeroSection = {
   buttonText: "Admin Development",
   additionalDescription: "",
   gradientText:
-    "Build Beautiful & Flexible Admin Panels For Easy Backend Management",
+    "Build Beautiful & Flexible <span class='hero-span'>Admin Panels </span> For Easy Backend Management",
   style: {
     sourceStyle:
       "xxl:left-[50%] w-screen xxl:h-[700px] h-[650px] lg:h-[500px] sm:h-[480px] xs:h-[470px] xxl:top-[-23%] top-[-32%] top-[-15%] xxl:-translate-x-[50%]  lg:top-[-65%] sm:top-[-50%] xs:top-[-30%] 2xs:top-[15%] xs:scale-[2] xs:-left-[4%]",

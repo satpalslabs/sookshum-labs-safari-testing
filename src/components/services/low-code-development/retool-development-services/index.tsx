@@ -19,7 +19,8 @@ const content_heroSection: HeroSection = {
   buttonText: "Retool Development",
   "contact-us": true,
   additionalDescription: "",
-  gradientText: "Streamline Workflows and Enhance Productivity with Retool Development",
+  gradientText:
+    "Streamline Workflows and Enhance Productivity with <span class='hero-span'>Retool Development</span> ",
   fallback: "",
   style: {
     sourceStyle:
@@ -45,7 +46,6 @@ const Retool_DevelopmentServices: React.FC<HomeProps> = ({ isBot }) => (
     {/* <Faqs DataKey={"ecommerce-development-landing-page"}/> */}
     <LetsConnect />
     <GoTopButton />
-
   </div>
 );
 

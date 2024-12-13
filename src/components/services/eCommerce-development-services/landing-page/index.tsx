@@ -21,7 +21,7 @@ const content_heroSection: HeroSection = {
   image: true,
   buttonText: "eCommerce Development",
   additionalDescription: "COMPLEX COMMERCE MADE SIMPLE",
-  gradientText: "B2B & B2C eCommerce",
+  gradientText: "B2B & B2C <span class='hero-span'>eCommerce</span> ",
   style: {
     sourceStyle:
       "scale-[1.0] xxl:left-[50%] xxl:-translate-x-[50%] w-screen xxl:h-[620px] h-[540px] sm:h-[390px] xs:h-[350px] lg:h-[311px]  xxl:bottom-[10%] bottom-[-1%] lg:bottom-[18%] sm:bottom-[25%] xs:bottom-[15%]  ",

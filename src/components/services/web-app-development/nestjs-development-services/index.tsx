@@ -19,7 +19,8 @@ const content_heroSection: HeroSection = {
   buttonText: "NestJS App Development",
   "contact-us": true,
   additionalDescription: "",
-  gradientText: "NestJS App Development Services",
+  gradientText:
+    "<span class='hero-span'>NestJS</span> App Development Services",
   fallback: "",
   style: {
     sourceStyle:
