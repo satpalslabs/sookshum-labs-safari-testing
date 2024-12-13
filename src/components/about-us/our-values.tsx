@@ -31,7 +31,7 @@ const OurValues: React.FC = () => {
           className={`flex flex-col gap-6 lg:gap-3 xs:gap-2 items-center w-[70%] lg:w-[500px] xs:w-full xs:px-4 `}
         >
           <H2>
-            <div>Our values</div>
+            <div className="hero-text">Our values</div>
           </H2>
           <div className="text-center">
             <Description
@@ -92,5 +92,6 @@ const OurValueCard: React.FC<{ value: valuePoint; isInView: boolean }> = (
         />
       </div>
     </div>
+    <div className="absolute z-20 bg-transparent transition-all duration-1000 top-0 left-0 w-full h-full group-hover:block group-hover:bg-gradientOnHover "></div>
   </div>
 );

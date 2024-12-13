@@ -461,6 +461,7 @@ li.country {
   }
 }
 
+
 .hero-text {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -473,6 +474,7 @@ li.country {
 }
 
 .hero-span {
+  /* color:#; */
   -webkit-text-stroke: 0.4px #e77f2890;
   -webkit-text-fill-color: transparent;
   background-clip: text !important;
