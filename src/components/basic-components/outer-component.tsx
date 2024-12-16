@@ -1,11 +1,7 @@
 import { cn } from "@lib/utls";
 import React from "react";
-type props = {
-  children: React.ReactNode;
-  style: any;
-};
 
-const OuterComponent: React.FC<props> = ({ children, style = "" }: any) => {
+const OuterComponent: React.FC<any> = ({ children, style = "" }) => {
   return (
     <div
       className={cn(
