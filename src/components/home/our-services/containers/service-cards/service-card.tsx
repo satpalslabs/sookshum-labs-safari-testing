@@ -40,9 +40,6 @@ const ServiceCard = ({
       onTouchEnd={() => {
         setActive(false);
       }}
-      onTouchCancel={() => {
-        setActive(false);
-      }}
     >
       <div className="w-full h-full overflow-hidden rounded-[32px] bg-black">
         <div
