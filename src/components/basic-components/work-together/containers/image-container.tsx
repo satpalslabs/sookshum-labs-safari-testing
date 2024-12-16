@@ -47,7 +47,7 @@ const ImageContainer: React.FC = () => {
           scrollTrigger: {
             trigger: box,
             start: "bottom bottom",
-            end: "top center",
+            end: "center -100px",
             toggleActions: "restart pause reserve pause",
             scrub: true,
           },
@@ -56,11 +56,11 @@ const ImageContainer: React.FC = () => {
       });
       topDivs.forEach((topBox: any) => {
         gsap.to(topBox, {
-          y: 60,
+          y: -50,
           scrollTrigger: {
             trigger: topBox,
             start: "top center",
-            end: "center 100px",
+            end: "center -100px",
             toggleActions: "restart pause reserve pause",
             scrub: true,
           },
@@ -96,7 +96,7 @@ const ImageContainer: React.FC = () => {
           }}
         ></div>
         <div
-          className="animateTop transition-all duration-1000  w-[72px] h-[72px]  lg:w-[52px] lg:h-[52px] sm:w-[42px] sm:h-[42px] rounded-full  shadow-2xl absolute top-0 translate-y-[-50%] left-[23%]"
+          className="animateTop transition-all duration-1000  w-[72px] h-[72px]  lg:w-[52px] lg:h-[52px] sm:w-[42px] sm:h-[42px] rounded-full  shadow-2xl absolute top-0 translate-y-[50%] left-[23%]"
           style={{
             background: "linear-gradient(180deg, #FF9C00 0%, #F56300 100%)",
           }}

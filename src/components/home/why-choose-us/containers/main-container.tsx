@@ -2,13 +2,13 @@
 /**
  * This file contains the text container of why choose us section.
  */
-
 import { useRef, useState } from "react";
-import dynamic from "next/dynamic";
 import data from "../data/index.json";
 import { useInView } from "@lib/use-in-view";
-const TextCard = dynamic(() => import("./text-card"));
-const ImageContainer = dynamic(() => import("./image-container"));
+import Card from "@components/basic-components/card";
+import Image from "next/image";
+import H4 from "@components/basic-components/headings/H4";
+import Description from "@components/basic-components/description";
 
 export type dataItemType = {
   title: string;
@@ -17,32 +17,48 @@ export type dataItemType = {
   video_url: string;
 };
 
-function MainContainer() {
+const MainContainer = () => {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref);
-  let [selectedCardIndex, setSelectedCardIndex] = useState<number>(0);
+
   return (
     <div
       ref={ref}
-      className="w-full gap-5 grid grid-cols-10 md:gap-[14px] xs:grid-cols-1 !shrink-0"
+      className="w-full grid grid-cols-3 grid-rows-2 gap-5 sm:gap-3 xs:grid-cols-1 xs:grid-rows-6"
     >
-      <ImageContainer 
-        item={data.text_containers[selectedCardIndex]}
-        isInView={isInView}
-      />
-      <div className="flex flex-col gap-5 md:gap-3 col-span-4">
-        {data.text_containers.map((dataItem: dataItemType, index: number) => (
-          <TextCard
-            item={dataItem}
-            key={index}
-            index={index}
-            selectedItem={selectedCardIndex}
-            setSelectedItem={setSelectedCardIndex}
-          />
-        ))}
-      </div>
+      {data.map((item: dataItemType, index: number) => (
+        <SingleCard key={index} data={item} isInView={isInView} />
+      ))}
     </div>
   );
-}
+};
 
 export default MainContainer;
+
+const SingleCard: React.FC<{ isInView: boolean; data: dataItemType }> = ({
+  isInView,
+  data,
+}) => (
+  <div className="relative rotate-0 w-fit h-full ">
+    <Card
+      style=" h-full p-8 pb-8 lg:p-7 sm:p-6 xs:p-5 justify-between gap-4 lg:gap-8 sm:gap-[60px] xs:gap-3"
+      isInView={isInView}
+    >
+      <Image
+        width={800}
+        height={800}
+        src={data.image_url}
+        className="w-[120px] h-auto lg:w-[80px] "
+        alt="image"
+      />
+      <div className="flex flex-col gap-5 lg:gap-3 sm:gap-2">
+        <H4 style="!leading-[1.25]" text={data.title} />
+        <Description
+          children={null}
+          classes="!text-lg lg:!text-sm sm:!text-xs w-full sm:!tracking-tight"
+          text={data.description}
+        />
+      </div>
+    </Card>
+  </div>
+);

@@ -49,9 +49,9 @@ const Hero: React.FC = () => {
         // }}
         style={{
           sourceStyle:
-            "scale-[1.0] lg:scale-[1.4] sm:scale-[1] xxl:left-[50%] xxl:-translate-x-[50%] w-screen h-[540px] sm:h-[690px]  lg:h-[311px] lg:bottom-[18%] sm:bottom-[5%]  xs:bottom-[-5%]  xxl:h-[620px] xxl:bottom-[-10%] bottom-[-1%]",
+            "scale-[1.0] lg:scale-[1.4] sm:scale-[1] xxl:left-[50%] xxl:-translate-x-[50%] w-screen h-[540px] sm:h-[690px]  lg:h-[311px] lg:bottom-[18%] sm:bottom-[5%]  xs:top-[-25%] xs:h-[500px]   xxl:h-[620px] xxl:bottom-[-10%] bottom-[-1%]",
           gradientDivStyle:
-            "scale-[1.0] lg:scale-[1.4] xxl:left-[50%] xxl:-translate-x-[50%] w-screen xxl:h-[620px] h-[540px]  lg:h-[321px] sm:scale-100 lg:bottom-[16%] sm:h-[690px] sm:bottom-[-5%]  xs:bottom-[-5%]  xxl:bottom-[-10%] bottom-[-1%] ",
+            "scale-[1.0] lg:scale-[1.4] xxl:left-[50%] xxl:-translate-x-[50%] w-screen xxl:h-[620px] h-[540px]  lg:h-[321px] sm:scale-100 lg:bottom-[16%] sm:h-[690px] sm:bottom-[-5%] xs:h-[500px] xs:top-[-25%] xxl:bottom-[-10%] bottom-[-1%] ",
         }}
         fallback=""
         source={

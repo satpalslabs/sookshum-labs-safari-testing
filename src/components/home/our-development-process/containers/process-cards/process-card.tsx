@@ -68,7 +68,7 @@ const DevelopmentProcessCard: React.FC<{
                   ? "max-h-[420px] h-auto w-full object-cover lg:h-[280px] lg:scale-90 mx-auto xs:h-[350px] xs:scale-90 xs:-mt-[60px]"
                   : index < 3
                   ? "h-[350px] lg:h-[280px] w-full -z-[10]  "
-                  : "w-full  h-[400px] mx-auto"
+                  : "w-full  h-[400px] lg:h-auto lg:object-cover mx-auto"
               }  object-cover `}
             >
               <source src={item.video_url} type="video/webm" />
