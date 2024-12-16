@@ -58,7 +58,7 @@ const ServiceCard = ({
               loop={active}
               playsInline
               preload="auto"
-              className={`h-full w-auto object-cover transition-all duration-700`} // Ensure the image covers the space correctly
+              className={`h-full w-full object-cover transition-all duration-700`} // Ensure the image covers the space correctly
             >
               <source src={item.video_url} type="video/webm" />
             </video>
