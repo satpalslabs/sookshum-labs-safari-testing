@@ -38,27 +38,53 @@ export default MainContainer;
 const SingleCard: React.FC<{ isInView: boolean; data: dataItemType }> = ({
   isInView,
   data,
-}) => (
-  <div className="relative rotate-0 w-fit h-full ">
-    <Card
-      style=" h-full p-8 pb-8 lg:p-7 sm:p-6 xs:p-5 justify-between gap-4 lg:gap-8 sm:gap-[60px] xs:gap-3"
-      isInView={isInView}
+}) => {
+  const [active, setActive] = useState(false);
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+  return (
+    <div
+      className="relative rotate-0 w-fit h-full"
+      onMouseEnter={() => {
+        setActive(true);
+        videoRef.current?.play();
+      }}
+      onMouseLeave={() => {
+        setActive(false);
+      }}
     >
-      <Image
-        width={800}
-        height={800}
-        src={data.image_url}
-        className="w-[120px] h-auto lg:w-[80px] "
-        alt="image"
-      />
-      <div className="flex flex-col gap-5 lg:gap-3 sm:gap-2">
-        <H4 style="!leading-[1.25]" text={data.title} />
-        <Description
-          children={null}
-          classes="!text-lg lg:!text-sm sm:!text-xs w-full sm:!tracking-tight"
-          text={data.description}
-        />
-      </div>
-    </Card>
-  </div>
-);
+      <Card
+        style=" h-full p-8 pb-8 lg:p-7 sm:p-6 xs:p-5 justify-between gap-4 lg:gap-8 sm:gap-[60px] xs:gap-3"
+        isInView={isInView}
+      >
+        <video
+          ref={videoRef}
+          muted
+          width="320"
+          height="240"
+          poster={data.image_url}
+          loop={active}
+          playsInline
+          preload="auto"
+          className={`w-[120px] h-auto lg:w-[80px] `} // Ensure the image covers the space correctly
+        >
+          <source src={data.video_url} type="video/webm" />
+        </video>
+        {/* <Image
+          width={800}
+          height={800}
+          src={data.image_url}
+          className="w-[120px] h-auto lg:w-[80px] "
+          alt="image"
+        /> */}
+        <div className="flex flex-col gap-5 lg:gap-3 sm:gap-2">
+          <H4 style="!leading-[1.25]" text={data.title} />
+          <Description
+            children={null}
+            classes="!text-lg lg:!text-sm sm:!text-xs w-full sm:!tracking-tight"
+            text={data.description}
+          />
+        </div>
+      </Card>
+    </div>
+  );
+};

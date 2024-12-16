@@ -18,7 +18,6 @@ const ServiceCard = ({
   isInView: boolean;
 }) => {
   const [active, setActive] = useState(false);
-  const [showVideo, setShowVideo] = useState(false);
   const videoRef = useRef<HTMLVideoElement | null>(null);
   return (
     <div
@@ -28,11 +27,20 @@ const ServiceCard = ({
           : "bg-transparent grayscale"
       }`}
       onMouseEnter={() => {
-        setShowVideo(true);
+        setActive(true);
+        videoRef.current?.play();
+      }}
+      onTouchStart={() => {
         setActive(true);
         videoRef.current?.play();
       }}
       onMouseLeave={() => {
+        setActive(false);
+      }}
+      onTouchEnd={() => {
+        setActive(false);
+      }}
+      onTouchCancel={() => {
         setActive(false);
       }}
     >
@@ -44,18 +52,13 @@ const ServiceCard = ({
             <video
               ref={videoRef}
               muted
-              onEnded={() => {
-                if (!active) {
-                  setShowVideo(false);
-                }
-              }}
               width="320"
               height="240"
               poster={item.image_url}
               loop={active}
               playsInline
               preload="auto"
-              className={`h-full w-full object-cover transition-all duration-700`} // Ensure the image covers the space correctly
+              className={`h-full w-auto object-cover transition-all duration-700`} // Ensure the image covers the space correctly
             >
               <source src={item.video_url} type="video/webm" />
             </video>
