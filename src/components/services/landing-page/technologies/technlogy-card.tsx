@@ -3,15 +3,21 @@ import DarkButton from "@components/basic-components/button";
 import Description from "@components/basic-components/description";
 import H2 from "@components/basic-components/headings/H2";
 import PrimaryButton from "@components/basic-components/primary-button";
-
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import { useInView } from "@lib/use-in-view";
 import { dataItemType } from ".";
 import Image from "next/image";
 
 function Technology({ item }: { item: dataItemType }) {
   const ref = useRef<HTMLDivElement>(null);
+  const videoRef = useRef<HTMLVideoElement | null>(null);
   const isInView = useInView(ref);
+  useEffect(() => {
+    if (isInView) {
+      videoRef.current?.play();
+    }
+  }, [isInView]);
+
   return (
     <div
       ref={ref}
@@ -21,17 +27,17 @@ function Technology({ item }: { item: dataItemType }) {
     xs:flex-col-reverse xs:gap-8 xs:pt-0 xs:pb-[60px] items-center`}
     >
       <div
-        className={`w-fit ${
+        className={` ${
           item["image-position"] == "right"
-            ? ""
-            : "max-w-[80%] w-full sm:max-w-full"
+            ? "max-w-[716px] lg:max-w-[548px] sm:max-w-[401px] xs:max-w-full"
+            : "max-w-[567px] lg:max-w-[489px] sm:max-w-[400px] xs:max-w-full"
         } `}
       >
         <div
           className={`flex flex-col w-fit gap-5  lg:gap-4 grow-0 md:gap-3  h-fit xs:text-left xs:items-start xs:pt-0 ${
             item["image-position"] == "right"
-              ? "max-w-[90%] md:max-w-full pr-3"
-              : "max-w-[80%] md:max-w-[95%] sm:max-w-full xs:w-full xs:float-left float-right"
+              ? "max-w-full"
+              : "max-w-full xs:w-full xs:float-left float-right"
           }`}
         >
           <DarkButton
@@ -58,21 +64,32 @@ function Technology({ item }: { item: dataItemType }) {
             }`}
           />
           <PrimaryButton
-            style="mt-[60px] xs:mt-[42px] !bg-darkOrange shadow-shadowOrange"
+            style="mt-[60px] xs:mt-[42px] bg-darkOrange shadow-shadowOrange"
             text="Learn more"
             icon={false}
             link={item.link}
           />
         </div>
       </div>
-      <div className="grow sm:max-w-[50%] xs:max-w-full">
-        <Image
+      <div className=" w-fit">
+        {/* <Image
           width="900"
           height="900"
           alt="image"
           className="h-auto w-full xs:mx-auto my-auto"
           src={item["image-path"]}
-        />
+        /> */}
+        <video
+          muted
+          loop
+          ref={videoRef}
+          playsInline
+          preload="metadata"
+          poster={item["image-path"]}
+          className="h-fit object-cover w-[600px] xs:mx-auto my-auto"
+        >
+          <source src={item["video-path"]} type="video/webm" />
+        </video>
       </div>
     </div>
   );

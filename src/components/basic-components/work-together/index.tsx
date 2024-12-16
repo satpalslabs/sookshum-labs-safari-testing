@@ -14,9 +14,9 @@ export type dataItem = {
 };
 
 const WorkTogether: React.FC = () => (
-  <OuterComponent>
+  <OuterComponent style={"overflow-visible"}>
     <div
-      id="connect"
+      id="animateBottom"
       className="flex justify-between xs:flex-col relative shadow-buttonInset bg-innerContainer rounded-[32px] sm:rounded-[20px] xs:pb-0 xs:gap-8 "
     >
       <TextContainer />

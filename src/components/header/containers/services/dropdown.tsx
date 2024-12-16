@@ -111,17 +111,15 @@ const DetailServiceContentSection = ({
         onClick={() => {
           window.open("/contact-us", "_self");
         }}
+        onMouseEnter={() => {
+          setPlay(true);
+          ref.current?.play();
+        }}
+        onMouseLeave={() => {
+          setPlay(false);
+        }}
       >
-        <div
-          className="h-[180px] w-[316px] lg:w-[232px] lg:h-[190px] relative rounded-[20px] overflow-hidden sm:w-full"
-          onMouseEnter={() => {
-            setPlay(true);
-            ref.current?.play();
-          }}
-          onMouseLeave={() => {
-            setPlay(false);
-          }}
-        >
+        <div className="h-[180px] w-[316px] lg:w-[232px] lg:h-[190px] relative rounded-[20px] overflow-hidden sm:w-full">
           <video
             autoPlay={play}
             muted
@@ -130,6 +128,7 @@ const DetailServiceContentSection = ({
             playsInline
             preload="metadata"
             className="w-full h-full object-cover"
+            poster="/header/lets-connect.webp"
           >
             <source src={"/header/let-connect.webm"} type="video/webm" />
           </video>

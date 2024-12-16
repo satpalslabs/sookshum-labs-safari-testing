@@ -41,7 +41,7 @@ const ServiceCard = ({
           className={`flex flex-col gap-2 pb-8 min-h-fit lg:pb-6 bg-innerContainer  lg:rounded-[26px] sm:gap-3 shadow-buttonInset  border-none h-full w-full hover:border-borderPrimary overflow-hidden  xs:w-full `}
         >
           <div className="w-full xll:h-[136px] lg:h-[221px] sm:h-[261px] flex items-center justify-center xs:h-[239px] h-[334px] xxl:h-[354px] overflow-hidden relative">
-            {/* <video
+            <video
               ref={videoRef}
               muted
               onEnded={() => {
@@ -51,20 +51,21 @@ const ServiceCard = ({
               }}
               width="320"
               height="240"
+              poster={item.image_url}
               loop={active}
               playsInline
               preload="auto"
               className={`h-full w-full object-cover transition-all duration-700`} // Ensure the image covers the space correctly
             >
               <source src={item.video_url} type="video/webm" />
-            </video> */}
-            <Image
+            </video>
+            {/* <Image
               loading="eager"
               src={item.image_url}
               fill
               alt={"Service Image"} // Provide meaningful alt text
               className="object-cover" // Ensure the image covers the space correctly
-            />
+            /> */}
           </div>
           <TextContainer item={item} />
         </div>
