@@ -28,14 +28,14 @@ export default function Slider() {
       className="max-w-full w-full h-full relative overflow-hidden"
       ref={ref}
     >
-      <div className="absolute xxl:w-[25%] w-[25%] lg:w-[250px] sm:w-[20%] lg:bottom-0 lg:h-[386px] h-full  left-0 bottom-0 z-10 bg-gradient-to-r from-black via-[#15151538] to-transparent pointer-events-none"></div>
+      <div className="absolute xxl:w-[25%] w-[25%] lg:w-[250px] sm:w-[20%] lg:bottom-0  h-full  left-0 bottom-0 z-10 bg-gradient-to-r from-black via-[#15151538] to-transparent pointer-events-none"></div>
       <div className="pt-[81px] sm:pb-8 py-[70px] sm:pt-0  px-0 xs:py-[0px] w-full">
         <div className="flex gap-5 group">
           <SliderItems isInView={isInView} />
           <SliderItems isInView={isInView} />
         </div>
       </div>
-      <div className="absolute xxl:w-[25%] w-[25%] lg:w-[250px] sm:w-[20%] lg:bottom-0 lg:h-[386px] h-full right-0 bottom-0 bg-gradient-to-l from-black via-[#15151538] to-transparent z-10 pointer-events-none"></div>
+      <div className="absolute xxl:w-[25%] w-[25%] lg:w-[250px] sm:w-[20%] lg:bottom-0  h-full right-0 bottom-0 bg-gradient-to-l from-black via-[#15151538] to-transparent z-10 pointer-events-none"></div>
     </div>
   );
 }

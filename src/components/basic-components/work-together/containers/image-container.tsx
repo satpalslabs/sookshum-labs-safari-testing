@@ -3,7 +3,7 @@
  * This component contains the images.
  */
 import Image from "next/image";
-import { useRef } from "react";
+import { useEffect, useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
@@ -13,54 +13,50 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 const ImageContainer: React.FC = () => {
   const main = useRef<HTMLDivElement | null>(null);
 
-  useGSAP(
-    () => {
-      const bottomDivs = gsap.utils.toArray(".animateBottom");
+  useEffect(() => {
+    const bottomDivs = gsap.utils.toArray(".animateBottom");
 
-      // Floating objects
-      bottomDivs.forEach((box: any) => {
-        gsap.to(box, {
-          yPercent: -80, // Float upwards with a parallax feel
-          ease: "none",
-          scrollTrigger: {
-            trigger: box,
-            start: "top bottom", // Start when the element enters view
-            end: "bottom top", // End sooner for better control
-            scrub: true,
-            // markers: true, // Remove in production
-          },
-        });
-      });
-
-      gsap.to(".animateTop", {
-        yPercent: -80, // More significant float effect
+    // Floating objects
+    bottomDivs.forEach((box: any) => {
+      gsap.to(box, {
+        yPercent: -80, // Float upwards with a parallax feel
         ease: "none",
         scrollTrigger: {
-          trigger: ".animateTop",
-          start: "top bottom", // Trigger earlier
-          end: "bottom top",
+          trigger: box,
+          start: "top bottom", // Start when the element enters view
+          end: "bottom top", // End sooner for better control
           scrub: true,
-          // markers: true, // Debugging
+          // markers: true, // Remove in production
         },
       });
+    });
 
-      // Parallax effect for the main image
-      gsap.to(".parallaxImage", {
-        yPercent: 20, // Image floats down as you scroll
-        ease: "none",
-        scrollTrigger: {
-          trigger: ".parallaxImage",
-          start: "top bottom", // Image enters viewport
-          end: "bottom top", // Image fully exits
-          scrub: true,
-        },
-      });
+    gsap.to(".animateTop", {
+      yPercent: -80, // More significant float effect
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".animateTop",
+        start: "top bottom", // Trigger earlier
+        end: "bottom top",
+        scrub: true,
+        // markers: true, // Debugging
+      },
+    });
 
-      ScrollTrigger.refresh();
-    },
-    { scope: main }
-  );
+    // Parallax effect for the main image
+    gsap.to(".parallaxImage", {
+      yPercent: 20, // Image floats down as you scroll
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".parallaxImage",
+        start: "top bottom", // Image enters viewport
+        end: "bottom top", // Image fully exits
+        scrub: true,
+      },
+    });
 
+    ScrollTrigger.refresh();
+  }, []);
   return (
     <div className="absolute xs:relative xs:w-full xs:top-[auto] xs:left-[auto] xs:right-[auto] xs:mx-auto h-full  lg:-right-10 sm:h-[360px] sm:-right-12 -right-16">
       <div className="relative w-full h-full flex items-center" ref={main}>
