@@ -16,9 +16,11 @@ const ImageContainer: React.FC = () => {
   // Function to wait for all images to load
   const waitForImages = () => {
     return new Promise((resolve) => {
-      const images = document.querySelectorAll(
-        "img.work-image"
-      ) as NodeListOf<HTMLImageElement>; // Only select images with class 'work-image'
+      const images = Array.from(
+        document.querySelectorAll("img.work-image")
+      ).filter(
+        (img) => !img.classList.contains("hidden")
+      ) as HTMLImageElement[]; // Only select images with class 'work-image'
       let loadedCount = 0;
 
       images.forEach((img) => {

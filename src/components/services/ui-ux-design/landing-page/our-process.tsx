@@ -33,7 +33,7 @@ const ImageContainer: React.FC = () => (
       placeholder="blur"
       width={1800}
       height={490}
-      className="w-full xxl:min-w-full xxl:h-fit h-[490px] lg:h-[356px] sm:hidden"
+      className="w-full xxl:min-w-full xxl:h-fit h-[490px] lg:h-[356px] sm:hidden work-image"
       src="/services/ui-ux-design/landing-page/our-process/desktop.webp"
       alt="image"
     />
@@ -42,7 +42,7 @@ const ImageContainer: React.FC = () => (
       placeholder="blur"
       width={1000}
       height={1000}
-      className="hidden sm:block w-auto h-[658px] xs:hidden"
+      className="hidden sm:block w-auto h-[658px] xs:hidden work-image"
       src="/services/ui-ux-design/landing-page/our-process/tab.png"
       alt="image"
     />
@@ -51,7 +51,7 @@ const ImageContainer: React.FC = () => (
       placeholder="blur"
       width={1000}
       height={1500}
-      className="hidden  xs:block h-[1111px] 3xs:h-[850px] w-auto"
+      className="hidden  xs:block h-[1111px] 3xs:h-[850px] w-auto work-image"
       src="/services/ui-ux-design/landing-page/our-process/mobile.png"
       alt="image"
     />
