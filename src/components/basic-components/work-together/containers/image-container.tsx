@@ -56,7 +56,7 @@ const ImageContainer: React.FC = () => {
     });
 
     ScrollTrigger.refresh();
-  });
+  }, [gsap]);
   return (
     <div className="absolute xs:relative xs:w-full xs:top-[auto] xs:left-[auto] xs:right-[auto] xs:mx-auto h-full  lg:-right-10 sm:h-[360px] sm:-right-12 -right-16">
       <div className="relative w-full h-full flex items-center" ref={main}>
