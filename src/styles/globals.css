@@ -22,60 +22,86 @@
   --custom-yellow: #fcce62;
   --view-port-border: #73737366;
   --inner-container-blur: #28282866;
-  --inner-container: #282828b2;
+  --inner-container: #1c1c1c;
   --custom-dark-shadow: #f8f8f80f;
-  --slider-circle-gradient: linear-gradient(158.39deg,
-      rgba(255, 255, 255, 0.1) 14.19%,
-      rgba(255, 255, 255, 2.5e-5) 50.59%,
-      rgba(255, 255, 255, 2.5e-5) 68.79%,
-      rgba(255, 255, 255, 0.025) 105.18%);
-  --dark-button-gradient: linear-gradient(94.33deg,
-      rgba(230, 134, 36, 0.092549) 1.23%,
-      rgba(230, 134, 36, 0.2) 98.22%);
-  --text-gradient: linear-gradient(92.21deg,
-      #8bb3ff 9.36%,
-      #e68624 57.5%,
-      #ff358a 99.51%);
-  --dark-border-primary-button: linear-gradient(90deg,
+  --slider-circle-gradient: linear-gradient(
+    158.39deg,
+    rgba(255, 255, 255, 0.1) 14.19%,
+    rgba(255, 255, 255, 2.5e-5) 50.59%,
+    rgba(255, 255, 255, 2.5e-5) 68.79%,
+    rgba(255, 255, 255, 0.025) 105.18%
+  );
+  --dark-button-gradient: linear-gradient(
+    94.33deg,
+    rgba(230, 134, 36, 0.092549) 1.23%,
+    rgba(230, 134, 36, 0.2) 98.22%
+  );
+  --text-gradient: linear-gradient(
+    92.21deg,
+    #8bb3ff 9.36%,
+    #e68624 57.5%,
+    #ff358a 99.51%
+  );
+  --dark-border-primary-button: linear-gradient(
+      90deg,
       rgba(255, 255, 255, 0) 87.89%,
-      rgba(255, 255, 255, 0.2) 110.53%),
-    linear-gradient(4deg,
+      rgba(255, 255, 255, 0.2) 110.53%
+    ),
+    linear-gradient(
+      4deg,
       rgba(255, 255, 255, 0.2) -13.79%,
-      rgba(255, 255, 255, 0) 28.92%),
-    linear-gradient(90deg,
+      rgba(255, 255, 255, 0) 28.92%
+    ),
+    linear-gradient(
+      90deg,
       rgba(255, 255, 255, 0.2) -7.89%,
-      rgba(255, 255, 255, 0) 12.63%),
-    linear-gradient(180deg,
+      rgba(255, 255, 255, 0) 12.63%
+    ),
+    linear-gradient(
+      180deg,
       rgba(255, 255, 255, 0.2) -12.5%,
-      rgba(255, 255, 255, 0) 25%),
+      rgba(255, 255, 255, 0) 25%
+    ),
     rgba(0, 0, 0, 0.7);
-  --hover-gradient: linear-gradient(271deg,
+  --hover-gradient: linear-gradient(
+      271deg,
       rgba(230, 134, 36, 0) 87.8%,
-      rgba(230, 134, 36, 0.19) 116.94%),
-    linear-gradient(1deg,
+      rgba(230, 134, 36, 0.19) 116.94%
+    ),
+    linear-gradient(
+      1deg,
       rgba(230, 134, 36, 0) 88.01%,
-      rgba(230, 134, 36, 0.19) 115.85%),
-    linear-gradient(91deg,
+      rgba(230, 134, 36, 0.19) 115.85%
+    ),
+    linear-gradient(
+      91deg,
       rgba(230, 134, 36, 0) 87.12%,
-      rgba(230, 134, 36, 0.19) 120.22%),
-    linear-gradient(181deg,
+      rgba(230, 134, 36, 0.19) 120.22%
+    ),
+    linear-gradient(
+      181deg,
       rgba(230, 134, 36, 0) 86.43%,
-      rgba(230, 134, 36, 0.19) 120.21%);
+      rgba(230, 134, 36, 0.19) 120.21%
+    );
   --dark-gradient: linear-gradient(180deg, #1e1e1e 0%, rgba(0, 0, 0, 0) 100%);
-  --orange-background: linear-gradient(118.99deg,
-      #e68624 1.91%,
-      #804b14 97.83%);
+  --orange-background: linear-gradient(
+    118.99deg,
+    #e68624 1.91%,
+    #804b14 97.83%
+  );
   --slider-gradient: linear-gradient(180deg, #15151538 0%, #000000 100%);
   --shadow-orange: 2px 4px 16px 0px #f8f8f80f inset;
   --dark-orange: #e17c27cc;
   --dark-button-shadow: rgba(54, 92, 251, 0.08) 0px 1px 2px 0px,
     rgba(255, 255, 255, 0.4) 0px 0px 6px 0px inset;
   --light-black-gradient: #00000052;
-  --gradient-circle-border: linear-gradient(360deg,
-      rgba(255, 255, 255, 0.45) 0%,
-      rgba(255, 255, 255, 0.27) 30.11%,
-      rgba(255, 255, 255, 0.054) 45.16%,
-      rgba(255, 255, 255, 0) 75.26%);
+  --gradient-circle-border: linear-gradient(
+    360deg,
+    rgba(255, 255, 255, 0.45) 0%,
+    rgba(255, 255, 255, 0.27) 30.11%,
+    rgba(255, 255, 255, 0.054) 45.16%,
+    rgba(255, 255, 255, 0) 75.26%
+  );
   --dark-with-opacity: #0000009a;
   --why-us-container-mac-OS: #1e1e1e;
   --why-us-container-mac-small-devices: #1e1e1e;
@@ -343,7 +369,6 @@ li.country {
   ol,
   menu,
   dl {
-
     ul,
     ol,
     menu,
@@ -447,7 +472,7 @@ li.country {
   }
 
   ruby {
-    >rt {
+    > rt {
       font-size: 50%;
     }
   }
@@ -460,7 +485,6 @@ li.country {
     text-transform: none !important;
   }
 }
-
 
 .hero-text {
   -webkit-background-clip: text;

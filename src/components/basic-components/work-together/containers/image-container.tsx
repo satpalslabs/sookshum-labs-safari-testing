@@ -61,7 +61,7 @@ const ImageContainer: React.FC = () => {
         });
 
         gsap.to(".animateTop", {
-          yPercent: -80,
+          yPercent: -50,
           ease: "none",
           scrollTrigger: {
             trigger: ".animateTop",
@@ -108,15 +108,15 @@ const ImageContainer: React.FC = () => {
   }, [pathname]);
 
   return (
-    <div className="absolute xs:relative xs:w-full xs:top-[auto] xs:left-[auto] xs:right-[auto] xs:mx-auto h-full lg:-right-10 sm:h-[360px] sm:-right-12 -right-16">
+    <div className="absolute xs:relative xs:w-full xs:top-[auto] xs:left-[auto] xs:right-[auto] xs:mx-auto h-full lg:-right-10 sm:h-[360px] sm:-right-12 -right-12">
       <div className="relative w-full h-full flex items-center" ref={main}>
         <Image
-          height={1600}
-          width={1600}
+          height={3600}
+          width={3600}
           ref={mainBox}
           src="/home/work-together/work-together.webp"
           alt="work-together"
-          className="parallaxImage xxl:h-[510px] translate-y-[-10%] h-[480px] lg:h-[400px] sm:h-[270px] sm:-mt-8 w-auto object-contain xs:mx-auto"
+          className="parallaxImage xxl:h-[510px] translate-y-[-12%] h-[480px] lg:h-[400px] sm:h-[270px] sm:-mt-8 w-auto object-contain xs:mx-auto"
         />
         <div
           className="animateBottom w-[52px] h-[52px] lg:w-[42px] lg:h-[42px] sm:w-[32px] sm:h-[32px] rounded-full shadow-2xl absolute bottom-[-3%] sm:bottom-[10%] right-[20%]"
