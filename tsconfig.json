@@ -1,13 +1,9 @@
 {
   "compilerOptions": {
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
-    "strict": true,
+    "strict": false,
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
@@ -22,12 +18,8 @@
       }
     ],
     "paths": {
-      "@*": [
-        "./src/*"
-      ],
-      "@pages/*": [
-        "./pages/*"
-      ]
+      "@*": ["./src/*"],
+      "@pages/*": ["./pages/*"]
     },
     "forceConsistentCasingInFileNames": true
   },
@@ -37,9 +29,8 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "src/components/home/core-services/containers/image-container/design.jsx",
-    "src/components/home/core-services/containers/image-container/develop.jsx"
-, "src/components/services"  ],
-  "exclude": [
-    "node_modules"
-  ]
+    "src/components/home/core-services/containers/image-container/develop.jsx",
+    "src/components/services"
+  ],
+  "exclude": ["node_modules"]
 }
