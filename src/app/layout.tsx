@@ -111,6 +111,7 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="preload" href="/home/hero/fallback.webp" as="image" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <script src="/src/lib/gsap/minified/gsap.min.js" />
         <link
           rel="preconnect"
           href="https://fonts.gstatic.com"
