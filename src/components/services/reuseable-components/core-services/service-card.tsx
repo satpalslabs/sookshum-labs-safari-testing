@@ -38,7 +38,7 @@ function Service({
             imageType="webp"
             duration={0.5}
             containerRef={containerRef}
-            style="h-[195px] lg:h-[132px] xxl:-mt-[15%] sm:h-[108px] xs:-mt-[10%] lg:-mt-[20%] w-auto object-cover -mt-[15%] "
+            style="h-[195px] lg:h-[162px] xxl:-mt-[15%] sm:h-[128px] xs:-mt-[10%] lg:-mt-[20%] w-auto object-cover -mt-[15%] "
           />
         </div>
       </div>

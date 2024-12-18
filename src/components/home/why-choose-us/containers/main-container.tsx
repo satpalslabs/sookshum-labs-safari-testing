@@ -47,7 +47,7 @@ const SingleCard: React.FC<{ isInView: boolean; data: dataItemType }> = ({
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   return (
-    <div className="relative rotate-0 w-fit h-full" ref={containerRef}>
+    <div className="relative rotate-0 w-fit" ref={containerRef}>
       <Card
         style=" h-full p-8 pb-8 lg:p-7 sm:p-6 xs:p-5 justify-between gap-4 lg:gap-8 sm:gap-[60px] xs:gap-3"
         isInView={isInView}

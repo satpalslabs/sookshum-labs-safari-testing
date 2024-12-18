@@ -86,7 +86,7 @@ function Technology({ item }: { item: dataItemType }) {
           playsInline
           preload="metadata"
           poster={item["image-path"]}
-          className="h-full object-cover w-auto xs:mx-auto my-auto"
+          className="object-cover w-auto xs:mx-auto my-auto"
         >
           <source src={item["video-path"]} type="video/webm" />
         </video>
