@@ -29,7 +29,7 @@ const Industry: React.FC<{
       width={400}
       src={industry.image}
       alt="image"
-      className="h-[120px] lg:h-[80px] max-w-fit pl-3 pb-2 pt-1 object-contain float-left "
+      className="h-[120px] w-[120px] lg:h-[80px] lg:w-[80px]  pl-3 pb-2 pt-1 object-contain  "
     />
     <div className="p-4 flex flex-col gap-[10px] xs:p-1 ">
       <H6 classes="!text-white" text={industry.title} />
