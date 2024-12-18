@@ -34,8 +34,7 @@ const content_heroSection: HeroSection = {
 const UiUxDesignComponent: React.FC<HomeProps> = (props) => (
   <div className="relative ">
     <Hero {...content_heroSection} />
-    <CoreServices DataKey={"landing-page-services"} />
-    <Services />
+    <CoreServices /> <Services />
     <ChooseUs />
     <OurProcess />
     {props.isBot && <Work />}

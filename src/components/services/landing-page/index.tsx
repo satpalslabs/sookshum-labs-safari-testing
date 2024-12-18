@@ -12,8 +12,7 @@ function ServiceComponent({ isBot }: HomeProps) {
   return (
     <div className="relative ">
       <Hero />
-      <CoreServices DataKey={"landing-page-services"} />
-      <Cover />
+      <CoreServices /> <Cover />
       <Technologies />
       {!isBot && <Testimonials />}
       <WorkTogether />

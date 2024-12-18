@@ -10,7 +10,7 @@ const ImageContainer = dynamic(() => import("./containers/image-container"));
 
 const Hero: React.FC = () => (
   <section
-    className="flex relative xs:flex-col justify-between h-fit max-w-[1920px] mx-auto"
+    className="flex relative xs:flex-col-reverse justify-between h-fit max-w-[1920px] mx-auto"
     id="hero"
   >
     <div className="absolute -top-[90px] h-[200px] lg:-top-[10%] xs:top-[-2.4%] z-20 w-screen overflow-hidden">

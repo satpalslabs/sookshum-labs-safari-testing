@@ -36,8 +36,7 @@ const content_heroSection: HeroSection = {
 const LandingPageLowCodeDevelopment: React.FC<HomeProps> = ({ isBot }) => (
   <div className="relative">
     <Hero {...content_heroSection} />
-    <CoreServices DataKey={"landing-page-services"} />
-    <Services />
+    <CoreServices /> <Services />
     <Benefits />
     <ChooseUs />
     <Tools />

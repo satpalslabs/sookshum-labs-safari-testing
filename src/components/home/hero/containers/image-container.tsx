@@ -4,7 +4,7 @@
 
 import Image from "next/image";
 const ImageContainer: React.FC = () => (
-  <div className="absolute xs:relative xs:mx-auto xs:right-auto right-[-2%] -top-[4%] lg:top-[5%] sm:top-[5%] xs:top-[-1%] sm:-right-[15%] w-fit h-[700px] lg:h-[568px] xs:h-fit">
+  <div className="absolute xs:relative xs:mx-auto xs:right-auto right-[-2%] -top-[4%] lg:top-[5%] sm:top-[5%] xs:top-[-1%] sm:-right-[15%] w-fit h-[700px] lg:h-[568px] xs:h-fit xs:-mb-8 xs:-mt-6">
     <video
       autoPlay={true}
       muted

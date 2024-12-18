@@ -1,9 +1,9 @@
+"use client";
 import Description from "@components/basic-components/description";
 import H5 from "@components/basic-components/headings/H5";
-
 import { serviceType } from ".";
-import Card from "../../../basic-components/card";
-import Image from "next/image";
+import CanvasAnimation from "@components/basic-components/canvas-animation";
+import { useRef } from "react";
 
 function Service({
   service,
@@ -12,6 +12,8 @@ function Service({
   service: serviceType;
   isInView: boolean;
 }) {
+  const containerRef = useRef<HTMLDivElement>(null);
+
   return (
     <div
       className={`mt-[73px] relative w-full group  z-0 cursor-pointer   rounded-[32px] sm:rounded-[20px]  p-[1px] bg-viewportBorder transition-all hover:bg-gradient-to-br  hover:from-borderPrimary hover:via-transparent hover:to-borderPrimary duration-1000 ${
@@ -19,7 +21,25 @@ function Service({
           ? `bg-viewportBorder  grayscale-0 `
           : "bg-transparent grayscale"
       }`}
+      ref={containerRef}
     >
+      <div className="transition-all absolute z-50 top-0 w-full flex justify-center translate-x-[-3%] xs:translate-x-[-1%] ">
+        {/* <Image
+          height={400}
+          width={400}
+          className="h-[165px] lg:h-[132px] xxl:-mt-[15%] sm:h-[108px] xs:-mt-[10%] lg:-mt-[20%] w-auto object-cover -mt-[15%]"
+          alt="image"
+          src={service.path}
+          /> */}
+        <div className="h-[165px] lg:h-[132px] xxl:-mt-[15%] sm:h-[108px] xs:-mt-[10%] lg:-mt-[20%] w-auto object-cover -mt-[15%]">
+          <CanvasAnimation
+            url={service["animation-path"]}
+            frameCount={service["frame-count"]}
+            containerRef={containerRef}
+            style="h-[165px] lg:h-[132px] xxl:-mt-[15%] sm:h-[108px] xs:-mt-[10%] lg:-mt-[20%] w-auto object-cover -mt-[15%] "
+          />
+        </div>
+      </div>
       <div className="w-full h-full relative z-20 overflow-hidden rounded-[32px] bg-black sm:rounded-[20px] ">
         <div
           className={`w-full h-full bg-innerContainer p-4 pb-8 sm:p-[9px] sm:pb-[14px] lg:p-[14px] lg:pb-[23px] relative shadow-buttonInset rounded-[32px] sm:rounded-[20px] flex flex-col  pt-[98px] lg:pt-[98px] sm:pt-[91px] grow `}
@@ -33,15 +53,6 @@ function Service({
             />
           </div>
         </div>
-      </div>
-      <div className="transition-all absolute z-50 top-0 w-full flex justify-center translate-x-[-3%] xs:translate-x-[-1%] ">
-        <Image
-          height={400}
-          width={400}
-          className="h-[165px] lg:h-[132px] xxl:-mt-[15%] sm:h-[108px] xs:-mt-[10%] lg:-mt-[20%] w-auto object-cover -mt-[15%]"
-          alt="image"
-          src={service.path}
-        />
       </div>
       <div className="absolute z-[40] bg-transparent transition-all duration-1000 top-0 left-0 w-full h-full group-hover:block group-hover:bg-gradientOnHover rounded-[32px] sm:rounded-[20px]"></div>
     </div>

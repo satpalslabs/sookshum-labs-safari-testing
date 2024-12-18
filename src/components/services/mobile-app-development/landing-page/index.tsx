@@ -35,8 +35,7 @@ const content_heroSection: HeroSection = {
 const LandingPageMobileAppDevelopment: React.FC<HomeProps> = ({ isBot }) => (
   <div className="relative">
     <Hero {...content_heroSection} />
-    <CoreServices DataKey={"landing-page-services"} />
-    <ChooseUs />
+    <CoreServices /> <ChooseUs />
     <OurProcess />
     <Technologies />
     <IndustryExperience />

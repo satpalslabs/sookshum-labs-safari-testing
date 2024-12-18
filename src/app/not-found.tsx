@@ -1,10 +1,8 @@
 import Description from "@components/basic-components/description";
 import GradientText from "@components/basic-components/gradient-text";
-import H1 from "@components/basic-components/headings/H1";
 import OuterComponent from "@components/basic-components/outer-component";
 import PrimaryButton from "@components/basic-components/primary-button";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function NotFound() {
   return (

@@ -8,13 +8,13 @@ export type serviceType = {
   path: string;
   count: string;
   about: string;
+  "animation-path": string;
+  "frame-count": number;
 };
-interface Data {
-  [key: string]: serviceType[]; // Index signature to allow string indexing
-}
+type Data = serviceType[];
 const data: Data = serviceData;
-const CoreServices: React.FC<{ DataKey: keyof Data }> = ({ DataKey }) => {
-  const services = data[DataKey as keyof Data];
+const CoreServices: React.FC = () => {
+  const services = data;
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref);
 
