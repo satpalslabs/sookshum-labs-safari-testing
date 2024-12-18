@@ -25,6 +25,9 @@ export type industryType = {
   points: Array<string>;
   image: string;
   video: string;
+  "animation-images": string;
+  "frame-count": number;
+  duration: number;
 };
 
 export default function Slider() {

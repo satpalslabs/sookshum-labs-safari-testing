@@ -14,6 +14,8 @@ export type dataItem = {
   animation_path: string;
   description: string;
   fallback_image: string;
+  "animation-url": string;
+  "frame-count": number;
 };
 const CoreServices: React.FC = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -25,10 +27,9 @@ const CoreServices: React.FC = () => {
       id="core-services"
     >
       <div className="grid grid-cols-3 gap-5 lg:gap-[18px] sm:gap-[10px] xxl:gap-16 xs:grid-cols-1 xs:gap-[28px]">
-        {data &&
-          data.map((item: dataItem, index: number) => {
-            return <ServiceCard item={item} isInView={isInView} key={index} />;
-          })}
+        {data.map((item: dataItem, index: number) => {
+          return <ServiceCard item={item} isInView={isInView} key={index} />;
+        })}
       </div>
     </div>
   );

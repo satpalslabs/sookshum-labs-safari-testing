@@ -17,7 +17,7 @@ const IndustryExperience = dynamic(() => import("./industry-experience"));
 const Testimonials = dynamic(() => import("../basic-components/testimonials"));
 const Work = dynamic(() => import("./work"));
 // const BlogPosts = dynamic(() => import("./blog-posts"));
-const WorkTogether = dynamic(() => import("../basic-components/work-together"));
+// const WorkTogether = dynamic(() => import("../basic-components/work-together"));
 
 const Sections: React.FC<HomeProps> = (props) => (
   <main className="mt-14 xl:mt-[52px] bg-black lg:mt-0 h-full">
@@ -32,7 +32,7 @@ const Sections: React.FC<HomeProps> = (props) => (
     {!props.isBot && <Work />}
     {/* Temporary disabled */}
     {/* <BlogPosts /> */}
-    <WorkTogether />
+    {/* <WorkTogether /> */}
     <GoTopButton />
     <div className="bg-black xs:hidden top-0 absolute w-full -z-10 h-[150px]" />
   </main>

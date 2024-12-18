@@ -8,14 +8,18 @@ const CanvasAnimation: React.FC<{
   frameCount: number;
   style: string;
   containerRef: React.RefObject<Element>;
-}> = ({ url, frameCount, style, containerRef }) => {
+  imageType: string;
+  duration: number;
+}> = ({ url, frameCount, style, containerRef, imageType, duration }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null); // Canvas reference
   const airpods = useRef<{ frame: number }>({ frame: 0 }); // GSAP animation state
   const images = useRef<HTMLImageElement[]>([]); // Array to store preloaded images
 
   // Function to generate the URL for the images
   const currentFrame = (index: number): string =>
-    `animation-images${url}/${(index + 1).toString().padStart(4, "0")}.png`;
+    `animation-images${url}/${(index + 1)
+      .toString()
+      .padStart(4, "0")}.${imageType}`;
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -47,7 +51,7 @@ const CanvasAnimation: React.FC<{
         frame: frameCount - 1,
         snap: "frame", // Snap to whole frames
         ease: "none",
-        duration: 0.5, // Animation duration
+        duration: duration, // Animation duration
         onUpdate: render,
       });
     };
@@ -57,7 +61,7 @@ const CanvasAnimation: React.FC<{
         frame: 0,
         snap: "frame",
         ease: "none",
-        duration: 0.5, // Animation duration
+        duration: duration, // Animation duration
         onUpdate: render,
       });
     };
