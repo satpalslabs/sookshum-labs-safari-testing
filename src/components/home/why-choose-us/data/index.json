@@ -3,36 +3,54 @@
         "title": "Excellent Customer Service",
         "description": "We don't just solve problems, we build lasting relationships. Experience the exceptional service your brand truly deserves.",
         "image_url": "/home/choose-us/chat.webp",
-        "video_url": "/home/choose-us/chat.webm"
+        "video_url": "/home/choose-us/chat.webm",
+        "animation-path": "/why-us/chat",
+        "frame-count": 50,
+        "duration": 1.3
     },
     {
         "title": "Prove Track Record",
         "description": "We are trusted by countless clients, backed by verifiable success stories. We consistently exceed expectations through expertise and dedication.",
         "image_url": "/home/choose-us/rank.webp",
-        "video_url": "/home/choose-us/rank.webm"
+        "video_url": "/home/choose-us/rank.webm",
+        "animation-path": "/why-us/rank",
+        "frame-count": 50,
+        "duration": 0.7
     },
     {
         "title": "Competitive Price",
         "description": "Don't trade quality for cost. We deliver top-notch design & development services at competitive rates without compromise.",
         "image_url": "/home/choose-us/competitive-price.webp",
-        "video_url": "/home/choose-us/competitive-price.webm"
+        "video_url": "/home/choose-us/competitive-price.webm",
+        "animation-path": "/why-us/competitive-price",
+        "frame-count": 40,
+        "duration": 1.3
     },
     {
         "title": "Personal Account Manager",
         "description": "You’ll have a dedicated solutions partner to guide you through every step of the process with expertise.",
         "image_url": "/home/choose-us/account-manager.webp",
-        "video_url": "/home/choose-us/account-manager.webm"
+        "video_url": "/home/choose-us/account-manager.webm",
+        "animation-path": "/why-us/account-manager",
+        "frame-count": 50,
+        "duration": 0.7
     },
     {
         "title": "Honest & Valuable Advice",
         "description": "We provide honest advice to help you make a meaningful impact and achieve significant results for your business.",
         "image_url": "/home/choose-us/honest&valuable.webp",
-        "video_url": "/home/choose-us/honest&valuable.webm"
+        "video_url": "/home/choose-us/honest&valuable.webm",
+        "animation-path": "/why-us/honest&valuable",
+        "frame-count": 50,
+        "duration": 0.7
     },
     {
         "title": "Team of Experts in their niche",
         "description": "Our domain-expert teams collaborate seamlessly to turn your vision into reality with precision and creativity.",
         "image_url": "/home/choose-us/team-of-experts.webp",
-        "video_url": "/home/choose-us/team-of-experts.webm"
+        "video_url": "/home/choose-us/team-of-experts.webm",
+        "animation-path": "/why-us/team-of-experts",
+        "frame-count": 50,
+        "duration": 0.7
     }
 ]

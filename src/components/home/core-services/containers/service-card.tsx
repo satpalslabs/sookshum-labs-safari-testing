@@ -90,7 +90,7 @@ const ServiceCard = ({
             <CanvasAnimation
               containerRef={containerRef}
               frameCount={item["frame-count"]}
-              style="max-w-[440px] h-[270px]"
+              style="max-w-[440px] h-[280px]"
               duration={0.5}
               url={item["animation-url"]}
               imageType="webp"

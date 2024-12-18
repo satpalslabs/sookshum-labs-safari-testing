@@ -21,6 +21,7 @@ function Service({
           ? `bg-viewportBorder  grayscale-0 `
           : "bg-transparent grayscale"
       }`}
+      ref={containerRef}
     >
       <div className="transition-all absolute z-50 top-0 w-full flex justify-center translate-x-[-3%] xs:translate-x-[-1%] ">
         {/* <Image
@@ -34,19 +35,17 @@ function Service({
           <CanvasAnimation
             url={service["animation-path"]}
             frameCount={service["frame-count"]}
-            imageType="png"
+            imageType="webp"
             duration={0.5}
             containerRef={containerRef}
-            style="h-[165px] lg:h-[132px] xxl:-mt-[15%] sm:h-[108px] xs:-mt-[10%] lg:-mt-[20%] w-auto object-cover -mt-[15%] "
+            style="h-[195px] lg:h-[132px] xxl:-mt-[15%] sm:h-[108px] xs:-mt-[10%] lg:-mt-[20%] w-auto object-cover -mt-[15%] "
           />
         </div>
       </div>
-      <div
-        className="w-full h-full relative z-20 overflow-hidden rounded-[32px] bg-black sm:rounded-[20px] "
-        ref={containerRef}
-      >
+      <div className="w-full h-full relative z-20 overflow-hidden rounded-[32px] bg-black sm:rounded-[20px] ">
         <div
           className={`w-full h-full bg-innerContainer p-4 pb-8 sm:p-[9px] sm:pb-[14px] lg:p-[14px] lg:pb-[23px] relative shadow-buttonInset rounded-[32px] sm:rounded-[20px] flex flex-col  pt-[98px] lg:pt-[98px] sm:pt-[91px] grow `}
+          ref={containerRef}
         >
           <div className=" flex flex-col px-4 md:px-2 sm:px-[6px] grow h-full gap-[0.5rem] sm:h-auto sm:gap-[0.5rem]">
             <H5 text={service.count} style="!leading-[1.4]" />

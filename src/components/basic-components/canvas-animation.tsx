@@ -3,23 +3,16 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
-const CanvasAnimation: React.FC<{
-  url: string;
-  frameCount: number;
-  style: string;
-  containerRef: React.RefObject<Element>;
-  imageType: string;
-  duration: number;
-}> = ({ url, frameCount, style, containerRef, imageType, duration }) => {
+const CanvasAnimation: React.FC<any> = (props) => {
   const canvasRef = useRef<HTMLCanvasElement>(null); // Canvas reference
   const airpods = useRef<{ frame: number }>({ frame: 0 }); // GSAP animation state
   const images = useRef<HTMLImageElement[]>([]); // Array to store preloaded images
 
   // Function to generate the URL for the images
   const currentFrame = (index: number): string =>
-    `animation-images${url}/${(index + 1)
-      .toString()
-      .padStart(4, "0")}.${imageType}`;
+    `animation-images${props.url}/${(index + 1).toString().padStart(4, "0")}.${
+      props.imageType
+    }`;
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -27,10 +20,10 @@ const CanvasAnimation: React.FC<{
 
     const context = canvas.getContext("2d");
     if (!context) return;
-    canvas.height = 490;
-    canvas.width = 500;
+    canvas.height = props.height ? props.height : 510;
+    canvas.width = props.width ? props.width : 540;
     // Preload images
-    for (let i = 0; i < frameCount; i++) {
+    for (let i = 0; i < props.frameCount; i++) {
       const img = new Image();
       img.src = currentFrame(i);
       images.current.push(img);
@@ -48,10 +41,10 @@ const CanvasAnimation: React.FC<{
     // Hover logic using GSAP
     const handleMouseEnter = () => {
       gsap.to(airpods.current, {
-        frame: frameCount - 1,
+        frame: props.frameCount - 1,
         snap: "frame", // Snap to whole frames
         ease: "none",
-        duration: duration, // Animation duration
+        duration: props.duration, // Animation duration
         onUpdate: render,
       });
     };
@@ -61,12 +54,12 @@ const CanvasAnimation: React.FC<{
         frame: 0,
         snap: "frame",
         ease: "none",
-        duration: duration, // Animation duration
+        duration: props.duration, // Animation duration
         onUpdate: render,
       });
     };
 
-    const mainContainer = containerRef?.current;
+    const mainContainer = props.containerRef?.current;
 
     // Add event listeners to the canvas
     mainContainer.addEventListener("mouseenter", handleMouseEnter);
@@ -79,6 +72,6 @@ const CanvasAnimation: React.FC<{
     };
   }, []);
 
-  return <canvas ref={canvasRef} className={style} />;
+  return <canvas ref={canvasRef} className={props.style} />;
 };
 export default CanvasAnimation;
