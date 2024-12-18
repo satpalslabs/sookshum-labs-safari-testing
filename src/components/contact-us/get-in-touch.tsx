@@ -76,7 +76,7 @@ const BottomSection: React.FC = () => (
 export default BottomSection;
 
 const QuickMailCard: React.FC<{ item: DataCard }> = (props) => (
-  <Card isInView={true} style={"!pb-0 grow"}>
+  <Card isInView={true} style={"!pb-0 grow h-full"}>
     <div className="p-8 lg:p-2 lg:pb-4 flex flex-col xxl:gap-[150px] gap-[110px] sm:gap-[89px] grow">
       <div className="flex justify-between grow">
         <H5 text={props.item.title} style="!text-white sm:text-[14px]" />
@@ -85,7 +85,7 @@ const QuickMailCard: React.FC<{ item: DataCard }> = (props) => (
           width="1200"
           height="1200"
           src={props.item.icon}
-          className="w-[46px] lg:w-[32px]"
+          className="w-[46px] lg:w-[32px] h-fit"
           blurDataURL="URL"
           placeholder="blur"
         />
