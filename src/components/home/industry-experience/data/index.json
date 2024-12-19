@@ -5,8 +5,8 @@
             "image": "/home/industries/healthcare.webp",
             "video": "/home/industries/healthcare.webm",
             "animation-images": "/industries/healthcare",
-            "duration": 2,
-            "frame-count": 60,
+            "duration": 1.3,
+            "frame-count": 30,
             "description": "We develop apps & websites that streamline operations, elevate patient care, and empower healthcare.",
             "points": [
                 "Telemedicine Platform",

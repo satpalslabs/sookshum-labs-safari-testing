@@ -8,7 +8,7 @@ const CanvasAnimation: React.FC<any> = (props) => {
   const airpods = useRef<{ frame: number }>({ frame: 0 }); // GSAP animation state
   const images = useRef<HTMLImageElement[]>([]); // Array to store preloaded images
   const isHovering = useRef<boolean>(false); // To track if hover animation is running
-  const hoverComplete = useRef<boolean>(false); // To track when hover animation completes
+  const isLeaving = useRef<boolean>(false); // To track if leave animation is running
 
   // Function to generate the URL for the images
   const currentFrame = (index: number): string =>
@@ -47,11 +47,20 @@ const CanvasAnimation: React.FC<any> = (props) => {
 
     // Hover logic using GSAP
     const handleMouseEnter = () => {
-      if (leaveAnimation) leaveAnimation.kill(); // Stop any running leave animation
+      if (isLeaving.current) {
+        // Wait for the leave animation to complete before starting hover
+        leaveAnimation?.eventCallback("onComplete", () => {
+          startHoverAnimation();
+        });
+      } else {
+        startHoverAnimation();
+      }
+    };
 
-      isHovering.current = true;
-      hoverComplete.current = false; // Reset hover complete status
+    const startHoverAnimation = () => {
+      if (hoverAnimation) hoverAnimation.kill(); // Stop any previous hover animation
 
+      isHovering.current = true; // Set hover state
       hoverAnimation = gsap.to(airpods.current, {
         frame: props.frameCount - 1,
         snap: "frame", // Snap to whole frames
@@ -59,34 +68,36 @@ const CanvasAnimation: React.FC<any> = (props) => {
         duration: props.duration, // Animation duration
         onUpdate: render,
         onComplete: () => {
-          isHovering.current = false; // Hover animation finished
-          hoverComplete.current = true; // Mark hover as complete
+          isHovering.current = false; // Reset hover state
         },
       });
     };
 
     const handleMouseLeave = () => {
-      // If hover animation is still running, wait for it to finish
-      if (!hoverComplete.current) {
+      if (isHovering.current) {
+        // Wait for the hover animation to complete before starting leave
         hoverAnimation?.eventCallback("onComplete", () => {
-          leaveAnimation = gsap.to(airpods.current, {
-            frame: 0,
-            snap: "frame",
-            ease: "none",
-            duration: props.duration, // Animation duration
-            onUpdate: render,
-          });
+          startLeaveAnimation();
         });
       } else {
-        // If hover animation is already complete, play leave animation immediately
-        leaveAnimation = gsap.to(airpods.current, {
-          frame: 0,
-          snap: "frame",
-          ease: "none",
-          duration: props.duration, // Animation duration
-          onUpdate: render,
-        });
+        startLeaveAnimation();
       }
+    };
+
+    const startLeaveAnimation = () => {
+      if (leaveAnimation) leaveAnimation.kill(); // Stop any previous leave animation
+
+      isLeaving.current = true; // Set leave state
+      leaveAnimation = gsap.to(airpods.current, {
+        frame: 0,
+        snap: "frame",
+        ease: "none",
+        duration: props.duration, // Animation duration
+        onUpdate: render,
+        onComplete: () => {
+          isLeaving.current = false; // Reset leave state
+        },
+      });
     };
 
     const mainContainer = props.containerRef?.current;
