@@ -29,7 +29,7 @@ const DropdownService = ({
         setActiveService(service);
       }}
       onClick={(e) => {
-        if (!e.ctrlKey) {
+        if (!e.ctrlKey && !e.metaKey) {
           setActive(false);
         }
       }}
