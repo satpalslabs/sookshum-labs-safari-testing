@@ -25,9 +25,9 @@ const content_heroSection: HeroSection = {
     "Build Beautiful & Flexible <span class='hero-span'>Admin Panels </span> For Easy Backend Management",
   style: {
     sourceStyle:
-      "xxl:left-[50%] w-screen xxl:h-[700px] h-[650px] lg:h-[500px] sm:h-[480px] xs:h-[470px] xxl:top-[-23%] top-[-32%] top-[-15%] xxl:-translate-x-[50%]  lg:top-[-65%] sm:top-[-50%] xs:top-[-30%] 2xs:top-[15%] xs:scale-[2] xs:-left-[4%]",
+      "scale-1 w-[2040px] xxl:h-[800px]  h-[950px] xxl:top-0 translate-y-[-40%] left-[50%] lg:w-[1500px] translate-x-[-50%] sm:h-[560px] top-[50px] lg:h-[600px] md:h-[600px] lg:translate-y-[-50%] xs:w-[1450px] xs:translate-y-[-146px] xs:top-0 xs:h-[450px] xs:max-h-[800px] xs:object-cover xs:scale-1",
     gradientDivStyle:
-      "xxl:h-[740px] w-screen h-[750px] lg:h-[480px] sm:h-[500px] xs:h-[480px] lg:top-[-50%]  top-[-25%] xxl:top-[-25%] ",
+      " sm:h-[560px] lg:h-[650px] top-0 w-screen top-0 mt-0 xxl:h-[760px] h-[800px] xxl:translate-y-[-181px] translate-y-[-20%] lg:translate-y-[-40%]   xs:translate-y-[-35%] xs:h-[530px] xs:max-h-[1800px]",
   },
   aboutPage: "",
 };

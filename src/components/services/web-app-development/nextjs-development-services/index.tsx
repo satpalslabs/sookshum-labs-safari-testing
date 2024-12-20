@@ -23,9 +23,9 @@ const content_heroSection: HeroSection = {
   fallback: "",
   style: {
     sourceStyle:
-      "scale-[1.0] xs:scale-[1.2] 2xs:scale-[1.3]  3xs:scale-[1.8] xxl:left-[50%] xxl:-translate-x-[50%] w-screen xxl:h-[1050px] h-[840px] lg:h-[711px] sm:h-[490px] xs:h-[450px]  2xs:h-[400px]  xxl:bottom-[10%] bottom-[-1%] lg:bottom-[5%] sm:bottom-[10%] xs:bottom-[20%] 3xs:bottom-[26%] ",
+      "scale-1 w-[2040px] xxl:h-[800px]  h-[950px] xxl:top-0 translate-y-[-40%] left-[50%] lg:w-[1500px] translate-x-[-50%] sm:h-[560px] top-[50px] lg:h-[600px] md:h-[600px] lg:translate-y-[-50%] xs:w-[650px] xs:translate-y-[-40%] xs:h-[550px] xs:max-h-[800px] xs:object-cover xs:scale-1",
     gradientDivStyle:
-      "scale-[1.0] w-screen xxl:h-[780px] h-[840px] lg:h-[621px] sm:h-[490px] xs:h-[850px] 2xs:h-[560px] 3xs:h-[600px] xxl:bottom-[10%] bottom-[-1%] lg:bottom-[4%]  sm:bottom-[10%]  xs:bottom-[-0%] 3xs:bottom-[11%] 2xs:bottom-[0%] ",
+      " sm:h-[560px] top-0  mt-0 xxl:h-[760px] h-[800px] xxl:translate-y-0 translate-y-[-20%]  xs:translate-y-[-5%] xs:h-[600px] xs:max-h-[1800px]",
   },
   aboutPage:
     "With Next.js application development, your website or eCommerce platform will be highly flexible, performant, and scalable. Our developers will build customizable and SEO-friendly Next.js websites, ensuring you receive the ideal end product to meet your needs!",

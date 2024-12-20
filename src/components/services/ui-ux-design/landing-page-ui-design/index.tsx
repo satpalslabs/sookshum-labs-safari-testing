@@ -25,7 +25,7 @@ const content_heroSection: HeroSection = {
     "<span class='hero-span'>Landing Page Design</span> Services For High Conversions ",
   style: {
     sourceStyle:
-      "scale-[1.0] w-screen xs:scale-[1.4] xxl:left-[50%] xxl:-translate-x-[50%] w-screen xxl:h-[820px] h-[740px] lg:h-[551px] sm:h-[590px] xs:h-[450px] 2xs:scale-[1.7] xxl:bottom-[10%] bottom-[-1%] lg:bottom-[5%] sm:bottom-[10%] xs:bottom-[-0%] 2xs:bottom-[-20%] ",
+      "scale-[1.0] w-screen xs:scale-[1.4] left-[60%] -translate-x-[50%] w-screen xxl:h-[820px] h-[740px] lg:h-[551px] sm:h-[590px] xs:h-[450px] 2xs:scale-[1.7] xxl:bottom-[10%] bottom-[-1%] lg:bottom-[5%] sm:bottom-[10%] xs:bottom-[-0%] 2xs:bottom-[-20%] ",
     gradientDivStyle:
       "scale-[1.0] w-screen xs:scale-[1.4] 2xs:scale-110 xxl:left-[50%] xxl:-translate-x-[50%] w-screen xxl:h-[820px] h-[740px] lg:h-[561px] sm:h-[590px] xs:h-[510px] 2xs:h-[580px]   xxl:bottom-[10%] bottom-[-1%] lg:bottom-[4%]  sm:bottom-[10%]  xs:bottom-[-0%] 2xs:bottom-[0%] ",
   },

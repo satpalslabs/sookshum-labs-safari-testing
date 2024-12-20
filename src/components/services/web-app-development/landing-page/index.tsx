@@ -24,9 +24,9 @@ const content_heroSection: HeroSection = {
   gradientText: "<span class='hero-span'>Web App</span> Development Services",
   style: {
     sourceStyle:
-      "xxl:left-[50%] xxl:scale-[1.45] scale-[2] h-[550px] xxl:h-[680px] lg:scale-[1.35] lg:h-[380px] md:h-[400px] sm:h-[380px] xs:h-[160px] xs:scale-[3.8] 2xs:scale-[3] 2xs:h-[150px] overflow-hidden   left-[15%] lg:left-[2%] lg:-top-[28%] xs:-left-[4%] xs:top-[5%]",
+      "scale-1 w-[2040px] xxl:h-[800px]  h-[800px] xxl:top-0 translate-y-[-40%] xxl:left-[50%] lg:left-[50%] lg:w-[1500px] lg:translate-x-[-50%]  xxl:translate-x-[-50%] sm:h-[560px] top-[50px] lg:h-[600px] md:h-[600px] lg:translate-y-[-50%] xs:w-[650px] xs:translate-y-[-10%] xs:h-[1300px] xs:max-h-[1800px] xs:object-cover xs:scale-1",
     gradientDivStyle:
-      "xxl:mt-[1.6%] lg:-mt-[8%] sm:-mt-[12%] xs:!-mt-[10%] 2xs:!-mt-[9%] lg:!h-[550px] sm:!h-[560px] 2xs:!h-[500px] xs:!h-[580px]",
+      " sm:h-[560px] top-0  mt-0 xxl:h-[740px] h-[800px] xxl:translate-y-0 translate-y-[-20%]  xs:translate-y-[-10%] xs:h-[600px] xs:max-h-[1800px]",
   },
   aboutPage:
     "Transform your ideas into powerful web applications with our expert web app development services.",

@@ -25,9 +25,9 @@ const content_heroSection: HeroSection = {
   fallback: "",
   style: {
     sourceStyle:
-      "scale-100 xs:scale-[2] xxl:left-[50%] xxl:-translate-x-[50%] xxl:h-[850px] h-[640px] sm:h-[390px]  xs:h-[280px] 2xs:h-[350px] lg:h-[580px] w-screen  bottom-[0%] lg:bottom-[8%] sm:bottom-[25%] xs:top-[-15%]  ",
+      "scale-1 w-[2040px] xxl:h-[800px]  h-[950px] xxl:top-0 translate-y-[-40%] left-[50%] lg:w-[1500px] translate-x-[-50%] sm:h-[560px] top-[50px] lg:h-[600px] md:h-[600px] lg:translate-y-[-50%] xs:w-[650px] xs:translate-y-[-146px] xs:top-0 xs:h-[650px] xs:max-h-[800px] xs:object-cover xs:scale-1",
     gradientDivStyle:
-      "scale-[1.0]  xs:scale-[2] xxl:left-[50%] xxl:-translate-x-[50%] w-screen xxl:h-[840px] h-[660px] lg:h-[581px] sm:h-[390px] xs:h-[280px] 2xs:h-[320px] xxl:bottom-[-10%] bottom-[-1%] lg:bottom-[8%]  sm:bottom-[25%]  xs:top-[-15%] ",
+      " sm:h-[560px] lg:h-[650px] top-0 w-screen top-0 mt-0 xxl:h-[760px] h-[800px] xxl:translate-y-[-181px] translate-y-[-20%] lg:translate-y-[-40%]   xs:translate-y-[-35%] xs:h-[530px] xs:max-h-[1800px]",
   },
   aboutPage:
     "We deliver high-quality Flutter apps quickly and within budget. With extensive experience in Flutter development, we are among the pioneers in the field.",

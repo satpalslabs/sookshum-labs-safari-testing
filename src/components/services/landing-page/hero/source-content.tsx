@@ -8,9 +8,11 @@ const SourceContent: React.FC<contentProps> = (props) => (
       className={cn(
         `absolute  ${
           props.showContent == "video"
-            ? `scale-[2] xxl:left-[50%] xxl:translate-x-[-35%] xxl:w-full xxl:object-cover w-screen h-[540px] xs:-top-[5%] xs:scale-[4] sm:h-[370px] xs:max-h-[170px] lg:h-[481px] md:h-[461px] xxl:h-[520px] xxl:-top-[60%] -top-[45%] ${props.style.sourceStyle}`
-            : ` ${props.style.sourceStyle}`
-        }  overflow-y-hidden overflow-x-hidden z-0 grayscale max-w-[1920px] mx-auto`
+            ? `scale-[2] xxl:left-[50%] xxl:translate-x-[-35%] xxl:w-full xxl:object-cover w-screen h-[540px] xs:-top-[5%] xs:scale-[4] sm:h-[370px] xs:max-h-[170px] lg:h-[481px] md:h-[461px] xxl:h-[520px] xxl:-top-[60%] -top-[45%] `
+            : ` `
+        }  overflow-y-hidden overflow-x-hidden z-0 grayscale max-w-[1920px] mx-auto ${
+          props.style.sourceStyle
+        }`
       )}
     >
       {props.showContent == "video" ? (
@@ -21,7 +23,7 @@ const SourceContent: React.FC<contentProps> = (props) => (
           muted
           loop
           playsInline
-          className="mt-0"
+          className="mt-0 w-full object-cover"
         >
           <source src={props.source} type="video/webm" />
 
