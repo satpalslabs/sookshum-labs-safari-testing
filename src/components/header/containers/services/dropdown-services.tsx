@@ -28,8 +28,10 @@ const DropdownService = ({
       onMouseOver={() => {
         setActiveService(service);
       }}
-      onClick={() => {
-        setActive(false);
+      onClick={(e) => {
+        if (!e.ctrlKey) {
+          setActive(false);
+        }
       }}
     >
       <>{service?.label}</>
@@ -96,7 +98,11 @@ const SmallScreenDropdown = ({
       </div>
     </div>
     {activeService?.label == service?.label && (
-      <ServiceContent activeService={activeService} setActive={setActive} setShowLinks={setShowLinks}/>
+      <ServiceContent
+        activeService={activeService}
+        setActive={setActive}
+        setShowLinks={setShowLinks}
+      />
     )}
   </div>
 );

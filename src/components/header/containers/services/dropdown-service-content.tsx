@@ -2,6 +2,7 @@ import Image from "next/image";
 import H6 from "@components/basic-components/headings/H6";
 import { cardContent, service } from "./dropdown";
 import Link from "next/link";
+import WindowResize from "@lib/window-resize";
 
 const ServiceContent = ({
   activeService,
@@ -19,9 +20,11 @@ const ServiceContent = ({
           href={cardContent.link}
           className="flex items-center transition-all duration-500 sm:items-start bg-innerContainer sm:bg-transparent border sm:border-none border-solid border-transparent shadow-buttonInset  hover:bg-borderDarkButton hover:border-borderDarkButton sm:shadow-none w-full rounded-[32px] gap-4 p-4 sm:p-0"
           key={index}
-          onClick={() => {
-            setActive(false);
-            setShowLinks(false);
+          onClick={(e) => {
+            if (!e.ctrlKey) {
+              setActive(false);
+              setShowLinks(false);
+            }
           }}
         >
           <div className="sm:hidden h-[60px] w-[60px] relative rounded-2xl overflow-hidden">

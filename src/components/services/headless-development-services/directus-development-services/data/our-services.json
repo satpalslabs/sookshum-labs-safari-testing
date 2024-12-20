@@ -1,0 +1,22 @@
+[
+    {
+        "image": "/services/admin-development/nextjs-development-services/why-us/cutting-edge-technologies.webp",
+        "title": "Custom Directus Development",
+        "description": "We offer custom Directus development that aligns with explicitly business needs. Our experienced developers execute your vision through code and creativity. "
+    },
+    {
+        "image": "/services/admin-development/nextjs-development-services/our-process/maintenance.webp",
+        "title": "API Development",
+        "description": "Our developers are skilled at creating robust APIs that improve the functionality and reach of your digital ecosystem by facilitating seamless platform communication and data management. "
+    },
+    {
+        "image": "/services/low-code-development/landing-page/our-services/tools.webp",
+        "title": "Directus Integration  ",
+        "description": "We’re talented at integrating Directus into existing frameworks, enhanciing abilities, and smoothing tasks. Our Directus solutions consistently."
+    },
+    {
+        "image": "/services/mobile-app-devlopment/flutter-development-services/our-services/chat.png",
+        "title": "Ongoing Support and Maintenance ",
+        "description": "We ensure Payload CCMS remains updated, secure, and optimized with ongoing support and maintenance. Our team is always available for updates, quick issue resolution, or improvements. "
+    }
+]

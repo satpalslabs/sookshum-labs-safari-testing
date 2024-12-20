@@ -46,6 +46,8 @@ const Flutter_DevelopmentServices: React.FC<HomeProps> = ({ isBot }) => (
     {isBot && <Testimonials />}
     {/* Temporary disable */}
     {/* <Faqs DataKey={"ecommerce-development-landing-page"}/> */}
+    <Testimonials />
+    <Work />
     <LetsConnect />
     <GoTopButton />
   </div>

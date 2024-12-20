@@ -10,12 +10,12 @@ import PrimaryButton from "@components/basic-components/primary-button";
 const Nav = ({ showLinks, setShowLinks }: any) => {
   return (
     <div
-      className={` sm:fixed overflow-auto sm:w-full z-10 transition-all sm:h-[calc(100vh-112px)] xs:h-[calc(100vh-88px)] text-secondaryText sm:top-[112px] xs:top-[88px] bottom-0  sm:left-0  sm:z-[9999] ${
-        showLinks ? "" : "overflow-hidden sm:translate-x-[-100%] "
+      className={` sm:fixed h-full overflow-auto sm:w-full z-10 transition-all  sm:h-[calc(100vh-100px)] xs:h-[calc(100vh-75px)] text-secondaryText sm:top-[100px] xs:top-[75px] bottom-0  sm:left-0  sm:z-[9999] ${
+        showLinks ? "" : "overflow-hidden  sm:translate-x-[-100%] "
       }`}
     >
       <div
-        className={`flex sm:h-full sm:relative sm:z-[85] sm:overflow-auto sm:flex-col sm:px-[31px] sm:pt-6 sm:rounded-b-[26px] sm:bg-layoutBackground gap-8 sm:gap-0 font-poppins font-600 text-base`}
+        className={`flex h-full sm:relative sm:z-[85] sm:overflow-auto sm:flex-col sm:px-[31px] sm:pt-6 sm:rounded-b-[26px] sm:bg-layoutBackground gap-8 sm:gap-0 font-poppins font-600 text-base `}
       >
         <NavLink
           setShowLinks={setShowLinks}

@@ -1,0 +1,32 @@
+[
+    {
+        "image": "/services/admin-development/nextjs-development-services/our-services/website-design.webp",
+        "title": "Custom Development",
+        "description": "Payload CMS offers three feature types: Blank CMS for basic sites, Website CMS with collections and global elements, and eCommerce CMS for online stores. For customizations, we provide full-stack development services to tailor Payload CMS to your business needs and integrate it with relevant technologies."
+    },
+    {
+        "image": "/services/headless-cms/cloud.png",
+        "title": "Integration and <br class='hidden xxl:block' /> Deployment",
+        "description": "Integrating and deploying Payload CMS involves incorporating it into your tech stack, connecting it with platforms like Next.js and Vercel for seamless functionality, and configuring it in your hosting environment for optimal performance. This ensures smooth operation, accessibility, and alignment with your business needs."
+    },
+    {
+        "image": "/services/admin-development/nextjs-development-services/our-process/maintenance.webp",
+        "title": "Headless Architecture <br class='hidden xxl:block' />Expertise ",
+        "description": "With a bast knowledge of headless CMS architecture, we deliver dynamic content across all channels. Our solutions are focused on performance and modularity to let you easily exercise content control with high levels of security. "
+    },
+    {
+        "image": "/services/low-code-development/landing-page/our-services/tools.webp",
+        "title": "Customization and <br class='hidden xxl:block' /> Enhancement ",
+        "description": "Leveraging Payload’s dynamic field types and comprehensive access control features, we customize your CMS to meet specific business needs. Our services include developing custom admin interfaces, enhancing UX/UI and implementing advanced security measures. "
+    },
+    {
+        "image": "/services/mobile-app-devlopment/flutter-development-services/our-services/chat.png",
+        "title": "Ongoing Support and <br class='hidden xxl:block' />Maintenance ",
+        "description": "Our commitment to quality extends beyond development. We provide longterm support and maintenance to make sure Payload CMS is updated, secure, and fine-tuned for performance. However, our team is always reachable for updates, the possibility of solving the problem soon or making some improvements. "
+    },
+    {
+        "image": "/services/web-app-development/landing-page/why-us/deploy.png",
+        "title": "SEO-friendly",
+        "description": "Payload CMS is SEO-friendly, offering built-in support for optimizing your content. It provides fields for adding titles, descriptions, and meta descriptions, allowing you to easily manage SEO settings for each page. This ensures your site is well-optimized for search engines, helping improve visibility and ranking. "
+    }
+]

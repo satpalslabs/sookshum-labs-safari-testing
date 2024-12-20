@@ -1,0 +1,47 @@
+[
+    {
+        "image_url": "/services/headless-cms/cloud.png",
+        "heading": "Self-Hosted & Cloud Options",
+        "description": "Choose between self-hosted for full control or cloud for hassle-free scalability—tailor your CMS to fit your needs."
+    },
+    {
+        "image_url": "/services/headless-cms/multi-channel.png",
+        "heading": "Multi-Channel Content Delivery ",
+        "description": "Strapi enables multi-channel content delivery, allowing you to publish and manage content seamlessly across websites, mobile apps, IoT devices, and more."
+    },
+    {
+        "image_url": "/services/web-app-development/landing-page/why-us/workflow-enhancement.webp",
+        "heading": "Enhanced Performance ",
+        "description": "Strapi offers enhanced performance with fast, optimized content delivery, ensuring a seamless user experience across all devices and platforms."
+    },
+    {
+        "image_url": "/services/web-app-development/landing-page/why-us/deploy.png",
+        "heading": "Scalability",
+        "description": "Strapi ensures scalability, allowing your content management system to grow effortlessly with your business needs, handling increasing traffic and content volume without compromise."
+    },
+    {
+        "image_url": "/services/web-app-development/landing-page/services/website-development-design.png",
+        "heading": "Flexible Content Types",
+        "description": "Strapi offers flexible content types, allowing you to create and manage structured content that fits your unique requirements and adapts to any project."
+    },
+    {
+        "image_url": "/services/admin-development/nextjs-development-services/our-process/maintenance.webp",
+        "heading": "API-First Approach",
+        "description": "Strapi’s API-first approach enables seamless integration with any frontend, delivering content across multiple platforms and ensuring flexibility in development. "
+    },
+    {
+        "image_url": "/services/website-development/landing-page/why-us/tech-partner.png",
+        "heading": "Reusability",
+        "description": "Strapi promotes content reusability, allowing you to create and manage content once, then reuse it across various platforms and channels, saving time and effort. "
+    },
+    {
+        "image_url": "/services/headless-cms/speaker.png",
+        "heading": "Multilingual Support",
+        "description": "Strapi offers multilingual support, enabling you to easily manage and deliver content in multiple languages, reaching a global audience with ease."
+    },
+    {
+        "image_url": "/services/headless-cms/database.png",
+        "heading": "Multiple Database Support",
+        "description": "Strapi supports multiple databases, giving you the flexibility to choose the best database solution for your project, whether it's SQL or NoSQL."
+    }
+]

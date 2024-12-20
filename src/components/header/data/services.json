@@ -139,6 +139,32 @@
             }
         },
         {
+            "label": "Headless CMS Development",
+            "link": "/headless-cms-development-services",
+            "content": {
+                "technologies": [
+                    {
+                        "logo": "/header/logos/payload.png",
+                        "title": "Payload CMS",
+                        "about": "",
+                        "link": "/payload-cms-development-services"
+                    },
+                    {
+                        "logo": "/header/logos/strapi.png",
+                        "title": "Strapi CMS",
+                        "about": "",
+                        "link": "/strapi-development-services"
+                    },
+                    {
+                        "logo": "/header/logos/directus.png",
+                        "title": "Directus CMS",
+                        "about": "",
+                        "link": "/directus-development-services"
+                    }
+                ]
+            }
+        },
+        {
             "label": "Website Development",
             "link": "/website-development-services",
             "content": {

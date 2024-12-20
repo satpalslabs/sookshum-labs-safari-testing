@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Customization and Flexibility",
+        "image": "/services/admin-development/nextjs-development-services/our-services/website-design.webp",
+        "description": "Tailor Payload CMS to your specific needs with its extensive customization options and APII-first approach."
+    },
+    {
+        "title": "Scalability and Performance ",
+        "image": "/services/web-app-development/laravel-development-services/why-us/rocket.png",
+        "description": "Easily handle growing content volumes and traffic with Payload’s scalable architecture and optimized performance. "
+    },
+    {
+        "title": "Developer Friendly",
+        "image": "/services/admin-development/nextjs-development-services/why-us/cutting-edge-technologies.webp",
+        "description": "Enjoy a seamless development experience with Payload’s intuitive and robust features."
+    },
+    {
+        "title": "Integration Capabilities  ",
+        "image": "/services/mobile-app-devlopment/flutter-development-services/our-services/mvp.png",
+        "description": "Integrate Payload with your existing tech stack and third-party services for a cohesive solutions. "
+    },
+    {
+        "title": "Community and Support",
+        "image": "/services/landing-page/core-services/user.webp",
+        "description": "Benefit from a thriving community and active support network to address your questions and challenges. "
+    }
+]

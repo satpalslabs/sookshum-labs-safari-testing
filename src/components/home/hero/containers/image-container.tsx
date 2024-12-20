@@ -10,7 +10,7 @@ const ImageContainer: React.FC = () => (
       muted
       loop
       playsInline
-      preload="metadata"
+      preload="auto"
       poster={"/home/hero/fallback.webp"}
       className="w-[auto] xxl:h-[620px] h-[580px] lg:h-[438px] sm:h-[408px] xs:w-full xs:h-auto object-cover xs:object-contain"
     >

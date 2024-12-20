@@ -43,6 +43,8 @@ const LandingPageMobileAppDevelopment: React.FC<HomeProps> = ({ isBot }) => (
     {isBot && <Testimonials />}
     {/* Temporary disable */}
     {/* <Faqs DataKey={"website-development-landing-page"} /> */}
+    <Testimonials />
+    <Work />
     <LetsConnect />
     <GoTopButton />
   </div>

@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Requirement Analysis ",
+        "description": "We thoroughly analyze your business requirements and priorities to create a tailored development plan, ensuring a smooth NestJS development process.",
+        "image": "/contact-us/mediums/chat-with-us.webp"
+    },
+    {
+        "title": "UI/UX design",
+        "description": "During the UX/UI phase, we bring together your vision and our designers expertise to create an engaging user experience for your product. Our talented designers prioritize user satisfaction by seamlessly blending creativity with functionality.",
+        "image": "/services/landing-page/cover/pencil.png"
+    },
+    {
+        "title": "Development and testing",
+        "description": "We turn concepts into robust platforms by adhering to strict testing procedures and protocols. This approach guarantees quality performance optimization under various loads, even during peak usage.",
+        "image": "/services/admin-development/nextjs-development-services/why-us/cutting-edge-technologies.webp"
+    },
+    {
+        "title": "Maintenance",
+        "description": "In the event of potential issues, we implement prompt solutions to minimize downtime. By keeping your product updated, we ensure it remains secure and aligned with the best industry practices.",
+        "image": "/services/admin-development/nextjs-development-services/our-process/maintenance.webp"
+    }
+]

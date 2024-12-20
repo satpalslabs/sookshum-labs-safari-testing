@@ -18,9 +18,12 @@ const NavLinkService = ({
   const currentPath: string = usePathname();
   return (
     <div>
-      {hovered && (
-        <div className="bg-layoutBackground top-0 absolute w-full left-0 z-[-20] sm:hidden h-[120px]" />
-      )}
+      <div
+        className={`${
+          hovered ? "opacity-100 duration-0" : "opacity-0 duration-[0.65s]"
+        }  absolute bg-layoutBackground w-full h-full left-0 z-[-20] sm:hidden bottom-0  transition-all`}
+      />
+
       <div
         // Temporary disable
         onMouseLeave={() => {
@@ -29,10 +32,10 @@ const NavLinkService = ({
         onMouseEnter={() => {
           setHovered(true);
         }}
-        className={"sm:flex-col sm:gap-0 sm:w-full"}
+        className={"sm:flex-col sm:gap-0 sm:w-full h-full"}
       >
         <Link
-          className={`sm:hidden group relative sm:px-10 sm:text-sm text-secondaryText sm:items-center sm:h-[72px] sm:justify-between sm:hover:shadow-buttonInset sm:hover:bg-innerContainer sm:hover:border border-solid  ${
+          className={`sm:hidden group relative h-full sm:px-10 sm:text-sm text-secondaryText  sm:items-center  sm:h-[72px] sm:justify-between sm:hover:shadow-buttonInset sm:hover:bg-innerContainer sm:hover:border border-solid  ${
             currentPath.includes(link.replaceAll("/", ""))
               ? "sm:bg-innerContainer font-semibold sm:shadow-buttonInset text-white "
               : ""
@@ -47,7 +50,6 @@ const NavLinkService = ({
           }}
         >
           <Fragment>{text}</Fragment>
-          {/* Temporary disabled */}
           <svg
             className={`w-3 h-2 group-hover:fill-white transition-transform ${
               hovered && "rotate-180"
@@ -75,7 +77,6 @@ const NavLinkService = ({
           text={text}
           setShowLinks={setShowLinks}
         />
-        {/* Temporary disabled */}
         <Dropdown
           active={hovered}
           setActive={setHovered}

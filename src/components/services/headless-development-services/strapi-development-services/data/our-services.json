@@ -1,0 +1,32 @@
+[
+    {
+        "image": "/services/website-development/landing-page/why-us/tech-partner.png",
+        "title": "Strapi Development",
+        "description": "Leverage the advanced technology of CMS with our specialised Strapi development services for flexible content management with accurate content delivery to the target audience.  "
+    },
+    {
+        "image": "/services/admin-development/nextjs-development-services/our-process/maintenance.webp",
+        "title": "Multilingual Strapi Development",
+        "description": "With Strapi-powered multilingual website development, we ensure a strong global presence for your digital business through extensive support for your preferred database. "
+    },
+    {
+        "image": "/services/admin-development/nextjs-development-services/our-services/website-design.webp",
+        "title": "Strapi Customization",
+        "description": "We let you build a custom CMS architecture with the finest experience Strapi offers that suits your business requirements through the power of headless technology. "
+    },
+    {
+        "image": "/services/web-app-development/landing-page/why-us/develop.png",
+        "title": "Static Site to Strapi CMS",
+        "description": "Our experts help you transform the existing static site into an advanced Strapi CMS in which users can manage the content efficiently and enable faster sync of modifications. "
+    },
+    {
+        "image": "/services/admin-development/nextjs-development-services/why-us/cutting-edge-technologies.webp",
+        "title": "Strapi Migration and Upgrade",
+        "description": "We work on migrating content from an existing CMS to Strapi and provide upgrades to experience the advanced features of the latest version of Strapi."
+    },
+    {
+        "image": "/services/e-commerce-development/magento-development-services/why-choose-us/custom-development.png",
+        "title": "Strapi Maintenance and Support",
+        "description": "We offer Strapi maintenance and support services to fix broken sites, install security patches, and work on code updates, helping your business remain secure and highly functional."
+    }
+]

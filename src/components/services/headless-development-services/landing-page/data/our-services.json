@@ -1,0 +1,17 @@
+[
+    {
+        "image": "/services/headless-cms/strapi.png",
+        "title": "Seasoned Strapi <br class='xs:hidden'/> development",
+        "description": "Our CMS experts harness the power of Strapi to help you create a seamless content creation, collaboration and management experience. We strive to deliver cross-device and multi-platform accessibility to your enterprise’s content while assuring security and integrity. "
+    },
+    {
+        "image": "/services/headless-cms/payload.png",
+        "title": "Experienced Payload CMS <br class='xs:hidden'/> Development",
+        "description": "Our CMS specialists leverage Payload CMS to deliver a streamlined content creation, collaboration, and management experience. We ensure your enterprise's content is accessible across devices and platforms while maintaining top-notch security and data integrity."
+    },
+    {
+        "image": "/services/headless-cms/direct-us.png",
+        "title": "Proficient Directus <br class='xs:hidden'/> Development",
+        "description": "Our CMS experts utilize the capabilities of Directus to craft intuitive content creation, collaboration, and management solutions. We focus on delivering scalable, multi-platform accessibility while safeguarding your enterprise’s data security and integrity."
+    }
+]

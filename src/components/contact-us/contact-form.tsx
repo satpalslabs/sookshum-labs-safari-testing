@@ -16,10 +16,6 @@ import { Bounce, ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Image from "next/image";
 import dynamic from "next/dynamic";
-import {
-  isPossiblePhoneNumber,
-  isValidPhoneNumber,
-} from "react-phone-number-input";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 

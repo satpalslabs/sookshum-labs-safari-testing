@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import  { Fragment } from "react";
+import { Fragment } from "react";
 const NavLink = ({
   text,
   link,
@@ -15,7 +15,7 @@ const NavLink = ({
   const currentPath: string = usePathname();
   return (
     <Link
-      className={`sm:p-4 text-secondaryText font-normal group sm:px-10 sm:text-sm sm:flex sm:items-center sm:h-[72px] sm:justify-between sm:shadow-none sm:bg-transparent sm:border-none border-solid  ${
+      className={`sm:p-4 text-secondaryText  font-normal group sm:px-10  sm:text-sm sm:flex sm:items-center h-full sm:h-[72px] sm:justify-between sm:shadow-none sm:bg-transparent sm:border-none border-solid  ${
         (link == "/" ? currentPath == "/" : currentPath.includes(link))
           ? " text-white  sm:shadow-none font-semibold sm:bg-transparent sm:border-none border-solid  "
           : ""

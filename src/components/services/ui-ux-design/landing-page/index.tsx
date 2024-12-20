@@ -41,6 +41,8 @@ const UiUxDesignComponent: React.FC<HomeProps> = (props) => (
     {props.isBot && <Testimonials />}
     {/* Temporary disable */}
     {/* <Faqs DataKey={"ui-ux-design"} /> */}
+    <Testimonials />
+    <Work />
     <WorkTogether />
     <GoTopButton />
   </div>

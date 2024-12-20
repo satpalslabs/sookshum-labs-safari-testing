@@ -1,0 +1,20 @@
+{
+    "process-services": [
+        {
+            "title": "Requirements and data analysis",
+            "description": "Our experts gather insights into your business goals, functional requirements, needs, and constraints through interviews. Workshops and individual work help refine the requirements through use case modelling and prototyping.  "
+        },
+        {
+            "title": "Data modelling",
+            "description": "Based on the identified requirements and objectives, we develop a high-quality data model that adequately represents your content. The relational data model is then implemented in Directus according to the normal forms of relational databases. "
+        },
+        {
+            "title": "Governance configuration",
+            "description": "We implement an appropriate rights and roles concept based on the identified governance needs of the customer. This ensures that data is protected against unauthorised access and accidental changes, both by humans and machines."
+        },
+        {
+            "title": "Training, integration, and quality assurance ",
+            "description": "We implement an appropriate rights and roles concept based on the identified governance needs of the customer. This ensures that data is protected against unauthorized access and accidental changes, both by humans and machines. "
+        }
+    ]
+}
